@@ -24,7 +24,8 @@ import sys
 import json
 import re
 import html
-from datetime import datetime, timezone
+import time
+from datetime import datetime, timezone, timedelta
 
 try:
     import requests
@@ -65,6 +66,11 @@ NEG_KEYWORDS = ["hiring", "job opening", "sponsored", "giveaway", "coupon"]
 MAX_SUMMARY_CHARS = 400   # 喂给 LLM 前正文截断长度
 MAX_ITEMS_PER_SRC = 12    # 每源最多保留条数
 
+# 时效窗口：只收最近 N 天的内容。更新慢的源（Blender 博客、GPUOpen 等）
+# RSS 顶部往往是几个月前的旧文，没有这道闸就会把去年十月的文章当“今日新闻”收进来。
+# 14 天给周更/双周更源留余量，又能挡掉几个月前的陈旧条目。
+FRESH_DAYS = 14
+
 
 def _clean(text):
     if not text:
@@ -103,12 +109,52 @@ def _get(url):
 
 
 def _date_from_struct(entry):
-    """从 feedparser entry 取 MM-DD。"""
+    """从 feedparser entry 取 MM-DD（展示用）。"""
     for key in ("published_parsed", "updated_parsed"):
         t = entry.get(key)
         if t:
             return "%02d-%02d" % (t.tm_mon, t.tm_mday)
     return ""
+
+
+def _epoch_from_struct(entry):
+    """从 feedparser entry 取 UTC 时间戳（秒）；取不到返回 None。
+    用于时效过滤（_date_from_struct 丢了年份，无法判断去年还是今年）。"""
+    for key in ("published_parsed", "updated_parsed"):
+        t = entry.get(key)
+        if t:
+            try:
+                return time.mktime(t) - time.timezone  # struct_time(UTC) -> epoch
+            except Exception:
+                pass
+    return None
+
+
+def _epoch_from_iso(s):
+    """从 ISO 字符串（Discourse 的 created_at，如 2026-06-12T...Z）取时间戳。"""
+    if not s:
+        return None
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", s)
+    if not m:
+        return None
+    try:
+        dt = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
+                      tzinfo=timezone.utc)
+        return dt.timestamp()
+    except Exception:
+        return None
+
+
+def _is_fresh(epoch):
+    """epoch 是否落在最近 FRESH_DAYS 天内。
+    epoch 为 None（源没给日期，如 HuggingFace/部分 arXiv）→ 视为新鲜放行，
+    交给后续 LLM 判断，避免误杀真正的新内容。"""
+    if epoch is None:
+        return True
+    cutoff = datetime.now(timezone.utc).timestamp() - FRESH_DAYS * 86400
+    # 给未来时间留 1 天容差（时区/时钟偏差），但挡掉明显异常的未来日期
+    future_cap = datetime.now(timezone.utc).timestamp() + 86400
+    return cutoff <= epoch <= future_cap
 
 
 # --------------------------------------------------------------------------
@@ -126,6 +172,8 @@ def fetch_rss(feed_url, src_name, cat_guess, tier=2):
             summary = e.get("summary", "") or e.get("description", "")
             link = e.get("link", "")
             d = _date_from_struct(e)
+            if not _is_fresh(_epoch_from_struct(e)):
+                continue   # 过滤几个月前的陈旧条目
             if _hit_keyword(title, summary):
                 out.append(_mk_item(title, summary, link, src_name, cat_guess, d, tier))
     except Exception as ex:
@@ -149,6 +197,8 @@ def fetch_discourse(base_url, src_name, cat_guess, tier=2):
             m = re.search(r"\d{4}-(\d{2})-(\d{2})", created)
             if m:
                 d = "%s-%s" % (m.group(1), m.group(2))
+            if not _is_fresh(_epoch_from_iso(created)):
+                continue   # 过滤几个月前的旧帖
             summary = t.get("excerpt", "") or ""
             link = "%s/t/%s/%s" % (base_url.rstrip("/"), slug, tid)
             if _hit_keyword(title, summary):
@@ -175,6 +225,8 @@ def fetch_arxiv(src_name="arXiv · cs.GR", cat_guess="gfx", tier=1):
             summary = e.get("summary", "")
             link = e.get("link", "")
             d = _date_from_struct(e)
+            if not _is_fresh(_epoch_from_struct(e)):
+                continue   # arXiv 按时间倒序，理论上都新；保险起见仍过滤
             if _hit_keyword(title, summary):
                 out.append(_mk_item(title, summary, link, src_name, cat_guess, d, tier))
             if len(out) >= MAX_ITEMS_PER_SRC:
