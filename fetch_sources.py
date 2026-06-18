@@ -306,6 +306,21 @@ def _norm_key(title):
     return re.sub(r"[^a-z0-9]", "", title.lower())[:60]
 
 
+def item_signature(item):
+    """生成一条新闻的去重指纹（单次去重 / 跨天去重共用同一套）。
+
+    规则与 _dedupe 完全一致：
+      ① 优先“产品+版本号”主题签名（如 unrealengine58）——同一主题不同源/不同措辞合并；
+      ② 抽不到则用标题归一化。
+    指纹相同即视为“同一条新闻”。跨天去重靠它判断“这条昨天发过没”。
+    返回 "" 表示无法生成有效指纹（调用方应跳过）。
+    """
+    title = item.get("title", "") if isinstance(item, dict) else str(item)
+    sig = _topic_sig(title)
+    key = ("sig:" + sig) if sig else ("ttl:" + _norm_key(title))
+    return key if key.split(":", 1)[1] else ""
+
+
 def _dedupe(items):
     """两级去重，同一条新闻保留 tier 最小（最权威）的那条。
 
@@ -326,9 +341,8 @@ def _dedupe(items):
             best[key] = it   # 更权威的源替换，位置不变
 
     for it in items:
-        sig = _topic_sig(it["title"])
-        key = ("sig:" + sig) if sig else ("ttl:" + _norm_key(it["title"]))
-        if not key.split(":", 1)[1]:
+        key = item_signature(it)   # 与跨天去重共用同一指纹
+        if not key:
             continue
         _put(key, it)
     return [best[k] for k in order]

@@ -65,6 +65,8 @@ jobs:
         run: |
           if [ -z "$BARK_KEY" ] && [ -z "$NTFY_TOPICS" ] && [ -z "$PUSHPLUS_TOKENS" ]; then
             echo "未配置任何推送 Secret（BARK_KEY / NTFY_TOPICS / PUSHPLUS_TOKENS），跳过推送"
+          elif [ -f .today_new_count ] && [ "$(cat .today_new_count)" = "0" ]; then
+            echo "今日 0 新增（近期热点都已发过），跳过推送，不打扰用户"
           else
             python notify.py
           fi

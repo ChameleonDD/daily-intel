@@ -13,3 +13,9 @@ debug.log
 *.test.js
 __pycache__/
 *.pyc
+
+# 运行态标记（今日新增数，仅供 CI 当次判断要不要推送，不必上云）
+.today_new_count
+
+# 注意：seen.json（跨天去重记录）和 recent.js（近期热点）必须上云持久化，
+# 不要加进这里——否则云端每天全新环境会丢记录，去重失效、旧闻复活。

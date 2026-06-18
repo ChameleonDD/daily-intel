@@ -34,6 +34,7 @@ PY = sys.executable
 sys.path.insert(0, str(BASE))
 import fetch_sources
 import denoise
+import seen_store
 
 
 WEEK_CN = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
@@ -108,14 +109,21 @@ def render_today_html(cards):
     return "今天值得停下精读的有：%s。其余按重要性自动排序，红色优先。" % em
 
 
-def write_data_js(cards, ok, missed, x_cards):
+def write_data_js(cards, ok, missed, x_cards, dup=0):
     dt = now_bj()
     date_str = "%d年%d月%d日 · %s" % (dt.year, dt.month, dt.day, WEEK_CN[dt.weekday()])
     all_cards = x_cards + cards
+    # 空日报兜底：今日无新增时给友好文案，而不是空白。
+    if cards:
+        today_html = render_today_html(cards)
+    elif x_cards:
+        today_html = "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。"
+    else:
+        today_html = "今日暂无新增内容 —— 近期 %d 条热点此前都已读过。点「近期」可翻看本周积累。" % dup
     data = {
         "date": date_str,
         "tagline": "为留存而读，不为刷新而读",
-        "todayHtml": render_today_html(cards),
+        "todayHtml": today_html,
         "channels": [
             {"key": "x",    "name": "X 动态",    "color": "#8a4fb0", "desc": "你关注的大佬 · 近期本人发布"},
             {"key": "tech", "name": "游戏技术",  "color": "#6a52a3", "desc": "虚幻 / 实时渲染 / 美术工作流"},
@@ -141,6 +149,60 @@ def write_data_js(cards, ok, missed, x_cards):
     return len(all_cards)
 
 
+RECENT = BASE / "recent.js"
+
+
+def _load_recent_cards():
+    """读 recent.js 里已累积的卡片（node 优先，正则兜底）。不存在返回 []。"""
+    if not RECENT.exists():
+        return []
+    try:
+        node = _find_node()
+        if node:
+            script = (
+                "global.window={};require(%s);"
+                "process.stdout.write(JSON.stringify(window.INTEL_RECENT.cards||[]));"
+                % json.dumps(str(RECENT).replace("\\", "/"))
+            )
+            r = subprocess.run([node, "-e", script], capture_output=True,
+                               text=True, encoding="utf-8", timeout=30)
+            if r.returncode == 0 and r.stdout.strip():
+                return json.loads(r.stdout)
+    except Exception as ex:
+        print("  [warn] 读取 recent.js 失败（忽略）: %s" % ex, file=sys.stderr)
+    return []
+
+
+def write_recent_js(today_cards):
+    """累积「近期热点」到 recent.js，供前端「近期」入口翻阅。
+
+    逻辑：旧 recent 卡片 + 今日新卡片 → 按指纹去重(今日的覆盖旧的) → 落盘。
+    无需在这里按日期裁剪——能进 today_cards 的本就过了 14 天时效闸；
+    旧卡片随 seen 的 30 天滚动自然淘汰（不会被重新加入）。为防膨胀仍封顶 200 条。
+    """
+    old = _load_recent_cards()
+    merged, seen_sig = [], set()
+    # 今日新卡片优先（放最前，且覆盖旧的同指纹卡）
+    for c in today_cards + old:
+        sig = fetch_sources.item_signature(c) or (c.get("url") or c.get("title") or "")
+        if sig in seen_sig:
+            continue
+        seen_sig.add(sig)
+        merged.append(c)
+    merged = merged[:200]
+    payload = {
+        "updated": now_bj().strftime("%Y-%m-%d %H:%M"),
+        "cards": merged,
+    }
+    js = "window.INTEL_RECENT = " + json.dumps(payload, ensure_ascii=False, indent=2) + ";\n"
+    header = (
+        "// daily-intel 近期热点层 —— 由 run.py 自动累积，供「近期」入口翻阅。\n"
+        "// 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。\n\n"
+    )
+    RECENT.write_text(header + js, encoding="utf-8")
+    print("  recent.js 累积: %d 张" % len(merged))
+
+
 def _run_step(name, env_flag, default="1"):
     if os.environ.get(env_flag, default) != "1":
         print("  [skip] %s（%s != 1）" % (name, env_flag))
@@ -156,29 +218,52 @@ def _run_step(name, env_flag, default="1"):
 
 
 def main():
-    print("=== [1/6] 抓取 + 预筛 ===")
+    print("=== [1/7] 抓取 + 预筛 ===")
     items, ok, missed = fetch_sources.fetch_all()
     print("  成功源: %s" % ", ".join(ok))
     print("  预筛后: %d 条" % len(items))
 
-    print("=== [2/6] DeepSeek 降噪 ===")
-    cards = denoise.denoise(items)
+    print("=== [2/7] 跨天去重（只留今日新增）===")
+    seen = seen_store.load_seen()
+    fresh_items, dup = seen_store.filter_new(items, seen)
+    print("  已发过(滤除): %d 条 | 今日新增: %d 条" % (dup, len(fresh_items)))
+    if not fresh_items:
+        print("  [info] 今日无新增内容（近期热点都已发过）。")
+
+    print("=== [3/7] DeepSeek 降噪 ===")
+    # 只把今日新增喂给 DeepSeek —— 既省钱又准确。
+    cards = denoise.denoise(fresh_items) if fresh_items else []
     print("  降噪后: %d 张卡片" % len(cards))
 
-    print("=== [3/6] 合并 X 卡片（沿用本机上次抓取）===")
+    print("=== [4/7] 合并 X 卡片（沿用本机上次抓取，不参与跨天去重）===")
     x_cards = load_existing_x_cards()
     print("  X 卡片: %d 张" % len(x_cards))
 
-    print("=== [4/6] 写 data.js ===")
-    total = write_data_js(cards, ok, missed, x_cards)
+    print("=== [5/7] 写 data.js（今日新增）===")
+    total = write_data_js(cards, ok, missed, x_cards, dup=dup)
     print("  共写入: %d 张" % total)
+    # 给 CI 留个标记：今日新增卡片数（workflow 据此决定要不要推送，0 新增不打扰）。
+    try:
+        (BASE / ".today_new_count").write_text(str(len(cards)), encoding="utf-8")
+    except Exception:
+        pass
+    # 把今日真正发出的（已降噪成卡片的）登记进 seen，明天起不再重复。
+    # 注意：以“喂给降噪的 fresh_items”登记，确保即便某条被 LLM 丢弃也不会明天再翻出来。
+    seen = seen_store.mark_seen(seen, fresh_items)
+    seen_store.save_seen(seen)
+    print("  seen.json 记录数: %d" % len(seen))
 
-    print("=== [5/6] 归档 publish.py ===")
+    print("=== [6/7] 写 recent.js（近期热点，供“近期”入口翻阅）===")
+    write_recent_js(cards)
+
+    print("=== [7/7] 归档 + 上云 + 推送 ===")
     _run_step("publish.py", "RUN_PUBLISH", default="1")
-
-    print("=== [6/6] 上云 + 推送 ===")
     _run_step("deploy.py", "RUN_DEPLOY", default="0")
-    _run_step("notify.py", "RUN_NOTIFY", default="0")
+    # 今日 0 新增时不必打扰用户：跳过推送（除非强制）。
+    if cards or os.environ.get("NOTIFY_WHEN_EMPTY") == "1":
+        _run_step("notify.py", "RUN_NOTIFY", default="0")
+    else:
+        print("  [skip] 今日 0 新增，跳过推送（设 NOTIFY_WHEN_EMPTY=1 可强制推）")
 
     print("=== 完成 ===")
 
