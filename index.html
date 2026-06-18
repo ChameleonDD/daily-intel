@@ -164,7 +164,8 @@
   D.channels.forEach(ch=>{ chMap[ch.key]=ch; });
 
   // ---- 主排序：重要性优先（hi>mid>lo），同档内按日期新→旧 ----
-  const total = D.cards.length;
+  // total / 频道计数都只统计「今日」卡片，回顾(flashback)卡不计入。
+  const total = D.cards.filter(c=>!c.flashback).length;
   const impRank = {hi:0, mid:1, lo:2};
   // 从 src / who 里提取 "MM-DD" 做日期排序键；无日期的排在同档末尾
   function dateKey(c){
@@ -186,7 +187,7 @@
 
   // 频道计数（过滤条仍按频道，保留领域检索入口）
   const byCat = {};
-  D.cards.forEach(c=>{ (byCat[c.cat] = byCat[c.cat]||[]).push(c); });
+  D.cards.forEach(c=>{ if(!c.flashback) (byCat[c.cat] = byCat[c.cat]||[]).push(c); });
   const activeChannels = D.channels.filter(ch => (byCat[ch.key]||[]).length>0);
 
   // 重要性分档计数（用于分档分隔线）
@@ -216,7 +217,7 @@
     }else{
       metaRow = `<span class="src">${esc(c.src||"")}</span>`;
     }
-    return `<article class="card ${imp}" data-cat="${c.cat}">
+    return `<article class="card ${imp}${c.flashback?' isFlashback':''}" data-cat="${c.cat}" data-flashback="${c.flashback?1:0}">
       <div class="c-row1"><span class="imp ${imp}">${impLabel[imp]||"值得关注"}</span>${chTag}${metaRow}</div>
       <div class="c-title">${esc(c.title)}</div>
       <div class="c-sum">${esc(c.sum)}</div>
@@ -234,12 +235,21 @@
   }
 
   // 按重要性分档渲染（默认视图）：hi → mid → lo，每档一条分隔线，档内已按日期新→旧
+  // 回顾卡片(flashback)不参与三档，单独成栏放最后。
   ["hi","mid","lo"].forEach(level=>{
-    const list = ordered.filter(c=>(c.imp||"mid")===level);
+    const list = ordered.filter(c=>!c.flashback && (c.imp||"mid")===level);
     if(!list.length) return;
     html += `<div class="secline" data-imp="${level}"><span class="dot" style="background:${impColorMap[level]}"></span><span class="lbl">${impLabelMap[level]}</span><span class="cnt">${list.length} 条 · ${impDescMap[level]}</span><span class="ln"></span></div>`;
     list.forEach(c=> html += cardHtml(c));
   });
+
+  // 回顾栏：今日新增少时，run.py 会补几条「前几天最爆的」并打 flashback 标记
+  const fbList = ordered.filter(c=>c.flashback);
+  if(fbList.length){
+    const fbTitle = D.flashbackTitle || "来回顾下前几天的";
+    html += `<div class="secline flashback" data-imp="flashback"><span class="dot" style="background:#9a6cff"></span><span class="lbl">${esc(fbTitle)}</span><span class="cnt">${fbList.length} 条 · 趁手感还在，复习一遍</span><span class="ln"></span></div>`;
+    fbList.forEach(c=> html += cardHtml(c));
+  }
 
   // 信息源说明
   if(D.sources){
@@ -263,7 +273,14 @@
     [...filters.children].forEach(x=>x.classList.toggle('on',x===b));
     const f=b.dataset.f;
     cards().forEach(c=>{
-      let show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : c.dataset.cat===f;
+      const isFb = c.dataset.flashback==='1';
+      let show;
+      if(isFb){
+        // 回顾卡只在「全部」和「已收藏(且已收藏)」视图露出，不混进具体频道筛选
+        show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : false;
+      }else{
+        show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : c.dataset.cat===f;
+      }
       c.style.display = show ? '' : 'none';
     });
     // 分隔线是「重要性分档」：只在「全部」视图显示；点频道/已收藏时隐藏，卡片连续平铺

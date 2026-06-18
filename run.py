@@ -109,13 +109,69 @@ def render_today_html(cards):
     return "今天值得停下精读的有：%s。其余按重要性自动排序，红色优先。" % em
 
 
-def write_data_js(cards, ok, missed, x_cards, dup=0):
+# 今日新增 <= 此阈值时，补几条「前几天最爆的」做回顾。
+FLASHBACK_TRIGGER = 5
+# 回顾候选的「前几天」窗口（不含今天）：1~3 天前。
+FLASHBACK_LOOKBACK_DAYS = 3
+# 最多补几条回顾。
+FLASHBACK_MAX = 3
+FLASHBACK_TITLE = "今天的刷完了，来回顾下前几天的"
+
+
+def _imp_rank(c):
+    """卡片「爆」的排序键：imp(hi>mid>lo) 优先，其次 rank 越小越爆。返回元组用于 sort。"""
+    order = {"hi": 0, "mid": 1, "lo": 2}
+    return (order.get(c.get("imp"), 1), c.get("rank") if c.get("rank") is not None else 9999)
+
+
+def pick_flashback(today_cards, seen, exclude_sigs):
+    """今日新增太少时，从 recent.js 里挑「前 1~3 天最爆的」2~3 条做回顾。
+
+    判定「前几天」：用 seen.json 的首发日期（指纹 -> YYYY-MM-DD），
+    取首发日在 [今天-3, 今天-1] 区间的卡片（排除今天首发的、排除本次已展示的）。
+    在候选里按 imp+rank 排序取前 FLASHBACK_MAX 条，打 flashback 标记返回。
+    """
+    if len(today_cards) > FLASHBACK_TRIGGER:
+        return []
+    recent = _load_recent_cards()
+    if not recent:
+        return []
+    today = now_bj().date()
+    lo = today - timedelta(days=FLASHBACK_LOOKBACK_DAYS)
+    hi = today - timedelta(days=1)
+    cands = []
+    for c in recent:
+        sig = fetch_sources.item_signature(c) or (c.get("url") or c.get("title") or "")
+        if not sig or sig in exclude_sigs:
+            continue
+        first = seen.get(sig)
+        if not first:
+            continue
+        try:
+            d = datetime.strptime(first, "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if lo <= d <= hi:
+            cands.append(c)
+    cands.sort(key=_imp_rank)
+    picks = []
+    for c in cands[:FLASHBACK_MAX]:
+        c = dict(c)            # 拷一份，不污染 recent
+        c["flashback"] = True
+        picks.append(c)
+    return picks
+
+
+def write_data_js(cards, ok, missed, x_cards, dup=0, flashback=None):
     dt = now_bj()
     date_str = "%d年%d月%d日 · %s" % (dt.year, dt.month, dt.day, WEEK_CN[dt.weekday()])
-    all_cards = x_cards + cards
+    flashback = flashback or []
+    all_cards = x_cards + cards + flashback
     # 空日报兜底：今日无新增时给友好文案，而不是空白。
     if cards:
         today_html = render_today_html(cards)
+    elif flashback:
+        today_html = "今日暂无新增 —— 近期热点此前都已读过。给你翻出了 %d 条前几天最值得回看的，往下拉「%s」。" % (len(flashback), FLASHBACK_TITLE)
     elif x_cards:
         today_html = "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。"
     else:
@@ -133,6 +189,7 @@ def write_data_js(cards, ok, missed, x_cards, dup=0):
             {"key": "ai",   "name": "AI 技术",   "color": "#3b6fb0", "desc": "仅保留与游戏/实时/3D 相关"},
         ],
         "cards": all_cards,
+        "flashbackTitle": FLASHBACK_TITLE if flashback else "",
         "sources": {
             "ok": ok + (["X（沿用上次本机抓取）"] if x_cards else []),
             "missed": ("未覆盖：%s。" % "、".join(missed)) if missed else "",
@@ -239,8 +296,22 @@ def main():
     x_cards = load_existing_x_cards()
     print("  X 卡片: %d 张" % len(x_cards))
 
-    print("=== [5/7] 写 data.js（今日新增）===")
-    total = write_data_js(cards, ok, missed, x_cards, dup=dup)
+    print("=== [4.5/7] 回顾：今日新增少时补「前几天最爆的」===")
+    # 排除今日已展示的卡片指纹（今日新增 + X 卡片），避免回顾重复展示同一条。
+    exclude = set()
+    for c in cards + x_cards:
+        s = fetch_sources.item_signature(c) or (c.get("url") or c.get("title") or "")
+        if s:
+            exclude.add(s)
+    flashback = pick_flashback(cards, seen, exclude)
+    if flashback:
+        print("  今日新增 %d 条(<=%d)，补 %d 条前几天回顾" %
+              (len(cards), FLASHBACK_TRIGGER, len(flashback)))
+    else:
+        print("  今日新增充足或无可回顾，跳过")
+
+    print("=== [5/7] 写 data.js（今日新增 + 可选回顾）===")
+    total = write_data_js(cards, ok, missed, x_cards, dup=dup, flashback=flashback)
     print("  共写入: %d 张" % total)
     # 给 CI 留个标记：今日新增卡片数（workflow 据此决定要不要推送，0 新增不打扰）。
     try:
