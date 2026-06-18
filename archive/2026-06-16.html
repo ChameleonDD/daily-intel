@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TA 技术情报 · 为留存而读</title>
+<style>
+  :root{
+    --paper:#f7f5f0;
+    --card:#fffefb;
+    --ink:#23211c;
+    --sub:#6f6a5e;
+    --hint:#a8a294;
+    --line:#e7e2d6;
+    --line2:#d8d2c4;
+    --hi:#c2452f;
+    --mid:#c98a1e;
+    --lo:#5f8a3a;
+    --save:#9a6cff;
+    --saveink:#5b3ec9;
+    --c-x:#8a4fb0;
+    --font:"Songti SC","Source Han Serif SC",Georgia,"PingFang SC","Microsoft YaHei",serif;
+    --sans:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+
+  .top{position:sticky;top:0;z-index:20;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top-in{max-width:760px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px}
+  .mark{width:30px;height:30px;border-radius:8px;background:var(--ink);color:var(--paper);font-family:var(--font);display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+  .top h1{font-family:var(--font);font-size:18px;font-weight:600;letter-spacing:.5px}
+  .top .meta{font-size:12px;color:var(--hint);margin-top:1px}
+  .savebtn{margin-left:auto;font-size:12.5px;color:var(--saveink);background:#f1ecff;border:1px solid #e2d8ff;padding:6px 13px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:5px}
+  .savebtn b{font-weight:600}
+
+  .stalebar{max-width:760px;margin:14px auto 0;padding:0 22px}
+  .stalebox{background:#fbe7e3;border:1px solid #eebcb0;border-radius:6px;padding:11px 15px;font-family:var(--sans);font-size:12.5px;color:#9a3c25;line-height:1.6}
+  .stalebox b{font-weight:600}
+
+  .filters{max-width:760px;margin:0 auto;padding:16px 22px 4px;display:flex;gap:8px;flex-wrap:wrap}
+  .f{font-size:13px;color:var(--sub);background:transparent;border:1px solid var(--line2);padding:6px 14px;border-radius:18px;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:6px}
+  .f:hover{border-color:var(--ink);color:var(--ink)}
+  .f.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .f .dotmini{width:7px;height:7px;border-radius:50%}
+  .f .num{font-size:11px;opacity:.6}
+
+  .stream{max-width:760px;margin:0 auto;padding:18px 22px 80px}
+
+  .daysum{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--ink);border-radius:4px;padding:18px 20px;margin-bottom:26px}
+  .daysum .k{font-family:var(--sans);font-size:11px;letter-spacing:1.5px;color:var(--hint);text-transform:uppercase;margin-bottom:8px}
+  .daysum p{font-family:var(--font);font-size:16px;line-height:1.85;color:var(--ink)}
+  .daysum em{font-style:normal;background:linear-gradient(transparent 62%,#fff0a6 62%);padding:0 2px}
+
+  .secline{display:flex;align-items:center;gap:10px;margin:32px 0 14px}
+  .secline .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+  .secline .lbl{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.5px;color:var(--ink)}
+  .secline .cnt{font-family:var(--sans);font-size:11px;color:var(--hint)}
+  .secline .ln{flex:1;height:1px;background:var(--line)}
+
+  .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px 16px 22px;margin-bottom:14px;transition:.18s;overflow:hidden}
+  .card:hover{border-color:var(--line2);transform:translateY(-1px)}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+  .card.hi::before{background:var(--hi)} .card.mid::before{background:var(--mid)} .card.lo::before{background:var(--lo)}
+
+  .c-row1{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  .imp{font-family:var(--sans);font-size:10.5px;font-weight:600;padding:2px 7px;border-radius:4px;letter-spacing:.5px;display:inline-flex;align-items:center;gap:4px}
+  .imp::before{content:"";width:6px;height:6px;border-radius:50%}
+  .imp.hi{color:var(--hi);background:#f7e7e3}.imp.hi::before{background:var(--hi)}
+  .imp.mid{color:var(--mid);background:#f7eed8}.imp.mid::before{background:var(--mid)}
+  .imp.lo{color:var(--lo);background:#e9f1df}.imp.lo::before{background:var(--lo)}
+  .src{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+  .xhandle{font-family:var(--sans);font-size:11.5px;font-weight:600;color:var(--c-x);display:inline-flex;align-items:center;gap:5px}
+  .xhandle::before{content:"𝕏";font-size:12px;color:var(--c-x);font-weight:700}
+  .xwho{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+
+  .c-title{font-family:var(--font);font-size:20px;font-weight:600;line-height:1.4;letter-spacing:.3px}
+  .c-sum{font-family:var(--font);font-size:15px;line-height:1.8;color:#403c33;margin-top:8px}
+
+  .c-ta{margin-top:12px;background:#f3f0e8;border-radius:5px;padding:10px 13px;display:flex;gap:9px}
+  .c-ta .lab{font-family:var(--sans);font-size:11px;font-weight:600;color:#7a5a14;background:#f0e2bf;border-radius:4px;padding:2px 7px;height:fit-content;flex:0 0 auto;letter-spacing:.5px}
+  .c-ta .txt{font-family:var(--sans);font-size:13px;line-height:1.65;color:#5a5142}
+
+  .c-foot{display:flex;align-items:center;margin-top:13px;padding-top:11px;border-top:1px dashed var(--line2)}
+  .keep{font-family:var(--sans);font-size:12.5px;color:var(--sub);background:transparent;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:3px 0}
+  .keep .ic{width:15px;height:15px;border:1.5px solid var(--hint);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:.15s}
+  .keep:hover .ic{border-color:var(--saveink)}
+  .keep.kept .ic{background:var(--save);border-color:var(--save)}
+  .keep.kept .ic::after{content:"✓";color:#fff;font-size:11px}
+  .keep.kept{color:var(--saveink)}
+  .link{margin-left:auto;font-family:var(--sans);font-size:12px;color:var(--hint);text-decoration:none}
+  .link:hover{color:var(--ink)}
+
+  .review{position:fixed;right:0;top:0;bottom:0;width:340px;max-width:88vw;background:var(--card);border-left:1px solid var(--line2);transform:translateX(100%);transition:.28s;z-index:30;display:flex;flex-direction:column}
+  .review.open{transform:none;box-shadow:-12px 0 40px rgba(0,0,0,.08)}
+  .rv-h{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center}
+  .rv-h h3{font-family:var(--font);font-size:16px;font-weight:600}
+  .rv-h .x{margin-left:auto;cursor:pointer;color:var(--hint);font-size:20px;line-height:1;background:none;border:none}
+  .rv-note{font-family:var(--sans);font-size:11.5px;color:var(--hint);padding:10px 20px;line-height:1.6;border-bottom:1px solid var(--line)}
+  .rv-list{flex:1;overflow-y:auto;padding:8px 14px}
+  .rv-item{border:1px solid var(--line);border-radius:5px;padding:11px 12px;margin-bottom:9px}
+  .rv-item .t{font-family:var(--font);font-size:14px;font-weight:600;line-height:1.4}
+  .rv-item .when{font-family:var(--sans);font-size:11px;color:var(--lo);margin-top:5px;display:flex;align-items:center;gap:5px}
+  .rv-empty{font-family:var(--sans);font-size:13px;color:var(--hint);text-align:center;padding:40px 20px;line-height:1.7}
+  .mask{position:fixed;inset:0;background:rgba(35,33,28,.18);z-index:25;opacity:0;pointer-events:none;transition:.2s}
+  .mask.on{opacity:1;pointer-events:auto}
+
+  .srcbar{max-width:760px;margin:0 auto;padding:0 22px}
+  .srcbox{background:#f1ede4;border:1px solid var(--line);border-radius:6px;padding:13px 16px;font-family:var(--sans);font-size:11.5px;color:var(--sub);line-height:1.7}
+  .srcbox b{color:var(--ink);font-weight:600}
+  .srcbox .miss{color:#b5502f}
+
+  .end{text-align:center;font-family:var(--sans);font-size:11.5px;color:var(--hint);margin-top:24px;line-height:1.7}
+  @media(max-width:560px){.c-title{font-size:18px}.daysum p{font-size:15px}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <div class="mark">識</div>
+    <div>
+      <h1>TA 技术情报</h1>
+      <div class="meta" id="metaLine">为留存而读，不为刷新而读</div>
+    </div>
+    <button class="savebtn" id="openRv">复习清单 <b id="rvCount">0</b></button>
+  </div>
+</div>
+
+<div class="stalebar" id="staleBar" style="display:none">
+  <div class="stalebox"><b>X 登录态已过期</b> —— 本期 X 动态沿用上次抓取的数据。需运行 <b>x_login.py</b> 重新登录一次，下次即可自动更新。</div>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<main class="stream" id="stream"></main>
+
+<div class="mask" id="mask"></div>
+<aside class="review" id="review">
+  <div class="rv-h"><h3>复习清单</h3><button class="x" id="closeRv">×</button></div>
+  <div class="rv-note">收藏的卡片会进入间隔重复队列：1天 → 7天 → 14天 → 30天。这是和普通日报最大的区别——读过不等于记住。</div>
+  <div class="rv-list" id="rvList"><div class="rv-empty" id="rvEmpty">还没有收藏。<br>读到"该停下精读"的卡片时，点一下"收藏入复习"。</div></div>
+</aside>
+
+<!-- 数据层：自动化每天只重写这一个文件 -->
+<script>
+// ==========================================================================
+// daily-intel 内容数据文件
+// --------------------------------------------------------------------------
+// 这是「数据层」——自动化每天只需重写这一个文件，骨架 index.html 永不改动。
+// index.html 会读取 window.INTEL_DATA 动态渲染整个页面。
+//
+// 字段说明（写新内容时照此填）：
+//   date      : 顶部日期串，如 "2026年6月16日 · 周二"
+//   tagline   : 顶部副标题（一般不用改）
+//   todayHtml : 「今日一句」正文，可用 <em>...</em> 高亮关键短语
+//   channels  : 频道定义数组，顺序即页面/过滤条显示顺序
+//       key   : 频道标识（卡片 cat 与之对应）
+//       name  : 频道名
+//       color : 领域色（CSS 颜色值）
+//       desc  : 该频道分隔线右侧的小字说明
+//   cards     : 卡片数组
+//       cat   : 所属频道 key
+//       imp   : 重要性 "hi"=停下精读 / "mid"=值得关注 / "lo"=速览
+//       title : 标题，断言式，≤12 字
+//       sum   : 一句话摘要，≤40 字
+//       ta    : TA 视角，只复述原文不脑补
+//       src   : 来源标注（网页源用；如 "80 Level · 06-15"）
+//       handle: X 账号 handle（仅 X 卡片用，如 "@karpathy"，填了就显示 𝕏 样式）
+//       who   : X 卡片右侧人名+日期（仅 X 卡片用，如 "Andrej Karpathy · 05-19"）
+//       url   : 原文链接
+//   sources   : 信息源说明
+//       ok    : 抓取成功的源名数组
+//       missed: 未覆盖的源说明（可为空字符串）
+//   xStale    : true 时页面顶部显示「X 登录态已过期，需重登」提示横幅
+// ==========================================================================
+
+window.INTEL_DATA = {
+  date: "2026年6月16日 · 周二",
+  tagline: "为留存而读，不为刷新而读",
+  todayHtml: '今天值得停下的几条线：X 上 <em>Karpathy 加入 Anthropic、World Labs 连发3篇3D论文、SebAaltonen 用 AI+1MB 引擎做原型</em> 是一手风向；技术侧 <em>XGen/UE 毛发、C++ 海岸渲染、URP 移动端积雪</em> 全是实时美术硬货；行业侧 <em>Xbox 大重组</em>、前沿侧 <em>SIGGRAPH 发丝重建、实时神经透明渲染</em> 和你的管线直接相关。',
+
+  channels: [
+    { key: "x",    name: "X 动态",    color: "#8a4fb0", desc: "你关注的 15 位大佬 · 近期本人发布" },
+    { key: "tech", name: "游戏技术",  color: "#6a52a3", desc: "虚幻 / 实时渲染 / 美术工作流" },
+    { key: "flow", name: "TA 工作流", color: "#b06a2e", desc: "Tech-Artists 论坛 · 工具/管线实操" },
+    { key: "biz",  name: "游戏行业",  color: "#3f8a6e", desc: "工作室 / 商业 / 发行" },
+    { key: "gfx",  name: "图形学前沿", color: "#2f7d8a", desc: "arXiv / SIGGRAPH 论文" },
+    { key: "ai",   name: "AI 技术",   color: "#3b6fb0", desc: "仅保留与游戏/实时/3D 相关" }
+  ],
+
+  cards: [
+    // ===== X 动态 =====
+    { cat:"x", imp:"hi", title:"Karpathy 加入 Anthropic",
+      sum:"Karpathy 本人发推宣布加入 Anthropic，结束此前的独立研究/创业状态。",
+      ta:"原文是他本人宣布的职业去向，AI 圈顶级研究者的流向往往预示下一阶段的技术与产品重心。",
+      handle:"@karpathy", who:"Andrej Karpathy · 05-19", url:"https://x.com/karpathy" },
+    { cat:"x", imp:"hi", title:"World Labs 连发3篇3D论文",
+      sum:"NeRF 一作发推介绍 World Labs 一次性放出三篇关于 3D 生成/重建的研究工作。",
+      ta:"原文是文生3D/重建的最新一手研究，直接对应你关注的资产生成方向，值得追原论文。",
+      handle:"@BenMildenhall", who:"Ben Mildenhall · 06-12", url:"https://x.com/BenMildenhall" },
+    { cat:"x", imp:"mid", title:"单图生成完整3D几何",
+      sum:"推文展示 World Tracing 方法：从单张图像生成完整的 3D 几何结构。",
+      ta:"原文是单图到3D几何的生成，若效果稳定，对快速搭场景白模和资产原型有直接价值。",
+      handle:"@BenMildenhall", who:"Ben Mildenhall · 06-12", url:"https://x.com/BenMildenhall" },
+    { cat:"x", imp:"hi", title:"AI+1MB引擎做游戏原型",
+      sum:"资深引擎程序发推分享：用 AI 辅助配合一个约 1MB 的极小引擎快速做出游戏原型的实验。",
+      ta:"原文是 AI 辅助 + 极简引擎的开发实验，正对应“AI 进开发管线”，可看他怎么压复杂度。",
+      handle:"@SebAaltonen", who:"Sebastian Aaltonen · 06-15", url:"https://x.com/SebAaltonen" },
+    { cat:"x", imp:"mid", title:"UE5 State Trees 敌人生成",
+      sum:"前 Epic 工程师发推分享用 UE5 State Trees 实现的敌人生成器（spawner）实做。",
+      ta:"原文是 UE5 State Trees 的实操案例，State Tree 是较新的 AI/逻辑编排，做敌人波次可借鉴。",
+      handle:"@t_looman", who:"Tom Looman · 06-08", url:"https://x.com/t_looman" },
+    { cat:"x", imp:"mid", title:"Genie 集成街景做世界模型",
+      sum:"DreamFusion 一作发推：将 Genie 与街景数据结合，构建可交互的真实世界模型。",
+      ta:"原文是世界模型 + 真实街景的结合，世界模型这条线和可玩场景的程序化生成长期相关。",
+      handle:"@poolio", who:"Ben Poole · 05-19", url:"https://x.com/poolio" },
+    { cat:"x", imp:"lo", title:"Gemini 视频模型登顶 Arena",
+      sum:"转推信息：Gemini 的视频生成模型在 Arena 排行榜上登顶（非本人原创，已标注转推）。",
+      ta:"原文是转推的榜单信息，视频生成模型迭代速度可作为“AI 生成素材”能力上限的参照。",
+      handle:"@poolio", who:"转推 · 06-11", url:"https://x.com/poolio" },
+
+    // ===== 游戏技术 =====
+    { cat:"tech", imp:"hi", title:"XGen+UE 渲真实头发",
+      sum:"教程拆解 Low Bun 项目：先 blockout 理清流向、体积与轮廓，再从雕刻模型提取曲线，用 XGen 配合虚幻引擎渲染写实头发。",
+      ta:"原文是一条完整的 XGen→UE 毛发管线实操，毛发是角色 TA 高频痛点，可对照自己流程查漏。",
+      src:"80 Level · 06-15", url:"https://80.lv/articles/" },
+    { cat:"tech", imp:"mid", title:"C++ 海岸实时渲染器",
+      sum:"Leonard Saalfrank 正在开发一个自定义 C++ 海岸渲染器，已实现实时海岸线模拟。",
+      ta:"原文是自研渲染器做实时海岸线，和你的水体/流体特效同源，可看浪线与泡沫怎么处理。",
+      src:"80 Level · 06-15", url:"https://80.lv/articles/" },
+    { cat:"tech", imp:"mid", title:"URP 移动端积雪着色器",
+      sum:"Sakura Rabbit 为 Unity URP 移动端做了一个实时积雪覆盖着色器，并开放项目下载。",
+      ta:"原文是移动端实时积雪 shader 且可下载，移动端覆盖效果的性能取舍很有参考价值。",
+      src:"80 Level · 06-16", url:"https://80.lv/articles/" },
+    { cat:"tech", imp:"mid", title:"UE5 战争主题短片",
+      sum:"一部用 Unreal Engine 5 结合 Blender、Maya、Substance 3D Painter 制作的战争题材短片。",
+      ta:"原文是 UE5 实拍级短片的完整 DCC 组合，可看它在引擎里如何做电影化叙事与镜头。",
+      src:"80 Level · 06-15", url:"https://80.lv/articles/" },
+    { cat:"tech", imp:"lo", title:"手绘风游戏角色",
+      sum:"Darena Georgieva 分享 Stinger 项目：以 cosplay 为参考搭盔甲，用高光、细微色变与深色描边实现手绘青色质感。",
+      ta:"原文是 game-ready 手绘角色的上色与描边技法，做风格化项目时可借鉴它的笔触逻辑。",
+      src:"80 Level · 06-15", url:"https://80.lv/articles/" },
+
+    // ===== TA 工作流 =====
+    { cat:"flow", imp:"hi", title:"一键 Maya-Blender 同步",
+      sum:"有人做了一个一键式 Maya↔Blender 资产同步工具，并在论坛分享。",
+      ta:"原文讲的是跨 DCC 资产同步工具，正是 TA 最常被要求救火的痛点，可直接看它怎么打通两边。",
+      src:"Tech-Artists · 06-15", url:"https://www.tech-artists.org/latest" },
+    { cat:"flow", imp:"mid", title:"UE5.6 风格化传送门",
+      sum:"论坛求助帖：参考《瑞奇与叮当》在 UE5.6 里实现风格化传送门 shader（被标为 FEATURED）。",
+      ta:"原文是 UE5.6 风格化 portal shader 的实做讨论，做技能特效/传送效果时可参考思路与材质搭法。",
+      src:"Tech-Artists · 06-03", url:"https://www.tech-artists.org/latest" },
+    { cat:"flow", imp:"lo", title:"FBX Python 选择性嵌入",
+      sum:"讨论用 FBX Python SDK 做选择性嵌入（Selective Embedding）的方法。",
+      ta:"原文是 FBX Python SDK 的嵌入控制，做导出管线/批处理脚本时可能用得上，先收一条。",
+      src:"Tech-Artists · 06-14", url:"https://www.tech-artists.org/latest" },
+
+    // ===== 游戏行业 =====
+    { cat:"biz", imp:"hi", title:"Xbox 工作室谈判保命",
+      sum:"据报道，多家 Xbox 旗下工作室负责人正与微软谈判，以避免在“战略重组”中被关闭或剥离。",
+      ta:"原文是平台级大重组信号，第一方工作室的存续直接影响行业岗位与外包订单走向，值得长线追。",
+      src:"Game Developer · 06-15", url:"https://www.gamedeveloper.com/latest" },
+    { cat:"biz", imp:"mid", title:"EA 把广告塞进玩法",
+      sum:"EA 宣布推出一个广告平台，将广告“直接植入游戏玩法之中”。",
+      ta:"原文是大厂把广告嵌入玩法的明确动作，可能改变 free-to-play 的设计与变现惯例。",
+      src:"Game Developer · 06-15", url:"https://www.gamedeveloper.com/latest" },
+    { cat:"biz", imp:"mid", title:"微软称 Xbox 要可持续",
+      sum:"微软 CEO 表示 Xbox 必须变得“可持续”，同时据报道公司正考虑一项重大业务分拆。",
+      ta:"原文是平台战略转向的官方表态，和前面工作室谈判是同一条线，连起来看更能判断行业风向。",
+      src:"Game Developer · 06-15", url:"https://www.gamedeveloper.com/latest" },
+    { cat:"biz", imp:"lo", title:"红色沙漠破600万",
+      sum:"《Crimson Desert（红色沙漠）》在发售三个月内销量突破 600 万份。",
+      ta:"原文是单机大作的销量数据，作为 3A 美术规格与市场接受度的一个参照点，记一笔。",
+      src:"Game Developer · 06-11", url:"https://www.gamedeveloper.com/latest" },
+
+    // ===== 图形学前沿 =====
+    { cat:"gfx", imp:"hi", title:"发丝级头发重建",
+      sum:"HairLRM：用大型重建模型实现基于发丝（strand）的头发建模，SIGGRAPH 2026 录用。",
+      ta:"原文是发丝级头发的自动重建论文，和上面 XGen 毛发那条正好一前沿一实操，对照看价值高。",
+      src:"arXiv · SIGGRAPH 2026", url:"https://arxiv.org/abs/2606.15238" },
+    { cat:"gfx", imp:"mid", title:"实时神经透明渲染",
+      sum:"STAR-NT：提出时空加速方法，实现实时的神经网络透明度渲染，面向实时图形性能优化。",
+      ta:"原文是实时神经透明渲染的加速方案，透明/半透明一直是实时渲染老大难，值得跟一下方向。",
+      src:"arXiv · cs.GR · 06-16", url:"https://arxiv.org/abs/2606.16747" },
+    { cat:"gfx", imp:"mid", title:"程序化增强材质生成",
+      sum:"通过程序化数据增强生成更丰富的材质，提升渲染中表面外观的多样性与真实感。",
+      ta:"原文用程序化数据增强做材质生成，和你做程序化生成/植被工具的思路同源，可看它怎么造数据。",
+      src:"arXiv · cs.GR · 06-16", url:"https://arxiv.org/abs/2606.14988" },
+
+    // ===== AI 技术 =====
+    { cat:"ai", imp:"mid", title:"交互式世界模型",
+      sum:"DreamX-World 1.0：一个通用型交互式世界模型，旨在构建可交互的虚拟世界环境（当日热度最高）。",
+      ta:"原文是可交互世界模型，这类“可玩的生成环境”若成熟，和游戏关卡/场景生成直接相关，先存长线。",
+      src:"HuggingFace · 06-16", url:"https://huggingface.co/papers" },
+    { cat:"ai", imp:"lo", title:"城市场景逆向渲染",
+      sum:"BRDFusion：结合物理原理与生成方法，用于城市场景的逆向渲染（inverse rendering）。",
+      ta:"原文把物理 BRDF 和生成结合做逆渲染，关注“从图像反推材质/光照”这条线的可以收一条。",
+      src:"HuggingFace · 06-16", url:"https://huggingface.co/papers" }
+  ],
+
+  sources: {
+    ok: ["80 Level", "Game Developer（GDC 同源）", "Tech-Artists 论坛", "arXiv（cs.GR，含 SIGGRAPH 录用）", "HuggingFace Daily Papers", "NVIDIA Developer", "Unreal Engine 官方"],
+    missed: "ArtStation、X(Twitter) 公开页 —— 均有登录/验证墙（Epic Cloudflare / X API 付费），网页源未覆盖。X 数据通过本地登录态抓取，见 X 动态频道。"
+  },
+
+  xStale: false
+};
+
+</script>
+
+<script>
+// ============ 渲染引擎：读 INTEL_DATA 动态生成页面 ============
+(function(){
+  const D = window.INTEL_DATA || {cards:[],channels:[],sources:{ok:[],missed:""}};
+  const esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const impLabel = {hi:"停下精读", mid:"值得关注", lo:"速览"};
+
+  // 顶部日期
+  document.getElementById('metaLine').textContent = (D.date? D.date+" · " : "") + (D.tagline||"为留存而读，不为刷新而读");
+
+  // X 过期提示
+  if(D.xStale) document.getElementById('staleBar').style.display = 'block';
+
+  // 按频道分组卡片（保持 channels 定义的顺序）
+  const total = D.cards.length;
+  const byCat = {};
+  D.cards.forEach(c=>{ (byCat[c.cat] = byCat[c.cat]||[]).push(c); });
+  const activeChannels = D.channels.filter(ch => (byCat[ch.key]||[]).length>0);
+
+  // ---- 过滤条 ----
+  const filters = document.getElementById('filters');
+  let fhtml = `<button class="f on" data-f="all">全部 <span class="num">${total}</span></button>`;
+  activeChannels.forEach(ch=>{
+    fhtml += `<button class="f" data-f="${ch.key}"><span class="dotmini" style="background:${ch.color}"></span>${esc(ch.name)} <span class="num">${byCat[ch.key].length}</span></button>`;
+  });
+  fhtml += `<button class="f" data-f="kept">★ 已收藏</button>`;
+  filters.innerHTML = fhtml;
+
+  // ---- 卡片渲染 ----
+  function cardHtml(c){
+    const imp = c.imp||"mid";
+    // 来源行：X 卡片用 handle 样式，网页源用 .src
+    let metaRow;
+    if(c.handle){
+      metaRow = `<span class="xhandle">${esc(c.handle)}</span><span class="xwho">${esc(c.who||"")}</span>`;
+    }else{
+      metaRow = `<span class="src">${esc(c.src||"")}</span>`;
+    }
+    return `<article class="card ${imp}" data-cat="${c.cat}">
+      <div class="c-row1"><span class="imp ${imp}">${impLabel[imp]||"值得关注"}</span>${metaRow}</div>
+      <div class="c-title">${esc(c.title)}</div>
+      <div class="c-sum">${esc(c.sum)}</div>
+      <div class="c-ta"><span class="lab">TA 视角</span><span class="txt">${esc(c.ta)}</span></div>
+      <div class="c-foot"><button class="keep"><span class="ic"></span>收藏入复习</button><a class="link" href="${esc(c.url||'#')}" target="_blank">原文 ↗</a></div>
+    </article>`;
+  }
+
+  const stream = document.getElementById('stream');
+  let html = "";
+
+  // 今日一句
+  if(D.todayHtml){
+    html += `<div class="daysum" data-cat="sum"><div class="k">今日一句</div><p>${D.todayHtml}</p></div>`;
+  }
+
+  // 各频道
+  activeChannels.forEach(ch=>{
+    const list = byCat[ch.key];
+    html += `<div class="secline" data-sec="${ch.key}"><span class="dot" style="background:${ch.color}"></span><span class="lbl">${esc(ch.name)}</span><span class="cnt">${list.length} 条 · ${esc(ch.desc||"")}</span><span class="ln"></span></div>`;
+    list.forEach(c=> html += cardHtml(c));
+  });
+
+  // 信息源说明
+  if(D.sources){
+    const ok = (D.sources.ok||[]).map(esc).join(" · ");
+    html += `<div class="srcbar"><div class="srcbox"><b>本期信息源（${(D.sources.ok||[]).length} 个抓取成功）：</b>${ok}`;
+    if(D.sources.missed) html += `<br><span class="miss">未覆盖：${esc(D.sources.missed)}</span>`;
+    html += `</div></div>`;
+  }
+
+  html += `<div class="end">今日 ${total} 条 · 按领域归类，卡片左侧色条标注重要性<br>内容均来自原媒体，本站仅作摘要整理与回链</div>`;
+  stream.innerHTML = html;
+
+  // ============ 交互：过滤 / 收藏 / 复习抽屉（与原版逻辑一致） ============
+  const cards = ()=>[...document.querySelectorAll('.card')];
+  const seclines = ()=>[...document.querySelectorAll('.secline')];
+  const srcbar = document.querySelector('.srcbar');
+  const daysum = document.querySelector('.daysum');
+
+  filters.addEventListener('click',e=>{
+    const b=e.target.closest('.f'); if(!b)return;
+    [...filters.children].forEach(x=>x.classList.toggle('on',x===b));
+    const f=b.dataset.f;
+    cards().forEach(c=>{
+      let show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : c.dataset.cat===f;
+      c.style.display = show ? '' : 'none';
+    });
+    seclines().forEach(s=>{
+      if(f==='all') s.style.display='flex';
+      else if(f==='kept') s.style.display='none';
+      else s.style.display = (s.dataset.sec===f)?'flex':'none';
+    });
+    if(daysum) daysum.style.display = (f==='all')?'block':'none';
+    if(srcbar) srcbar.style.display = (f==='all')?'block':'none';
+  });
+
+  const rvList=document.getElementById('rvList'), rvEmpty=document.getElementById('rvEmpty'), rvCount=document.getElementById('rvCount');
+  let kept=0;
+  document.querySelectorAll('.keep').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const card=btn.closest('.card');
+      const on=btn.classList.toggle('kept');
+      card.classList.toggle('isKept',on);
+      btn.lastChild.textContent = on? ' 已在复习队列' : '收藏入复习';
+      if(on){
+        kept++;
+        const t=card.querySelector('.c-title').textContent;
+        const div=document.createElement('div');
+        div.className='rv-item'; div.dataset.title=t;
+        div.innerHTML='<div class="t">'+t+'</div><div class="when">● 下次回看：明天</div>';
+        rvList.appendChild(div);
+      }else{
+        kept--;
+        const t=card.querySelector('.c-title').textContent;
+        const it=[...rvList.querySelectorAll('.rv-item')].find(x=>x.dataset.title===t);
+        if(it) it.remove();
+      }
+      rvCount.textContent=kept;
+      rvEmpty.style.display = kept? 'none':'block';
+    });
+  });
+
+  const review=document.getElementById('review'), mask=document.getElementById('mask');
+  const open=()=>{review.classList.add('open');mask.classList.add('on')};
+  const close=()=>{review.classList.remove('open');mask.classList.remove('on')};
+  document.getElementById('openRv').onclick=open;
+  document.getElementById('closeRv').onclick=close;
+  mask.onclick=close;
+})();
+</script>
+</body>
+</html>

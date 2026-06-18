@@ -1,0 +1,15 @@
+# X 登录态/浏览器缓存 —— 绝不上云
+x-userdata/
+x-raw.json
+
+# 本机配置（含 key），云端用 Secrets 注入，不要上传
+push_config.json
+
+# 本机上云用的子仓库工作区
+_pages_repo/
+
+# 日志/临时
+debug.log
+*.test.js
+__pycache__/
+*.pyc

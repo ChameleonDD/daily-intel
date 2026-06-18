@@ -1,0 +1,20 @@
+{
+  "list_name": "AI/虚幻/渲染/游戏技术 情报源",
+  "accounts": [
+    { "handle": "karpathy",        "group": "AI 前沿",        "who": "Andrej Karpathy，前 OpenAI 创始成员" },
+    { "handle": "ylecun",          "group": "AI 前沿",        "who": "Yann LeCun，Meta 首席 AI 科学家" },
+    { "handle": "_akhaliq",        "group": "AI 前沿",        "who": "AK，HuggingFace 论文搬运" },
+    { "handle": "DrJimFan",        "group": "AI 前沿",        "who": "Jim Fan，NVIDIA 具身智能" },
+    { "handle": "SebAaltonen",     "group": "渲染/图形",      "who": "Sebastian Aaltonen，前育碧渲染程序" },
+    { "handle": "self_shadow",     "group": "渲染/图形",      "who": "Stephen Hill，SIGGRAPH 实时渲染" },
+    { "handle": "Atrix256",        "group": "渲染/图形",      "who": "Alan Wolfe，图形/shader 数学" },
+    { "handle": "AnastasiaOpara",  "group": "渲染/图形",      "who": "Anastasia Opara，程序化生成" },
+    { "handle": "t_looman",        "group": "虚幻/游戏技术",  "who": "Tom Looman，前 Epic、UE 高产作者" },
+    { "handle": "_benui",          "group": "虚幻/游戏技术",  "who": "Ben Humphreys，UE UI 工程" },
+    { "handle": "flassari",        "group": "虚幻/游戏技术",  "who": "Ari Arnbjörnsson，Epic 布道师" },
+    { "handle": "WoodyDevs",       "group": "虚幻/游戏技术",  "who": "Woody Davis，UE 实时动画 TA" },
+    { "handle": "BenMildenhall",   "group": "3D 生成/重建",   "who": "Ben Mildenhall，NeRF 一作" },
+    { "handle": "_pratul_",        "group": "3D 生成/重建",   "who": "Pratul Srinivasan，NeRF 共同作者" },
+    { "handle": "poolio",          "group": "3D 生成/重建",   "who": "Ben Poole，DreamFusion 一作" }
+  ]
+}

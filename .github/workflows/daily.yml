@@ -1,0 +1,67 @@
+name: 每日情报站日报
+
+# 触发：每天北京时间 09:00（= UTC 01:00）。也可在 Actions 页手动点 Run。
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # 允许把生成的 data.js / archive 提交回仓库
+
+concurrency:
+  group: daily-intel
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 装依赖
+        run: pip install -r requirements.txt
+
+      - name: 生成日报（抓取 + DeepSeek 降噪 + 写 data.js + 归档）
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          RUN_PUBLISH: '1'    # 归档自包含快照到 archive/
+          RUN_DEPLOY: '0'     # 云端不另推子仓库；下一步直接 commit 回本仓库
+          RUN_NOTIFY: '0'     # 推送单独一步，确保提交完成后再推
+          TZ: Asia/Shanghai
+        run: python run.py
+
+      - name: 提交回仓库（GitHub Pages 自动发布）
+        run: |
+          git config user.name  "daily-intel-bot"
+          git config user.email "bot@users.noreply.github.com"
+          # 让推送链接永远指向最新一期
+          if [ -d archive ]; then
+            latest=$(ls -t archive/*.html 2>/dev/null | head -1)
+            if [ -n "$latest" ]; then cp "$latest" today.html; fi
+          fi
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+          else
+            git commit -m "chore: 每日情报站日报 $(date +%F)"
+            git push
+          fi
+
+      - name: 推送到手机（Bark）
+        if: ${{ success() }}
+        env:
+          BARK_KEY:  ${{ secrets.BARK_KEY }}
+          PAGE_URL:  ${{ secrets.PAGE_URL }}
+        run: |
+          if [ -z "$BARK_KEY" ]; then
+            echo "未配置 BARK_KEY Secret，跳过推送"
+          else
+            python notify.py
+          fi

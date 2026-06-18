@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TA 技术情报 · 为留存而读</title>
+<style>
+  :root{
+    --paper:#f7f5f0;
+    --card:#fffefb;
+    --ink:#23211c;
+    --sub:#6f6a5e;
+    --hint:#a8a294;
+    --line:#e7e2d6;
+    --line2:#d8d2c4;
+    --hi:#c2452f;
+    --mid:#c98a1e;
+    --lo:#5f8a3a;
+    --save:#9a6cff;
+    --saveink:#5b3ec9;
+    --c-x:#8a4fb0;
+    --font:"Songti SC","Source Han Serif SC",Georgia,"PingFang SC","Microsoft YaHei",serif;
+    --sans:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+
+  .top{position:sticky;top:0;z-index:20;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top-in{max-width:760px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px}
+  .mark{width:30px;height:30px;border-radius:8px;background:var(--ink);color:var(--paper);font-family:var(--font);display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+  .top h1{font-family:var(--font);font-size:18px;font-weight:600;letter-spacing:.5px}
+  .top .meta{font-size:12px;color:var(--hint);margin-top:1px}
+  .savebtn{margin-left:auto;font-size:12.5px;color:var(--saveink);background:#f1ecff;border:1px solid #e2d8ff;padding:6px 13px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:5px}
+  .savebtn b{font-weight:600}
+
+  .stalebar{max-width:760px;margin:14px auto 0;padding:0 22px}
+  .stalebox{background:#fbe7e3;border:1px solid #eebcb0;border-radius:6px;padding:11px 15px;font-family:var(--sans);font-size:12.5px;color:#9a3c25;line-height:1.6}
+  .stalebox b{font-weight:600}
+
+  .filters{max-width:760px;margin:0 auto;padding:16px 22px 4px;display:flex;gap:8px;flex-wrap:wrap}
+  .f{font-size:13px;color:var(--sub);background:transparent;border:1px solid var(--line2);padding:6px 14px;border-radius:18px;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:6px}
+  .f:hover{border-color:var(--ink);color:var(--ink)}
+  .f.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .f .dotmini{width:7px;height:7px;border-radius:50%}
+  .f .num{font-size:11px;opacity:.6}
+
+  .stream{max-width:760px;margin:0 auto;padding:18px 22px 80px}
+
+  .daysum{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--ink);border-radius:4px;padding:18px 20px;margin-bottom:26px}
+  .daysum .k{font-family:var(--sans);font-size:11px;letter-spacing:1.5px;color:var(--hint);text-transform:uppercase;margin-bottom:8px}
+  .daysum p{font-family:var(--font);font-size:16px;line-height:1.85;color:var(--ink)}
+  .daysum em{font-style:normal;background:linear-gradient(transparent 62%,#fff0a6 62%);padding:0 2px}
+
+  .secline{display:flex;align-items:center;gap:10px;margin:32px 0 14px}
+  .secline .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+  .secline .lbl{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.5px;color:var(--ink)}
+  .secline .cnt{font-family:var(--sans);font-size:11px;color:var(--hint)}
+  .secline .ln{flex:1;height:1px;background:var(--line)}
+
+  .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px 16px 22px;margin-bottom:14px;transition:.18s;overflow:hidden}
+  .card:hover{border-color:var(--line2);transform:translateY(-1px)}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+  .card.hi::before{background:var(--hi)} .card.mid::before{background:var(--mid)} .card.lo::before{background:var(--lo)}
+
+  .c-row1{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  .imp{font-family:var(--sans);font-size:10.5px;font-weight:600;padding:2px 7px;border-radius:4px;letter-spacing:.5px;display:inline-flex;align-items:center;gap:4px}
+  .imp::before{content:"";width:6px;height:6px;border-radius:50%}
+  .imp.hi{color:var(--hi);background:#f7e7e3}.imp.hi::before{background:var(--hi)}
+  .imp.mid{color:var(--mid);background:#f7eed8}.imp.mid::before{background:var(--mid)}
+  .imp.lo{color:var(--lo);background:#e9f1df}.imp.lo::before{background:var(--lo)}
+  .chtag{font-family:var(--sans);font-size:11px;color:var(--sub);display:inline-flex;align-items:center;gap:5px}
+  .chtag .cdot{width:7px;height:7px;border-radius:50%;flex:0 0 auto}
+  .src{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+  .xhandle{font-family:var(--sans);font-size:11.5px;font-weight:600;color:var(--c-x);display:inline-flex;align-items:center;gap:5px}
+  .xhandle::before{content:"𝕏";font-size:12px;color:var(--c-x);font-weight:700}
+  .xwho{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+
+  .c-title{font-family:var(--font);font-size:20px;font-weight:600;line-height:1.4;letter-spacing:.3px}
+  .c-sum{font-family:var(--font);font-size:15px;line-height:1.8;color:#403c33;margin-top:8px}
+
+  .c-ta{margin-top:12px;background:#f3f0e8;border-radius:5px;padding:10px 13px;display:flex;gap:9px}
+  .c-ta .lab{font-family:var(--sans);font-size:11px;font-weight:600;color:#7a5a14;background:#f0e2bf;border-radius:4px;padding:2px 7px;height:fit-content;flex:0 0 auto;letter-spacing:.5px}
+  .c-ta .txt{font-family:var(--sans);font-size:13px;line-height:1.65;color:#5a5142}
+
+  .c-foot{display:flex;align-items:center;margin-top:13px;padding-top:11px;border-top:1px dashed var(--line2)}
+  .keep{font-family:var(--sans);font-size:12.5px;color:var(--sub);background:transparent;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:3px 0}
+  .keep .ic{width:15px;height:15px;border:1.5px solid var(--hint);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:.15s}
+  .keep:hover .ic{border-color:var(--saveink)}
+  .keep.kept .ic{background:var(--save);border-color:var(--save)}
+  .keep.kept .ic::after{content:"✓";color:#fff;font-size:11px}
+  .keep.kept{color:var(--saveink)}
+  .link{margin-left:auto;font-family:var(--sans);font-size:12px;color:var(--hint);text-decoration:none}
+  .link:hover{color:var(--ink)}
+
+  .review{position:fixed;right:0;top:0;bottom:0;width:340px;max-width:88vw;background:var(--card);border-left:1px solid var(--line2);transform:translateX(100%);transition:.28s;z-index:30;display:flex;flex-direction:column}
+  .review.open{transform:none;box-shadow:-12px 0 40px rgba(0,0,0,.08)}
+  .rv-h{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center}
+  .rv-h h3{font-family:var(--font);font-size:16px;font-weight:600}
+  .rv-h .x{margin-left:auto;cursor:pointer;color:var(--hint);font-size:20px;line-height:1;background:none;border:none}
+  .rv-note{font-family:var(--sans);font-size:11.5px;color:var(--hint);padding:10px 20px;line-height:1.6;border-bottom:1px solid var(--line)}
+  .rv-list{flex:1;overflow-y:auto;padding:8px 14px}
+  .rv-item{border:1px solid var(--line);border-radius:5px;padding:11px 12px;margin-bottom:9px}
+  .rv-item .t{font-family:var(--font);font-size:14px;font-weight:600;line-height:1.4}
+  .rv-item .when{font-family:var(--sans);font-size:11px;color:var(--lo);margin-top:5px;display:flex;align-items:center;gap:5px}
+  .rv-empty{font-family:var(--sans);font-size:13px;color:var(--hint);text-align:center;padding:40px 20px;line-height:1.7}
+  .mask{position:fixed;inset:0;background:rgba(35,33,28,.18);z-index:25;opacity:0;pointer-events:none;transition:.2s}
+  .mask.on{opacity:1;pointer-events:auto}
+
+  .srcbar{max-width:760px;margin:0 auto;padding:0 22px}
+  .srcbox{background:#f1ede4;border:1px solid var(--line);border-radius:6px;padding:13px 16px;font-family:var(--sans);font-size:11.5px;color:var(--sub);line-height:1.7}
+  .srcbox b{color:var(--ink);font-weight:600}
+  .srcbox .miss{color:#b5502f}
+
+  .end{text-align:center;font-family:var(--sans);font-size:11.5px;color:var(--hint);margin-top:24px;line-height:1.7}
+  @media(max-width:560px){.c-title{font-size:18px}.daysum p{font-size:15px}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <div class="mark">識</div>
+    <div>
+      <h1>TA 技术情报</h1>
+      <div class="meta" id="metaLine">为留存而读，不为刷新而读</div>
+    </div>
+    <button class="savebtn" id="openRv">复习清单 <b id="rvCount">0</b></button>
+  </div>
+</div>
+
+<div class="stalebar" id="staleBar" style="display:none">
+  <div class="stalebox"><b>X 登录态已过期</b> —— 本期 X 动态沿用上次抓取的数据。需运行 <b>x_login.py</b> 重新登录一次，下次即可自动更新。</div>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<main class="stream" id="stream"></main>
+
+<div class="mask" id="mask"></div>
+<aside class="review" id="review">
+  <div class="rv-h"><h3>复习清单</h3><button class="x" id="closeRv">×</button></div>
+  <div class="rv-note">收藏的卡片会进入间隔重复队列：1天 → 7天 → 14天 → 30天。这是和普通日报最大的区别——读过不等于记住。</div>
+  <div class="rv-list" id="rvList"><div class="rv-empty" id="rvEmpty">还没有收藏。<br>读到"该停下精读"的卡片时，点一下"收藏入复习"。</div></div>
+</aside>
+
+<!-- 数据层：自动化每天只重写这一个文件 -->
+<script src="data.js"></script>
+
+<script>
+// ============ 渲染引擎：读 INTEL_DATA 动态生成页面 ============
+(function(){
+  const D = window.INTEL_DATA || {cards:[],channels:[],sources:{ok:[],missed:""}};
+  const esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const impLabel = {hi:"停下精读", mid:"值得关注", lo:"速览"};
+
+  // 顶部日期
+  document.getElementById('metaLine').textContent = (D.date? D.date+" · " : "") + (D.tagline||"为留存而读，不为刷新而读");
+
+  // X 过期提示
+  if(D.xStale) document.getElementById('staleBar').style.display = 'block';
+
+  // 频道定义查表（用于卡片上的领域小标签）
+  const chMap = {};
+  D.channels.forEach(ch=>{ chMap[ch.key]=ch; });
+
+  // ---- 主排序：重要性优先（hi>mid>lo），同档内按日期新→旧 ----
+  const total = D.cards.length;
+  const impRank = {hi:0, mid:1, lo:2};
+  // 从 src / who 里提取 "MM-DD" 做日期排序键；无日期的排在同档末尾
+  function dateKey(c){
+    const s = (c.who||c.src||"");
+    const m = s.match(/(\d{1,2})-(\d{1,2})/);
+    if(!m) return -1;                       // 无日期：最旧
+    return parseInt(m[1],10)*100 + parseInt(m[2],10);
+  }
+  const ordered = D.cards.map((c,i)=>({c,i})).sort((a,b)=>{
+    const ra=impRank[a.c.imp]??1, rb=impRank[b.c.imp]??1;
+    if(ra!==rb) return ra-rb;               // 1) 重要性档：hi>mid>lo
+    // 2) 「今日头条」手动置顶：rank 越小越靠前（没填 rank 的视为很大）
+    const ka = (a.c.rank==null?9999:a.c.rank), kb=(b.c.rank==null?9999:b.c.rank);
+    if(ka!==kb) return ka-kb;
+    const da=dateKey(a.c), db=dateKey(b.c);
+    if(da!==db) return db-da;               // 3) 日期新→旧
+    return a.i-b.i;                          // 4) 原始顺序兜底（稳定）
+  }).map(x=>x.c);
+
+  // 频道计数（过滤条仍按频道，保留领域检索入口）
+  const byCat = {};
+  D.cards.forEach(c=>{ (byCat[c.cat] = byCat[c.cat]||[]).push(c); });
+  const activeChannels = D.channels.filter(ch => (byCat[ch.key]||[]).length>0);
+
+  // 重要性分档计数（用于分档分隔线）
+  const impLabelMap = {hi:"停下精读", mid:"值得关注", lo:"速览快讯"};
+  const impDescMap  = {hi:"今天最该花时间的几条", mid:"扫到再决定要不要展开", lo:"知道有这回事即可"};
+  const impColorMap = {hi:"#c2452f", mid:"#c98a1e", lo:"#5f8a3a"};
+
+  // ---- 过滤条 ----
+  const filters = document.getElementById('filters');
+  let fhtml = `<button class="f on" data-f="all">全部 <span class="num">${total}</span></button>`;
+  activeChannels.forEach(ch=>{
+    fhtml += `<button class="f" data-f="${ch.key}"><span class="dotmini" style="background:${ch.color}"></span>${esc(ch.name)} <span class="num">${byCat[ch.key].length}</span></button>`;
+  });
+  fhtml += `<button class="f" data-f="kept">★ 已收藏</button>`;
+  filters.innerHTML = fhtml;
+
+  // ---- 卡片渲染 ----
+  function cardHtml(c){
+    const imp = c.imp||"mid";
+    const ch = chMap[c.cat] || {name:"", color:"#a8a294"};
+    // 领域小标签：色点 + 频道名，放在重要性徽标右边，让一眼知道这条属于哪个领域
+    const chTag = `<span class="chtag"><span class="cdot" style="background:${ch.color}"></span>${esc(ch.name)}</span>`;
+    // 来源行：X 卡片用 handle 样式，网页源用 .src
+    let metaRow;
+    if(c.handle){
+      metaRow = `<span class="xhandle">${esc(c.handle)}</span><span class="xwho">${esc(c.who||"")}</span>`;
+    }else{
+      metaRow = `<span class="src">${esc(c.src||"")}</span>`;
+    }
+    return `<article class="card ${imp}" data-cat="${c.cat}">
+      <div class="c-row1"><span class="imp ${imp}">${impLabel[imp]||"值得关注"}</span>${chTag}${metaRow}</div>
+      <div class="c-title">${esc(c.title)}</div>
+      <div class="c-sum">${esc(c.sum)}</div>
+      <div class="c-ta"><span class="lab">TA 视角</span><span class="txt">${esc(c.ta)}</span></div>
+      <div class="c-foot"><button class="keep"><span class="ic"></span>收藏入复习</button><a class="link" href="${esc(c.url||'#')}" target="_blank">原文 ↗</a></div>
+    </article>`;
+  }
+
+  const stream = document.getElementById('stream');
+  let html = "";
+
+  // 今日一句
+  if(D.todayHtml){
+    html += `<div class="daysum" data-cat="sum"><div class="k">今日一句</div><p>${D.todayHtml}</p></div>`;
+  }
+
+  // 按重要性分档渲染（默认视图）：hi → mid → lo，每档一条分隔线，档内已按日期新→旧
+  ["hi","mid","lo"].forEach(level=>{
+    const list = ordered.filter(c=>(c.imp||"mid")===level);
+    if(!list.length) return;
+    html += `<div class="secline" data-imp="${level}"><span class="dot" style="background:${impColorMap[level]}"></span><span class="lbl">${impLabelMap[level]}</span><span class="cnt">${list.length} 条 · ${impDescMap[level]}</span><span class="ln"></span></div>`;
+    list.forEach(c=> html += cardHtml(c));
+  });
+
+  // 信息源说明
+  if(D.sources){
+    const ok = (D.sources.ok||[]).map(esc).join(" · ");
+    html += `<div class="srcbar"><div class="srcbox"><b>本期信息源（${(D.sources.ok||[]).length} 个抓取成功）：</b>${ok}`;
+    if(D.sources.missed) html += `<br><span class="miss">未覆盖：${esc(D.sources.missed)}</span>`;
+    html += `</div></div>`;
+  }
+
+  html += `<div class="end">今日 ${total} 条 · 按重要性排序，最该停下的在最前；卡片上的色点标注所属领域<br>内容均来自原媒体，本站仅作摘要整理与回链</div>`;
+  stream.innerHTML = html;
+
+  // ============ 交互：过滤 / 收藏 / 复习抽屉（与原版逻辑一致） ============
+  const cards = ()=>[...document.querySelectorAll('.card')];
+  const seclines = ()=>[...document.querySelectorAll('.secline')];
+  const srcbar = document.querySelector('.srcbar');
+  const daysum = document.querySelector('.daysum');
+
+  filters.addEventListener('click',e=>{
+    const b=e.target.closest('.f'); if(!b)return;
+    [...filters.children].forEach(x=>x.classList.toggle('on',x===b));
+    const f=b.dataset.f;
+    cards().forEach(c=>{
+      let show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : c.dataset.cat===f;
+      c.style.display = show ? '' : 'none';
+    });
+    // 分隔线是「重要性分档」：只在「全部」视图显示；点频道/已收藏时隐藏，卡片连续平铺
+    seclines().forEach(s=>{ s.style.display = (f==='all') ? 'flex' : 'none'; });
+    if(daysum) daysum.style.display = (f==='all')?'block':'none';
+    if(srcbar) srcbar.style.display = (f==='all')?'block':'none';
+  });
+
+  const rvList=document.getElementById('rvList'), rvEmpty=document.getElementById('rvEmpty'), rvCount=document.getElementById('rvCount');
+  let kept=0;
+  document.querySelectorAll('.keep').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const card=btn.closest('.card');
+      const on=btn.classList.toggle('kept');
+      card.classList.toggle('isKept',on);
+      btn.lastChild.textContent = on? ' 已在复习队列' : '收藏入复习';
+      if(on){
+        kept++;
+        const t=card.querySelector('.c-title').textContent;
+        const div=document.createElement('div');
+        div.className='rv-item'; div.dataset.title=t;
+        div.innerHTML='<div class="t">'+t+'</div><div class="when">● 下次回看：明天</div>';
+        rvList.appendChild(div);
+      }else{
+        kept--;
+        const t=card.querySelector('.c-title').textContent;
+        const it=[...rvList.querySelectorAll('.rv-item')].find(x=>x.dataset.title===t);
+        if(it) it.remove();
+      }
+      rvCount.textContent=kept;
+      rvEmpty.style.display = kept? 'none':'block';
+    });
+  });
+
+  const review=document.getElementById('review'), mask=document.getElementById('mask');
+  const open=()=>{review.classList.add('open');mask.classList.add('on')};
+  const close=()=>{review.classList.remove('open');mask.classList.remove('on')};
+  document.getElementById('openRv').onclick=open;
+  document.getElementById('closeRv').onclick=close;
+  mask.onclick=close;
+})();
+</script>
+</body>
+</html>
