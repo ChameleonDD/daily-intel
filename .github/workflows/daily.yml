@@ -54,14 +54,15 @@ jobs:
             git push
           fi
 
-      - name: 推送到手机（Bark）
+      - name: 推送到手机（Bark=iOS / ntfy=安卓，多人混合）
         if: ${{ success() }}
         env:
-          BARK_KEY:  ${{ secrets.BARK_KEY }}
-          PAGE_URL:  ${{ secrets.PAGE_URL }}
+          BARK_KEY:     ${{ secrets.BARK_KEY }}      # iPhone：多个 key 逗号隔开
+          NTFY_TOPICS:  ${{ secrets.NTFY_TOPICS }}   # 安卓：多个 topic 逗号隔开
+          PAGE_URL:     ${{ secrets.PAGE_URL }}
         run: |
-          if [ -z "$BARK_KEY" ]; then
-            echo "未配置 BARK_KEY Secret，跳过推送"
+          if [ -z "$BARK_KEY" ] && [ -z "$NTFY_TOPICS" ]; then
+            echo "未配置 BARK_KEY / NTFY_TOPICS Secret，跳过推送"
           else
             python notify.py
           fi
