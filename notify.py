@@ -20,6 +20,13 @@ import urllib.request
 from pathlib import Path
 from datetime import datetime
 
+# Windows 控制台默认 GBK，emoji/中文打印会崩 —— 强制 stdout 走 UTF-8。
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 BASE = Path(__file__).parent
 CFG = BASE / "push_config.json"
 DATA = BASE / "data.js"
@@ -38,6 +45,39 @@ def load_cfg():
         print("ERR_NO_CONFIG: 缺少 push_config.json 且未设置 BARK_KEY 环境变量")
         return None
     return json.loads(CFG.read_text(encoding="utf-8"))
+
+
+def collect_keys(cfg):
+    """收集所有要推送的 key，支持单 key 和多 key（多人）。
+
+    优先级与兼容规则：
+      1. 环境变量 BARK_KEY：支持逗号/分号/空格分隔多个 key（CI 里多人）
+      2. push_config.json 的 bark.keys（数组，推荐多人写法）
+      3. push_config.json 的 bark.key（字符串，老的单人写法，向后兼容）
+    返回去重后的 key 列表。
+    """
+    keys = []
+    bark = cfg.get("bark", {})
+    # 数组写法（多人）
+    arr = bark.get("keys")
+    if isinstance(arr, list):
+        keys.extend(arr)
+    # 字符串写法（单人 / CI 环境变量，可含分隔符）
+    single = bark.get("key", "")
+    if isinstance(single, str) and single:
+        keys.extend(re.split(r"[,\s;]+", single))
+    # 清洗：去空、去占位符、去重（保序）
+    seen, out = set(), []
+    for k in keys:
+        k = (k or "").strip().rstrip("/")
+        # 容错：用户可能填了完整 URL，截出最后一段 key
+        if k.startswith("http"):
+            k = k.split("/")[-1]
+        if not k or k.startswith("在此") or k in seen:
+            continue
+        seen.add(k)
+        out.append(k)
+    return out
 
 
 def extract_summary():
@@ -68,12 +108,12 @@ def main():
     if not cfg:
         return
 
-    key = cfg.get("bark", {}).get("key", "")
+    keys = collect_keys(cfg)
     server = cfg.get("bark", {}).get("server", "https://api.day.app").rstrip("/")
     page_url = cfg.get("github_pages", {}).get("page_url", "")
 
-    if not key or key.startswith("在此"):
-        print("ERR_NO_BARK_KEY: 请先在 push_config.json 填 bark.key（见文件里的_怎么拿）")
+    if not keys:
+        print("ERR_NO_BARK_KEY: 请先在 push_config.json 填 bark.key 或 bark.keys（见文件里的_怎么拿）")
         return
 
     # 标题/正文：命令行优先，否则自动提取
@@ -86,24 +126,33 @@ def main():
     # Bark URL 规则：https://server/key/标题/正文?url=点击跳转
     seg_title = urllib.parse.quote(title, safe="")
     seg_body = urllib.parse.quote(body, safe="")
-    url = f"{server}/{key}/{seg_title}/{seg_body}"
     params = {"group": "情报站", "icon": "https://api.day.app/assets/icon.png"}
     if page_url and not page_url.startswith("https://你的"):
         params["url"] = page_url  # 点横幅跳转的目标
-    url += "?" + urllib.parse.urlencode(params)
+    qs = urllib.parse.urlencode(params)
 
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "intel-notify/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        if data.get("code") == 200:
-            print(f"PUSH_OK: {title} | {body}")
-            if "url" not in params:
-                print("WARN_NO_PAGE_URL: 已推送但未带跳转链接（page_url 还没填，点开横幅不会跳网页）")
-        else:
-            print(f"PUSH_FAIL: {data}")
-    except Exception as e:
-        print(f"PUSH_ERR: {e}")
+    # 逐个 key 推送（多人）。单个失败不影响其他人。
+    ok, fail = 0, 0
+    for k in keys:
+        url = f"{server}/{k}/{seg_title}/{seg_body}?{qs}"
+        masked = k[:4] + "***"  # 日志里不暴露完整 key
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "intel-notify/1.0"})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            if data.get("code") == 200:
+                ok += 1
+                print(f"PUSH_OK [{masked}]: {title} | {body}")
+            else:
+                fail += 1
+                print(f"PUSH_FAIL [{masked}]: {data}")
+        except Exception as e:
+            fail += 1
+            print(f"PUSH_ERR [{masked}]: {e}")
+
+    print(f"PUSH_SUMMARY: 共 {len(keys)} 人，成功 {ok}，失败 {fail}")
+    if "url" not in params:
+        print("WARN_NO_PAGE_URL: 已推送但未带跳转链接（page_url 还没填，点开横幅不会跳网页）")
 
 
 if __name__ == "__main__":
