@@ -54,15 +54,17 @@ jobs:
             git push
           fi
 
-      - name: 推送到手机（Bark=iOS / ntfy=安卓，多人混合）
+      - name: 推送通知（Bark=iOS / ntfy=安卓 / PushPlus=微信，多人混合）
         if: ${{ success() }}
         env:
-          BARK_KEY:     ${{ secrets.BARK_KEY }}      # iPhone：多个 key 逗号隔开
-          NTFY_TOPICS:  ${{ secrets.NTFY_TOPICS }}   # 安卓：多个 topic 逗号隔开
-          PAGE_URL:     ${{ secrets.PAGE_URL }}
+          BARK_KEY:         ${{ secrets.BARK_KEY }}         # iPhone：多个 key 逗号隔开
+          NTFY_TOPICS:      ${{ secrets.NTFY_TOPICS }}      # 安卓：多个 topic 逗号隔开
+          PUSHPLUS_TOKENS:  ${{ secrets.PUSHPLUS_TOKENS }}  # 微信：你的 token（免装App）
+          PUSHPLUS_TOPIC:   ${{ secrets.PUSHPLUS_TOPIC }}   # 微信群组编码（多人，可选）
+          PAGE_URL:         ${{ secrets.PAGE_URL }}
         run: |
-          if [ -z "$BARK_KEY" ] && [ -z "$NTFY_TOPICS" ]; then
-            echo "未配置 BARK_KEY / NTFY_TOPICS Secret，跳过推送"
+          if [ -z "$BARK_KEY" ] && [ -z "$NTFY_TOPICS" ] && [ -z "$PUSHPLUS_TOKENS" ]; then
+            echo "未配置任何推送 Secret（BARK_KEY / NTFY_TOPICS / PUSHPLUS_TOKENS），跳过推送"
           else
             python notify.py
           fi

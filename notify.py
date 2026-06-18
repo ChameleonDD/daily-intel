@@ -35,23 +35,28 @@ DATA = BASE / "data.js"
 def load_cfg():
     """优先用环境变量（GitHub Actions Secrets），否则读 push_config.json。
 
-    支持两类推送目标：
+    支持三类推送目标：
       - BARK_KEY ：iOS 的 Bark，逗号/空格/分号分隔多个 key
       - NTFY_TOPICS ：安卓的 ntfy，逗号/空格/分号分隔多个 topic
+      - PUSHPLUS_TOKENS ：微信的 PushPlus，逗号/空格/分号分隔多个 token（无需装 App）
     只要任一环境变量存在就走环境变量分支（CI 场景）。
     """
     env_bark = os.environ.get("BARK_KEY", "").strip()
     env_ntfy = os.environ.get("NTFY_TOPICS", "").strip()
-    if env_bark or env_ntfy:
+    env_pp = os.environ.get("PUSHPLUS_TOKENS", "").strip()
+    if env_bark or env_ntfy or env_pp:
         return {
             "bark": {"key": env_bark,
                      "server": os.environ.get("BARK_SERVER", "https://api.day.app")},
             "ntfy": {"topics": env_ntfy,
                      "server": os.environ.get("NTFY_SERVER", "https://ntfy.sh")},
+            "pushplus": {"tokens": env_pp,
+                         "topic": os.environ.get("PUSHPLUS_TOPIC", "").strip(),
+                         "server": os.environ.get("PUSHPLUS_SERVER", "https://www.pushplus.plus")},
             "github_pages": {"page_url": os.environ.get("PAGE_URL", "")},
         }
     if not CFG.exists():
-        print("ERR_NO_CONFIG: 缺少 push_config.json 且未设置 BARK_KEY/NTFY_TOPICS 环境变量")
+        print("ERR_NO_CONFIG: 缺少 push_config.json 且未设置 BARK_KEY/NTFY_TOPICS/PUSHPLUS_TOKENS 环境变量")
         return None
     return json.loads(CFG.read_text(encoding="utf-8"))
 
@@ -115,6 +120,20 @@ def collect_targets(cfg):
             seen.add(sig)
             targets.append({"type": "ntfy", "value": t})
 
+    # PushPlus（微信，无需装 App）。token 是 32 位十六进制串。
+    # 若配了 topic（群组编码），则一个 token 一次群发给整组人，无需逐个填 token。
+    pp = cfg.get("pushplus", {})
+    pp_topic = (pp.get("topic", "") or "").strip()
+    pp_raw = _split_multi(pp.get("tokens")) + _split_multi(pp.get("token", ""))
+    for tk in pp_raw:
+        tk = (tk or "").strip()
+        if not tk or tk.startswith("在此"):
+            continue
+        sig = ("pushplus", tk)
+        if sig not in seen:
+            seen.add(sig)
+            targets.append({"type": "pushplus", "value": tk, "topic": pp_topic})
+
     return targets
 
 
@@ -149,11 +168,12 @@ def main():
     targets = collect_targets(cfg)
     bark_server = cfg.get("bark", {}).get("server", "https://api.day.app").rstrip("/")
     ntfy_server = cfg.get("ntfy", {}).get("server", "https://ntfy.sh").rstrip("/")
+    pushplus_server = cfg.get("pushplus", {}).get("server", "https://www.pushplus.plus").rstrip("/")
     page_url = cfg.get("github_pages", {}).get("page_url", "")
     has_page = bool(page_url) and not page_url.startswith("https://你的")
 
     if not targets:
-        print("ERR_NO_TARGET: 没有任何推送目标。请填 bark.key/keys（iOS）或 ntfy.topic/topics（安卓）")
+        print("ERR_NO_TARGET: 没有任何推送目标。请填 bark（iOS）/ ntfy（安卓）/ pushplus（微信，免装App）任一")
         return
 
     # 标题/正文：命令行优先，否则自动提取
@@ -180,7 +200,7 @@ def main():
                 with urllib.request.urlopen(req, timeout=15) as resp:
                     data = json.loads(resp.read().decode("utf-8"))
                 good = data.get("code") == 200
-            else:
+            elif ttype == "ntfy":
                 # ntfy：POST 到 server/topic，标题/优先级/点击跳转走 HTTP 头
                 # 头里不能直接放中文/非 ASCII，用 RFC2047 编码标题，正文放 body。
                 url = f"{ntfy_server}/{val}"
@@ -197,6 +217,29 @@ def main():
                 with urllib.request.urlopen(req, timeout=15) as resp:
                     data = json.loads(resp.read().decode("utf-8"))
                 good = bool(data.get("id"))  # ntfy 成功返回消息 id
+            else:
+                # PushPlus（微信）：POST JSON 到 server/send
+                # content 支持 HTML，所以把跳转链接做成可点击的「打开完整日报」按钮。
+                content = body
+                if has_page:
+                    content += (f'<br><br><a href="{page_url}">→ 打开完整日报</a>')
+                payload = {
+                    "token": val,
+                    "title": title,
+                    "content": content,
+                    "template": "html",
+                }
+                if tg.get("topic"):
+                    payload["topic"] = tg["topic"]  # 群组编码 → 一次群发整组
+                req = urllib.request.Request(
+                    f"{pushplus_server}/send",
+                    data=json.dumps(payload).encode("utf-8"),
+                    headers={"Content-Type": "application/json",
+                             "User-Agent": "intel-notify/1.0"},
+                    method="POST")
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                good = data.get("code") == 200  # PushPlus 收到请求返回 200
 
             if good:
                 ok += 1
