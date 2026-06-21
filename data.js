@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年6月20日 · 周六",
+  "date": "2026年6月21日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>UE6发布引发行业热议</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今日暂无新增 —— 近期热点此前都已读过。给你翻出了 1 条前几天最值得回看的，往下拉「今天的刷完了，来回顾下前几天的」。",
   "channels": [
     {
       "key": "x",
@@ -116,24 +116,6 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Houdini泡沫模拟",
-      "sum": "Houdini泡沫模拟效果逼真，视觉上令人满足。",
-      "ta": "可作为Niagara流体特效的参考，研究泡沫生成算法。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/this-houdini-foam-simulation-it-s-very-satisfying-to-watch/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "UEFN创作者分成超10亿",
-      "sum": "Epic通过UEFN向独立创作者支付超10亿美元。",
-      "ta": "UEFN生态成熟，可关注其工具链对TA工作流的影响。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/epic-games-has-paid-out-over-usd1-billion-to-indie-creators-through-unreal-editor-for-fortnite/"
-    },
-    {
       "cat": "tech",
       "imp": "hi",
       "rank": 1,
@@ -141,55 +123,11 @@ window.INTEL_DATA = {
       "sum": "开发者对UE5.8、UE6、MCP、AI工作流、Verse等公告反应不一。",
       "ta": "UE6路线图直接影响TA的管线规划，需深入评估新特性。",
       "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Unity线框着色器",
-      "sum": "一个使用真实拓扑的Unity线框效果着色器。",
-      "ta": "可用于调试或风格化渲染，快速集成到Unity项目。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/render-wireframe-effects-in-unity-with-this-shader/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Epic游戏商店将大改版",
-      "sum": "Epic计划重构启动器，增加个性化、补丁说明等功能。",
-      "ta": "商店改版可能影响UE分发渠道，但非核心技术关注点。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/epic-s-roadmap-for-its-game-store-includes-overhauled-launcher/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Kabam裁员并合并LA办公室",
-      "sum": "《漫威冠军之争》开发商Kabam裁员并整合洛杉矶办公室。",
-      "ta": "行业裁员动态，但无直接技术关联。",
-      "src": "Game Developer · 06-19",
-      "url": "https://www.gamedeveloper.com/business/kabam-making-layoffs-after-choosing-to-consolidate-la-office"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏高管卷入秘密社团",
-      "sum": "前Xbox总裁和Take-Two CEO被曝与Peter Thiel秘密会议有关。",
-      "ta": "行业八卦，无技术价值。",
-      "src": "Game Developer · 06-19",
-      "url": "https://www.gamedeveloper.com/business/report-former-xbox-president-sarah-bond-and-take-two-ceo-strauss-zelnick-involved-in-peter-thiel-backed-secret-society"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "R星法律挫折与FF税收优惠",
-      "sum": "R星法律受挫、最终幻想税收优惠、PlayStation用AI替代PC。",
-      "ta": "行业新闻汇总，无直接技术细节。",
-      "src": "Game Developer · 06-19",
-      "url": "https://www.gamedeveloper.com/business/rockstar-s-legal-setback-final-fantasy-tax-incentives-and-playstation-swaps-pc-for-ai-patch-notes-57"
+      "url": "https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs/",
+      "flashback": true
     }
   ],
-  "flashbackTitle": "",
+  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
   "sources": {
     "ok": [
       "Unreal Engine",
