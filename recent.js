@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-21 14:10",
+  "updated": "2026-06-22 14:35",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多模态扩散语言模型",
+      "sum": "提出并行区域感知的多模态扩散语言模型。",
+      "ta": "与游戏实时渲染无直接关联，可速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.19534"
+    },
     {
       "cat": "gfx",
       "imp": "mid",

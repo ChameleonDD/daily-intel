@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年6月21日 · 周日",
+  "date": "2026年6月22日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今日暂无新增 —— 近期热点此前都已读过。给你翻出了 1 条前几天最值得回看的，往下拉「今天的刷完了，来回顾下前几天的」。",
+  "todayHtml": "今天值得停下精读的有：<em>多模态扩散语言模型</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -114,6 +114,15 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "转发 · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多模态扩散语言模型",
+      "sum": "提出并行区域感知的多模态扩散语言模型。",
+      "ta": "与游戏实时渲染无直接关联，可速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.19534"
     },
     {
       "cat": "tech",
