@@ -2,8 +2,143 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-22 14:35",
+  "updated": "2026-06-23 13:09",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Epic免费UE专业课程",
+      "sum": "Epic开发者社区免费开放20+门UE专业课程，涵盖动画、游戏开发等。",
+      "ta": "可作为团队新人培训或TA技能拓展的免费学习资源。",
+      "src": "Unreal Engine · 06-15",
+      "url": "https://www.unrealengine.com/news/free-professional-unreal-engine-courses-now-available-on-the-epic-developer-community"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "显式几何约束3D生成",
+      "sum": "Arbor通过显式几何条件控制3D资产生成的空间占用。",
+      "ta": "对程序化生成工作流有参考价值，可控制物体空间边界。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.23514v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "等变流匹配网格生成",
+      "sum": "MeshFlow直接生成三角网格，保持顶点和面的置换不变性。",
+      "ta": "直接输出网格的生成方法，可能简化3D资产管线。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.23489v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高分辨率人体4D数据集",
+      "sum": "VolHuMe数据集包含104个受试者的高质量4D人体扫描。",
+      "ta": "可用于训练人体动画或物理模拟模型，但数据量有限。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.23062v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可控纹理平铺扩散模型",
+      "sum": "用变换RoPE增强扩散模型实现可控纹理平铺。",
+      "ta": "对材质贴图自动生成和纹理合成有潜在应用。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.22945v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "紧凑位移映射基网格",
+      "sum": "DJM用三角形雅可比计算紧凑基网格，支持位移映射。",
+      "ta": "直接优化置换贴图基网格，对植被/地形LOD和内存压缩有价值。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.22880v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "光照一致对象迁移",
+      "sum": "在辐射场间迁移对象并保持光照一致性。",
+      "ta": "对3DGS场景合成和VFX工作流有参考意义。",
+      "src": "arXiv · cs.GR · 06-21",
+      "url": "https://arxiv.org/abs/2606.22481v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "网格转3DGS白盒构建",
+      "sum": "Mesh2GS通过全光采样将网格转换为3DGS表示。",
+      "ta": "桥接网格和3DGS管线，可用于资产格式转换。",
+      "src": "arXiv · cs.GR · 06-20",
+      "url": "https://arxiv.org/abs/2606.21898v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "物理信息微光学合成引擎",
+      "sum": "OSOG为微光学环境提供可微物理合成数据引擎。",
+      "ta": "专业领域工具，与游戏图形学关联较弱。",
+      "src": "arXiv · cs.GR · 06-19",
+      "url": "https://arxiv.org/abs/2606.21381v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "物理交互虚拟人化身",
+      "sum": "PIAvatar通过变形梯度解耦实现物理交互化身。",
+      "ta": "对角色物理交互和动画系统有参考价值。",
+      "src": "arXiv · cs.GR · 06-19",
+      "url": "https://arxiv.org/abs/2606.21162v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Maya泰龙角色绑定展示",
+      "sum": "Sahil Banik展示Maya中泰龙角色绑定，含发光眼睛。",
+      "ta": "角色绑定参考案例，可学习眼睛发光效果实现。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/this-maya-rig-of-tai-lung-with-his-iconic-glowing-eyes-looks-really-cool/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5/Houdini短片制作解析",
+      "sum": "Argentum Studio分享UE5/Houdini/Blender短片《The Cradle》制作流程。",
+      "ta": "包含自定义毛发渲染系统，对特效和工具开发有参考。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/creating-surreal-short-film-the-cradle-with-ue5-houdini-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender田园景观作品",
+      "sum": "展示Blender制作的19世纪田园景观。",
+      "ta": "环境美术参考，无技术细节。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/take-a-look-at-this-19th-century-pastoral-landscape-made-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance 3D瓢虫材质教程",
+      "sum": "Romain Lemaire讲解用Substance 3D SDF制作瓢虫材质。",
+      "ta": "材质设计流程参考，SDF用法可迁移到其他生物材质。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/how-to-design-a-vibrant-ladybug-material-using-substance-3d/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "小团队游戏22小时回本",
+      "sum": "独立游戏《Thank You For Your Application》22小时收回开发成本。",
+      "ta": "行业案例，与TA技术无直接关联。",
+      "src": "Game Developer · 06-22",
+      "url": "https://www.gamedeveloper.com/business/-larger-budgets-and-longer-schedules-do-not-lead-to-better-games-thank-you-for-your-application-recoups-dev-costs-in-22-hours"
+    },
     {
       "cat": "ai",
       "imp": "lo",
@@ -148,15 +283,6 @@ window.INTEL_RECENT = {
       "ta": "对引擎代码分析和工具开发有参考价值。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2606.19830"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Maya鼠标光标工具菜单",
-      "sum": "Maya工具让你在鼠标光标下快速选择工具和命令。",
-      "ta": "提升Maya日常操作效率的小工具。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/this-maya-tool-allows-you-to-keep-what-you-need-under-your-mouse-cursor/"
     },
     {
       "cat": "tech",

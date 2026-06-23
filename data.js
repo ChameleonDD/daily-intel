@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年6月22日 · 周一",
+  "date": "2026年6月23日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>多模态扩散语言模型</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>紧凑位移映射基网格</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,27 +116,196 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多模态扩散语言模型",
-      "sum": "提出并行区域感知的多模态扩散语言模型。",
-      "ta": "与游戏实时渲染无直接关联，可速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.19534"
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Epic免费UE专业课程",
+      "sum": "Epic开发者社区免费开放20+门UE专业课程，涵盖动画、游戏开发等。",
+      "ta": "可作为团队新人培训或TA技能拓展的免费学习资源。",
+      "src": "Unreal Engine · 06-15",
+      "url": "https://www.unrealengine.com/news/free-professional-unreal-engine-courses-now-available-on-the-epic-developer-community"
     },
     {
-      "cat": "tech",
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "显式几何约束3D生成",
+      "sum": "Arbor通过显式几何条件控制3D资产生成的空间占用。",
+      "ta": "对程序化生成工作流有参考价值，可控制物体空间边界。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.23514v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "等变流匹配网格生成",
+      "sum": "MeshFlow直接生成三角网格，保持顶点和面的置换不变性。",
+      "ta": "直接输出网格的生成方法，可能简化3D资产管线。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.23489v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高分辨率人体4D数据集",
+      "sum": "VolHuMe数据集包含104个受试者的高质量4D人体扫描。",
+      "ta": "可用于训练人体动画或物理模拟模型，但数据量有限。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.23062v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可控纹理平铺扩散模型",
+      "sum": "用变换RoPE增强扩散模型实现可控纹理平铺。",
+      "ta": "对材质贴图自动生成和纹理合成有潜在应用。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.22945v1"
+    },
+    {
+      "cat": "gfx",
       "imp": "hi",
-      "rank": 1,
-      "title": "UE6发布引发行业热议",
-      "sum": "开发者对UE5.8、UE6、MCP、AI工作流、Verse等公告反应不一。",
-      "ta": "UE6路线图直接影响TA的管线规划，需深入评估新特性。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs/",
-      "flashback": true
+      "title": "紧凑位移映射基网格",
+      "sum": "DJM用三角形雅可比计算紧凑基网格，支持位移映射。",
+      "ta": "直接优化置换贴图基网格，对植被/地形LOD和内存压缩有价值。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.22880v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "光照一致对象迁移",
+      "sum": "在辐射场间迁移对象并保持光照一致性。",
+      "ta": "对3DGS场景合成和VFX工作流有参考意义。",
+      "src": "arXiv · cs.GR · 06-21",
+      "url": "https://arxiv.org/abs/2606.22481v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "网格转3DGS白盒构建",
+      "sum": "Mesh2GS通过全光采样将网格转换为3DGS表示。",
+      "ta": "桥接网格和3DGS管线，可用于资产格式转换。",
+      "src": "arXiv · cs.GR · 06-20",
+      "url": "https://arxiv.org/abs/2606.21898v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "3DGS渲染单粒子效应",
+      "sum": "分析3DGS在太空等环境中的位级错误影响。",
+      "ta": "对边缘设备部署3DGS有参考，但非主流游戏场景。",
+      "src": "arXiv · cs.GR · 06-19",
+      "url": "https://arxiv.org/abs/2606.21791v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS场景级物理模拟",
+      "sum": "用3DGS实现场景级异构物理模拟，支持交互。",
+      "ta": "让3DGS资产具备物理交互能力，可能用于动态环境。",
+      "src": "arXiv · cs.GR · 06-19",
+      "url": "https://arxiv.org/abs/2606.21753v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "物理信息微光学合成引擎",
+      "sum": "OSOG为微光学环境提供可微物理合成数据引擎。",
+      "ta": "专业领域工具，与游戏图形学关联较弱。",
+      "src": "arXiv · cs.GR · 06-19",
+      "url": "https://arxiv.org/abs/2606.21381v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "物理交互虚拟人化身",
+      "sum": "PIAvatar通过变形梯度解耦实现物理交互化身。",
+      "ta": "对角色物理交互和动画系统有参考价值。",
+      "src": "arXiv · cs.GR · 06-19",
+      "url": "https://arxiv.org/abs/2606.21162v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Maya泰龙角色绑定展示",
+      "sum": "Sahil Banik展示Maya中泰龙角色绑定，含发光眼睛。",
+      "ta": "角色绑定参考案例，可学习眼睛发光效果实现。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/this-maya-rig-of-tai-lung-with-his-iconic-glowing-eyes-looks-really-cool/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5/Houdini短片制作解析",
+      "sum": "Argentum Studio分享UE5/Houdini/Blender短片《The Cradle》制作流程。",
+      "ta": "包含自定义毛发渲染系统，对特效和工具开发有参考。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/creating-surreal-short-film-the-cradle-with-ue5-houdini-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender田园景观作品",
+      "sum": "展示Blender制作的19世纪田园景观。",
+      "ta": "环境美术参考，无技术细节。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/take-a-look-at-this-19th-century-pastoral-landscape-made-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance 3D瓢虫材质教程",
+      "sum": "Romain Lemaire讲解用Substance 3D SDF制作瓢虫材质。",
+      "ta": "材质设计流程参考，SDF用法可迁移到其他生物材质。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/how-to-design-a-vibrant-ladybug-material-using-substance-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender权重绘制工具更新",
+      "sum": "Hamdi Amer的Weight Paint Box工具更新改进。",
+      "ta": "Blender权重绘制效率工具，可关注更新内容。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/blender-tool-for-weight-painting-updated-with-improvements/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender面部绑定作品",
+      "sum": "Ryan Lykos制作《绝区零》朱鸢的Blender面部绑定。",
+      "ta": "面部绑定参考案例，可学习风格化角色绑定。",
+      "src": "80 Level · 06-22",
+      "url": "https://80.lv/articles/blender-facial-rig-for-zenless-zone-zero-s-zhu-yuan/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "小团队游戏22小时回本",
+      "sum": "独立游戏《Thank You For Your Application》22小时收回开发成本。",
+      "ta": "行业案例，与TA技术无直接关联。",
+      "src": "Game Developer · 06-22",
+      "url": "https://www.gamedeveloper.com/business/-larger-budgets-and-longer-schedules-do-not-lead-to-better-games-thank-you-for-your-application-recoups-dev-costs-in-22-hours"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Maya材质管理器免费工具",
+      "sum": "Materialist是Maya的免费材质管理工具。",
+      "ta": "可提升材质管理效率，适合Maya管线。",
+      "src": "Tech-Artists · 06-22",
+      "url": "https://www.tech-artists.org/t/free-tool-materialist-a-material-manager-shelf-for-maya/18429"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Maya一键毛发构建工具",
+      "sum": "Groomist是Maya中一键构建Ornatrix毛发的免费工具。",
+      "ta": "简化毛发制作流程，对角色毛发管线有用。",
+      "src": "Tech-Artists · 06-22",
+      "url": "https://www.tech-artists.org/t/free-tool-groomist-a-one-click-ornatrix-groom-builder-for-maya/18427"
     }
   ],
-  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
+  "flashbackTitle": "",
   "sources": {
     "ok": [
       "Unreal Engine",
