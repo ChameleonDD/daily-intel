@@ -2,8 +2,90 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-23 13:09",
+  "updated": "2026-06-24 13:06",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE 5.8 HMI模板发布",
+      "sum": "Epic发布UE 5.8 HMI模板与数据缩减管线插件，加速HMI开发。",
+      "ta": "UE 5.8新模板与插件可能影响TA在车载/工业HMI项目的渲染管线与数据流设计。",
+      "src": "Unreal Engine · 06-23",
+      "url": "https://www.unrealengine.com/news/unreal-engine-hmi-template-available-now"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "单图即时高斯编码头像",
+      "sum": "FiCA从单张肖像图前馈生成可驱动的高斯编码头像。",
+      "ta": "单图生成可驱动3D头像，对角色管线与实时面部动画有潜在应用。",
+      "src": "arXiv · cs.GR · 06-23",
+      "url": "https://arxiv.org/abs/2606.24232v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "文本嵌入语义融合对齐",
+      "sum": "提出Token-to-Token对齐方法，改进文本到图像生成的语义混合。",
+      "ta": "文本嵌入对齐技术可提升材质/贴图生成中语义控制的精确度。",
+      "src": "arXiv · cs.GR · 06-22",
+      "url": "https://arxiv.org/abs/2606.24021v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "扩散Transformer全面评估",
+      "sum": "DiffusionBench提出扩散Transformer模型的全面评估基准。",
+      "ta": "扩散Transformer评估基准可能影响未来实时生成模型的选型与优化。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.24888"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "FLUX3D高保真高斯生成",
+      "sum": "FLUX3D用扩散对齐稀疏表示生成高保真3D高斯场。",
+      "ta": "3D高斯生成新方法，对程序化资产与场景生成管线有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.24874"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Epic首席布道师离职",
+      "sum": "Epic Games首席布道师Sjoerd De Jong工作12年后离职。",
+      "ta": "Epic核心人物离职可能影响引擎社区策略与开发者关系。",
+      "src": "80 Level · 06-24",
+      "url": "https://80.lv/articles/lead-evangelist-sjoerd-de-jong-leaves-epic-games-after-12-years/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ILM灯光TD谈VFX挑战",
+      "sum": "ILM资深灯光TD分享动画与实拍VFX灯光差异及全息灯光工作流。",
+      "ta": "全息投影灯光与渲染效率平衡经验，对TA在特效灯光设计有启发。",
+      "src": "80 Level · 06-23",
+      "url": "https://80.lv/articles/ilm-s-senior-lighting-td-on-vfx-challenges-building-hologram-lighting-for-transformers-one-entering-the-industry/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender菜单设计工具",
+      "sum": "PieMaster工具让用户在Blender中自定义菜单。",
+      "ta": "Blender工作流小工具，可提升TA日常DCC操作效率。",
+      "src": "80 Level · 06-23",
+      "url": "https://80.lv/articles/design-your-own-menus-in-blender-with-this-tool/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "腾讯考虑退出日本工作室",
+      "sum": "报道称腾讯正评估退出多个日本工作室，聚焦UGC平台。",
+      "ta": "腾讯投资策略转向可能影响日本合作工作室的引擎技术选型。",
+      "src": "Game Developer · 06-23",
+      "url": "https://www.gamedeveloper.com/business/report-tencent-mulling-exits-from-multiple-japanese-studios"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -114,15 +196,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "flow",
-      "imp": "lo",
-      "title": "Blender田园景观作品",
-      "sum": "展示Blender制作的19世纪田园景观。",
-      "ta": "环境美术参考，无技术细节。",
-      "src": "80 Level · 06-22",
-      "url": "https://80.lv/articles/take-a-look-at-this-19th-century-pastoral-landscape-made-in-blender/"
-    },
-    {
-      "cat": "flow",
       "imp": "mid",
       "title": "Substance 3D瓢虫材质教程",
       "sum": "Romain Lemaire讲解用Substance 3D SDF制作瓢虫材质。",
@@ -184,15 +257,6 @@ window.INTEL_RECENT = {
       "ta": "可用于调试或风格化渲染，快速集成到Unity项目。",
       "src": "80 Level · 06-19",
       "url": "https://80.lv/articles/render-wireframe-effects-in-unity-with-this-shader/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Epic游戏商店将大改版",
-      "sum": "Epic计划重构启动器，增加个性化、补丁说明等功能。",
-      "ta": "商店改版可能影响UE分发渠道，但非核心技术关注点。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/epic-s-roadmap-for-its-game-store-includes-overhauled-launcher/"
     },
     {
       "cat": "biz",
