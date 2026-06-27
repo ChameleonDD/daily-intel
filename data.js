@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年6月26日 · 周五",
+  "date": "2026年6月27日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Vulkan描述符堆端到端支持</em> / <em>交互式路径追踪即时反馈</em> / <em>超网络神经纹理压缩</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>WebXR汽车配置器无像素流</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,169 +116,76 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Vulkan描述符堆端到端支持",
-      "sum": "NVIDIA发布Vulkan描述符堆完整支持，简化着色器资源绑定。",
-      "ta": "对UE5渲染管线开发者，这意味着更高效的多线程资源绑定和更低驱动开销。",
-      "src": "NVIDIA · 06-25",
-      "url": "https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "交互式路径追踪即时反馈",
-      "sum": "HiPR算法通过优先级调度像素更新，使路径追踪感觉像实时渲染。",
-      "ta": "对实时渲染TA，这是实现电影级光照预览的关键技术，可集成到编辑器视口。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26612v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "超网络神经纹理压缩",
-      "sum": "用超网络学习紧凑纹理表示，实时解码还原PBR材质。",
-      "ta": "可大幅降低纹理内存占用，对开放世界植被和材质流送有直接价值。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26913v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多视图图像提取神经材质",
-      "sum": "NeuMatEx通过可微渲染从多视图图像提取空间变化神经材质。",
-      "ta": "为扫描资产自动生成高质量PBR材质提供新路径，减少手工制作。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26715v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D高斯泼溅可视化分析",
-      "sum": "Vis4GS工具可视化3DGS优化过程，解释高斯属性对伪影的影响。",
-      "ta": "调试3DGS重建质量时，可定位具体高斯参数问题，提升资产质量。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26985v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单色制造保留外观精炼",
-      "sum": "方法精炼生成3D网格，在单色打印中保留纹理视觉信息。",
-      "ta": "对需要3D打印原型的TA，可减少纹理丢失导致的反复迭代。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26850v1"
-    },
-    {
       "cat": "flow",
       "imp": "mid",
-      "title": "城市街景Blender+Substance流程",
-      "sum": "Pauline Ferrand分享可平铺纹理制作与顶点着色植物颜色变化。",
-      "ta": "可平铺纹理和顶点着色技巧可直接用于UE5植被工具和材质层。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/creating-an-immersive-urban-street-environment-using-blender-and-substance-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "诅咒骑士建模纹理分解",
-      "sum": "Gábor Meggyesi详解盔甲、武器建模及毛发叙事用法。",
-      "ta": "角色建模与毛发细节工作流可参考，但非核心TA技术。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/breakdown-how-to-model-and-texture-a-cursed-knight-with-melancholic-vibes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "石萨满角色幕后制作",
-      "sum": "Mike-Amir El Frangi分享Spellcasters Chronicles角色制作过程。",
-      "ta": "角色艺术流程参考，无新技术点。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/check-out-how-spellcasters-chronicles-stone-shaman-was-made/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "130+毛发卡片资源包",
-      "sum": "提供预制毛发卡片集合，可快速创建维京等风格发型。",
-      "ta": "节省毛发制作时间，但非技术突破，仅资源推荐。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/save-time-on-creating-hair-for-your-3d-characters-with-this-collection-of-130-hair-cards/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender暗黑风动画短片",
-      "sum": "全人工制作的Blender动画短片，具有独特绘画风格。",
-      "ta": "艺术风格参考，无技术细节。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/dark-fantasy-inspired-animated-short-in-blender-with-unique-painterly-style/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Bungie大规模裁员",
-      "sum": "Sony确认Bungie裁员，影响大部分命运团队和部分Marathon开发者。",
-      "ta": "行业动荡可能影响UE5项目人才流动和外包市场。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/bungie-hit-with-major-layoffs-impacting-most-of-the-destiny-team-and-more/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Meccha Chameleon两周700万销量",
-      "sum": "捉迷藏游戏成为最新多人游戏爆款。",
-      "ta": "市场趋势参考，无直接技术关联。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/meccha-chameleon-sells-7m-copies-in-first-two-weeks"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "VR工作室Combat Waffle裁员",
-      "sum": "Ghosts of Tabor开发团队裁员，但仍看好VR未来。",
-      "ta": "VR行业动态，可能影响UE5 VR项目生态。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/vr-dev-combat-waffle-studios-lays-off-staff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "34BigThings脱离Embracer独立",
-      "sum": "意大利工作室从Embracer集团回购独立权。",
-      "ta": "行业并购动态，无直接技术影响。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/italian-studio-34bigthings-regains-independence-from-embracer"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "万智牌竞技场开发者成功工会化",
-      "sum": "尽管被指控干预，万智牌竞技场开发者成功成立工会。",
-      "ta": "行业劳工动态，无技术关联。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/magic-the-gathering-arena-unionize-despite-allegations-of-interference"
+      "title": "UE免费学习内容更新",
+      "sum": "本月免费内容含MetaHuman、Mesh Terrain及手机拍电影教程。",
+      "ta": "Mesh Terrain和MetaHuman教程直接关联植被工具与角色管线，值得快速浏览。",
+      "src": "Unreal Engine · 06-26",
+      "url": "https://www.unrealengine.com/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "TensorRT多GPU推理扩展",
-      "sum": "NVIDIA TensorRT支持多设备推理，扩展生成式AI跨GPU。",
-      "ta": "对游戏AI推理性能有潜在影响，但非实时渲染核心。",
+      "imp": "mid",
+      "title": "PUBG Ally AI同伴系统",
+      "sum": "KRAFTON用NVIDIA ACE为PUBG构建可对话AI同伴，突破固定对话限制。",
+      "ta": "AI同伴系统在实时游戏中落地，可关注其对话与行为逻辑对NPC管线的启发。",
       "src": "NVIDIA · 06-25",
-      "url": "https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support/"
+      "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/"
     },
     {
-      "cat": "ai",
+      "cat": "biz",
       "imp": "lo",
-      "title": "折纸协同设计AI管线",
-      "sum": "COrigami管线协同设计可折叠视觉识别折纸。",
-      "ta": "与游戏3D资产生成无直接关联，仅泛AI。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.26299"
+      "title": "Temtem开发幕后",
+      "sum": "Crema分享Temtem: Pioneers的多人生物收集与生存建造开发挑战。",
+      "ta": "多人游戏技术挑战案例，可快速了解其程序化生成与实时战斗管线。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/temtem-developing-massively-multiplayer-creature-collection-adventure/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "精灵塔光照场景展示",
+      "sum": "Daniel Novillo展示精美沉浸式精灵塔光照场景。",
+      "ta": "光照与场景艺术参考，可快速浏览其材质与光照设置。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/take-a-look-at-this-beautiful-and-immersive-elven-tower-lighting-scene/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "2026游戏注意力经济",
+      "sum": "玩家时间碎片化，游戏需争夺注意力，Lexi Sydow分析趋势。",
+      "ta": "行业趋势分析，对游戏设计方向有参考价值。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/the-attention-economy-how-games-win-mind-share-in-2026/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender手指对齐工具",
+      "sum": "一键Blender插件，为手指骨骼添加碰撞感知行为。",
+      "ta": "简化角色手部绑定流程，对TA工作流中的角色管线有直接帮助。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/one-click-blender-tool-for-finger-alignment-to-any-object/"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "title": "WebXR汽车配置器无像素流",
+      "sum": "Miris构建WebXR配置器，1.2GB资产无需云GPU实现HDR级材质。",
+      "ta": "无像素流实时渲染方案，对UE5 Web部署与材质性能优化有重要参考。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/miris-built-a-car-configurator-without-pixel-streaming-here-s-what-they-found/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Skybound游戏战略",
+      "sum": "Skybound CEO讨论Invisible VS成功后未来游戏战略。",
+      "ta": "行业战略动态，可快速了解发行商方向。",
+      "src": "Game Developer · 06-26",
+      "url": "https://www.gamedeveloper.com/business/analysts-attempt-to-make-sense-of-xbox-s-exclusivity-mindset-shift"
     }
   ],
   "flashbackTitle": "",

@@ -2,8 +2,80 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-26 13:15",
+  "updated": "2026-06-27 12:58",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE免费学习内容更新",
+      "sum": "本月免费内容含MetaHuman、Mesh Terrain及手机拍电影教程。",
+      "ta": "Mesh Terrain和MetaHuman教程直接关联植被工具与角色管线，值得快速浏览。",
+      "src": "Unreal Engine · 06-26",
+      "url": "https://www.unrealengine.com/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "PUBG Ally AI同伴系统",
+      "sum": "KRAFTON用NVIDIA ACE为PUBG构建可对话AI同伴，突破固定对话限制。",
+      "ta": "AI同伴系统在实时游戏中落地，可关注其对话与行为逻辑对NPC管线的启发。",
+      "src": "NVIDIA · 06-25",
+      "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Temtem开发幕后",
+      "sum": "Crema分享Temtem: Pioneers的多人生物收集与生存建造开发挑战。",
+      "ta": "多人游戏技术挑战案例，可快速了解其程序化生成与实时战斗管线。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/temtem-developing-massively-multiplayer-creature-collection-adventure/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "精灵塔光照场景展示",
+      "sum": "Daniel Novillo展示精美沉浸式精灵塔光照场景。",
+      "ta": "光照与场景艺术参考，可快速浏览其材质与光照设置。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/take-a-look-at-this-beautiful-and-immersive-elven-tower-lighting-scene/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "2026游戏注意力经济",
+      "sum": "玩家时间碎片化，游戏需争夺注意力，Lexi Sydow分析趋势。",
+      "ta": "行业趋势分析，对游戏设计方向有参考价值。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/the-attention-economy-how-games-win-mind-share-in-2026/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender手指对齐工具",
+      "sum": "一键Blender插件，为手指骨骼添加碰撞感知行为。",
+      "ta": "简化角色手部绑定流程，对TA工作流中的角色管线有直接帮助。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/one-click-blender-tool-for-finger-alignment-to-any-object/"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "title": "WebXR汽车配置器无像素流",
+      "sum": "Miris构建WebXR配置器，1.2GB资产无需云GPU实现HDR级材质。",
+      "ta": "无像素流实时渲染方案，对UE5 Web部署与材质性能优化有重要参考。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/miris-built-a-car-configurator-without-pixel-streaming-here-s-what-they-found/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Skybound游戏战略",
+      "sum": "Skybound CEO讨论Invisible VS成功后未来游戏战略。",
+      "ta": "行业战略动态，可快速了解发行商方向。",
+      "src": "Game Developer · 06-26",
+      "url": "https://www.gamedeveloper.com/business/analysts-attempt-to-make-sense-of-xbox-s-exclusivity-mindset-shift"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -98,15 +170,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/save-time-on-creating-hair-for-your-3d-characters-with-this-collection-of-130-hair-cards/"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender暗黑风动画短片",
-      "sum": "全人工制作的Blender动画短片，具有独特绘画风格。",
-      "ta": "艺术风格参考，无技术细节。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/dark-fantasy-inspired-animated-short-in-blender-with-unique-painterly-style/"
-    },
-    {
       "cat": "biz",
       "imp": "mid",
       "title": "Bungie大规模裁员",
@@ -168,15 +231,6 @@ window.INTEL_RECENT = {
       "ta": "与游戏3D资产生成无直接关联，仅泛AI。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2606.26299"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "全动画管线迁入UE",
-      "sum": "Shining Isle Productions将《翼王传奇》全部动画流程迁至UE内完成。",
-      "ta": "意味着UE在动画管线上的成熟度已可支撑全流程生产，TA需关注引擎内绑定与动画迭代效率。",
-      "src": "Unreal Engine · 06-24",
-      "url": "https://www.unrealengine.com/spotlights/shining-isle-productions-goes-all-in-on-unreal-engine-for-the-wingfeather-saga"
     },
     {
       "cat": "tech",
@@ -667,15 +721,6 @@ window.INTEL_RECENT = {
       "ta": "学习特效模拟工作流的培训资源。",
       "src": "80 Level · 06-18",
       "url": "https://80.lv/articles/create-stunning-vfx-in-houdini-embergen-liquigen-with-this-course/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "加拿大开发者2026年现状",
-      "sum": "Game Developer采访加拿大开发者，讨论行业动荡中的生存。",
-      "ta": "行业宏观动态，了解开发者生态。",
-      "src": "Game Developer · 06-18",
-      "url": "https://www.gamedeveloper.com/business/-a-new-industry-with-a-new-identity-how-canadian-devs-are-faring-in-2026"
     },
     {
       "cat": "biz",
