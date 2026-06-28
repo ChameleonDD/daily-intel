@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-27 12:58",
+  "updated": "2026-06-28 13:23",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "VFX流程可视化构建器",
+      "sum": "一个用于VFX/动画管线的可视化工作流构建工具发布。",
+      "ta": "TA可评估该工具能否简化特效与动画的管线搭建。",
+      "src": "Tech-Artists · 06-27",
+      "url": "https://www.tech-artists.org/t/visual-workflow-builder-for-vfx-animation-pipelines/18433"
+    },
     {
       "cat": "flow",
       "imp": "mid",

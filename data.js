@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年6月27日 · 周六",
+  "date": "2026年6月28日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>WebXR汽车配置器无像素流</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>VFX流程可视化构建器</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,77 +118,25 @@ window.INTEL_DATA = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "UE免费学习内容更新",
-      "sum": "本月免费内容含MetaHuman、Mesh Terrain及手机拍电影教程。",
-      "ta": "Mesh Terrain和MetaHuman教程直接关联植被工具与角色管线，值得快速浏览。",
-      "src": "Unreal Engine · 06-26",
-      "url": "https://www.unrealengine.com/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "PUBG Ally AI同伴系统",
-      "sum": "KRAFTON用NVIDIA ACE为PUBG构建可对话AI同伴，突破固定对话限制。",
-      "ta": "AI同伴系统在实时游戏中落地，可关注其对话与行为逻辑对NPC管线的启发。",
-      "src": "NVIDIA · 06-25",
-      "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Temtem开发幕后",
-      "sum": "Crema分享Temtem: Pioneers的多人生物收集与生存建造开发挑战。",
-      "ta": "多人游戏技术挑战案例，可快速了解其程序化生成与实时战斗管线。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/temtem-developing-massively-multiplayer-creature-collection-adventure/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "精灵塔光照场景展示",
-      "sum": "Daniel Novillo展示精美沉浸式精灵塔光照场景。",
-      "ta": "光照与场景艺术参考，可快速浏览其材质与光照设置。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/take-a-look-at-this-beautiful-and-immersive-elven-tower-lighting-scene/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "2026游戏注意力经济",
-      "sum": "玩家时间碎片化，游戏需争夺注意力，Lexi Sydow分析趋势。",
-      "ta": "行业趋势分析，对游戏设计方向有参考价值。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/the-attention-economy-how-games-win-mind-share-in-2026/"
+      "title": "VFX流程可视化构建器",
+      "sum": "一个用于VFX/动画管线的可视化工作流构建工具发布。",
+      "ta": "TA可评估该工具能否简化特效与动画的管线搭建。",
+      "src": "Tech-Artists · 06-27",
+      "url": "https://www.tech-artists.org/t/visual-workflow-builder-for-vfx-animation-pipelines/18433"
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "Blender手指对齐工具",
-      "sum": "一键Blender插件，为手指骨骼添加碰撞感知行为。",
-      "ta": "简化角色手部绑定流程，对TA工作流中的角色管线有直接帮助。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/one-click-blender-tool-for-finger-alignment-to-any-object/"
-    },
-    {
-      "cat": "tech",
       "imp": "hi",
-      "title": "WebXR汽车配置器无像素流",
-      "sum": "Miris构建WebXR配置器，1.2GB资产无需云GPU实现HDR级材质。",
-      "ta": "无像素流实时渲染方案，对UE5 Web部署与材质性能优化有重要参考。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/miris-built-a-car-configurator-without-pixel-streaming-here-s-what-they-found/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Skybound游戏战略",
-      "sum": "Skybound CEO讨论Invisible VS成功后未来游戏战略。",
-      "ta": "行业战略动态，可快速了解发行商方向。",
-      "src": "Game Developer · 06-26",
-      "url": "https://www.gamedeveloper.com/business/analysts-attempt-to-make-sense-of-xbox-s-exclusivity-mindset-shift"
+      "rank": 2,
+      "title": "UE5.6森林环境教程",
+      "sum": "Michael Gerard指导在UE5.6中从零创建生产级森林环境全流程。",
+      "ta": "直接关联植被工具与程序化生成工作流，是TA必读的实战教程。",
+      "src": "80 Level · 06-24",
+      "url": "https://80.lv/articles/create-production-quality-forest-environments-from-scratch-in-ue5-6/",
+      "flashback": true
     }
   ],
-  "flashbackTitle": "",
+  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
   "sources": {
     "ok": [
       "Unreal Engine",
