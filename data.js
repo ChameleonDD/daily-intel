@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年6月28日 · 周日",
+  "date": "2026年6月29日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>VFX流程可视化构建器</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>光谱皮肤次表面散射</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,27 +116,16 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "VFX流程可视化构建器",
-      "sum": "一个用于VFX/动画管线的可视化工作流构建工具发布。",
-      "ta": "TA可评估该工具能否简化特效与动画的管线搭建。",
-      "src": "Tech-Artists · 06-27",
-      "url": "https://www.tech-artists.org/t/visual-workflow-builder-for-vfx-animation-pipelines/18433"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "UE5.6森林环境教程",
-      "sum": "Michael Gerard指导在UE5.6中从零创建生产级森林环境全流程。",
-      "ta": "直接关联植被工具与程序化生成工作流，是TA必读的实战教程。",
-      "src": "80 Level · 06-24",
-      "url": "https://80.lv/articles/create-production-quality-forest-environments-from-scratch-in-ue5-6/",
-      "flashback": true
+      "title": "光谱皮肤次表面散射",
+      "sum": "从RGB反演生物物理参数实现光谱级皮肤次表面散射渲染。",
+      "ta": "对写实角色皮肤渲染有直接参考价值，可探索管线集成。",
+      "src": "arXiv · cs.GR · 06-25",
+      "url": "https://arxiv.org/abs/2606.27604v1"
     }
   ],
-  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
+  "flashbackTitle": "",
   "sources": {
     "ok": [
       "Unreal Engine",
@@ -144,13 +133,12 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": "未覆盖：Blender 开发博客、HuggingFace。"
   },
   "xStale": false
 };

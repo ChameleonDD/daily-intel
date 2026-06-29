@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-28 13:23",
+  "updated": "2026-06-29 13:57",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "光谱皮肤次表面散射",
+      "sum": "从RGB反演生物物理参数实现光谱级皮肤次表面散射渲染。",
+      "ta": "对写实角色皮肤渲染有直接参考价值，可探索管线集成。",
+      "src": "arXiv · cs.GR · 06-25",
+      "url": "https://arxiv.org/abs/2606.27604v1"
+    },
     {
       "cat": "flow",
       "imp": "mid",
