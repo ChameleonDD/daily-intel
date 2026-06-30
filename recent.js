@@ -2,8 +2,164 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-29 13:57",
+  "updated": "2026-06-30 13:11",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "前馈神经渲染框架RenderFormer++",
+      "sum": "提出可扩展、物理基础的Transformer前馈神经渲染，用于网格场景全局光照。",
+      "ta": "关注其物理一致性改进，可能影响未来实时GI管线设计。",
+      "src": "arXiv · cs.GR · 06-29",
+      "url": "https://arxiv.org/abs/2606.30380v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "量子碰撞模型渲染相干散射",
+      "sum": "结合经典光线追踪与量子碰撞模型，处理动态光学属性散射。",
+      "ta": "全新着色框架，可能颠覆材质散射模拟方法，值得深入理解。",
+      "src": "arXiv · cs.GR · 06-29",
+      "url": "https://arxiv.org/abs/2606.29989v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "薄几何偶极子散射误差分析",
+      "sum": "揭示偶极子模型在薄/弯曲物体上的系统误差，提出光学厚度定律。",
+      "ta": "直接关联次表面散射渲染精度，对皮肤/树叶等薄材质有指导意义。",
+      "src": "arXiv · cs.GR · 06-28",
+      "url": "https://arxiv.org/abs/2606.29387v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可变形可重光照2D高斯泼溅",
+      "sum": "DR-GS实现可变形物体的物理基可重光照，分离照明与材质。",
+      "ta": "对VR/AR中动态数字人重光照有直接应用价值。",
+      "src": "arXiv · cs.GR · 06-28",
+      "url": "https://arxiv.org/abs/2606.29379v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "前馈动态高斯场景重建L2D2-GS",
+      "sum": "学习稠密化前馈重建动态城市场景，无需逐场景优化。",
+      "ta": "提升动态高斯泼溅的可扩展性，适用于自动驾驶仿真。",
+      "src": "arXiv · cs.GR · 06-28",
+      "url": "https://arxiv.org/abs/2606.29374v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "任意尺度超分共振Brane泼溅",
+      "sum": "用2D高斯泼溅实现连续放大因子超分，解决平滑伪影。",
+      "ta": "可能用于实时纹理/帧上采样，提升渲染质量。",
+      "src": "arXiv · cs.GR · 06-28",
+      "url": "https://arxiv.org/abs/2606.29453v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "自适应分配高斯任意尺度超分",
+      "sum": "学习自适应分配高斯用于图像超分，处理连续缩放。",
+      "ta": "对引擎中动态缩放和VR注视点渲染有潜在应用。",
+      "src": "arXiv · cs.GR · 06-28",
+      "url": "https://arxiv.org/abs/2606.29400v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "实例结构化3D场景标记化",
+      "sum": "前馈框架从无位姿视图分解场景为对象级token，而非基元。",
+      "ta": "提升3D重建的对象感知能力，利于场景编辑。",
+      "src": "arXiv · cs.GR · 06-28",
+      "url": "https://arxiv.org/abs/2606.29513v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "低计算实时可控世界模型",
+      "sum": "DreamForge-World 0.1预览，低计算量实时可控世界模型。",
+      "ta": "可能用于游戏内动态场景生成或交互式世界模拟。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.30292"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "实时扩散流视频编辑LiveEdit",
+      "sum": "面向实时流式视频编辑的扩散模型。",
+      "ta": "关注实时视频编辑在游戏过场或直播中的应用潜力。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.26740"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视觉世界模型长尾评估修剪",
+      "sum": "修剪视觉世界模型评估中的长尾问题。",
+      "ta": "对评估生成式世界模型质量有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.24256"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 5.1实时焦散教程",
+      "sum": "Alan Wayne分享Blender Cycles中水与玻璃实时焦散方法。",
+      "ta": "了解Blender实时焦散工作流，可迁移至UE。",
+      "src": "80 Level · 06-29",
+      "url": "https://80.lv/articles/tutorial-real-time-caustics-in-blender-5-1-s-cycles/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "科幻复古动漫Blender包即将发布",
+      "sum": "cgchefs推出科幻复古动漫风格Blender资源包，开放alpha测试。",
+      "ta": "关注风格化资源包，可能用于快速原型。",
+      "src": "80 Level · 06-29",
+      "url": "https://80.lv/articles/new-blender-pack-for-sci-fi-retro-anime-inspired-art-is-coming/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "角色动画幕后制作解析",
+      "sum": "Framed51展示生动角色动画幕后。",
+      "ta": "观察角色动画制作细节，可借鉴表情与动态设计。",
+      "src": "80 Level · 06-29",
+      "url": "https://80.lv/articles/check-out-this-behind-the-scenes-animation-of-an-expressive-character/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "毛发系统自碰撞宽度不一致",
+      "sum": "Tech-Artists论坛讨论hairSystems自碰撞宽度缩放问题。",
+      "ta": "直接关联UE毛发系统bug，需关注修复进展。",
+      "src": "Tech-Artists · 06-29",
+      "url": "https://www.tech-artists.org/t/hairsystems-self-collide-width-scale-is-inconsistent/18439"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Supermassive Games CEO离职",
+      "sum": "Directive 8020发售后，Supermassive Games CEO离职。",
+      "ta": "行业人事变动，可能影响工作室未来方向。",
+      "src": "Game Developer · 06-29",
+      "url": "https://www.gamedeveloper.com/business/supermassive-games-ceo-steps-down-following-launch-of-directive-8020"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "阿凡达格斗游戏新舞台公布",
+      "sum": "Avatar Legends格斗游戏PS5预购开启，公布Spirit Wilds舞台。",
+      "ta": "关注游戏美术风格和舞台设计。",
+      "src": "PlayStation Blog · 06-29",
+      "url": "https://blog.playstation.com/2026/06/29/avatar-legends-the-fighting-game-spirit-wilds-stage-revealed/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -68,15 +224,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/the-attention-economy-how-games-win-mind-share-in-2026/"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender手指对齐工具",
-      "sum": "一键Blender插件，为手指骨骼添加碰撞感知行为。",
-      "ta": "简化角色手部绑定流程，对TA工作流中的角色管线有直接帮助。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/one-click-blender-tool-for-finger-alignment-to-any-object/"
-    },
-    {
       "cat": "tech",
       "imp": "hi",
       "title": "WebXR汽车配置器无像素流",
@@ -132,15 +279,6 @@ window.INTEL_RECENT = {
       "ta": "为扫描资产自动生成高质量PBR材质提供新路径，减少手工制作。",
       "src": "arXiv · cs.GR · 06-25",
       "url": "https://arxiv.org/abs/2606.26715v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D高斯泼溅可视化分析",
-      "sum": "Vis4GS工具可视化3DGS优化过程，解释高斯属性对伪影的影响。",
-      "ta": "调试3DGS重建质量时，可定位具体高斯参数问题，提升资产质量。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26985v1"
     },
     {
       "cat": "gfx",
