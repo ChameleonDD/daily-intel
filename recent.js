@@ -2,8 +2,179 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-06-30 13:11",
+  "updated": "2026-07-01 13:46",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "NURBS可微分渲染框架",
+      "sum": "提出统一可微分渲染框架，支持平面有理样条（NURBS）的矢量图形渲染。",
+      "ta": "对矢量图形渲染管线有参考价值，但非实时渲染直接相关。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2606.31764v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高保真蝴蝶新视角合成",
+      "sum": "针对自然历史标本的微距摄影，提出高保真新视角合成方法。",
+      "ta": "涉及微距摄影和3D重建，对数字孪生或高精度扫描有启发。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2606.31679v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D高斯溅射本征分解",
+      "sum": "将3D高斯溅射分解为漫反射反照率、着色和视角相关残差，支持编辑。",
+      "ta": "直接关联3DGS工作流，可分离光照与材质，利于场景编辑和重光照。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2606.31637v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "双场连续B-rep表示",
+      "sum": "提出DualBrep，一种用于CAD边界表示的连续双场表示方法。",
+      "ta": "与CAD建模相关，对程序化几何生成工具有潜在影响。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2606.31579v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "LLM驱动应急决策",
+      "sum": "利用大语言模型为虚拟人决策提供个性，用于应急模拟。",
+      "ta": "AI驱动NPC行为，但非图形渲染或TA核心工作流。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2606.31038v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "3DGS光线追踪加速",
+      "sum": "GRay实现3D高斯光线追踪，速度接近光栅化，比之前方法快近一个数量级。",
+      "ta": "突破性进展，使3DGS支持高质量光线追踪反射/阴影，对实时渲染管线影响巨大。",
+      "src": "arXiv · cs.GR · 06-29",
+      "url": "https://arxiv.org/abs/2606.30869v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可编辑物理反射高斯场",
+      "sum": "在光线追踪高斯辐射场中实现可编辑的基于物理的反射，而非伪造几何。",
+      "ta": "提升3DGS反射真实感，支持编辑，对材质工作流有参考价值。",
+      "src": "arXiv · cs.GR · 06-29",
+      "url": "https://arxiv.org/abs/2606.30861v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "艺术家风格网格生成",
+      "sum": "PolyFlow：连续拓扑嵌入流匹配，用于艺术家风格网格生成。",
+      "ta": "AI辅助3D建模，但非实时渲染或TA工具链核心。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.30673"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender流水动画展示",
+      "sum": "Cartesian Caramel用Blender制作了一段精美的流水短动画。",
+      "ta": "Blender流体动画参考，但非技术突破。",
+      "src": "80 Level · 06-30",
+      "url": "https://80.lv/articles/check-out-this-amazing-short-animation-of-running-water-made-with-blender/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "UE5恐怖游戏技术解析",
+      "sum": "ILL游戏利用UE5、身体恐怖、物理、肢解和双耳音频营造恐怖体验。",
+      "ta": "UE5物理和音频集成案例，对特效和交互设计有参考。",
+      "src": "80 Level · 06-30",
+      "url": "https://80.lv/articles/how-ill-combines-body-horror-physics-and-binaural-audio-to-terrify-players/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏托管基础设施扩展",
+      "sum": "GPORTAL解释裸金属服务器和全球部署如何支持多人游戏扩展。",
+      "ta": "后端基础设施，非TA直接相关。",
+      "src": "80 Level · 06-30",
+      "url": "https://80.lv/articles/how-game-hosting-infrastructure-scales-modern-multiplayer-games/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "90年代卡通风格游戏",
+      "sum": "一款探索中年男人内部的90年代卡通风格游戏。",
+      "ta": "美术风格参考，无技术细节。",
+      "src": "80 Level · 06-30",
+      "url": "https://80.lv/articles/this-90s-cartoon-inspired-game-will-have-you-exploring-the-inside-of-a-middle-aged-man/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity实时水课程发布",
+      "sum": "Fabrizio Espindola推出Unity实时水课程，涵盖Shader Graph、HLSL、粒子系统等。",
+      "ta": "对Unity TA学习实时水效果有直接帮助。",
+      "src": "80 Level · 06-30",
+      "url": "https://80.lv/articles/fabrizio-espindola-announces-new-course-on-real-time-water-in-unity/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox暂停新Game Pass协议",
+      "sum": "Xbox据报道暂停与外部工作室的新Game Pass协议谈判。",
+      "ta": "行业商业动态，可能影响外包合作。",
+      "src": "80 Level · 06-30",
+      "url": "https://80.lv/articles/xbox-reportedly-halts-new-game-pass-agreements-with-outside-studios/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "IO Interactive裁员",
+      "sum": "Xbox取消支持后，IO Interactive将裁员。",
+      "ta": "行业动荡，可能影响项目外包或招聘。",
+      "src": "Game Developer · 06-30",
+      "url": "https://www.gamedeveloper.com/business/io-interactive-to-lay-off-employees-after-xbox-pulls-support-for-untitled-fantasy-game"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Xbox考虑出售Arkane",
+      "sum": "报道称Xbox考虑出售或关闭Arkane等工作室，Blade项目可能被砍。",
+      "ta": "重大行业重组，可能影响UE5项目和技术人才流动。",
+      "src": "Game Developer · 06-30",
+      "url": "https://www.gamedeveloper.com/business/report-xbox-considering-sales-or-closures-at-arkane-and-at-least-4-other-studios"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "R星开发者寻求工会认可",
+      "sum": "GTA开发者寻求在Rockstar成立工会。",
+      "ta": "行业劳工动态，非技术相关。",
+      "src": "Game Developer · 06-30",
+      "url": "https://www.gamedeveloper.com/production/grand-theft-auto-developers-seek-union-recognition-at-rockstar"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "NBCUniversal或进军游戏",
+      "sum": "NBCUniversal分拆后可能扩展游戏业务。",
+      "ta": "行业潜在新玩家，但无具体技术影响。",
+      "src": "Game Developer · 06-30",
+      "url": "https://www.gamedeveloper.com/business/report-nbcuniversal-could-expand-into-games-after-comcast-spinoff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "nDreams联合创始人新工作室",
+      "sum": "nDreams联合创始人成立独立游戏和音乐工作室Atmospheric。",
+      "ta": "行业创业动态，非技术相关。",
+      "src": "Game Developer · 06-30",
+      "url": "https://www.gamedeveloper.com/business/ndreams-co-founder-launches-indie-game-and-music-studio-atmospheric"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -71,15 +242,6 @@ window.INTEL_RECENT = {
       "url": "https://arxiv.org/abs/2606.29400v1"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实例结构化3D场景标记化",
-      "sum": "前馈框架从无位姿视图分解场景为对象级token，而非基元。",
-      "ta": "提升3D重建的对象感知能力，利于场景编辑。",
-      "src": "arXiv · cs.GR · 06-28",
-      "url": "https://arxiv.org/abs/2606.29513v1"
-    },
-    {
       "cat": "ai",
       "imp": "mid",
       "title": "低计算实时可控世界模型",
@@ -114,15 +276,6 @@ window.INTEL_RECENT = {
       "ta": "了解Blender实时焦散工作流，可迁移至UE。",
       "src": "80 Level · 06-29",
       "url": "https://80.lv/articles/tutorial-real-time-caustics-in-blender-5-1-s-cycles/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "科幻复古动漫Blender包即将发布",
-      "sum": "cgchefs推出科幻复古动漫风格Blender资源包，开放alpha测试。",
-      "ta": "关注风格化资源包，可能用于快速原型。",
-      "src": "80 Level · 06-29",
-      "url": "https://80.lv/articles/new-blender-pack-for-sci-fi-retro-anime-inspired-art-is-coming/"
     },
     {
       "cat": "flow",
@@ -663,15 +816,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "网格转3DGS白盒构建",
-      "sum": "Mesh2GS通过全光采样将网格转换为3DGS表示。",
-      "ta": "桥接网格和3DGS管线，可用于资产格式转换。",
-      "src": "arXiv · cs.GR · 06-20",
-      "url": "https://arxiv.org/abs/2606.21898v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "lo",
       "title": "物理信息微光学合成引擎",
       "sum": "OSOG为微光学环境提供可微物理合成数据引擎。",
@@ -687,15 +831,6 @@ window.INTEL_RECENT = {
       "ta": "对角色物理交互和动画系统有参考价值。",
       "src": "arXiv · cs.GR · 06-19",
       "url": "https://arxiv.org/abs/2606.21162v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5/Houdini短片制作解析",
-      "sum": "Argentum Studio分享UE5/Houdini/Blender短片《The Cradle》制作流程。",
-      "ta": "包含自定义毛发渲染系统，对特效和工具开发有参考。",
-      "src": "80 Level · 06-22",
-      "url": "https://80.lv/articles/creating-surreal-short-film-the-cradle-with-ue5-houdini-blender/"
     },
     {
       "cat": "flow",
@@ -751,15 +886,6 @@ window.INTEL_RECENT = {
       "ta": "UE6路线图直接影响TA的管线规划，需深入评估新特性。",
       "src": "80 Level · 06-19",
       "url": "https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Unity线框着色器",
-      "sum": "一个使用真实拓扑的Unity线框效果着色器。",
-      "ta": "可用于调试或风格化渲染，快速集成到Unity项目。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/render-wireframe-effects-in-unity-with-this-shader/"
     },
     {
       "cat": "biz",
