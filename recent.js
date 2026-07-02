@@ -2,8 +2,108 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-01 13:46",
+  "updated": "2026-07-02 13:04",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "单目视频生成动态3D高斯",
+      "sum": "从单目视频生成可自由渲染的动态3D高斯表示，条件视频模型于像素对齐渲染。",
+      "ta": "对TA而言，这是从视频直接产出动态3D资产的前沿方法，可能改变植被/场景动态化工作流。",
+      "src": "arXiv · cs.GR · 07-01",
+      "url": "https://arxiv.org/abs/2607.01202v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "四款免费网格简化工具评测",
+      "sum": "Lukáš Gallo与Bohemia Interactive合作，测试四款开源简化工具的性能与适用场景。",
+      "ta": "TA可参考此评测选择适合植被或场景LOD的简化工具，优化性能管线。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/testing-4-free-mesh-simplification-tools/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5与Substance 3D场景拆解",
+      "sum": "Karl Aldskogius详解Sunset Garden项目，包括石头创建和紫藤外观实现。",
+      "ta": "TA可学习其植被材质和程序化工作流，直接应用于UE5场景。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/breakdown-creating-a-detailed-and-vibrant-scene-with-unreal-engine-and-substance-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Houdini果冻物理手部追踪实验",
+      "sum": "Alvaro Moreira在Houdini中进行手部追踪与果冻物理实验，计划发布拆解。",
+      "ta": "TA可关注其Niagara或Houdini中软体物理与追踪的结合技巧。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/hand-tracking-experiments-with-jelly-like-physics-in-houdini/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender艺术家制作宜家风动画广告",
+      "sum": "ViscousRealm用Blender创作宜家风格动画广告。",
+      "ta": "TA可参考其材质和光照技巧，用于UE5场景参考。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/imaginary-ikea-animated-commercial-created-by-blender-artist/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush 8250 Alpha笔刷大包",
+      "sum": "CGSphere推出包含8250个Alpha和笔刷的Mega Bundle，用于历史/现代角色细节。",
+      "ta": "TA可快速获取高质量笔刷，提升植被或地形细节雕刻效率。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/grab-this-cgsphere-s-mega-bundle-with-8250-alpha-brushes-for-zbrush/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "PlayStation 2028年停止光盘生产",
+      "sum": "索尼宣布2028年1月起新游戏仅数字发行，PS3/PS Vita商店逐步关闭。",
+      "ta": "数字发行趋势影响游戏分发，TA需关注数字资产管理和更新策略。",
+      "src": "PlayStation Blog · 07-01",
+      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "多对象运动轨迹控制生成",
+      "sum": "TrajLoc方法在图像到视频生成中控制多对象运动，处理轨迹交叉和遮挡。",
+      "ta": "对TA而言，此技术可能用于程序化动画或特效中的多物体运动控制。",
+      "src": "arXiv · cs.GR · 07-01",
+      "url": "https://arxiv.org/abs/2607.00861v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "无肢运动几何形状优化",
+      "sum": "提出微分几何框架模拟蛇等软体无肢生物的运动。",
+      "ta": "TA可借鉴其物理模拟方法，用于Niagara或Houdini中的软体动画。",
+      "src": "arXiv · cs.GR · 07-01",
+      "url": "https://arxiv.org/abs/2607.00524v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "AI美学修改在可视化中的可接受性",
+      "sum": "专家评估AI对3D自然现象可视化进行美学修改的可接受性。",
+      "ta": "TA需平衡AI增强视觉效果与数据保真度，尤其在科学可视化或场景渲染中。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2607.00239v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Valdi：价值扩散世界模型",
+      "sum": "HuggingFace论文介绍Valdi，一种价值扩散世界模型。",
+      "ta": "TA可了解世界模型在游戏AI或模拟中的潜在应用，但非直接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.00917"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -21,15 +121,6 @@ window.INTEL_RECENT = {
       "ta": "涉及微距摄影和3D重建，对数字孪生或高精度扫描有启发。",
       "src": "arXiv · cs.GR · 06-30",
       "url": "https://arxiv.org/abs/2606.31679v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D高斯溅射本征分解",
-      "sum": "将3D高斯溅射分解为漫反射反照率、着色和视角相关残差，支持编辑。",
-      "ta": "直接关联3DGS工作流，可分离光照与材质，利于场景编辑和重光照。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31637v1"
     },
     {
       "cat": "gfx",
@@ -75,24 +166,6 @@ window.INTEL_RECENT = {
       "ta": "AI辅助3D建模，但非实时渲染或TA工具链核心。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2606.30673"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender流水动画展示",
-      "sum": "Cartesian Caramel用Blender制作了一段精美的流水短动画。",
-      "ta": "Blender流体动画参考，但非技术突破。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/check-out-this-amazing-short-animation-of-running-water-made-with-blender/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "UE5恐怖游戏技术解析",
-      "sum": "ILL游戏利用UE5、身体恐怖、物理、肢解和双耳音频营造恐怖体验。",
-      "ta": "UE5物理和音频集成案例，对特效和交互设计有参考。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/how-ill-combines-body-horror-physics-and-binaural-audio-to-terrify-players/"
     },
     {
       "cat": "biz",
@@ -533,15 +606,6 @@ window.INTEL_RECENT = {
       "url": "https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support/"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "折纸协同设计AI管线",
-      "sum": "COrigami管线协同设计可折叠视觉识别折纸。",
-      "ta": "与游戏3D资产生成无直接关联，仅泛AI。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.26299"
-    },
-    {
       "cat": "tech",
       "imp": "hi",
       "rank": 1,
@@ -858,15 +922,6 @@ window.INTEL_RECENT = {
       "ta": "与游戏实时渲染无直接关联，可速览。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2606.19534"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Houdini泡沫模拟",
-      "sum": "Houdini泡沫模拟效果逼真，视觉上令人满足。",
-      "ta": "可作为Niagara流体特效的参考，研究泡沫生成算法。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/this-houdini-foam-simulation-it-s-very-satisfying-to-watch/"
     },
     {
       "cat": "biz",

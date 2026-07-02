@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月1日 · 周三",
+  "date": "2026年7月2日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>3DGS光线追踪加速</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>单目视频生成动态3D高斯</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -117,183 +117,112 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "NURBS可微分渲染框架",
-      "sum": "提出统一可微分渲染框架，支持平面有理样条（NURBS）的矢量图形渲染。",
-      "ta": "对矢量图形渲染管线有参考价值，但非实时渲染直接相关。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31764v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "高保真蝴蝶新视角合成",
-      "sum": "针对自然历史标本的微距摄影，提出高保真新视角合成方法。",
-      "ta": "涉及微距摄影和3D重建，对数字孪生或高精度扫描有启发。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31679v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D高斯溅射本征分解",
-      "sum": "将3D高斯溅射分解为漫反射反照率、着色和视角相关残差，支持编辑。",
-      "ta": "直接关联3DGS工作流，可分离光照与材质，利于场景编辑和重光照。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31637v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "双场连续B-rep表示",
-      "sum": "提出DualBrep，一种用于CAD边界表示的连续双场表示方法。",
-      "ta": "与CAD建模相关，对程序化几何生成工具有潜在影响。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31579v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "LLM驱动应急决策",
-      "sum": "利用大语言模型为虚拟人决策提供个性，用于应急模拟。",
-      "ta": "AI驱动NPC行为，但非图形渲染或TA核心工作流。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31038v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "hi",
-      "title": "3DGS光线追踪加速",
-      "sum": "GRay实现3D高斯光线追踪，速度接近光栅化，比之前方法快近一个数量级。",
-      "ta": "突破性进展，使3DGS支持高质量光线追踪反射/阴影，对实时渲染管线影响巨大。",
-      "src": "arXiv · cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.30869v1"
+      "rank": 1,
+      "title": "单目视频生成动态3D高斯",
+      "sum": "从单目视频生成可自由渲染的动态3D高斯表示，条件视频模型于像素对齐渲染。",
+      "ta": "对TA而言，这是从视频直接产出动态3D资产的前沿方法，可能改变植被/场景动态化工作流。",
+      "src": "arXiv · cs.GR · 07-01",
+      "url": "https://arxiv.org/abs/2607.01202v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "四款免费网格简化工具评测",
+      "sum": "Lukáš Gallo与Bohemia Interactive合作，测试四款开源简化工具的性能与适用场景。",
+      "ta": "TA可参考此评测选择适合植被或场景LOD的简化工具，优化性能管线。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/testing-4-free-mesh-simplification-tools/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5与Substance 3D场景拆解",
+      "sum": "Karl Aldskogius详解Sunset Garden项目，包括石头创建和紫藤外观实现。",
+      "ta": "TA可学习其植被材质和程序化工作流，直接应用于UE5场景。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/breakdown-creating-a-detailed-and-vibrant-scene-with-unreal-engine-and-substance-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Houdini果冻物理手部追踪实验",
+      "sum": "Alvaro Moreira在Houdini中进行手部追踪与果冻物理实验，计划发布拆解。",
+      "ta": "TA可关注其Niagara或Houdini中软体物理与追踪的结合技巧。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/hand-tracking-experiments-with-jelly-like-physics-in-houdini/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender艺术家制作宜家风动画广告",
+      "sum": "ViscousRealm用Blender创作宜家风格动画广告。",
+      "ta": "TA可参考其材质和光照技巧，用于UE5场景参考。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/imaginary-ikea-animated-commercial-created-by-blender-artist/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush 8250 Alpha笔刷大包",
+      "sum": "CGSphere推出包含8250个Alpha和笔刷的Mega Bundle，用于历史/现代角色细节。",
+      "ta": "TA可快速获取高质量笔刷，提升植被或地形细节雕刻效率。",
+      "src": "80 Level · 07-01",
+      "url": "https://80.lv/articles/grab-this-cgsphere-s-mega-bundle-with-8250-alpha-brushes-for-zbrush/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "PlayStation 2028年停止光盘生产",
+      "sum": "索尼宣布2028年1月起新游戏仅数字发行，PS3/PS Vita商店逐步关闭。",
+      "ta": "数字发行趋势影响游戏分发，TA需关注数字资产管理和更新策略。",
+      "src": "PlayStation Blog · 07-01",
+      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/"
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "可编辑物理反射高斯场",
-      "sum": "在光线追踪高斯辐射场中实现可编辑的基于物理的反射，而非伪造几何。",
-      "ta": "提升3DGS反射真实感，支持编辑，对材质工作流有参考价值。",
-      "src": "arXiv · cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.30861v1"
+      "imp": "lo",
+      "title": "多对象运动轨迹控制生成",
+      "sum": "TrajLoc方法在图像到视频生成中控制多对象运动，处理轨迹交叉和遮挡。",
+      "ta": "对TA而言，此技术可能用于程序化动画或特效中的多物体运动控制。",
+      "src": "arXiv · cs.GR · 07-01",
+      "url": "https://arxiv.org/abs/2607.00861v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "无肢运动几何形状优化",
+      "sum": "提出微分几何框架模拟蛇等软体无肢生物的运动。",
+      "ta": "TA可借鉴其物理模拟方法，用于Niagara或Houdini中的软体动画。",
+      "src": "arXiv · cs.GR · 07-01",
+      "url": "https://arxiv.org/abs/2607.00524v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "AI美学修改在可视化中的可接受性",
+      "sum": "专家评估AI对3D自然现象可视化进行美学修改的可接受性。",
+      "ta": "TA需平衡AI增强视觉效果与数据保真度，尤其在科学可视化或场景渲染中。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2607.00239v1"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "艺术家风格网格生成",
-      "sum": "PolyFlow：连续拓扑嵌入流匹配，用于艺术家风格网格生成。",
-      "ta": "AI辅助3D建模，但非实时渲染或TA工具链核心。",
+      "title": "AI重建希区柯克《迷魂记》",
+      "sum": "用2.78%原始帧通过视频扩散模型逐场景AI重建电影《迷魂记》。",
+      "ta": "TA可关注视频扩散模型在实时渲染或过场动画中的潜在应用。",
+      "src": "arXiv · cs.GR · 06-29",
+      "url": "https://arxiv.org/abs/2607.00047v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Valdi：价值扩散世界模型",
+      "sum": "HuggingFace论文介绍Valdi，一种价值扩散世界模型。",
+      "ta": "TA可了解世界模型在游戏AI或模拟中的潜在应用，但非直接相关。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.30673"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender流水动画展示",
-      "sum": "Cartesian Caramel用Blender制作了一段精美的流水短动画。",
-      "ta": "Blender流体动画参考，但非技术突破。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/check-out-this-amazing-short-animation-of-running-water-made-with-blender/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "UE5恐怖游戏技术解析",
-      "sum": "ILL游戏利用UE5、身体恐怖、物理、肢解和双耳音频营造恐怖体验。",
-      "ta": "UE5物理和音频集成案例，对特效和交互设计有参考。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/how-ill-combines-body-horror-physics-and-binaural-audio-to-terrify-players/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏托管基础设施扩展",
-      "sum": "GPORTAL解释裸金属服务器和全球部署如何支持多人游戏扩展。",
-      "ta": "后端基础设施，非TA直接相关。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/how-game-hosting-infrastructure-scales-modern-multiplayer-games/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "90年代卡通风格游戏",
-      "sum": "一款探索中年男人内部的90年代卡通风格游戏。",
-      "ta": "美术风格参考，无技术细节。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/this-90s-cartoon-inspired-game-will-have-you-exploring-the-inside-of-a-middle-aged-man/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity实时水课程发布",
-      "sum": "Fabrizio Espindola推出Unity实时水课程，涵盖Shader Graph、HLSL、粒子系统等。",
-      "ta": "对Unity TA学习实时水效果有直接帮助。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/fabrizio-espindola-announces-new-course-on-real-time-water-in-unity/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox暂停新Game Pass协议",
-      "sum": "Xbox据报道暂停与外部工作室的新Game Pass协议谈判。",
-      "ta": "行业商业动态，可能影响外包合作。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/xbox-reportedly-halts-new-game-pass-agreements-with-outside-studios/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender几何节点碰撞系统",
-      "sum": "Gurgen Aloian在Blender几何节点中构建实时碰撞系统，可能发布教程。",
-      "ta": "Blender程序化工作流创新，对工具开发有启发。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/real-time-collision-system-built-in-blender-s-geometry-nodes/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "IO Interactive裁员",
-      "sum": "Xbox取消支持后，IO Interactive将裁员。",
-      "ta": "行业动荡，可能影响项目外包或招聘。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/io-interactive-to-lay-off-employees-after-xbox-pulls-support-for-untitled-fantasy-game"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Xbox考虑出售Arkane",
-      "sum": "报道称Xbox考虑出售或关闭Arkane等工作室，Blade项目可能被砍。",
-      "ta": "重大行业重组，可能影响UE5项目和技术人才流动。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/report-xbox-considering-sales-or-closures-at-arkane-and-at-least-4-other-studios"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "R星开发者寻求工会认可",
-      "sum": "GTA开发者寻求在Rockstar成立工会。",
-      "ta": "行业劳工动态，非技术相关。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/production/grand-theft-auto-developers-seek-union-recognition-at-rockstar"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "NBCUniversal或进军游戏",
-      "sum": "NBCUniversal分拆后可能扩展游戏业务。",
-      "ta": "行业潜在新玩家，但无具体技术影响。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/report-nbcuniversal-could-expand-into-games-after-comcast-spinoff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "nDreams联合创始人新工作室",
-      "sum": "nDreams联合创始人成立独立游戏和音乐工作室Atmospheric。",
-      "ta": "行业创业动态，非技术相关。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/ndreams-co-founder-launches-indie-game-and-music-studio-atmospheric"
+      "url": "https://huggingface.co/papers/2607.00917"
     }
   ],
   "flashbackTitle": "",
