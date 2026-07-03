@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-02 13:04",
+  "updated": "2026-07-03 12:49",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "情感环境设计案例",
+      "sum": "《Sky光遇》环境设计师分享用光照与色彩营造情感空间的流程。",
+      "ta": "可借鉴其用光照与色彩平衡传达情绪的方法，用于游戏关卡氛围设计。",
+      "src": "80 Level · 07-02",
+      "url": "https://80.lv/articles/how-to-design-emotional-game-environments-for-sky-children-of-the-light/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "索尼全数字遭抵制",
+      "sum": "玩家请愿保留实体光盘，反对索尼停止PS游戏光盘生产。",
+      "ta": "数字发行趋势影响游戏分发，但非直接技术相关，速览即可。",
+      "src": "80 Level · 07-02",
+      "url": "https://80.lv/articles/dont-kill-the-disc-petition-pushes-back-against-sony-s-all-digital-playstation-future/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender角色绑定测试",
+      "sum": "艺术家展示《泰山》反派Clayton的Blender绑定与动画测试。",
+      "ta": "展示Blender角色绑定流程，可作为参考但非UE5直接相关。",
+      "src": "80 Level · 07-02",
+      "url": "https://80.lv/articles/amazing-blender-rig-test-for-clayton-from-disney-s-tarzan/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush写实雕刻教程",
+      "sum": "艺术家分享ZBrush中绘制写实3D雕刻的完整流程。",
+      "ta": "雕刻技巧可辅助高模制作，但非实时渲染核心内容。",
+      "src": "80 Level · 07-02",
+      "url": "https://80.lv/articles/zbrush-tutorial-how-to-paint-realistic-3d-sculpts/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏开发者困难基金",
+      "sum": "美加工会设立基金，为受裁员影响的开发者提供最高5000美元。",
+      "ta": "行业动态，非技术相关，速览即可。",
+      "src": "Game Developer · 07-02",
+      "url": "https://www.gamedeveloper.com/business/union-workers-establish-hardship-fund-to-support-devs-impacted-by-layoffs/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -40,15 +85,6 @@ window.INTEL_RECENT = {
       "ta": "TA可关注其Niagara或Houdini中软体物理与追踪的结合技巧。",
       "src": "80 Level · 07-01",
       "url": "https://80.lv/articles/hand-tracking-experiments-with-jelly-like-physics-in-houdini/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender艺术家制作宜家风动画广告",
-      "sum": "ViscousRealm用Blender创作宜家风格动画广告。",
-      "ta": "TA可参考其材质和光照技巧，用于UE5场景参考。",
-      "src": "80 Level · 07-01",
-      "url": "https://80.lv/articles/imaginary-ikea-animated-commercial-created-by-blender-artist/"
     },
     {
       "cat": "flow",
