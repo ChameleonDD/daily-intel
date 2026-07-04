@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-03 12:49",
+  "updated": "2026-07-04 12:41",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Godot 3D地牢教程",
+      "sum": "20小时Godot教程覆盖资产创建全流程，面向中级开发者。",
+      "ta": "可对比Godot与UE的植被/程序化生成工作流差异。",
+      "src": "80 Level · 07-04",
+      "url": "https://80.lv/articles/godot-tutorial-build-3d-dungeon-crawler-in-20-hours/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "风格化秋景环境雕刻",
+      "sum": "Lili Brujin分享Evergrove项目工作流，使用RGB遮罩纹理房屋。",
+      "ta": "RGB遮罩纹理技术可直接用于UE材质层，优化植被与建筑纹理性能。",
+      "src": "80 Level · 07-03",
+      "url": "https://80.lv/articles/sculpting-and-texturing-a-stylized-3d-environment-with-autumn-vibes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender场景重建教程",
+      "sum": "Yash Jain用Blender和Gaea重建肯尼亚国家公园地形。",
+      "ta": "Gaea地形生成工作流可迁移至UE程序化地形管线。",
+      "src": "80 Level · 07-03",
+      "url": "https://80.lv/articles/how-to-recreate-a-scene-from-the-amboselli-national-park-in-kenya/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Red Rover裁员",
+      "sum": "《Enginefall》开发商Red Rover Interactive裁员，曾融资2000万美元。",
+      "ta": "行业动荡影响中小团队，需关注UE项目稳定性。",
+      "src": "Game Developer · 07-03",
+      "url": "https://www.gamedeveloper.com/business/enginefall-developer-red-rover-interactive-is-making-layoffs"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PlayStation停售实体盘",
+      "sum": "PlayStation放弃实体光盘，Xbox测试光盘转数字功能。",
+      "ta": "数字分发趋势影响资产交付与版本管理流程。",
+      "src": "Game Developer · 07-03",
+      "url": "https://www.gamedeveloper.com/business/rockstar-workers-hit-back-playstation-ditches-physical-discs-and-chipmakers-accused-of-price-fixing-patch-notes-58"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -21,15 +66,6 @@ window.INTEL_RECENT = {
       "ta": "数字发行趋势影响游戏分发，但非直接技术相关，速览即可。",
       "src": "80 Level · 07-02",
       "url": "https://80.lv/articles/dont-kill-the-disc-petition-pushes-back-against-sony-s-all-digital-playstation-future/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender角色绑定测试",
-      "sum": "艺术家展示《泰山》反派Clayton的Blender绑定与动画测试。",
-      "ta": "展示Blender角色绑定流程，可作为参考但非UE5直接相关。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/amazing-blender-rig-test-for-clayton-from-disney-s-tarzan/"
     },
     {
       "cat": "flow",

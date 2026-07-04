@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月3日 · 周五",
+  "date": "2026年7月4日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>情感环境设计案例</em> / <em>索尼全数字遭抵制</em> / <em>Blender角色绑定测试</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Godot 3D地牢教程</em> / <em>风格化秋景环境雕刻</em> / <em>Blender场景重建教程</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,56 +118,47 @@ window.INTEL_DATA = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "情感环境设计案例",
-      "sum": "《Sky光遇》环境设计师分享用光照与色彩营造情感空间的流程。",
-      "ta": "可借鉴其用光照与色彩平衡传达情绪的方法，用于游戏关卡氛围设计。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/how-to-design-emotional-game-environments-for-sky-children-of-the-light/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "索尼全数字遭抵制",
-      "sum": "玩家请愿保留实体光盘，反对索尼停止PS游戏光盘生产。",
-      "ta": "数字发行趋势影响游戏分发，但非直接技术相关，速览即可。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/dont-kill-the-disc-petition-pushes-back-against-sony-s-all-digital-playstation-future/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender角色绑定测试",
-      "sum": "艺术家展示《泰山》反派Clayton的Blender绑定与动画测试。",
-      "ta": "展示Blender角色绑定流程，可作为参考但非UE5直接相关。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/amazing-blender-rig-test-for-clayton-from-disney-s-tarzan/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ZBrush写实雕刻教程",
-      "sum": "艺术家分享ZBrush中绘制写实3D雕刻的完整流程。",
-      "ta": "雕刻技巧可辅助高模制作，但非实时渲染核心内容。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/zbrush-tutorial-how-to-paint-realistic-3d-sculpts/"
+      "title": "Godot 3D地牢教程",
+      "sum": "20小时Godot教程覆盖资产创建全流程，面向中级开发者。",
+      "ta": "可对比Godot与UE的植被/程序化生成工作流差异。",
+      "src": "80 Level · 07-04",
+      "url": "https://80.lv/articles/godot-tutorial-build-3d-dungeon-crawler-in-20-hours/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender人群库发布",
-      "sum": "polygoniq发布humaniq库，含119个绑定角色与人群生成预设。",
-      "ta": "可直接用于场景填充的人群资源，提升环境制作效率。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/apply-rigged-3d-people-from-this-useful-blender-library-to-your-scenes/"
+      "title": "风格化秋景环境雕刻",
+      "sum": "Lili Brujin分享Evergrove项目工作流，使用RGB遮罩纹理房屋。",
+      "ta": "RGB遮罩纹理技术可直接用于UE材质层，优化植被与建筑纹理性能。",
+      "src": "80 Level · 07-03",
+      "url": "https://80.lv/articles/sculpting-and-texturing-a-stylized-3d-environment-with-autumn-vibes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender场景重建教程",
+      "sum": "Yash Jain用Blender和Gaea重建肯尼亚国家公园地形。",
+      "ta": "Gaea地形生成工作流可迁移至UE程序化地形管线。",
+      "src": "80 Level · 07-03",
+      "url": "https://80.lv/articles/how-to-recreate-a-scene-from-the-amboselli-national-park-in-kenya/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏开发者困难基金",
-      "sum": "美加工会设立基金，为受裁员影响的开发者提供最高5000美元。",
-      "ta": "行业动态，非技术相关，速览即可。",
-      "src": "Game Developer · 07-02",
-      "url": "https://www.gamedeveloper.com/business/union-workers-establish-hardship-fund-to-support-devs-impacted-by-layoffs/"
+      "title": "Red Rover裁员",
+      "sum": "《Enginefall》开发商Red Rover Interactive裁员，曾融资2000万美元。",
+      "ta": "行业动荡影响中小团队，需关注UE项目稳定性。",
+      "src": "Game Developer · 07-03",
+      "url": "https://www.gamedeveloper.com/business/enginefall-developer-red-rover-interactive-is-making-layoffs"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PlayStation停售实体盘",
+      "sum": "PlayStation放弃实体光盘，Xbox测试光盘转数字功能。",
+      "ta": "数字分发趋势影响资产交付与版本管理流程。",
+      "src": "Game Developer · 07-03",
+      "url": "https://www.gamedeveloper.com/business/rockstar-workers-hit-back-playstation-ditches-physical-discs-and-chipmakers-accused-of-price-fixing-patch-notes-58"
     }
   ],
   "flashbackTitle": "",
