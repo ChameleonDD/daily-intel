@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月4日 · 周六",
+  "date": "2026年7月5日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Godot 3D地牢教程</em> / <em>风格化秋景环境雕刻</em> / <em>Blender场景重建教程</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>像素空间3D高斯生成</em> / <em>点云联邦学习基准</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,49 +116,22 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "Godot 3D地牢教程",
-      "sum": "20小时Godot教程覆盖资产创建全流程，面向中级开发者。",
-      "ta": "可对比Godot与UE的植被/程序化生成工作流差异。",
-      "src": "80 Level · 07-04",
-      "url": "https://80.lv/articles/godot-tutorial-build-3d-dungeon-crawler-in-20-hours/"
+      "title": "像素空间3D高斯生成",
+      "sum": "PixGS从文本或图像直接生成3D高斯泼溅，解决视角不一致问题。",
+      "ta": "关注3D内容生成新范式，可能简化植被或场景资产的程序化生成管线。",
+      "src": "arXiv · cs.GR · 07-02",
+      "url": "https://arxiv.org/abs/2607.01803v1"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "风格化秋景环境雕刻",
-      "sum": "Lili Brujin分享Evergrove项目工作流，使用RGB遮罩纹理房屋。",
-      "ta": "RGB遮罩纹理技术可直接用于UE材质层，优化植被与建筑纹理性能。",
-      "src": "80 Level · 07-03",
-      "url": "https://80.lv/articles/sculpting-and-texturing-a-stylized-3d-environment-with-autumn-vibes/"
-    },
-    {
-      "cat": "flow",
+      "cat": "tech",
       "imp": "lo",
-      "title": "Blender场景重建教程",
-      "sum": "Yash Jain用Blender和Gaea重建肯尼亚国家公园地形。",
-      "ta": "Gaea地形生成工作流可迁移至UE程序化地形管线。",
-      "src": "80 Level · 07-03",
-      "url": "https://80.lv/articles/how-to-recreate-a-scene-from-the-amboselli-national-park-in-kenya/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Red Rover裁员",
-      "sum": "《Enginefall》开发商Red Rover Interactive裁员，曾融资2000万美元。",
-      "ta": "行业动荡影响中小团队，需关注UE项目稳定性。",
-      "src": "Game Developer · 07-03",
-      "url": "https://www.gamedeveloper.com/business/enginefall-developer-red-rover-interactive-is-making-layoffs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PlayStation停售实体盘",
-      "sum": "PlayStation放弃实体光盘，Xbox测试光盘转数字功能。",
-      "ta": "数字分发趋势影响资产交付与版本管理流程。",
-      "src": "Game Developer · 07-03",
-      "url": "https://www.gamedeveloper.com/business/rockstar-workers-hit-back-playstation-ditches-physical-discs-and-chipmakers-accused-of-price-fixing-patch-notes-58"
+      "title": "点云联邦学习基准",
+      "sum": "联合评估联邦学习与知识蒸馏在3D点云分类上的性能。",
+      "ta": "点云处理技术进展，对程序化生成中几何数据隐私与效率有参考价值。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2607.01272v1"
     }
   ],
   "flashbackTitle": "",
@@ -168,13 +141,14 @@ window.INTEL_DATA = {
       "NVIDIA",
       "PlayStation Blog",
       "AMD GPUOpen",
+      "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客、arXiv · cs.GR。"
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };

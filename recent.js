@@ -2,8 +2,26 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-04 12:41",
+  "updated": "2026-07-05 13:02",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "像素空间3D高斯生成",
+      "sum": "PixGS从文本或图像直接生成3D高斯泼溅，解决视角不一致问题。",
+      "ta": "关注3D内容生成新范式，可能简化植被或场景资产的程序化生成管线。",
+      "src": "arXiv · cs.GR · 07-02",
+      "url": "https://arxiv.org/abs/2607.01803v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "点云联邦学习基准",
+      "sum": "联合评估联邦学习与知识蒸馏在3D点云分类上的性能。",
+      "ta": "点云处理技术进展，对程序化生成中几何数据隐私与效率有参考价值。",
+      "src": "arXiv · cs.GR · 06-30",
+      "url": "https://arxiv.org/abs/2607.01272v1"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -84,16 +102,6 @@ window.INTEL_RECENT = {
       "ta": "行业动态，非技术相关，速览即可。",
       "src": "Game Developer · 07-02",
       "url": "https://www.gamedeveloper.com/business/union-workers-establish-hardship-fund-to-support-devs-impacted-by-layoffs/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "单目视频生成动态3D高斯",
-      "sum": "从单目视频生成可自由渲染的动态3D高斯表示，条件视频模型于像素对齐渲染。",
-      "ta": "对TA而言，这是从视频直接产出动态3D资产的前沿方法，可能改变植被/场景动态化工作流。",
-      "src": "arXiv · cs.GR · 07-01",
-      "url": "https://arxiv.org/abs/2607.01202v1"
     },
     {
       "cat": "flow",
