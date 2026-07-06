@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-05 13:02",
+  "updated": "2026-07-06 13:18",
   "cards": [
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS商店6月下载榜",
+      "sum": "PS5/PS4/PS VR2游戏下载排行，体育与恐怖类领跑。",
+      "ta": "了解亚洲市场热门游戏类型，对特效资源分配有参考。",
+      "src": "PlayStation Blog · 07-06",
+      "url": "https://blog.playstation.com/2026/07/05/20260706-top/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",

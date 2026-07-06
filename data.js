@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月5日 · 周日",
+  "date": "2026年7月6日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>像素空间3D高斯生成</em> / <em>点云联邦学习基准</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>PS商店6月下载榜</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,22 +116,13 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "像素空间3D高斯生成",
-      "sum": "PixGS从文本或图像直接生成3D高斯泼溅，解决视角不一致问题。",
-      "ta": "关注3D内容生成新范式，可能简化植被或场景资产的程序化生成管线。",
-      "src": "arXiv · cs.GR · 07-02",
-      "url": "https://arxiv.org/abs/2607.01803v1"
-    },
-    {
-      "cat": "tech",
+      "cat": "biz",
       "imp": "lo",
-      "title": "点云联邦学习基准",
-      "sum": "联合评估联邦学习与知识蒸馏在3D点云分类上的性能。",
-      "ta": "点云处理技术进展，对程序化生成中几何数据隐私与效率有参考价值。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2607.01272v1"
+      "title": "PS商店6月下载榜",
+      "sum": "PS5/PS4/PS VR2游戏下载排行，体育与恐怖类领跑。",
+      "ta": "了解亚洲市场热门游戏类型，对特效资源分配有参考。",
+      "src": "PlayStation Blog · 07-06",
+      "url": "https://blog.playstation.com/2026/07/05/20260706-top/"
     }
   ],
   "flashbackTitle": "",
@@ -141,14 +132,12 @@ window.INTEL_DATA = {
       "NVIDIA",
       "PlayStation Blog",
       "AMD GPUOpen",
-      "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": "未覆盖：Blender 开发博客、arXiv · cs.GR、HuggingFace。"
   },
   "xStale": false
 };
