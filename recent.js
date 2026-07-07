@@ -2,8 +2,162 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-06 13:18",
+  "updated": "2026-07-07 12:59",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "多视角长视频生成新方法",
+      "sum": "MV-Forcing 通过4D时空自强制实现长序列多视角视频生成。",
+      "ta": "对动态场景多视角一致性生成有参考价值，但离实时游戏管线尚远。",
+      "src": "arXiv · cs.GR · 07-06",
+      "url": "https://arxiv.org/abs/2607.05376v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "实时毛发渲染软件光栅化",
+      "sum": "提出延迟软件光栅化管线，实现实时发丝渲染。",
+      "ta": "直接相关：实时发丝渲染方案，可评估是否适合UE5角色管线。",
+      "src": "arXiv · cs.GR · 07-05",
+      "url": "https://arxiv.org/abs/2607.04230v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "物理模拟面部接触皱纹",
+      "sum": "基于物理的皮肤接触皱纹模拟，考虑非线性分层材料。",
+      "ta": "面部细节模拟技术，对数字人皮肤动态有参考。",
+      "src": "arXiv · cs.GR · 07-06",
+      "url": "https://arxiv.org/abs/2607.04768v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "几何约束室外3D场景生成",
+      "sum": "SceneFrom3D 通过视图调度实现几何约束的室外场景生成。",
+      "ta": "程序化场景生成方向，可关注其对象级控制方法。",
+      "src": "arXiv · cs.GR · 07-05",
+      "url": "https://arxiv.org/abs/2607.04540v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "数字人创建综述报告",
+      "sum": "综述从先验学习到可动写实化身的3D数字人管线。",
+      "ta": "数字人管线全景参考，适合了解当前技术栈。",
+      "src": "arXiv · cs.GR · 07-05",
+      "url": "https://arxiv.org/abs/2607.04341v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "可微眩光评估方法",
+      "sum": "用可微光传输优化统一眩光评级，用于建筑/汽车设计。",
+      "ta": "可微渲染在物理设计中的应用，与游戏渲染间接相关。",
+      "src": "arXiv · cs.GR · 07-06",
+      "url": "https://arxiv.org/abs/2607.04796v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "全动态Omnitree压缩",
+      "sum": "用矩守恒各向异性小波压缩，改进八叉树和k-d树。",
+      "ta": "空间数据结构优化，对程序化生成和场景管理有潜在价值。",
+      "src": "arXiv · cs.GR · 07-06",
+      "url": "https://arxiv.org/abs/2607.04881v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "自中心八叉树点流更新",
+      "sum": "ECO 增量更新八叉树，用于移动机器人实时点流处理。",
+      "ta": "实时空间数据结构，可借鉴到游戏中的动态场景管理。",
+      "src": "arXiv · cs.GR · 07-06",
+      "url": "https://arxiv.org/abs/2607.05092v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "免费Maya参考匹配工具",
+      "sum": "Maya免费工具支持照片参考与相机匹配，Pro版含投影贴图。",
+      "ta": "直接提升TA贴图制作与参考对齐效率。",
+      "src": "80 Level · 07-06",
+      "url": "https://80.lv/articles/this-free-maya-tool-facilitates-working-with-photo-references-camera-matching/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "VFX复原史前生物幕后",
+      "sum": "Framestore 用VFX为纪录片复原剑齿虎等灭绝动物。",
+      "ta": "生物毛发/皮肤VFX流程参考，可借鉴到游戏角色制作。",
+      "src": "80 Level · 07-06",
+      "url": "https://80.lv/articles/how-prehistoric-planet-ice-age-recreated-extinct-creatures-with-vfx/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "雕塑神秘崇拜领袖技巧",
+      "sum": "Matteo Constant 分享夹克建模与磨损着色器纹理方法。",
+      "ta": "角色材质与着色器技巧，对写实服装渲染有参考。",
+      "src": "80 Level · 07-06",
+      "url": "https://80.lv/articles/how-to-sculpt-an-intriguing-and-mysterious-worship-leader/"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Xbox裁员3200人",
+      "sum": "Xbox裁员3200人，4个工作室换管理，包括Double Fine等。",
+      "ta": "行业震荡影响工作室稳定性，可能波及UE5项目资源。",
+      "src": "80 Level · 07-06",
+      "url": "https://80.lv/articles/xbox-is-laying-off-3-200-employees-giving-4-studios-new-management/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "黑曜石流失四分之一员工",
+      "sum": "Obsidian因Xbox调整流失60-70人，约占员工四分之一。",
+      "ta": "知名工作室人才流失，可能影响其UE5项目进度。",
+      "src": "Game Developer · 07-07",
+      "url": "https://www.gamedeveloper.com/business/report-obsidian-losing-around-one-quarter-of-its-staff-to-xbox-reset-"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Niantic关闭新西兰工作室",
+      "sum": "Ingress开发商Niantic关闭新西兰办公室，转向非游戏领域。",
+      "ta": "AR游戏公司转型，对游戏行业AR/VR方向有信号意义。",
+      "src": "Game Developer · 07-06",
+      "url": "https://www.gamedeveloper.com/business/ingress-developer-niantic-spatial-shuttering-new-zealand-office"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EVE Online引擎框架开源",
+      "sum": "EVE Online跨平台引擎框架Carbon现已完全开源。",
+      "ta": "开源游戏引擎框架，可研究其跨平台设计。",
+      "src": "Game Developer · 07-06",
+      "url": "https://www.gamedeveloper.com/production/eve-online-s-cross-platform-game-engine-framework-is-now-fully-open-source"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "赛博朋克2077销量达4000万",
+      "sum": "CDPR宣布《赛博朋克2077》累计销量突破4000万份。",
+      "ta": "商业里程碑，反映大型3A游戏长尾表现。",
+      "src": "80 Level · 07-06",
+      "url": "https://80.lv/articles/cyberpunk-2077-has-reached-40-million-copies-sold/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "独立开发者制作卡牌店模拟器",
+      "sum": "Sia Ding Shen 分享TCG卡牌店模拟器开发经验。",
+      "ta": "独立游戏开发案例，对模拟类游戏系统设计有参考。",
+      "src": "80 Level · 07-06",
+      "url": "https://80.lv/articles/solo-developer-on-creating-a-simulation-game-about-a-local-game-store/"
+    },
     {
       "cat": "biz",
       "imp": "lo",
@@ -12,15 +166,6 @@ window.INTEL_RECENT = {
       "ta": "了解亚洲市场热门游戏类型，对特效资源分配有参考。",
       "src": "PlayStation Blog · 07-06",
       "url": "https://blog.playstation.com/2026/07/05/20260706-top/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "像素空间3D高斯生成",
-      "sum": "PixGS从文本或图像直接生成3D高斯泼溅，解决视角不一致问题。",
-      "ta": "关注3D内容生成新范式，可能简化植被或场景资产的程序化生成管线。",
-      "src": "arXiv · cs.GR · 07-02",
-      "url": "https://arxiv.org/abs/2607.01803v1"
     },
     {
       "cat": "tech",
@@ -487,15 +632,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "VFX流程可视化构建器",
-      "sum": "一个用于VFX/动画管线的可视化工作流构建工具发布。",
-      "ta": "TA可评估该工具能否简化特效与动画的管线搭建。",
-      "src": "Tech-Artists · 06-27",
-      "url": "https://www.tech-artists.org/t/visual-workflow-builder-for-vfx-animation-pipelines/18433"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "UE免费学习内容更新",
       "sum": "本月免费内容含MetaHuman、Mesh Terrain及手机拍电影教程。",
       "ta": "Mesh Terrain和MetaHuman教程直接关联植被工具与角色管线，值得快速浏览。",
@@ -794,15 +930,6 @@ window.INTEL_RECENT = {
       "ta": "直接关联植被工具与程序化生成工作流，是TA必读的实战教程。",
       "src": "80 Level · 06-24",
       "url": "https://80.lv/articles/create-production-quality-forest-environments-from-scratch-in-ue5-6/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Maya免费动画工具包",
-      "sum": "Animo工具包加速Maya动画工作流，含空间切换、弧线追踪、烘焙等功能。",
-      "ta": "动画辅助工具，可提升角色动画制作效率，间接影响TA的动画数据准备。",
-      "src": "80 Level · 06-24",
-      "url": "https://80.lv/articles/new-free-toolkit-released-for-maya-animators/"
     },
     {
       "cat": "flow",
