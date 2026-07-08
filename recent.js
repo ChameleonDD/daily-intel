@@ -2,8 +2,99 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-07 12:59",
+  "updated": "2026-07-08 12:20",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS屏幕伪影去除",
+      "sum": "SSA-3DGS无监督去除3DGS中的屏幕空间伪影。",
+      "ta": "对3DGS管线中的伪影问题有直接参考价值，可提升重建质量。",
+      "src": "arXiv · cs.GR · 07-06",
+      "url": "https://arxiv.org/abs/2607.05598v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "手绘晶体剑制作",
+      "sum": "Swayam Sontakke详解晶体剑建模、UV及光照技巧。",
+      "ta": "手绘风格资产制作流程参考，适合风格化项目。",
+      "src": "80 Level · 07-07",
+      "url": "https://80.lv/articles/how-to-make-magical-hand-painted-crystal-sword-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender几何节点入门",
+      "sum": "Ryan King Art教程教你创建三个实用几何节点设置。",
+      "ta": "几何节点基础教程，适合新手快速上手程序化建模。",
+      "src": "80 Level · 07-07",
+      "url": "https://80.lv/articles/tutorial-blender-s-geometry-nodes-for-beginners/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "手绘精灵角色全流程",
+      "sum": "Arturo Galván Soler分享Blender和Substance 3D Painter制作精灵角色。",
+      "ta": "手绘风格角色管线参考，涵盖雕刻、纹理和动画。",
+      "src": "80 Level · 07-07",
+      "url": "https://80.lv/articles/creating-hand-painted-elf-character-in-3d-from-scratch-using-blender-substance-3d-painter/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "UE实时水体模拟工具",
+      "sum": "EasyFog Creator发布EasyWaterscape实时水体模拟工具。",
+      "ta": "UE水体模拟新工具，可快速提升场景水体效果。",
+      "src": "80 Level · 07-07",
+      "url": "https://80.lv/articles/easyfog-creator-presents-real-time-water-simulation-tool-for-unreal-engine/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Meccha Chameleon销量破1500万",
+      "sum": "绘画捉迷藏游戏Meccha Chameleon 26天销量达1500万。",
+      "ta": "独立游戏市场表现案例，了解玩家偏好。",
+      "src": "80 Level · 07-07",
+      "url": "https://80.lv/articles/painting-hide-and-seek-game-meccha-chameleon-hits-15-million-sales-in-26-days/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Compulsion Games独立后保留IP",
+      "sum": "Compulsion Games独立后保留IP，类似Double Fine安排。",
+      "ta": "行业动态，了解工作室独立与IP归属趋势。",
+      "src": "80 Level · 07-07",
+      "url": "https://80.lv/articles/compulsion-games-to-retain-ip-rights-after-going-independent/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Supercell非洲开发者资助",
+      "sum": "Supercell启动非洲工作室资助计划，金额2万至20万美元。",
+      "ta": "行业资助动态，关注新兴市场开发者生态。",
+      "src": "Game Developer · 07-07",
+      "url": "https://www.gamedeveloper.com/business/supercell-starts-developer-grants-program-for-studios-across-africa"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "IO Interactive关闭伊斯坦布尔工作室",
+      "sum": "IO Interactive因Xbox撤资关闭伊斯坦布尔工作室，重组项目。",
+      "ta": "行业重组案例，关注大厂投资变动影响。",
+      "src": "Game Developer · 07-07",
+      "url": "https://www.gamedeveloper.com/business/io-interactive-closing-istanbul-studio-after-regaining-control-of-project-fantasy"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 1,
+      "title": "id Software半数裁员",
+      "sum": "报告称id Software约半数员工被裁，Xbox计划削减3200岗位。",
+      "ta": "行业地震级事件，影响3A工作室人才流动和项目稳定性。",
+      "src": "Game Developer · 07-07",
+      "url": "https://www.gamedeveloper.com/business/report-around-half-of-the-id-software-team-have-been-laid-off"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -195,15 +286,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/sculpting-and-texturing-a-stylized-3d-environment-with-autumn-vibes/"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender场景重建教程",
-      "sum": "Yash Jain用Blender和Gaea重建肯尼亚国家公园地形。",
-      "ta": "Gaea地形生成工作流可迁移至UE程序化地形管线。",
-      "src": "80 Level · 07-03",
-      "url": "https://80.lv/articles/how-to-recreate-a-scene-from-the-amboselli-national-park-in-kenya/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "Red Rover裁员",
@@ -376,15 +458,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "title": "3DGS光线追踪加速",
-      "sum": "GRay实现3D高斯光线追踪，速度接近光栅化，比之前方法快近一个数量级。",
-      "ta": "突破性进展，使3DGS支持高质量光线追踪反射/阴影，对实时渲染管线影响巨大。",
-      "src": "arXiv · cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.30869v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "mid",
       "title": "可编辑物理反射高斯场",
       "sum": "在光线追踪高斯辐射场中实现可编辑的基于物理的反射，而非伪造几何。",
@@ -436,15 +509,6 @@ window.INTEL_RECENT = {
       "ta": "行业商业动态，可能影响外包合作。",
       "src": "80 Level · 06-30",
       "url": "https://80.lv/articles/xbox-reportedly-halts-new-game-pass-agreements-with-outside-studios/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "IO Interactive裁员",
-      "sum": "Xbox取消支持后，IO Interactive将裁员。",
-      "ta": "行业动荡，可能影响项目外包或招聘。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/io-interactive-to-lay-off-employees-after-xbox-pulls-support-for-untitled-fantasy-game"
     },
     {
       "cat": "biz",
@@ -628,15 +692,6 @@ window.INTEL_RECENT = {
       "ta": "对写实角色皮肤渲染有直接参考价值，可探索管线集成。",
       "src": "arXiv · cs.GR · 06-25",
       "url": "https://arxiv.org/abs/2606.27604v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE免费学习内容更新",
-      "sum": "本月免费内容含MetaHuman、Mesh Terrain及手机拍电影教程。",
-      "ta": "Mesh Terrain和MetaHuman教程直接关联植被工具与角色管线，值得快速浏览。",
-      "src": "Unreal Engine · 06-26",
-      "url": "https://www.unrealengine.com/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more"
     },
     {
       "cat": "ai",
