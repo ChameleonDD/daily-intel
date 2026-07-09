@@ -2,8 +2,108 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-08 12:20",
+  "updated": "2026-07-09 12:59",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "SPEAR 仿真器发布",
+      "sum": "SPEAR 是用于具身 AI 研究的光真实感交互仿真器。",
+      "ta": "关注其渲染管线与实时性能，可能影响虚拟数据生成工作流。",
+      "src": "arXiv · cs.GR · 07-07",
+      "url": "https://arxiv.org/abs/2607.06701v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "WildCity 城市级测试床",
+      "sum": "WildCity 是真实城市规模的渲染、仿真与空间智能测试平台。",
+      "ta": "可作为程序化城市生成与实时渲染的参考基准。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.06838"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "黑旗重制版无缝世界技术",
+      "sum": "育碧谈黑旗重制版：Anvil 引擎升级，移除加载屏，现代化航海。",
+      "ta": "直接相关：Anvil 引擎开放世界流式加载与性能优化细节。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/interview-the-tech-behind-assassin-s-creed-black-flag-resynced-s-seamless-open-world/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "黑曜石将开发新辐射",
+      "sum": "微软取消 Avowed 续作，黑曜石转向新辐射项目。",
+      "ta": "行业动向，可能影响后续引擎/工具需求。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/fallout-new-vegas-studio-obsidian-is-reportedly-making-a-new-fallout-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "卡通电吉他 Blender 流程",
+      "sum": "分享 Blender 卡通电吉他建模、纹理、描边与液体材质。",
+      "ta": "可参考其 stylized 资产制作管线。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/breakdown-creating-cartoon-style-3d-electric-guitar-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "法环短剑资产制作解析",
+      "sum": "Maya 粗模、ZBrush 高模、Substance Painter 纹理与晶体材质。",
+      "ta": "关注晶体材质挑战与 PBR 纹理流程。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/elden-ring-glintstone-kris-shortsword-made-in-maya-zbrush-substance-3d-painter/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Godot 虫洞 Shader 关卡过渡",
+      "sum": "Godot 飞行游戏用虫洞 Shader 实现无缝关卡切换，纯 GDScript。",
+      "ta": "可借鉴其 Shader 实现无缝过渡的思路。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/wormhole-shader-for-seamless-level-transitions-in-godot-powered-arcade-flying-game/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Unity 格斯特纳波海洋 Shader",
+      "sum": "Unity 中实现带格斯特纳波的海洋 Shader。",
+      "ta": "经典海洋渲染技术，适合实时水面效果参考。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/ocean-shader-with-gerstner-waves-in-unity/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "马里奥赛车手游停运",
+      "sum": "任天堂宣布《马里奥赛车巡回赛》手游将停运，无离线版。",
+      "ta": "行业新闻，无直接技术关联。",
+      "src": "Game Developer · 07-08",
+      "url": "https://www.gamedeveloper.com/business/mobile-game-mario-kart-tour-is-winding-down"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "B 社蒙特利尔裁员",
+      "sum": "CWA 加拿大批评微软在 B 社蒙特利尔裁员约 12 人。",
+      "ta": "行业新闻，无直接技术关联。",
+      "src": "Game Developer · 07-08",
+      "url": "https://www.gamedeveloper.com/business/-employers-are-ruthless-cwa-canada-slams-microsoft-over-handling-of-bethesda-layoffs"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "id Software 裁员 136 人",
+      "sum": "id Software 裁员 136 人，Xbox 游戏部门计划裁 3200 人。",
+      "ta": "行业新闻，无直接技术关联。",
+      "src": "Game Developer · 07-07",
+      "url": "https://www.gamedeveloper.com/business/report-around-half-of-the-id-software-team-have-been-laid-off"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -21,15 +121,6 @@ window.INTEL_RECENT = {
       "ta": "手绘风格资产制作流程参考，适合风格化项目。",
       "src": "80 Level · 07-07",
       "url": "https://80.lv/articles/how-to-make-magical-hand-painted-crystal-sword-in-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender几何节点入门",
-      "sum": "Ryan King Art教程教你创建三个实用几何节点设置。",
-      "ta": "几何节点基础教程，适合新手快速上手程序化建模。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/tutorial-blender-s-geometry-nodes-for-beginners/"
     },
     {
       "cat": "flow",

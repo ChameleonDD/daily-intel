@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月8日 · 周三",
+  "date": "2026年7月9日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>id Software半数裁员</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>黑旗重制版无缝世界技术</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,100 +118,109 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "3DGS屏幕伪影去除",
-      "sum": "SSA-3DGS无监督去除3DGS中的屏幕空间伪影。",
-      "ta": "对3DGS管线中的伪影问题有直接参考价值，可提升重建质量。",
-      "src": "arXiv · cs.GR · 07-06",
-      "url": "https://arxiv.org/abs/2607.05598v1"
+      "title": "SPEAR 仿真器发布",
+      "sum": "SPEAR 是用于具身 AI 研究的光真实感交互仿真器。",
+      "ta": "关注其渲染管线与实时性能，可能影响虚拟数据生成工作流。",
+      "src": "arXiv · cs.GR · 07-07",
+      "url": "https://arxiv.org/abs/2607.06701v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "WildCity 城市级测试床",
+      "sum": "WildCity 是真实城市规模的渲染、仿真与空间智能测试平台。",
+      "ta": "可作为程序化城市生成与实时渲染的参考基准。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.06838"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "黑旗重制版无缝世界技术",
+      "sum": "育碧谈黑旗重制版：Anvil 引擎升级，移除加载屏，现代化航海。",
+      "ta": "直接相关：Anvil 引擎开放世界流式加载与性能优化细节。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/interview-the-tech-behind-assassin-s-creed-black-flag-resynced-s-seamless-open-world/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "黑曜石将开发新辐射",
+      "sum": "微软取消 Avowed 续作，黑曜石转向新辐射项目。",
+      "ta": "行业动向，可能影响后续引擎/工具需求。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/fallout-new-vegas-studio-obsidian-is-reportedly-making-a-new-fallout-game/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "手绘晶体剑制作",
-      "sum": "Swayam Sontakke详解晶体剑建模、UV及光照技巧。",
-      "ta": "手绘风格资产制作流程参考，适合风格化项目。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/how-to-make-magical-hand-painted-crystal-sword-in-3d/"
+      "title": "卡通电吉他 Blender 流程",
+      "sum": "分享 Blender 卡通电吉他建模、纹理、描边与液体材质。",
+      "ta": "可参考其 stylized 资产制作管线。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/breakdown-creating-cartoon-style-3d-electric-guitar-in-blender/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender几何节点入门",
-      "sum": "Ryan King Art教程教你创建三个实用几何节点设置。",
-      "ta": "几何节点基础教程，适合新手快速上手程序化建模。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/tutorial-blender-s-geometry-nodes-for-beginners/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "手绘精灵角色全流程",
-      "sum": "Arturo Galván Soler分享Blender和Substance 3D Painter制作精灵角色。",
-      "ta": "手绘风格角色管线参考，涵盖雕刻、纹理和动画。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/creating-hand-painted-elf-character-in-3d-from-scratch-using-blender-substance-3d-painter/"
+      "title": "法环短剑资产制作解析",
+      "sum": "Maya 粗模、ZBrush 高模、Substance Painter 纹理与晶体材质。",
+      "ta": "关注晶体材质挑战与 PBR 纹理流程。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/elden-ring-glintstone-kris-shortsword-made-in-maya-zbrush-substance-3d-painter/"
     },
     {
       "cat": "tech",
       "imp": "mid",
-      "title": "UE实时水体模拟工具",
-      "sum": "EasyFog Creator发布EasyWaterscape实时水体模拟工具。",
-      "ta": "UE水体模拟新工具，可快速提升场景水体效果。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/easyfog-creator-presents-real-time-water-simulation-tool-for-unreal-engine/"
+      "title": "Godot 虫洞 Shader 关卡过渡",
+      "sum": "Godot 飞行游戏用虫洞 Shader 实现无缝关卡切换，纯 GDScript。",
+      "ta": "可借鉴其 Shader 实现无缝过渡的思路。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/wormhole-shader-for-seamless-level-transitions-in-godot-powered-arcade-flying-game/"
     },
     {
       "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 几何节点打字机",
+      "sum": "Blender 几何节点程序化打字机，作者计划免费发布。",
+      "ta": "程序化资产生成案例，可学习几何节点工作流。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/procedural-typewriter-in-blender-s-geometry-nodes/"
+    },
+    {
+      "cat": "tech",
       "imp": "lo",
-      "title": "Blender物理动画教程",
-      "sum": "Ian Hubert展示如何在Blender中利用物理进行动画。",
-      "ta": "物理模拟动画技巧，适合快速生成动态效果。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/ian-hubert-shows-how-to-animate-with-physics-in-blender/"
+      "title": "Unity 格斯特纳波海洋 Shader",
+      "sum": "Unity 中实现带格斯特纳波的海洋 Shader。",
+      "ta": "经典海洋渲染技术，适合实时水面效果参考。",
+      "src": "80 Level · 07-08",
+      "url": "https://80.lv/articles/ocean-shader-with-gerstner-waves-in-unity/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Meccha Chameleon销量破1500万",
-      "sum": "绘画捉迷藏游戏Meccha Chameleon 26天销量达1500万。",
-      "ta": "独立游戏市场表现案例，了解玩家偏好。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/painting-hide-and-seek-game-meccha-chameleon-hits-15-million-sales-in-26-days/"
+      "title": "马里奥赛车手游停运",
+      "sum": "任天堂宣布《马里奥赛车巡回赛》手游将停运，无离线版。",
+      "ta": "行业新闻，无直接技术关联。",
+      "src": "Game Developer · 07-08",
+      "url": "https://www.gamedeveloper.com/business/mobile-game-mario-kart-tour-is-winding-down"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Compulsion Games独立后保留IP",
-      "sum": "Compulsion Games独立后保留IP，类似Double Fine安排。",
-      "ta": "行业动态，了解工作室独立与IP归属趋势。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/compulsion-games-to-retain-ip-rights-after-going-independent/"
+      "title": "B 社蒙特利尔裁员",
+      "sum": "CWA 加拿大批评微软在 B 社蒙特利尔裁员约 12 人。",
+      "ta": "行业新闻，无直接技术关联。",
+      "src": "Game Developer · 07-08",
+      "url": "https://www.gamedeveloper.com/business/-employers-are-ruthless-cwa-canada-slams-microsoft-over-handling-of-bethesda-layoffs"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Supercell非洲开发者资助",
-      "sum": "Supercell启动非洲工作室资助计划，金额2万至20万美元。",
-      "ta": "行业资助动态，关注新兴市场开发者生态。",
-      "src": "Game Developer · 07-07",
-      "url": "https://www.gamedeveloper.com/business/supercell-starts-developer-grants-program-for-studios-across-africa"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "IO Interactive关闭伊斯坦布尔工作室",
-      "sum": "IO Interactive因Xbox撤资关闭伊斯坦布尔工作室，重组项目。",
-      "ta": "行业重组案例，关注大厂投资变动影响。",
-      "src": "Game Developer · 07-07",
-      "url": "https://www.gamedeveloper.com/business/io-interactive-closing-istanbul-studio-after-regaining-control-of-project-fantasy"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 1,
-      "title": "id Software半数裁员",
-      "sum": "报告称id Software约半数员工被裁，Xbox计划削减3200岗位。",
-      "ta": "行业地震级事件，影响3A工作室人才流动和项目稳定性。",
+      "title": "id Software 裁员 136 人",
+      "sum": "id Software 裁员 136 人，Xbox 游戏部门计划裁 3200 人。",
+      "ta": "行业新闻，无直接技术关联。",
       "src": "Game Developer · 07-07",
       "url": "https://www.gamedeveloper.com/business/report-around-half-of-the-id-software-team-have-been-laid-off"
     }
@@ -222,7 +231,6 @@ window.INTEL_DATA = {
       "Unreal Engine",
       "NVIDIA",
       "PlayStation Blog",
-      "AMD GPUOpen",
       "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
@@ -230,7 +238,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": "未覆盖：Blender 开发博客、AMD GPUOpen。"
   },
   "xStale": false
 };
