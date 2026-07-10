@@ -2,8 +2,152 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-09 12:59",
+  "updated": "2026-07-10 12:59",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "交互式人体动作生成",
+      "sum": "ARDY用自回归扩散+混合表示实现实时3D人体动作生成。",
+      "ta": "实时动作生成可加速角色动画原型，但需验证UE5管线集成度。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08741v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "物理仿真统一网格重建",
+      "sum": "HoloTetSphere直接优化体积基元，绕过表面提取+四面体化两步流程。",
+      "ta": "直接输出物理就绪网格，可简化程序化资产到仿真管线的转换。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08398v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "PBR条件视频重光照",
+      "sum": "LightCrafter用PBR条件扩散模型实现可控且时序一致的重光照。",
+      "ta": "PBR条件控制可提升视频重光照的物理准确性，对过场动画有用。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08016v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "实时交互视频生成模型",
+      "sum": "Vidu S1发布实时交互式视频生成模型。",
+      "ta": "实时视频生成可能用于游戏内动态过场，但当前质量未知。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.03118"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型推理加速草稿",
+      "sum": "Flash-BoN为扩散模型提供即时草稿以加速推理。",
+      "ta": "推理加速技术可降低生成式工具在游戏工作流中的延迟。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.04461"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "端侧图像转视频相机运动",
+      "sum": "CineMobile在设备上实现图像到视频的扩散，生成电影级相机运动。",
+      "ta": "端侧生成相机运动可用于快速预览，但实时性存疑。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.03803"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender几何节点恶搞",
+      "sum": "一篇关于Blender几何节点奇怪用法的恶搞帖子。",
+      "ta": "纯娱乐，无技术价值，但可了解社区创意。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/something-is-really-wrong-with-this-blender-artist-s-geometry-nodes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "行星飞船动画概念",
+      "sum": "用整个行星构建巨型飞船的史诗动画概念。",
+      "ta": "视觉灵感参考，无直接技术细节。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/epic-animation-of-giant-spaceship-built-from-entire-planets/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "免费Maya面部绑定变形器",
+      "sum": "Zhenggang Deng发布免费自定义Maya变形器，用于高端面部绑定。",
+      "ta": "免费面部绑定工具可提升角色管线效率，需测试兼容性。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/free-custom-maya-deformer-for-high-end-facial-rigging/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "玩具手柄改Mario Kart",
+      "sum": "开发者将Fisher-Price玩具手柄改造成Mario Kart陀螺仪游戏手柄。",
+      "ta": "硬件改造趣味项目，与TA工作流无关。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/developer-turns-fisher-price-toy-controller-into-a-mario-kart-gyro-gamepad/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "风格化角色面部绑定测试",
+      "sum": "3D短片《Noah and Jade》的风格化角色面部绑定测试。",
+      "ta": "风格化绑定案例参考，无新技术细节。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/facial-rig-tests-for-stylized-characters-in-3d-short-film/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "游戏媒体新站Respec上线",
+      "sum": "Eurogamer和VG247老将推出独立游戏媒体Respec。",
+      "ta": "行业动态，可能影响游戏资讯获取渠道。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/business/eurogamer-and-vg247-veterans-launch-new-independent-site"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "风险规避游戏行业边缘化开发者",
+      "sum": "Nazih Fares的卡牌游戏因行业风险规避难获融资。",
+      "ta": "反映行业融资困境，与TA工作无直接关联。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/production/the-game-industry-is-failing-marginalized-developers"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "title": "黑曜石工作室裁员52+人",
+      "sum": "WARN通知确认黑曜石至少52名员工被裁，涉及Pentiment和天外世界团队。",
+      "ta": "3A工作室裁员影响行业信心，可能波及项目外包需求。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/business/report-obsidian-losing-around-one-quarter-of-its-staff-to-xbox-reset-"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "title": "Xbox裁减379名Zenimax员工",
+      "sum": "Xbox在马里兰州裁减379名Zenimax员工，含213名ESO开发者。",
+      "ta": "大规模裁员影响游戏行业生态，可能影响UE5项目资源。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/business/xbox-had-laid-off-379-zenimax-workers-in-maryland"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Maya动画层节点自连接Bug",
+      "sum": "Maya 2024.2中引用绑定的动画层节点保存重开后自连接循环。",
+      "ta": "直接影响绑定和动画管线，需关注修复或规避。",
+      "src": "Tech-Artists · 07-09",
+      "url": "https://www.tech-artists.org/t/bug-animation-layer-nodes-self-connect-cycle-after-save-reopen-on-referenced-rigs-maya-2024-2/18445"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -40,15 +184,6 @@ window.INTEL_RECENT = {
       "ta": "行业动向，可能影响后续引擎/工具需求。",
       "src": "80 Level · 07-08",
       "url": "https://80.lv/articles/fallout-new-vegas-studio-obsidian-is-reportedly-making-a-new-fallout-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "卡通电吉他 Blender 流程",
-      "sum": "分享 Blender 卡通电吉他建模、纹理、描边与液体材质。",
-      "ta": "可参考其 stylized 资产制作管线。",
-      "src": "80 Level · 07-08",
-      "url": "https://80.lv/articles/breakdown-creating-cartoon-style-3d-electric-guitar-in-blender/"
     },
     {
       "cat": "flow",
@@ -257,15 +392,6 @@ window.INTEL_RECENT = {
       "ta": "实时空间数据结构，可借鉴到游戏中的动态场景管理。",
       "src": "arXiv · cs.GR · 07-06",
       "url": "https://arxiv.org/abs/2607.05092v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "免费Maya参考匹配工具",
-      "sum": "Maya免费工具支持照片参考与相机匹配，Pro版含投影贴图。",
-      "ta": "直接提升TA贴图制作与参考对齐效率。",
-      "src": "80 Level · 07-06",
-      "url": "https://80.lv/articles/this-free-maya-tool-facilitates-working-with-photo-references-camera-matching/"
     },
     {
       "cat": "flow",
