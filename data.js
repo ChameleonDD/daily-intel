@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月10日 · 周五",
+  "date": "2026年7月11日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>黑曜石工作室裁员52+人</em> / <em>Xbox裁减379名Zenimax员工</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>CUDA核融合优化内存</em> / <em>事件视频重建与插帧</em> / <em>实时交互多目标视频分割</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,155 +118,119 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "交互式人体动作生成",
-      "sum": "ARDY用自回归扩散+混合表示实现实时3D人体动作生成。",
-      "ta": "实时动作生成可加速角色动画原型，但需验证UE5管线集成度。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08741v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "物理仿真统一网格重建",
-      "sum": "HoloTetSphere直接优化体积基元，绕过表面提取+四面体化两步流程。",
-      "ta": "直接输出物理就绪网格，可简化程序化资产到仿真管线的转换。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08398v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "PBR条件视频重光照",
-      "sum": "LightCrafter用PBR条件扩散模型实现可控且时序一致的重光照。",
-      "ta": "PBR条件控制可提升视频重光照的物理准确性，对过场动画有用。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08016v1"
+      "title": "CUDA核融合优化内存",
+      "sum": "NVIDIA 博客介绍核融合技术改善 GPU 内存带宽与启动开销。",
+      "ta": "核融合思路可借鉴到 UE Shader 合并与渲染 Pass 优化。",
+      "src": "NVIDIA · 07-10",
+      "url": "https://developer.nvidia.com/blog/kernel-fusion-in-nvidia-cuda-optimizing-memory-traffic-and-launch-overhead/"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "实时交互视频生成模型",
-      "sum": "Vidu S1发布实时交互式视频生成模型。",
-      "ta": "实时视频生成可能用于游戏内动态过场，但当前质量未知。",
+      "title": "事件视频重建与插帧",
+      "sum": "LongE2V 用视频扩散模型实现长时域事件视频重建与插帧。",
+      "ta": "视频插帧技术可应用于游戏过场或实时回放效果。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.03118"
+      "url": "https://huggingface.co/papers/2607.08770"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "扩散模型推理加速草稿",
-      "sum": "Flash-BoN为扩散模型提供即时草稿以加速推理。",
-      "ta": "推理加速技术可降低生成式工具在游戏工作流中的延迟。",
+      "title": "实时交互多目标视频分割",
+      "sum": "SAM-MT 实现实时交互式多目标视频分割。",
+      "ta": "实时分割可用于游戏内动态遮罩或后期特效。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.04461"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "端侧图像转视频相机运动",
-      "sum": "CineMobile在设备上实现图像到视频的扩散，生成电影级相机运动。",
-      "ta": "端侧生成相机运动可用于快速预览，但实时性存疑。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.03803"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender几何节点恶搞",
-      "sum": "一篇关于Blender几何节点奇怪用法的恶搞帖子。",
-      "ta": "纯娱乐，无技术价值，但可了解社区创意。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/something-is-really-wrong-with-this-blender-artist-s-geometry-nodes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "行星飞船动画概念",
-      "sum": "用整个行星构建巨型飞船的史诗动画概念。",
-      "ta": "视觉灵感参考，无直接技术细节。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/epic-animation-of-giant-spaceship-built-from-entire-planets/"
+      "url": "https://huggingface.co/papers/2607.08688"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "免费Maya面部绑定变形器",
-      "sum": "Zhenggang Deng发布免费自定义Maya变形器，用于高端面部绑定。",
-      "ta": "免费面部绑定工具可提升角色管线效率，需测试兼容性。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/free-custom-maya-deformer-for-high-end-facial-rigging/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender实时纹理绘制工具",
-      "sum": "TXTRCast工具允许在Blender中实时纹理绘制，支持任何软件。",
-      "ta": "实时纹理绘制可加速贴图迭代，对材质工作流有潜在价值。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/free-blender-tool-for-real-time-texture-painting-with-any-software/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "玩具手柄改Mario Kart",
-      "sum": "开发者将Fisher-Price玩具手柄改造成Mario Kart陀螺仪游戏手柄。",
-      "ta": "硬件改造趣味项目，与TA工作流无关。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/developer-turns-fisher-price-toy-controller-into-a-mario-kart-gyro-gamepad/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "风格化角色面部绑定测试",
-      "sum": "3D短片《Noah and Jade》的风格化角色面部绑定测试。",
-      "ta": "风格化绑定案例参考，无新技术细节。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/facial-rig-tests-for-stylized-characters-in-3d-short-film/"
+      "title": "Godot道路生成器更新",
+      "sum": "Godot 道路生成插件新增更好的程序化交叉口功能。",
+      "ta": "程序化道路交叉口算法可参考用于 UE 工具链。",
+      "src": "80 Level · 07-11",
+      "url": "https://80.lv/articles/godot-road-generator-now-features-better-procedural-intersections/"
     },
     {
       "cat": "biz",
-      "imp": "mid",
-      "title": "游戏媒体新站Respec上线",
-      "sum": "Eurogamer和VG247老将推出独立游戏媒体Respec。",
-      "ta": "行业动态，可能影响游戏资讯获取渠道。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/business/eurogamer-and-vg247-veterans-launch-new-independent-site"
+      "imp": "lo",
+      "title": "赛博朋克治愈系建造游戏",
+      "sum": "一款允许玩家建造雨浸世界的赛博朋克治愈游戏。",
+      "ta": "环境建造玩法展示程序化天气与场景交互潜力。",
+      "src": "80 Level · 07-10",
+      "url": "https://80.lv/articles/this-cyberpunk-cozy-game-allows-you-to-build-your-own-rain-soaked-world/"
     },
     {
       "cat": "biz",
-      "imp": "mid",
-      "title": "风险规避游戏行业边缘化开发者",
-      "sum": "Nazih Fares的卡牌游戏因行业风险规避难获融资。",
-      "ta": "反映行业融资困境，与TA工作无直接关联。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/production/the-game-industry-is-failing-marginalized-developers"
+      "imp": "lo",
+      "title": "Poppy Playtime恐怖IP解析",
+      "sum": "总监谈武器化怀旧、心理恐怖与环境叙事设计哲学。",
+      "ta": "环境叙事与关卡设计思路可启发场景氛围构建。",
+      "src": "80 Level · 07-10",
+      "url": "https://80.lv/articles/how-poppy-playtime-became-one-of-gaming-s-biggest-horror-franchises/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender插件制作弹性方块动画",
+      "sum": "使用 Blender 插件制作弹性动态方块动画。",
+      "ta": "弹性动画技术可迁移至 Niagara 或材质模拟。",
+      "src": "80 Level · 07-10",
+      "url": "https://80.lv/articles/this-elastic-and-dynamic-cube-animation-was-made-using-a-blender-add-on/"
     },
     {
       "cat": "biz",
-      "imp": "hi",
-      "title": "黑曜石工作室裁员52+人",
-      "sum": "WARN通知确认黑曜石至少52名员工被裁，涉及Pentiment和天外世界团队。",
-      "ta": "3A工作室裁员影响行业信心，可能波及项目外包需求。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/business/report-obsidian-losing-around-one-quarter-of-its-staff-to-xbox-reset-"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "title": "Xbox裁减379名Zenimax员工",
-      "sum": "Xbox在马里兰州裁减379名Zenimax员工，含213名ESO开发者。",
-      "ta": "大规模裁员影响游戏行业生态，可能影响UE5项目资源。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/business/xbox-had-laid-off-379-zenimax-workers-in-maryland"
+      "imp": "lo",
+      "title": "独立工作室驾驶平台续作开发",
+      "sum": "开发者谈 Stunt Paradise 2 关卡重设计及车辆行为软件。",
+      "ta": "车辆物理与关卡设计经验可参考。",
+      "src": "80 Level · 07-10",
+      "url": "https://80.lv/articles/how-an-indie-studio-created-a-sequel-of-a-driving-platformer-game/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Maya动画层节点自连接Bug",
-      "sum": "Maya 2024.2中引用绑定的动画层节点保存重开后自连接循环。",
-      "ta": "直接影响绑定和动画管线，需关注修复或规避。",
-      "src": "Tech-Artists · 07-09",
-      "url": "https://www.tech-artists.org/t/bug-animation-layer-nodes-self-connect-cycle-after-save-reopen-on-referenced-rigs-maya-2024-2/18445"
+      "title": "Hunt: Showdown武器皮肤制作",
+      "sum": "详解 Nitro Express 皮肤的金色细节与材质设置。",
+      "ta": "高精度武器材质工作流，含金属细节与材质节点。",
+      "src": "80 Level · 07-10",
+      "url": "https://80.lv/articles/behind-creation-of-nitro-express-checks-and-balances-skin-for-hunt-showdown-1896/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "独立游戏发行困境分析",
+      "sum": "Skystone Games 谈 2026 年发行策略与 2.1 万款游戏问题。",
+      "ta": "行业生态分析，对独立项目发行时机有参考。",
+      "src": "80 Level · 07-10",
+      "url": "https://80.lv/articles/indie-game-publishing-the-21k-game-problem/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "浏览器内程序化藤蔓生成器",
+      "sum": "基于 Three.js 的完全程序化常春藤与无花果树生成器。",
+      "ta": "程序化植被生成算法可直接参考用于 UE 工具。",
+      "src": "80 Level · 07-10",
+      "url": "https://80.lv/articles/this-fully-procedural-ivy-and-fig-tree-generator-runs-in-your-browser/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "NexusMods向UGC平台转型",
+      "sum": "CEO 谈从文件托管向用户生成内容平台进化。",
+      "ta": "Mod 生态变化影响游戏内容生产与工具需求。",
+      "src": "Game Developer · 07-10",
+      "url": "https://www.gamedeveloper.com/pc/nexusmods-ceo-digs-into-the-dynamics-of-video-game-modding-ft-victor-folmann"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox工会工人抗议集会",
+      "sum": "B社工会成员组织7月15日“拯救我们的开发者”集会。",
+      "ta": "行业劳资动态，可能影响项目开发节奏。",
+      "src": "Game Developer · 07-10",
+      "url": "https://www.gamedeveloper.com/business/-we-mean-business-xbox-union-workers-fighting-back-with-save-our-devs-rally-on-july-15"
     }
   ],
   "flashbackTitle": "",
