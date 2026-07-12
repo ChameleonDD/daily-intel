@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月11日 · 周六",
+  "date": "2026年7月12日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>CUDA核融合优化内存</em> / <em>事件视频重建与插帧</em> / <em>实时交互多目标视频分割</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Ornatrix毛发烘焙管线</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,121 +116,13 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CUDA核融合优化内存",
-      "sum": "NVIDIA 博客介绍核融合技术改善 GPU 内存带宽与启动开销。",
-      "ta": "核融合思路可借鉴到 UE Shader 合并与渲染 Pass 优化。",
-      "src": "NVIDIA · 07-10",
-      "url": "https://developer.nvidia.com/blog/kernel-fusion-in-nvidia-cuda-optimizing-memory-traffic-and-launch-overhead/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "事件视频重建与插帧",
-      "sum": "LongE2V 用视频扩散模型实现长时域事件视频重建与插帧。",
-      "ta": "视频插帧技术可应用于游戏过场或实时回放效果。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.08770"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时交互多目标视频分割",
-      "sum": "SAM-MT 实现实时交互式多目标视频分割。",
-      "ta": "实时分割可用于游戏内动态遮罩或后期特效。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.08688"
-    },
-    {
       "cat": "flow",
       "imp": "mid",
-      "title": "Godot道路生成器更新",
-      "sum": "Godot 道路生成插件新增更好的程序化交叉口功能。",
-      "ta": "程序化道路交叉口算法可参考用于 UE 工具链。",
-      "src": "80 Level · 07-11",
-      "url": "https://80.lv/articles/godot-road-generator-now-features-better-procedural-intersections/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "赛博朋克治愈系建造游戏",
-      "sum": "一款允许玩家建造雨浸世界的赛博朋克治愈游戏。",
-      "ta": "环境建造玩法展示程序化天气与场景交互潜力。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/this-cyberpunk-cozy-game-allows-you-to-build-your-own-rain-soaked-world/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Poppy Playtime恐怖IP解析",
-      "sum": "总监谈武器化怀旧、心理恐怖与环境叙事设计哲学。",
-      "ta": "环境叙事与关卡设计思路可启发场景氛围构建。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/how-poppy-playtime-became-one-of-gaming-s-biggest-horror-franchises/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender插件制作弹性方块动画",
-      "sum": "使用 Blender 插件制作弹性动态方块动画。",
-      "ta": "弹性动画技术可迁移至 Niagara 或材质模拟。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/this-elastic-and-dynamic-cube-animation-was-made-using-a-blender-add-on/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立工作室驾驶平台续作开发",
-      "sum": "开发者谈 Stunt Paradise 2 关卡重设计及车辆行为软件。",
-      "ta": "车辆物理与关卡设计经验可参考。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/how-an-indie-studio-created-a-sequel-of-a-driving-platformer-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Hunt: Showdown武器皮肤制作",
-      "sum": "详解 Nitro Express 皮肤的金色细节与材质设置。",
-      "ta": "高精度武器材质工作流，含金属细节与材质节点。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/behind-creation-of-nitro-express-checks-and-balances-skin-for-hunt-showdown-1896/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立游戏发行困境分析",
-      "sum": "Skystone Games 谈 2026 年发行策略与 2.1 万款游戏问题。",
-      "ta": "行业生态分析，对独立项目发行时机有参考。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/indie-game-publishing-the-21k-game-problem/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "浏览器内程序化藤蔓生成器",
-      "sum": "基于 Three.js 的完全程序化常春藤与无花果树生成器。",
-      "ta": "程序化植被生成算法可直接参考用于 UE 工具。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/this-fully-procedural-ivy-and-fig-tree-generator-runs-in-your-browser/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "NexusMods向UGC平台转型",
-      "sum": "CEO 谈从文件托管向用户生成内容平台进化。",
-      "ta": "Mod 生态变化影响游戏内容生产与工具需求。",
-      "src": "Game Developer · 07-10",
-      "url": "https://www.gamedeveloper.com/pc/nexusmods-ceo-digs-into-the-dynamics-of-video-game-modding-ft-victor-folmann"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox工会工人抗议集会",
-      "sum": "B社工会成员组织7月15日“拯救我们的开发者”集会。",
-      "ta": "行业劳资动态，可能影响项目开发节奏。",
-      "src": "Game Developer · 07-10",
-      "url": "https://www.gamedeveloper.com/business/-we-mean-business-xbox-union-workers-fighting-back-with-save-our-devs-rally-on-july-15"
+      "title": "Ornatrix毛发烘焙管线",
+      "sum": "Ornatrix毛发烘焙管线及免费Maya自动化工具发布。",
+      "ta": "可简化毛发从DCC到引擎的烘焙流程，提升毛发资产制作效率。",
+      "src": "Tech-Artists · 07-12",
+      "url": "https://www.tech-artists.org/t/ornatrix-groom-to-bake-pipeline-a-free-maya-tool-that-automates-the-setup/18462"
     }
   ],
   "flashbackTitle": "",

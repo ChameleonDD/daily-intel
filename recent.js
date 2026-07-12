@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-11 12:18",
+  "updated": "2026-07-12 12:29",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Ornatrix毛发烘焙管线",
+      "sum": "Ornatrix毛发烘焙管线及免费Maya自动化工具发布。",
+      "ta": "可简化毛发从DCC到引擎的烘焙流程，提升毛发资产制作效率。",
+      "src": "Tech-Artists · 07-12",
+      "url": "https://www.tech-artists.org/t/ornatrix-groom-to-bake-pipeline-a-free-maya-tool-that-automates-the-setup/18462"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
