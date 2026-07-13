@@ -2,8 +2,44 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-12 12:29",
+  "updated": "2026-07-13 12:35",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态逆渲染分解材质光照",
+      "sum": "提出动态逆渲染方法，从表面辐射分解材质与光照，支持重光照与AR。",
+      "ta": "逆渲染技术直接影响材质工作流，可提升PBR资产重建精度。",
+      "src": "arXiv · cs.GR · 07-10",
+      "url": "https://arxiv.org/abs/2607.09329v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "示例编程批量编辑碰撞网格",
+      "sum": "提出通过示例编程批量编辑3D碰撞网格的方法，提升物理资产制作效率。",
+      "ta": "碰撞网格是物理交互基础，批量编辑可加速关卡和角色碰撞体制作。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08804v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多模态LLM辅助网格细化",
+      "sum": "利用多模态大语言模型作为零样本语义助手，指导物理引导的3D网格细化。",
+      "ta": "LLM辅助网格细化可能简化有限元网格生成，但需验证在游戏引擎中的实用性。",
+      "src": "arXiv · cs.GR · 07-08",
+      "url": "https://arxiv.org/abs/2607.08798v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型合成沙沸图像",
+      "sum": "基于扩散模型合成沙沸缺陷图像，用于低资源堤坝检测。",
+      "ta": "扩散合成技术可迁移至游戏纹理或缺陷资产生成，但当前应用领域非游戏。",
+      "src": "arXiv · cs.GR · 07-08",
+      "url": "https://arxiv.org/abs/2607.08794v1"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -780,15 +816,6 @@ window.INTEL_RECENT = {
       "ta": "与CAD建模相关，对程序化几何生成工具有潜在影响。",
       "src": "arXiv · cs.GR · 06-30",
       "url": "https://arxiv.org/abs/2606.31579v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "LLM驱动应急决策",
-      "sum": "利用大语言模型为虚拟人决策提供个性，用于应急模拟。",
-      "ta": "AI驱动NPC行为，但非图形渲染或TA核心工作流。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31038v1"
     },
     {
       "cat": "gfx",

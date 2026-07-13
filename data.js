@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月12日 · 周日",
+  "date": "2026年7月13日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Ornatrix毛发烘焙管线</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>动态逆渲染分解材质光照</em> / <em>示例编程批量编辑碰撞网格</em> / <em>多模态LLM辅助网格细化</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,13 +116,40 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态逆渲染分解材质光照",
+      "sum": "提出动态逆渲染方法，从表面辐射分解材质与光照，支持重光照与AR。",
+      "ta": "逆渲染技术直接影响材质工作流，可提升PBR资产重建精度。",
+      "src": "arXiv · cs.GR · 07-10",
+      "url": "https://arxiv.org/abs/2607.09329v1"
+    },
+    {
       "cat": "flow",
       "imp": "mid",
-      "title": "Ornatrix毛发烘焙管线",
-      "sum": "Ornatrix毛发烘焙管线及免费Maya自动化工具发布。",
-      "ta": "可简化毛发从DCC到引擎的烘焙流程，提升毛发资产制作效率。",
-      "src": "Tech-Artists · 07-12",
-      "url": "https://www.tech-artists.org/t/ornatrix-groom-to-bake-pipeline-a-free-maya-tool-that-automates-the-setup/18462"
+      "title": "示例编程批量编辑碰撞网格",
+      "sum": "提出通过示例编程批量编辑3D碰撞网格的方法，提升物理资产制作效率。",
+      "ta": "碰撞网格是物理交互基础，批量编辑可加速关卡和角色碰撞体制作。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08804v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多模态LLM辅助网格细化",
+      "sum": "利用多模态大语言模型作为零样本语义助手，指导物理引导的3D网格细化。",
+      "ta": "LLM辅助网格细化可能简化有限元网格生成，但需验证在游戏引擎中的实用性。",
+      "src": "arXiv · cs.GR · 07-08",
+      "url": "https://arxiv.org/abs/2607.08798v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型合成沙沸图像",
+      "sum": "基于扩散模型合成沙沸缺陷图像，用于低资源堤坝检测。",
+      "ta": "扩散合成技术可迁移至游戏纹理或缺陷资产生成，但当前应用领域非游戏。",
+      "src": "arXiv · cs.GR · 07-08",
+      "url": "https://arxiv.org/abs/2607.08794v1"
     }
   ],
   "flashbackTitle": "",
@@ -131,13 +158,12 @@ window.INTEL_DATA = {
       "NVIDIA",
       "PlayStation Blog",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客、AMD GPUOpen。"
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客、AMD GPUOpen、HuggingFace。"
   },
   "xStale": false
 };
