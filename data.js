@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月13日 · 周一",
+  "date": "2026年7月14日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>动态逆渲染分解材质光照</em> / <em>示例编程批量编辑碰撞网格</em> / <em>多模态LLM辅助网格细化</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>LLM生成多场景游戏世界</em> / <em>3D生成缺陷自动评估</em> / <em>因子化3D网格生成</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,38 +118,110 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "动态逆渲染分解材质光照",
-      "sum": "提出动态逆渲染方法，从表面辐射分解材质与光照，支持重光照与AR。",
-      "ta": "逆渲染技术直接影响材质工作流，可提升PBR资产重建精度。",
-      "src": "arXiv · cs.GR · 07-10",
-      "url": "https://arxiv.org/abs/2607.09329v1"
+      "title": "LLM生成多场景游戏世界",
+      "sum": "MAGIC利用大语言模型实现多场景导航游戏世界的过渡感知生成。",
+      "ta": "关注LLM如何辅助程序化关卡设计，减少手动编辑门户和室内布局的工作量。",
+      "src": "arXiv · cs.GR · 07-13",
+      "url": "https://arxiv.org/abs/2607.11594v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D生成缺陷自动评估",
+      "sum": "3D-DefectBench研究VLM评估管线对细粒度3D生成缺陷的可靠性。",
+      "ta": "了解自动化评估如何影响3D资产质量把控，对生成式工作流有参考价值。",
+      "src": "arXiv · cs.GR · 07-12",
+      "url": "https://arxiv.org/abs/2607.10826v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "因子化3D网格生成",
+      "sum": "LATO.2用顶点和拓扑流分离建模，实现拓扑感知的网格生成。",
+      "ta": "分离几何与拓扑的生成方法可能提升程序化建模的灵活性和质量。",
+      "src": "arXiv · cs.GR · 07-12",
+      "url": "https://arxiv.org/abs/2607.10623v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "文本引导网格变形",
+      "sum": "PoseAlign通过文本引导变形生成姿态一致的3D网格。",
+      "ta": "文本驱动变形工具可加速角色姿态调整，减少手动雕刻。",
+      "src": "arXiv · cs.GR · 07-12",
+      "url": "https://arxiv.org/abs/2607.10560v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "按需属性控制界面",
+      "sum": "Spatula系统生成生成式内容迭代中的按需原位属性控制界面。",
+      "ta": "探索交互式生成工作流，可能改善TA在引擎内调整参数的方式。",
+      "src": "arXiv · cs.GR · 07-11",
+      "url": "https://arxiv.org/abs/2607.10405v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "跨拓扑角色动作混合",
+      "sum": "新框架实现任意角色拓扑间的神经动作混合，无需固定骨架。",
+      "ta": "跨拓扑动作混合可简化不同角色间的动画复用，提升动画管线效率。",
+      "src": "arXiv · cs.GR · 07-11",
+      "url": "https://arxiv.org/abs/2607.10370v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "双人对话动作生成",
+      "sum": "Learn2Chat通过交互调制单语先验生成双人对话动作。",
+      "ta": "对话动作生成技术可能用于NPC交互动画，但当前与游戏管线距离较远。",
+      "src": "arXiv · cs.GR · 07-11",
+      "url": "https://arxiv.org/abs/2607.10313v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "推理时动作迁移",
+      "sum": "Motion4Motion实现推理时跨主体动作迁移。",
+      "ta": "动作迁移技术可快速复用动画数据，但需验证实时性能。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.11644"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "示例编程批量编辑碰撞网格",
-      "sum": "提出通过示例编程批量编辑3D碰撞网格的方法，提升物理资产制作效率。",
-      "ta": "碰撞网格是物理交互基础，批量编辑可加速关卡和角色碰撞体制作。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08804v1"
+      "title": "UE5角色CGI广告流程",
+      "sum": "SuperBlimp分享用Unreal Engine制作角色CGI广告的工作流。",
+      "ta": "了解UE5在商业CGI中的实际管线，可借鉴角色制作与渲染技巧。",
+      "src": "80 Level · 07-13",
+      "url": "https://80.lv/articles/building-captain-itch-designing-a-character-led-cgi-campaign-with-unreal-engine/"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
       "imp": "lo",
-      "title": "多模态LLM辅助网格细化",
-      "sum": "利用多模态大语言模型作为零样本语义助手，指导物理引导的3D网格细化。",
-      "ta": "LLM辅助网格细化可能简化有限元网格生成，但需验证在游戏引擎中的实用性。",
-      "src": "arXiv · cs.GR · 07-08",
-      "url": "https://arxiv.org/abs/2607.08798v1"
+      "title": "Blender 5.2雕刻新功能",
+      "sum": "3D艺术家分享Blender 5.2新增雕刻功能的教程。",
+      "ta": "Blender雕刻更新可能影响资产制作流程，但非UE5核心。",
+      "src": "80 Level · 07-13",
+      "url": "https://80.lv/articles/3d-artist-shares-a-tutorial-on-new-sculpting-features-in-blender-5-2/"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
       "imp": "lo",
-      "title": "扩散模型合成沙沸图像",
-      "sum": "基于扩散模型合成沙沸缺陷图像，用于低资源堤坝检测。",
-      "ta": "扩散合成技术可迁移至游戏纹理或缺陷资产生成，但当前应用领域非游戏。",
-      "src": "arXiv · cs.GR · 07-08",
-      "url": "https://arxiv.org/abs/2607.08794v1"
+      "title": "Blender扁平角色技巧",
+      "sum": "Blender短片导演解决广角镜头畸变的扁平角色制作方法。",
+      "ta": "扁平角色技术可能启发风格化渲染或优化性能的替代方案。",
+      "src": "80 Level · 07-13",
+      "url": "https://80.lv/articles/this-3d-character-is-actually-flat-it-s-crazy/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "11 Bit Studios裁员20人",
+      "sum": "《冰汽时代》开发商11 Bit Studios裁员20人，部分员工内部转岗。",
+      "ta": "行业裁员动态，反映工作室成本压力，可能影响人才流动。",
+      "src": "Game Developer · 07-13",
+      "url": "https://www.gamedeveloper.com/business/the-alters-and-frostpunk-developer-11-bit-studios-is-laying-off-20-employees-"
     }
   ],
   "flashbackTitle": "",
@@ -158,12 +230,13 @@ window.INTEL_DATA = {
       "NVIDIA",
       "PlayStation Blog",
       "arXiv · cs.GR",
+      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客、AMD GPUOpen、HuggingFace。"
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客、AMD GPUOpen。"
   },
   "xStale": false
 };

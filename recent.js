@@ -2,8 +2,107 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-13 12:35",
+  "updated": "2026-07-14 12:08",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "LLM生成多场景游戏世界",
+      "sum": "MAGIC利用大语言模型实现多场景导航游戏世界的过渡感知生成。",
+      "ta": "关注LLM如何辅助程序化关卡设计，减少手动编辑门户和室内布局的工作量。",
+      "src": "arXiv · cs.GR · 07-13",
+      "url": "https://arxiv.org/abs/2607.11594v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D生成缺陷自动评估",
+      "sum": "3D-DefectBench研究VLM评估管线对细粒度3D生成缺陷的可靠性。",
+      "ta": "了解自动化评估如何影响3D资产质量把控，对生成式工作流有参考价值。",
+      "src": "arXiv · cs.GR · 07-12",
+      "url": "https://arxiv.org/abs/2607.10826v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "文本引导网格变形",
+      "sum": "PoseAlign通过文本引导变形生成姿态一致的3D网格。",
+      "ta": "文本驱动变形工具可加速角色姿态调整，减少手动雕刻。",
+      "src": "arXiv · cs.GR · 07-12",
+      "url": "https://arxiv.org/abs/2607.10560v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "按需属性控制界面",
+      "sum": "Spatula系统生成生成式内容迭代中的按需原位属性控制界面。",
+      "ta": "探索交互式生成工作流，可能改善TA在引擎内调整参数的方式。",
+      "src": "arXiv · cs.GR · 07-11",
+      "url": "https://arxiv.org/abs/2607.10405v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "跨拓扑角色动作混合",
+      "sum": "新框架实现任意角色拓扑间的神经动作混合，无需固定骨架。",
+      "ta": "跨拓扑动作混合可简化不同角色间的动画复用，提升动画管线效率。",
+      "src": "arXiv · cs.GR · 07-11",
+      "url": "https://arxiv.org/abs/2607.10370v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "双人对话动作生成",
+      "sum": "Learn2Chat通过交互调制单语先验生成双人对话动作。",
+      "ta": "对话动作生成技术可能用于NPC交互动画，但当前与游戏管线距离较远。",
+      "src": "arXiv · cs.GR · 07-11",
+      "url": "https://arxiv.org/abs/2607.10313v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "推理时动作迁移",
+      "sum": "Motion4Motion实现推理时跨主体动作迁移。",
+      "ta": "动作迁移技术可快速复用动画数据，但需验证实时性能。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.11644"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5角色CGI广告流程",
+      "sum": "SuperBlimp分享用Unreal Engine制作角色CGI广告的工作流。",
+      "ta": "了解UE5在商业CGI中的实际管线，可借鉴角色制作与渲染技巧。",
+      "src": "80 Level · 07-13",
+      "url": "https://80.lv/articles/building-captain-itch-designing-a-character-led-cgi-campaign-with-unreal-engine/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 5.2雕刻新功能",
+      "sum": "3D艺术家分享Blender 5.2新增雕刻功能的教程。",
+      "ta": "Blender雕刻更新可能影响资产制作流程，但非UE5核心。",
+      "src": "80 Level · 07-13",
+      "url": "https://80.lv/articles/3d-artist-shares-a-tutorial-on-new-sculpting-features-in-blender-5-2/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender扁平角色技巧",
+      "sum": "Blender短片导演解决广角镜头畸变的扁平角色制作方法。",
+      "ta": "扁平角色技术可能启发风格化渲染或优化性能的替代方案。",
+      "src": "80 Level · 07-13",
+      "url": "https://80.lv/articles/this-3d-character-is-actually-flat-it-s-crazy/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "11 Bit Studios裁员20人",
+      "sum": "《冰汽时代》开发商11 Bit Studios裁员20人，部分员工内部转岗。",
+      "ta": "行业裁员动态，反映工作室成本压力，可能影响人才流动。",
+      "src": "Game Developer · 07-13",
+      "url": "https://www.gamedeveloper.com/business/the-alters-and-frostpunk-developer-11-bit-studios-is-laying-off-20-employees-"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -21,15 +120,6 @@ window.INTEL_RECENT = {
       "ta": "碰撞网格是物理交互基础，批量编辑可加速关卡和角色碰撞体制作。",
       "src": "arXiv · cs.GR · 07-09",
       "url": "https://arxiv.org/abs/2607.08804v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多模态LLM辅助网格细化",
-      "sum": "利用多模态大语言模型作为零样本语义助手，指导物理引导的3D网格细化。",
-      "ta": "LLM辅助网格细化可能简化有限元网格生成，但需验证在游戏引擎中的实用性。",
-      "src": "arXiv · cs.GR · 07-08",
-      "url": "https://arxiv.org/abs/2607.08798v1"
     },
     {
       "cat": "ai",
@@ -102,15 +192,6 @@ window.INTEL_RECENT = {
       "ta": "环境叙事与关卡设计思路可启发场景氛围构建。",
       "src": "80 Level · 07-10",
       "url": "https://80.lv/articles/how-poppy-playtime-became-one-of-gaming-s-biggest-horror-franchises/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender插件制作弹性方块动画",
-      "sum": "使用 Blender 插件制作弹性动态方块动画。",
-      "ta": "弹性动画技术可迁移至 Niagara 或材质模拟。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/this-elastic-and-dynamic-cube-animation-was-made-using-a-blender-add-on/"
     },
     {
       "cat": "biz",
@@ -504,15 +585,6 @@ window.INTEL_RECENT = {
     {
       "cat": "gfx",
       "imp": "lo",
-      "title": "几何约束室外3D场景生成",
-      "sum": "SceneFrom3D 通过视图调度实现几何约束的室外场景生成。",
-      "ta": "程序化场景生成方向，可关注其对象级控制方法。",
-      "src": "arXiv · cs.GR · 07-05",
-      "url": "https://arxiv.org/abs/2607.04540v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
       "title": "数字人创建综述报告",
       "sum": "综述从先验学习到可动写实化身的3D数字人管线。",
       "ta": "数字人管线全景参考，适合了解当前技术栈。",
@@ -717,15 +789,6 @@ window.INTEL_RECENT = {
       "ta": "TA可参考此评测选择适合植被或场景LOD的简化工具，优化性能管线。",
       "src": "80 Level · 07-01",
       "url": "https://80.lv/articles/testing-4-free-mesh-simplification-tools/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5与Substance 3D场景拆解",
-      "sum": "Karl Aldskogius详解Sunset Garden项目，包括石头创建和紫藤外观实现。",
-      "ta": "TA可学习其植被材质和程序化工作流，直接应用于UE5场景。",
-      "src": "80 Level · 07-01",
-      "url": "https://80.lv/articles/breakdown-creating-a-detailed-and-vibrant-scene-with-unreal-engine-and-substance-3d/"
     },
     {
       "cat": "flow",
