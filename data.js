@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月14日 · 周二",
+  "date": "2026年7月15日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>LLM生成多场景游戏世界</em> / <em>3D生成缺陷自动评估</em> / <em>因子化3D网格生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>GPU崩溃调试LLM助手</em> / <em>非人形头部Blendshape注册</em> / <em>曲面自适应流体同调模拟</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,110 +118,83 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "LLM生成多场景游戏世界",
-      "sum": "MAGIC利用大语言模型实现多场景导航游戏世界的过渡感知生成。",
-      "ta": "关注LLM如何辅助程序化关卡设计，减少手动编辑门户和室内布局的工作量。",
+      "title": "GPU崩溃调试LLM助手",
+      "sum": "AMD发布RGD MCP Server，用LLM分析GPU崩溃并给出修复建议。",
+      "ta": "调试GPU崩溃可借助LLM自动根因分析，提升Shader/材质调试效率。",
+      "src": "AMD GPUOpen · 07-14",
+      "url": "https://gpuopen.com/learn/post-mortem-gpu-crash-debugging-with-llms/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "非人形头部Blendshape注册",
+      "sum": "RegHead框架为可动画非人形头部构建语义Blendshape集，支持重定向。",
+      "ta": "对非人形角色面部动画有直接参考价值，可简化Blendshape制作流程。",
       "src": "arXiv · cs.GR · 07-13",
-      "url": "https://arxiv.org/abs/2607.11594v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "3D生成缺陷自动评估",
-      "sum": "3D-DefectBench研究VLM评估管线对细粒度3D生成缺陷的可靠性。",
-      "ta": "了解自动化评估如何影响3D资产质量把控，对生成式工作流有参考价值。",
-      "src": "arXiv · cs.GR · 07-12",
-      "url": "https://arxiv.org/abs/2607.10826v1"
+      "url": "https://arxiv.org/abs/2607.12206v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "因子化3D网格生成",
-      "sum": "LATO.2用顶点和拓扑流分离建模，实现拓扑感知的网格生成。",
-      "ta": "分离几何与拓扑的生成方法可能提升程序化建模的灵活性和质量。",
-      "src": "arXiv · cs.GR · 07-12",
-      "url": "https://arxiv.org/abs/2607.10623v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "文本引导网格变形",
-      "sum": "PoseAlign通过文本引导变形生成姿态一致的3D网格。",
-      "ta": "文本驱动变形工具可加速角色姿态调整，减少手动雕刻。",
-      "src": "arXiv · cs.GR · 07-12",
-      "url": "https://arxiv.org/abs/2607.10560v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "按需属性控制界面",
-      "sum": "Spatula系统生成生成式内容迭代中的按需原位属性控制界面。",
-      "ta": "探索交互式生成工作流，可能改善TA在引擎内调整参数的方式。",
-      "src": "arXiv · cs.GR · 07-11",
-      "url": "https://arxiv.org/abs/2607.10405v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "跨拓扑角色动作混合",
-      "sum": "新框架实现任意角色拓扑间的神经动作混合，无需固定骨架。",
-      "ta": "跨拓扑动作混合可简化不同角色间的动画复用，提升动画管线效率。",
-      "src": "arXiv · cs.GR · 07-11",
-      "url": "https://arxiv.org/abs/2607.10370v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "双人对话动作生成",
-      "sum": "Learn2Chat通过交互调制单语先验生成双人对话动作。",
-      "ta": "对话动作生成技术可能用于NPC交互动画，但当前与游戏管线距离较远。",
-      "src": "arXiv · cs.GR · 07-11",
-      "url": "https://arxiv.org/abs/2607.10313v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "推理时动作迁移",
-      "sum": "Motion4Motion实现推理时跨主体动作迁移。",
-      "ta": "动作迁移技术可快速复用动画数据，但需验证实时性能。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.11644"
+      "title": "曲面自适应流体同调模拟",
+      "sum": "新方法处理非单连通曲面上的无粘不可压流体，关注谐波分量动态。",
+      "ta": "对曲面流体特效（如角色表面水流）有理论支撑，可能影响Niagara实现。",
+      "src": "arXiv · cs.GR · 07-13",
+      "url": "https://arxiv.org/abs/2607.12001v1"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "UE5角色CGI广告流程",
-      "sum": "SuperBlimp分享用Unreal Engine制作角色CGI广告的工作流。",
-      "ta": "了解UE5在商业CGI中的实际管线，可借鉴角色制作与渲染技巧。",
-      "src": "80 Level · 07-13",
-      "url": "https://80.lv/articles/building-captain-itch-designing-a-character-led-cgi-campaign-with-unreal-engine/"
+      "title": "Unity程序化节点网格框架",
+      "sum": "Viktor Grigorev分享基于节点的程序化网格框架构建方法。",
+      "ta": "类似Houdini的节点化工作流，可借鉴到UE程序化生成工具链。",
+      "src": "80 Level · 07-14",
+      "url": "https://80.lv/articles/building-procedural-node-based-mesh-framework-in-unity/"
     },
     {
       "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 5.2雕刻新功能",
-      "sum": "3D艺术家分享Blender 5.2新增雕刻功能的教程。",
-      "ta": "Blender雕刻更新可能影响资产制作流程，但非UE5核心。",
-      "src": "80 Level · 07-13",
-      "url": "https://80.lv/articles/3d-artist-shares-a-tutorial-on-new-sculpting-features-in-blender-5-2/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender扁平角色技巧",
-      "sum": "Blender短片导演解决广角镜头畸变的扁平角色制作方法。",
-      "ta": "扁平角色技术可能启发风格化渲染或优化性能的替代方案。",
-      "src": "80 Level · 07-13",
-      "url": "https://80.lv/articles/this-3d-character-is-actually-flat-it-s-crazy/"
+      "imp": "mid",
+      "title": "Material Maker 1.7登陆Steam",
+      "sum": "程序化材质工具Material Maker发布1.7版本并上架Steam。",
+      "ta": "免费程序化材质工具更新，适合快速原型和材质库扩展。",
+      "src": "80 Level · 07-14",
+      "url": "https://80.lv/articles/create-procedural-materials-with-material-maker-now-on-steam/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "11 Bit Studios裁员20人",
-      "sum": "《冰汽时代》开发商11 Bit Studios裁员20人，部分员工内部转岗。",
-      "ta": "行业裁员动态，反映工作室成本压力，可能影响人才流动。",
-      "src": "Game Developer · 07-13",
-      "url": "https://www.gamedeveloper.com/business/the-alters-and-frostpunk-developer-11-bit-studios-is-laying-off-20-employees-"
+      "title": "黑旗重制版首日销量200万",
+      "sum": "育碧《刺客信条：黑旗重制版》24小时销量超200万，巴塞罗那工作室罢工。",
+      "ta": "重制版商业成功，但工作室劳资冲突值得关注行业动态。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/business/assassin-s-creed-black-flag-topped-2m-sales-on-its-first-day"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Compulsion Games寻求合作",
+      "sum": "《午夜以南》开发商从Xbox独立后，公开招募商业伙伴。",
+      "ta": "独立后工作室动向可能影响后续项目技术合作机会。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/business/compulsion-games-is-seeking-partners-after-xbox-spin-off"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Azra Games融资后裁员",
+      "sum": "前《星战：银河英雄》GM创立的工作室在首作未发布前裁员。",
+      "ta": "行业融资环境收紧，注意项目稳定性。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/business/ex-star-wars-galaxy-of-heroes-gm-studio-lays-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Spin Master发售后即裁员",
+      "sum": "《汪汪队立大功》游戏开发商在发售后两天被裁，开发转交其他团队。",
+      "ta": "发售后立即裁员反映行业不稳定，影响后续维护。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/mobile/spin-master-lays-off-paw-patrol-the-game-devs-two-days-after-launch"
     }
   ],
   "flashbackTitle": "",
@@ -229,14 +202,14 @@ window.INTEL_DATA = {
     "ok": [
       "NVIDIA",
       "PlayStation Blog",
+      "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客、AMD GPUOpen。"
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客、HuggingFace。"
   },
   "xStale": false
 };

@@ -2,8 +2,89 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-14 12:08",
+  "updated": "2026-07-15 12:10",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "GPU崩溃调试LLM助手",
+      "sum": "AMD发布RGD MCP Server，用LLM分析GPU崩溃并给出修复建议。",
+      "ta": "调试GPU崩溃可借助LLM自动根因分析，提升Shader/材质调试效率。",
+      "src": "AMD GPUOpen · 07-14",
+      "url": "https://gpuopen.com/learn/post-mortem-gpu-crash-debugging-with-llms/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "非人形头部Blendshape注册",
+      "sum": "RegHead框架为可动画非人形头部构建语义Blendshape集，支持重定向。",
+      "ta": "对非人形角色面部动画有直接参考价值，可简化Blendshape制作流程。",
+      "src": "arXiv · cs.GR · 07-13",
+      "url": "https://arxiv.org/abs/2607.12206v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "曲面自适应流体同调模拟",
+      "sum": "新方法处理非单连通曲面上的无粘不可压流体，关注谐波分量动态。",
+      "ta": "对曲面流体特效（如角色表面水流）有理论支撑，可能影响Niagara实现。",
+      "src": "arXiv · cs.GR · 07-13",
+      "url": "https://arxiv.org/abs/2607.12001v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity程序化节点网格框架",
+      "sum": "Viktor Grigorev分享基于节点的程序化网格框架构建方法。",
+      "ta": "类似Houdini的节点化工作流，可借鉴到UE程序化生成工具链。",
+      "src": "80 Level · 07-14",
+      "url": "https://80.lv/articles/building-procedural-node-based-mesh-framework-in-unity/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Material Maker 1.7登陆Steam",
+      "sum": "程序化材质工具Material Maker发布1.7版本并上架Steam。",
+      "ta": "免费程序化材质工具更新，适合快速原型和材质库扩展。",
+      "src": "80 Level · 07-14",
+      "url": "https://80.lv/articles/create-procedural-materials-with-material-maker-now-on-steam/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "黑旗重制版首日销量200万",
+      "sum": "育碧《刺客信条：黑旗重制版》24小时销量超200万，巴塞罗那工作室罢工。",
+      "ta": "重制版商业成功，但工作室劳资冲突值得关注行业动态。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/business/assassin-s-creed-black-flag-topped-2m-sales-on-its-first-day"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Compulsion Games寻求合作",
+      "sum": "《午夜以南》开发商从Xbox独立后，公开招募商业伙伴。",
+      "ta": "独立后工作室动向可能影响后续项目技术合作机会。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/business/compulsion-games-is-seeking-partners-after-xbox-spin-off"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Azra Games融资后裁员",
+      "sum": "前《星战：银河英雄》GM创立的工作室在首作未发布前裁员。",
+      "ta": "行业融资环境收紧，注意项目稳定性。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/business/ex-star-wars-galaxy-of-heroes-gm-studio-lays-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Spin Master发售后即裁员",
+      "sum": "《汪汪队立大功》游戏开发商在发售后两天被裁，开发转交其他团队。",
+      "ta": "发售后立即裁员反映行业不稳定，影响后续维护。",
+      "src": "Game Developer · 07-14",
+      "url": "https://www.gamedeveloper.com/mobile/spin-master-lays-off-paw-patrol-the-game-devs-two-days-after-launch"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -917,15 +998,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/this-90s-cartoon-inspired-game-will-have-you-exploring-the-inside-of-a-middle-aged-man/"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity实时水课程发布",
-      "sum": "Fabrizio Espindola推出Unity实时水课程，涵盖Shader Graph、HLSL、粒子系统等。",
-      "ta": "对Unity TA学习实时水效果有直接帮助。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/fabrizio-espindola-announces-new-course-on-real-time-water-in-unity/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "Xbox暂停新Game Pass协议",
@@ -1744,42 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "了解大厂在特殊物理和玩法系统上的技术挑战。",
       "src": "80 Level · 06-18",
       "url": "https://80.lv/articles/interview-ubisoft-transformed-the-crew-motorfest-into-an-rc-playground/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Houdini/EmberGen特效课程",
-      "sum": "VFX Apprentice推出Houdini、EmberGen和LiquiGen模拟课程。",
-      "ta": "学习特效模拟工作流的培训资源。",
-      "src": "80 Level · 06-18",
-      "url": "https://80.lv/articles/create-stunning-vfx-in-houdini-embergen-liquigen-with-this-course/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Pocketpair称玩家不想要生成式AI",
-      "sum": "Pocketpair公关总监认为生成式AI不会在游戏中太突出。",
-      "ta": "行业对AI在游戏中应用的态度参考。",
-      "src": "Game Developer · 06-18",
-      "url": "https://www.gamedeveloper.com/business/palworld-lead-on-genai-gamers-don-t-want-it"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Maya-Blender资产桥免费工具",
-      "sum": "GitHub上发布免费Maya到Blender资产桥工具。",
-      "ta": "跨DCC工作流工具，方便资产迁移。",
-      "src": "Tech-Artists · 06-18",
-      "url": "https://www.tech-artists.org/t/free-maya-blender-asset-bridge-github-link-provided/18419"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "HYPERyuki滑雪游戏开发",
-      "sum": "Wabisabi Games 分享多人滑雪游戏 HYPERyuki 的艺术风格与物理设计。",
-      "ta": "可了解滑雪物理与艺术风格的结合思路，但非硬核技术突破。",
-      "src": "80 Level · 06-18",
-      "url": "https://80.lv/articles/wabisabi-games-on-creating-the-sports-game-hyperyuki-snowboard-syndicate/"
     }
   ]
 };
