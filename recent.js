@@ -2,8 +2,118 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-15 12:10",
+  "updated": "2026-07-16 12:14",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Houdini 22 发布",
+      "sum": "SideFX 发布 Houdini 22，原生支持高斯泼溅、新 UI 和程序化工具。",
+      "ta": "原生高斯泼溅支持意味着 TA 可直接在 Houdini 中处理实时渲染点云资产，无需外部转换。",
+      "src": "80 Level · 07-15",
+      "url": "https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "超快纹理图集泼溅",
+      "sum": "3DGS 新方法：解耦辐射表示，实现超快纹理图集泼溅渲染。",
+      "ta": "若成熟可大幅降低高斯泼溅的片段着色开销，对实时场景渲染性能优化有直接参考。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13808v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "体积逆渲染新框架",
+      "sum": "提出神经辐射传输方法，从图像恢复参与介质光学属性。",
+      "ta": "对体积云、烟雾等参与介质的材质重建与光照模拟有潜在应用。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13695v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "渐进推理室内场景生成",
+      "sum": "ThinkBLOX 用 VLM 渐进推理生成 3D 室内场景布局。",
+      "ta": "程序化生成室内场景的 AI 辅助方法，可加速关卡原型设计。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13539v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "树状 3D 对象生成框架",
+      "sum": "TreeSRNF 用平方根法向场建模树木几何与结构变异性。",
+      "ta": "对植被程序化生成算法有直接参考价值，可改进树木 LOD 和多样性。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13456v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "单目新视角合成",
+      "sum": "MetaView 用尺度感知隐式几何先验实现单目新视角合成。",
+      "ta": "单目重建技术，可能用于快速生成参考视角或辅助材质贴图。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.12000"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《明日方舟：终末地》PSSR 升级",
+      "sum": "PS5 Pro 版 1.4 更新升级 PSSR，提升画质与时间稳定性。",
+      "ta": "PSSR 升级对 UE 游戏在 PS5 Pro 上的渲染管线调优有参考意义。",
+      "src": "PlayStation Blog · 07-15",
+      "url": "https://blog.playstation.com/2026/07/15/arknights-endfield-on-ps5-pro-upgraded-pssr-launches-with-version-1-4/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《使命召唤》动态地图模式",
+      "sum": "MW4 引入 Kill Block 模式，模块化战场每局重新配置。",
+      "ta": "动态关卡生成思路，可能涉及程序化布局与碰撞检测优化。",
+      "src": "PlayStation Blog · 07-15",
+      "url": "https://blog.playstation.com/2026/07/15/everything-to-know-about-modern-warfare-4s-ever-changing-kill-block-multiplayer-mode/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "《Denshattack!》开发访谈",
+      "sum": "开发者谈融合托尼霍克与 Jet Set Radio 的火车玩法与赛璐璐风格。",
+      "ta": "赛璐璐风格与高速运动系统的实现细节对 TA 有启发。",
+      "src": "80 Level · 07-15",
+      "url": "https://80.lv/articles/interview-how-denshattack-blends-tony-hawk-jet-set-radio-with-trains/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前 Epic 高管加入 Saber",
+      "sum": "前 Epic Games VP Steve Allison 任 Saber Interactive 首席商务官。",
+      "ta": "行业人事变动，可能影响 Saber 的引擎合作策略。",
+      "src": "Game Developer · 07-15",
+      "url": "https://www.gamedeveloper.com/business/former-epic-games-vp-appointed-saber-interactive-s-chief-business-officer"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《死亡空间》联合创始人退休",
+      "sum": "Glen Schofield 结束 35 年游戏开发生涯退休。",
+      "ta": "行业资深人物退休，对恐怖游戏视觉风格有历史影响。",
+      "src": "80 Level · 07-15",
+      "url": "https://80.lv/articles/dead-space-creator-retires-after-35-years-in-game-development/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox 最新裁员内幕",
+      "sum": "被裁员工认为裁员将削弱部分工作室能力。",
+      "ta": "行业动荡可能影响项目外包与工具链支持。",
+      "src": "Game Developer · 07-15",
+      "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -93,15 +203,6 @@ window.INTEL_RECENT = {
       "ta": "关注LLM如何辅助程序化关卡设计，减少手动编辑门户和室内布局的工作量。",
       "src": "arXiv · cs.GR · 07-13",
       "url": "https://arxiv.org/abs/2607.11594v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "3D生成缺陷自动评估",
-      "sum": "3D-DefectBench研究VLM评估管线对细粒度3D生成缺陷的可靠性。",
-      "ta": "了解自动化评估如何影响3D资产质量把控，对生成式工作流有参考价值。",
-      "src": "arXiv · cs.GR · 07-12",
-      "url": "https://arxiv.org/abs/2607.10826v1"
     },
     {
       "cat": "gfx",
@@ -318,15 +419,6 @@ window.INTEL_RECENT = {
       "ta": "Mod 生态变化影响游戏内容生产与工具需求。",
       "src": "Game Developer · 07-10",
       "url": "https://www.gamedeveloper.com/pc/nexusmods-ceo-digs-into-the-dynamics-of-video-game-modding-ft-victor-folmann"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox工会工人抗议集会",
-      "sum": "B社工会成员组织7月15日“拯救我们的开发者”集会。",
-      "ta": "行业劳资动态，可能影响项目开发节奏。",
-      "src": "Game Developer · 07-10",
-      "url": "https://www.gamedeveloper.com/business/-we-mean-business-xbox-union-workers-fighting-back-with-save-our-devs-rally-on-july-15"
     },
     {
       "cat": "gfx",
@@ -1726,96 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "行业八卦，无技术价值。",
       "src": "Game Developer · 06-19",
       "url": "https://www.gamedeveloper.com/business/report-former-xbox-president-sarah-bond-and-take-two-ceo-strauss-zelnick-involved-in-peter-thiel-backed-secret-society"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "R星法律挫折与FF税收优惠",
-      "sum": "R星法律受挫、最终幻想税收优惠、PlayStation用AI替代PC。",
-      "ta": "行业新闻汇总，无直接技术细节。",
-      "src": "Game Developer · 06-19",
-      "url": "https://www.gamedeveloper.com/business/rockstar-s-legal-setback-final-fantasy-tax-incentives-and-playstation-swaps-pc-for-ai-patch-notes-57"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "李群注意力机制新架构",
-      "sum": "首次将注意力token定义为矩阵李群元素，无特征载荷。",
-      "ta": "纯数学理论，与实时渲染无直接关联，但可能影响未来几何学习。",
-      "src": "arXiv · cs.GR · 06-18",
-      "url": "https://arxiv.org/abs/2606.20547v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "TriFlow生成类艺术家网格拓扑",
-      "sum": "从SDF等输入直接生成紧凑三角网格，拓扑类似艺术家手工。",
-      "ta": "对程序化生成和资产管线有潜在价值，可减少手动拓扑重拓扑工作。",
-      "src": "arXiv · cs.GR · 06-18",
-      "url": "https://arxiv.org/abs/2606.20131v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "JanusMesh零样本3D视错觉生成",
-      "sum": "跨空间去噪实现快速零样本3D视错觉生成。",
-      "ta": "3D生成方向新方法，但视错觉在游戏资产中应用有限。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.20563"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自适应体积力学属性场",
-      "sum": "提出分辨率无关的自适应体积力学属性场。",
-      "ta": "与物理模拟相关，但未提及实时或游戏引擎应用。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.18231"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Holo-World视频世界模型控制",
-      "sum": "统一控制相机、物体和天气的视频世界模型。",
-      "ta": "视频生成方向，与游戏实时渲染无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.20083"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "世界模型缺乏持久状态核心",
-      "sum": "指出当前世界模型缺少持久状态核心。",
-      "ta": "AI研究，对游戏引擎管线无直接影响。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.20545"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "JAMER游戏引擎代码框架数据集",
-      "sum": "发布专业游戏引擎项目级代码框架数据集和基准。",
-      "ta": "对引擎代码分析和工具开发有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.19830"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "AERO 1.7 Unity体积雾着色器",
-      "sum": "免费Unity体积雾和薄雾着色器AERO 1.7发布。",
-      "ta": "可直接用于Unity项目的体积雾效果，免费资源。",
-      "src": "80 Level · 06-18",
-      "url": "https://80.lv/articles/aero-1-7-a-volumetric-fog-and-mist-shader-in-unity/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "育碧谈《飙酷车神》RC模式开发",
-      "sum": "育碧分享RC Frenzy的自定义物理、关卡设计和玩法系统。",
-      "ta": "了解大厂在特殊物理和玩法系统上的技术挑战。",
-      "src": "80 Level · 06-18",
-      "url": "https://80.lv/articles/interview-ubisoft-transformed-the-crew-motorfest-into-an-rc-playground/"
     }
   ]
 };

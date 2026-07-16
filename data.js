@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月15日 · 周三",
+  "date": "2026年7月16日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>GPU崩溃调试LLM助手</em> / <em>非人形头部Blendshape注册</em> / <em>曲面自适应流体同调模拟</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Houdini 22 发布</em> / <em>超快纹理图集泼溅</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -117,84 +117,113 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "GPU崩溃调试LLM助手",
-      "sum": "AMD发布RGD MCP Server，用LLM分析GPU崩溃并给出修复建议。",
-      "ta": "调试GPU崩溃可借助LLM自动根因分析，提升Shader/材质调试效率。",
-      "src": "AMD GPUOpen · 07-14",
-      "url": "https://gpuopen.com/learn/post-mortem-gpu-crash-debugging-with-llms/"
+      "imp": "hi",
+      "rank": 1,
+      "title": "Houdini 22 发布",
+      "sum": "SideFX 发布 Houdini 22，原生支持高斯泼溅、新 UI 和程序化工具。",
+      "ta": "原生高斯泼溅支持意味着 TA 可直接在 Houdini 中处理实时渲染点云资产，无需外部转换。",
+      "src": "80 Level · 07-15",
+      "url": "https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "超快纹理图集泼溅",
+      "sum": "3DGS 新方法：解耦辐射表示，实现超快纹理图集泼溅渲染。",
+      "ta": "若成熟可大幅降低高斯泼溅的片段着色开销，对实时场景渲染性能优化有直接参考。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13808v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "非人形头部Blendshape注册",
-      "sum": "RegHead框架为可动画非人形头部构建语义Blendshape集，支持重定向。",
-      "ta": "对非人形角色面部动画有直接参考价值，可简化Blendshape制作流程。",
-      "src": "arXiv · cs.GR · 07-13",
-      "url": "https://arxiv.org/abs/2607.12206v1"
+      "title": "体积逆渲染新框架",
+      "sum": "提出神经辐射传输方法，从图像恢复参与介质光学属性。",
+      "ta": "对体积云、烟雾等参与介质的材质重建与光照模拟有潜在应用。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13695v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "渐进推理室内场景生成",
+      "sum": "ThinkBLOX 用 VLM 渐进推理生成 3D 室内场景布局。",
+      "ta": "程序化生成室内场景的 AI 辅助方法，可加速关卡原型设计。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13539v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "曲面自适应流体同调模拟",
-      "sum": "新方法处理非单连通曲面上的无粘不可压流体，关注谐波分量动态。",
-      "ta": "对曲面流体特效（如角色表面水流）有理论支撑，可能影响Niagara实现。",
-      "src": "arXiv · cs.GR · 07-13",
-      "url": "https://arxiv.org/abs/2607.12001v1"
+      "title": "树状 3D 对象生成框架",
+      "sum": "TreeSRNF 用平方根法向场建模树木几何与结构变异性。",
+      "ta": "对植被程序化生成算法有直接参考价值，可改进树木 LOD 和多样性。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.13456v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "单目新视角合成",
+      "sum": "MetaView 用尺度感知隐式几何先验实现单目新视角合成。",
+      "ta": "单目重建技术，可能用于快速生成参考视角或辅助材质贴图。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.12000"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《明日方舟：终末地》PSSR 升级",
+      "sum": "PS5 Pro 版 1.4 更新升级 PSSR，提升画质与时间稳定性。",
+      "ta": "PSSR 升级对 UE 游戏在 PS5 Pro 上的渲染管线调优有参考意义。",
+      "src": "PlayStation Blog · 07-15",
+      "url": "https://blog.playstation.com/2026/07/15/arknights-endfield-on-ps5-pro-upgraded-pssr-launches-with-version-1-4/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《使命召唤》动态地图模式",
+      "sum": "MW4 引入 Kill Block 模式，模块化战场每局重新配置。",
+      "ta": "动态关卡生成思路，可能涉及程序化布局与碰撞检测优化。",
+      "src": "PlayStation Blog · 07-15",
+      "url": "https://blog.playstation.com/2026/07/15/everything-to-know-about-modern-warfare-4s-ever-changing-kill-block-multiplayer-mode/"
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "Unity程序化节点网格框架",
-      "sum": "Viktor Grigorev分享基于节点的程序化网格框架构建方法。",
-      "ta": "类似Houdini的节点化工作流，可借鉴到UE程序化生成工具链。",
-      "src": "80 Level · 07-14",
-      "url": "https://80.lv/articles/building-procedural-node-based-mesh-framework-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Material Maker 1.7登陆Steam",
-      "sum": "程序化材质工具Material Maker发布1.7版本并上架Steam。",
-      "ta": "免费程序化材质工具更新，适合快速原型和材质库扩展。",
-      "src": "80 Level · 07-14",
-      "url": "https://80.lv/articles/create-procedural-materials-with-material-maker-now-on-steam/"
+      "imp": "lo",
+      "title": "《Denshattack!》开发访谈",
+      "sum": "开发者谈融合托尼霍克与 Jet Set Radio 的火车玩法与赛璐璐风格。",
+      "ta": "赛璐璐风格与高速运动系统的实现细节对 TA 有启发。",
+      "src": "80 Level · 07-15",
+      "url": "https://80.lv/articles/interview-how-denshattack-blends-tony-hawk-jet-set-radio-with-trains/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "黑旗重制版首日销量200万",
-      "sum": "育碧《刺客信条：黑旗重制版》24小时销量超200万，巴塞罗那工作室罢工。",
-      "ta": "重制版商业成功，但工作室劳资冲突值得关注行业动态。",
-      "src": "Game Developer · 07-14",
-      "url": "https://www.gamedeveloper.com/business/assassin-s-creed-black-flag-topped-2m-sales-on-its-first-day"
+      "title": "前 Epic 高管加入 Saber",
+      "sum": "前 Epic Games VP Steve Allison 任 Saber Interactive 首席商务官。",
+      "ta": "行业人事变动，可能影响 Saber 的引擎合作策略。",
+      "src": "Game Developer · 07-15",
+      "url": "https://www.gamedeveloper.com/business/former-epic-games-vp-appointed-saber-interactive-s-chief-business-officer"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Compulsion Games寻求合作",
-      "sum": "《午夜以南》开发商从Xbox独立后，公开招募商业伙伴。",
-      "ta": "独立后工作室动向可能影响后续项目技术合作机会。",
-      "src": "Game Developer · 07-14",
-      "url": "https://www.gamedeveloper.com/business/compulsion-games-is-seeking-partners-after-xbox-spin-off"
+      "title": "《死亡空间》联合创始人退休",
+      "sum": "Glen Schofield 结束 35 年游戏开发生涯退休。",
+      "ta": "行业资深人物退休，对恐怖游戏视觉风格有历史影响。",
+      "src": "80 Level · 07-15",
+      "url": "https://80.lv/articles/dead-space-creator-retires-after-35-years-in-game-development/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Azra Games融资后裁员",
-      "sum": "前《星战：银河英雄》GM创立的工作室在首作未发布前裁员。",
-      "ta": "行业融资环境收紧，注意项目稳定性。",
-      "src": "Game Developer · 07-14",
-      "url": "https://www.gamedeveloper.com/business/ex-star-wars-galaxy-of-heroes-gm-studio-lays-off-staff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Spin Master发售后即裁员",
-      "sum": "《汪汪队立大功》游戏开发商在发售后两天被裁，开发转交其他团队。",
-      "ta": "发售后立即裁员反映行业不稳定，影响后续维护。",
-      "src": "Game Developer · 07-14",
-      "url": "https://www.gamedeveloper.com/mobile/spin-master-lays-off-paw-patrol-the-game-devs-two-days-after-launch"
+      "title": "Xbox 最新裁员内幕",
+      "sum": "被裁员工认为裁员将削弱部分工作室能力。",
+      "ta": "行业动荡可能影响项目外包与工具链支持。",
+      "src": "Game Developer · 07-15",
+      "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
     }
   ],
   "flashbackTitle": "",
@@ -204,12 +233,13 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
+      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客、HuggingFace。"
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客。"
   },
   "xStale": false
 };
