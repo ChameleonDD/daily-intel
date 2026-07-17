@@ -2,8 +2,63 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-16 12:14",
+  "updated": "2026-07-17 12:13",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "卡普空RE引擎实装路径追踪",
+      "sum": "卡普空在《PRAGMATA》和《生化危机：安魂曲》中同时实装路径追踪。",
+      "ta": "RE引擎路径追踪落地方案，对UE5 TA有直接参考价值。",
+      "src": "NVIDIA · 07-16",
+      "url": "https://developer.nvidia.com/blog/qa-how-capcom-brought-path-tracing-to-re-engine-across-pragmata-and-resident-evil-requiem/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "在线神经时空记忆动态视图合成",
+      "sum": "提出在线神经时空记忆方法，用于多视角流视频的动态新视角合成。",
+      "ta": "实时动态场景重建技术，可能影响未来游戏内动态环境渲染。",
+      "src": "arXiv · cs.GR · 07-16",
+      "url": "https://arxiv.org/abs/2607.15271v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "前馈3D高斯重建驾驶场景",
+      "sum": "Instant NuRec实现前馈3D高斯重建，用于驾驶场景模拟。",
+      "ta": "前馈3D高斯方法，可加速程序化场景生成与仿真管线。",
+      "src": "arXiv · cs.GR · 07-15",
+      "url": "https://arxiv.org/abs/2607.14203v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender多求解器物理引擎",
+      "sum": "Hurricane引擎支持流体、布料、软体、沙粒在同一模拟中交互。",
+      "ta": "多物理场耦合模拟工具，可辅助特效预演与资产测试。",
+      "src": "80 Level · 07-16",
+      "url": "https://80.lv/articles/hurricane-new-multi-solver-physics-engine-for-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Godot免费2D足球游戏课程",
+      "sum": "12小时免费Godot课程，面向初/中级开发者制作2D街机足球游戏。",
+      "ta": "Godot入门资源，适合TA了解轻量引擎工作流。",
+      "src": "80 Level · 07-16",
+      "url": "https://80.lv/articles/create-your-own-2d-arcade-soccer-game-in-godot-with-this-free-12-hour-course/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "ZeniMax工作室领导层被裁",
+      "sum": "Xbox裁员波及ZeniMax Online Studios，包括工作室负责人等高层。",
+      "ta": "行业裁员动态，可能影响相关项目资源分配。",
+      "src": "Game Developer · 07-16",
+      "url": "https://www.gamedeveloper.com/business/zenimax-online-studios-leadership-is-part-of-the-379-laid-off-workers"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -41,15 +96,6 @@ window.INTEL_RECENT = {
       "ta": "程序化生成室内场景的 AI 辅助方法，可加速关卡原型设计。",
       "src": "arXiv · cs.GR · 07-15",
       "url": "https://arxiv.org/abs/2607.13539v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "树状 3D 对象生成框架",
-      "sum": "TreeSRNF 用平方根法向场建模树木几何与结构变异性。",
-      "ta": "对植被程序化生成算法有直接参考价值，可改进树木 LOD 和多样性。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13456v1"
     },
     {
       "cat": "gfx",
@@ -266,15 +312,6 @@ window.INTEL_RECENT = {
       "ta": "Blender雕刻更新可能影响资产制作流程，但非UE5核心。",
       "src": "80 Level · 07-13",
       "url": "https://80.lv/articles/3d-artist-shares-a-tutorial-on-new-sculpting-features-in-blender-5-2/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender扁平角色技巧",
-      "sum": "Blender短片导演解决广角镜头畸变的扁平角色制作方法。",
-      "ta": "扁平角色技术可能启发风格化渲染或优化性能的替代方案。",
-      "src": "80 Level · 07-13",
-      "url": "https://80.lv/articles/this-3d-character-is-actually-flat-it-s-crazy/"
     },
     {
       "cat": "biz",
@@ -1781,43 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "与游戏实时渲染无直接关联，可速览。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2606.19534"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "UEFN创作者分成超10亿",
-      "sum": "Epic通过UEFN向独立创作者支付超10亿美元。",
-      "ta": "UEFN生态成熟，可关注其工具链对TA工作流的影响。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/epic-games-has-paid-out-over-usd1-billion-to-indie-creators-through-unreal-editor-for-fortnite/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "UE6发布引发行业热议",
-      "sum": "开发者对UE5.8、UE6、MCP、AI工作流、Verse等公告反应不一。",
-      "ta": "UE6路线图直接影响TA的管线规划，需深入评估新特性。",
-      "src": "80 Level · 06-19",
-      "url": "https://80.lv/articles/state-of-unreal-ue6-reactions-hype-skepticism-and-what-it-means-for-game-devs/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Kabam裁员并合并LA办公室",
-      "sum": "《漫威冠军之争》开发商Kabam裁员并整合洛杉矶办公室。",
-      "ta": "行业裁员动态，但无直接技术关联。",
-      "src": "Game Developer · 06-19",
-      "url": "https://www.gamedeveloper.com/business/kabam-making-layoffs-after-choosing-to-consolidate-la-office"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏高管卷入秘密社团",
-      "sum": "前Xbox总裁和Take-Two CEO被曝与Peter Thiel秘密会议有关。",
-      "ta": "行业八卦，无技术价值。",
-      "src": "Game Developer · 06-19",
-      "url": "https://www.gamedeveloper.com/business/report-former-xbox-president-sarah-bond-and-take-two-ceo-strauss-zelnick-involved-in-peter-thiel-backed-secret-society"
     }
   ]
 };

@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月16日 · 周四",
+  "date": "2026年7月17日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Houdini 22 发布</em> / <em>超快纹理图集泼溅</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>卡普空RE引擎实装路径追踪</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,114 +116,59 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
+      "cat": "tech",
       "imp": "hi",
       "rank": 1,
-      "title": "Houdini 22 发布",
-      "sum": "SideFX 发布 Houdini 22，原生支持高斯泼溅、新 UI 和程序化工具。",
-      "ta": "原生高斯泼溅支持意味着 TA 可直接在 Houdini 中处理实时渲染点云资产，无需外部转换。",
-      "src": "80 Level · 07-15",
-      "url": "https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "超快纹理图集泼溅",
-      "sum": "3DGS 新方法：解耦辐射表示，实现超快纹理图集泼溅渲染。",
-      "ta": "若成熟可大幅降低高斯泼溅的片段着色开销，对实时场景渲染性能优化有直接参考。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13808v1"
+      "title": "卡普空RE引擎实装路径追踪",
+      "sum": "卡普空在《PRAGMATA》和《生化危机：安魂曲》中同时实装路径追踪。",
+      "ta": "RE引擎路径追踪落地方案，对UE5 TA有直接参考价值。",
+      "src": "NVIDIA · 07-16",
+      "url": "https://developer.nvidia.com/blog/qa-how-capcom-brought-path-tracing-to-re-engine-across-pragmata-and-resident-evil-requiem/"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "体积逆渲染新框架",
-      "sum": "提出神经辐射传输方法，从图像恢复参与介质光学属性。",
-      "ta": "对体积云、烟雾等参与介质的材质重建与光照模拟有潜在应用。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13695v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "渐进推理室内场景生成",
-      "sum": "ThinkBLOX 用 VLM 渐进推理生成 3D 室内场景布局。",
-      "ta": "程序化生成室内场景的 AI 辅助方法，可加速关卡原型设计。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13539v1"
+      "title": "在线神经时空记忆动态视图合成",
+      "sum": "提出在线神经时空记忆方法，用于多视角流视频的动态新视角合成。",
+      "ta": "实时动态场景重建技术，可能影响未来游戏内动态环境渲染。",
+      "src": "arXiv · cs.GR · 07-16",
+      "url": "https://arxiv.org/abs/2607.15271v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "树状 3D 对象生成框架",
-      "sum": "TreeSRNF 用平方根法向场建模树木几何与结构变异性。",
-      "ta": "对植被程序化生成算法有直接参考价值，可改进树木 LOD 和多样性。",
+      "title": "前馈3D高斯重建驾驶场景",
+      "sum": "Instant NuRec实现前馈3D高斯重建，用于驾驶场景模拟。",
+      "ta": "前馈3D高斯方法，可加速程序化场景生成与仿真管线。",
       "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13456v1"
+      "url": "https://arxiv.org/abs/2607.14203v1"
     },
     {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "单目新视角合成",
-      "sum": "MetaView 用尺度感知隐式几何先验实现单目新视角合成。",
-      "ta": "单目重建技术，可能用于快速生成参考视角或辅助材质贴图。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.12000"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《明日方舟：终末地》PSSR 升级",
-      "sum": "PS5 Pro 版 1.4 更新升级 PSSR，提升画质与时间稳定性。",
-      "ta": "PSSR 升级对 UE 游戏在 PS5 Pro 上的渲染管线调优有参考意义。",
-      "src": "PlayStation Blog · 07-15",
-      "url": "https://blog.playstation.com/2026/07/15/arknights-endfield-on-ps5-pro-upgraded-pssr-launches-with-version-1-4/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《使命召唤》动态地图模式",
-      "sum": "MW4 引入 Kill Block 模式，模块化战场每局重新配置。",
-      "ta": "动态关卡生成思路，可能涉及程序化布局与碰撞检测优化。",
-      "src": "PlayStation Blog · 07-15",
-      "url": "https://blog.playstation.com/2026/07/15/everything-to-know-about-modern-warfare-4s-ever-changing-kill-block-multiplayer-mode/"
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender多求解器物理引擎",
+      "sum": "Hurricane引擎支持流体、布料、软体、沙粒在同一模拟中交互。",
+      "ta": "多物理场耦合模拟工具，可辅助特效预演与资产测试。",
+      "src": "80 Level · 07-16",
+      "url": "https://80.lv/articles/hurricane-new-multi-solver-physics-engine-for-blender/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "《Denshattack!》开发访谈",
-      "sum": "开发者谈融合托尼霍克与 Jet Set Radio 的火车玩法与赛璐璐风格。",
-      "ta": "赛璐璐风格与高速运动系统的实现细节对 TA 有启发。",
-      "src": "80 Level · 07-15",
-      "url": "https://80.lv/articles/interview-how-denshattack-blends-tony-hawk-jet-set-radio-with-trains/"
+      "title": "Godot免费2D足球游戏课程",
+      "sum": "12小时免费Godot课程，面向初/中级开发者制作2D街机足球游戏。",
+      "ta": "Godot入门资源，适合TA了解轻量引擎工作流。",
+      "src": "80 Level · 07-16",
+      "url": "https://80.lv/articles/create-your-own-2d-arcade-soccer-game-in-godot-with-this-free-12-hour-course/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "前 Epic 高管加入 Saber",
-      "sum": "前 Epic Games VP Steve Allison 任 Saber Interactive 首席商务官。",
-      "ta": "行业人事变动，可能影响 Saber 的引擎合作策略。",
-      "src": "Game Developer · 07-15",
-      "url": "https://www.gamedeveloper.com/business/former-epic-games-vp-appointed-saber-interactive-s-chief-business-officer"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《死亡空间》联合创始人退休",
-      "sum": "Glen Schofield 结束 35 年游戏开发生涯退休。",
-      "ta": "行业资深人物退休，对恐怖游戏视觉风格有历史影响。",
-      "src": "80 Level · 07-15",
-      "url": "https://80.lv/articles/dead-space-creator-retires-after-35-years-in-game-development/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox 最新裁员内幕",
-      "sum": "被裁员工认为裁员将削弱部分工作室能力。",
-      "ta": "行业动荡可能影响项目外包与工具链支持。",
-      "src": "Game Developer · 07-15",
-      "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
+      "title": "ZeniMax工作室领导层被裁",
+      "sum": "Xbox裁员波及ZeniMax Online Studios，包括工作室负责人等高层。",
+      "ta": "行业裁员动态，可能影响相关项目资源分配。",
+      "src": "Game Developer · 07-16",
+      "url": "https://www.gamedeveloper.com/business/zenimax-online-studios-leadership-is-part-of-the-379-laid-off-workers"
     }
   ],
   "flashbackTitle": "",
@@ -233,13 +178,12 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客。"
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客、HuggingFace。"
   },
   "xStale": false
 };
