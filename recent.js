@@ -2,8 +2,107 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-17 12:13",
+  "updated": "2026-07-18 12:05",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE Expanse体积工作流教程",
+      "sum": "Reza Sarkamari发布视频教程，讲解Unreal Engine中Expanse体积效果工作流。",
+      "ta": "可学习Expanse插件在UE中实现云、雾等体积特效的完整流程。",
+      "src": "80 Level · 07-18",
+      "url": "https://80.lv/articles/check-out-this-tutorial-on-expanse-workflow-in-unreal-engine/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Godot极地生存游戏动画",
+      "sum": "Frost Kin是一款Godot引擎开发的极地生存冒险游戏，展示超现实动画。",
+      "ta": "Godot引擎在动画表现上的进展可作为参考，但非UE直接相关。",
+      "src": "80 Level · 07-18",
+      "url": "https://80.lv/articles/surreal-animations-from-an-arctic-survival-game-made-in-godot/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "B社确认多个辐射项目",
+      "sum": "Bethesda确认辐射3/新维加斯重制版及Obsidian新辐射游戏，老滚6仍是重点。",
+      "ta": "辐射IP重制可能带动UE5或自研引擎的渲染管线需求，但无直接技术细节。",
+      "src": "80 Level · 07-17",
+      "url": "https://80.lv/articles/bethesda-confirms-multiple-fallout-projects-including-remasters-and-new-obsidian-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "蜘蛛机甲后末日游戏",
+      "sum": "一款玩家操控蜘蛛状机甲的后末日游戏发布。",
+      "ta": "游戏概念有趣，但无技术或工作流参考价值。",
+      "src": "80 Level · 07-17",
+      "url": "https://80.lv/articles/in-this-game-you-ll-be-a-spider-like-mech-navigating-a-post-apocalyptic-world/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "15年游戏合作经验分享",
+      "sum": "ZiMAD首席BD官分享15年游戏合作经验，聚焦玩家信任与快速变革。",
+      "ta": "商业经验分享，对TA工作流无直接帮助。",
+      "src": "80 Level · 07-17",
+      "url": "https://80.lv/articles/what-15-years-of-game-partnerships-taught-me/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Epic与Google和解安卓商店",
+      "sum": "Epic与Google达成和解，第三方应用商店即将登陆Android。",
+      "ta": "平台生态变化可能影响游戏分发，但非技术相关。",
+      "src": "80 Level · 07-17",
+      "url": "https://80.lv/articles/epic-games-google-withdraw-settlement-third-party-app-stores-are-coming-to-android/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "ZA/UM工作室裁员32人",
+      "sum": "ZA/UM在发布新作两个月后裁员最多32人，称艺术标准不变。",
+      "ta": "行业裁员新闻，无技术参考价值。",
+      "src": "Game Developer · 07-17",
+      "url": "https://www.gamedeveloper.com/business/za-um-studios-to-lay-off-up-to-32-workers-two-months-after-releasing-zero-parades-for-dead-spies"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Todd Howard确认与Obsidian合作",
+      "sum": "辐射总监Todd Howard确认与Obsidian合作开发新辐射游戏。",
+      "ta": "辐射新作可能采用UE5或自研引擎，但无具体技术细节。",
+      "src": "Game Developer · 07-17",
+      "url": "https://www.gamedeveloper.com/business/todd-howard-says-the-timing-is-right-for-a-collaboration-with-obsidian"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "工会挑战Xbox等业界动态",
+      "sum": "工会挑战Xbox、GameStop CEO称实体游戏销售无关紧要、Glen Schofield退休。",
+      "ta": "行业综合新闻，无技术或工作流参考价值。",
+      "src": "Game Developer · 07-17",
+      "url": "https://www.gamedeveloper.com/business/labor-unions-challenge-xbox-gamestop-ceo-says-physical-game-sales-are-irrelevant-and-glen-schofield-retires-patch-notes-61"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "交互世界模型作为游戏引擎",
+      "sum": "论文提出将交互世界模型重新构想为游戏引擎，从像素到状态。",
+      "ta": "可能影响未来游戏AI驱动的动态世界生成，需关注其与实时渲染的接口。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.14076"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "非对称3D高斯泼溅长序列建模",
+      "sum": "AsySplat提出高效非对称3D高斯泼溅方法，用于长序列场景建模。",
+      "ta": "3DGS新变体，可能提升大规模场景重建效率，对程序化生成有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.10995"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -22,15 +121,6 @@ window.INTEL_RECENT = {
       "ta": "实时动态场景重建技术，可能影响未来游戏内动态环境渲染。",
       "src": "arXiv · cs.GR · 07-16",
       "url": "https://arxiv.org/abs/2607.15271v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "前馈3D高斯重建驾驶场景",
-      "sum": "Instant NuRec实现前馈3D高斯重建，用于驾驶场景模拟。",
-      "ta": "前馈3D高斯方法，可加速程序化场景生成与仿真管线。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.14203v1"
     },
     {
       "cat": "flow",
@@ -150,15 +240,6 @@ window.INTEL_RECENT = {
       "ta": "行业资深人物退休，对恐怖游戏视觉风格有历史影响。",
       "src": "80 Level · 07-15",
       "url": "https://80.lv/articles/dead-space-creator-retires-after-35-years-in-game-development/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox 最新裁员内幕",
-      "sum": "被裁员工认为裁员将削弱部分工作室能力。",
-      "ta": "行业动荡可能影响项目外包与工具链支持。",
-      "src": "Game Developer · 07-15",
-      "url": "https://www.gamedeveloper.com/production/-good-work-is-not-going-to-save-your-job-at-this-company-laid-off-xbox-devs-condemn-microsoft"
     },
     {
       "cat": "gfx",
@@ -384,15 +465,6 @@ window.INTEL_RECENT = {
       "ta": "实时分割可用于游戏内动态遮罩或后期特效。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.08688"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Godot道路生成器更新",
-      "sum": "Godot 道路生成插件新增更好的程序化交叉口功能。",
-      "ta": "程序化道路交叉口算法可参考用于 UE 工具链。",
-      "src": "80 Level · 07-11",
-      "url": "https://80.lv/articles/godot-road-generator-now-features-better-procedural-intersections/"
     },
     {
       "cat": "biz",
@@ -664,15 +736,6 @@ window.INTEL_RECENT = {
       "ta": "行业新闻，无直接技术关联。",
       "src": "Game Developer · 07-08",
       "url": "https://www.gamedeveloper.com/business/mobile-game-mario-kart-tour-is-winding-down"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "B 社蒙特利尔裁员",
-      "sum": "CWA 加拿大批评微软在 B 社蒙特利尔裁员约 12 人。",
-      "ta": "行业新闻，无直接技术关联。",
-      "src": "Game Developer · 07-08",
-      "url": "https://www.gamedeveloper.com/business/-employers-are-ruthless-cwa-canada-slams-microsoft-over-handling-of-bethesda-layoffs"
     },
     {
       "cat": "biz",
@@ -1755,69 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "对材质贴图自动生成和纹理合成有潜在应用。",
       "src": "arXiv · cs.GR · 06-22",
       "url": "https://arxiv.org/abs/2606.22945v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "紧凑位移映射基网格",
-      "sum": "DJM用三角形雅可比计算紧凑基网格，支持位移映射。",
-      "ta": "直接优化置换贴图基网格，对植被/地形LOD和内存压缩有价值。",
-      "src": "arXiv · cs.GR · 06-22",
-      "url": "https://arxiv.org/abs/2606.22880v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "光照一致对象迁移",
-      "sum": "在辐射场间迁移对象并保持光照一致性。",
-      "ta": "对3DGS场景合成和VFX工作流有参考意义。",
-      "src": "arXiv · cs.GR · 06-21",
-      "url": "https://arxiv.org/abs/2606.22481v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "物理信息微光学合成引擎",
-      "sum": "OSOG为微光学环境提供可微物理合成数据引擎。",
-      "ta": "专业领域工具，与游戏图形学关联较弱。",
-      "src": "arXiv · cs.GR · 06-19",
-      "url": "https://arxiv.org/abs/2606.21381v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "物理交互虚拟人化身",
-      "sum": "PIAvatar通过变形梯度解耦实现物理交互化身。",
-      "ta": "对角色物理交互和动画系统有参考价值。",
-      "src": "arXiv · cs.GR · 06-19",
-      "url": "https://arxiv.org/abs/2606.21162v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Substance 3D瓢虫材质教程",
-      "sum": "Romain Lemaire讲解用Substance 3D SDF制作瓢虫材质。",
-      "ta": "材质设计流程参考，SDF用法可迁移到其他生物材质。",
-      "src": "80 Level · 06-22",
-      "url": "https://80.lv/articles/how-to-design-a-vibrant-ladybug-material-using-substance-3d/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "小团队游戏22小时回本",
-      "sum": "独立游戏《Thank You For Your Application》22小时收回开发成本。",
-      "ta": "行业案例，与TA技术无直接关联。",
-      "src": "Game Developer · 06-22",
-      "url": "https://www.gamedeveloper.com/business/-larger-budgets-and-longer-schedules-do-not-lead-to-better-games-thank-you-for-your-application-recoups-dev-costs-in-22-hours"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多模态扩散语言模型",
-      "sum": "提出并行区域感知的多模态扩散语言模型。",
-      "ta": "与游戏实时渲染无直接关联，可速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.19534"
     }
   ]
 };
