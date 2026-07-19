@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月18日 · 周六",
+  "date": "2026年7月19日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>UE Expanse体积工作流教程</em> / <em>Godot极地生存游戏动画</em> / <em>B社确认多个辐射项目</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今日暂无新增 —— 近期热点此前都已读过。给你翻出了 1 条前几天最值得回看的，往下拉「今天的刷完了，来回顾下前几天的」。",
   "channels": [
     {
       "key": "x",
@@ -116,119 +116,30 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE Expanse体积工作流教程",
-      "sum": "Reza Sarkamari发布视频教程，讲解Unreal Engine中Expanse体积效果工作流。",
-      "ta": "可学习Expanse插件在UE中实现云、雾等体积特效的完整流程。",
-      "src": "80 Level · 07-18",
-      "url": "https://80.lv/articles/check-out-this-tutorial-on-expanse-workflow-in-unreal-engine/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Godot极地生存游戏动画",
-      "sum": "Frost Kin是一款Godot引擎开发的极地生存冒险游戏，展示超现实动画。",
-      "ta": "Godot引擎在动画表现上的进展可作为参考，但非UE直接相关。",
-      "src": "80 Level · 07-18",
-      "url": "https://80.lv/articles/surreal-animations-from-an-arctic-survival-game-made-in-godot/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "B社确认多个辐射项目",
-      "sum": "Bethesda确认辐射3/新维加斯重制版及Obsidian新辐射游戏，老滚6仍是重点。",
-      "ta": "辐射IP重制可能带动UE5或自研引擎的渲染管线需求，但无直接技术细节。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/bethesda-confirms-multiple-fallout-projects-including-remasters-and-new-obsidian-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "蜘蛛机甲后末日游戏",
-      "sum": "一款玩家操控蜘蛛状机甲的后末日游戏发布。",
-      "ta": "游戏概念有趣，但无技术或工作流参考价值。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/in-this-game-you-ll-be-a-spider-like-mech-navigating-a-post-apocalyptic-world/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "15年游戏合作经验分享",
-      "sum": "ZiMAD首席BD官分享15年游戏合作经验，聚焦玩家信任与快速变革。",
-      "ta": "商业经验分享，对TA工作流无直接帮助。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/what-15-years-of-game-partnerships-taught-me/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Epic与Google和解安卓商店",
-      "sum": "Epic与Google达成和解，第三方应用商店即将登陆Android。",
-      "ta": "平台生态变化可能影响游戏分发，但非技术相关。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/epic-games-google-withdraw-settlement-third-party-app-stores-are-coming-to-android/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "ZA/UM工作室裁员32人",
-      "sum": "ZA/UM在发布新作两个月后裁员最多32人，称艺术标准不变。",
-      "ta": "行业裁员新闻，无技术参考价值。",
-      "src": "Game Developer · 07-17",
-      "url": "https://www.gamedeveloper.com/business/za-um-studios-to-lay-off-up-to-32-workers-two-months-after-releasing-zero-parades-for-dead-spies"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Todd Howard确认与Obsidian合作",
-      "sum": "辐射总监Todd Howard确认与Obsidian合作开发新辐射游戏。",
-      "ta": "辐射新作可能采用UE5或自研引擎，但无具体技术细节。",
-      "src": "Game Developer · 07-17",
-      "url": "https://www.gamedeveloper.com/business/todd-howard-says-the-timing-is-right-for-a-collaboration-with-obsidian"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "工会挑战Xbox等业界动态",
-      "sum": "工会挑战Xbox、GameStop CEO称实体游戏销售无关紧要、Glen Schofield退休。",
-      "ta": "行业综合新闻，无技术或工作流参考价值。",
-      "src": "Game Developer · 07-17",
-      "url": "https://www.gamedeveloper.com/business/labor-unions-challenge-xbox-gamestop-ceo-says-physical-game-sales-are-irrelevant-and-glen-schofield-retires-patch-notes-61"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "交互世界模型作为游戏引擎",
-      "sum": "论文提出将交互世界模型重新构想为游戏引擎，从像素到状态。",
-      "ta": "可能影响未来游戏AI驱动的动态世界生成，需关注其与实时渲染的接口。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.14076"
-    },
-    {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "非对称3D高斯泼溅长序列建模",
-      "sum": "AsySplat提出高效非对称3D高斯泼溅方法，用于长序列场景建模。",
-      "ta": "3DGS新变体，可能提升大规模场景重建效率，对程序化生成有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.10995"
+      "imp": "hi",
+      "rank": 1,
+      "title": "Houdini 22 发布",
+      "sum": "SideFX 发布 Houdini 22，原生支持高斯泼溅、新 UI 和程序化工具。",
+      "ta": "原生高斯泼溅支持意味着 TA 可直接在 Houdini 中处理实时渲染点云资产，无需外部转换。",
+      "src": "80 Level · 07-15",
+      "url": "https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more/",
+      "flashback": true
     }
   ],
-  "flashbackTitle": "",
+  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
   "sources": {
     "ok": [
       "NVIDIA",
       "PlayStation Blog",
       "AMD GPUOpen",
-      "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客。"
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客、arXiv · cs.GR。"
   },
   "xStale": false
 };
