@@ -2,8 +2,35 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-19 12:27",
+  "updated": "2026-07-20 12:41",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D高斯在图形处理器上渲染",
+      "sum": "首次在IPU上实现3D高斯渲染，仅用片上SRAM。",
+      "ta": "关注非传统硬件上的实时渲染可行性，可能影响未来管线设计。",
+      "src": "arXiv · cs.GR · 07-17",
+      "url": "https://arxiv.org/abs/2607.15951v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "文本到动作的逐笔时间控制",
+      "sum": "引入动作单元实现文本到动作的逐笔时间控制。",
+      "ta": "对角色动画工作流中的动作生成精度有参考价值。",
+      "src": "arXiv · cs.GR · 07-17",
+      "url": "https://arxiv.org/abs/2607.15717v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频基础模型生成建模",
+      "sum": "通过表示自编码器驯服视频基础模型用于生成。",
+      "ta": "视频生成技术可能间接影响实时渲染中的动态内容创建。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.14088"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -93,15 +120,6 @@ window.INTEL_RECENT = {
       "ta": "可能影响未来游戏AI驱动的动态世界生成，需关注其与实时渲染的接口。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.14076"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "非对称3D高斯泼溅长序列建模",
-      "sum": "AsySplat提出高效非对称3D高斯泼溅方法，用于长序列场景建模。",
-      "ta": "3DGS新变体，可能提升大规模场景重建效率，对程序化生成有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.10995"
     },
     {
       "cat": "tech",
@@ -1800,24 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "可作为团队新人培训或TA技能拓展的免费学习资源。",
       "src": "Unreal Engine · 06-15",
       "url": "https://www.unrealengine.com/news/free-professional-unreal-engine-courses-now-available-on-the-epic-developer-community"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "等变流匹配网格生成",
-      "sum": "MeshFlow直接生成三角网格，保持顶点和面的置换不变性。",
-      "ta": "直接输出网格的生成方法，可能简化3D资产管线。",
-      "src": "arXiv · cs.GR · 06-22",
-      "url": "https://arxiv.org/abs/2606.23489v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可控纹理平铺扩散模型",
-      "sum": "用变换RoPE增强扩散模型实现可控纹理平铺。",
-      "ta": "对材质贴图自动生成和纹理合成有潜在应用。",
-      "src": "arXiv · cs.GR · 06-22",
-      "url": "https://arxiv.org/abs/2606.22945v1"
     }
   ]
 };

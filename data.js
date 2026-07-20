@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月19日 · 周日",
+  "date": "2026年7月20日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今日暂无新增 —— 近期热点此前都已读过。给你翻出了 1 条前几天最值得回看的，往下拉「今天的刷完了，来回顾下前几天的」。",
+  "todayHtml": "今天值得停下精读的有：<em>3D高斯在图形处理器上渲染</em> / <em>文本到动作的逐笔时间控制</em> / <em>视频基础模型生成建模</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -117,29 +117,46 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Houdini 22 发布",
-      "sum": "SideFX 发布 Houdini 22，原生支持高斯泼溅、新 UI 和程序化工具。",
-      "ta": "原生高斯泼溅支持意味着 TA 可直接在 Houdini 中处理实时渲染点云资产，无需外部转换。",
-      "src": "80 Level · 07-15",
-      "url": "https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more/",
-      "flashback": true
+      "imp": "mid",
+      "title": "3D高斯在图形处理器上渲染",
+      "sum": "首次在IPU上实现3D高斯渲染，仅用片上SRAM。",
+      "ta": "关注非传统硬件上的实时渲染可行性，可能影响未来管线设计。",
+      "src": "arXiv · cs.GR · 07-17",
+      "url": "https://arxiv.org/abs/2607.15951v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "文本到动作的逐笔时间控制",
+      "sum": "引入动作单元实现文本到动作的逐笔时间控制。",
+      "ta": "对角色动画工作流中的动作生成精度有参考价值。",
+      "src": "arXiv · cs.GR · 07-17",
+      "url": "https://arxiv.org/abs/2607.15717v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频基础模型生成建模",
+      "sum": "通过表示自编码器驯服视频基础模型用于生成。",
+      "ta": "视频生成技术可能间接影响实时渲染中的动态内容创建。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.14088"
     }
   ],
-  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
+  "flashbackTitle": "",
   "sources": {
     "ok": [
       "NVIDIA",
       "PlayStation Blog",
       "AMD GPUOpen",
+      "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客、arXiv · cs.GR。"
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客。"
   },
   "xStale": false
 };
