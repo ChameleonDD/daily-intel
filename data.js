@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月20日 · 周一",
+  "date": "2026年7月21日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>3D高斯在图形处理器上渲染</em> / <em>文本到动作的逐笔时间控制</em> / <em>视频基础模型生成建模</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>体积数据高效有损压缩</em> / <em>无损隐式神经体积表示</em> / <em>抗丢包3D高斯压缩</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,29 +118,137 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "3D高斯在图形处理器上渲染",
-      "sum": "首次在IPU上实现3D高斯渲染，仅用片上SRAM。",
-      "ta": "关注非传统硬件上的实时渲染可行性，可能影响未来管线设计。",
-      "src": "arXiv · cs.GR · 07-17",
-      "url": "https://arxiv.org/abs/2607.15951v1"
+      "title": "体积数据高效有损压缩",
+      "sum": "EVOLVE 提出跨域数据库上的变速率编码，用于大规模科学模拟体积压缩。",
+      "ta": "体积数据压缩技术可能影响未来体积渲染管线的存储与传输效率。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.18187v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "无损隐式神经体积表示",
+      "sum": "Lossless-INR 实现无损体积隐式神经表示，克服了现有 INR 有损问题。",
+      "ta": "无损 INR 为体积数据在实时渲染中的高保真存储提供新可能。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.18150v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "抗丢包3D高斯压缩",
+      "sum": "通过原子打包和GNN错误隐藏，使3DGS比特流在网络丢包下更鲁棒。",
+      "ta": "对云游戏或流式3D场景的实时渲染有直接实用价值。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.17916v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "快速VEM流体模拟",
+      "sum": "提出快速虚拟元法，高效处理复杂边界下的流体-边界交互模拟。",
+      "ta": "流体特效模拟新方法，可能提升Niagara中复杂边界流体性能。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.17725v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "特征引导扩散逆渲染",
+      "sum": "非可微逆渲染方法，用特征引导扩散避免局部最优，减少工程定制。",
+      "ta": "简化材质/光照逆向重建流程，可能用于自动生成PBR贴图。",
+      "src": "arXiv · cs.GR · 07-19",
+      "url": "https://arxiv.org/abs/2607.17411v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "文本到动作的逐笔时间控制",
-      "sum": "引入动作单元实现文本到动作的逐笔时间控制。",
-      "ta": "对角色动画工作流中的动作生成精度有参考价值。",
-      "src": "arXiv · cs.GR · 07-17",
-      "url": "https://arxiv.org/abs/2607.15717v1"
+      "title": "文本生成3D室内场景",
+      "sum": "Text2Villa 分层生成多房间3D室内环境，支持物理感知分析合成。",
+      "ta": "程序化生成室内场景的AI方案，可辅助关卡或环境美术快速原型。",
+      "src": "arXiv · cs.GR · 07-19",
+      "url": "https://arxiv.org/abs/2607.17145v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "点云快速符号距离计算",
+      "sum": "Points as Tori 方法支持任意分辨率下点云符号距离快速逐点查询。",
+      "ta": "加速点云重建和SDF场计算，对程序化植被或地形工具可能有用。",
+      "src": "arXiv · cs.GR · 07-18",
+      "url": "https://arxiv.org/abs/2607.16946v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "拓扑感知3DGS平面重建",
+      "sum": "TopoGS 通过拓扑感知3D高斯泼溅提取结构化参数化平面几何。",
+      "ta": "从图像直接生成可编辑平面几何，利于场景编辑和LOD构建。",
+      "src": "arXiv · cs.GR · 07-18",
+      "url": "https://arxiv.org/abs/2607.16838v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "类别无关3D形状编辑",
+      "sum": "CNS-Edit++ 基于耦合神经形状表示，实现隐空间3D形状编辑。",
+      "ta": "通用3D形状编辑框架，可能用于DCC工具中的非破坏性编辑。",
+      "src": "arXiv · cs.GR · 07-18",
+      "url": "https://arxiv.org/abs/2607.16577v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微几何图像薄壳生成",
+      "sum": "DiffGI 用可微几何图像实现高保真薄壳3D生成。",
+      "ta": "薄壳模型生成新范式，对角色或道具的自动拓扑生成有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.13365"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "视频基础模型生成建模",
-      "sum": "通过表示自编码器驯服视频基础模型用于生成。",
-      "ta": "视频生成技术可能间接影响实时渲染中的动态内容创建。",
+      "title": "长尾驾驶数据生成",
+      "sum": "OpenLongTail 生成式扩增长尾驾驶场景数据。",
+      "ta": "自动驾驶仿真数据生成，与游戏AI或开放世界NPC行为无关。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.14088"
+      "url": "https://huggingface.co/papers/2607.09655"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "实时多模态应用代理",
+      "sum": "FlashRT 提供代理框架，引导部署实时多模态应用。",
+      "ta": "实时应用部署工具，与游戏渲染管线无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.18171"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型推理时对齐",
+      "sum": "DiFA 在推理时进行前向过程对齐，提升扩散模型生成质量。",
+      "ta": "扩散模型改进，可能间接影响AI生成纹理或资产质量。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.17972"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "景观绘画启发3D光照",
+      "sum": "访谈：艺术家通过户外风景画理解光线、色彩与构图，用于3D环境光照。",
+      "ta": "光照艺术方法论，对TA理解真实感光照和材质表现有启发。",
+      "src": "80 Level · 07-20",
+      "url": "https://80.lv/articles/interview-understanding-3d-art-lighting-through-landscape-painting/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Unity 7路线图公布",
+      "sum": "Unity 7基于Unity 6架构，提供不破坏构建的更新路径和新工具。",
+      "ta": "引擎升级策略，确保项目迁移稳定性，对管线维护有影响。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/programming/unity-unveils-unity-7-roadmap-with-update-path-that-won-t-break-your-build"
     }
   ],
   "flashbackTitle": "",

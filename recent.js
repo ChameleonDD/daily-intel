@@ -2,16 +2,115 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-20 12:41",
+  "updated": "2026-07-21 12:20",
   "cards": [
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "3D高斯在图形处理器上渲染",
-      "sum": "首次在IPU上实现3D高斯渲染，仅用片上SRAM。",
-      "ta": "关注非传统硬件上的实时渲染可行性，可能影响未来管线设计。",
-      "src": "arXiv · cs.GR · 07-17",
-      "url": "https://arxiv.org/abs/2607.15951v1"
+      "title": "体积数据高效有损压缩",
+      "sum": "EVOLVE 提出跨域数据库上的变速率编码，用于大规模科学模拟体积压缩。",
+      "ta": "体积数据压缩技术可能影响未来体积渲染管线的存储与传输效率。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.18187v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "无损隐式神经体积表示",
+      "sum": "Lossless-INR 实现无损体积隐式神经表示，克服了现有 INR 有损问题。",
+      "ta": "无损 INR 为体积数据在实时渲染中的高保真存储提供新可能。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.18150v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "抗丢包3D高斯压缩",
+      "sum": "通过原子打包和GNN错误隐藏，使3DGS比特流在网络丢包下更鲁棒。",
+      "ta": "对云游戏或流式3D场景的实时渲染有直接实用价值。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.17916v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "快速VEM流体模拟",
+      "sum": "提出快速虚拟元法，高效处理复杂边界下的流体-边界交互模拟。",
+      "ta": "流体特效模拟新方法，可能提升Niagara中复杂边界流体性能。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.17725v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "特征引导扩散逆渲染",
+      "sum": "非可微逆渲染方法，用特征引导扩散避免局部最优，减少工程定制。",
+      "ta": "简化材质/光照逆向重建流程，可能用于自动生成PBR贴图。",
+      "src": "arXiv · cs.GR · 07-19",
+      "url": "https://arxiv.org/abs/2607.17411v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "点云快速符号距离计算",
+      "sum": "Points as Tori 方法支持任意分辨率下点云符号距离快速逐点查询。",
+      "ta": "加速点云重建和SDF场计算，对程序化植被或地形工具可能有用。",
+      "src": "arXiv · cs.GR · 07-18",
+      "url": "https://arxiv.org/abs/2607.16946v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "拓扑感知3DGS平面重建",
+      "sum": "TopoGS 通过拓扑感知3D高斯泼溅提取结构化参数化平面几何。",
+      "ta": "从图像直接生成可编辑平面几何，利于场景编辑和LOD构建。",
+      "src": "arXiv · cs.GR · 07-18",
+      "url": "https://arxiv.org/abs/2607.16838v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微几何图像薄壳生成",
+      "sum": "DiffGI 用可微几何图像实现高保真薄壳3D生成。",
+      "ta": "薄壳模型生成新范式，对角色或道具的自动拓扑生成有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.13365"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "长尾驾驶数据生成",
+      "sum": "OpenLongTail 生成式扩增长尾驾驶场景数据。",
+      "ta": "自动驾驶仿真数据生成，与游戏AI或开放世界NPC行为无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.09655"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "实时多模态应用代理",
+      "sum": "FlashRT 提供代理框架，引导部署实时多模态应用。",
+      "ta": "实时应用部署工具，与游戏渲染管线无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.18171"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型推理时对齐",
+      "sum": "DiFA 在推理时进行前向过程对齐，提升扩散模型生成质量。",
+      "ta": "扩散模型改进，可能间接影响AI生成纹理或资产质量。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.17972"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Unity 7路线图公布",
+      "sum": "Unity 7基于Unity 6架构，提供不破坏构建的更新路径和新工具。",
+      "ta": "引擎升级策略，确保项目迁移稳定性，对管线维护有影响。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/programming/unity-unveils-unity-7-roadmap-with-update-path-that-won-t-break-your-build"
     },
     {
       "cat": "ai",
@@ -763,15 +862,6 @@ window.INTEL_RECENT = {
       "ta": "行业新闻，无直接技术关联。",
       "src": "Game Developer · 07-07",
       "url": "https://www.gamedeveloper.com/business/report-around-half-of-the-id-software-team-have-been-laid-off"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3DGS屏幕伪影去除",
-      "sum": "SSA-3DGS无监督去除3DGS中的屏幕空间伪影。",
-      "ta": "对3DGS管线中的伪影问题有直接参考价值，可提升重建质量。",
-      "src": "arXiv · cs.GR · 07-06",
-      "url": "https://arxiv.org/abs/2607.05598v1"
     },
     {
       "cat": "flow",
@@ -1727,97 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "行业发行动态，对TA工作流无直接影响。",
       "src": "Game Developer · 06-24",
       "url": "https://www.gamedeveloper.com/business/new-publisher-trailmark-games-promises-new-path-forward-for-licensed-games"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "GTA6定价80美元",
-      "sum": "《侠盗猎车手6》预购价80美元，平息百元游戏争议。",
-      "ta": "行业定价趋势，对TA技术决策无直接影响。",
-      "src": "Game Developer · 06-24",
-      "url": "https://www.gamedeveloper.com/console/grand-theft-auto-6-s-80-price-settles-the-100-question"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "UE 5.8 HMI模板发布",
-      "sum": "Epic发布UE 5.8 HMI模板与数据缩减管线插件，加速HMI开发。",
-      "ta": "UE 5.8新模板与插件可能影响TA在车载/工业HMI项目的渲染管线与数据流设计。",
-      "src": "Unreal Engine · 06-23",
-      "url": "https://www.unrealengine.com/news/unreal-engine-hmi-template-available-now"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单图即时高斯编码头像",
-      "sum": "FiCA从单张肖像图前馈生成可驱动的高斯编码头像。",
-      "ta": "单图生成可驱动3D头像，对角色管线与实时面部动画有潜在应用。",
-      "src": "arXiv · cs.GR · 06-23",
-      "url": "https://arxiv.org/abs/2606.24232v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "文本嵌入语义融合对齐",
-      "sum": "提出Token-to-Token对齐方法，改进文本到图像生成的语义混合。",
-      "ta": "文本嵌入对齐技术可提升材质/贴图生成中语义控制的精确度。",
-      "src": "arXiv · cs.GR · 06-22",
-      "url": "https://arxiv.org/abs/2606.24021v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "扩散Transformer全面评估",
-      "sum": "DiffusionBench提出扩散Transformer模型的全面评估基准。",
-      "ta": "扩散Transformer评估基准可能影响未来实时生成模型的选型与优化。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.24888"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "FLUX3D高保真高斯生成",
-      "sum": "FLUX3D用扩散对齐稀疏表示生成高保真3D高斯场。",
-      "ta": "3D高斯生成新方法，对程序化资产与场景生成管线有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.24874"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Epic首席布道师离职",
-      "sum": "Epic Games首席布道师Sjoerd De Jong工作12年后离职。",
-      "ta": "Epic核心人物离职可能影响引擎社区策略与开发者关系。",
-      "src": "80 Level · 06-24",
-      "url": "https://80.lv/articles/lead-evangelist-sjoerd-de-jong-leaves-epic-games-after-12-years/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ILM灯光TD谈VFX挑战",
-      "sum": "ILM资深灯光TD分享动画与实拍VFX灯光差异及全息灯光工作流。",
-      "ta": "全息投影灯光与渲染效率平衡经验，对TA在特效灯光设计有启发。",
-      "src": "80 Level · 06-23",
-      "url": "https://80.lv/articles/ilm-s-senior-lighting-td-on-vfx-challenges-building-hologram-lighting-for-transformers-one-entering-the-industry/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "腾讯考虑退出日本工作室",
-      "sum": "报道称腾讯正评估退出多个日本工作室，聚焦UGC平台。",
-      "ta": "腾讯投资策略转向可能影响日本合作工作室的引擎技术选型。",
-      "src": "Game Developer · 06-23",
-      "url": "https://www.gamedeveloper.com/business/report-tencent-mulling-exits-from-multiple-japanese-studios"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Epic免费UE专业课程",
-      "sum": "Epic开发者社区免费开放20+门UE专业课程，涵盖动画、游戏开发等。",
-      "ta": "可作为团队新人培训或TA技能拓展的免费学习资源。",
-      "src": "Unreal Engine · 06-15",
-      "url": "https://www.unrealengine.com/news/free-professional-unreal-engine-courses-now-available-on-the-epic-developer-community"
     }
   ]
 };
