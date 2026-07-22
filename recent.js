@@ -2,8 +2,152 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-21 12:20",
+  "updated": "2026-07-22 12:22",
   "cards": [
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Fab夏季大促开启",
+      "sum": "Fab商城数万资产最高70%折扣，持续至7月29日。",
+      "ta": "可趁促销囤积材质、角色包等素材，但需注意资产质量与项目兼容性。",
+      "src": "Unreal Engine · 07-21",
+      "url": "https://www.unrealengine.com/news/the-fab-summer-mega-sale-is-now-on"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "扩散Transformer多模态区域控制",
+      "sum": "提出Appearance Pointers，实现材质、对象身份等精确区域控制。",
+      "ta": "对材质生成和纹理区域控制有参考价值，可能简化贴图工作流。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.19344v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "UV空间神经融合人脸重建",
+      "sum": "UVFaceFusion实现多视角拓扑一致的人脸重建，适用于数字人。",
+      "ta": "直接关联数字人制作管线，可提升面部资产重建效率与一致性。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.18798v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高效压缩神经高斯溅射体渲染",
+      "sum": "ECoNGS提出压缩高斯原语用于交互式体数据可视化。",
+      "ta": "对体积渲染和3D场景表示有启发，可能影响Niagara特效数据压缩。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.18466v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "交互式长时域世界建模",
+      "sum": "AlayaWorld技术报告发布，聚焦长时域交互世界建模。",
+      "ta": "与游戏世界模拟相关，但偏AI研究，暂不直接用于管线。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.18367"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "掩码视觉动作统一世界建模",
+      "sum": "提出Masked Visual Actions方法，统一世界建模框架。",
+      "ta": "对游戏AI行为建模有潜在参考，但偏学术，需跟踪后续应用。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.19343"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "皮克斯裁员",
+      "sum": "迪士尼裁员数百人，皮克斯受影响最大，尽管《玩具5》票房近10亿。",
+      "ta": "行业动荡信号，但无直接技术关联，仅作背景了解。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/pixar-hit-with-layoffs-despite-toy-story-5-s-massive-box-office-success/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender复古飞船动画",
+      "sum": "Rui Huang展示Blender制作的复古未来风飞船动画。",
+      "ta": "可参考Blender资产制作流程，但非引擎内实时渲染。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/this-striking-spaceship-blender-animation-has-retro-futuristic-vibes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "手绘策略游戏开发幕后",
+      "sum": "Fika Productions分享Unity手绘策略游戏《Don't Kill Them All》开发细节。",
+      "ta": "手绘风格与策略玩法结合，可借鉴其美术管线与优化思路。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/behind-the-development-of-hand-drawn-strategy-game-don-t-kill-them-all/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "SimFest 2026模拟游戏促销",
+      "sum": "模拟游戏节开启，最高90%折扣。",
+      "ta": "促销信息，无技术价值，可忽略。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/simfest-2026-don-t-miss-these-discounted-simulation-games/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Meshy 3D Agent对话式AI",
+      "sum": "Meshy推出3D Agent，用对话式AI辅助游戏艺术家生成风格一致3D资产。",
+      "ta": "直接关联3D资产生成管线，可提升原型阶段效率，但需评估风格控制精度。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/meshy-wants-ai-to-feel-less-like-a-prompt-and-more-like-a-creative-partner/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Cliff Bleszinski谈工作室倒闭",
+      "sum": "Boss Key创始人称过于优厚的发行协议反致工作室失败。",
+      "ta": "行业经验教训，无技术关联。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/cliff-bleszinski-says-his-studio-s-too-good-publishing-deal-worked-against-it/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前Wreckreation团队成立新工作室",
+      "sum": "原团队组建新工作室，正在开发续作。",
+      "ta": "行业动态，无直接技术价值。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/former-wreckreation-team-starts-up-new-studio-working-on-sequel"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏批评对开发者的启示",
+      "sum": "长视频游戏设计分析获数百万播放，开发者可从中学习。",
+      "ta": "设计方法论参考，非技术内容。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/design/what-developers-can-learn-from-this-generation-of-games-criticism"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Splitgate开发商裁员",
+      "sum": "1047 Games在《Empulse》发布不到一个月后裁员。",
+      "ta": "行业裁员潮延续，无技术关联。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/report-splitgate-dev-1047-games-lays-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Midgar Studio清算",
+      "sum": "法国工作室Midgar Studio被母公司Nacon清算。",
+      "ta": "行业动荡，无技术价值。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/edge-of-memories-developer-midgar-studio-is-being-liquidated"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -238,15 +382,6 @@ window.INTEL_RECENT = {
       "ta": "实时动态场景重建技术，可能影响未来游戏内动态环境渲染。",
       "src": "arXiv · cs.GR · 07-16",
       "url": "https://arxiv.org/abs/2607.15271v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender多求解器物理引擎",
-      "sum": "Hurricane引擎支持流体、布料、软体、沙粒在同一模拟中交互。",
-      "ta": "多物理场耦合模拟工具，可辅助特效预演与资产测试。",
-      "src": "80 Level · 07-16",
-      "url": "https://80.lv/articles/hurricane-new-multi-solver-physics-engine-for-blender/"
     },
     {
       "cat": "flow",
@@ -1680,143 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "对游戏AI推理性能有潜在影响，但非实时渲染核心。",
       "src": "NVIDIA · 06-25",
       "url": "https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "FSR 4.1支持RDNA 3",
-      "sum": "AMD FSR SDK 2.3发布，ML超分4.1.1支持RX 7000系列，帧生成与光线重建更新。",
-      "ta": "FSR 4.1引入ML超分，对UE5渲染管线中的性能优化与跨平台画质策略有直接影响。",
-      "src": "AMD GPUOpen · 06-24",
-      "url": "https://gpuopen.com/learn/amd-fsr-sdk-2-3-blog/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "路径追踪立体视差捷径",
-      "sum": "路径追踪合成立体数据中MC噪声方差场存在隐藏捷径，影响训练。",
-      "ta": "对依赖路径追踪合成训练数据的视差估计管线有潜在影响，需关注数据偏差。",
-      "src": "arXiv · cs.GR · 06-24",
-      "url": "https://arxiv.org/abs/2606.25483v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "多智能体运动逆设计",
-      "sum": "EvoFlock自动调优鸟群、人群等多智能体运动模型参数。",
-      "ta": "可用于程序化人群或生物群系动画的自动调参，提升模拟真实感。",
-      "src": "arXiv · cs.GR · 06-24",
-      "url": "https://arxiv.org/abs/2606.25280v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "基于笼形变纹理传递",
-      "sum": "实时纹理传递方法，结合几何滤波，适用于角色化妆与程序化汽车纹理。",
-      "ta": "为实时纹理投影提供新方案，可优化角色或载具的细节贴花工作流。",
-      "src": "arXiv · cs.GR · 06-23",
-      "url": "https://arxiv.org/abs/2606.25220v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "自监督布料持久褶皱",
-      "sum": "自监督神经布料模拟引入塑性持久褶皱，提升视觉真实感。",
-      "ta": "布料模拟更真实，对角色服装动态与褶皱效果有直接改进潜力。",
-      "src": "arXiv · cs.GR · 06-23",
-      "url": "https://arxiv.org/abs/2606.25065v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时交互基础模型",
-      "sum": "Wan-Streamer端到端实时低延迟全双工音视频交互模型。",
-      "ta": "虽非游戏专用，但实时音视频交互能力可能用于NPC对话或直播特效。",
-      "src": "arXiv · cs.GR · 06-23",
-      "url": "https://arxiv.org/abs/2606.25041v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "改进大语言扩散模型",
-      "sum": "改进版大语言扩散模型发布，提升生成质量。",
-      "ta": "扩散模型在文本生成领域进展，与游戏内容生成间接相关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.25331"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "视频虚拟试穿4D代理",
-      "sum": "TryOnCrafter利用相机轨迹生成可渲染4D代理实现视频虚拟试穿。",
-      "ta": "4D试穿代理技术可迁移至游戏角色换装或虚拟化身系统。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.26092"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "SEGA老兵谈自走棋",
-      "sum": "前SEGA开发者Yasuhiro Nishiyama访谈，讨论自走棋类型与三国题材新作。",
-      "ta": "行业趋势参考，对TA工作流无直接影响。",
-      "src": "80 Level · 06-24",
-      "url": "https://80.lv/articles/interview-the-sega-veteran-behind-get-wrapped-up-on-sangokushi-bond-and-the-future-of-auto-battlers/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "极限竞速地平线6美术",
-      "sum": "Playground Games艺术家分享《极限竞速地平线6》世界创作细节。",
-      "ta": "可观摩AAA级开放世界环境美术的资产与场景制作水准。",
-      "src": "80 Level · 06-24",
-      "url": "https://80.lv/articles/take-a-closer-look-at-the-world-of-forza-horizon-6/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "UE5.6森林环境教程",
-      "sum": "Michael Gerard指导在UE5.6中从零创建生产级森林环境全流程。",
-      "ta": "直接关联植被工具与程序化生成工作流，是TA必读的实战教程。",
-      "src": "80 Level · 06-24",
-      "url": "https://80.lv/articles/create-production-quality-forest-environments-from-scratch-in-ue5-6/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "免费人群反应动捕动画",
-      "sum": "Anderson Rohr发布免费人群反应动捕动画包。",
-      "ta": "可直接用于人群模拟或NPC动画，节省动捕成本。",
-      "src": "80 Level · 06-24",
-      "url": "https://80.lv/articles/check-out-these-free-crowd-reaction-mocap-animations/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Tim Sweeney谈游戏经济",
-      "sum": "Epic CEO称新游戏成功需连接其他游戏经济体系。",
-      "ta": "行业战略观点，对TA技术决策无直接影响。",
-      "src": "Game Developer · 06-24",
-      "url": "https://www.gamedeveloper.com/business/tim-sweeney-says-only-hope-for-new-games-is-to-connect-to-economies-of-other-games-"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Denmu设立5000万基金",
-      "sum": "投资公司Denmu宣布5000万美元游戏开发基金，优先支持作者型开发者。",
-      "ta": "行业资金动态，对TA工作流无直接影响。",
-      "src": "Game Developer · 06-24",
-      "url": "https://www.gamedeveloper.com/business/investment-house-denmu-announces-auteur-first-50-million-fund-for-game-devs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Trailmark Games成立",
-      "sum": "《尼克儿童频道全明星大乱斗》开发商创立授权游戏新发行商。",
-      "ta": "行业发行动态，对TA工作流无直接影响。",
-      "src": "Game Developer · 06-24",
-      "url": "https://www.gamedeveloper.com/business/new-publisher-trailmark-games-promises-new-path-forward-for-licensed-games"
     }
   ]
 };

@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月21日 · 周二",
+  "date": "2026年7月22日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>体积数据高效有损压缩</em> / <em>无损隐式神经体积表示</em> / <em>抗丢包3D高斯压缩</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Fab夏季大促开启</em> / <em>扩散Transformer多模态区域控制</em> / <em>UV空间神经融合人脸重建</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,144 +116,154 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "体积数据高效有损压缩",
-      "sum": "EVOLVE 提出跨域数据库上的变速率编码，用于大规模科学模拟体积压缩。",
-      "ta": "体积数据压缩技术可能影响未来体积渲染管线的存储与传输效率。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.18187v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "无损隐式神经体积表示",
-      "sum": "Lossless-INR 实现无损体积隐式神经表示，克服了现有 INR 有损问题。",
-      "ta": "无损 INR 为体积数据在实时渲染中的高保真存储提供新可能。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.18150v1"
-    },
-    {
-      "cat": "gfx",
+      "cat": "biz",
       "imp": "lo",
-      "title": "抗丢包3D高斯压缩",
-      "sum": "通过原子打包和GNN错误隐藏，使3DGS比特流在网络丢包下更鲁棒。",
-      "ta": "对云游戏或流式3D场景的实时渲染有直接实用价值。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.17916v1"
+      "title": "Fab夏季大促开启",
+      "sum": "Fab商城数万资产最高70%折扣，持续至7月29日。",
+      "ta": "可趁促销囤积材质、角色包等素材，但需注意资产质量与项目兼容性。",
+      "src": "Unreal Engine · 07-21",
+      "url": "https://www.unrealengine.com/news/the-fab-summer-mega-sale-is-now-on"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "快速VEM流体模拟",
-      "sum": "提出快速虚拟元法，高效处理复杂边界下的流体-边界交互模拟。",
-      "ta": "流体特效模拟新方法，可能提升Niagara中复杂边界流体性能。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.17725v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "特征引导扩散逆渲染",
-      "sum": "非可微逆渲染方法，用特征引导扩散避免局部最优，减少工程定制。",
-      "ta": "简化材质/光照逆向重建流程，可能用于自动生成PBR贴图。",
-      "src": "arXiv · cs.GR · 07-19",
-      "url": "https://arxiv.org/abs/2607.17411v1"
+      "title": "扩散Transformer多模态区域控制",
+      "sum": "提出Appearance Pointers，实现材质、对象身份等精确区域控制。",
+      "ta": "对材质生成和纹理区域控制有参考价值，可能简化贴图工作流。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.19344v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "文本生成3D室内场景",
-      "sum": "Text2Villa 分层生成多房间3D室内环境，支持物理感知分析合成。",
-      "ta": "程序化生成室内场景的AI方案，可辅助关卡或环境美术快速原型。",
-      "src": "arXiv · cs.GR · 07-19",
-      "url": "https://arxiv.org/abs/2607.17145v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "点云快速符号距离计算",
-      "sum": "Points as Tori 方法支持任意分辨率下点云符号距离快速逐点查询。",
-      "ta": "加速点云重建和SDF场计算，对程序化植被或地形工具可能有用。",
-      "src": "arXiv · cs.GR · 07-18",
-      "url": "https://arxiv.org/abs/2607.16946v1"
+      "title": "UV空间神经融合人脸重建",
+      "sum": "UVFaceFusion实现多视角拓扑一致的人脸重建，适用于数字人。",
+      "ta": "直接关联数字人制作管线，可提升面部资产重建效率与一致性。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.18798v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "拓扑感知3DGS平面重建",
-      "sum": "TopoGS 通过拓扑感知3D高斯泼溅提取结构化参数化平面几何。",
-      "ta": "从图像直接生成可编辑平面几何，利于场景编辑和LOD构建。",
-      "src": "arXiv · cs.GR · 07-18",
-      "url": "https://arxiv.org/abs/2607.16838v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "类别无关3D形状编辑",
-      "sum": "CNS-Edit++ 基于耦合神经形状表示，实现隐空间3D形状编辑。",
-      "ta": "通用3D形状编辑框架，可能用于DCC工具中的非破坏性编辑。",
-      "src": "arXiv · cs.GR · 07-18",
-      "url": "https://arxiv.org/abs/2607.16577v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可微几何图像薄壳生成",
-      "sum": "DiffGI 用可微几何图像实现高保真薄壳3D生成。",
-      "ta": "薄壳模型生成新范式，对角色或道具的自动拓扑生成有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.13365"
+      "title": "高效压缩神经高斯溅射体渲染",
+      "sum": "ECoNGS提出压缩高斯原语用于交互式体数据可视化。",
+      "ta": "对体积渲染和3D场景表示有启发，可能影响Niagara特效数据压缩。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.18466v1"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "长尾驾驶数据生成",
-      "sum": "OpenLongTail 生成式扩增长尾驾驶场景数据。",
-      "ta": "自动驾驶仿真数据生成，与游戏AI或开放世界NPC行为无关。",
+      "title": "交互式长时域世界建模",
+      "sum": "AlayaWorld技术报告发布，聚焦长时域交互世界建模。",
+      "ta": "与游戏世界模拟相关，但偏AI研究，暂不直接用于管线。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.09655"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "实时多模态应用代理",
-      "sum": "FlashRT 提供代理框架，引导部署实时多模态应用。",
-      "ta": "实时应用部署工具，与游戏渲染管线无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.18171"
+      "url": "https://huggingface.co/papers/2607.18367"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "扩散模型推理时对齐",
-      "sum": "DiFA 在推理时进行前向过程对齐，提升扩散模型生成质量。",
-      "ta": "扩散模型改进，可能间接影响AI生成纹理或资产质量。",
+      "title": "掩码视觉动作统一世界建模",
+      "sum": "提出Masked Visual Actions方法，统一世界建模框架。",
+      "ta": "对游戏AI行为建模有潜在参考，但偏学术，需跟踪后续应用。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.17972"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "景观绘画启发3D光照",
-      "sum": "访谈：艺术家通过户外风景画理解光线、色彩与构图，用于3D环境光照。",
-      "ta": "光照艺术方法论，对TA理解真实感光照和材质表现有启发。",
-      "src": "80 Level · 07-20",
-      "url": "https://80.lv/articles/interview-understanding-3d-art-lighting-through-landscape-painting/"
+      "url": "https://huggingface.co/papers/2607.19343"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Unity 7路线图公布",
-      "sum": "Unity 7基于Unity 6架构，提供不破坏构建的更新路径和新工具。",
-      "ta": "引擎升级策略，确保项目迁移稳定性，对管线维护有影响。",
+      "title": "皮克斯裁员",
+      "sum": "迪士尼裁员数百人，皮克斯受影响最大，尽管《玩具5》票房近10亿。",
+      "ta": "行业动荡信号，但无直接技术关联，仅作背景了解。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/pixar-hit-with-layoffs-despite-toy-story-5-s-massive-box-office-success/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender复古飞船动画",
+      "sum": "Rui Huang展示Blender制作的复古未来风飞船动画。",
+      "ta": "可参考Blender资产制作流程，但非引擎内实时渲染。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/this-striking-spaceship-blender-animation-has-retro-futuristic-vibes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "手绘策略游戏开发幕后",
+      "sum": "Fika Productions分享Unity手绘策略游戏《Don't Kill Them All》开发细节。",
+      "ta": "手绘风格与策略玩法结合，可借鉴其美术管线与优化思路。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/behind-the-development-of-hand-drawn-strategy-game-don-t-kill-them-all/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "SimFest 2026模拟游戏促销",
+      "sum": "模拟游戏节开启，最高90%折扣。",
+      "ta": "促销信息，无技术价值，可忽略。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/simfest-2026-don-t-miss-these-discounted-simulation-games/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Meshy 3D Agent对话式AI",
+      "sum": "Meshy推出3D Agent，用对话式AI辅助游戏艺术家生成风格一致3D资产。",
+      "ta": "直接关联3D资产生成管线，可提升原型阶段效率，但需评估风格控制精度。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/meshy-wants-ai-to-feel-less-like-a-prompt-and-more-like-a-creative-partner/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Cliff Bleszinski谈工作室倒闭",
+      "sum": "Boss Key创始人称过于优厚的发行协议反致工作室失败。",
+      "ta": "行业经验教训，无技术关联。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/cliff-bleszinski-says-his-studio-s-too-good-publishing-deal-worked-against-it/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前Wreckreation团队成立新工作室",
+      "sum": "原团队组建新工作室，正在开发续作。",
+      "ta": "行业动态，无直接技术价值。",
       "src": "Game Developer · 07-21",
-      "url": "https://www.gamedeveloper.com/programming/unity-unveils-unity-7-roadmap-with-update-path-that-won-t-break-your-build"
+      "url": "https://www.gamedeveloper.com/business/former-wreckreation-team-starts-up-new-studio-working-on-sequel"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏批评对开发者的启示",
+      "sum": "长视频游戏设计分析获数百万播放，开发者可从中学习。",
+      "ta": "设计方法论参考，非技术内容。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/design/what-developers-can-learn-from-this-generation-of-games-criticism"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Splitgate开发商裁员",
+      "sum": "1047 Games在《Empulse》发布不到一个月后裁员。",
+      "ta": "行业裁员潮延续，无技术关联。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/report-splitgate-dev-1047-games-lays-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Midgar Studio清算",
+      "sum": "法国工作室Midgar Studio被母公司Nacon清算。",
+      "ta": "行业动荡，无技术价值。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/edge-of-memories-developer-midgar-studio-is-being-liquidated"
     }
   ],
   "flashbackTitle": "",
   "sources": {
     "ok": [
+      "Unreal Engine",
       "NVIDIA",
       "PlayStation Blog",
       "AMD GPUOpen",
@@ -264,7 +274,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Blender 开发博客。"
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };
