@@ -2,8 +2,164 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-22 12:22",
+  "updated": "2026-07-23 12:21",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "四面体笼驱动海量动画几何光线追踪",
+      "sum": "AMD 提出用四面体笼动画复用静态 BLAS，实时追踪数亿三角形，大幅降低植被/草丛更新开销。",
+      "ta": "对植被渲染和人群系统意义重大，可显著减少每帧 BVH 重建和内存消耗。",
+      "src": "AMD GPUOpen · 07-22",
+      "url": "https://gpuopen.com/learn/ray-tracing-massive-amounts-animated-geometry/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "分裂辐射级联：实时全局光照新方法",
+      "sum": "提出稀疏辐射探针的级联方案，解决传统探针方法细节不足问题，实现实时漫反射全局光照。",
+      "ta": "可能成为 UE5 Lumen 之外的高质量 GI 替代方案，值得关注实现细节。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.20384v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 3,
+      "title": "HAWKED 程序化瀑布工具制作详解",
+      "sum": "Serge Filin 分享将 2D 概念转化为动态实时材质的程序化瀑布工具开发过程。",
+      "ta": "直接相关植被/特效工作流，学习如何用程序化材质实现复杂水体效果。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/creating-a-procedural-waterfalls-tool-for-the-game-hawked/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "优化写实水晶材质制作分解",
+      "sum": "Anastasia Gorban 详解水晶材质分层结构、虹彩效果及划痕纹理制作流程。",
+      "ta": "材质分层和虹彩实现技巧可复用至宝石/玻璃类 Shader 开发。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/breakdown-how-to-create-an-optimized-and-realistic-crystal-material/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 远程资产库功能预览",
+      "sum": "Blender 开发中远程资产库，支持在线浏览资产并按需下载。",
+      "ta": "可能影响 TA 资产管理工作流，减少本地存储依赖。",
+      "src": "Blender 开发博客 · 07-22",
+      "url": "https://code.blender.org/2026/07/remote-asset-libraries/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Tear Painter 更新支持纹理取色",
+      "sum": "Blender 工具 Tear Painter 新版可直接从纹理中选取颜色。",
+      "ta": "提升纹理绘制效率，对材质贴图工作流有直接帮助。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/new-tear-painter-update-lets-you-pick-colors-directly-from-textures/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity URP 地形自适应动态雨系统",
+      "sum": "Prism Works 发布 Unity URP 雨系统，支持地形自适应涟漪和建筑遮挡。",
+      "ta": "Niagara 特效师可参考其地形交互逻辑，移植至 UE5 雨系统。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/this-dynamic-rain-system-brings-terrain-adaptive-real-time-rain-effects-to-unity/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "MR-Compare：3D高斯与网格重建对比框架",
+      "sum": "MR 框架实现 3D Gaussian Splatting 与网格重建在物理环境中的空间对齐比较。",
+      "ta": "为 3D 重建质量评估提供混合现实工具，可能影响扫描资产管线。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.20325v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "快速波光学全息显示渲染",
+      "sum": "利用多层图像实现 3D 全息显示的快速波光学渲染方法。",
+      "ta": "前沿显示技术，长期可能影响实时渲染输出方式。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.19731v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "低功耗AR眼镜色调映射框架",
+      "sum": "提出基于学习的功耗约束色调映射，在 AR 眼镜上优化显示功耗与感知质量。",
+      "ta": "对移动/AR 设备渲染优化有参考价值，但非核心工作流。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.19509v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "ATSplat：紧凑前馈3D高斯泼溅",
+      "sum": "提出自适应令牌扩展的前馈 3DGS 方法，减少存储开销。",
+      "ta": "3DGS 压缩方向进展，可能影响实时 3D 重建资产格式。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.20417"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "S.T.A.L.K.E.R.2 独占费超开发预算",
+      "sum": "GSC Game World 透露 Xbox 独占协议金额超过游戏自身开发预算。",
+      "ta": "行业商业动态，了解平台独占策略对开发资金的影响。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/s-t-a-l-k-e-r-2-s-xbox-exclusivity-deal-surpassed-the-game-s-own-development-budget/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Kinect游戏Freefall Racers 2026年复活",
+      "sum": "2013年 Kinect 游戏 Freefall Racers 通过 Nex Playground 平台回归。",
+      "ta": "怀旧游戏复活案例，对体感交互设计有参考意义。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/business/a-kinect-game-that-debuted-in-2013-has-been-revived-in-the-year-of-our-lord-2026"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Splatoon Raiders 原型曾是塔防游戏",
+      "sum": "总监分享 Splatoon 衍生作原型为塔防，后回归系列核心玩法。",
+      "ta": "游戏设计迭代案例，了解玩法原型到成品的过程。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/design/splatoon-raiders-started-as-a-tower-defense-game-but-its-splatoon-ness-got-lost"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Human Fall Flat 2取消，直接做3代",
+      "sum": "No Brakes Games 创始人回顾十年历程，宣布取消 2 代直接开发 3 代。",
+      "ta": "独立游戏开发决策案例，了解系列化开发策略。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/production/-human-fall-flat-2-is-cancelled-we-are-making-human-fall-flat-3-no-brakes-games-founder-looks-back-on-a-defining-decade"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Hasbro 取消多款游戏损失5600万美元",
+      "sum": "Hasbro 因取消多个游戏项目记录 5600 万美元减值，将聚焦有特许经营潜力的项目。",
+      "ta": "行业投资风向标，了解大厂项目筛选策略。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/business/hasbro-records-56m-write-down-after-scrapping-several-video-games"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Alpha Dog Games 脱离微软恢复独立",
+      "sum": "被 Xbox 关闭两年后，Alpha Dog Games 重新获得独立运营权。",
+      "ta": "工作室生存案例，了解行业并购后独立回归现象。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/business/alpha-dog-games-returns-to-independence-two-years-after-being-shuttered-by-xbox"
+    },
     {
       "cat": "biz",
       "imp": "lo",
@@ -66,15 +222,6 @@ window.INTEL_RECENT = {
       "ta": "行业动荡信号，但无直接技术关联，仅作背景了解。",
       "src": "80 Level · 07-21",
       "url": "https://80.lv/articles/pixar-hit-with-layoffs-despite-toy-story-5-s-massive-box-office-success/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender复古飞船动画",
-      "sum": "Rui Huang展示Blender制作的复古未来风飞船动画。",
-      "ta": "可参考Blender资产制作流程，但非引擎内实时渲染。",
-      "src": "80 Level · 07-21",
-      "url": "https://80.lv/articles/this-striking-spaceship-blender-animation-has-retro-futuristic-vibes/"
     },
     {
       "cat": "flow",
@@ -1668,153 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "无像素流实时渲染方案，对UE5 Web部署与材质性能优化有重要参考。",
       "src": "80 Level · 06-26",
       "url": "https://80.lv/articles/miris-built-a-car-configurator-without-pixel-streaming-here-s-what-they-found/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Skybound游戏战略",
-      "sum": "Skybound CEO讨论Invisible VS成功后未来游戏战略。",
-      "ta": "行业战略动态，可快速了解发行商方向。",
-      "src": "Game Developer · 06-26",
-      "url": "https://www.gamedeveloper.com/business/analysts-attempt-to-make-sense-of-xbox-s-exclusivity-mindset-shift"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Vulkan描述符堆端到端支持",
-      "sum": "NVIDIA发布Vulkan描述符堆完整支持，简化着色器资源绑定。",
-      "ta": "对UE5渲染管线开发者，这意味着更高效的多线程资源绑定和更低驱动开销。",
-      "src": "NVIDIA · 06-25",
-      "url": "https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "交互式路径追踪即时反馈",
-      "sum": "HiPR算法通过优先级调度像素更新，使路径追踪感觉像实时渲染。",
-      "ta": "对实时渲染TA，这是实现电影级光照预览的关键技术，可集成到编辑器视口。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26612v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "超网络神经纹理压缩",
-      "sum": "用超网络学习紧凑纹理表示，实时解码还原PBR材质。",
-      "ta": "可大幅降低纹理内存占用，对开放世界植被和材质流送有直接价值。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26913v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多视图图像提取神经材质",
-      "sum": "NeuMatEx通过可微渲染从多视图图像提取空间变化神经材质。",
-      "ta": "为扫描资产自动生成高质量PBR材质提供新路径，减少手工制作。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26715v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单色制造保留外观精炼",
-      "sum": "方法精炼生成3D网格，在单色打印中保留纹理视觉信息。",
-      "ta": "对需要3D打印原型的TA，可减少纹理丢失导致的反复迭代。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.26850v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "城市街景Blender+Substance流程",
-      "sum": "Pauline Ferrand分享可平铺纹理制作与顶点着色植物颜色变化。",
-      "ta": "可平铺纹理和顶点着色技巧可直接用于UE5植被工具和材质层。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/creating-an-immersive-urban-street-environment-using-blender-and-substance-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "诅咒骑士建模纹理分解",
-      "sum": "Gábor Meggyesi详解盔甲、武器建模及毛发叙事用法。",
-      "ta": "角色建模与毛发细节工作流可参考，但非核心TA技术。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/breakdown-how-to-model-and-texture-a-cursed-knight-with-melancholic-vibes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "石萨满角色幕后制作",
-      "sum": "Mike-Amir El Frangi分享Spellcasters Chronicles角色制作过程。",
-      "ta": "角色艺术流程参考，无新技术点。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/check-out-how-spellcasters-chronicles-stone-shaman-was-made/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "130+毛发卡片资源包",
-      "sum": "提供预制毛发卡片集合，可快速创建维京等风格发型。",
-      "ta": "节省毛发制作时间，但非技术突破，仅资源推荐。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/save-time-on-creating-hair-for-your-3d-characters-with-this-collection-of-130-hair-cards/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Bungie大规模裁员",
-      "sum": "Sony确认Bungie裁员，影响大部分命运团队和部分Marathon开发者。",
-      "ta": "行业动荡可能影响UE5项目人才流动和外包市场。",
-      "src": "80 Level · 06-25",
-      "url": "https://80.lv/articles/bungie-hit-with-major-layoffs-impacting-most-of-the-destiny-team-and-more/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Meccha Chameleon两周700万销量",
-      "sum": "捉迷藏游戏成为最新多人游戏爆款。",
-      "ta": "市场趋势参考，无直接技术关联。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/meccha-chameleon-sells-7m-copies-in-first-two-weeks"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "VR工作室Combat Waffle裁员",
-      "sum": "Ghosts of Tabor开发团队裁员，但仍看好VR未来。",
-      "ta": "VR行业动态，可能影响UE5 VR项目生态。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/vr-dev-combat-waffle-studios-lays-off-staff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "34BigThings脱离Embracer独立",
-      "sum": "意大利工作室从Embracer集团回购独立权。",
-      "ta": "行业并购动态，无直接技术影响。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/italian-studio-34bigthings-regains-independence-from-embracer"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "万智牌竞技场开发者成功工会化",
-      "sum": "尽管被指控干预，万智牌竞技场开发者成功成立工会。",
-      "ta": "行业劳工动态，无技术关联。",
-      "src": "Game Developer · 06-25",
-      "url": "https://www.gamedeveloper.com/business/magic-the-gathering-arena-unionize-despite-allegations-of-interference"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "TensorRT多GPU推理扩展",
-      "sum": "NVIDIA TensorRT支持多设备推理，扩展生成式AI跨GPU。",
-      "ta": "对游戏AI推理性能有潜在影响，但非实时渲染核心。",
-      "src": "NVIDIA · 06-25",
-      "url": "https://developer.nvidia.com/blog/scaling-ai-inference-across-multiple-gpus-using-nvidia-tensorrt-with-multi-device-inference-support/"
     }
   ]
 };
