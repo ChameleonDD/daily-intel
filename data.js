@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月23日 · 周四",
+  "date": "2026年7月24日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>四面体笼驱动海量动画几何光线追踪</em> / <em>分裂辐射级联：实时全局光照新方法</em> / <em>HAWKED 程序化瀑布工具制作详解</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>可微渲染场景参数显著性</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -119,157 +119,110 @@ window.INTEL_DATA = {
       "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "四面体笼驱动海量动画几何光线追踪",
-      "sum": "AMD 提出用四面体笼动画复用静态 BLAS，实时追踪数亿三角形，大幅降低植被/草丛更新开销。",
-      "ta": "对植被渲染和人群系统意义重大，可显著减少每帧 BVH 重建和内存消耗。",
-      "src": "AMD GPUOpen · 07-22",
-      "url": "https://gpuopen.com/learn/ray-tracing-massive-amounts-animated-geometry/"
+      "title": "可微渲染场景参数显著性",
+      "sum": "利用可微渲染器生成场景参数显著性图，类比神经网络梯度方法。",
+      "ta": "可微渲染用于参数优化之外，还能做场景特征重要性分析，对调试渲染效果有启发。",
+      "src": "arXiv · cs.GR · 07-23",
+      "url": "https://arxiv.org/abs/2607.21562v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "NVIDIA OptiX 光线追踪调试工具",
+      "sum": "介绍使用 OptiX Toolkit 调试光线追踪应用的方法。",
+      "ta": "光线追踪调试工具链更新，有助于定位 RT 管线中的性能或正确性问题。",
+      "src": "NVIDIA · 07-23",
+      "url": "https://developer.nvidia.com/blog/debugging-ray-tracing-applications-using-nvidia-optix-toolkit/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5 异步叙事系统拆解",
+      "sum": "Tides of Tomorrow 用 UE5 状态机、蓝图、Houdini 实现玩家影响故事。",
+      "ta": "UE5 状态机与 Houdini 管线结合实现异步多人叙事，对程序化叙事工具设计有参考。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/how-tides-of-tomorrow-s-story-link-system-lets-players-shape-each-other-s-stories/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5 风格化城镇全流程",
+      "sum": "从概念到 UE5，用建筑套件分大中小尺寸构建加泰罗尼亚风格小镇。",
+      "ta": "模块化建筑套件思路与 UE5 环境搭建流程，对植被/建筑程序化生成有借鉴。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/from-concept-art-to-ue5-building-a-stylized-catalonia-inspired-town/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 对象独立撤销历史",
+      "sum": "新工具让每个 Blender 对象拥有独立撤销历史，支持多模式。",
+      "ta": "Blender 工作流效率提升，对 DCC 工具链中的撤销管理有参考。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/this-tool-gives-every-blender-object-its-own-undo-history/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ArcBrush 1.5 升级 32 位浮点管线",
+      "sum": "ArcBrush 1.5 引入色彩管理 32 位浮点图像管线，支持 Cryptomatte。",
+      "ta": "32 位浮点管线对纹理合成与后期处理精度提升，适合高动态范围工作流。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/arcbrush-1-5-upgrades-to-color-managed-32-bit-float-image-pipeline/"
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "分裂辐射级联：实时全局光照新方法",
-      "sum": "提出稀疏辐射探针的级联方案，解决传统探针方法细节不足问题，实现实时漫反射全局光照。",
-      "ta": "可能成为 UE5 Lumen 之外的高质量 GI 替代方案，值得关注实现细节。",
+      "imp": "mid",
+      "title": "3D 高斯泼溅补全与 PatchMatch",
+      "sum": "3D-GIMP 用 PatchMatch 改进 3D 高斯场景编辑，减少多视图不一致。",
+      "ta": "3D 高斯编辑新方法，对实时场景修复与一致性维护有潜在应用。",
       "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.20384v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 3,
-      "title": "HAWKED 程序化瀑布工具制作详解",
-      "sum": "Serge Filin 分享将 2D 概念转化为动态实时材质的程序化瀑布工具开发过程。",
-      "ta": "直接相关植被/特效工作流，学习如何用程序化材质实现复杂水体效果。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/creating-a-procedural-waterfalls-tool-for-the-game-hawked/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "优化写实水晶材质制作分解",
-      "sum": "Anastasia Gorban 详解水晶材质分层结构、虹彩效果及划痕纹理制作流程。",
-      "ta": "材质分层和虹彩实现技巧可复用至宝石/玻璃类 Shader 开发。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/breakdown-how-to-create-an-optimized-and-realistic-crystal-material/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 远程资产库功能预览",
-      "sum": "Blender 开发中远程资产库，支持在线浏览资产并按需下载。",
-      "ta": "可能影响 TA 资产管理工作流，减少本地存储依赖。",
-      "src": "Blender 开发博客 · 07-22",
-      "url": "https://code.blender.org/2026/07/remote-asset-libraries/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Tear Painter 更新支持纹理取色",
-      "sum": "Blender 工具 Tear Painter 新版可直接从纹理中选取颜色。",
-      "ta": "提升纹理绘制效率，对材质贴图工作流有直接帮助。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/new-tear-painter-update-lets-you-pick-colors-directly-from-textures/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity URP 地形自适应动态雨系统",
-      "sum": "Prism Works 发布 Unity URP 雨系统，支持地形自适应涟漪和建筑遮挡。",
-      "ta": "Niagara 特效师可参考其地形交互逻辑，移植至 UE5 雨系统。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/this-dynamic-rain-system-brings-terrain-adaptive-real-time-rain-effects-to-unity/"
+      "url": "https://arxiv.org/abs/2607.20789v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "MR-Compare：3D高斯与网格重建对比框架",
-      "sum": "MR 框架实现 3D Gaussian Splatting 与网格重建在物理环境中的空间对齐比较。",
-      "ta": "为 3D 重建质量评估提供混合现实工具，可能影响扫描资产管线。",
-      "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.20325v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "快速波光学全息显示渲染",
-      "sum": "利用多层图像实现 3D 全息显示的快速波光学渲染方法。",
-      "ta": "前沿显示技术，长期可能影响实时渲染输出方式。",
-      "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.19731v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "低功耗AR眼镜色调映射框架",
-      "sum": "提出基于学习的功耗约束色调映射，在 AR 眼镜上优化显示功耗与感知质量。",
-      "ta": "对移动/AR 设备渲染优化有参考价值，但非核心工作流。",
-      "src": "arXiv · cs.GR · 07-21",
-      "url": "https://arxiv.org/abs/2607.19509v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "ATSplat：紧凑前馈3D高斯泼溅",
-      "sum": "提出自适应令牌扩展的前馈 3DGS 方法，减少存储开销。",
-      "ta": "3DGS 压缩方向进展，可能影响实时 3D 重建资产格式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.20417"
+      "title": "缝纫图案缝合对应学习重建",
+      "sum": "图学习框架从 2D 缝纫图案重建两级缝合信息，无需人工标注。",
+      "ta": "自动缝合重建对虚拟服装建模与布料模拟管线自动化有直接帮助。",
+      "src": "arXiv · cs.GR · 07-23",
+      "url": "https://arxiv.org/abs/2607.21213v1"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "S.T.A.L.K.E.R.2 独占费超开发预算",
-      "sum": "GSC Game World 透露 Xbox 独占协议金额超过游戏自身开发预算。",
-      "ta": "行业商业动态，了解平台独占策略对开发资金的影响。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/s-t-a-l-k-e-r-2-s-xbox-exclusivity-deal-surpassed-the-game-s-own-development-budget/"
+      "title": "Vermila 工作室裁员或关闭",
+      "sum": "Vermila Studios 裁员，CEO 称未来数月关闭是可行可能。",
+      "ta": "行业动荡信号，可能影响外包或合作项目稳定性。",
+      "src": "Game Developer · 07-23",
+      "url": "https://www.gamedeveloper.com/business/vermila-studios-lays-off-staff-studio-closure-a-feasible-possibility-in-coming-months"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Disgaea 转型动作 RPG 开发谈",
+      "sum": "开发团队分享从战术 RPG 转动作 RPG 的机制与模型适配经验。",
+      "ta": "游戏类型转换中的模型与动画适配经验，对角色系统设计有参考。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/disgaea-mayhem-shifting-from-tactical-rpg-to-action-rpg/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Kinect游戏Freefall Racers 2026年复活",
-      "sum": "2013年 Kinect 游戏 Freefall Racers 通过 Nex Playground 平台回归。",
-      "ta": "怀旧游戏复活案例，对体感交互设计有参考意义。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/business/a-kinect-game-that-debuted-in-2013-has-been-revived-in-the-year-of-our-lord-2026"
+      "title": "Halo 初代重制登陆 PlayStation",
+      "sum": "Halo: Campaign Evolved 用新机制和操控现代化经典 FPS。",
+      "ta": "经典 IP 跨平台重制，对引擎适配与现代化改造有参考。",
+      "src": "PlayStation Blog · 07-23",
+      "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Splatoon Raiders 原型曾是塔防游戏",
-      "sum": "总监分享 Splatoon 衍生作原型为塔防，后回归系列核心玩法。",
-      "ta": "游戏设计迭代案例，了解玩法原型到成品的过程。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/design/splatoon-raiders-started-as-a-tower-defense-game-but-its-splatoon-ness-got-lost"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Human Fall Flat 2取消，直接做3代",
-      "sum": "No Brakes Games 创始人回顾十年历程，宣布取消 2 代直接开发 3 代。",
-      "ta": "独立游戏开发决策案例，了解系列化开发策略。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/production/-human-fall-flat-2-is-cancelled-we-are-making-human-fall-flat-3-no-brakes-games-founder-looks-back-on-a-defining-decade"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Hasbro 取消多款游戏损失5600万美元",
-      "sum": "Hasbro 因取消多个游戏项目记录 5600 万美元减值，将聚焦有特许经营潜力的项目。",
-      "ta": "行业投资风向标，了解大厂项目筛选策略。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/business/hasbro-records-56m-write-down-after-scrapping-several-video-games"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Alpha Dog Games 脱离微软恢复独立",
-      "sum": "被 Xbox 关闭两年后，Alpha Dog Games 重新获得独立运营权。",
-      "ta": "工作室生存案例，了解行业并购后独立回归现象。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/business/alpha-dog-games-returns-to-independence-two-years-after-being-shuttered-by-xbox"
+      "title": "漫威金刚狼故事预告发布",
+      "sum": "Insomniac 在 SDCC 公布漫威金刚狼故事预告与艺术图。",
+      "ta": "3A 游戏叙事与美术展示，对角色渲染与场景设计有参考。",
+      "src": "PlayStation Blog · 07-23",
+      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
     }
   ],
   "flashbackTitle": "",

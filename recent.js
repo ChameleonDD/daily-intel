@@ -2,8 +2,108 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-23 12:21",
+  "updated": "2026-07-24 12:20",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "可微渲染场景参数显著性",
+      "sum": "利用可微渲染器生成场景参数显著性图，类比神经网络梯度方法。",
+      "ta": "可微渲染用于参数优化之外，还能做场景特征重要性分析，对调试渲染效果有启发。",
+      "src": "arXiv · cs.GR · 07-23",
+      "url": "https://arxiv.org/abs/2607.21562v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "NVIDIA OptiX 光线追踪调试工具",
+      "sum": "介绍使用 OptiX Toolkit 调试光线追踪应用的方法。",
+      "ta": "光线追踪调试工具链更新，有助于定位 RT 管线中的性能或正确性问题。",
+      "src": "NVIDIA · 07-23",
+      "url": "https://developer.nvidia.com/blog/debugging-ray-tracing-applications-using-nvidia-optix-toolkit/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5 异步叙事系统拆解",
+      "sum": "Tides of Tomorrow 用 UE5 状态机、蓝图、Houdini 实现玩家影响故事。",
+      "ta": "UE5 状态机与 Houdini 管线结合实现异步多人叙事，对程序化叙事工具设计有参考。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/how-tides-of-tomorrow-s-story-link-system-lets-players-shape-each-other-s-stories/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 对象独立撤销历史",
+      "sum": "新工具让每个 Blender 对象拥有独立撤销历史，支持多模式。",
+      "ta": "Blender 工作流效率提升，对 DCC 工具链中的撤销管理有参考。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/this-tool-gives-every-blender-object-its-own-undo-history/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ArcBrush 1.5 升级 32 位浮点管线",
+      "sum": "ArcBrush 1.5 引入色彩管理 32 位浮点图像管线，支持 Cryptomatte。",
+      "ta": "32 位浮点管线对纹理合成与后期处理精度提升，适合高动态范围工作流。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/arcbrush-1-5-upgrades-to-color-managed-32-bit-float-image-pipeline/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D 高斯泼溅补全与 PatchMatch",
+      "sum": "3D-GIMP 用 PatchMatch 改进 3D 高斯场景编辑，减少多视图不一致。",
+      "ta": "3D 高斯编辑新方法，对实时场景修复与一致性维护有潜在应用。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.20789v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "缝纫图案缝合对应学习重建",
+      "sum": "图学习框架从 2D 缝纫图案重建两级缝合信息，无需人工标注。",
+      "ta": "自动缝合重建对虚拟服装建模与布料模拟管线自动化有直接帮助。",
+      "src": "arXiv · cs.GR · 07-23",
+      "url": "https://arxiv.org/abs/2607.21213v1"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Vermila 工作室裁员或关闭",
+      "sum": "Vermila Studios 裁员，CEO 称未来数月关闭是可行可能。",
+      "ta": "行业动荡信号，可能影响外包或合作项目稳定性。",
+      "src": "Game Developer · 07-23",
+      "url": "https://www.gamedeveloper.com/business/vermila-studios-lays-off-staff-studio-closure-a-feasible-possibility-in-coming-months"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Disgaea 转型动作 RPG 开发谈",
+      "sum": "开发团队分享从战术 RPG 转动作 RPG 的机制与模型适配经验。",
+      "ta": "游戏类型转换中的模型与动画适配经验，对角色系统设计有参考。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/disgaea-mayhem-shifting-from-tactical-rpg-to-action-rpg/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Halo 初代重制登陆 PlayStation",
+      "sum": "Halo: Campaign Evolved 用新机制和操控现代化经典 FPS。",
+      "ta": "经典 IP 跨平台重制，对引擎适配与现代化改造有参考。",
+      "src": "PlayStation Blog · 07-23",
+      "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "漫威金刚狼故事预告发布",
+      "sum": "Insomniac 在 SDCC 公布漫威金刚狼故事预告与艺术图。",
+      "ta": "3A 游戏叙事与美术展示，对角色渲染与场景设计有参考。",
+      "src": "PlayStation Blog · 07-23",
+      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -42,15 +142,6 @@ window.INTEL_RECENT = {
       "ta": "材质分层和虹彩实现技巧可复用至宝石/玻璃类 Shader 开发。",
       "src": "80 Level · 07-22",
       "url": "https://80.lv/articles/breakdown-how-to-create-an-optimized-and-realistic-crystal-material/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 远程资产库功能预览",
-      "sum": "Blender 开发中远程资产库，支持在线浏览资产并按需下载。",
-      "ta": "可能影响 TA 资产管理工作流，减少本地存储依赖。",
-      "src": "Blender 开发博客 · 07-22",
-      "url": "https://code.blender.org/2026/07/remote-asset-libraries/"
     },
     {
       "cat": "flow",
@@ -774,15 +865,6 @@ window.INTEL_RECENT = {
       "ta": "动作迁移技术可快速复用动画数据，但需验证实时性能。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.11644"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5角色CGI广告流程",
-      "sum": "SuperBlimp分享用Unreal Engine制作角色CGI广告的工作流。",
-      "ta": "了解UE5在商业CGI中的实际管线，可借鉴角色制作与渲染技巧。",
-      "src": "80 Level · 07-13",
-      "url": "https://80.lv/articles/building-captain-itch-designing-a-character-led-cgi-campaign-with-unreal-engine/"
     },
     {
       "cat": "flow",
@@ -1734,87 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "观察角色动画制作细节，可借鉴表情与动态设计。",
       "src": "80 Level · 06-29",
       "url": "https://80.lv/articles/check-out-this-behind-the-scenes-animation-of-an-expressive-character/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "毛发系统自碰撞宽度不一致",
-      "sum": "Tech-Artists论坛讨论hairSystems自碰撞宽度缩放问题。",
-      "ta": "直接关联UE毛发系统bug，需关注修复进展。",
-      "src": "Tech-Artists · 06-29",
-      "url": "https://www.tech-artists.org/t/hairsystems-self-collide-width-scale-is-inconsistent/18439"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Supermassive Games CEO离职",
-      "sum": "Directive 8020发售后，Supermassive Games CEO离职。",
-      "ta": "行业人事变动，可能影响工作室未来方向。",
-      "src": "Game Developer · 06-29",
-      "url": "https://www.gamedeveloper.com/business/supermassive-games-ceo-steps-down-following-launch-of-directive-8020"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "阿凡达格斗游戏新舞台公布",
-      "sum": "Avatar Legends格斗游戏PS5预购开启，公布Spirit Wilds舞台。",
-      "ta": "关注游戏美术风格和舞台设计。",
-      "src": "PlayStation Blog · 06-29",
-      "url": "https://blog.playstation.com/2026/06/29/avatar-legends-the-fighting-game-spirit-wilds-stage-revealed/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "光谱皮肤次表面散射",
-      "sum": "从RGB反演生物物理参数实现光谱级皮肤次表面散射渲染。",
-      "ta": "对写实角色皮肤渲染有直接参考价值，可探索管线集成。",
-      "src": "arXiv · cs.GR · 06-25",
-      "url": "https://arxiv.org/abs/2606.27604v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "PUBG Ally AI同伴系统",
-      "sum": "KRAFTON用NVIDIA ACE为PUBG构建可对话AI同伴，突破固定对话限制。",
-      "ta": "AI同伴系统在实时游戏中落地，可关注其对话与行为逻辑对NPC管线的启发。",
-      "src": "NVIDIA · 06-25",
-      "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Temtem开发幕后",
-      "sum": "Crema分享Temtem: Pioneers的多人生物收集与生存建造开发挑战。",
-      "ta": "多人游戏技术挑战案例，可快速了解其程序化生成与实时战斗管线。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/temtem-developing-massively-multiplayer-creature-collection-adventure/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "精灵塔光照场景展示",
-      "sum": "Daniel Novillo展示精美沉浸式精灵塔光照场景。",
-      "ta": "光照与场景艺术参考，可快速浏览其材质与光照设置。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/take-a-look-at-this-beautiful-and-immersive-elven-tower-lighting-scene/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "2026游戏注意力经济",
-      "sum": "玩家时间碎片化，游戏需争夺注意力，Lexi Sydow分析趋势。",
-      "ta": "行业趋势分析，对游戏设计方向有参考价值。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/the-attention-economy-how-games-win-mind-share-in-2026/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "title": "WebXR汽车配置器无像素流",
-      "sum": "Miris构建WebXR配置器，1.2GB资产无需云GPU实现HDR级材质。",
-      "ta": "无像素流实时渲染方案，对UE5 Web部署与材质性能优化有重要参考。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/miris-built-a-car-configurator-without-pixel-streaming-here-s-what-they-found/"
     }
   ]
 };
