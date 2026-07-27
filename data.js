@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月24日 · 周五",
+  "date": "2026年7月27日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>可微渲染场景参数显著性</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>可变形三角形Splatting</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -119,110 +119,128 @@ window.INTEL_DATA = {
       "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "可微渲染场景参数显著性",
-      "sum": "利用可微渲染器生成场景参数显著性图，类比神经网络梯度方法。",
-      "ta": "可微渲染用于参数优化之外，还能做场景特征重要性分析，对调试渲染效果有启发。",
-      "src": "arXiv · cs.GR · 07-23",
-      "url": "https://arxiv.org/abs/2607.21562v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "NVIDIA OptiX 光线追踪调试工具",
-      "sum": "介绍使用 OptiX Toolkit 调试光线追踪应用的方法。",
-      "ta": "光线追踪调试工具链更新，有助于定位 RT 管线中的性能或正确性问题。",
-      "src": "NVIDIA · 07-23",
-      "url": "https://developer.nvidia.com/blog/debugging-ray-tracing-applications-using-nvidia-optix-toolkit/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5 异步叙事系统拆解",
-      "sum": "Tides of Tomorrow 用 UE5 状态机、蓝图、Houdini 实现玩家影响故事。",
-      "ta": "UE5 状态机与 Houdini 管线结合实现异步多人叙事，对程序化叙事工具设计有参考。",
-      "src": "80 Level · 07-23",
-      "url": "https://80.lv/articles/how-tides-of-tomorrow-s-story-link-system-lets-players-shape-each-other-s-stories/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5 风格化城镇全流程",
-      "sum": "从概念到 UE5，用建筑套件分大中小尺寸构建加泰罗尼亚风格小镇。",
-      "ta": "模块化建筑套件思路与 UE5 环境搭建流程，对植被/建筑程序化生成有借鉴。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/from-concept-art-to-ue5-building-a-stylized-catalonia-inspired-town/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 对象独立撤销历史",
-      "sum": "新工具让每个 Blender 对象拥有独立撤销历史，支持多模式。",
-      "ta": "Blender 工作流效率提升，对 DCC 工具链中的撤销管理有参考。",
-      "src": "80 Level · 07-23",
-      "url": "https://80.lv/articles/this-tool-gives-every-blender-object-its-own-undo-history/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ArcBrush 1.5 升级 32 位浮点管线",
-      "sum": "ArcBrush 1.5 引入色彩管理 32 位浮点图像管线，支持 Cryptomatte。",
-      "ta": "32 位浮点管线对纹理合成与后期处理精度提升，适合高动态范围工作流。",
-      "src": "80 Level · 07-23",
-      "url": "https://80.lv/articles/arcbrush-1-5-upgrades-to-color-managed-32-bit-float-image-pipeline/"
+      "title": "可变形三角形Splatting",
+      "sum": "新方法用非凸三角形基元实现实时辐射场渲染，减少冗余基元。",
+      "ta": "实时渲染新基元，可能替代高斯泼溅，值得关注其光栅化效率。",
+      "src": "arXiv · cs.GR · 07-24",
+      "url": "https://arxiv.org/abs/2607.22446v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "3D 高斯泼溅补全与 PatchMatch",
-      "sum": "3D-GIMP 用 PatchMatch 改进 3D 高斯场景编辑，减少多视图不一致。",
-      "ta": "3D 高斯编辑新方法，对实时场景修复与一致性维护有潜在应用。",
-      "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.20789v1"
+      "title": "卷发模拟新方法",
+      "sum": "将卷发分解为卷曲单元，结合杆基与几何细节进行仿真。",
+      "ta": "对毛发模拟管线有参考价值，尤其卷发动态与性能平衡。",
+      "src": "arXiv · cs.GR · 07-24",
+      "url": "https://arxiv.org/abs/2607.22103v1"
     },
     {
-      "cat": "gfx",
+      "cat": "ai",
       "imp": "mid",
-      "title": "缝纫图案缝合对应学习重建",
-      "sum": "图学习框架从 2D 缝纫图案重建两级缝合信息，无需人工标注。",
-      "ta": "自动缝合重建对虚拟服装建模与布料模拟管线自动化有直接帮助。",
-      "src": "arXiv · cs.GR · 07-23",
-      "url": "https://arxiv.org/abs/2607.21213v1"
+      "title": "无训练自回归渲染一致性",
+      "sum": "提出无需训练的自回归生成渲染一致性方法。",
+      "ta": "可能影响实时渲染中的生成式管线，关注其与引擎集成潜力。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.21848"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender毛发绘制工具",
+      "sum": "免费Blender工具，可沿引导线绘制毛发。",
+      "ta": "辅助毛发资产制作，适合快速原型或低模管线。",
+      "src": "80 Level · 07-25",
+      "url": "https://80.lv/articles/this-blender-tool-lets-you-draw-hair-strands-along-guides/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Vermila 工作室裁员或关闭",
-      "sum": "Vermila Studios 裁员，CEO 称未来数月关闭是可行可能。",
-      "ta": "行业动荡信号，可能影响外包或合作项目稳定性。",
-      "src": "Game Developer · 07-23",
-      "url": "https://www.gamedeveloper.com/business/vermila-studios-lays-off-staff-studio-closure-a-feasible-possibility-in-coming-months"
+      "title": "古墓丽影新作幕后细节",
+      "sum": "展示《Tomb Raider: Legacy of Atlantis》开发幕后。",
+      "ta": "可观察AAA级场景美术与资产制作流程。",
+      "src": "80 Level · 07-25",
+      "url": "https://80.lv/articles/check-out-these-behind-the-scenes-details-of-tomb-raider-legacy-of-atlantis/"
     },
     {
-      "cat": "tech",
+      "cat": "biz",
       "imp": "lo",
-      "title": "Disgaea 转型动作 RPG 开发谈",
-      "sum": "开发团队分享从战术 RPG 转动作 RPG 的机制与模型适配经验。",
-      "ta": "游戏类型转换中的模型与动画适配经验，对角色系统设计有参考。",
+      "title": "游戏开发模拟器内置引擎",
+      "sum": "《Let's Build a Dungeon》内置编辑器，模拟真实开发流程。",
+      "ta": "编辑器设计思路可参考，但非直接技术工具。",
+      "src": "80 Level · 07-25",
+      "url": "https://80.lv/articles/building-a-game-development-simulator-with-a-game-engine-inside-it/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前PS高管欲复兴AA游戏",
+      "sum": "Shawn Layden计划填补独立与3A之间的空白。",
+      "ta": "行业趋势，可能影响中小团队资源分配。",
       "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/disgaea-mayhem-shifting-from-tactical-rpg-to-action-rpg/"
+      "url": "https://80.lv/articles/former-playstation-boss-shawn-layden-plans-to-bring-back-aa-games/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Halo 初代重制登陆 PlayStation",
-      "sum": "Halo: Campaign Evolved 用新机制和操控现代化经典 FPS。",
-      "ta": "经典 IP 跨平台重制，对引擎适配与现代化改造有参考。",
-      "src": "PlayStation Blog · 07-23",
-      "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
+      "title": "Fable风格无职业RPG访谈",
+      "sum": "《Forsaken Realms》开发者谈类Fable风格与无职业系统。",
+      "ta": "美术风格参考，但无具体技术细节。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/interview-buidling-a-fable-inspired-classless-rpg-where-you-re-not-the-hero/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "漫威金刚狼故事预告发布",
-      "sum": "Insomniac 在 SDCC 公布漫威金刚狼故事预告与艺术图。",
-      "ta": "3A 游戏叙事与美术展示，对角色渲染与场景设计有参考。",
-      "src": "PlayStation Blog · 07-23",
-      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
+      "title": "鹅鸭杀开发经验谈",
+      "sum": "Gaggle Studios分享社交推理游戏成功经验。",
+      "ta": "项目管理参考，非技术向。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/staying-lean-how-we-built-the-world-s-biggest-social-deduction-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "370+扫描PBR材质包",
+      "sum": "限时96%折扣，含370+扫描PBR材质。",
+      "ta": "快速填充材质库，注意许可与性能。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/get-over-370-scanned-pbr-materials-in-one-bundle/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Jackbox应对后疫情销售下滑",
+      "sum": "CEO谈派对游戏如何度过疫情后销售低谷。",
+      "ta": "行业商业策略，非技术相关。",
+      "src": "Game Developer · 07-24",
+      "url": "https://www.gamedeveloper.com/business/how-jackbox-games-navigated-the-post-pandemic-sales-slump-ft-mike-bilder"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EA收购获欧盟批准等新闻",
+      "sum": "沙特-led EA收购获批，Xbox测试广告流媒体等。",
+      "ta": "行业宏观动态，无直接技术影响。",
+      "src": "Game Developer · 07-24",
+      "url": "https://www.gamedeveloper.com/business/saudi-led-ea-buyout-receives-eu-approval-xbox-trials-ad-supported-game-streaming-and-poinpy-is-eternal-patch-notes-62"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "CATS角色动画工具系统",
+      "sum": "开源角色动画工具系统，支持绑定与动画。",
+      "ta": "可集成到动画管线，关注其与UE5兼容性。",
+      "src": "Tech-Artists · 07-27",
+      "url": "https://www.tech-artists.org/t/cats-character-animation-tool-system/18471"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "FabricatorStudio免费管线",
+      "sum": "Maya到Unreal免费管线，含绑定、AI蒙皮、导出。",
+      "ta": "直接提升角色资产迭代效率，值得测试。",
+      "src": "Tech-Artists · 07-24",
+      "url": "https://www.tech-artists.org/t/fabricatorstudio-a-free-maya-to-unreal-character-pipeline-rigging-ai-skinning-export-and-more/18470"
     }
   ],
   "flashbackTitle": "",

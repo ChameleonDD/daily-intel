@@ -2,8 +2,135 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-24 12:20",
+  "updated": "2026-07-27 12:43",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "可变形三角形Splatting",
+      "sum": "新方法用非凸三角形基元实现实时辐射场渲染，减少冗余基元。",
+      "ta": "实时渲染新基元，可能替代高斯泼溅，值得关注其光栅化效率。",
+      "src": "arXiv · cs.GR · 07-24",
+      "url": "https://arxiv.org/abs/2607.22446v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "卷发模拟新方法",
+      "sum": "将卷发分解为卷曲单元，结合杆基与几何细节进行仿真。",
+      "ta": "对毛发模拟管线有参考价值，尤其卷发动态与性能平衡。",
+      "src": "arXiv · cs.GR · 07-24",
+      "url": "https://arxiv.org/abs/2607.22103v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "无训练自回归渲染一致性",
+      "sum": "提出无需训练的自回归生成渲染一致性方法。",
+      "ta": "可能影响实时渲染中的生成式管线，关注其与引擎集成潜力。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.21848"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender毛发绘制工具",
+      "sum": "免费Blender工具，可沿引导线绘制毛发。",
+      "ta": "辅助毛发资产制作，适合快速原型或低模管线。",
+      "src": "80 Level · 07-25",
+      "url": "https://80.lv/articles/this-blender-tool-lets-you-draw-hair-strands-along-guides/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "古墓丽影新作幕后细节",
+      "sum": "展示《Tomb Raider: Legacy of Atlantis》开发幕后。",
+      "ta": "可观察AAA级场景美术与资产制作流程。",
+      "src": "80 Level · 07-25",
+      "url": "https://80.lv/articles/check-out-these-behind-the-scenes-details-of-tomb-raider-legacy-of-atlantis/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏开发模拟器内置引擎",
+      "sum": "《Let's Build a Dungeon》内置编辑器，模拟真实开发流程。",
+      "ta": "编辑器设计思路可参考，但非直接技术工具。",
+      "src": "80 Level · 07-25",
+      "url": "https://80.lv/articles/building-a-game-development-simulator-with-a-game-engine-inside-it/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前PS高管欲复兴AA游戏",
+      "sum": "Shawn Layden计划填补独立与3A之间的空白。",
+      "ta": "行业趋势，可能影响中小团队资源分配。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/former-playstation-boss-shawn-layden-plans-to-bring-back-aa-games/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Fable风格无职业RPG访谈",
+      "sum": "《Forsaken Realms》开发者谈类Fable风格与无职业系统。",
+      "ta": "美术风格参考，但无具体技术细节。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/interview-buidling-a-fable-inspired-classless-rpg-where-you-re-not-the-hero/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "鹅鸭杀开发经验谈",
+      "sum": "Gaggle Studios分享社交推理游戏成功经验。",
+      "ta": "项目管理参考，非技术向。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/staying-lean-how-we-built-the-world-s-biggest-social-deduction-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "370+扫描PBR材质包",
+      "sum": "限时96%折扣，含370+扫描PBR材质。",
+      "ta": "快速填充材质库，注意许可与性能。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/get-over-370-scanned-pbr-materials-in-one-bundle/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Jackbox应对后疫情销售下滑",
+      "sum": "CEO谈派对游戏如何度过疫情后销售低谷。",
+      "ta": "行业商业策略，非技术相关。",
+      "src": "Game Developer · 07-24",
+      "url": "https://www.gamedeveloper.com/business/how-jackbox-games-navigated-the-post-pandemic-sales-slump-ft-mike-bilder"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EA收购获欧盟批准等新闻",
+      "sum": "沙特-led EA收购获批，Xbox测试广告流媒体等。",
+      "ta": "行业宏观动态，无直接技术影响。",
+      "src": "Game Developer · 07-24",
+      "url": "https://www.gamedeveloper.com/business/saudi-led-ea-buyout-receives-eu-approval-xbox-trials-ad-supported-game-streaming-and-poinpy-is-eternal-patch-notes-62"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "CATS角色动画工具系统",
+      "sum": "开源角色动画工具系统，支持绑定与动画。",
+      "ta": "可集成到动画管线，关注其与UE5兼容性。",
+      "src": "Tech-Artists · 07-27",
+      "url": "https://www.tech-artists.org/t/cats-character-animation-tool-system/18471"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "FabricatorStudio免费管线",
+      "sum": "Maya到Unreal免费管线，含绑定、AI蒙皮、导出。",
+      "ta": "直接提升角色资产迭代效率，值得测试。",
+      "src": "Tech-Artists · 07-24",
+      "url": "https://www.tech-artists.org/t/fabricatorstudio-a-free-maya-to-unreal-character-pipeline-rigging-ai-skinning-export-and-more/18470"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -31,15 +158,6 @@ window.INTEL_RECENT = {
       "ta": "UE5 状态机与 Houdini 管线结合实现异步多人叙事，对程序化叙事工具设计有参考。",
       "src": "80 Level · 07-23",
       "url": "https://80.lv/articles/how-tides-of-tomorrow-s-story-link-system-lets-players-shape-each-other-s-stories/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 对象独立撤销历史",
-      "sum": "新工具让每个 Blender 对象拥有独立撤销历史，支持多模式。",
-      "ta": "Blender 工作流效率提升，对 DCC 工具链中的撤销管理有参考。",
-      "src": "80 Level · 07-23",
-      "url": "https://80.lv/articles/this-tool-gives-every-blender-object-its-own-undo-history/"
     },
     {
       "cat": "flow",
@@ -1696,126 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "行业潜在新玩家，但无具体技术影响。",
       "src": "Game Developer · 06-30",
       "url": "https://www.gamedeveloper.com/business/report-nbcuniversal-could-expand-into-games-after-comcast-spinoff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "nDreams联合创始人新工作室",
-      "sum": "nDreams联合创始人成立独立游戏和音乐工作室Atmospheric。",
-      "ta": "行业创业动态，非技术相关。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/ndreams-co-founder-launches-indie-game-and-music-studio-atmospheric"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "前馈神经渲染框架RenderFormer++",
-      "sum": "提出可扩展、物理基础的Transformer前馈神经渲染，用于网格场景全局光照。",
-      "ta": "关注其物理一致性改进，可能影响未来实时GI管线设计。",
-      "src": "arXiv · cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.30380v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "量子碰撞模型渲染相干散射",
-      "sum": "结合经典光线追踪与量子碰撞模型，处理动态光学属性散射。",
-      "ta": "全新着色框架，可能颠覆材质散射模拟方法，值得深入理解。",
-      "src": "arXiv · cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.29989v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "薄几何偶极子散射误差分析",
-      "sum": "揭示偶极子模型在薄/弯曲物体上的系统误差，提出光学厚度定律。",
-      "ta": "直接关联次表面散射渲染精度，对皮肤/树叶等薄材质有指导意义。",
-      "src": "arXiv · cs.GR · 06-28",
-      "url": "https://arxiv.org/abs/2606.29387v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可变形可重光照2D高斯泼溅",
-      "sum": "DR-GS实现可变形物体的物理基可重光照，分离照明与材质。",
-      "ta": "对VR/AR中动态数字人重光照有直接应用价值。",
-      "src": "arXiv · cs.GR · 06-28",
-      "url": "https://arxiv.org/abs/2606.29379v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "前馈动态高斯场景重建L2D2-GS",
-      "sum": "学习稠密化前馈重建动态城市场景，无需逐场景优化。",
-      "ta": "提升动态高斯泼溅的可扩展性，适用于自动驾驶仿真。",
-      "src": "arXiv · cs.GR · 06-28",
-      "url": "https://arxiv.org/abs/2606.29374v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "任意尺度超分共振Brane泼溅",
-      "sum": "用2D高斯泼溅实现连续放大因子超分，解决平滑伪影。",
-      "ta": "可能用于实时纹理/帧上采样，提升渲染质量。",
-      "src": "arXiv · cs.GR · 06-28",
-      "url": "https://arxiv.org/abs/2606.29453v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "自适应分配高斯任意尺度超分",
-      "sum": "学习自适应分配高斯用于图像超分，处理连续缩放。",
-      "ta": "对引擎中动态缩放和VR注视点渲染有潜在应用。",
-      "src": "arXiv · cs.GR · 06-28",
-      "url": "https://arxiv.org/abs/2606.29400v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "低计算实时可控世界模型",
-      "sum": "DreamForge-World 0.1预览，低计算量实时可控世界模型。",
-      "ta": "可能用于游戏内动态场景生成或交互式世界模拟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.30292"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时扩散流视频编辑LiveEdit",
-      "sum": "面向实时流式视频编辑的扩散模型。",
-      "ta": "关注实时视频编辑在游戏过场或直播中的应用潜力。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.26740"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视觉世界模型长尾评估修剪",
-      "sum": "修剪视觉世界模型评估中的长尾问题。",
-      "ta": "对评估生成式世界模型质量有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.24256"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 5.1实时焦散教程",
-      "sum": "Alan Wayne分享Blender Cycles中水与玻璃实时焦散方法。",
-      "ta": "了解Blender实时焦散工作流，可迁移至UE。",
-      "src": "80 Level · 06-29",
-      "url": "https://80.lv/articles/tutorial-real-time-caustics-in-blender-5-1-s-cycles/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "角色动画幕后制作解析",
-      "sum": "Framed51展示生动角色动画幕后。",
-      "ta": "观察角色动画制作细节，可借鉴表情与动态设计。",
-      "src": "80 Level · 06-29",
-      "url": "https://80.lv/articles/check-out-this-behind-the-scenes-animation-of-an-expressive-character/"
     }
   ]
 };
