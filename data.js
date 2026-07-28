@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月27日 · 周一",
+  "date": "2026年7月28日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>可变形三角形Splatting</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>显式弹塑性损伤更新</em> / <em>草图纹理感知着色</em> / <em>动态头发头部虚拟人</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -117,130 +117,129 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "可变形三角形Splatting",
-      "sum": "新方法用非凸三角形基元实现实时辐射场渲染，减少冗余基元。",
-      "ta": "实时渲染新基元，可能替代高斯泼溅，值得关注其光栅化效率。",
-      "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22446v1"
+      "imp": "mid",
+      "title": "显式弹塑性损伤更新",
+      "sum": "提出一种平滑显式弹塑性-损伤更新，适用于图形模拟。",
+      "ta": "对物理模拟中的材料破坏和塑性变形有直接参考价值。",
+      "src": "arXiv · cs.GR · 07-27",
+      "url": "https://arxiv.org/abs/2607.24509v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "草图纹理感知着色",
+      "sum": "TexSketch提出参考草图着色方法，解决数据集限制。",
+      "ta": "对风格化纹理生成和草图辅助工作流有参考意义。",
+      "src": "arXiv · cs.GR · 07-27",
+      "url": "https://arxiv.org/abs/2607.24261v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "卷发模拟新方法",
-      "sum": "将卷发分解为卷曲单元，结合杆基与几何细节进行仿真。",
-      "ta": "对毛发模拟管线有参考价值，尤其卷发动态与性能平衡。",
+      "title": "动态头发头部虚拟人",
+      "sum": "DynHair用3D高斯泼溅跟踪和建模动态头发。",
+      "ta": "对角色头发实时渲染和虚拟人管线有直接参考。",
+      "src": "arXiv · cs.GR · 07-26",
+      "url": "https://arxiv.org/abs/2607.23861v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "生成式头部测量模型",
+      "sum": "GNM Head提出生成式人体头部参数模型。",
+      "ta": "对角色头部建模和生成式管线有参考价值。",
+      "src": "arXiv · cs.GR · 07-26",
+      "url": "https://arxiv.org/abs/2607.23687v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "极小曲面神经表示",
+      "sum": "提出精确神经表示方法用于极小曲面。",
+      "ta": "对几何建模和曲面优化有理论参考。",
+      "src": "arXiv · cs.GR · 07-26",
+      "url": "https://arxiv.org/abs/2607.23437v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "光线追踪AO阴影复用",
+      "sum": "提出遮挡点复用技术加速光线追踪AO和阴影。",
+      "ta": "对实时光线追踪性能优化有直接参考。",
+      "src": "arXiv · cs.GR · 07-25",
+      "url": "https://arxiv.org/abs/2607.23122v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "3D高斯泼溅粒子压缩",
+      "sum": "ParticleGS用3D高斯泼溅压缩科学粒子数据。",
+      "ta": "对大规模粒子数据渲染和压缩有参考。",
       "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22103v1"
+      "url": "https://arxiv.org/abs/2607.22956v1"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "无训练自回归渲染一致性",
-      "sum": "提出无需训练的自回归生成渲染一致性方法。",
-      "ta": "可能影响实时渲染中的生成式管线，关注其与引擎集成潜力。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.21848"
+      "title": "无网格域随机化",
+      "sum": "用3D高斯泼溅参数扰动实现无网格域随机化。",
+      "ta": "对Sim-to-Real和有机体渲染有直接参考。",
+      "src": "arXiv · cs.GR · 07-24",
+      "url": "https://arxiv.org/abs/2607.22890v1"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender毛发绘制工具",
-      "sum": "免费Blender工具，可沿引导线绘制毛发。",
-      "ta": "辅助毛发资产制作，适合快速原型或低模管线。",
-      "src": "80 Level · 07-25",
-      "url": "https://80.lv/articles/this-blender-tool-lets-you-draw-hair-strands-along-guides/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "古墓丽影新作幕后细节",
-      "sum": "展示《Tomb Raider: Legacy of Atlantis》开发幕后。",
-      "ta": "可观察AAA级场景美术与资产制作流程。",
-      "src": "80 Level · 07-25",
-      "url": "https://80.lv/articles/check-out-these-behind-the-scenes-details-of-tomb-raider-legacy-of-atlantis/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏开发模拟器内置引擎",
-      "sum": "《Let's Build a Dungeon》内置编辑器，模拟真实开发流程。",
-      "ta": "编辑器设计思路可参考，但非直接技术工具。",
-      "src": "80 Level · 07-25",
-      "url": "https://80.lv/articles/building-a-game-development-simulator-with-a-game-engine-inside-it/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前PS高管欲复兴AA游戏",
-      "sum": "Shawn Layden计划填补独立与3A之间的空白。",
-      "ta": "行业趋势，可能影响中小团队资源分配。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/former-playstation-boss-shawn-layden-plans-to-bring-back-aa-games/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Fable风格无职业RPG访谈",
-      "sum": "《Forsaken Realms》开发者谈类Fable风格与无职业系统。",
-      "ta": "美术风格参考，但无具体技术细节。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/interview-buidling-a-fable-inspired-classless-rpg-where-you-re-not-the-hero/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "鹅鸭杀开发经验谈",
-      "sum": "Gaggle Studios分享社交推理游戏成功经验。",
-      "ta": "项目管理参考，非技术向。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/staying-lean-how-we-built-the-world-s-biggest-social-deduction-game/"
+      "title": "Blender风格化场景教程",
+      "sum": "crzyzhaa发布Blender风格化场景新手教程。",
+      "ta": "对风格化资产制作工作流有参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/learn-blender-techniques-to-make-a-stylized-scene-with-this-beginner-s-tutorial/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "370+扫描PBR材质包",
-      "sum": "限时96%折扣，含370+扫描PBR材质。",
-      "ta": "快速填充材质库，注意许可与性能。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/get-over-370-scanned-pbr-materials-in-one-bundle/"
+      "title": "视差伪管道内部技巧",
+      "sum": "用经典视差窗口技巧伪造地铁管道内部。",
+      "ta": "对低成本环境伪装有直接参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/fake-tube-interior-using-classic-parallax-windows-trick/"
     },
     {
-      "cat": "biz",
+      "cat": "flow",
       "imp": "lo",
-      "title": "Jackbox应对后疫情销售下滑",
-      "sum": "CEO谈派对游戏如何度过疫情后销售低谷。",
-      "ta": "行业商业策略，非技术相关。",
-      "src": "Game Developer · 07-24",
-      "url": "https://www.gamedeveloper.com/business/how-jackbox-games-navigated-the-post-pandemic-sales-slump-ft-mike-bilder"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "EA收购获欧盟批准等新闻",
-      "sum": "沙特-led EA收购获批，Xbox测试广告流媒体等。",
-      "ta": "行业宏观动态，无直接技术影响。",
-      "src": "Game Developer · 07-24",
-      "url": "https://www.gamedeveloper.com/business/saudi-led-ea-buyout-receives-eu-approval-xbox-trials-ad-supported-game-streaming-and-poinpy-is-eternal-patch-notes-62"
+      "title": "无模拟伪流水技巧",
+      "sum": "经典技巧伪造流动水面，无需流体模拟。",
+      "ta": "对低性能开销水效果有参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/classic-trick-to-fake-flowing-water-without-fluid-simulation/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "CATS角色动画工具系统",
-      "sum": "开源角色动画工具系统，支持绑定与动画。",
-      "ta": "可集成到动画管线，关注其与UE5兼容性。",
-      "src": "Tech-Artists · 07-27",
-      "url": "https://www.tech-artists.org/t/cats-character-animation-tool-system/18471"
+      "title": "血源猎人游戏就绪资产",
+      "sum": "Victor Monge López分享血源猎人粉丝资产制作流程。",
+      "ta": "对角色雕刻、头发卡片和游戏就绪管线有参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/breakdown-game-ready-bloodborne-s-old-hunter-fan-art/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "FabricatorStudio免费管线",
-      "sum": "Maya到Unreal免费管线，含绑定、AI蒙皮、导出。",
-      "ta": "直接提升角色资产迭代效率，值得测试。",
-      "src": "Tech-Artists · 07-24",
-      "url": "https://www.tech-artists.org/t/fabricatorstudio-a-free-maya-to-unreal-character-pipeline-rigging-ai-skinning-export-and-more/18470"
+      "title": "Blender视频全身动捕",
+      "sum": "BlendCap从任意视频提取全身、手部和面部动捕。",
+      "ta": "对低成本动捕管线有直接参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/full-body-hand-facial-motion-capture-from-any-video-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "雅达利经典IP电影化",
+      "sum": "Atari与环球合作制作《小行星》等经典游戏电影。",
+      "ta": "对游戏IP跨媒体开发有参考。",
+      "src": "Game Developer · 07-27",
+      "url": "https://www.gamedeveloper.com/business/atari-and-universal-to-create-movies-based-on-classic-properties-including-asteroids-and-missile-command"
     }
   ],
   "flashbackTitle": "",

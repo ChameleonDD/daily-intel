@@ -2,8 +2,125 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-27 12:43",
+  "updated": "2026-07-28 12:15",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "显式弹塑性损伤更新",
+      "sum": "提出一种平滑显式弹塑性-损伤更新，适用于图形模拟。",
+      "ta": "对物理模拟中的材料破坏和塑性变形有直接参考价值。",
+      "src": "arXiv · cs.GR · 07-27",
+      "url": "https://arxiv.org/abs/2607.24509v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "草图纹理感知着色",
+      "sum": "TexSketch提出参考草图着色方法，解决数据集限制。",
+      "ta": "对风格化纹理生成和草图辅助工作流有参考意义。",
+      "src": "arXiv · cs.GR · 07-27",
+      "url": "https://arxiv.org/abs/2607.24261v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态头发头部虚拟人",
+      "sum": "DynHair用3D高斯泼溅跟踪和建模动态头发。",
+      "ta": "对角色头发实时渲染和虚拟人管线有直接参考。",
+      "src": "arXiv · cs.GR · 07-26",
+      "url": "https://arxiv.org/abs/2607.23861v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "生成式头部测量模型",
+      "sum": "GNM Head提出生成式人体头部参数模型。",
+      "ta": "对角色头部建模和生成式管线有参考价值。",
+      "src": "arXiv · cs.GR · 07-26",
+      "url": "https://arxiv.org/abs/2607.23687v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "极小曲面神经表示",
+      "sum": "提出精确神经表示方法用于极小曲面。",
+      "ta": "对几何建模和曲面优化有理论参考。",
+      "src": "arXiv · cs.GR · 07-26",
+      "url": "https://arxiv.org/abs/2607.23437v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "光线追踪AO阴影复用",
+      "sum": "提出遮挡点复用技术加速光线追踪AO和阴影。",
+      "ta": "对实时光线追踪性能优化有直接参考。",
+      "src": "arXiv · cs.GR · 07-25",
+      "url": "https://arxiv.org/abs/2607.23122v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "3D高斯泼溅粒子压缩",
+      "sum": "ParticleGS用3D高斯泼溅压缩科学粒子数据。",
+      "ta": "对大规模粒子数据渲染和压缩有参考。",
+      "src": "arXiv · cs.GR · 07-24",
+      "url": "https://arxiv.org/abs/2607.22956v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "无网格域随机化",
+      "sum": "用3D高斯泼溅参数扰动实现无网格域随机化。",
+      "ta": "对Sim-to-Real和有机体渲染有直接参考。",
+      "src": "arXiv · cs.GR · 07-24",
+      "url": "https://arxiv.org/abs/2607.22890v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender风格化场景教程",
+      "sum": "crzyzhaa发布Blender风格化场景新手教程。",
+      "ta": "对风格化资产制作工作流有参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/learn-blender-techniques-to-make-a-stylized-scene-with-this-beginner-s-tutorial/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "视差伪管道内部技巧",
+      "sum": "用经典视差窗口技巧伪造地铁管道内部。",
+      "ta": "对低成本环境伪装有直接参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/fake-tube-interior-using-classic-parallax-windows-trick/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "无模拟伪流水技巧",
+      "sum": "经典技巧伪造流动水面，无需流体模拟。",
+      "ta": "对低性能开销水效果有参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/classic-trick-to-fake-flowing-water-without-fluid-simulation/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "血源猎人游戏就绪资产",
+      "sum": "Victor Monge López分享血源猎人粉丝资产制作流程。",
+      "ta": "对角色雕刻、头发卡片和游戏就绪管线有参考。",
+      "src": "80 Level · 07-27",
+      "url": "https://80.lv/articles/breakdown-game-ready-bloodborne-s-old-hunter-fan-art/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "雅达利经典IP电影化",
+      "sum": "Atari与环球合作制作《小行星》等经典游戏电影。",
+      "ta": "对游戏IP跨媒体开发有参考。",
+      "src": "Game Developer · 07-27",
+      "url": "https://www.gamedeveloper.com/business/atari-and-universal-to-create-movies-based-on-classic-properties-including-asteroids-and-missile-command"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -31,15 +148,6 @@ window.INTEL_RECENT = {
       "ta": "可能影响实时渲染中的生成式管线，关注其与引擎集成潜力。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.21848"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender毛发绘制工具",
-      "sum": "免费Blender工具，可沿引导线绘制毛发。",
-      "ta": "辅助毛发资产制作，适合快速原型或低模管线。",
-      "src": "80 Level · 07-25",
-      "url": "https://80.lv/articles/this-blender-tool-lets-you-draw-hair-strands-along-guides/"
     },
     {
       "cat": "biz",
@@ -521,15 +629,6 @@ window.INTEL_RECENT = {
       "ta": "无损 INR 为体积数据在实时渲染中的高保真存储提供新可能。",
       "src": "arXiv · cs.GR · 07-20",
       "url": "https://arxiv.org/abs/2607.18150v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "抗丢包3D高斯压缩",
-      "sum": "通过原子打包和GNN错误隐藏，使3DGS比特流在网络丢包下更鲁棒。",
-      "ta": "对云游戏或流式3D场景的实时渲染有直接实用价值。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.17916v1"
     },
     {
       "cat": "gfx",
@@ -1715,105 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "TA可了解世界模型在游戏AI或模拟中的潜在应用，但非直接相关。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.00917"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "NURBS可微分渲染框架",
-      "sum": "提出统一可微分渲染框架，支持平面有理样条（NURBS）的矢量图形渲染。",
-      "ta": "对矢量图形渲染管线有参考价值，但非实时渲染直接相关。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31764v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "高保真蝴蝶新视角合成",
-      "sum": "针对自然历史标本的微距摄影，提出高保真新视角合成方法。",
-      "ta": "涉及微距摄影和3D重建，对数字孪生或高精度扫描有启发。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31679v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "双场连续B-rep表示",
-      "sum": "提出DualBrep，一种用于CAD边界表示的连续双场表示方法。",
-      "ta": "与CAD建模相关，对程序化几何生成工具有潜在影响。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.31579v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可编辑物理反射高斯场",
-      "sum": "在光线追踪高斯辐射场中实现可编辑的基于物理的反射，而非伪造几何。",
-      "ta": "提升3DGS反射真实感，支持编辑，对材质工作流有参考价值。",
-      "src": "arXiv · cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.30861v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "艺术家风格网格生成",
-      "sum": "PolyFlow：连续拓扑嵌入流匹配，用于艺术家风格网格生成。",
-      "ta": "AI辅助3D建模，但非实时渲染或TA工具链核心。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.30673"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏托管基础设施扩展",
-      "sum": "GPORTAL解释裸金属服务器和全球部署如何支持多人游戏扩展。",
-      "ta": "后端基础设施，非TA直接相关。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/how-game-hosting-infrastructure-scales-modern-multiplayer-games/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "90年代卡通风格游戏",
-      "sum": "一款探索中年男人内部的90年代卡通风格游戏。",
-      "ta": "美术风格参考，无技术细节。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/this-90s-cartoon-inspired-game-will-have-you-exploring-the-inside-of-a-middle-aged-man/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox暂停新Game Pass协议",
-      "sum": "Xbox据报道暂停与外部工作室的新Game Pass协议谈判。",
-      "ta": "行业商业动态，可能影响外包合作。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/xbox-reportedly-halts-new-game-pass-agreements-with-outside-studios/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Xbox考虑出售Arkane",
-      "sum": "报道称Xbox考虑出售或关闭Arkane等工作室，Blade项目可能被砍。",
-      "ta": "重大行业重组，可能影响UE5项目和技术人才流动。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/report-xbox-considering-sales-or-closures-at-arkane-and-at-least-4-other-studios"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "R星开发者寻求工会认可",
-      "sum": "GTA开发者寻求在Rockstar成立工会。",
-      "ta": "行业劳工动态，非技术相关。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/production/grand-theft-auto-developers-seek-union-recognition-at-rockstar"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "NBCUniversal或进军游戏",
-      "sum": "NBCUniversal分拆后可能扩展游戏业务。",
-      "ta": "行业潜在新玩家，但无具体技术影响。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/report-nbcuniversal-could-expand-into-games-after-comcast-spinoff"
     }
   ]
 };
