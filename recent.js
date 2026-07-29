@@ -2,8 +2,98 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-28 12:15",
+  "updated": "2026-07-29 12:17",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "实时视频世界模型",
+      "sum": "Wonder模型支持实时、可控制摄像头的视频世界探索。",
+      "ta": "关注实时可交互视频世界模型，可能影响未来游戏场景生成与动态环境构建。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.26037v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高斯体渲染加速",
+      "sum": "提出基于高斯的体渲染表示，用于高效剪切-扭曲可视化。",
+      "ta": "体渲染加速技术，对医学可视化或体积特效有参考价值。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.25377v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "网格注意力机制",
+      "sum": "提出内在且三角化无关的注意力机制，用于网格学习。",
+      "ta": "网格上的注意力机制，可能提升3D模型处理与生成质量。",
+      "src": "arXiv · cs.GR · 07-27",
+      "url": "https://arxiv.org/abs/2607.24954v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender阻尼跟踪测试",
+      "sum": "3D角色艺术家分享在Blender中测试阻尼跟踪约束的经验。",
+      "ta": "Blender阻尼跟踪约束技巧，对角色绑定与动画有参考价值。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/3d-character-artist-shares-how-she-tested-damped-track-constraints-on-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "EverQuest视觉重建",
+      "sum": "EverQuest Legends团队分享恢复经典视觉风格的自定义管线。",
+      "ta": "经典MMO视觉重建流程，对复古风格或资产恢复项目有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/interview-how-everquest-legends-recreates-classic-everquest-s-iconic-visual-style/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "合作驾驶冒险游戏幕后",
+      "sum": "Funselektor分享合作驾驶冒险游戏《over the hill》创作历程。",
+      "ta": "独立游戏开发经验，对合作模式与公路题材有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/over-the-hill-creating-a-co-op-driving-adventure-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "电影级VFX幕后",
+      "sum": "动画师分享《降世神通》电影中Appa口水特效的幕后制作。",
+      "ta": "电影级VFX制作流程，对角色特效与液体模拟有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/animator-unveils-behind-the-scenes-of-vfx-for-appa-s-slobber-in-avatar-aang-movie/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "自定义遮挡系统",
+      "sum": "为《Control》风格游戏Psych Rift开发自定义遮挡系统。",
+      "ta": "自定义遮挡系统实现，对类似扭曲现实风格游戏有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/custom-occlusion-system-for-control-inspired-reality-bending-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "TaleWorlds联合创始人去世",
+      "sum": "《骑马与砍杀》工作室TaleWorlds联合创始人İpek Yavuz逝世。",
+      "ta": "行业人物讣告，了解工作室历史。",
+      "src": "Game Developer · 07-28",
+      "url": "https://www.gamedeveloper.com/business/obituary-taleworlds-co-founder-i-pek-yavuz-has-passed-away"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏业副业条款争议",
+      "sum": "开发者讨论副业条款对创意自由的限制与困扰。",
+      "ta": "行业法律问题，了解对自由职业者的影响。",
+      "src": "Game Developer · 07-28",
+      "url": "https://www.gamedeveloper.com/production/-i-have-been-hunted-down-by-hr-reps-lawyers-and-comms-people-developers-discuss-the-pain-and-prevalence-of-side-work-clauses"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -75,15 +165,6 @@ window.INTEL_RECENT = {
       "ta": "对Sim-to-Real和有机体渲染有直接参考。",
       "src": "arXiv · cs.GR · 07-24",
       "url": "https://arxiv.org/abs/2607.22890v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender风格化场景教程",
-      "sum": "crzyzhaa发布Blender风格化场景新手教程。",
-      "ta": "对风格化资产制作工作流有参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/learn-blender-techniques-to-make-a-stylized-scene-with-this-beginner-s-tutorial/"
     },
     {
       "cat": "flow",
@@ -1583,15 +1664,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "VFX复原史前生物幕后",
-      "sum": "Framestore 用VFX为纪录片复原剑齿虎等灭绝动物。",
-      "ta": "生物毛发/皮肤VFX流程参考，可借鉴到游戏角色制作。",
-      "src": "80 Level · 07-06",
-      "url": "https://80.lv/articles/how-prehistoric-planet-ice-age-recreated-extinct-creatures-with-vfx/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
       "title": "雕塑神秘崇拜领袖技巧",
       "sum": "Matteo Constant 分享夹克建模与磨损着色器纹理方法。",
       "ta": "角色材质与着色器技巧，对写实服装渲染有参考。",
@@ -1742,78 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "行业动态，非技术相关，速览即可。",
       "src": "Game Developer · 07-02",
       "url": "https://www.gamedeveloper.com/business/union-workers-establish-hardship-fund-to-support-devs-impacted-by-layoffs/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "四款免费网格简化工具评测",
-      "sum": "Lukáš Gallo与Bohemia Interactive合作，测试四款开源简化工具的性能与适用场景。",
-      "ta": "TA可参考此评测选择适合植被或场景LOD的简化工具，优化性能管线。",
-      "src": "80 Level · 07-01",
-      "url": "https://80.lv/articles/testing-4-free-mesh-simplification-tools/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Houdini果冻物理手部追踪实验",
-      "sum": "Alvaro Moreira在Houdini中进行手部追踪与果冻物理实验，计划发布拆解。",
-      "ta": "TA可关注其Niagara或Houdini中软体物理与追踪的结合技巧。",
-      "src": "80 Level · 07-01",
-      "url": "https://80.lv/articles/hand-tracking-experiments-with-jelly-like-physics-in-houdini/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ZBrush 8250 Alpha笔刷大包",
-      "sum": "CGSphere推出包含8250个Alpha和笔刷的Mega Bundle，用于历史/现代角色细节。",
-      "ta": "TA可快速获取高质量笔刷，提升植被或地形细节雕刻效率。",
-      "src": "80 Level · 07-01",
-      "url": "https://80.lv/articles/grab-this-cgsphere-s-mega-bundle-with-8250-alpha-brushes-for-zbrush/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "PlayStation 2028年停止光盘生产",
-      "sum": "索尼宣布2028年1月起新游戏仅数字发行，PS3/PS Vita商店逐步关闭。",
-      "ta": "数字发行趋势影响游戏分发，TA需关注数字资产管理和更新策略。",
-      "src": "PlayStation Blog · 07-01",
-      "url": "https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "多对象运动轨迹控制生成",
-      "sum": "TrajLoc方法在图像到视频生成中控制多对象运动，处理轨迹交叉和遮挡。",
-      "ta": "对TA而言，此技术可能用于程序化动画或特效中的多物体运动控制。",
-      "src": "arXiv · cs.GR · 07-01",
-      "url": "https://arxiv.org/abs/2607.00861v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "无肢运动几何形状优化",
-      "sum": "提出微分几何框架模拟蛇等软体无肢生物的运动。",
-      "ta": "TA可借鉴其物理模拟方法，用于Niagara或Houdini中的软体动画。",
-      "src": "arXiv · cs.GR · 07-01",
-      "url": "https://arxiv.org/abs/2607.00524v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "AI美学修改在可视化中的可接受性",
-      "sum": "专家评估AI对3D自然现象可视化进行美学修改的可接受性。",
-      "ta": "TA需平衡AI增强视觉效果与数据保真度，尤其在科学可视化或场景渲染中。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2607.00239v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Valdi：价值扩散世界模型",
-      "sum": "HuggingFace论文介绍Valdi，一种价值扩散世界模型。",
-      "ta": "TA可了解世界模型在游戏AI或模拟中的潜在应用，但非直接相关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.00917"
     }
   ]
 };

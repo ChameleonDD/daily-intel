@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月28日 · 周二",
+  "date": "2026年7月29日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>显式弹塑性损伤更新</em> / <em>草图纹理感知着色</em> / <em>动态头发头部虚拟人</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>实时视频世界模型</em> / <em>高斯体渲染加速</em> / <em>网格注意力机制</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,130 +116,112 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
+      "cat": "ai",
       "imp": "mid",
-      "title": "显式弹塑性损伤更新",
-      "sum": "提出一种平滑显式弹塑性-损伤更新，适用于图形模拟。",
-      "ta": "对物理模拟中的材料破坏和塑性变形有直接参考价值。",
+      "title": "实时视频世界模型",
+      "sum": "Wonder模型支持实时、可控制摄像头的视频世界探索。",
+      "ta": "关注实时可交互视频世界模型，可能影响未来游戏场景生成与动态环境构建。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.26037v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高斯体渲染加速",
+      "sum": "提出基于高斯的体渲染表示，用于高效剪切-扭曲可视化。",
+      "ta": "体渲染加速技术，对医学可视化或体积特效有参考价值。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.25377v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "网格注意力机制",
+      "sum": "提出内在且三角化无关的注意力机制，用于网格学习。",
+      "ta": "网格上的注意力机制，可能提升3D模型处理与生成质量。",
       "src": "arXiv · cs.GR · 07-27",
-      "url": "https://arxiv.org/abs/2607.24509v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "草图纹理感知着色",
-      "sum": "TexSketch提出参考草图着色方法，解决数据集限制。",
-      "ta": "对风格化纹理生成和草图辅助工作流有参考意义。",
-      "src": "arXiv · cs.GR · 07-27",
-      "url": "https://arxiv.org/abs/2607.24261v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态头发头部虚拟人",
-      "sum": "DynHair用3D高斯泼溅跟踪和建模动态头发。",
-      "ta": "对角色头发实时渲染和虚拟人管线有直接参考。",
-      "src": "arXiv · cs.GR · 07-26",
-      "url": "https://arxiv.org/abs/2607.23861v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "生成式头部测量模型",
-      "sum": "GNM Head提出生成式人体头部参数模型。",
-      "ta": "对角色头部建模和生成式管线有参考价值。",
-      "src": "arXiv · cs.GR · 07-26",
-      "url": "https://arxiv.org/abs/2607.23687v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "极小曲面神经表示",
-      "sum": "提出精确神经表示方法用于极小曲面。",
-      "ta": "对几何建模和曲面优化有理论参考。",
-      "src": "arXiv · cs.GR · 07-26",
-      "url": "https://arxiv.org/abs/2607.23437v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "光线追踪AO阴影复用",
-      "sum": "提出遮挡点复用技术加速光线追踪AO和阴影。",
-      "ta": "对实时光线追踪性能优化有直接参考。",
-      "src": "arXiv · cs.GR · 07-25",
-      "url": "https://arxiv.org/abs/2607.23122v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "3D高斯泼溅粒子压缩",
-      "sum": "ParticleGS用3D高斯泼溅压缩科学粒子数据。",
-      "ta": "对大规模粒子数据渲染和压缩有参考。",
-      "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22956v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "无网格域随机化",
-      "sum": "用3D高斯泼溅参数扰动实现无网格域随机化。",
-      "ta": "对Sim-to-Real和有机体渲染有直接参考。",
-      "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22890v1"
+      "url": "https://arxiv.org/abs/2607.24954v1"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender风格化场景教程",
-      "sum": "crzyzhaa发布Blender风格化场景新手教程。",
-      "ta": "对风格化资产制作工作流有参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/learn-blender-techniques-to-make-a-stylized-scene-with-this-beginner-s-tutorial/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "视差伪管道内部技巧",
-      "sum": "用经典视差窗口技巧伪造地铁管道内部。",
-      "ta": "对低成本环境伪装有直接参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/fake-tube-interior-using-classic-parallax-windows-trick/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "无模拟伪流水技巧",
-      "sum": "经典技巧伪造流动水面，无需流体模拟。",
-      "ta": "对低性能开销水效果有参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/classic-trick-to-fake-flowing-water-without-fluid-simulation/"
+      "title": "Blender阻尼跟踪测试",
+      "sum": "3D角色艺术家分享在Blender中测试阻尼跟踪约束的经验。",
+      "ta": "Blender阻尼跟踪约束技巧，对角色绑定与动画有参考价值。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/3d-character-artist-shares-how-she-tested-damped-track-constraints-on-blender/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "血源猎人游戏就绪资产",
-      "sum": "Victor Monge López分享血源猎人粉丝资产制作流程。",
-      "ta": "对角色雕刻、头发卡片和游戏就绪管线有参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/breakdown-game-ready-bloodborne-s-old-hunter-fan-art/"
+      "title": "EverQuest视觉重建",
+      "sum": "EverQuest Legends团队分享恢复经典视觉风格的自定义管线。",
+      "ta": "经典MMO视觉重建流程，对复古风格或资产恢复项目有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/interview-how-everquest-legends-recreates-classic-everquest-s-iconic-visual-style/"
     },
     {
       "cat": "flow",
+      "imp": "lo",
+      "title": "Blender风格化毛发",
+      "sum": "教程展示使用Blender几何节点创建轻量级风格化毛发与羽毛。",
+      "ta": "几何节点毛发方案，对风格化角色或特效有直接参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/tutorial-stylized-fur-feathers-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "合作驾驶冒险游戏幕后",
+      "sum": "Funselektor分享合作驾驶冒险游戏《over the hill》创作历程。",
+      "ta": "独立游戏开发经验，对合作模式与公路题材有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/over-the-hill-creating-a-co-op-driving-adventure-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "电影级VFX幕后",
+      "sum": "动画师分享《降世神通》电影中Appa口水特效的幕后制作。",
+      "ta": "电影级VFX制作流程，对角色特效与液体模拟有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/animator-unveils-behind-the-scenes-of-vfx-for-appa-s-slobber-in-avatar-aang-movie/"
+    },
+    {
+      "cat": "tech",
       "imp": "mid",
-      "title": "Blender视频全身动捕",
-      "sum": "BlendCap从任意视频提取全身、手部和面部动捕。",
-      "ta": "对低成本动捕管线有直接参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/full-body-hand-facial-motion-capture-from-any-video-in-blender/"
+      "title": "自定义遮挡系统",
+      "sum": "为《Control》风格游戏Psych Rift开发自定义遮挡系统。",
+      "ta": "自定义遮挡系统实现，对类似扭曲现实风格游戏有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/custom-occlusion-system-for-control-inspired-reality-bending-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender纸艺世界",
+      "sum": "艺术家展示在Blender中制作的超现实纸艺风格世界。",
+      "ta": "纸艺风格3D世界，对风格化场景与材质有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/check-out-this-surreal-papercraft-style-world-made-in-blender/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "雅达利经典IP电影化",
-      "sum": "Atari与环球合作制作《小行星》等经典游戏电影。",
-      "ta": "对游戏IP跨媒体开发有参考。",
-      "src": "Game Developer · 07-27",
-      "url": "https://www.gamedeveloper.com/business/atari-and-universal-to-create-movies-based-on-classic-properties-including-asteroids-and-missile-command"
+      "title": "TaleWorlds联合创始人去世",
+      "sum": "《骑马与砍杀》工作室TaleWorlds联合创始人İpek Yavuz逝世。",
+      "ta": "行业人物讣告，了解工作室历史。",
+      "src": "Game Developer · 07-28",
+      "url": "https://www.gamedeveloper.com/business/obituary-taleworlds-co-founder-i-pek-yavuz-has-passed-away"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏业副业条款争议",
+      "sum": "开发者讨论副业条款对创意自由的限制与困扰。",
+      "ta": "行业法律问题，了解对自由职业者的影响。",
+      "src": "Game Developer · 07-28",
+      "url": "https://www.gamedeveloper.com/production/-i-have-been-hunted-down-by-hr-reps-lawyers-and-comms-people-developers-discuss-the-pain-and-prevalence-of-side-work-clauses"
     }
   ],
   "flashbackTitle": "",
