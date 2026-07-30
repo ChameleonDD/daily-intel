@@ -2,8 +2,152 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-29 12:17",
+  "updated": "2026-07-30 12:11",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "凸碰撞自由区域",
+      "sum": "提出CCFR方法，用局部凸可行区域显式表示碰撞约束。",
+      "ta": "对碰撞检测和物理模拟有参考价值，可关注其与网格原语的集成方式。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26901v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "结构感知高斯泼溅",
+      "sum": "StructureGS用于铰接物体重建，分离几何、外观和运动参数。",
+      "ta": "3DGS在可动部件重建上的进展，可能影响程序化资产生成管线。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26889v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "面向XR的3DGS压缩",
+      "sum": "AtlasLC实现物体级3DGS快速编解码，适配XR资产管线。",
+      "ta": "压缩和解码效率对实时渲染和XR部署有实际意义，可跟踪其性能数据。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26525v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "全局Pass屏障研究",
+      "sum": "Blade渲染器用全局屏障替代逐资源追踪，跨厂商验证性能。",
+      "ta": "对Vulkan管线屏障策略有参考价值，可了解全局屏障的跨平台表现。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26506v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "CG世界状态数据集",
+      "sum": "CG-World提供大规模工业CG世界状态数据，用于世界模型训练。",
+      "ta": "数据集来自工业CG，可能为游戏场景理解或程序化生成提供训练基础。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26452v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "人体运动转四足动画",
+      "sum": "Two2Four从人体运动生成四足动物动作，用于虚拟制作。",
+      "ta": "对角色动画管线有启发，可关注其运动重定向质量。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.26108v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "实时视觉语言动作模型",
+      "sum": "TurboVLA在RTX 4090上以32Hz运行，显存低于1GB。",
+      "ta": "低显存实时推理对游戏AI或交互系统有潜在应用，但未明确游戏场景。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.27205"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "游戏求解器辅助LLM",
+      "sum": "CAST用游戏求解器作为回合级教师，训练LLM智能体。",
+      "ta": "将游戏求解器融入LLM训练，可能提升游戏AI决策能力。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.25308"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "星战风3D场景解析",
+      "sum": "Matvey Meleshko分享Ember Bazaar场景制作流程，含Marvelous Designer布料和材质。",
+      "ta": "可参考其布料模拟和材质写实化工作流，适合场景美术学习。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/breakdown-creating-a-star-wars-inspired-arabian-style-3d-scene-with-sci-fi-elements/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "实体木偶在数字时代价值",
+      "sum": "Furry Puppet Studio讨论实体木偶制作流程及其不可替代性。",
+      "ta": "对角色设计和特效制作有启发，但非直接技术参考。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/interview-why-practical-puppets-still-matter-in-the-age-of-digital-characters/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "卡普空年更生化危机",
+      "sum": "Capcom计划每年发布一款《生化危机》游戏，含重制版。",
+      "ta": "行业动态，对游戏开发周期有参考意义，但无直接技术细节。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/capcom-is-aiming-to-release-a-resident-evil-game-every-year/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏AI专家谈应用与风险",
+      "sum": "Luke Dicken分析AI在游戏开发中的历史、生成式AI及风险。",
+      "ta": "对AI在游戏管线中的定位有参考价值，但无具体技术方案。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/game-ai-expert-explains-where-ai-actually-belongs-in-game-development-and-the-risks/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "腾讯Lightspeed LA裁员",
+      "sum": "《Last Sentinel》开发商因项目方向调整裁员。",
+      "ta": "行业动态，关注腾讯旗下工作室变动。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Epic挖角暴雪战网负责人",
+      "sum": "Martin Keely出任Epic Games Store和在线服务副总裁。",
+      "ta": "Epic平台战略调整，可能影响虚幻引擎生态。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/epic-games-hires-former-head-of-blizzard-s-battle-net"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EA CEO获3860万美元薪酬",
+      "sum": "EA CEO Andrew Wilson在裁员和GenAI采用后获高额薪酬。",
+      "ta": "行业动态，反映高管薪酬与公司策略的关联。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Double Fine被Xbox剥离后裁员",
+      "sum": "Double Fine在脱离Xbox后为生存进行裁员。",
+      "ta": "行业动态，关注独立工作室生存状况。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/double-fine-making-layoffs-after-being-jettisoned-by-xbox"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -147,15 +291,6 @@ window.INTEL_RECENT = {
       "ta": "对实时光线追踪性能优化有直接参考。",
       "src": "arXiv · cs.GR · 07-25",
       "url": "https://arxiv.org/abs/2607.23122v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "3D高斯泼溅粒子压缩",
-      "sum": "ParticleGS用3D高斯泼溅压缩科学粒子数据。",
-      "ta": "对大规模粒子数据渲染和压缩有参考。",
-      "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22956v1"
     },
     {
       "cat": "gfx",
@@ -1113,15 +1248,6 @@ window.INTEL_RECENT = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "LLM生成多场景游戏世界",
-      "sum": "MAGIC利用大语言模型实现多场景导航游戏世界的过渡感知生成。",
-      "ta": "关注LLM如何辅助程序化关卡设计，减少手动编辑门户和室内布局的工作量。",
-      "src": "arXiv · cs.GR · 07-13",
-      "url": "https://arxiv.org/abs/2607.11594v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
       "title": "文本引导网格变形",
       "sum": "PoseAlign通过文本引导变形生成姿态一致的3D网格。",
       "ta": "文本驱动变形工具可加速角色姿态调整，减少手动雕刻。",
@@ -1688,132 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "知名工作室人才流失，可能影响其UE5项目进度。",
       "src": "Game Developer · 07-07",
       "url": "https://www.gamedeveloper.com/business/report-obsidian-losing-around-one-quarter-of-its-staff-to-xbox-reset-"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Niantic关闭新西兰工作室",
-      "sum": "Ingress开发商Niantic关闭新西兰办公室，转向非游戏领域。",
-      "ta": "AR游戏公司转型，对游戏行业AR/VR方向有信号意义。",
-      "src": "Game Developer · 07-06",
-      "url": "https://www.gamedeveloper.com/business/ingress-developer-niantic-spatial-shuttering-new-zealand-office"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "EVE Online引擎框架开源",
-      "sum": "EVE Online跨平台引擎框架Carbon现已完全开源。",
-      "ta": "开源游戏引擎框架，可研究其跨平台设计。",
-      "src": "Game Developer · 07-06",
-      "url": "https://www.gamedeveloper.com/production/eve-online-s-cross-platform-game-engine-framework-is-now-fully-open-source"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "赛博朋克2077销量达4000万",
-      "sum": "CDPR宣布《赛博朋克2077》累计销量突破4000万份。",
-      "ta": "商业里程碑，反映大型3A游戏长尾表现。",
-      "src": "80 Level · 07-06",
-      "url": "https://80.lv/articles/cyberpunk-2077-has-reached-40-million-copies-sold/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立开发者制作卡牌店模拟器",
-      "sum": "Sia Ding Shen 分享TCG卡牌店模拟器开发经验。",
-      "ta": "独立游戏开发案例，对模拟类游戏系统设计有参考。",
-      "src": "80 Level · 07-06",
-      "url": "https://80.lv/articles/solo-developer-on-creating-a-simulation-game-about-a-local-game-store/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS商店6月下载榜",
-      "sum": "PS5/PS4/PS VR2游戏下载排行，体育与恐怖类领跑。",
-      "ta": "了解亚洲市场热门游戏类型，对特效资源分配有参考。",
-      "src": "PlayStation Blog · 07-06",
-      "url": "https://blog.playstation.com/2026/07/05/20260706-top/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "点云联邦学习基准",
-      "sum": "联合评估联邦学习与知识蒸馏在3D点云分类上的性能。",
-      "ta": "点云处理技术进展，对程序化生成中几何数据隐私与效率有参考价值。",
-      "src": "arXiv · cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2607.01272v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Godot 3D地牢教程",
-      "sum": "20小时Godot教程覆盖资产创建全流程，面向中级开发者。",
-      "ta": "可对比Godot与UE的植被/程序化生成工作流差异。",
-      "src": "80 Level · 07-04",
-      "url": "https://80.lv/articles/godot-tutorial-build-3d-dungeon-crawler-in-20-hours/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "风格化秋景环境雕刻",
-      "sum": "Lili Brujin分享Evergrove项目工作流，使用RGB遮罩纹理房屋。",
-      "ta": "RGB遮罩纹理技术可直接用于UE材质层，优化植被与建筑纹理性能。",
-      "src": "80 Level · 07-03",
-      "url": "https://80.lv/articles/sculpting-and-texturing-a-stylized-3d-environment-with-autumn-vibes/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Red Rover裁员",
-      "sum": "《Enginefall》开发商Red Rover Interactive裁员，曾融资2000万美元。",
-      "ta": "行业动荡影响中小团队，需关注UE项目稳定性。",
-      "src": "Game Developer · 07-03",
-      "url": "https://www.gamedeveloper.com/business/enginefall-developer-red-rover-interactive-is-making-layoffs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PlayStation停售实体盘",
-      "sum": "PlayStation放弃实体光盘，Xbox测试光盘转数字功能。",
-      "ta": "数字分发趋势影响资产交付与版本管理流程。",
-      "src": "Game Developer · 07-03",
-      "url": "https://www.gamedeveloper.com/business/rockstar-workers-hit-back-playstation-ditches-physical-discs-and-chipmakers-accused-of-price-fixing-patch-notes-58"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "情感环境设计案例",
-      "sum": "《Sky光遇》环境设计师分享用光照与色彩营造情感空间的流程。",
-      "ta": "可借鉴其用光照与色彩平衡传达情绪的方法，用于游戏关卡氛围设计。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/how-to-design-emotional-game-environments-for-sky-children-of-the-light/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "索尼全数字遭抵制",
-      "sum": "玩家请愿保留实体光盘，反对索尼停止PS游戏光盘生产。",
-      "ta": "数字发行趋势影响游戏分发，但非直接技术相关，速览即可。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/dont-kill-the-disc-petition-pushes-back-against-sony-s-all-digital-playstation-future/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ZBrush写实雕刻教程",
-      "sum": "艺术家分享ZBrush中绘制写实3D雕刻的完整流程。",
-      "ta": "雕刻技巧可辅助高模制作，但非实时渲染核心内容。",
-      "src": "80 Level · 07-02",
-      "url": "https://80.lv/articles/zbrush-tutorial-how-to-paint-realistic-3d-sculpts/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏开发者困难基金",
-      "sum": "美加工会设立基金，为受裁员影响的开发者提供最高5000美元。",
-      "ta": "行业动态，非技术相关，速览即可。",
-      "src": "Game Developer · 07-02",
-      "url": "https://www.gamedeveloper.com/business/union-workers-establish-hardship-fund-to-support-devs-impacted-by-layoffs/"
     }
   ]
 };

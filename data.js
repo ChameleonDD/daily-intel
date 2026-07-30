@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月29日 · 周三",
+  "date": "2026年7月30日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>实时视频世界模型</em> / <em>高斯体渲染加速</em> / <em>网格注意力机制</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>凸碰撞自由区域</em> / <em>结构感知高斯泼溅</em> / <em>面向XR的3DGS压缩</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,112 +116,148 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "凸碰撞自由区域",
+      "sum": "提出CCFR方法，用局部凸可行区域显式表示碰撞约束。",
+      "ta": "对碰撞检测和物理模拟有参考价值，可关注其与网格原语的集成方式。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26901v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "结构感知高斯泼溅",
+      "sum": "StructureGS用于铰接物体重建，分离几何、外观和运动参数。",
+      "ta": "3DGS在可动部件重建上的进展，可能影响程序化资产生成管线。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26889v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "面向XR的3DGS压缩",
+      "sum": "AtlasLC实现物体级3DGS快速编解码，适配XR资产管线。",
+      "ta": "压缩和解码效率对实时渲染和XR部署有实际意义，可跟踪其性能数据。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26525v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "全局Pass屏障研究",
+      "sum": "Blade渲染器用全局屏障替代逐资源追踪，跨厂商验证性能。",
+      "ta": "对Vulkan管线屏障策略有参考价值，可了解全局屏障的跨平台表现。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26506v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "CG世界状态数据集",
+      "sum": "CG-World提供大规模工业CG世界状态数据，用于世界模型训练。",
+      "ta": "数据集来自工业CG，可能为游戏场景理解或程序化生成提供训练基础。",
+      "src": "arXiv · cs.GR · 07-29",
+      "url": "https://arxiv.org/abs/2607.26452v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "人体运动转四足动画",
+      "sum": "Two2Four从人体运动生成四足动物动作，用于虚拟制作。",
+      "ta": "对角色动画管线有启发，可关注其运动重定向质量。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.26108v1"
+    },
+    {
       "cat": "ai",
-      "imp": "mid",
-      "title": "实时视频世界模型",
-      "sum": "Wonder模型支持实时、可控制摄像头的视频世界探索。",
-      "ta": "关注实时可交互视频世界模型，可能影响未来游戏场景生成与动态环境构建。",
-      "src": "arXiv · cs.GR · 07-28",
-      "url": "https://arxiv.org/abs/2607.26037v1"
+      "imp": "lo",
+      "title": "实时视觉语言动作模型",
+      "sum": "TurboVLA在RTX 4090上以32Hz运行，显存低于1GB。",
+      "ta": "低显存实时推理对游戏AI或交互系统有潜在应用，但未明确游戏场景。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.27205"
     },
     {
-      "cat": "gfx",
+      "cat": "ai",
       "imp": "lo",
-      "title": "高斯体渲染加速",
-      "sum": "提出基于高斯的体渲染表示，用于高效剪切-扭曲可视化。",
-      "ta": "体渲染加速技术，对医学可视化或体积特效有参考价值。",
-      "src": "arXiv · cs.GR · 07-28",
-      "url": "https://arxiv.org/abs/2607.25377v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "网格注意力机制",
-      "sum": "提出内在且三角化无关的注意力机制，用于网格学习。",
-      "ta": "网格上的注意力机制，可能提升3D模型处理与生成质量。",
-      "src": "arXiv · cs.GR · 07-27",
-      "url": "https://arxiv.org/abs/2607.24954v1"
+      "title": "游戏求解器辅助LLM",
+      "sum": "CAST用游戏求解器作为回合级教师，训练LLM智能体。",
+      "ta": "将游戏求解器融入LLM训练，可能提升游戏AI决策能力。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.25308"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender阻尼跟踪测试",
-      "sum": "3D角色艺术家分享在Blender中测试阻尼跟踪约束的经验。",
-      "ta": "Blender阻尼跟踪约束技巧，对角色绑定与动画有参考价值。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/3d-character-artist-shares-how-she-tested-damped-track-constraints-on-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "EverQuest视觉重建",
-      "sum": "EverQuest Legends团队分享恢复经典视觉风格的自定义管线。",
-      "ta": "经典MMO视觉重建流程，对复古风格或资产恢复项目有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/interview-how-everquest-legends-recreates-classic-everquest-s-iconic-visual-style/"
+      "title": "星战风3D场景解析",
+      "sum": "Matvey Meleshko分享Ember Bazaar场景制作流程，含Marvelous Designer布料和材质。",
+      "ta": "可参考其布料模拟和材质写实化工作流，适合场景美术学习。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/breakdown-creating-a-star-wars-inspired-arabian-style-3d-scene-with-sci-fi-elements/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender风格化毛发",
-      "sum": "教程展示使用Blender几何节点创建轻量级风格化毛发与羽毛。",
-      "ta": "几何节点毛发方案，对风格化角色或特效有直接参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/tutorial-stylized-fur-feathers-in-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "合作驾驶冒险游戏幕后",
-      "sum": "Funselektor分享合作驾驶冒险游戏《over the hill》创作历程。",
-      "ta": "独立游戏开发经验，对合作模式与公路题材有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/over-the-hill-creating-a-co-op-driving-adventure-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "电影级VFX幕后",
-      "sum": "动画师分享《降世神通》电影中Appa口水特效的幕后制作。",
-      "ta": "电影级VFX制作流程，对角色特效与液体模拟有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/animator-unveils-behind-the-scenes-of-vfx-for-appa-s-slobber-in-avatar-aang-movie/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "自定义遮挡系统",
-      "sum": "为《Control》风格游戏Psych Rift开发自定义遮挡系统。",
-      "ta": "自定义遮挡系统实现，对类似扭曲现实风格游戏有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/custom-occlusion-system-for-control-inspired-reality-bending-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender纸艺世界",
-      "sum": "艺术家展示在Blender中制作的超现实纸艺风格世界。",
-      "ta": "纸艺风格3D世界，对风格化场景与材质有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/check-out-this-surreal-papercraft-style-world-made-in-blender/"
+      "title": "实体木偶在数字时代价值",
+      "sum": "Furry Puppet Studio讨论实体木偶制作流程及其不可替代性。",
+      "ta": "对角色设计和特效制作有启发，但非直接技术参考。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/interview-why-practical-puppets-still-matter-in-the-age-of-digital-characters/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "TaleWorlds联合创始人去世",
-      "sum": "《骑马与砍杀》工作室TaleWorlds联合创始人İpek Yavuz逝世。",
-      "ta": "行业人物讣告，了解工作室历史。",
-      "src": "Game Developer · 07-28",
-      "url": "https://www.gamedeveloper.com/business/obituary-taleworlds-co-founder-i-pek-yavuz-has-passed-away"
+      "title": "卡普空年更生化危机",
+      "sum": "Capcom计划每年发布一款《生化危机》游戏，含重制版。",
+      "ta": "行业动态，对游戏开发周期有参考意义，但无直接技术细节。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/capcom-is-aiming-to-release-a-resident-evil-game-every-year/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏业副业条款争议",
-      "sum": "开发者讨论副业条款对创意自由的限制与困扰。",
-      "ta": "行业法律问题，了解对自由职业者的影响。",
-      "src": "Game Developer · 07-28",
-      "url": "https://www.gamedeveloper.com/production/-i-have-been-hunted-down-by-hr-reps-lawyers-and-comms-people-developers-discuss-the-pain-and-prevalence-of-side-work-clauses"
+      "title": "游戏AI专家谈应用与风险",
+      "sum": "Luke Dicken分析AI在游戏开发中的历史、生成式AI及风险。",
+      "ta": "对AI在游戏管线中的定位有参考价值，但无具体技术方案。",
+      "src": "80 Level · 07-29",
+      "url": "https://80.lv/articles/game-ai-expert-explains-where-ai-actually-belongs-in-game-development-and-the-risks/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "腾讯Lightspeed LA裁员",
+      "sum": "《Last Sentinel》开发商因项目方向调整裁员。",
+      "ta": "行业动态，关注腾讯旗下工作室变动。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Epic挖角暴雪战网负责人",
+      "sum": "Martin Keely出任Epic Games Store和在线服务副总裁。",
+      "ta": "Epic平台战略调整，可能影响虚幻引擎生态。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/epic-games-hires-former-head-of-blizzard-s-battle-net"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EA CEO获3860万美元薪酬",
+      "sum": "EA CEO Andrew Wilson在裁员和GenAI采用后获高额薪酬。",
+      "ta": "行业动态，反映高管薪酬与公司策略的关联。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Double Fine被Xbox剥离后裁员",
+      "sum": "Double Fine在脱离Xbox后为生存进行裁员。",
+      "ta": "行业动态，关注独立工作室生存状况。",
+      "src": "Game Developer · 07-29",
+      "url": "https://www.gamedeveloper.com/business/double-fine-making-layoffs-after-being-jettisoned-by-xbox"
     }
   ],
   "flashbackTitle": "",
