@@ -2,8 +2,164 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-30 12:11",
+  "updated": "2026-07-31 12:29",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Blender几何节点引入物理模拟",
+      "sum": "Blender 5.2 LTS 将推出 Geometry Nodes Physics，在几何节点中集成物理模拟。",
+      "ta": "程序化生成工作流可借此在节点图内直接模拟布料、刚体等，减少跨软件往返。",
+      "src": "Blender 开发博客 · 07-30",
+      "url": "https://code.blender.org/2026/07/geometry-nodes-physics/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "单图生成可驱动高斯头模",
+      "sum": "S-Avatar 提出扩散引导的单图 3D 头模生成，并支持 3DGS 动画化。",
+      "ta": "单图重建可驱动高斯头模，对虚拟人资产生产管线有直接参考价值。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28164v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "4D高斯时空排序新格式",
+      "sum": "TSOG 扩展 SOG 框架至时间域，高效表示 4D 高斯溅射内容。",
+      "ta": "4DGS 资产压缩与流式加载是实时特效和虚拟制作的关键，此格式值得关注。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28049v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "共享高斯压缩SVBRDF贴图",
+      "sum": "提出用共享高斯紧凑表示 mipmapped SVBRDF，降低存储负担。",
+      "ta": "材质贴图内存优化新思路，可能影响 PBR 材质资产的标准格式。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.27943v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "时变隐式神经场体渲染",
+      "sum": "提出查询高效的随机体渲染框架，用于时变隐式神经体积。",
+      "ta": "动态科学体积数据交互渲染，对 Niagara 或自定义体积特效有启发。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28047v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "2D特征蒸馏提升3D理解",
+      "sum": "MeshFM 将视觉基础模型 2D 特征蒸馏到 3D，前馈网络无需优化推理。",
+      "ta": "3D 特征提取效率提升，可加速程序化生成中的形状分析与匹配。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.27592v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "HDR10+助力游戏艺术表达",
+      "sum": "访谈讨论 HDR10+ GAMING 在 UE 集成、HDR 工作流及显示感知渲染中的应用。",
+      "ta": "HDR 管线与显示感知渲染是 TA 调色和材质输出的关键环节。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/interview-how-hdr10-can-help-game-devs-preserve-their-artistic-vision/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Mixtape同步玩法动画音乐",
+      "sum": "开发者详解 UE5 中 MetaSounds、动画分层与玩法系统如何同步。",
+      "ta": "MetaSounds 与动画分层联动案例，对音画同步类特效设计有参考。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/interview-how-mixtape-synchronizes-gameplay-animation-music-with-ue5/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Roblox推出Blender风格建模",
+      "sum": "开发者制作 Blender 风格建模插件，可在 Roblox Studio 内直接建资产。",
+      "ta": "跨工具建模流程简化，对多平台资产生产管线有潜在价值。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/modeler-creates-a-blender-style-modeling-plugin-for-roblox-studio/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "动态布料特效资产包发布",
+      "sum": "一款可创建动态布料特效的资产包，售价 11.20 美元。",
+      "ta": "现成布料特效方案，可快速用于原型验证或补充特效库。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/you-ll-be-able-to-create-dynamic-cloth-based-effects-with-this-pack/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender模型一键3D打印",
+      "sum": "Dovetail Key 通过绘制线条，两步即可让 Blender 模型可 3D 打印。",
+      "ta": "快速生成可打印资产，对实体道具或原型制作有辅助作用。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/easily-make-your-blender-models-3d-printable-by-drawing-lines/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Unity为Netflix游戏提供支持",
+      "sum": "Unity 宣布为 Netflix Games 提供专用引擎支持，助力多平台开发。",
+      "ta": "引擎平台生态扩展，可能影响跨平台游戏项目的技术选型。",
+      "src": "Game Developer · 07-30",
+      "url": "https://www.gamedeveloper.com/business/unity-brings-dedicated-engine-support-to-netflix-games"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Subnautica2销量破五百万",
+      "sum": "Subnautica 2 在 22 天内售出 500 万份，助力 KRAFTON 最佳第二季度。",
+      "ta": "行业销售数据，反映市场对生存类游戏的需求热度。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/subnautica-2-sold-5-million-copies-in-22-days-gave-krafton-its-best-second-quarter-ever/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "印度游戏产业持续增长",
+      "sum": "GDAI 总监分析印度 5.5 亿年轻玩家与本土 IP 开发潜力。",
+      "ta": "新兴市场动态，可能影响全球化发行与外包合作策略。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/india-s-gaming-boom-is-just-getting-started/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "寂静岭新作开发访谈",
+      "sum": "Silent Hill: Townfall 开发者讨论苏格兰背景、复古技术与第一人称战斗。",
+      "ta": "恐怖游戏技术风格参考，可关注其美术与交互设计。",
+      "src": "PlayStation Blog · 07-30",
+      "url": "https://blog.playstation.com/2026/07/30/silent-hill-townfall-developers-discuss-the-scottish-setting-retro-technology-first-person-combat/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "暗黑奇幻游戏角色揭晓",
+      "sum": "1666: Amsterdam 公布主要角色，游戏为暗黑奇幻题材。",
+      "ta": "角色美术风格参考，可关注其概念设计与渲染表现。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/meet-the-main-characters-from-dark-fantasy-game-1666-amsterdam/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏公司知识流失引担忧",
+      "sum": "文章探讨游戏公司裁员导致生产知识流失的问题。",
+      "ta": "行业人才流动影响项目稳定性，对团队知识管理有警示。",
+      "src": "Game Developer · 07-30",
+      "url": "https://www.gamedeveloper.com/production/if-knowledge-if-power-why-are-game-companies-choosing-impotence-"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -174,15 +330,6 @@ window.INTEL_RECENT = {
       "ta": "网格上的注意力机制，可能提升3D模型处理与生成质量。",
       "src": "arXiv · cs.GR · 07-27",
       "url": "https://arxiv.org/abs/2607.24954v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender阻尼跟踪测试",
-      "sum": "3D角色艺术家分享在Blender中测试阻尼跟踪约束的经验。",
-      "ta": "Blender阻尼跟踪约束技巧，对角色绑定与动画有参考价值。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/3d-character-artist-shares-how-she-tested-damped-track-constraints-on-blender/"
     },
     {
       "cat": "flow",
@@ -1668,152 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "手绘风格角色管线参考，涵盖雕刻、纹理和动画。",
       "src": "80 Level · 07-07",
       "url": "https://80.lv/articles/creating-hand-painted-elf-character-in-3d-from-scratch-using-blender-substance-3d-painter/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "UE实时水体模拟工具",
-      "sum": "EasyFog Creator发布EasyWaterscape实时水体模拟工具。",
-      "ta": "UE水体模拟新工具，可快速提升场景水体效果。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/easyfog-creator-presents-real-time-water-simulation-tool-for-unreal-engine/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Meccha Chameleon销量破1500万",
-      "sum": "绘画捉迷藏游戏Meccha Chameleon 26天销量达1500万。",
-      "ta": "独立游戏市场表现案例，了解玩家偏好。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/painting-hide-and-seek-game-meccha-chameleon-hits-15-million-sales-in-26-days/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Compulsion Games独立后保留IP",
-      "sum": "Compulsion Games独立后保留IP，类似Double Fine安排。",
-      "ta": "行业动态，了解工作室独立与IP归属趋势。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/compulsion-games-to-retain-ip-rights-after-going-independent/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Supercell非洲开发者资助",
-      "sum": "Supercell启动非洲工作室资助计划，金额2万至20万美元。",
-      "ta": "行业资助动态，关注新兴市场开发者生态。",
-      "src": "Game Developer · 07-07",
-      "url": "https://www.gamedeveloper.com/business/supercell-starts-developer-grants-program-for-studios-across-africa"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "IO Interactive关闭伊斯坦布尔工作室",
-      "sum": "IO Interactive因Xbox撤资关闭伊斯坦布尔工作室，重组项目。",
-      "ta": "行业重组案例，关注大厂投资变动影响。",
-      "src": "Game Developer · 07-07",
-      "url": "https://www.gamedeveloper.com/business/io-interactive-closing-istanbul-studio-after-regaining-control-of-project-fantasy"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 1,
-      "title": "id Software半数裁员",
-      "sum": "报告称id Software约半数员工被裁，Xbox计划削减3200岗位。",
-      "ta": "行业地震级事件，影响3A工作室人才流动和项目稳定性。",
-      "src": "Game Developer · 07-07",
-      "url": "https://www.gamedeveloper.com/business/report-around-half-of-the-id-software-team-have-been-laid-off"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多视角长视频生成新方法",
-      "sum": "MV-Forcing 通过4D时空自强制实现长序列多视角视频生成。",
-      "ta": "对动态场景多视角一致性生成有参考价值，但离实时游戏管线尚远。",
-      "src": "arXiv · cs.GR · 07-06",
-      "url": "https://arxiv.org/abs/2607.05376v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "实时毛发渲染软件光栅化",
-      "sum": "提出延迟软件光栅化管线，实现实时发丝渲染。",
-      "ta": "直接相关：实时发丝渲染方案，可评估是否适合UE5角色管线。",
-      "src": "arXiv · cs.GR · 07-05",
-      "url": "https://arxiv.org/abs/2607.04230v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "物理模拟面部接触皱纹",
-      "sum": "基于物理的皮肤接触皱纹模拟，考虑非线性分层材料。",
-      "ta": "面部细节模拟技术，对数字人皮肤动态有参考。",
-      "src": "arXiv · cs.GR · 07-06",
-      "url": "https://arxiv.org/abs/2607.04768v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "数字人创建综述报告",
-      "sum": "综述从先验学习到可动写实化身的3D数字人管线。",
-      "ta": "数字人管线全景参考，适合了解当前技术栈。",
-      "src": "arXiv · cs.GR · 07-05",
-      "url": "https://arxiv.org/abs/2607.04341v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "可微眩光评估方法",
-      "sum": "用可微光传输优化统一眩光评级，用于建筑/汽车设计。",
-      "ta": "可微渲染在物理设计中的应用，与游戏渲染间接相关。",
-      "src": "arXiv · cs.GR · 07-06",
-      "url": "https://arxiv.org/abs/2607.04796v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "全动态Omnitree压缩",
-      "sum": "用矩守恒各向异性小波压缩，改进八叉树和k-d树。",
-      "ta": "空间数据结构优化，对程序化生成和场景管理有潜在价值。",
-      "src": "arXiv · cs.GR · 07-06",
-      "url": "https://arxiv.org/abs/2607.04881v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "自中心八叉树点流更新",
-      "sum": "ECO 增量更新八叉树，用于移动机器人实时点流处理。",
-      "ta": "实时空间数据结构，可借鉴到游戏中的动态场景管理。",
-      "src": "arXiv · cs.GR · 07-06",
-      "url": "https://arxiv.org/abs/2607.05092v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "雕塑神秘崇拜领袖技巧",
-      "sum": "Matteo Constant 分享夹克建模与磨损着色器纹理方法。",
-      "ta": "角色材质与着色器技巧，对写实服装渲染有参考。",
-      "src": "80 Level · 07-06",
-      "url": "https://80.lv/articles/how-to-sculpt-an-intriguing-and-mysterious-worship-leader/"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Xbox裁员3200人",
-      "sum": "Xbox裁员3200人，4个工作室换管理，包括Double Fine等。",
-      "ta": "行业震荡影响工作室稳定性，可能波及UE5项目资源。",
-      "src": "80 Level · 07-06",
-      "url": "https://80.lv/articles/xbox-is-laying-off-3-200-employees-giving-4-studios-new-management/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "黑曜石流失四分之一员工",
-      "sum": "Obsidian因Xbox调整流失60-70人，约占员工四分之一。",
-      "ta": "知名工作室人才流失，可能影响其UE5项目进度。",
-      "src": "Game Developer · 07-07",
-      "url": "https://www.gamedeveloper.com/business/report-obsidian-losing-around-one-quarter-of-its-staff-to-xbox-reset-"
     }
   ]
 };

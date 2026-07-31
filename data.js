@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月30日 · 周四",
+  "date": "2026年7月31日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>凸碰撞自由区域</em> / <em>结构感知高斯泼溅</em> / <em>面向XR的3DGS压缩</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Blender几何节点引入物理模拟</em> / <em>单图生成可驱动高斯头模</em> / <em>4D高斯时空排序新格式</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -116,148 +116,169 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Blender几何节点引入物理模拟",
+      "sum": "Blender 5.2 LTS 将推出 Geometry Nodes Physics，在几何节点中集成物理模拟。",
+      "ta": "程序化生成工作流可借此在节点图内直接模拟布料、刚体等，减少跨软件往返。",
+      "src": "Blender 开发博客 · 07-30",
+      "url": "https://code.blender.org/2026/07/geometry-nodes-physics/"
+    },
+    {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "凸碰撞自由区域",
-      "sum": "提出CCFR方法，用局部凸可行区域显式表示碰撞约束。",
-      "ta": "对碰撞检测和物理模拟有参考价值，可关注其与网格原语的集成方式。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26901v1"
+      "imp": "hi",
+      "rank": 2,
+      "title": "单图生成可驱动高斯头模",
+      "sum": "S-Avatar 提出扩散引导的单图 3D 头模生成，并支持 3DGS 动画化。",
+      "ta": "单图重建可驱动高斯头模，对虚拟人资产生产管线有直接参考价值。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28164v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "4D高斯时空排序新格式",
+      "sum": "TSOG 扩展 SOG 框架至时间域，高效表示 4D 高斯溅射内容。",
+      "ta": "4DGS 资产压缩与流式加载是实时特效和虚拟制作的关键，此格式值得关注。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28049v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "结构感知高斯泼溅",
-      "sum": "StructureGS用于铰接物体重建，分离几何、外观和运动参数。",
-      "ta": "3DGS在可动部件重建上的进展，可能影响程序化资产生成管线。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26889v1"
+      "title": "共享高斯压缩SVBRDF贴图",
+      "sum": "提出用共享高斯紧凑表示 mipmapped SVBRDF，降低存储负担。",
+      "ta": "材质贴图内存优化新思路，可能影响 PBR 材质资产的标准格式。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.27943v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "面向XR的3DGS压缩",
-      "sum": "AtlasLC实现物体级3DGS快速编解码，适配XR资产管线。",
-      "ta": "压缩和解码效率对实时渲染和XR部署有实际意义，可跟踪其性能数据。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26525v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "全局Pass屏障研究",
-      "sum": "Blade渲染器用全局屏障替代逐资源追踪，跨厂商验证性能。",
-      "ta": "对Vulkan管线屏障策略有参考价值，可了解全局屏障的跨平台表现。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26506v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CG世界状态数据集",
-      "sum": "CG-World提供大规模工业CG世界状态数据，用于世界模型训练。",
-      "ta": "数据集来自工业CG，可能为游戏场景理解或程序化生成提供训练基础。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26452v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "人体运动转四足动画",
-      "sum": "Two2Four从人体运动生成四足动物动作，用于虚拟制作。",
-      "ta": "对角色动画管线有启发，可关注其运动重定向质量。",
-      "src": "arXiv · cs.GR · 07-28",
-      "url": "https://arxiv.org/abs/2607.26108v1"
+      "title": "时变隐式神经场体渲染",
+      "sum": "提出查询高效的随机体渲染框架，用于时变隐式神经体积。",
+      "ta": "动态科学体积数据交互渲染，对 Niagara 或自定义体积特效有启发。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28047v1"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "实时视觉语言动作模型",
-      "sum": "TurboVLA在RTX 4090上以32Hz运行，显存低于1GB。",
-      "ta": "低显存实时推理对游戏AI或交互系统有潜在应用，但未明确游戏场景。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.27205"
+      "imp": "mid",
+      "title": "2D特征蒸馏提升3D理解",
+      "sum": "MeshFM 将视觉基础模型 2D 特征蒸馏到 3D，前馈网络无需优化推理。",
+      "ta": "3D 特征提取效率提升，可加速程序化生成中的形状分析与匹配。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.27592v1"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "游戏求解器辅助LLM",
-      "sum": "CAST用游戏求解器作为回合级教师，训练LLM智能体。",
-      "ta": "将游戏求解器融入LLM训练，可能提升游戏AI决策能力。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.25308"
+      "cat": "flow",
+      "imp": "mid",
+      "title": "HDR10+助力游戏艺术表达",
+      "sum": "访谈讨论 HDR10+ GAMING 在 UE 集成、HDR 工作流及显示感知渲染中的应用。",
+      "ta": "HDR 管线与显示感知渲染是 TA 调色和材质输出的关键环节。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/interview-how-hdr10-can-help-game-devs-preserve-their-artistic-vision/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Mixtape同步玩法动画音乐",
+      "sum": "开发者详解 UE5 中 MetaSounds、动画分层与玩法系统如何同步。",
+      "ta": "MetaSounds 与动画分层联动案例，对音画同步类特效设计有参考。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/interview-how-mixtape-synchronizes-gameplay-animation-music-with-ue5/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "星战风3D场景解析",
-      "sum": "Matvey Meleshko分享Ember Bazaar场景制作流程，含Marvelous Designer布料和材质。",
-      "ta": "可参考其布料模拟和材质写实化工作流，适合场景美术学习。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/breakdown-creating-a-star-wars-inspired-arabian-style-3d-scene-with-sci-fi-elements/"
+      "title": "Roblox推出Blender风格建模",
+      "sum": "开发者制作 Blender 风格建模插件，可在 Roblox Studio 内直接建资产。",
+      "ta": "跨工具建模流程简化，对多平台资产生产管线有潜在价值。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/modeler-creates-a-blender-style-modeling-plugin-for-roblox-studio/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "实体木偶在数字时代价值",
-      "sum": "Furry Puppet Studio讨论实体木偶制作流程及其不可替代性。",
-      "ta": "对角色设计和特效制作有启发，但非直接技术参考。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/interview-why-practical-puppets-still-matter-in-the-age-of-digital-characters/"
+      "title": "动态布料特效资产包发布",
+      "sum": "一款可创建动态布料特效的资产包，售价 11.20 美元。",
+      "ta": "现成布料特效方案，可快速用于原型验证或补充特效库。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/you-ll-be-able-to-create-dynamic-cloth-based-effects-with-this-pack/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender肌肉布局展开工具",
+      "sum": "Cartesian Caramel 发布数字肌肉布局展开方案，并免费提供合成肌肉打印设置。",
+      "ta": "角色肌肉系统建模与绑定工作流的新工具，适合生物资产制作。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/unrolling-digital-muscle-layout-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender模型一键3D打印",
+      "sum": "Dovetail Key 通过绘制线条，两步即可让 Blender 模型可 3D 打印。",
+      "ta": "快速生成可打印资产，对实体道具或原型制作有辅助作用。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/easily-make-your-blender-models-3d-printable-by-drawing-lines/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Unity为Netflix游戏提供支持",
+      "sum": "Unity 宣布为 Netflix Games 提供专用引擎支持，助力多平台开发。",
+      "ta": "引擎平台生态扩展，可能影响跨平台游戏项目的技术选型。",
+      "src": "Game Developer · 07-30",
+      "url": "https://www.gamedeveloper.com/business/unity-brings-dedicated-engine-support-to-netflix-games"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "卡普空年更生化危机",
-      "sum": "Capcom计划每年发布一款《生化危机》游戏，含重制版。",
-      "ta": "行业动态，对游戏开发周期有参考意义，但无直接技术细节。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/capcom-is-aiming-to-release-a-resident-evil-game-every-year/"
+      "title": "Subnautica2销量破五百万",
+      "sum": "Subnautica 2 在 22 天内售出 500 万份，助力 KRAFTON 最佳第二季度。",
+      "ta": "行业销售数据，反映市场对生存类游戏的需求热度。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/subnautica-2-sold-5-million-copies-in-22-days-gave-krafton-its-best-second-quarter-ever/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏AI专家谈应用与风险",
-      "sum": "Luke Dicken分析AI在游戏开发中的历史、生成式AI及风险。",
-      "ta": "对AI在游戏管线中的定位有参考价值，但无具体技术方案。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/game-ai-expert-explains-where-ai-actually-belongs-in-game-development-and-the-risks/"
+      "title": "印度游戏产业持续增长",
+      "sum": "GDAI 总监分析印度 5.5 亿年轻玩家与本土 IP 开发潜力。",
+      "ta": "新兴市场动态，可能影响全球化发行与外包合作策略。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/india-s-gaming-boom-is-just-getting-started/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "《Last Sentinel》开发商因项目方向调整裁员。",
-      "ta": "行业动态，关注腾讯旗下工作室变动。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "title": "寂静岭新作开发访谈",
+      "sum": "Silent Hill: Townfall 开发者讨论苏格兰背景、复古技术与第一人称战斗。",
+      "ta": "恐怖游戏技术风格参考，可关注其美术与交互设计。",
+      "src": "PlayStation Blog · 07-30",
+      "url": "https://blog.playstation.com/2026/07/30/silent-hill-townfall-developers-discuss-the-scottish-setting-retro-technology-first-person-combat/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Epic挖角暴雪战网负责人",
-      "sum": "Martin Keely出任Epic Games Store和在线服务副总裁。",
-      "ta": "Epic平台战略调整，可能影响虚幻引擎生态。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/epic-games-hires-former-head-of-blizzard-s-battle-net"
+      "title": "暗黑奇幻游戏角色揭晓",
+      "sum": "1666: Amsterdam 公布主要角色，游戏为暗黑奇幻题材。",
+      "ta": "角色美术风格参考，可关注其概念设计与渲染表现。",
+      "src": "80 Level · 07-30",
+      "url": "https://80.lv/articles/meet-the-main-characters-from-dark-fantasy-game-1666-amsterdam/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "EA CEO获3860万美元薪酬",
-      "sum": "EA CEO Andrew Wilson在裁员和GenAI采用后获高额薪酬。",
-      "ta": "行业动态，反映高管薪酬与公司策略的关联。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Double Fine被Xbox剥离后裁员",
-      "sum": "Double Fine在脱离Xbox后为生存进行裁员。",
-      "ta": "行业动态，关注独立工作室生存状况。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/double-fine-making-layoffs-after-being-jettisoned-by-xbox"
+      "title": "游戏公司知识流失引担忧",
+      "sum": "文章探讨游戏公司裁员导致生产知识流失的问题。",
+      "ta": "行业人才流动影响项目稳定性，对团队知识管理有警示。",
+      "src": "Game Developer · 07-30",
+      "url": "https://www.gamedeveloper.com/production/if-knowledge-if-power-why-are-game-companies-choosing-impotence-"
     }
   ],
   "flashbackTitle": "",
