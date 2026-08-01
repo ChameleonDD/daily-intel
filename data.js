@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月31日 · 周五",
+  "date": "2026年8月1日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Blender几何节点引入物理模拟</em> / <em>单图生成可驱动高斯头模</em> / <em>4D高斯时空排序新格式</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Epic 七月学习内容更新</em> / <em>Blender 体积雾插件速成</em> / <em>Substance 3D 金属丝工艺材质</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -117,168 +117,48 @@ window.INTEL_DATA = {
     },
     {
       "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Blender几何节点引入物理模拟",
-      "sum": "Blender 5.2 LTS 将推出 Geometry Nodes Physics，在几何节点中集成物理模拟。",
-      "ta": "程序化生成工作流可借此在节点图内直接模拟布料、刚体等，减少跨软件往返。",
-      "src": "Blender 开发博客 · 07-30",
-      "url": "https://code.blender.org/2026/07/geometry-nodes-physics/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "单图生成可驱动高斯头模",
-      "sum": "S-Avatar 提出扩散引导的单图 3D 头模生成，并支持 3DGS 动画化。",
-      "ta": "单图重建可驱动高斯头模，对虚拟人资产生产管线有直接参考价值。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28164v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "4D高斯时空排序新格式",
-      "sum": "TSOG 扩展 SOG 框架至时间域，高效表示 4D 高斯溅射内容。",
-      "ta": "4DGS 资产压缩与流式加载是实时特效和虚拟制作的关键，此格式值得关注。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28049v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "mid",
-      "title": "共享高斯压缩SVBRDF贴图",
-      "sum": "提出用共享高斯紧凑表示 mipmapped SVBRDF，降低存储负担。",
-      "ta": "材质贴图内存优化新思路，可能影响 PBR 材质资产的标准格式。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.27943v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "时变隐式神经场体渲染",
-      "sum": "提出查询高效的随机体渲染框架，用于时变隐式神经体积。",
-      "ta": "动态科学体积数据交互渲染，对 Niagara 或自定义体积特效有启发。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28047v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "2D特征蒸馏提升3D理解",
-      "sum": "MeshFM 将视觉基础模型 2D 特征蒸馏到 3D，前馈网络无需优化推理。",
-      "ta": "3D 特征提取效率提升，可加速程序化生成中的形状分析与匹配。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.27592v1"
+      "title": "Epic 七月学习内容更新",
+      "sum": "Epic 发布七月学习内容，涵盖 Sequencer 动画、MetaHuman 动捕、Chaos 可破坏物及移动端开发教程。",
+      "ta": "官方教程覆盖 TA 常用工具链，可快速跟进 UE5 动画与破坏系统的最新工作流。",
+      "src": "Unreal Engine · 07-31",
+      "url": "https://www.unrealengine.com/learning/julys-epic-learning-content-animation-mobile-game-development-and-more"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "HDR10+助力游戏艺术表达",
-      "sum": "访谈讨论 HDR10+ GAMING 在 UE 集成、HDR 工作流及显示感知渲染中的应用。",
-      "ta": "HDR 管线与显示感知渲染是 TA 调色和材质输出的关键环节。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/interview-how-hdr10-can-help-game-devs-preserve-their-artistic-vision/"
+      "title": "Blender 体积雾插件速成",
+      "sum": "Lazy3D 推出 Blender 插件，可快速创建电影级体积雾效果，支持轻雾到浓雾调节。",
+      "ta": "Blender 快速体积雾方案可辅助 DCC 预览或资产制作，提升前期视觉迭代效率。",
+      "src": "80 Level · 08-01",
+      "url": "https://80.lv/articles/add-cinematic-volumetric-fog-to-blender-scenes-in-just-minutes/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Mixtape同步玩法动画音乐",
-      "sum": "开发者详解 UE5 中 MetaSounds、动画分层与玩法系统如何同步。",
-      "ta": "MetaSounds 与动画分层联动案例，对音画同步类特效设计有参考。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/interview-how-mixtape-synchronizes-gameplay-animation-music-with-ue5/"
+      "title": "Substance 3D 金属丝工艺材质",
+      "sum": "Jinho Yum 分享 Ornamental Filigree 项目，讲解扭曲基础形状、调整曲线方向与宝石制作流程。",
+      "ta": "Substance 3D 复杂金属图案程序化生成思路，对材质细节与装饰纹理制作有参考价值。",
+      "src": "80 Level · 07-31",
+      "url": "https://80.lv/articles/creating-intricate-filigree-metalwork-patterns-for-a-material-with-substance-3d/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Roblox推出Blender风格建模",
-      "sum": "开发者制作 Blender 风格建模插件，可在 Roblox Studio 内直接建资产。",
-      "ta": "跨工具建模流程简化，对多平台资产生产管线有潜在价值。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/modeler-creates-a-blender-style-modeling-plugin-for-roblox-studio/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "动态布料特效资产包发布",
-      "sum": "一款可创建动态布料特效的资产包，售价 11.20 美元。",
-      "ta": "现成布料特效方案，可快速用于原型验证或补充特效库。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/you-ll-be-able-to-create-dynamic-cloth-based-effects-with-this-pack/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender肌肉布局展开工具",
-      "sum": "Cartesian Caramel 发布数字肌肉布局展开方案，并免费提供合成肌肉打印设置。",
-      "ta": "角色肌肉系统建模与绑定工作流的新工具，适合生物资产制作。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/unrolling-digital-muscle-layout-in-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender模型一键3D打印",
-      "sum": "Dovetail Key 通过绘制线条，两步即可让 Blender 模型可 3D 打印。",
-      "ta": "快速生成可打印资产，对实体道具或原型制作有辅助作用。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/easily-make-your-blender-models-3d-printable-by-drawing-lines/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Unity为Netflix游戏提供支持",
-      "sum": "Unity 宣布为 Netflix Games 提供专用引擎支持，助力多平台开发。",
-      "ta": "引擎平台生态扩展，可能影响跨平台游戏项目的技术选型。",
-      "src": "Game Developer · 07-30",
-      "url": "https://www.gamedeveloper.com/business/unity-brings-dedicated-engine-support-to-netflix-games"
+      "title": "Blender VHS 复古效果制作",
+      "sum": "Triqlide Studios 展示在 Blender 中实现的 VHS 风格复古视觉效果。",
+      "ta": "VHS 风格化后处理效果在 Blender 中的实现，可借鉴用于游戏内复古滤镜或过场。",
+      "src": "80 Level · 07-31",
+      "url": "https://80.lv/articles/check-out-this-cool-vhs-like-effect-made-in-blender/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Subnautica2销量破五百万",
-      "sum": "Subnautica 2 在 22 天内售出 500 万份，助力 KRAFTON 最佳第二季度。",
-      "ta": "行业销售数据，反映市场对生存类游戏的需求热度。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/subnautica-2-sold-5-million-copies-in-22-days-gave-krafton-its-best-second-quarter-ever/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "印度游戏产业持续增长",
-      "sum": "GDAI 总监分析印度 5.5 亿年轻玩家与本土 IP 开发潜力。",
-      "ta": "新兴市场动态，可能影响全球化发行与外包合作策略。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/india-s-gaming-boom-is-just-getting-started/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "寂静岭新作开发访谈",
-      "sum": "Silent Hill: Townfall 开发者讨论苏格兰背景、复古技术与第一人称战斗。",
-      "ta": "恐怖游戏技术风格参考，可关注其美术与交互设计。",
-      "src": "PlayStation Blog · 07-30",
-      "url": "https://blog.playstation.com/2026/07/30/silent-hill-townfall-developers-discuss-the-scottish-setting-retro-technology-first-person-combat/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "暗黑奇幻游戏角色揭晓",
-      "sum": "1666: Amsterdam 公布主要角色，游戏为暗黑奇幻题材。",
-      "ta": "角色美术风格参考，可关注其概念设计与渲染表现。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/meet-the-main-characters-from-dark-fantasy-game-1666-amsterdam/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏公司知识流失引担忧",
-      "sum": "文章探讨游戏公司裁员导致生产知识流失的问题。",
-      "ta": "行业人才流动影响项目稳定性，对团队知识管理有警示。",
-      "src": "Game Developer · 07-30",
-      "url": "https://www.gamedeveloper.com/production/if-knowledge-if-power-why-are-game-companies-choosing-impotence-"
+      "title": "Double Fine 裁员 Xbox 营收下滑",
+      "sum": "Double Fine 裁员，Xbox 硬件营收持续下滑，Buckshot Roulette 开发商推出马里奥派对恐怖版。",
+      "ta": "行业动态速览，了解大厂人员变动与硬件趋势，对项目规划无直接影响。",
+      "src": "Game Developer · 07-31",
+      "url": "https://www.gamedeveloper.com/business/xbox-perpetual-hardware-revenue-decline-leon-kennedy-pays-off-and-double-fine-cuts-staff-patch-notes-63"
     }
   ],
   "flashbackTitle": "",

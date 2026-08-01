@@ -2,17 +2,52 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-07-31 12:29",
+  "updated": "2026-08-01 12:25",
   "cards": [
     {
       "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Blender几何节点引入物理模拟",
-      "sum": "Blender 5.2 LTS 将推出 Geometry Nodes Physics，在几何节点中集成物理模拟。",
-      "ta": "程序化生成工作流可借此在节点图内直接模拟布料、刚体等，减少跨软件往返。",
-      "src": "Blender 开发博客 · 07-30",
-      "url": "https://code.blender.org/2026/07/geometry-nodes-physics/"
+      "imp": "mid",
+      "title": "Epic 七月学习内容更新",
+      "sum": "Epic 发布七月学习内容，涵盖 Sequencer 动画、MetaHuman 动捕、Chaos 可破坏物及移动端开发教程。",
+      "ta": "官方教程覆盖 TA 常用工具链，可快速跟进 UE5 动画与破坏系统的最新工作流。",
+      "src": "Unreal Engine · 07-31",
+      "url": "https://www.unrealengine.com/learning/julys-epic-learning-content-animation-mobile-game-development-and-more"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 体积雾插件速成",
+      "sum": "Lazy3D 推出 Blender 插件，可快速创建电影级体积雾效果，支持轻雾到浓雾调节。",
+      "ta": "Blender 快速体积雾方案可辅助 DCC 预览或资产制作，提升前期视觉迭代效率。",
+      "src": "80 Level · 08-01",
+      "url": "https://80.lv/articles/add-cinematic-volumetric-fog-to-blender-scenes-in-just-minutes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance 3D 金属丝工艺材质",
+      "sum": "Jinho Yum 分享 Ornamental Filigree 项目，讲解扭曲基础形状、调整曲线方向与宝石制作流程。",
+      "ta": "Substance 3D 复杂金属图案程序化生成思路，对材质细节与装饰纹理制作有参考价值。",
+      "src": "80 Level · 07-31",
+      "url": "https://80.lv/articles/creating-intricate-filigree-metalwork-patterns-for-a-material-with-substance-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender VHS 复古效果制作",
+      "sum": "Triqlide Studios 展示在 Blender 中实现的 VHS 风格复古视觉效果。",
+      "ta": "VHS 风格化后处理效果在 Blender 中的实现，可借鉴用于游戏内复古滤镜或过场。",
+      "src": "80 Level · 07-31",
+      "url": "https://80.lv/articles/check-out-this-cool-vhs-like-effect-made-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Double Fine 裁员 Xbox 营收下滑",
+      "sum": "Double Fine 裁员，Xbox 硬件营收持续下滑，Buckshot Roulette 开发商推出马里奥派对恐怖版。",
+      "ta": "行业动态速览，了解大厂人员变动与硬件趋势，对项目规划无直接影响。",
+      "src": "Game Developer · 07-31",
+      "url": "https://www.gamedeveloper.com/business/xbox-perpetual-hardware-revenue-decline-leon-kennedy-pays-off-and-double-fine-cuts-staff-patch-notes-63"
     },
     {
       "cat": "gfx",
@@ -280,29 +315,11 @@ window.INTEL_RECENT = {
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Epic挖角暴雪战网负责人",
-      "sum": "Martin Keely出任Epic Games Store和在线服务副总裁。",
-      "ta": "Epic平台战略调整，可能影响虚幻引擎生态。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/epic-games-hires-former-head-of-blizzard-s-battle-net"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
       "title": "EA CEO获3860万美元薪酬",
       "sum": "EA CEO Andrew Wilson在裁员和GenAI采用后获高额薪酬。",
       "ta": "行业动态，反映高管薪酬与公司策略的关联。",
       "src": "Game Developer · 07-29",
       "url": "https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Double Fine被Xbox剥离后裁员",
-      "sum": "Double Fine在脱离Xbox后为生存进行裁员。",
-      "ta": "行业动态，关注独立工作室生存状况。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/double-fine-making-layoffs-after-being-jettisoned-by-xbox"
     },
     {
       "cat": "ai",
@@ -1797,24 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "行业新闻，无直接技术关联。",
       "src": "Game Developer · 07-07",
       "url": "https://www.gamedeveloper.com/business/report-around-half-of-the-id-software-team-have-been-laid-off"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "手绘晶体剑制作",
-      "sum": "Swayam Sontakke详解晶体剑建模、UV及光照技巧。",
-      "ta": "手绘风格资产制作流程参考，适合风格化项目。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/how-to-make-magical-hand-painted-crystal-sword-in-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "手绘精灵角色全流程",
-      "sum": "Arturo Galván Soler分享Blender和Substance 3D Painter制作精灵角色。",
-      "ta": "手绘风格角色管线参考，涵盖雕刻、纹理和动画。",
-      "src": "80 Level · 07-07",
-      "url": "https://80.lv/articles/creating-hand-painted-elf-character-in-3d-from-scratch-using-blender-substance-3d-painter/"
     }
   ]
 };
