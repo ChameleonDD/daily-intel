@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月1日 · 周六",
+  "date": "2026年8月2日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Epic 七月学习内容更新</em> / <em>Blender 体积雾插件速成</em> / <em>Substance 3D 金属丝工艺材质</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。",
   "channels": [
     {
       "key": "x",
@@ -114,51 +114,6 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "转发 · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Epic 七月学习内容更新",
-      "sum": "Epic 发布七月学习内容，涵盖 Sequencer 动画、MetaHuman 动捕、Chaos 可破坏物及移动端开发教程。",
-      "ta": "官方教程覆盖 TA 常用工具链，可快速跟进 UE5 动画与破坏系统的最新工作流。",
-      "src": "Unreal Engine · 07-31",
-      "url": "https://www.unrealengine.com/learning/julys-epic-learning-content-animation-mobile-game-development-and-more"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 体积雾插件速成",
-      "sum": "Lazy3D 推出 Blender 插件，可快速创建电影级体积雾效果，支持轻雾到浓雾调节。",
-      "ta": "Blender 快速体积雾方案可辅助 DCC 预览或资产制作，提升前期视觉迭代效率。",
-      "src": "80 Level · 08-01",
-      "url": "https://80.lv/articles/add-cinematic-volumetric-fog-to-blender-scenes-in-just-minutes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Substance 3D 金属丝工艺材质",
-      "sum": "Jinho Yum 分享 Ornamental Filigree 项目，讲解扭曲基础形状、调整曲线方向与宝石制作流程。",
-      "ta": "Substance 3D 复杂金属图案程序化生成思路，对材质细节与装饰纹理制作有参考价值。",
-      "src": "80 Level · 07-31",
-      "url": "https://80.lv/articles/creating-intricate-filigree-metalwork-patterns-for-a-material-with-substance-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender VHS 复古效果制作",
-      "sum": "Triqlide Studios 展示在 Blender 中实现的 VHS 风格复古视觉效果。",
-      "ta": "VHS 风格化后处理效果在 Blender 中的实现，可借鉴用于游戏内复古滤镜或过场。",
-      "src": "80 Level · 07-31",
-      "url": "https://80.lv/articles/check-out-this-cool-vhs-like-effect-made-in-blender/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Double Fine 裁员 Xbox 营收下滑",
-      "sum": "Double Fine 裁员，Xbox 硬件营收持续下滑，Buckshot Roulette 开发商推出马里奥派对恐怖版。",
-      "ta": "行业动态速览，了解大厂人员变动与硬件趋势，对项目规划无直接影响。",
-      "src": "Game Developer · 07-31",
-      "url": "https://www.gamedeveloper.com/business/xbox-perpetual-hardware-revenue-decline-leon-kennedy-pays-off-and-double-fine-cuts-staff-patch-notes-63"
     }
   ],
   "flashbackTitle": "",
