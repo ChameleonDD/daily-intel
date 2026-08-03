@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-02 12:28",
+  "updated": "2026-08-03 12:35",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "弹性曲线几何力学新解",
+      "sum": "论文探讨弹性杆平衡态曲线，与力学、几何及计算机图形学深度关联。",
+      "ta": "弹性曲线是布料/头发模拟的数学基础，可关注其约束求解新思路。",
+      "src": "arXiv · cs.GR · 07-31",
+      "url": "https://arxiv.org/abs/2607.29654v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "title": "交互式生成运动编辑",
+      "sum": "提出基于调度修复的交互式生成运动编辑，支持大规模结构修改。",
+      "ta": "直接命中TA动画工作流，可大幅提升动作库修改效率，值得精读。",
+      "src": "arXiv · cs.GR · 07-31",
+      "url": "https://arxiv.org/abs/2607.29133v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高维点云各向异性曲面逼近",
+      "sum": "提出HD-PEA框架，基于学习直接处理非结构化点云，实现高效各向异性曲面逼近。",
+      "ta": "点云曲面重建是扫描资产管线关键，该框架可能提升实时处理性能。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28855v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "世界模型正则化新方法",
+      "sum": "QQWorld方法通过分位数匹配实现世界模型正则化，提升模型泛化。",
+      "ta": "世界模型与游戏AI/模拟相关，正则化技术或可借鉴到程序化生成。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.28415"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "title": "Meshy T2快速原生网格生成",
+      "sum": "Meshy T2采用流匹配技术，实现快速原生网格生成，无需中间表示。",
+      "ta": "原生网格生成直接服务3D资产生成流程，流匹配方法值得关注。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.28675"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -1769,51 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "行业动向，可能影响后续引擎/工具需求。",
       "src": "80 Level · 07-08",
       "url": "https://80.lv/articles/fallout-new-vegas-studio-obsidian-is-reportedly-making-a-new-fallout-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "法环短剑资产制作解析",
-      "sum": "Maya 粗模、ZBrush 高模、Substance Painter 纹理与晶体材质。",
-      "ta": "关注晶体材质挑战与 PBR 纹理流程。",
-      "src": "80 Level · 07-08",
-      "url": "https://80.lv/articles/elden-ring-glintstone-kris-shortsword-made-in-maya-zbrush-substance-3d-painter/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Godot 虫洞 Shader 关卡过渡",
-      "sum": "Godot 飞行游戏用虫洞 Shader 实现无缝关卡切换，纯 GDScript。",
-      "ta": "可借鉴其 Shader 实现无缝过渡的思路。",
-      "src": "80 Level · 07-08",
-      "url": "https://80.lv/articles/wormhole-shader-for-seamless-level-transitions-in-godot-powered-arcade-flying-game/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Unity 格斯特纳波海洋 Shader",
-      "sum": "Unity 中实现带格斯特纳波的海洋 Shader。",
-      "ta": "经典海洋渲染技术，适合实时水面效果参考。",
-      "src": "80 Level · 07-08",
-      "url": "https://80.lv/articles/ocean-shader-with-gerstner-waves-in-unity/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "马里奥赛车手游停运",
-      "sum": "任天堂宣布《马里奥赛车巡回赛》手游将停运，无离线版。",
-      "ta": "行业新闻，无直接技术关联。",
-      "src": "Game Developer · 07-08",
-      "url": "https://www.gamedeveloper.com/business/mobile-game-mario-kart-tour-is-winding-down"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "id Software 裁员 136 人",
-      "sum": "id Software 裁员 136 人，Xbox 游戏部门计划裁 3200 人。",
-      "ta": "行业新闻，无直接技术关联。",
-      "src": "Game Developer · 07-07",
-      "url": "https://www.gamedeveloper.com/business/report-around-half-of-the-id-software-team-have-been-laid-off"
     }
   ]
 };

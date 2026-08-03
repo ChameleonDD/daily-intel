@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月2日 · 周日",
+  "date": "2026年8月3日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。",
+  "todayHtml": "今天值得停下精读的有：<em>交互式生成运动编辑</em> / <em>Meshy T2快速原生网格生成</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -114,6 +114,51 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "转发 · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "弹性曲线几何力学新解",
+      "sum": "论文探讨弹性杆平衡态曲线，与力学、几何及计算机图形学深度关联。",
+      "ta": "弹性曲线是布料/头发模拟的数学基础，可关注其约束求解新思路。",
+      "src": "arXiv · cs.GR · 07-31",
+      "url": "https://arxiv.org/abs/2607.29654v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "title": "交互式生成运动编辑",
+      "sum": "提出基于调度修复的交互式生成运动编辑，支持大规模结构修改。",
+      "ta": "直接命中TA动画工作流，可大幅提升动作库修改效率，值得精读。",
+      "src": "arXiv · cs.GR · 07-31",
+      "url": "https://arxiv.org/abs/2607.29133v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高维点云各向异性曲面逼近",
+      "sum": "提出HD-PEA框架，基于学习直接处理非结构化点云，实现高效各向异性曲面逼近。",
+      "ta": "点云曲面重建是扫描资产管线关键，该框架可能提升实时处理性能。",
+      "src": "arXiv · cs.GR · 07-30",
+      "url": "https://arxiv.org/abs/2607.28855v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "世界模型正则化新方法",
+      "sum": "QQWorld方法通过分位数匹配实现世界模型正则化，提升模型泛化。",
+      "ta": "世界模型与游戏AI/模拟相关，正则化技术或可借鉴到程序化生成。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.28415"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "title": "Meshy T2快速原生网格生成",
+      "sum": "Meshy T2采用流匹配技术，实现快速原生网格生成，无需中间表示。",
+      "ta": "原生网格生成直接服务3D资产生成流程，流匹配方法值得关注。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.28675"
     }
   ],
   "flashbackTitle": "",
