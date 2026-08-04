@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月3日 · 周一",
+  "date": "2026年8月4日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>交互式生成运动编辑</em> / <em>Meshy T2快速原生网格生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>材质感知3D部件分解</em> / <em>自回归绑定模型适配植物骨架</em> / <em>多智能体系统生成粒子特效</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -118,47 +118,149 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "弹性曲线几何力学新解",
-      "sum": "论文探讨弹性杆平衡态曲线，与力学、几何及计算机图形学深度关联。",
-      "ta": "弹性曲线是布料/头发模拟的数学基础，可关注其约束求解新思路。",
-      "src": "arXiv · cs.GR · 07-31",
-      "url": "https://arxiv.org/abs/2607.29654v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "title": "交互式生成运动编辑",
-      "sum": "提出基于调度修复的交互式生成运动编辑，支持大规模结构修改。",
-      "ta": "直接命中TA动画工作流，可大幅提升动作库修改效率，值得精读。",
-      "src": "arXiv · cs.GR · 07-31",
-      "url": "https://arxiv.org/abs/2607.29133v1"
+      "title": "分层符号色彩寻址系统",
+      "sum": "提出PTI，基于RGB立方体递归二分构建分层符号色彩寻址系统。",
+      "ta": "关注其分层色彩组织方式，或可启发材质与调色工具的数据结构设计。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.02460v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "高维点云各向异性曲面逼近",
-      "sum": "提出HD-PEA框架，基于学习直接处理非结构化点云，实现高效各向异性曲面逼近。",
-      "ta": "点云曲面重建是扫描资产管线关键，该框架可能提升实时处理性能。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28855v1"
+      "title": "傅里叶潜空间扩散生成TPMS",
+      "sum": "提出扩散框架，可控生成低残余平均曲率的三周期极小曲面结构。",
+      "ta": "TPMS在程序化纹理与体积建模中有潜力，值得关注其可控性方法。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.02151v1"
     },
     {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型正则化新方法",
-      "sum": "QQWorld方法通过分位数匹配实现世界模型正则化，提升模型泛化。",
-      "ta": "世界模型与游戏AI/模拟相关，正则化技术或可借鉴到程序化生成。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.28415"
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "稀疏负采样加速大规模图布局",
+      "sum": "提出SNAP-tFDP，用稀疏负采样实现大规模图布局的力导向放置。",
+      "ta": "图布局算法或可用于程序化生成中的节点网络可视化与调试。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01907v1"
     },
     {
       "cat": "ai",
       "imp": "hi",
-      "title": "Meshy T2快速原生网格生成",
-      "sum": "Meshy T2采用流匹配技术，实现快速原生网格生成，无需中间表示。",
-      "ta": "原生网格生成直接服务3D资产生成流程，流匹配方法值得关注。",
+      "rank": 1,
+      "title": "材质感知3D部件分解",
+      "sum": "提出PartMat，用单一全局潜变量实现材质感知的3D部件分解。",
+      "ta": "直接关联3D资产编辑工作流，按材质边界分解部件可提升资产可编辑性。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01825v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "非线性光谱预处理纳米显微",
+      "sum": "通过非线性光谱预处理，实现实验室级高保真叠层衍射纳米成像。",
+      "ta": "成像技术虽非游戏直接相关，但或可启发离线渲染中的细节捕捉。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01746v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "关键姿态锚定的流式手势生成",
+      "sum": "提出StreamTalk，用关键姿态锚定实现流式共语手势生成，避免误差累积。",
+      "ta": "实时角色动画领域相关，关键姿态锚定思路或可借鉴于动画状态机。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01643v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "语音驱动的表情化3D面部动画",
+      "sum": "提出ETHead，从语音生成富有表现力的3D面部动画与头部运动。",
+      "ta": "面部动画生成技术，对NPC对话表现力提升有潜在应用价值。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01605v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 2,
+      "title": "自回归绑定模型适配植物骨架",
+      "sum": "提出PlantRig，将自回归绑定模型适配到植物骨骼重建，处理非规范分支。",
+      "ta": "植物程序化生成与绑定是本行方向，此方法或可简化植被资产制作流程。",
+      "src": "arXiv · cs.GR · 08-02",
+      "url": "https://arxiv.org/abs/2608.01072v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "拓扑感知先验的3D部件分解",
+      "sum": "提出Hi-TOPS，用分层拓扑感知评分先验改进3D部件分解精度。",
+      "ta": "部件分解是资产编辑基础，拓扑感知先验或可提升复杂模型的分解质量。",
+      "src": "arXiv · cs.GR · 08-01",
+      "url": "https://arxiv.org/abs/2608.00767v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 3,
+      "title": "多智能体系统生成粒子特效",
+      "sum": "提出ParticleGen，用多智能体系统自动化生成高质量粒子特效。",
+      "ta": "粒子特效是TA核心工作，此系统或可显著降低特效制作门槛与成本。",
+      "src": "arXiv · cs.GR · 08-01",
+      "url": "https://arxiv.org/abs/2608.00629v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型基准测试WorldExam",
+      "sum": "提出WorldExam基准，从外观到反应性评估世界模型能力。",
+      "ta": "世界模型基准或可间接影响游戏AI与模拟环境的评估方法。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.28675"
+      "url": "https://huggingface.co/papers/2608.02603"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "人体中心图像数据集合成管线",
+      "sum": "提出Poplar，可扩展的以人为中心的图像数据集合成管线。",
+      "ta": "合成数据管线或可用于生成训练TA工具所需的标注图像数据。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.00440"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "光遇艺术深度访谈",
+      "sum": "thatgamecompany分享光遇的实时服务美术方向、Beyond引擎与Figma工作流。",
+      "ta": "了解大型实时服务游戏的美术管线与工具链，对TA工作流设计有参考价值。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/interview-a-deep-dive-into-the-art-of-sky-children-of-the-light-with-thatgamecompany/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "像素化水着色器效果奇特",
+      "sum": "展示一款像素化风格的水着色器，视觉效果引人注目。",
+      "ta": "像素化水效果或可启发风格化渲染中的水体表现。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/this-pixelated-water-shader-looks-weirdly-fascinating/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Grabbit 2编辑器内物理模拟",
+      "sum": "Grabbit 2在Unity编辑器内模拟物理，用于关卡设计与布景，处理碰撞。",
+      "ta": "编辑器内物理模拟可提升关卡布景效率，对TA工具链有直接参考。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/how-grabbit-2-simulates-physics-inside-the-unity-editor/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Houdini森林溪流模拟",
+      "sum": "艺术家用Houdini制作森林溪流液体模拟，并分享创作过程。",
+      "ta": "Houdini液体模拟案例，可参考其技术实现与艺术表现。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/stunning-forest-stream-simulation-made-with-houdini/"
     }
   ],
   "flashbackTitle": "",

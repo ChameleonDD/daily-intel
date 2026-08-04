@@ -2,8 +2,137 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-03 12:35",
+  "updated": "2026-08-04 12:18",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "分层符号色彩寻址系统",
+      "sum": "提出PTI，基于RGB立方体递归二分构建分层符号色彩寻址系统。",
+      "ta": "关注其分层色彩组织方式，或可启发材质与调色工具的数据结构设计。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.02460v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "傅里叶潜空间扩散生成TPMS",
+      "sum": "提出扩散框架，可控生成低残余平均曲率的三周期极小曲面结构。",
+      "ta": "TPMS在程序化纹理与体积建模中有潜力，值得关注其可控性方法。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.02151v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "稀疏负采样加速大规模图布局",
+      "sum": "提出SNAP-tFDP，用稀疏负采样实现大规模图布局的力导向放置。",
+      "ta": "图布局算法或可用于程序化生成中的节点网络可视化与调试。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01907v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 1,
+      "title": "材质感知3D部件分解",
+      "sum": "提出PartMat，用单一全局潜变量实现材质感知的3D部件分解。",
+      "ta": "直接关联3D资产编辑工作流，按材质边界分解部件可提升资产可编辑性。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01825v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "非线性光谱预处理纳米显微",
+      "sum": "通过非线性光谱预处理，实现实验室级高保真叠层衍射纳米成像。",
+      "ta": "成像技术虽非游戏直接相关，但或可启发离线渲染中的细节捕捉。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01746v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "关键姿态锚定的流式手势生成",
+      "sum": "提出StreamTalk，用关键姿态锚定实现流式共语手势生成，避免误差累积。",
+      "ta": "实时角色动画领域相关，关键姿态锚定思路或可借鉴于动画状态机。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01643v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 2,
+      "title": "自回归绑定模型适配植物骨架",
+      "sum": "提出PlantRig，将自回归绑定模型适配到植物骨骼重建，处理非规范分支。",
+      "ta": "植物程序化生成与绑定是本行方向，此方法或可简化植被资产制作流程。",
+      "src": "arXiv · cs.GR · 08-02",
+      "url": "https://arxiv.org/abs/2608.01072v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 3,
+      "title": "多智能体系统生成粒子特效",
+      "sum": "提出ParticleGen，用多智能体系统自动化生成高质量粒子特效。",
+      "ta": "粒子特效是TA核心工作，此系统或可显著降低特效制作门槛与成本。",
+      "src": "arXiv · cs.GR · 08-01",
+      "url": "https://arxiv.org/abs/2608.00629v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型基准测试WorldExam",
+      "sum": "提出WorldExam基准，从外观到反应性评估世界模型能力。",
+      "ta": "世界模型基准或可间接影响游戏AI与模拟环境的评估方法。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.02603"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "人体中心图像数据集合成管线",
+      "sum": "提出Poplar，可扩展的以人为中心的图像数据集合成管线。",
+      "ta": "合成数据管线或可用于生成训练TA工具所需的标注图像数据。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.00440"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "光遇艺术深度访谈",
+      "sum": "thatgamecompany分享光遇的实时服务美术方向、Beyond引擎与Figma工作流。",
+      "ta": "了解大型实时服务游戏的美术管线与工具链，对TA工作流设计有参考价值。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/interview-a-deep-dive-into-the-art-of-sky-children-of-the-light-with-thatgamecompany/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "像素化水着色器效果奇特",
+      "sum": "展示一款像素化风格的水着色器，视觉效果引人注目。",
+      "ta": "像素化水效果或可启发风格化渲染中的水体表现。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/this-pixelated-water-shader-looks-weirdly-fascinating/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Grabbit 2编辑器内物理模拟",
+      "sum": "Grabbit 2在Unity编辑器内模拟物理，用于关卡设计与布景，处理碰撞。",
+      "ta": "编辑器内物理模拟可提升关卡布景效率，对TA工具链有直接参考。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/how-grabbit-2-simulates-physics-inside-the-unity-editor/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Houdini森林溪流模拟",
+      "sum": "艺术家用Houdini制作森林溪流液体模拟，并分享创作过程。",
+      "ta": "Houdini液体模拟案例，可参考其技术实现与艺术表现。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/stunning-forest-stream-simulation-made-with-houdini/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -311,15 +440,6 @@ window.INTEL_RECENT = {
       "ta": "将游戏求解器融入LLM训练，可能提升游戏AI决策能力。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.25308"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "星战风3D场景解析",
-      "sum": "Matvey Meleshko分享Ember Bazaar场景制作流程，含Marvelous Designer布料和材质。",
-      "ta": "可参考其布料模拟和材质写实化工作流，适合场景美术学习。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/breakdown-creating-a-star-wars-inspired-arabian-style-3d-scene-with-sci-fi-elements/"
     },
     {
       "cat": "flow",
@@ -1696,124 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "端侧生成相机运动可用于快速预览，但实时性存疑。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.03803"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "行星飞船动画概念",
-      "sum": "用整个行星构建巨型飞船的史诗动画概念。",
-      "ta": "视觉灵感参考，无直接技术细节。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/epic-animation-of-giant-spaceship-built-from-entire-planets/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "免费Maya面部绑定变形器",
-      "sum": "Zhenggang Deng发布免费自定义Maya变形器，用于高端面部绑定。",
-      "ta": "免费面部绑定工具可提升角色管线效率，需测试兼容性。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/free-custom-maya-deformer-for-high-end-facial-rigging/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "玩具手柄改Mario Kart",
-      "sum": "开发者将Fisher-Price玩具手柄改造成Mario Kart陀螺仪游戏手柄。",
-      "ta": "硬件改造趣味项目，与TA工作流无关。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/developer-turns-fisher-price-toy-controller-into-a-mario-kart-gyro-gamepad/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "风格化角色面部绑定测试",
-      "sum": "3D短片《Noah and Jade》的风格化角色面部绑定测试。",
-      "ta": "风格化绑定案例参考，无新技术细节。",
-      "src": "80 Level · 07-09",
-      "url": "https://80.lv/articles/facial-rig-tests-for-stylized-characters-in-3d-short-film/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "游戏媒体新站Respec上线",
-      "sum": "Eurogamer和VG247老将推出独立游戏媒体Respec。",
-      "ta": "行业动态，可能影响游戏资讯获取渠道。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/business/eurogamer-and-vg247-veterans-launch-new-independent-site"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "风险规避游戏行业边缘化开发者",
-      "sum": "Nazih Fares的卡牌游戏因行业风险规避难获融资。",
-      "ta": "反映行业融资困境，与TA工作无直接关联。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/production/the-game-industry-is-failing-marginalized-developers"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "title": "黑曜石工作室裁员52+人",
-      "sum": "WARN通知确认黑曜石至少52名员工被裁，涉及Pentiment和天外世界团队。",
-      "ta": "3A工作室裁员影响行业信心，可能波及项目外包需求。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/business/report-obsidian-losing-around-one-quarter-of-its-staff-to-xbox-reset-"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "title": "Xbox裁减379名Zenimax员工",
-      "sum": "Xbox在马里兰州裁减379名Zenimax员工，含213名ESO开发者。",
-      "ta": "大规模裁员影响游戏行业生态，可能影响UE5项目资源。",
-      "src": "Game Developer · 07-09",
-      "url": "https://www.gamedeveloper.com/business/xbox-had-laid-off-379-zenimax-workers-in-maryland"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Maya动画层节点自连接Bug",
-      "sum": "Maya 2024.2中引用绑定的动画层节点保存重开后自连接循环。",
-      "ta": "直接影响绑定和动画管线，需关注修复或规避。",
-      "src": "Tech-Artists · 07-09",
-      "url": "https://www.tech-artists.org/t/bug-animation-layer-nodes-self-connect-cycle-after-save-reopen-on-referenced-rigs-maya-2024-2/18445"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "SPEAR 仿真器发布",
-      "sum": "SPEAR 是用于具身 AI 研究的光真实感交互仿真器。",
-      "ta": "关注其渲染管线与实时性能，可能影响虚拟数据生成工作流。",
-      "src": "arXiv · cs.GR · 07-07",
-      "url": "https://arxiv.org/abs/2607.06701v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "WildCity 城市级测试床",
-      "sum": "WildCity 是真实城市规模的渲染、仿真与空间智能测试平台。",
-      "ta": "可作为程序化城市生成与实时渲染的参考基准。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.06838"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "黑旗重制版无缝世界技术",
-      "sum": "育碧谈黑旗重制版：Anvil 引擎升级，移除加载屏，现代化航海。",
-      "ta": "直接相关：Anvil 引擎开放世界流式加载与性能优化细节。",
-      "src": "80 Level · 07-08",
-      "url": "https://80.lv/articles/interview-the-tech-behind-assassin-s-creed-black-flag-resynced-s-seamless-open-world/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "黑曜石将开发新辐射",
-      "sum": "微软取消 Avowed 续作，黑曜石转向新辐射项目。",
-      "ta": "行业动向，可能影响后续引擎/工具需求。",
-      "src": "80 Level · 07-08",
-      "url": "https://80.lv/articles/fallout-new-vegas-studio-obsidian-is-reportedly-making-a-new-fallout-game/"
     }
   ]
 };
