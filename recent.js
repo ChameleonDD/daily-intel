@@ -2,8 +2,80 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-04 12:18",
+  "updated": "2026-08-05 12:16",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "JoyAI 实时视频编辑模型",
+      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
+      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.03974"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "title": "混元3D Buffalo 统一生成",
+      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
+      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.02711"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "世界模型综述引路",
+      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
+      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.02713"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity地牢环境资产包",
+      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
+      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
+      "src": "80 Level · 08-04",
+      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "MetaHuman角色制作解析",
+      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
+      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
+      "src": "80 Level · 08-04",
+      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "游戏工作室弃用旧版控",
+      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
+      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
+      "src": "80 Level · 08-04",
+      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏行业困难基金募款",
+      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
+      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
+      "src": "Game Developer · 08-04",
+      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "腾讯Lightspeed LA裁员",
+      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
+      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
+      "src": "Game Developer · 08-04",
+      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -467,15 +539,6 @@ window.INTEL_RECENT = {
       "ta": "对AI在游戏管线中的定位有参考价值，但无具体技术方案。",
       "src": "80 Level · 07-29",
       "url": "https://80.lv/articles/game-ai-expert-explains-where-ai-actually-belongs-in-game-development-and-the-risks/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "《Last Sentinel》开发商因项目方向调整裁员。",
-      "ta": "行业动态，关注腾讯旗下工作室变动。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
     },
     {
       "cat": "biz",
@@ -1523,15 +1586,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Unity程序化节点网格框架",
-      "sum": "Viktor Grigorev分享基于节点的程序化网格框架构建方法。",
-      "ta": "类似Houdini的节点化工作流，可借鉴到UE程序化生成工具链。",
-      "src": "80 Level · 07-14",
-      "url": "https://80.lv/articles/building-procedural-node-based-mesh-framework-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "Material Maker 1.7登陆Steam",
       "sum": "程序化材质工具Material Maker发布1.7版本并上架Steam。",
       "ta": "免费程序化材质工具更新，适合快速原型和材质库扩展。",
@@ -1762,60 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "Mod 生态变化影响游戏内容生产与工具需求。",
       "src": "Game Developer · 07-10",
       "url": "https://www.gamedeveloper.com/pc/nexusmods-ceo-digs-into-the-dynamics-of-video-game-modding-ft-victor-folmann"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "交互式人体动作生成",
-      "sum": "ARDY用自回归扩散+混合表示实现实时3D人体动作生成。",
-      "ta": "实时动作生成可加速角色动画原型，但需验证UE5管线集成度。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08741v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "物理仿真统一网格重建",
-      "sum": "HoloTetSphere直接优化体积基元，绕过表面提取+四面体化两步流程。",
-      "ta": "直接输出物理就绪网格，可简化程序化资产到仿真管线的转换。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08398v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "PBR条件视频重光照",
-      "sum": "LightCrafter用PBR条件扩散模型实现可控且时序一致的重光照。",
-      "ta": "PBR条件控制可提升视频重光照的物理准确性，对过场动画有用。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08016v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时交互视频生成模型",
-      "sum": "Vidu S1发布实时交互式视频生成模型。",
-      "ta": "实时视频生成可能用于游戏内动态过场，但当前质量未知。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.03118"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型推理加速草稿",
-      "sum": "Flash-BoN为扩散模型提供即时草稿以加速推理。",
-      "ta": "推理加速技术可降低生成式工具在游戏工作流中的延迟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.04461"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "端侧图像转视频相机运动",
-      "sum": "CineMobile在设备上实现图像到视频的扩散，生成电影级相机运动。",
-      "ta": "端侧生成相机运动可用于快速预览，但实时性存疑。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.03803"
     }
   ]
 };
