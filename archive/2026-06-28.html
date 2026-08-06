@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TA 技术情报 · 为留存而读</title>
+<style>
+  :root{
+    --paper:#f7f5f0;
+    --card:#fffefb;
+    --ink:#23211c;
+    --sub:#6f6a5e;
+    --hint:#a8a294;
+    --line:#e7e2d6;
+    --line2:#d8d2c4;
+    --hi:#c2452f;
+    --mid:#c98a1e;
+    --lo:#5f8a3a;
+    --save:#9a6cff;
+    --saveink:#5b3ec9;
+    --c-x:#8a4fb0;
+    --font:"Songti SC","Source Han Serif SC",Georgia,"PingFang SC","Microsoft YaHei",serif;
+    --sans:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+
+  .top{position:sticky;top:0;z-index:20;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top-in{max-width:760px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px}
+  .mark{width:30px;height:30px;border-radius:8px;background:var(--ink);color:var(--paper);font-family:var(--font);display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+  .top h1{font-family:var(--font);font-size:18px;font-weight:600;letter-spacing:.5px}
+  .top .meta{font-size:12px;color:var(--hint);margin-top:1px}
+  .savebtn{margin-left:auto;font-size:12.5px;color:var(--saveink);background:#f1ecff;border:1px solid #e2d8ff;padding:6px 13px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:5px}
+  .savebtn b{font-weight:600}
+
+  .stalebar{max-width:760px;margin:14px auto 0;padding:0 22px}
+  .stalebox{background:#fbe7e3;border:1px solid #eebcb0;border-radius:6px;padding:11px 15px;font-family:var(--sans);font-size:12.5px;color:#9a3c25;line-height:1.6}
+  .stalebox b{font-weight:600}
+
+  .filters{max-width:760px;margin:0 auto;padding:16px 22px 4px;display:flex;gap:8px;flex-wrap:wrap}
+  .f{font-size:13px;color:var(--sub);background:transparent;border:1px solid var(--line2);padding:6px 14px;border-radius:18px;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:6px}
+  .f:hover{border-color:var(--ink);color:var(--ink)}
+  .f.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .f .dotmini{width:7px;height:7px;border-radius:50%}
+  .f .num{font-size:11px;opacity:.6}
+
+  .stream{max-width:760px;margin:0 auto;padding:18px 22px 80px}
+
+  .daysum{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--ink);border-radius:4px;padding:18px 20px;margin-bottom:26px}
+  .daysum .k{font-family:var(--sans);font-size:11px;letter-spacing:1.5px;color:var(--hint);text-transform:uppercase;margin-bottom:8px}
+  .daysum p{font-family:var(--font);font-size:16px;line-height:1.85;color:var(--ink)}
+  .daysum em{font-style:normal;background:linear-gradient(transparent 62%,#fff0a6 62%);padding:0 2px}
+
+  .secline{display:flex;align-items:center;gap:10px;margin:32px 0 14px}
+  .secline .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+  .secline .lbl{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.5px;color:var(--ink)}
+  .secline .cnt{font-family:var(--sans);font-size:11px;color:var(--hint)}
+  .secline .ln{flex:1;height:1px;background:var(--line)}
+
+  .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px 16px 22px;margin-bottom:14px;transition:.18s;overflow:hidden}
+  .card:hover{border-color:var(--line2);transform:translateY(-1px)}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+  .card.hi::before{background:var(--hi)} .card.mid::before{background:var(--mid)} .card.lo::before{background:var(--lo)}
+
+  .c-row1{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  .imp{font-family:var(--sans);font-size:10.5px;font-weight:600;padding:2px 7px;border-radius:4px;letter-spacing:.5px;display:inline-flex;align-items:center;gap:4px}
+  .imp::before{content:"";width:6px;height:6px;border-radius:50%}
+  .imp.hi{color:var(--hi);background:#f7e7e3}.imp.hi::before{background:var(--hi)}
+  .imp.mid{color:var(--mid);background:#f7eed8}.imp.mid::before{background:var(--mid)}
+  .imp.lo{color:var(--lo);background:#e9f1df}.imp.lo::before{background:var(--lo)}
+  .chtag{font-family:var(--sans);font-size:11px;color:var(--sub);display:inline-flex;align-items:center;gap:5px}
+  .chtag .cdot{width:7px;height:7px;border-radius:50%;flex:0 0 auto}
+  .src{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+  .xhandle{font-family:var(--sans);font-size:11.5px;font-weight:600;color:var(--c-x);display:inline-flex;align-items:center;gap:5px}
+  .xhandle::before{content:"𝕏";font-size:12px;color:var(--c-x);font-weight:700}
+  .xwho{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+
+  .c-title{font-family:var(--font);font-size:20px;font-weight:600;line-height:1.4;letter-spacing:.3px}
+  .c-sum{font-family:var(--font);font-size:15px;line-height:1.8;color:#403c33;margin-top:8px}
+
+  .c-ta{margin-top:12px;background:#f3f0e8;border-radius:5px;padding:10px 13px;display:flex;gap:9px}
+  .c-ta .lab{font-family:var(--sans);font-size:11px;font-weight:600;color:#7a5a14;background:#f0e2bf;border-radius:4px;padding:2px 7px;height:fit-content;flex:0 0 auto;letter-spacing:.5px}
+  .c-ta .txt{font-family:var(--sans);font-size:13px;line-height:1.65;color:#5a5142}
+
+  .c-foot{display:flex;align-items:center;margin-top:13px;padding-top:11px;border-top:1px dashed var(--line2)}
+  .keep{font-family:var(--sans);font-size:12.5px;color:var(--sub);background:transparent;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:3px 0}
+  .keep .ic{width:15px;height:15px;border:1.5px solid var(--hint);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:.15s}
+  .keep:hover .ic{border-color:var(--saveink)}
+  .keep.kept .ic{background:var(--save);border-color:var(--save)}
+  .keep.kept .ic::after{content:"✓";color:#fff;font-size:11px}
+  .keep.kept{color:var(--saveink)}
+  .link{margin-left:auto;font-family:var(--sans);font-size:12px;color:var(--hint);text-decoration:none}
+  .link:hover{color:var(--ink)}
+
+  .review{position:fixed;right:0;top:0;bottom:0;width:340px;max-width:88vw;background:var(--card);border-left:1px solid var(--line2);transform:translateX(100%);transition:.28s;z-index:30;display:flex;flex-direction:column}
+  .review.open{transform:none;box-shadow:-12px 0 40px rgba(0,0,0,.08)}
+  .rv-h{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center}
+  .rv-h h3{font-family:var(--font);font-size:16px;font-weight:600}
+  .rv-h .x{margin-left:auto;cursor:pointer;color:var(--hint);font-size:20px;line-height:1;background:none;border:none}
+  .rv-note{font-family:var(--sans);font-size:11.5px;color:var(--hint);padding:10px 20px;line-height:1.6;border-bottom:1px solid var(--line)}
+  .rv-list{flex:1;overflow-y:auto;padding:8px 14px}
+  .rv-item{border:1px solid var(--line);border-radius:5px;padding:11px 12px;margin-bottom:9px}
+  .rv-item .t{font-family:var(--font);font-size:14px;font-weight:600;line-height:1.4}
+  .rv-item .when{font-family:var(--sans);font-size:11px;color:var(--lo);margin-top:5px;display:flex;align-items:center;gap:5px}
+  .rv-empty{font-family:var(--sans);font-size:13px;color:var(--hint);text-align:center;padding:40px 20px;line-height:1.7}
+  .mask{position:fixed;inset:0;background:rgba(35,33,28,.18);z-index:25;opacity:0;pointer-events:none;transition:.2s}
+  .mask.on{opacity:1;pointer-events:auto}
+
+  .srcbar{max-width:760px;margin:0 auto;padding:0 22px}
+  .srcbox{background:#f1ede4;border:1px solid var(--line);border-radius:6px;padding:13px 16px;font-family:var(--sans);font-size:11.5px;color:var(--sub);line-height:1.7}
+  .srcbox b{color:var(--ink);font-weight:600}
+  .srcbox .miss{color:#b5502f}
+
+  .end{text-align:center;font-family:var(--sans);font-size:11.5px;color:var(--hint);margin-top:24px;line-height:1.7}
+  @media(max-width:560px){.c-title{font-size:18px}.daysum p{font-size:15px}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <div class="mark">識</div>
+    <div>
+      <h1>TA 技术情报</h1>
+      <div class="meta" id="metaLine">为留存而读，不为刷新而读</div>
+    </div>
+    <button class="savebtn" id="openRv">复习清单 <b id="rvCount">0</b></button>
+  </div>
+</div>
+
+<div class="stalebar" id="staleBar" style="display:none">
+  <div class="stalebox"><b>X 登录态已过期</b> —— 本期 X 动态沿用上次抓取的数据。需运行 <b>x_login.py</b> 重新登录一次，下次即可自动更新。</div>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<main class="stream" id="stream"></main>
+
+<div class="mask" id="mask"></div>
+<aside class="review" id="review">
+  <div class="rv-h"><h3>复习清单</h3><button class="x" id="closeRv">×</button></div>
+  <div class="rv-note">收藏的卡片会进入间隔重复队列：1天 → 7天 → 14天 → 30天。这是和普通日报最大的区别——读过不等于记住。</div>
+  <div class="rv-list" id="rvList"><div class="rv-empty" id="rvEmpty">还没有收藏。<br>读到"该停下精读"的卡片时，点一下"收藏入复习"。</div></div>
+</aside>
+
+<!-- 数据层：自动化每天只重写这一个文件 -->
+<script>
+// daily-intel 数据层 —— 由 run.py 自动生成，请勿手改。
+// 骨架 index.html 永不动；此文件每天重写。
+// 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
+
+window.INTEL_DATA = {
+  "date": "2026年6月28日 · 周日",
+  "tagline": "为留存而读，不为刷新而读",
+  "todayHtml": "周日不抓 X，沿用上次大佬动态。周末新闻稀，多数源停在 06-26。今日无地震级首发：技术面 <em>外星岛屿草原植被拆解</em> 仍与你的植被工作流最贴；图形学 <em>超网络做神经纹理压缩 EGSR</em> 值得停下精读；新出 <em>VFX/动画管线可视化工作流构建器</em> 与 <em>两篇世界模型新论文</em>。其余按重要性自动排序。",
+  "channels": [
+    {
+      "key": "x",
+      "name": "X 动态",
+      "color": "#8a4fb0",
+      "desc": "你关注的大佬 · 近期本人发布"
+    },
+    {
+      "key": "tech",
+      "name": "游戏技术",
+      "color": "#6a52a3",
+      "desc": "虚幻 / 实时渲染 / 美术工作流"
+    },
+    {
+      "key": "flow",
+      "name": "TA 工作流",
+      "color": "#b06a2e",
+      "desc": "Tech-Artists 论坛 · 工具/管线实操"
+    },
+    {
+      "key": "biz",
+      "name": "游戏行业",
+      "color": "#3f8a6e",
+      "desc": "工作室 / 商业 / 发行"
+    },
+    {
+      "key": "gfx",
+      "name": "图形学前沿",
+      "color": "#2f7d8a",
+      "desc": "arXiv / SIGGRAPH 论文"
+    },
+    {
+      "key": "ai",
+      "name": "AI 技术",
+      "color": "#3b6fb0",
+      "desc": "仅保留与游戏/实时/3D 相关"
+    }
+  ],
+  "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "外星岛屿草原植被拆解",
+      "sum": "Morgane Muller 拆解外星岛屿草原多样化 3D 植被制作，含各类植物建模与纹理流程。",
+      "ta": "原文是为外星岛屿做多样化草原植被的拆解，含 SpeedTree+Substance，与你的植被填充/纹理工作流直接相关。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/setting-up-vegetation-for-alien-island-in-3d"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "超网络做神经纹理压缩",
+      "sum": "用超网络（Hypernetworks）实现神经纹理压缩，EGSR 2026。",
+      "ta": "原文是超网络驱动的神经纹理压缩 EGSR 研究，做大体量贴图存储/运行时解压时可关注其压缩表示。",
+      "src": "arXiv cs.GR · 06-26",
+      "url": "https://arxiv.org/abs/2606.26913"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 3,
+      "title": "VFX管线可视化构建器",
+      "sum": "Tech-Artists 放出面向 VFX/动画管线的可视化工作流构建器，图形化搭建处理流程。",
+      "ta": "原文是 VFX/动画管线的可视化工作流构建工具，做自动化管线/批处理编排时可参考其节点化搭建方式。",
+      "src": "Tech-Artists · 06-27",
+      "url": "https://www.tech-artists.org/t/visual-workflow-builder-for-vfx-animation-pipelines/18433"
+    },
+    {
+      "cat": "x",
+      "imp": "hi",
+      "title": "UE5.8实验性网格地形",
+      "sum": "Aaltonen 转发：UE5.8 新增实验性 Mesh Terrain，不再受限高度图，支持世界分区流送。",
+      "ta": "原文是 UE5.8 Mesh Terrain 实验特性，摆脱 heightfield 限制，与你做的植被填充/地形管线直接相关。",
+      "handle": "@SebAaltonen",
+      "who": "转发 · 06-17",
+      "url": "https://x.com/UnrealEngine/status/2067249231887225179"
+    },
+    {
+      "cat": "x",
+      "imp": "hi",
+      "title": "单图生成完整3D几何",
+      "sum": "World Tracing：输入一张图，物体/场景/动态世界以完整几何浮现，每点追溯回像素。",
+      "ta": "原文是单图到完整3D几何的生成，若稳定，对快速搭场景白模和资产原型有直接价值。",
+      "handle": "@BenMildenhall",
+      "who": "Ben Mildenhall · 06-12",
+      "url": "https://x.com/HaoZhang623/status/2065455226791002472"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "笼形结构纹理迁移",
+      "sum": "Cage-based Texture Transfer 结合笼形结构与几何滤波实现纹理迁移，SIGGRAPH 2026。",
+      "ta": "原文是基于笼形与几何滤波的纹理迁移 SIGGRAPH 研究，做跨模型纹理复用/贴图传递时可参考其几何滤波法。",
+      "src": "arXiv cs.GR · 06-25",
+      "url": "https://arxiv.org/abs/2606.25220"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "title": "UE全流程做翼羽传奇动画",
+      "sum": "Shining Isle 把《翼羽传奇》整条动画制作迁入 UE，引擎内绑定/动画/即时审查提速迭代。",
+      "ta": "原文是动画制作全流程迁入 UE 的案例，含引擎内绑定与 Sequencer 审查，做实时动画/影视化管线时可参考。",
+      "src": "Unreal Engine · 06-24",
+      "url": "https://www.unrealengine.com/zh-CN/spotlights/shining-isle-productions-goes-all-in-on-unreal-engine-for-the-wingfeather-saga"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "HiPR分层渐进渲染",
+      "sum": "HiPR 提出分层渐进式渲染，在重型场景下提供即时视觉反馈。",
+      "ta": "原文是分层渐进渲染做即时反馈的图形学研究，做大场景编辑器实时预览/渐进出图时可参考其分层策略。",
+      "src": "arXiv cs.GR · 06-26",
+      "url": "https://arxiv.org/abs/2606.26612"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "title": "Keywords旧金山裁128人",
+      "sum": "游戏服务公司 Keywords 在旧金山裁员 128 人，受影响岗位与部门暂未明确。",
+      "ta": "原文是 Keywords 旧金山裁员 128 人的报道，延续 3A 服务外包行业收缩，与你关注的行业人事动向相关。",
+      "src": "Game Developer · 06-26",
+      "url": "https://www.gamedeveloper.com/business/keywords-has-laid-off-128-employees-in-san-francisco"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "WebXR汽车配置免像素流",
+      "sum": "Miris 不用 Pixel Streaming 做交互汽车配置器，单 1.2GB 源资产把 HDR 材质流到桌面/平板/Vision Pro。",
+      "ta": "原文是不依赖云 GPU 像素流、把高保真材质流到多端的实现，做轻量化实时配置/Web 端渲染时可参考其方案。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/miris-built-a-car-configurator-without-pixel-streaming-here-s-what-they-found"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "精灵塔沉浸式灯光场景",
+      "sum": "Daniel Novillo 放出精灵塔灯光场景，呈现沉浸式氛围光照。",
+      "ta": "原文是 UE 内精灵塔氛围灯光场景，做环境光照/氛围营造时可作参照。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/take-a-look-at-this-beautiful-and-immersive-elven-tower-lighting-scene"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "堕落之主2用UE5提质",
+      "sum": "CI Games 用 UE5 的 Lumen、PCG 与 Gameplay Ability System 打造开放黑暗奇幻魂类续作《堕落之主2》。",
+      "ta": "原文是 UE5 Lumen+PCG+GAS 做开放魂类的开发访谈，PCG 程序化内容生成与你的植被/场景工作流相关。",
+      "src": "Unreal Engine · 06-23",
+      "url": "https://www.unrealengine.com/zh-CN/developer-interviews/lords-of-the-fallen-ii-takes-the-dark-fantasy-action-rpg-sequel-to-new-heights-with-ue5"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Epic六月学习含网格地形",
+      "sum": "Epic 六月免费学习内容上新：MetaHuman、网格体地形（Mesh Terrain）创建技巧及手机过场教程。",
+      "ta": "原文是 Epic 官方网格体地形等学习内容，与你关注的 UE5.8 Mesh Terrain/地形管线直接相关，可取官方教程。",
+      "src": "Unreal Engine · 06-26",
+      "url": "https://www.unrealengine.com/zh-CN/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender手指一键贴合",
+      "sum": "一款 Blender 插件给手指骨骼加碰撞感知，可一键把手指对齐贴合到任意物体。",
+      "ta": "原文是手指碰撞感知一键贴合的 Blender 工具，做角色手部抓握/接触绑定时可直接试用。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/one-click-blender-tool-for-finger-alignment-to-any-object"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Materialist材质管理工具",
+      "sum": "Tech-Artists 放出免费工具 Materialist：Maya 内的材质管理 shelf。",
+      "ta": "原文是 Maya 材质管理 shelf 免费工具，做材质整理/批量赋材质时可直接试用。",
+      "src": "Tech-Artists · 06-22",
+      "url": "https://www.tech-artists.org/t/free-tool-materialist-a-material-manager-shelf-for-maya/18429"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Groomist一键毛发构建",
+      "sum": "Tech-Artists 放出免费工具 Groomist：Maya 内一键构建 Ornatrix 毛发。",
+      "ta": "原文是一键 Ornatrix 毛发构建免费工具，做角色毛发/groom 管线时可直接试用。",
+      "src": "Tech-Artists · 06-22",
+      "url": "https://www.tech-artists.org/t/free-tool-groomist-a-one-click-ornatrix-groom-builder-for-maya/18427"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE绑定中SplineIK扭转",
+      "sum": "Tech-Artists 帖讨论在 UE Control Rig 中实现 SplineIK 的扭转（twist）处理。",
+      "ta": "原文是 UE Control Rig 内 SplineIK 扭转的实操讨论，做引擎内绑定/程序化变形时可对照其方案。",
+      "src": "Tech-Artists · 06-20",
+      "url": "https://www.tech-artists.org/t/twist-for-splineik-in-ue-control-rig/18423"
+    },
+    {
+      "cat": "x",
+      "imp": "mid",
+      "title": "Epic布道师呼吁设性能岗",
+      "sum": "Ari Arnbjörnsson 在 Unreal Fest 见到职衔含 Performance 的人，呼吁工作室专设性能优化岗。",
+      "ta": "原文是 Epic 布道师主张把性能优化制度化、贯穿研发全程，做引擎性能调优时值得参考其团队配置观点。",
+      "handle": "@flassari",
+      "who": "Ari Arnbjörnsson · 06-24",
+      "url": "https://x.com/flassari/status/2069690018059211176"
+    },
+    {
+      "cat": "x",
+      "imp": "mid",
+      "title": "Codex群驱动机器人研究",
+      "sum": "Jim Fan 发布 ENPIRE：给 8 个 Codex agent 一队机器人加 GPU 和 token 预算自主解任务。",
+      "ta": "原文是 AI agent 集群自主驱动真实机器人的实验，关注“AI 进开发/生产管线”的可看其调度思路。",
+      "handle": "@DrJimFan",
+      "who": "Jim Fan · 06-16",
+      "url": "https://x.com/DrJimFan/status/2066921736369766762"
+    },
+    {
+      "cat": "x",
+      "imp": "mid",
+      "title": "UE5 State Trees敌人生成",
+      "sum": "Tom Looman 给开源项目 Orion 加了 C++ 加蓝图混合做的 State Trees 敌人生成总管。",
+      "ta": "原文是 UE5 State Trees 的实操案例，做敌人波次/生成调度可直接对照他的开源实现。",
+      "handle": "@t_looman",
+      "who": "Tom Looman · 06-08",
+      "url": "https://x.com/t_looman/status/2063965540297605174"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "等变流匹配生成网格",
+      "sum": "MeshFlow 用等变流匹配（Equivariant Flow Matching）做三维网格生成，SIGGRAPH 2026。",
+      "ta": "原文是网格直接生成的 SIGGRAPH 研究，与你关注的程序化资产/网格生成方向直接相关，可看其流匹配法。",
+      "src": "arXiv cs.GR · 06-23",
+      "url": "https://arxiv.org/abs/2606.23489"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "多视角图像提取神经材质",
+      "sum": "NVIDIA 实验室从多视角图像中提取神经材质（NeuMatEx），用于重渲染与材质复用。",
+      "ta": "原文是从多视图反求神经材质的方法，做实拍转可用材质/PBR 反求时可关注其材质表示。",
+      "src": "arXiv cs.GR · 06-26",
+      "url": "https://arxiv.org/abs/2606.26715"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯泼溅可视分析工具",
+      "sum": "Vis4GS 提出面向 3D 高斯泼溅重建的可视化分析工具，辅助诊断重建质量。",
+      "ta": "原文是 3DGS 重建的可视分析工具，做泼溅资产调试/质量定位时可关注其可视化分析手段。",
+      "src": "arXiv cs.GR · 06-26",
+      "url": "https://arxiv.org/abs/2606.26985"
+    },
+    {
+      "cat": "x",
+      "imp": "mid",
+      "title": "Looman写性能优化新文",
+      "sum": "Tom Looman 翻阅 UE5.8 发布说明，准备撰写新一篇 Performance Highlights。",
+      "ta": "原文是 Looman 预告 UE5.8 性能优化文，做引擎性能调优时可留意其后续 release notes 拆解。",
+      "handle": "@t_looman",
+      "who": "Tom Looman · 06-17",
+      "url": "https://x.com/t_looman/status/2067352643928813600"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "世界模型幻觉可预防",
+      "sum": "UCSD 研究指出世界模型中的幻觉现象可预测且可预防，给出预防机制。",
+      "ta": "原文是世界模型幻觉可预测可防的研究，关注可交互世界模型稳定性时可参考其预防方法。",
+      "src": "HuggingFace · 06-27",
+      "url": "https://huggingface.co/papers/2606.27326"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "上下文世界建模控机器人",
+      "sum": "In-Context World Modeling 提出面向机器人控制的上下文内世界建模方法。",
+      "ta": "原文是上下文世界建模做机器人控制，关注可交互世界模型/智能体在引擎内决策时可看其建模思路。",
+      "src": "HuggingFace · 06-27",
+      "url": "https://huggingface.co/papers/2606.26025"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "PhysiFormer世界空间力学",
+      "sum": "PhysiFormer 用 Transformer 学习在世界空间中模拟力学，面向物理仿真。",
+      "ta": "原文是学习世界空间力学的 Transformer 仿真模型，做可交互物理/学习式仿真时可关注其建模思路。",
+      "src": "HuggingFace · 06-27",
+      "url": "https://huggingface.co/papers/2606.27364"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "KRAFTON做ACE可协玩角色",
+      "sum": "KRAFTON 为《PUBG》打造 NVIDIA ACE 驱动的可协同游玩 AI 角色 PUBG Ally，突破固定对话限制。",
+      "ta": "原文是 ACE 在 PUBG 内做可协玩 AI 角色的访谈，对应引擎内端侧 AI 队友集成，可看其落地方案。",
+      "src": "NVIDIA · 06-25",
+      "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Vulkan描述符堆端到端支持",
+      "sum": "NVIDIA 介绍 Vulkan Descriptor Heaps 端到端支持，简化光线/像素/几何/纹理的资源绑定。",
+      "ta": "原文是 Vulkan 描述符堆资源绑定简化的实时图形内容，做自研渲染管线/绑定模型时可关注其用法。",
+      "src": "NVIDIA · 06-25",
+      "url": "https://developer.nvidia.com/blog/streamlining-resource-binding-with-end-to-end-support-for-vulkan-descriptor-heaps/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "本周行业动态汇总58",
+      "sum": "Patch Notes #58 汇总 Steam Machine 定价争议、育碧再裁员、Xbox 又一次涨价等本周动态。",
+      "ta": "原文是本周行业要闻汇总，集中看一眼平台定价与裁员趋势，可速览。",
+      "src": "Game Developer · 06-26",
+      "url": "https://www.gamedeveloper.com/business/steam-machine-sticker-shock-even-more-ubisoft-layoffs-and-another-xbox-price-hike-patch-notes-58"
+    },
+    {
+      "cat": "x",
+      "imp": "lo",
+      "title": "Gemini视频模型登顶Arena",
+      "sum": "Gemini Omni Flash 在 Video Arena 文生/图生视频双榜登顶，文生视频大幅领先 Veo 3.1。",
+      "ta": "原文是视频生成模型榜单更新，视频生成迭代速度可作为“AI 生成素材”能力上限的参照。",
+      "handle": "@poolio",
+      "who": "Ben Poole · 06-11",
+      "url": "https://x.com/arena/status/2065112147093545333"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Temtem做大型多人收集",
+      "sum": "Crema 谈《Temtem: Pioneers》融合生物收集、生存建造与实时战斗的玩法与技术挑战。",
+      "ta": "原文是大型多人生物收集+生存建造的开发访谈，做联网玩法/系统设计时可作参照。",
+      "src": "80 Level · 06-26",
+      "url": "https://80.lv/articles/temtem-developing-massively-multiplayer-creature-collection-adventure"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "持久褶皱服装动力学",
+      "sum": "自监督学习服装动力学，能保持持久性褶皱（Persistent Wrinkles），ECCV 2026。",
+      "ta": "原文是自监督服装动力学保褶皱的方法，做布料模拟/角色服装动画时可关注其褶皱保持思路。",
+      "src": "arXiv cs.GR · 06-25",
+      "url": "https://arxiv.org/abs/2606.25065"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "进化逆设计群体运动",
+      "sum": "EvoFlock 用进化式逆向设计多智能体群集运动，作者为 Boids 算法提出者 Craig Reynolds。",
+      "ta": "原文是进化逆设计群集运动的研究，做人群/鸟群类群体行为模拟时可关注其逆向设计法。",
+      "src": "arXiv cs.GR · 06-25",
+      "url": "https://arxiv.org/abs/2606.25280"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "万智牌竞技场组建工会",
+      "sum": "尽管有干预指控，《万智牌：竞技场》开发者仍成功组建工会。",
+      "ta": "原文是 MTG Arena 开发者成功组建工会的消息，反映行业劳工组织化趋势，可速览。",
+      "src": "Game Developer · 06-25",
+      "url": "https://www.gamedeveloper.com/business/magic-the-gathering-arena-unionize-despite-allegations-of-interference"
+    }
+  ],
+  "flashbackTitle": "",
+  "sources": {
+    "ok": [
+      "80 Level",
+      "Game Developer",
+      "Tech-Artists",
+      "arXiv · cs.GR",
+      "HuggingFace",
+      "NVIDIA",
+      "Unreal Engine",
+      "X（本机登录态抓取 · 周一/周四更新）"
+    ],
+    "missed": "未覆盖：ArtStation（Epic Cloudflare 验证墙拦截，RSS 路径全 404）。"
+  },
+  "xStale": false
+};
+
+</script>
+
+<script>
+// ============ 渲染引擎：读 INTEL_DATA 动态生成页面 ============
+(function(){
+  const D = window.INTEL_DATA || {cards:[],channels:[],sources:{ok:[],missed:""}};
+  const esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const impLabel = {hi:"停下精读", mid:"值得关注", lo:"速览"};
+
+  // 顶部日期
+  document.getElementById('metaLine').textContent = (D.date? D.date+" · " : "") + (D.tagline||"为留存而读，不为刷新而读");
+
+  // X 过期提示
+  if(D.xStale) document.getElementById('staleBar').style.display = 'block';
+
+  // 频道定义查表（用于卡片上的领域小标签）
+  const chMap = {};
+  D.channels.forEach(ch=>{ chMap[ch.key]=ch; });
+
+  // ---- 主排序：重要性优先（hi>mid>lo），同档内按日期新→旧 ----
+  // total / 频道计数都只统计「今日」卡片，回顾(flashback)卡不计入。
+  const total = D.cards.filter(c=>!c.flashback).length;
+  const impRank = {hi:0, mid:1, lo:2};
+  // 从 src / who 里提取 "MM-DD" 做日期排序键；无日期的排在同档末尾
+  function dateKey(c){
+    const s = (c.who||c.src||"");
+    const m = s.match(/(\d{1,2})-(\d{1,2})/);
+    if(!m) return -1;                       // 无日期：最旧
+    return parseInt(m[1],10)*100 + parseInt(m[2],10);
+  }
+  const ordered = D.cards.map((c,i)=>({c,i})).sort((a,b)=>{
+    const ra=impRank[a.c.imp]??1, rb=impRank[b.c.imp]??1;
+    if(ra!==rb) return ra-rb;               // 1) 重要性档：hi>mid>lo
+    // 2) 「今日头条」手动置顶：rank 越小越靠前（没填 rank 的视为很大）
+    const ka = (a.c.rank==null?9999:a.c.rank), kb=(b.c.rank==null?9999:b.c.rank);
+    if(ka!==kb) return ka-kb;
+    const da=dateKey(a.c), db=dateKey(b.c);
+    if(da!==db) return db-da;               // 3) 日期新→旧
+    return a.i-b.i;                          // 4) 原始顺序兜底（稳定）
+  }).map(x=>x.c);
+
+  // 频道计数（过滤条仍按频道，保留领域检索入口）
+  const byCat = {};
+  D.cards.forEach(c=>{ if(!c.flashback) (byCat[c.cat] = byCat[c.cat]||[]).push(c); });
+  const activeChannels = D.channels.filter(ch => (byCat[ch.key]||[]).length>0);
+
+  // 重要性分档计数（用于分档分隔线）
+  const impLabelMap = {hi:"停下精读", mid:"值得关注", lo:"速览快讯"};
+  const impDescMap  = {hi:"今天最该花时间的几条", mid:"扫到再决定要不要展开", lo:"知道有这回事即可"};
+  const impColorMap = {hi:"#c2452f", mid:"#c98a1e", lo:"#5f8a3a"};
+
+  // ---- 过滤条 ----
+  const filters = document.getElementById('filters');
+  let fhtml = `<button class="f on" data-f="all">全部 <span class="num">${total}</span></button>`;
+  activeChannels.forEach(ch=>{
+    fhtml += `<button class="f" data-f="${ch.key}"><span class="dotmini" style="background:${ch.color}"></span>${esc(ch.name)} <span class="num">${byCat[ch.key].length}</span></button>`;
+  });
+  fhtml += `<button class="f" data-f="kept">★ 已收藏</button>`;
+  filters.innerHTML = fhtml;
+
+  // ---- 卡片渲染 ----
+  function cardHtml(c){
+    const imp = c.imp||"mid";
+    const ch = chMap[c.cat] || {name:"", color:"#a8a294"};
+    // 领域小标签：色点 + 频道名，放在重要性徽标右边，让一眼知道这条属于哪个领域
+    const chTag = `<span class="chtag"><span class="cdot" style="background:${ch.color}"></span>${esc(ch.name)}</span>`;
+    // 来源行：X 卡片用 handle 样式，网页源用 .src
+    let metaRow;
+    if(c.handle){
+      metaRow = `<span class="xhandle">${esc(c.handle)}</span><span class="xwho">${esc(c.who||"")}</span>`;
+    }else{
+      metaRow = `<span class="src">${esc(c.src||"")}</span>`;
+    }
+    return `<article class="card ${imp}${c.flashback?' isFlashback':''}" data-cat="${c.cat}" data-flashback="${c.flashback?1:0}">
+      <div class="c-row1"><span class="imp ${imp}">${impLabel[imp]||"值得关注"}</span>${chTag}${metaRow}</div>
+      <div class="c-title">${esc(c.title)}</div>
+      <div class="c-sum">${esc(c.sum)}</div>
+      <div class="c-ta"><span class="lab">TA 视角</span><span class="txt">${esc(c.ta)}</span></div>
+      <div class="c-foot"><button class="keep"><span class="ic"></span>收藏入复习</button><a class="link" href="${esc(c.url||'#')}" target="_blank">原文 ↗</a></div>
+    </article>`;
+  }
+
+  const stream = document.getElementById('stream');
+  let html = "";
+
+  // 今日一句
+  if(D.todayHtml){
+    html += `<div class="daysum" data-cat="sum"><div class="k">今日一句</div><p>${D.todayHtml}</p></div>`;
+  }
+
+  // 按重要性分档渲染（默认视图）：hi → mid → lo，每档一条分隔线，档内已按日期新→旧
+  // 回顾卡片(flashback)不参与三档，单独成栏放最后。
+  ["hi","mid","lo"].forEach(level=>{
+    const list = ordered.filter(c=>!c.flashback && (c.imp||"mid")===level);
+    if(!list.length) return;
+    html += `<div class="secline" data-imp="${level}"><span class="dot" style="background:${impColorMap[level]}"></span><span class="lbl">${impLabelMap[level]}</span><span class="cnt">${list.length} 条 · ${impDescMap[level]}</span><span class="ln"></span></div>`;
+    list.forEach(c=> html += cardHtml(c));
+  });
+
+  // 回顾栏：今日新增少时，run.py 会补几条「前几天最爆的」并打 flashback 标记
+  const fbList = ordered.filter(c=>c.flashback);
+  if(fbList.length){
+    const fbTitle = D.flashbackTitle || "来回顾下前几天的";
+    html += `<div class="secline flashback" data-imp="flashback"><span class="dot" style="background:#9a6cff"></span><span class="lbl">${esc(fbTitle)}</span><span class="cnt">${fbList.length} 条 · 趁手感还在，复习一遍</span><span class="ln"></span></div>`;
+    fbList.forEach(c=> html += cardHtml(c));
+  }
+
+  // 信息源说明
+  if(D.sources){
+    const ok = (D.sources.ok||[]).map(esc).join(" · ");
+    html += `<div class="srcbar"><div class="srcbox"><b>本期信息源（${(D.sources.ok||[]).length} 个抓取成功）：</b>${ok}`;
+    if(D.sources.missed) html += `<br><span class="miss">未覆盖：${esc(D.sources.missed)}</span>`;
+    html += `</div></div>`;
+  }
+
+  html += `<div class="end">今日 ${total} 条 · 按重要性排序，最该停下的在最前；卡片上的色点标注所属领域<br>内容均来自原媒体，本站仅作摘要整理与回链</div>`;
+  stream.innerHTML = html;
+
+  // ============ 交互：过滤 / 收藏 / 复习抽屉（与原版逻辑一致） ============
+  const cards = ()=>[...document.querySelectorAll('.card')];
+  const seclines = ()=>[...document.querySelectorAll('.secline')];
+  const srcbar = document.querySelector('.srcbar');
+  const daysum = document.querySelector('.daysum');
+
+  filters.addEventListener('click',e=>{
+    const b=e.target.closest('.f'); if(!b)return;
+    [...filters.children].forEach(x=>x.classList.toggle('on',x===b));
+    const f=b.dataset.f;
+    cards().forEach(c=>{
+      const isFb = c.dataset.flashback==='1';
+      let show;
+      if(isFb){
+        // 回顾卡只在「全部」和「已收藏(且已收藏)」视图露出，不混进具体频道筛选
+        show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : false;
+      }else{
+        show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : c.dataset.cat===f;
+      }
+      c.style.display = show ? '' : 'none';
+    });
+    // 分隔线是「重要性分档」：只在「全部」视图显示；点频道/已收藏时隐藏，卡片连续平铺
+    seclines().forEach(s=>{ s.style.display = (f==='all') ? 'flex' : 'none'; });
+    if(daysum) daysum.style.display = (f==='all')?'block':'none';
+    if(srcbar) srcbar.style.display = (f==='all')?'block':'none';
+  });
+
+  const rvList=document.getElementById('rvList'), rvEmpty=document.getElementById('rvEmpty'), rvCount=document.getElementById('rvCount');
+  let kept=0;
+  document.querySelectorAll('.keep').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const card=btn.closest('.card');
+      const on=btn.classList.toggle('kept');
+      card.classList.toggle('isKept',on);
+      btn.lastChild.textContent = on? ' 已在复习队列' : '收藏入复习';
+      if(on){
+        kept++;
+        const t=card.querySelector('.c-title').textContent;
+        const div=document.createElement('div');
+        div.className='rv-item'; div.dataset.title=t;
+        div.innerHTML='<div class="t">'+t+'</div><div class="when">● 下次回看：明天</div>';
+        rvList.appendChild(div);
+      }else{
+        kept--;
+        const t=card.querySelector('.c-title').textContent;
+        const it=[...rvList.querySelectorAll('.rv-item')].find(x=>x.dataset.title===t);
+        if(it) it.remove();
+      }
+      rvCount.textContent=kept;
+      rvEmpty.style.display = kept? 'none':'block';
+    });
+  });
+
+  const review=document.getElementById('review'), mask=document.getElementById('mask');
+  const open=()=>{review.classList.add('open');mask.classList.add('on')};
+  const close=()=>{review.classList.remove('open');mask.classList.remove('on')};
+  document.getElementById('openRv').onclick=open;
+  document.getElementById('closeRv').onclick=close;
+  mask.onclick=close;
+})();
+</script>
+</body>
+</html>
