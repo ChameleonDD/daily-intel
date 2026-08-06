@@ -2,8 +2,188 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-05 12:16",
+  "updated": "2026-08-06 12:19",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "跨现实投影与头显过渡研究",
+      "sum": "研究用户在大规模投影与MR头显间跨现实对象与场景级过渡的感知。",
+      "ta": "关注沉浸式展览中混合现实过渡的感知设计，对TA在跨平台视觉一致性上有参考价值。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04971v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RORA：带关节的真实物体重建",
+      "sum": "用NeRF和3DGS重建真实环境，并支持物体关节运动，缩小机器人学习模拟差距。",
+      "ta": "3DGS结合关节物体重建，对程序化生成和交互式场景的资产制作有启发。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04842v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "基于Splat的CT金属伪影消除",
+      "sum": "通过紧凑衰减建模减少锥束CT中高衰减物体引起的金属伪影。",
+      "ta": "Splat渲染在医学成像的应用，展示3DGS在非游戏领域的扩展潜力。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04764v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "稀疏dToF传感器的稠密深度补全",
+      "sum": "从稀疏直接飞行时间传感器生成稠密度量深度，提升恶劣条件下的鲁棒性。",
+      "ta": "深度补全技术对实时渲染中的深度感知和特效交互有潜在应用。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04737v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态高斯实现多视角面部手势动画",
+      "sum": "用动态高斯重建逼真3D化身，兼顾面部细节和手部姿态。",
+      "ta": "动态高斯在角色动画中的应用，对TA在角色渲染和动画管线有参考价值。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04722v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "OutLangSplat：无人机户外语言高斯",
+      "sum": "将开放词汇语言特征嵌入3DGS，扩展至无人机户外大规模场景理解。",
+      "ta": "语言嵌入3DGS在户外场景的应用，对TA在场景理解和交互设计上有启发。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04560v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "现代艺术中的不确定性量化",
+      "sum": "文本生成视频模型对同一艺术品的多次生成差异被视为信号而非噪声。",
+      "ta": "生成式AI的多样性分析，对TA在创意工具中的可控性设计有参考。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.04038v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "从叙事重建持久世界",
+      "sum": "从叙事文本重建持久世界，用于叙事驱动的交互式体验生成。",
+      "ta": "叙事驱动的世界生成，对TA在程序化内容生成和关卡设计上有潜在应用。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.04037v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "LLM个性化幻象与自我监控误导",
+      "sum": "研究LLM如何虚构用户画像，并指出自我监控机制可能产生误导。",
+      "ta": "AI个性化技术的局限性，对TA在AI驱动工具的用户建模有警示。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.04570"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "WorldCycle：长时程视频世界模型",
+      "sum": "用自验证强化学习训练长时程视频世界模型，提升生成稳定性。",
+      "ta": "视频世界模型的强化学习，对TA在动态场景模拟和特效预演有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.04964"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "HelloWorld：视频世界模型社交角色",
+      "sum": "在视频世界模型中实现社交互动角色，增强交互体验的真实感。",
+      "ta": "社交互动角色在视频模型中的实现，对TA在NPC行为和动画生成有启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.05070"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "UniWorld-View：大基线视图合成",
+      "sum": "利用视频扩散模型实现大基线视图合成，提升视角生成的连贯性。",
+      "ta": "视频扩散模型在视图合成中的应用，对TA在场景重建和虚拟拍摄有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.04701"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "SEED：AI驱动24/7社会模拟器",
+      "sum": "Klang的SEED游戏用AI角色持续生活工作，即使玩家离线也塑造社会。",
+      "ta": "AI NPC的持续模拟，对TA在大型开放世界中的角色行为系统有参考。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/this-new-24-7-society-simulator-is-powered-by-thousands-of-ai-controlled-npcs/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Gunstoppable：速度即伤害的Roguelite",
+      "sum": "CAGE Studios创始人分享移动射击游戏Gunstoppable的开发工具和设计理念。",
+      "ta": "独立游戏开发工具链分享，对TA在快速原型和工具选型有参考。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/gunstoppable-how-speed-is-damage-defined-a-roguelite-fps/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "博德之门3第三人称Mod体验",
+      "sum": "增强版Native Camera Tweaks Mod让博德之门3以第三人称游玩。",
+      "ta": "相机Mod的视角调整，对TA在相机系统和沉浸感设计上有参考。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/baldur-s-gate-3-third-person-mod-makes-it-feel-like-a-different-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "免费Blender径向菜单插件",
+      "sum": "Blender插件将常用工具组织为径向菜单，提升操作效率。",
+      "ta": "工具组织优化，对TA在DCC工具中的工作流效率提升有直接帮助。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/check-out-this-free-blender-add-on-for-organizing-your-tools-in-a-radial-menu/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UV Flex：Blender UV岛编辑工具",
+      "sum": "AlbertoFX的UV Flex提供交互式UV岛分割、合并和重塑功能。",
+      "ta": "UV编辑工具集，对TA在材质贴图和UV布局优化上有实用价值。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/split-merge-reshape-uv-islands-with-this-blender-toolset/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Secret Mode开设开发工作室",
+      "sum": "发行商Secret Mode成立开发工作室以支持内部项目。",
+      "ta": "行业动态，对TA了解发行商内部开发方向有参考。",
+      "src": "Game Developer · 08-05",
+      "url": "https://www.gamedeveloper.com/business/publisher-secret-mode-opens-development-studio-to-support-internal-projects"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "King拒绝员工集体谈判协议",
+      "sum": "Candy Crush开发商King拒绝员工集体谈判协议，称现有福利更优。",
+      "ta": "行业劳资动态，对TA了解游戏公司内部环境有参考。",
+      "src": "Game Developer · 08-05",
+      "url": "https://www.gamedeveloper.com/business/candy-crush-maker-king-has-declined-staff-s-collective-bargaining-agreement"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "欧洲政策制定者被敦促支持游戏业",
+      "sum": "欧洲政策制定者被呼吁加大对本地游戏产业的支持力度。",
+      "ta": "行业政策动态，对TA了解区域游戏产业环境有参考。",
+      "src": "Game Developer · 08-05",
+      "url": "https://www.gamedeveloper.com/production/policymakers-across-europe-told-to-do-more-to-support-game-industry"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -262,15 +442,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender 体积雾插件速成",
-      "sum": "Lazy3D 推出 Blender 插件，可快速创建电影级体积雾效果，支持轻雾到浓雾调节。",
-      "ta": "Blender 快速体积雾方案可辅助 DCC 预览或资产制作，提升前期视觉迭代效率。",
-      "src": "80 Level · 08-01",
-      "url": "https://80.lv/articles/add-cinematic-volumetric-fog-to-blender-scenes-in-just-minutes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "Substance 3D 金属丝工艺材质",
       "sum": "Jinho Yum 分享 Ornamental Filigree 项目，讲解扭曲基础形状、调整曲线方向与宝石制作流程。",
       "ta": "Substance 3D 复杂金属图案程序化生成思路，对材质细节与装饰纹理制作有参考价值。",
@@ -503,15 +674,6 @@ window.INTEL_RECENT = {
       "ta": "低显存实时推理对游戏AI或交互系统有潜在应用，但未明确游戏场景。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.27205"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "游戏求解器辅助LLM",
-      "sum": "CAST用游戏求解器作为回合级教师，训练LLM智能体。",
-      "ta": "将游戏求解器融入LLM训练，可能提升游戏AI决策能力。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.25308"
     },
     {
       "cat": "flow",
@@ -1654,168 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "跨拓扑动作混合可简化不同角色间的动画复用，提升动画管线效率。",
       "src": "arXiv · cs.GR · 07-11",
       "url": "https://arxiv.org/abs/2607.10370v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "双人对话动作生成",
-      "sum": "Learn2Chat通过交互调制单语先验生成双人对话动作。",
-      "ta": "对话动作生成技术可能用于NPC交互动画，但当前与游戏管线距离较远。",
-      "src": "arXiv · cs.GR · 07-11",
-      "url": "https://arxiv.org/abs/2607.10313v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "推理时动作迁移",
-      "sum": "Motion4Motion实现推理时跨主体动作迁移。",
-      "ta": "动作迁移技术可快速复用动画数据，但需验证实时性能。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.11644"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 5.2雕刻新功能",
-      "sum": "3D艺术家分享Blender 5.2新增雕刻功能的教程。",
-      "ta": "Blender雕刻更新可能影响资产制作流程，但非UE5核心。",
-      "src": "80 Level · 07-13",
-      "url": "https://80.lv/articles/3d-artist-shares-a-tutorial-on-new-sculpting-features-in-blender-5-2/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "11 Bit Studios裁员20人",
-      "sum": "《冰汽时代》开发商11 Bit Studios裁员20人，部分员工内部转岗。",
-      "ta": "行业裁员动态，反映工作室成本压力，可能影响人才流动。",
-      "src": "Game Developer · 07-13",
-      "url": "https://www.gamedeveloper.com/business/the-alters-and-frostpunk-developer-11-bit-studios-is-laying-off-20-employees-"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态逆渲染分解材质光照",
-      "sum": "提出动态逆渲染方法，从表面辐射分解材质与光照，支持重光照与AR。",
-      "ta": "逆渲染技术直接影响材质工作流，可提升PBR资产重建精度。",
-      "src": "arXiv · cs.GR · 07-10",
-      "url": "https://arxiv.org/abs/2607.09329v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "示例编程批量编辑碰撞网格",
-      "sum": "提出通过示例编程批量编辑3D碰撞网格的方法，提升物理资产制作效率。",
-      "ta": "碰撞网格是物理交互基础，批量编辑可加速关卡和角色碰撞体制作。",
-      "src": "arXiv · cs.GR · 07-09",
-      "url": "https://arxiv.org/abs/2607.08804v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型合成沙沸图像",
-      "sum": "基于扩散模型合成沙沸缺陷图像，用于低资源堤坝检测。",
-      "ta": "扩散合成技术可迁移至游戏纹理或缺陷资产生成，但当前应用领域非游戏。",
-      "src": "arXiv · cs.GR · 07-08",
-      "url": "https://arxiv.org/abs/2607.08794v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Ornatrix毛发烘焙管线",
-      "sum": "Ornatrix毛发烘焙管线及免费Maya自动化工具发布。",
-      "ta": "可简化毛发从DCC到引擎的烘焙流程，提升毛发资产制作效率。",
-      "src": "Tech-Artists · 07-12",
-      "url": "https://www.tech-artists.org/t/ornatrix-groom-to-bake-pipeline-a-free-maya-tool-that-automates-the-setup/18462"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CUDA核融合优化内存",
-      "sum": "NVIDIA 博客介绍核融合技术改善 GPU 内存带宽与启动开销。",
-      "ta": "核融合思路可借鉴到 UE Shader 合并与渲染 Pass 优化。",
-      "src": "NVIDIA · 07-10",
-      "url": "https://developer.nvidia.com/blog/kernel-fusion-in-nvidia-cuda-optimizing-memory-traffic-and-launch-overhead/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "事件视频重建与插帧",
-      "sum": "LongE2V 用视频扩散模型实现长时域事件视频重建与插帧。",
-      "ta": "视频插帧技术可应用于游戏过场或实时回放效果。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.08770"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时交互多目标视频分割",
-      "sum": "SAM-MT 实现实时交互式多目标视频分割。",
-      "ta": "实时分割可用于游戏内动态遮罩或后期特效。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.08688"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "赛博朋克治愈系建造游戏",
-      "sum": "一款允许玩家建造雨浸世界的赛博朋克治愈游戏。",
-      "ta": "环境建造玩法展示程序化天气与场景交互潜力。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/this-cyberpunk-cozy-game-allows-you-to-build-your-own-rain-soaked-world/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Poppy Playtime恐怖IP解析",
-      "sum": "总监谈武器化怀旧、心理恐怖与环境叙事设计哲学。",
-      "ta": "环境叙事与关卡设计思路可启发场景氛围构建。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/how-poppy-playtime-became-one-of-gaming-s-biggest-horror-franchises/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立工作室驾驶平台续作开发",
-      "sum": "开发者谈 Stunt Paradise 2 关卡重设计及车辆行为软件。",
-      "ta": "车辆物理与关卡设计经验可参考。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/how-an-indie-studio-created-a-sequel-of-a-driving-platformer-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Hunt: Showdown武器皮肤制作",
-      "sum": "详解 Nitro Express 皮肤的金色细节与材质设置。",
-      "ta": "高精度武器材质工作流，含金属细节与材质节点。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/behind-creation-of-nitro-express-checks-and-balances-skin-for-hunt-showdown-1896/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立游戏发行困境分析",
-      "sum": "Skystone Games 谈 2026 年发行策略与 2.1 万款游戏问题。",
-      "ta": "行业生态分析，对独立项目发行时机有参考。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/indie-game-publishing-the-21k-game-problem/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "浏览器内程序化藤蔓生成器",
-      "sum": "基于 Three.js 的完全程序化常春藤与无花果树生成器。",
-      "ta": "程序化植被生成算法可直接参考用于 UE 工具。",
-      "src": "80 Level · 07-10",
-      "url": "https://80.lv/articles/this-fully-procedural-ivy-and-fig-tree-generator-runs-in-your-browser/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "NexusMods向UGC平台转型",
-      "sum": "CEO 谈从文件托管向用户生成内容平台进化。",
-      "ta": "Mod 生态变化影响游戏内容生产与工具需求。",
-      "src": "Game Developer · 07-10",
-      "url": "https://www.gamedeveloper.com/pc/nexusmods-ceo-digs-into-the-dynamics-of-video-game-modding-ft-victor-folmann"
     }
   ]
 };

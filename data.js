@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年7月1日 · 周三",
+  "date": "2026年8月6日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "周三非 X 抓取日，X 卡沿用上次。今日行业地震：<em>Xbox 撤回对 IO Interactive 支持并考虑出售/关闭 Arkane 等 5 家工作室</em>，同日 <em>GTA 开发者寻求在 Rockstar 组工会</em>。技术面 <em>Kawaii Physics 适配 UE5.8</em>、<em>Blender 几何节点做实时碰撞系统</em> 实用。图形学新批 <em>RenderFormer++ 前馈神经渲染</em>、<em>DR-GS 可变形可重光 2D 高斯</em>；NVIDIA 用 Nsight 优化 <em>NuRec 神经重建管线</em>。Tom Looman 的 <em>Nanite 优化课</em>（X）仍是本周与你 A/B 测试最贴的一条。",
+  "todayHtml": "今天值得停下精读的有：<em>跨现实投影与头显过渡研究</em> / <em>RORA：带关节的真实物体重建</em> / <em>基于Splat的CT金属伪影消除</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -46,16 +46,6 @@ window.INTEL_DATA = {
   ],
   "cards": [
     {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Xbox或售关Arkane等5工作室",
-      "sum": "Xbox 撤回对 IO Interactive 未命名奇幻游戏支持致其裁员，同时据报考虑出售或关闭 Arkane 等至少 5 家工作室。",
-      "ta": "原文是 Xbox 撤支持并考虑出售/关闭多家工作室的报道，延续 3A 收缩潮，与你关注的行业动向直接相关。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/report-xbox-considering-sales-or-closures-at-arkane-and-at-least-4-other-studios"
-    },
-    {
       "cat": "x",
       "imp": "hi",
       "rank": 2,
@@ -65,34 +55,6 @@ window.INTEL_DATA = {
       "handle": "@t_looman",
       "who": "Tom Looman · 06-25",
       "url": "https://x.com/t_looman/status/2070126139482247654"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "RenderFormer前馈神经渲染",
-      "sum": "RenderFormer++：可扩展且物理基础扎实的前馈神经渲染框架，arXiv cs.GR 06-30。",
-      "ta": "原文是可扩展、物理基础的前馈神经渲染研究，做学习式渲染/实时神经出图管线时可关注其可扩展表示。",
-      "src": "arXiv cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.30380"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "title": "Kawaii Physics适配UE5.8",
-      "sum": "Kawaii Physics 插件现已支持 UE5.8，含最新更新与全新文档站点。",
-      "ta": "原文是 Kawaii Physics 适配 UE5.8 的发布，做角色次级动态/摇摆物理时可直接升级到 5.8 版本使用。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/kawaii-physics-now-works-with-unreal-engine-5-8"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "title": "几何节点做实时碰撞系统",
-      "sum": "Gurgen Aloian 用 Blender 几何节点（Geometry Nodes）构建了实时碰撞系统，或将发布或出教程。",
-      "ta": "原文是用 Blender 几何节点搭实时碰撞的展示，做程序化布局/几何节点工具链时可参考其节点实现思路。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/real-time-collision-system-built-in-blender-s-geometry-nodes"
     },
     {
       "cat": "x",
@@ -115,15 +77,6 @@ window.INTEL_DATA = {
       "url": "https://x.com/UnrealEngine/status/2067249231887225179"
     },
     {
-      "cat": "tech",
-      "imp": "hi",
-      "title": "外星岛屿草原植被拆解",
-      "sum": "Morgane Muller 拆解外星岛屿草原多样化 3D 植被制作，含各类植物建模与纹理流程。",
-      "ta": "原文是为外星岛屿做多样化草原植被的拆解，含 SpeedTree+Substance，与你的植被填充/纹理工作流直接相关。",
-      "src": "80 Level · 06-26",
-      "url": "https://80.lv/articles/setting-up-vegetation-for-alien-island-in-3d"
-    },
-    {
       "cat": "x",
       "imp": "hi",
       "title": "单图生成完整3D几何",
@@ -132,33 +85,6 @@ window.INTEL_DATA = {
       "handle": "@BenMildenhall",
       "who": "Ben Mildenhall · 06-12",
       "url": "https://x.com/HaoZhang623/status/2065455226791002472"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "可变形可重光2D高斯",
-      "sum": "DR-GS：基于物理的可变形、可重打光 2D 高斯表示，arXiv cs.GR 06-30。",
-      "ta": "原文是可变形可重光的物理 2D 高斯研究，做高斯资产在新光照下复用/形变时可关注其物理表示。",
-      "src": "arXiv cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.29379"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "title": "NVIDIA优化神经重建管线",
-      "sum": "NVIDIA 用 Nsight 工具优化 Omniverse NuRec 神经重建管线，从多传感器数据构建高保真 3D 环境。",
-      "ta": "原文是用 Nsight 剖析优化神经重建管线的实践，做实拍转 3D 资产/性能剖析时可参考其调优方法。",
-      "src": "NVIDIA · 06-30",
-      "url": "https://developer.nvidia.com/blog/optimizing-a-neural-reconstruction-pipeline-using-nvidia-nsight-developer-tools/"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "title": "GTA开发者求组工会",
-      "sum": "Rockstar 的《侠盗猎车手》开发者正寻求工会承认，推动集体协商。",
-      "ta": "原文是 Rockstar GTA 开发者寻求组工会的报道，反映 3A 劳资关系变化，与你关注的行业动向相关。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/production/grand-theft-auto-developers-seek-union-recognition-at-rockstar"
     },
     {
       "cat": "x",
@@ -191,195 +117,6 @@ window.INTEL_DATA = {
       "url": "https://x.com/DrJimFan/status/2066921736369766762"
     },
     {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "ILL用UE5做身体恐怖游戏",
-      "sum": "Team Clout 谈 ILL 如何用 UE5、真实物理、肢解与双耳音频打造沉浸第一人称恐怖体验。",
-      "ta": "原文是 UE5 做身体恐怖游戏的访谈，含物理与肢解表现，做实时物理/破坏与氛围渲染时可参考其做法。",
-      "src": "80 Level · 06-30",
-      "url": "https://80.lv/articles/how-ill-combines-body-horror-physics-and-binaural-audio-to-terrify-players"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "ZBrush加UE5把油画重制3D",
-      "sum": "Quentin Moulinneuf 用 ZBrush 和 UE5 把 Leyendecker 油画重制为 3D，含建模、绘制与渲染全流程。",
-      "ta": "原文是把二维油画重制成 UE5 内 3D 场景的拆解，做风格化资产/引擎内渲染复刻时可参考其建模到打光流程。",
-      "src": "80 Level · 06-29",
-      "url": "https://80.lv/articles/recreating-oil-painting-barking-up-the-wrong-turkey-in-3d-with-zbrush-ue5"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Blender快捷键变换进UE5",
-      "sum": "Blenderize Transform Pro 上线，可在 UE5 内用 Blender 风格快捷键做移动/旋转/缩放变换。",
-      "ta": "原文是把 Blender 变换快捷键搬进 UE5 的插件，常在两软件间切换做摆放/布景时可直接提升操作一致性。",
-      "src": "80 Level · 06-29",
-      "url": "https://80.lv/articles/use-blender-s-hotkey-based-transform-controls-in-unreal-engine-5"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Epic六月学习含网格地形",
-      "sum": "Epic 六月免费学习内容上新：MetaHuman、网格体地形（Mesh Terrain）创建技巧及手机过场教程。",
-      "ta": "原文是 Epic 官方网格体地形等学习内容，与你关注的 UE5.8 Mesh Terrain/地形管线直接相关，可取官方教程。",
-      "src": "Unreal Engine · 06-26",
-      "url": "https://www.unrealengine.com/zh-CN/learning/junes-epic-learning-content-metahumans-mesh-terrain-and-more"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "堕落之主2用UE5提质",
-      "sum": "CI Games 用 UE5 的 Lumen、PCG 与 Gameplay Ability System 打造开放黑暗奇幻魂类续作《堕落之主2》。",
-      "ta": "原文是 UE5 Lumen+PCG+GAS 做开放魂类的开发访谈，PCG 程序化内容生成与你的植被/场景工作流相关。",
-      "src": "Unreal Engine · 06-23",
-      "url": "https://www.unrealengine.com/zh-CN/developer-interviews/lords-of-the-fallen-ii-takes-the-dark-fantasy-action-rpg-sequel-to-new-heights-with-ue5"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "毛发自碰撞宽度不一致",
-      "sum": "Tech-Artists 帖讨论 Maya hairSystems 的 Self Collide Width Scale 表现不一致问题。",
-      "ta": "原文是 Maya 毛发自碰撞宽度缩放不一致的求助讨论，做 groom/毛发碰撞调试时可对照其参数排查。",
-      "src": "Tech-Artists · 06-29",
-      "url": "https://www.tech-artists.org/t/hairsystems-self-collide-width-scale-is-inconsistent/18439"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "VFX管线可视化构建器",
-      "sum": "Tech-Artists 放出面向 VFX/动画管线的可视化工作流构建器，图形化搭建处理流程。",
-      "ta": "原文是 VFX/动画管线的可视化工作流构建工具，做自动化管线/批处理编排时可参考其节点化搭建方式。",
-      "src": "Tech-Artists · 06-27",
-      "url": "https://www.tech-artists.org/t/visual-workflow-builder-for-vfx-animation-pipelines/18433"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "薄几何无网格次表面散射",
-      "sum": "针对薄几何体的无网格次表面散射，提出光学厚度规律修正偶极子扩散误差，附完整复现代码。",
-      "ta": "原文是薄几何 SSS 的误差修正与光学厚度规律研究，做薄壳材质/皮肤叶片 SSS 时可关注其厚度处理。",
-      "src": "arXiv cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.29387"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "网格光栅化可微渲染",
-      "sum": "Meshtryoshka：通过网格光栅化实现真实世界场景的可微渲染，MIT 团队，arXiv 06-30。",
-      "ta": "原文是基于网格光栅化的可微渲染，做实拍反求/可微管线又想保留网格表示时可关注其光栅化方案。",
-      "src": "arXiv cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.28622"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RGB反求皮肤次表面散射",
-      "sum": "通过生物物理皮肤反演，从单张 RGB 反求光谱级次表面散射，用于皮肤真实感渲染。",
-      "ta": "原文是从 RGB 反求光谱 SSS 的皮肤渲染研究，做角色皮肤/SSS 材质调参时可关注其生物物理反演表示。",
-      "src": "arXiv cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.27604"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "超网络做神经纹理压缩",
-      "sum": "用超网络（Hypernetworks）实现神经纹理压缩，EGSR 2026。",
-      "ta": "原文是超网络驱动的神经纹理压缩 EGSR 研究，做大体量贴图存储/运行时解压时可关注其压缩表示。",
-      "src": "arXiv cs.GR · 06-26",
-      "url": "https://arxiv.org/abs/2606.26913"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "运动控制生成式预训练",
-      "sum": "GPC：大规模生成式预训练实现可迁移的运动控制，SIGGRAPH 2026。",
-      "ta": "原文是可迁移运动控制的 SIGGRAPH 研究，做角色动作生成/物理动画控制时可关注其预训练迁移思路。",
-      "src": "arXiv cs.GR · 06-30",
-      "url": "https://arxiv.org/abs/2606.29148"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "低算力可控世界模型",
-      "sum": "DreamForge-World 0.1 预览：低算力、实时且可控的世界模型，HuggingFace 热榜。",
-      "ta": "原文是低算力实时可控世界模型的预览，做可交互世界/实时生成场景原型时可关注其低算力控制方案。",
-      "src": "HuggingFace · 06-30",
-      "url": "https://huggingface.co/papers/2606.30292"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "实时流式视频编辑",
-      "sum": "LiveEdit：面向实时的、基于扩散模型的流式视频编辑方法，登 HuggingFace 热榜。",
-      "ta": "原文是实时扩散流式视频编辑研究，做 AI 生成/编辑视频素材时可关注其实时流式处理思路。",
-      "src": "HuggingFace · 06-30",
-      "url": "https://huggingface.co/papers/2606.26740"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "KRAFTON做ACE可协玩角色",
-      "sum": "KRAFTON 为《PUBG》打造 NVIDIA ACE 驱动的可协同游玩 AI 角色 PUBG Ally，突破固定对话限制。",
-      "ta": "原文是 ACE 在 PUBG 内做可协玩 AI 角色的访谈，对应引擎内端侧 AI 队友集成，可看其落地方案。",
-      "src": "NVIDIA · 06-25",
-      "url": "https://developer.nvidia.com/blog/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Supermassive CEO离任",
-      "sum": "《Directive 8020》发布后，Supermassive Games CEO 辞任，称引领工作室度过行业变革。",
-      "ta": "原文是 Supermassive CEO 在新作发布后离任的报道，延续 3A 工作室人事动荡，与你关注的行业动向相关。",
-      "src": "Game Developer · 06-29",
-      "url": "https://www.gamedeveloper.com/business/supermassive-games-ceo-steps-down-following-launch-of-directive-8020"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "内存厂商遭集体诉讼",
-      "sum": "多家内存制造商因被指控操纵价格与供应遭集体诉讼，或波及硬件成本。",
-      "ta": "原文是内存厂商价格操纵诉讼的报道，关系主机/PC 硬件成本走向，与你关注的行业成本动向相关，可速览。",
-      "src": "Game Developer · 06-30",
-      "url": "https://www.gamedeveloper.com/business/memory-manufacturers-sued-in-class-action-suit-alleging-price-and-supply-fixing"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Blender鼠标手绘场景纹理",
-      "sum": "一个精美手绘风格场景，其纹理完全用鼠标在 Blender 内绘制完成。",
-      "ta": "原文是纯手绘鼠标纹理的场景展示，做风格化手绘贴图/低成本纹理时可作参照。",
-      "src": "80 Level · 06-29",
-      "url": "https://80.lv/articles/this-beautiful-hand-painted-scene-was-textured-using-a-mouse"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "生成3D资产单色制造优化",
-      "sum": "针对单色制造对生成的 3D 资产做外观保持的细化优化，arXiv cs.GR 06-29。",
-      "ta": "原文是生成式 3D 资产面向制造的外观保持细化，做 3D 打印/资产后处理时可关注其外观一致约束。",
-      "src": "arXiv cs.GR · 06-29",
-      "url": "https://arxiv.org/abs/2606.26850"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "移动端3DGS能量聚合",
-      "sum": "面向移动端 3D 高斯泼溅的蒙特卡洛能量聚合方法，HuggingFace 热榜。",
-      "ta": "原文是移动端 3DGS 的蒙特卡洛能量聚合，做移动/低功耗设备上跑高斯资产时可关注其加速策略。",
-      "src": "HuggingFace · 06-30",
-      "url": "https://huggingface.co/papers/2606.30017"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "多视角图像提取神经材质",
-      "sum": "NVIDIA 实验室从多视角图像中提取神经材质（NeuMatEx），用于重渲染与材质复用。",
-      "ta": "原文是从多视图反求神经材质的方法，做实拍转可用材质/PBR 反求时可关注其材质表示。",
-      "src": "arXiv cs.GR · 06-26",
-      "url": "https://arxiv.org/abs/2606.26715"
-    },
-    {
       "cat": "x",
       "imp": "lo",
       "title": "Gemini视频模型登顶Arena",
@@ -388,21 +125,212 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "Ben Poole · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "跨现实投影与头显过渡研究",
+      "sum": "研究用户在大规模投影与MR头显间跨现实对象与场景级过渡的感知。",
+      "ta": "关注沉浸式展览中混合现实过渡的感知设计，对TA在跨平台视觉一致性上有参考价值。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04971v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RORA：带关节的真实物体重建",
+      "sum": "用NeRF和3DGS重建真实环境，并支持物体关节运动，缩小机器人学习模拟差距。",
+      "ta": "3DGS结合关节物体重建，对程序化生成和交互式场景的资产制作有启发。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04842v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "基于Splat的CT金属伪影消除",
+      "sum": "通过紧凑衰减建模减少锥束CT中高衰减物体引起的金属伪影。",
+      "ta": "Splat渲染在医学成像的应用，展示3DGS在非游戏领域的扩展潜力。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04764v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "稀疏视角下Splat CT姿态敏感性",
+      "sum": "重新审视基于3D高斯的断层扫描在稀疏视角重建中的姿态敏感性。",
+      "ta": "3DGS在稀疏数据下的鲁棒性分析，对实时渲染中的视角优化有参考。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04752v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "稀疏dToF传感器的稠密深度补全",
+      "sum": "从稀疏直接飞行时间传感器生成稠密度量深度，提升恶劣条件下的鲁棒性。",
+      "ta": "深度补全技术对实时渲染中的深度感知和特效交互有潜在应用。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04737v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态高斯实现多视角面部手势动画",
+      "sum": "用动态高斯重建逼真3D化身，兼顾面部细节和手部姿态。",
+      "ta": "动态高斯在角色动画中的应用，对TA在角色渲染和动画管线有参考价值。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04722v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "OutLangSplat：无人机户外语言高斯",
+      "sum": "将开放词汇语言特征嵌入3DGS，扩展至无人机户外大规模场景理解。",
+      "ta": "语言嵌入3DGS在户外场景的应用，对TA在场景理解和交互设计上有启发。",
+      "src": "arXiv · cs.GR · 08-05",
+      "url": "https://arxiv.org/abs/2608.04560v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "现代艺术中的不确定性量化",
+      "sum": "文本生成视频模型对同一艺术品的多次生成差异被视为信号而非噪声。",
+      "ta": "生成式AI的多样性分析，对TA在创意工具中的可控性设计有参考。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.04038v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "从叙事重建持久世界",
+      "sum": "从叙事文本重建持久世界，用于叙事驱动的交互式体验生成。",
+      "ta": "叙事驱动的世界生成，对TA在程序化内容生成和关卡设计上有潜在应用。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.04037v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "LLM个性化幻象与自我监控误导",
+      "sum": "研究LLM如何虚构用户画像，并指出自我监控机制可能产生误导。",
+      "ta": "AI个性化技术的局限性，对TA在AI驱动工具的用户建模有警示。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.04570"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "WorldCycle：长时程视频世界模型",
+      "sum": "用自验证强化学习训练长时程视频世界模型，提升生成稳定性。",
+      "ta": "视频世界模型的强化学习，对TA在动态场景模拟和特效预演有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.04964"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "HelloWorld：视频世界模型社交角色",
+      "sum": "在视频世界模型中实现社交互动角色，增强交互体验的真实感。",
+      "ta": "社交互动角色在视频模型中的实现，对TA在NPC行为和动画生成有启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.05070"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "UniWorld-View：大基线视图合成",
+      "sum": "利用视频扩散模型实现大基线视图合成，提升视角生成的连贯性。",
+      "ta": "视频扩散模型在视图合成中的应用，对TA在场景重建和虚拟拍摄有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.04701"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "SEED：AI驱动24/7社会模拟器",
+      "sum": "Klang的SEED游戏用AI角色持续生活工作，即使玩家离线也塑造社会。",
+      "ta": "AI NPC的持续模拟，对TA在大型开放世界中的角色行为系统有参考。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/this-new-24-7-society-simulator-is-powered-by-thousands-of-ai-controlled-npcs/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Gunstoppable：速度即伤害的Roguelite",
+      "sum": "CAGE Studios创始人分享移动射击游戏Gunstoppable的开发工具和设计理念。",
+      "ta": "独立游戏开发工具链分享，对TA在快速原型和工具选型有参考。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/gunstoppable-how-speed-is-damage-defined-a-roguelite-fps/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "博德之门3第三人称Mod体验",
+      "sum": "增强版Native Camera Tweaks Mod让博德之门3以第三人称游玩。",
+      "ta": "相机Mod的视角调整，对TA在相机系统和沉浸感设计上有参考。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/baldur-s-gate-3-third-person-mod-makes-it-feel-like-a-different-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "免费Blender径向菜单插件",
+      "sum": "Blender插件将常用工具组织为径向菜单，提升操作效率。",
+      "ta": "工具组织优化，对TA在DCC工具中的工作流效率提升有直接帮助。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/check-out-this-free-blender-add-on-for-organizing-your-tools-in-a-radial-menu/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UV Flex：Blender UV岛编辑工具",
+      "sum": "AlbertoFX的UV Flex提供交互式UV岛分割、合并和重塑功能。",
+      "ta": "UV编辑工具集，对TA在材质贴图和UV布局优化上有实用价值。",
+      "src": "80 Level · 08-05",
+      "url": "https://80.lv/articles/split-merge-reshape-uv-islands-with-this-blender-toolset/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Secret Mode开设开发工作室",
+      "sum": "发行商Secret Mode成立开发工作室以支持内部项目。",
+      "ta": "行业动态，对TA了解发行商内部开发方向有参考。",
+      "src": "Game Developer · 08-05",
+      "url": "https://www.gamedeveloper.com/business/publisher-secret-mode-opens-development-studio-to-support-internal-projects"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "King拒绝员工集体谈判协议",
+      "sum": "Candy Crush开发商King拒绝员工集体谈判协议，称现有福利更优。",
+      "ta": "行业劳资动态，对TA了解游戏公司内部环境有参考。",
+      "src": "Game Developer · 08-05",
+      "url": "https://www.gamedeveloper.com/business/candy-crush-maker-king-has-declined-staff-s-collective-bargaining-agreement"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "欧洲政策制定者被敦促支持游戏业",
+      "sum": "欧洲政策制定者被呼吁加大对本地游戏产业的支持力度。",
+      "ta": "行业政策动态，对TA了解区域游戏产业环境有参考。",
+      "src": "Game Developer · 08-05",
+      "url": "https://www.gamedeveloper.com/production/policymakers-across-europe-told-to-do-more-to-support-game-industry"
     }
   ],
   "flashbackTitle": "",
   "sources": {
     "ok": [
+      "Unreal Engine",
+      "NVIDIA",
+      "Blender 开发博客",
+      "PlayStation Blog",
+      "arXiv · cs.GR",
+      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
-      "arXiv · cs.GR",
-      "HuggingFace",
-      "NVIDIA",
-      "Unreal Engine",
-      "X（本机登录态抓取 · 周一/周四更新）"
+      "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：ArtStation（Epic Cloudflare 验证墙拦截，RSS 路径全 404）。"
+    "missed": "未覆盖：AMD GPUOpen。"
   },
   "xStale": false
 };
