@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月5日 · 周三",
+  "date": "2026年7月22日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>混元3D Buffalo 统一生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Fab夏季大促开启</em> / <em>扩散Transformer多模态区域控制</em> / <em>UV空间神经融合人脸重建</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -263,76 +263,148 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Fab夏季大促开启",
+      "sum": "Fab商城数万资产最高70%折扣，持续至7月29日。",
+      "ta": "可趁促销囤积材质、角色包等素材，但需注意资产质量与项目兼容性。",
+      "src": "Unreal Engine · 07-21",
+      "url": "https://www.unrealengine.com/news/the-fab-summer-mega-sale-is-now-on"
+    },
+    {
+      "cat": "gfx",
       "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
+      "title": "扩散Transformer多模态区域控制",
+      "sum": "提出Appearance Pointers，实现材质、对象身份等精确区域控制。",
+      "ta": "对材质生成和纹理区域控制有参考价值，可能简化贴图工作流。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.19344v1"
     },
     {
       "cat": "ai",
-      "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
+      "imp": "mid",
+      "title": "UV空间神经融合人脸重建",
+      "sum": "UVFaceFusion实现多视角拓扑一致的人脸重建，适用于数字人。",
+      "ta": "直接关联数字人制作管线，可提升面部资产重建效率与一致性。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.18798v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高效压缩神经高斯溅射体渲染",
+      "sum": "ECoNGS提出压缩高斯原语用于交互式体数据可视化。",
+      "ta": "对体积渲染和3D场景表示有启发，可能影响Niagara特效数据压缩。",
+      "src": "arXiv · cs.GR · 07-20",
+      "url": "https://arxiv.org/abs/2607.18466v1"
     },
     {
       "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
+      "imp": "lo",
+      "title": "交互式长时域世界建模",
+      "sum": "AlayaWorld技术报告发布，聚焦长时域交互世界建模。",
+      "ta": "与游戏世界模拟相关，但偏AI研究，暂不直接用于管线。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
+      "url": "https://huggingface.co/papers/2607.18367"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
+      "cat": "ai",
+      "imp": "lo",
+      "title": "掩码视觉动作统一世界建模",
+      "sum": "提出Masked Visual Actions方法，统一世界建模框架。",
+      "ta": "对游戏AI行为建模有潜在参考，但偏学术，需跟踪后续应用。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.19343"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
+      "title": "皮克斯裁员",
+      "sum": "迪士尼裁员数百人，皮克斯受影响最大，尽管《玩具5》票房近10亿。",
+      "ta": "行业动荡信号，但无直接技术关联，仅作背景了解。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/pixar-hit-with-layoffs-despite-toy-story-5-s-massive-box-office-success/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender复古飞船动画",
+      "sum": "Rui Huang展示Blender制作的复古未来风飞船动画。",
+      "ta": "可参考Blender资产制作流程，但非引擎内实时渲染。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/this-striking-spaceship-blender-animation-has-retro-futuristic-vibes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "手绘策略游戏开发幕后",
+      "sum": "Fika Productions分享Unity手绘策略游戏《Don't Kill Them All》开发细节。",
+      "ta": "手绘风格与策略玩法结合，可借鉴其美术管线与优化思路。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/behind-the-development-of-hand-drawn-strategy-game-don-t-kill-them-all/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "title": "SimFest 2026模拟游戏促销",
+      "sum": "模拟游戏节开启，最高90%折扣。",
+      "ta": "促销信息，无技术价值，可忽略。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/simfest-2026-don-t-miss-these-discounted-simulation-games/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Meshy 3D Agent对话式AI",
+      "sum": "Meshy推出3D Agent，用对话式AI辅助游戏艺术家生成风格一致3D资产。",
+      "ta": "直接关联3D资产生成管线，可提升原型阶段效率，但需评估风格控制精度。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/meshy-wants-ai-to-feel-less-like-a-prompt-and-more-like-a-creative-partner/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Cliff Bleszinski谈工作室倒闭",
+      "sum": "Boss Key创始人称过于优厚的发行协议反致工作室失败。",
+      "ta": "行业经验教训，无技术关联。",
+      "src": "80 Level · 07-21",
+      "url": "https://80.lv/articles/cliff-bleszinski-says-his-studio-s-too-good-publishing-deal-worked-against-it/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前Wreckreation团队成立新工作室",
+      "sum": "原团队组建新工作室，正在开发续作。",
+      "ta": "行业动态，无直接技术价值。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/former-wreckreation-team-starts-up-new-studio-working-on-sequel"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏批评对开发者的启示",
+      "sum": "长视频游戏设计分析获数百万播放，开发者可从中学习。",
+      "ta": "设计方法论参考，非技术内容。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/design/what-developers-can-learn-from-this-generation-of-games-criticism"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Splitgate开发商裁员",
+      "sum": "1047 Games在《Empulse》发布不到一个月后裁员。",
+      "ta": "行业裁员潮延续，无技术关联。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/report-splitgate-dev-1047-games-lays-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Midgar Studio清算",
+      "sum": "法国工作室Midgar Studio被母公司Nacon清算。",
+      "ta": "行业动荡，无技术价值。",
+      "src": "Game Developer · 07-21",
+      "url": "https://www.gamedeveloper.com/business/edge-of-memories-developer-midgar-studio-is-being-liquidated"
     }
   ],
   "flashbackTitle": "",
@@ -340,7 +412,6 @@ window.INTEL_DATA = {
     "ok": [
       "Unreal Engine",
       "NVIDIA",
-      "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
@@ -350,7 +421,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": ""
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };

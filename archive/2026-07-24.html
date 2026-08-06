@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月5日 · 周三",
+  "date": "2026年7月24日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>混元3D Buffalo 统一生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>可微渲染场景参数显著性</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -263,76 +263,113 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
-    },
-    {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
+      "rank": 1,
+      "title": "可微渲染场景参数显著性",
+      "sum": "利用可微渲染器生成场景参数显著性图，类比神经网络梯度方法。",
+      "ta": "可微渲染用于参数优化之外，还能做场景特征重要性分析，对调试渲染效果有启发。",
+      "src": "arXiv · cs.GR · 07-23",
+      "url": "https://arxiv.org/abs/2607.21562v1"
     },
     {
-      "cat": "ai",
+      "cat": "tech",
       "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
+      "title": "NVIDIA OptiX 光线追踪调试工具",
+      "sum": "介绍使用 OptiX Toolkit 调试光线追踪应用的方法。",
+      "ta": "光线追踪调试工具链更新，有助于定位 RT 管线中的性能或正确性问题。",
+      "src": "NVIDIA · 07-23",
+      "url": "https://developer.nvidia.com/blog/debugging-ray-tracing-applications-using-nvidia-optix-toolkit/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
+      "title": "UE5 异步叙事系统拆解",
+      "sum": "Tides of Tomorrow 用 UE5 状态机、蓝图、Houdini 实现玩家影响故事。",
+      "ta": "UE5 状态机与 Houdini 管线结合实现异步多人叙事，对程序化叙事工具设计有参考。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/how-tides-of-tomorrow-s-story-link-system-lets-players-shape-each-other-s-stories/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
+      "title": "UE5 风格化城镇全流程",
+      "sum": "从概念到 UE5，用建筑套件分大中小尺寸构建加泰罗尼亚风格小镇。",
+      "ta": "模块化建筑套件思路与 UE5 环境搭建流程，对植被/建筑程序化生成有借鉴。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/from-concept-art-to-ue5-building-a-stylized-catalonia-inspired-town/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 对象独立撤销历史",
+      "sum": "新工具让每个 Blender 对象拥有独立撤销历史，支持多模式。",
+      "ta": "Blender 工作流效率提升，对 DCC 工具链中的撤销管理有参考。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/this-tool-gives-every-blender-object-its-own-undo-history/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ArcBrush 1.5 升级 32 位浮点管线",
+      "sum": "ArcBrush 1.5 引入色彩管理 32 位浮点图像管线，支持 Cryptomatte。",
+      "ta": "32 位浮点管线对纹理合成与后期处理精度提升，适合高动态范围工作流。",
+      "src": "80 Level · 07-23",
+      "url": "https://80.lv/articles/arcbrush-1-5-upgrades-to-color-managed-32-bit-float-image-pipeline/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D 高斯泼溅补全与 PatchMatch",
+      "sum": "3D-GIMP 用 PatchMatch 改进 3D 高斯场景编辑，减少多视图不一致。",
+      "ta": "3D 高斯编辑新方法，对实时场景修复与一致性维护有潜在应用。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.20789v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "缝纫图案缝合对应学习重建",
+      "sum": "图学习框架从 2D 缝纫图案重建两级缝合信息，无需人工标注。",
+      "ta": "自动缝合重建对虚拟服装建模与布料模拟管线自动化有直接帮助。",
+      "src": "arXiv · cs.GR · 07-23",
+      "url": "https://arxiv.org/abs/2607.21213v1"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
+      "title": "Vermila 工作室裁员或关闭",
+      "sum": "Vermila Studios 裁员，CEO 称未来数月关闭是可行可能。",
+      "ta": "行业动荡信号，可能影响外包或合作项目稳定性。",
+      "src": "Game Developer · 07-23",
+      "url": "https://www.gamedeveloper.com/business/vermila-studios-lays-off-staff-studio-closure-a-feasible-possibility-in-coming-months"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Disgaea 转型动作 RPG 开发谈",
+      "sum": "开发团队分享从战术 RPG 转动作 RPG 的机制与模型适配经验。",
+      "ta": "游戏类型转换中的模型与动画适配经验，对角色系统设计有参考。",
+      "src": "80 Level · 07-24",
+      "url": "https://80.lv/articles/disgaea-mayhem-shifting-from-tactical-rpg-to-action-rpg/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "title": "Halo 初代重制登陆 PlayStation",
+      "sum": "Halo: Campaign Evolved 用新机制和操控现代化经典 FPS。",
+      "ta": "经典 IP 跨平台重制，对引擎适配与现代化改造有参考。",
+      "src": "PlayStation Blog · 07-23",
+      "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "漫威金刚狼故事预告发布",
+      "sum": "Insomniac 在 SDCC 公布漫威金刚狼故事预告与艺术图。",
+      "ta": "3A 游戏叙事与美术展示，对角色渲染与场景设计有参考。",
+      "src": "PlayStation Blog · 07-23",
+      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
     }
   ],
   "flashbackTitle": "",

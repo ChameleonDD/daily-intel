@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月5日 · 周三",
+  "date": "2026年7月29日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>混元3D Buffalo 统一生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>实时视频世界模型</em> / <em>高斯体渲染加速</em> / <em>网格注意力机制</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -265,74 +265,110 @@ window.INTEL_DATA = {
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
+      "title": "实时视频世界模型",
+      "sum": "Wonder模型支持实时、可控制摄像头的视频世界探索。",
+      "ta": "关注实时可交互视频世界模型，可能影响未来游戏场景生成与动态环境构建。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.26037v1"
     },
     {
-      "cat": "ai",
-      "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高斯体渲染加速",
+      "sum": "提出基于高斯的体渲染表示，用于高效剪切-扭曲可视化。",
+      "ta": "体渲染加速技术，对医学可视化或体积特效有参考价值。",
+      "src": "arXiv · cs.GR · 07-28",
+      "url": "https://arxiv.org/abs/2607.25377v1"
     },
     {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "网格注意力机制",
+      "sum": "提出内在且三角化无关的注意力机制，用于网格学习。",
+      "ta": "网格上的注意力机制，可能提升3D模型处理与生成质量。",
+      "src": "arXiv · cs.GR · 07-27",
+      "url": "https://arxiv.org/abs/2607.24954v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender阻尼跟踪测试",
+      "sum": "3D角色艺术家分享在Blender中测试阻尼跟踪约束的经验。",
+      "ta": "Blender阻尼跟踪约束技巧，对角色绑定与动画有参考价值。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/3d-character-artist-shares-how-she-tested-damped-track-constraints-on-blender/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
+      "title": "EverQuest视觉重建",
+      "sum": "EverQuest Legends团队分享恢复经典视觉风格的自定义管线。",
+      "ta": "经典MMO视觉重建流程，对复古风格或资产恢复项目有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/interview-how-everquest-legends-recreates-classic-everquest-s-iconic-visual-style/"
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
+      "imp": "lo",
+      "title": "Blender风格化毛发",
+      "sum": "教程展示使用Blender几何节点创建轻量级风格化毛发与羽毛。",
+      "ta": "几何节点毛发方案，对风格化角色或特效有直接参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/tutorial-stylized-fur-feathers-in-blender/"
     },
     {
       "cat": "flow",
+      "imp": "lo",
+      "title": "合作驾驶冒险游戏幕后",
+      "sum": "Funselektor分享合作驾驶冒险游戏《over the hill》创作历程。",
+      "ta": "独立游戏开发经验，对合作模式与公路题材有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/over-the-hill-creating-a-co-op-driving-adventure-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "电影级VFX幕后",
+      "sum": "动画师分享《降世神通》电影中Appa口水特效的幕后制作。",
+      "ta": "电影级VFX制作流程，对角色特效与液体模拟有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/animator-unveils-behind-the-scenes-of-vfx-for-appa-s-slobber-in-avatar-aang-movie/"
+    },
+    {
+      "cat": "tech",
       "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
+      "title": "自定义遮挡系统",
+      "sum": "为《Control》风格游戏Psych Rift开发自定义遮挡系统。",
+      "ta": "自定义遮挡系统实现，对类似扭曲现实风格游戏有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/custom-occlusion-system-for-control-inspired-reality-bending-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender纸艺世界",
+      "sum": "艺术家展示在Blender中制作的超现实纸艺风格世界。",
+      "ta": "纸艺风格3D世界，对风格化场景与材质有参考。",
+      "src": "80 Level · 07-28",
+      "url": "https://80.lv/articles/check-out-this-surreal-papercraft-style-world-made-in-blender/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
+      "title": "TaleWorlds联合创始人去世",
+      "sum": "《骑马与砍杀》工作室TaleWorlds联合创始人İpek Yavuz逝世。",
+      "ta": "行业人物讣告，了解工作室历史。",
+      "src": "Game Developer · 07-28",
+      "url": "https://www.gamedeveloper.com/business/obituary-taleworlds-co-founder-i-pek-yavuz-has-passed-away"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "title": "游戏业副业条款争议",
+      "sum": "开发者讨论副业条款对创意自由的限制与困扰。",
+      "ta": "行业法律问题，了解对自由职业者的影响。",
+      "src": "Game Developer · 07-28",
+      "url": "https://www.gamedeveloper.com/production/-i-have-been-hunted-down-by-hr-reps-lawyers-and-comms-people-developers-discuss-the-pain-and-prevalence-of-side-work-clauses"
     }
   ],
   "flashbackTitle": "",

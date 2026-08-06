@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月5日 · 周三",
+  "date": "2026年8月4日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>混元3D Buffalo 统一生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>材质感知3D部件分解</em> / <em>自回归绑定模型适配植物骨架</em> / <em>多智能体系统生成粒子特效</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -263,76 +263,151 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
+      "title": "分层符号色彩寻址系统",
+      "sum": "提出PTI，基于RGB立方体递归二分构建分层符号色彩寻址系统。",
+      "ta": "关注其分层色彩组织方式，或可启发材质与调色工具的数据结构设计。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.02460v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "傅里叶潜空间扩散生成TPMS",
+      "sum": "提出扩散框架，可控生成低残余平均曲率的三周期极小曲面结构。",
+      "ta": "TPMS在程序化纹理与体积建模中有潜力，值得关注其可控性方法。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.02151v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "稀疏负采样加速大规模图布局",
+      "sum": "提出SNAP-tFDP，用稀疏负采样实现大规模图布局的力导向放置。",
+      "ta": "图布局算法或可用于程序化生成中的节点网络可视化与调试。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01907v1"
     },
     {
       "cat": "ai",
       "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
+      "rank": 1,
+      "title": "材质感知3D部件分解",
+      "sum": "提出PartMat，用单一全局潜变量实现材质感知的3D部件分解。",
+      "ta": "直接关联3D资产编辑工作流，按材质边界分解部件可提升资产可编辑性。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01825v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "非线性光谱预处理纳米显微",
+      "sum": "通过非线性光谱预处理，实现实验室级高保真叠层衍射纳米成像。",
+      "ta": "成像技术虽非游戏直接相关，但或可启发离线渲染中的细节捕捉。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01746v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
+      "title": "关键姿态锚定的流式手势生成",
+      "sum": "提出StreamTalk，用关键姿态锚定实现流式共语手势生成，避免误差累积。",
+      "ta": "实时角色动画领域相关，关键姿态锚定思路或可借鉴于动画状态机。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01643v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "语音驱动的表情化3D面部动画",
+      "sum": "提出ETHead，从语音生成富有表现力的3D面部动画与头部运动。",
+      "ta": "面部动画生成技术，对NPC对话表现力提升有潜在应用价值。",
+      "src": "arXiv · cs.GR · 08-03",
+      "url": "https://arxiv.org/abs/2608.01605v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 2,
+      "title": "自回归绑定模型适配植物骨架",
+      "sum": "提出PlantRig，将自回归绑定模型适配到植物骨骼重建，处理非规范分支。",
+      "ta": "植物程序化生成与绑定是本行方向，此方法或可简化植被资产制作流程。",
+      "src": "arXiv · cs.GR · 08-02",
+      "url": "https://arxiv.org/abs/2608.01072v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "拓扑感知先验的3D部件分解",
+      "sum": "提出Hi-TOPS，用分层拓扑感知评分先验改进3D部件分解精度。",
+      "ta": "部件分解是资产编辑基础，拓扑感知先验或可提升复杂模型的分解质量。",
+      "src": "arXiv · cs.GR · 08-01",
+      "url": "https://arxiv.org/abs/2608.00767v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 3,
+      "title": "多智能体系统生成粒子特效",
+      "sum": "提出ParticleGen，用多智能体系统自动化生成高质量粒子特效。",
+      "ta": "粒子特效是TA核心工作，此系统或可显著降低特效制作门槛与成本。",
+      "src": "arXiv · cs.GR · 08-01",
+      "url": "https://arxiv.org/abs/2608.00629v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型基准测试WorldExam",
+      "sum": "提出WorldExam基准，从外观到反应性评估世界模型能力。",
+      "ta": "世界模型基准或可间接影响游戏AI与模拟环境的评估方法。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
+      "url": "https://huggingface.co/papers/2608.02603"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
-    },
-    {
-      "cat": "biz",
+      "cat": "ai",
       "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
+      "title": "人体中心图像数据集合成管线",
+      "sum": "提出Poplar，可扩展的以人为中心的图像数据集合成管线。",
+      "ta": "合成数据管线或可用于生成训练TA工具所需的标注图像数据。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.00440"
     },
     {
-      "cat": "biz",
+      "cat": "flow",
+      "imp": "mid",
+      "title": "光遇艺术深度访谈",
+      "sum": "thatgamecompany分享光遇的实时服务美术方向、Beyond引擎与Figma工作流。",
+      "ta": "了解大型实时服务游戏的美术管线与工具链，对TA工作流设计有参考价值。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/interview-a-deep-dive-into-the-art-of-sky-children-of-the-light-with-thatgamecompany/"
+    },
+    {
+      "cat": "gfx",
       "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "title": "像素化水着色器效果奇特",
+      "sum": "展示一款像素化风格的水着色器，视觉效果引人注目。",
+      "ta": "像素化水效果或可启发风格化渲染中的水体表现。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/this-pixelated-water-shader-looks-weirdly-fascinating/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Grabbit 2编辑器内物理模拟",
+      "sum": "Grabbit 2在Unity编辑器内模拟物理，用于关卡设计与布景，处理碰撞。",
+      "ta": "编辑器内物理模拟可提升关卡布景效率，对TA工具链有直接参考。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/how-grabbit-2-simulates-physics-inside-the-unity-editor/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Houdini森林溪流模拟",
+      "sum": "艺术家用Houdini制作森林溪流液体模拟，并分享创作过程。",
+      "ta": "Houdini液体模拟案例，可参考其技术实现与艺术表现。",
+      "src": "80 Level · 08-03",
+      "url": "https://80.lv/articles/stunning-forest-stream-simulation-made-with-houdini/"
     }
   ],
   "flashbackTitle": "",

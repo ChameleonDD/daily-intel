@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月5日 · 周三",
+  "date": "2026年7月20日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>混元3D Buffalo 统一生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>3D高斯在图形处理器上渲染</em> / <em>文本到动作的逐笔时间控制</em> / <em>视频基础模型生成建模</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -263,84 +263,37 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
+      "title": "3D高斯在图形处理器上渲染",
+      "sum": "首次在IPU上实现3D高斯渲染，仅用片上SRAM。",
+      "ta": "关注非传统硬件上的实时渲染可行性，可能影响未来管线设计。",
+      "src": "arXiv · cs.GR · 07-17",
+      "url": "https://arxiv.org/abs/2607.15951v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
+      "title": "文本到动作的逐笔时间控制",
+      "sum": "引入动作单元实现文本到动作的逐笔时间控制。",
+      "ta": "对角色动画工作流中的动作生成精度有参考价值。",
+      "src": "arXiv · cs.GR · 07-17",
+      "url": "https://arxiv.org/abs/2607.15717v1"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
-    },
-    {
-      "cat": "biz",
+      "cat": "ai",
       "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "title": "视频基础模型生成建模",
+      "sum": "通过表示自编码器驯服视频基础模型用于生成。",
+      "ta": "视频生成技术可能间接影响实时渲染中的动态内容创建。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.14088"
     }
   ],
   "flashbackTitle": "",
   "sources": {
     "ok": [
-      "Unreal Engine",
       "NVIDIA",
-      "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
@@ -350,7 +303,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": ""
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客。"
   },
   "xStale": false
 };

@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月5日 · 周三",
+  "date": "2026年7月10日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>混元3D Buffalo 统一生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>黑曜石工作室裁员52+人</em> / <em>Xbox裁减379名Zenimax员工</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -263,86 +263,164 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
+      "title": "交互式人体动作生成",
+      "sum": "ARDY用自回归扩散+混合表示实现实时3D人体动作生成。",
+      "ta": "实时动作生成可加速角色动画原型，但需验证UE5管线集成度。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08741v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "物理仿真统一网格重建",
+      "sum": "HoloTetSphere直接优化体积基元，绕过表面提取+四面体化两步流程。",
+      "ta": "直接输出物理就绪网格，可简化程序化资产到仿真管线的转换。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08398v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "PBR条件视频重光照",
+      "sum": "LightCrafter用PBR条件扩散模型实现可控且时序一致的重光照。",
+      "ta": "PBR条件控制可提升视频重光照的物理准确性，对过场动画有用。",
+      "src": "arXiv · cs.GR · 07-09",
+      "url": "https://arxiv.org/abs/2607.08016v1"
     },
     {
       "cat": "ai",
+      "imp": "lo",
+      "title": "实时交互视频生成模型",
+      "sum": "Vidu S1发布实时交互式视频生成模型。",
+      "ta": "实时视频生成可能用于游戏内动态过场，但当前质量未知。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.03118"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型推理加速草稿",
+      "sum": "Flash-BoN为扩散模型提供即时草稿以加速推理。",
+      "ta": "推理加速技术可降低生成式工具在游戏工作流中的延迟。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.04461"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "端侧图像转视频相机运动",
+      "sum": "CineMobile在设备上实现图像到视频的扩散，生成电影级相机运动。",
+      "ta": "端侧生成相机运动可用于快速预览，但实时性存疑。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2607.03803"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender几何节点恶搞",
+      "sum": "一篇关于Blender几何节点奇怪用法的恶搞帖子。",
+      "ta": "纯娱乐，无技术价值，但可了解社区创意。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/something-is-really-wrong-with-this-blender-artist-s-geometry-nodes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "行星飞船动画概念",
+      "sum": "用整个行星构建巨型飞船的史诗动画概念。",
+      "ta": "视觉灵感参考，无直接技术细节。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/epic-animation-of-giant-spaceship-built-from-entire-planets/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "免费Maya面部绑定变形器",
+      "sum": "Zhenggang Deng发布免费自定义Maya变形器，用于高端面部绑定。",
+      "ta": "免费面部绑定工具可提升角色管线效率，需测试兼容性。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/free-custom-maya-deformer-for-high-end-facial-rigging/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender实时纹理绘制工具",
+      "sum": "TXTRCast工具允许在Blender中实时纹理绘制，支持任何软件。",
+      "ta": "实时纹理绘制可加速贴图迭代，对材质工作流有潜在价值。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/free-blender-tool-for-real-time-texture-painting-with-any-software/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "玩具手柄改Mario Kart",
+      "sum": "开发者将Fisher-Price玩具手柄改造成Mario Kart陀螺仪游戏手柄。",
+      "ta": "硬件改造趣味项目，与TA工作流无关。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/developer-turns-fisher-price-toy-controller-into-a-mario-kart-gyro-gamepad/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "风格化角色面部绑定测试",
+      "sum": "3D短片《Noah and Jade》的风格化角色面部绑定测试。",
+      "ta": "风格化绑定案例参考，无新技术细节。",
+      "src": "80 Level · 07-09",
+      "url": "https://80.lv/articles/facial-rig-tests-for-stylized-characters-in-3d-short-film/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "游戏媒体新站Respec上线",
+      "sum": "Eurogamer和VG247老将推出独立游戏媒体Respec。",
+      "ta": "行业动态，可能影响游戏资讯获取渠道。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/business/eurogamer-and-vg247-veterans-launch-new-independent-site"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "风险规避游戏行业边缘化开发者",
+      "sum": "Nazih Fares的卡牌游戏因行业风险规避难获融资。",
+      "ta": "反映行业融资困境，与TA工作无直接关联。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/production/the-game-industry-is-failing-marginalized-developers"
+    },
+    {
+      "cat": "biz",
       "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
+      "title": "黑曜石工作室裁员52+人",
+      "sum": "WARN通知确认黑曜石至少52名员工被裁，涉及Pentiment和天外世界团队。",
+      "ta": "3A工作室裁员影响行业信心，可能波及项目外包需求。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/business/report-obsidian-losing-around-one-quarter-of-its-staff-to-xbox-reset-"
     },
     {
       "cat": "biz",
-      "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
+      "imp": "hi",
+      "title": "Xbox裁减379名Zenimax员工",
+      "sum": "Xbox在马里兰州裁减379名Zenimax员工，含213名ESO开发者。",
+      "ta": "大规模裁员影响游戏行业生态，可能影响UE5项目资源。",
+      "src": "Game Developer · 07-09",
+      "url": "https://www.gamedeveloper.com/business/xbox-had-laid-off-379-zenimax-workers-in-maryland"
     },
     {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Maya动画层节点自连接Bug",
+      "sum": "Maya 2024.2中引用绑定的动画层节点保存重开后自连接循环。",
+      "ta": "直接影响绑定和动画管线，需关注修复或规避。",
+      "src": "Tech-Artists · 07-09",
+      "url": "https://www.tech-artists.org/t/bug-animation-layer-nodes-self-connect-cycle-after-save-reopen-on-referenced-rigs-maya-2024-2/18445"
     }
   ],
   "flashbackTitle": "",
   "sources": {
     "ok": [
-      "Unreal Engine",
       "NVIDIA",
-      "Blender 开发博客",
       "PlayStation Blog",
-      "AMD GPUOpen",
       "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
@@ -350,7 +428,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": ""
+    "missed": "未覆盖：Unreal Engine、Blender 开发博客、AMD GPUOpen。"
   },
   "xStale": false
 };

@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月5日 · 周三",
+  "date": "2026年7月23日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>混元3D Buffalo 统一生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>四面体笼驱动海量动画几何光线追踪</em> / <em>分裂辐射级联：实时全局光照新方法</em> / <em>HAWKED 程序化瀑布工具制作详解</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -263,76 +263,160 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
-    },
-    {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
+      "rank": 1,
+      "title": "四面体笼驱动海量动画几何光线追踪",
+      "sum": "AMD 提出用四面体笼动画复用静态 BLAS，实时追踪数亿三角形，大幅降低植被/草丛更新开销。",
+      "ta": "对植被渲染和人群系统意义重大，可显著减少每帧 BVH 重建和内存消耗。",
+      "src": "AMD GPUOpen · 07-22",
+      "url": "https://gpuopen.com/learn/ray-tracing-massive-amounts-animated-geometry/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "分裂辐射级联：实时全局光照新方法",
+      "sum": "提出稀疏辐射探针的级联方案，解决传统探针方法细节不足问题，实现实时漫反射全局光照。",
+      "ta": "可能成为 UE5 Lumen 之外的高质量 GI 替代方案，值得关注实现细节。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.20384v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 3,
+      "title": "HAWKED 程序化瀑布工具制作详解",
+      "sum": "Serge Filin 分享将 2D 概念转化为动态实时材质的程序化瀑布工具开发过程。",
+      "ta": "直接相关植被/特效工作流，学习如何用程序化材质实现复杂水体效果。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/creating-a-procedural-waterfalls-tool-for-the-game-hawked/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "优化写实水晶材质制作分解",
+      "sum": "Anastasia Gorban 详解水晶材质分层结构、虹彩效果及划痕纹理制作流程。",
+      "ta": "材质分层和虹彩实现技巧可复用至宝石/玻璃类 Shader 开发。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/breakdown-how-to-create-an-optimized-and-realistic-crystal-material/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 远程资产库功能预览",
+      "sum": "Blender 开发中远程资产库，支持在线浏览资产并按需下载。",
+      "ta": "可能影响 TA 资产管理工作流，减少本地存储依赖。",
+      "src": "Blender 开发博客 · 07-22",
+      "url": "https://code.blender.org/2026/07/remote-asset-libraries/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Tear Painter 更新支持纹理取色",
+      "sum": "Blender 工具 Tear Painter 新版可直接从纹理中选取颜色。",
+      "ta": "提升纹理绘制效率，对材质贴图工作流有直接帮助。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/new-tear-painter-update-lets-you-pick-colors-directly-from-textures/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity URP 地形自适应动态雨系统",
+      "sum": "Prism Works 发布 Unity URP 雨系统，支持地形自适应涟漪和建筑遮挡。",
+      "ta": "Niagara 特效师可参考其地形交互逻辑，移植至 UE5 雨系统。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/this-dynamic-rain-system-brings-terrain-adaptive-real-time-rain-effects-to-unity/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "MR-Compare：3D高斯与网格重建对比框架",
+      "sum": "MR 框架实现 3D Gaussian Splatting 与网格重建在物理环境中的空间对齐比较。",
+      "ta": "为 3D 重建质量评估提供混合现实工具，可能影响扫描资产管线。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.20325v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "快速波光学全息显示渲染",
+      "sum": "利用多层图像实现 3D 全息显示的快速波光学渲染方法。",
+      "ta": "前沿显示技术，长期可能影响实时渲染输出方式。",
+      "src": "arXiv · cs.GR · 07-22",
+      "url": "https://arxiv.org/abs/2607.19731v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "低功耗AR眼镜色调映射框架",
+      "sum": "提出基于学习的功耗约束色调映射，在 AR 眼镜上优化显示功耗与感知质量。",
+      "ta": "对移动/AR 设备渲染优化有参考价值，但非核心工作流。",
+      "src": "arXiv · cs.GR · 07-21",
+      "url": "https://arxiv.org/abs/2607.19509v1"
     },
     {
       "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
+      "imp": "lo",
+      "title": "ATSplat：紧凑前馈3D高斯泼溅",
+      "sum": "提出自适应令牌扩展的前馈 3DGS 方法，减少存储开销。",
+      "ta": "3DGS 压缩方向进展，可能影响实时 3D 重建资产格式。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
+      "url": "https://huggingface.co/papers/2607.20417"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
+      "title": "S.T.A.L.K.E.R.2 独占费超开发预算",
+      "sum": "GSC Game World 透露 Xbox 独占协议金额超过游戏自身开发预算。",
+      "ta": "行业商业动态，了解平台独占策略对开发资金的影响。",
+      "src": "80 Level · 07-22",
+      "url": "https://80.lv/articles/s-t-a-l-k-e-r-2-s-xbox-exclusivity-deal-surpassed-the-game-s-own-development-budget/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
+      "title": "Kinect游戏Freefall Racers 2026年复活",
+      "sum": "2013年 Kinect 游戏 Freefall Racers 通过 Nex Playground 平台回归。",
+      "ta": "怀旧游戏复活案例，对体感交互设计有参考意义。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/business/a-kinect-game-that-debuted-in-2013-has-been-revived-in-the-year-of-our-lord-2026"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Splatoon Raiders 原型曾是塔防游戏",
+      "sum": "总监分享 Splatoon 衍生作原型为塔防，后回归系列核心玩法。",
+      "ta": "游戏设计迭代案例，了解玩法原型到成品的过程。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/design/splatoon-raiders-started-as-a-tower-defense-game-but-its-splatoon-ness-got-lost"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Human Fall Flat 2取消，直接做3代",
+      "sum": "No Brakes Games 创始人回顾十年历程，宣布取消 2 代直接开发 3 代。",
+      "ta": "独立游戏开发决策案例，了解系列化开发策略。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/production/-human-fall-flat-2-is-cancelled-we-are-making-human-fall-flat-3-no-brakes-games-founder-looks-back-on-a-defining-decade"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Hasbro 取消多款游戏损失5600万美元",
+      "sum": "Hasbro 因取消多个游戏项目记录 5600 万美元减值，将聚焦有特许经营潜力的项目。",
+      "ta": "行业投资风向标，了解大厂项目筛选策略。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/business/hasbro-records-56m-write-down-after-scrapping-several-video-games"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Alpha Dog Games 脱离微软恢复独立",
+      "sum": "被 Xbox 关闭两年后，Alpha Dog Games 重新获得独立运营权。",
+      "ta": "工作室生存案例，了解行业并购后独立回归现象。",
+      "src": "Game Developer · 07-22",
+      "url": "https://www.gamedeveloper.com/business/alpha-dog-games-returns-to-independence-two-years-after-being-shuttered-by-xbox"
     }
   ],
   "flashbackTitle": "",
