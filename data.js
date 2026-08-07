@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月6日 · 周四",
+  "date": "2026年8月7日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>跨现实投影与头显过渡研究</em> / <em>RORA：带关节的真实物体重建</em> / <em>基于Splat的CT金属伪影消除</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>GPU自适应细分贝塞尔曲面</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,192 +128,120 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "跨现实投影与头显过渡研究",
-      "sum": "研究用户在大规模投影与MR头显间跨现实对象与场景级过渡的感知。",
-      "ta": "关注沉浸式展览中混合现实过渡的感知设计，对TA在跨平台视觉一致性上有参考价值。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04971v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RORA：带关节的真实物体重建",
-      "sum": "用NeRF和3DGS重建真实环境，并支持物体关节运动，缩小机器人学习模拟差距。",
-      "ta": "3DGS结合关节物体重建，对程序化生成和交互式场景的资产制作有启发。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04842v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "基于Splat的CT金属伪影消除",
-      "sum": "通过紧凑衰减建模减少锥束CT中高衰减物体引起的金属伪影。",
-      "ta": "Splat渲染在医学成像的应用，展示3DGS在非游戏领域的扩展潜力。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04764v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "稀疏视角下Splat CT姿态敏感性",
-      "sum": "重新审视基于3D高斯的断层扫描在稀疏视角重建中的姿态敏感性。",
-      "ta": "3DGS在稀疏数据下的鲁棒性分析，对实时渲染中的视角优化有参考。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04752v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "稀疏dToF传感器的稠密深度补全",
-      "sum": "从稀疏直接飞行时间传感器生成稠密度量深度，提升恶劣条件下的鲁棒性。",
-      "ta": "深度补全技术对实时渲染中的深度感知和特效交互有潜在应用。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04737v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态高斯实现多视角面部手势动画",
-      "sum": "用动态高斯重建逼真3D化身，兼顾面部细节和手部姿态。",
-      "ta": "动态高斯在角色动画中的应用，对TA在角色渲染和动画管线有参考价值。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04722v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "OutLangSplat：无人机户外语言高斯",
-      "sum": "将开放词汇语言特征嵌入3DGS，扩展至无人机户外大规模场景理解。",
-      "ta": "语言嵌入3DGS在户外场景的应用，对TA在场景理解和交互设计上有启发。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04560v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "现代艺术中的不确定性量化",
-      "sum": "文本生成视频模型对同一艺术品的多次生成差异被视为信号而非噪声。",
-      "ta": "生成式AI的多样性分析，对TA在创意工具中的可控性设计有参考。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.04038v1"
+      "imp": "hi",
+      "rank": 1,
+      "title": "GPU自适应细分贝塞尔曲面",
+      "sum": "AMD发布GPU工作图自适应细分方案，无裂缝且大幅降低三角形数量。",
+      "ta": "关注其工作图实现与硬件细分质量对比，对植被曲面减面有直接参考价值。",
+      "src": "AMD GPUOpen · 08-06",
+      "url": "https://gpuopen.com/learn/gpu-view-adaptive-subdivision/"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "从叙事重建持久世界",
-      "sum": "从叙事文本重建持久世界，用于叙事驱动的交互式体验生成。",
-      "ta": "叙事驱动的世界生成，对TA在程序化内容生成和关卡设计上有潜在应用。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.04037v1"
+      "title": "多视角几何先验提升3DGS重建",
+      "sum": "利用多视角几何先验优化3D高斯泼溅重建，改善几何精度。",
+      "ta": "对程序化生成资产或场景重建的几何质量提升有参考意义。",
+      "src": "arXiv · cs.GR · 08-06",
+      "url": "https://arxiv.org/abs/2608.06117v1"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "LLM个性化幻象与自我监控误导",
-      "sum": "研究LLM如何虚构用户画像，并指出自我监控机制可能产生误导。",
-      "ta": "AI个性化技术的局限性，对TA在AI驱动工具的用户建模有警示。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.04570"
-    },
-    {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "WorldCycle：长时程视频世界模型",
-      "sum": "用自验证强化学习训练长时程视频世界模型，提升生成稳定性。",
-      "ta": "视频世界模型的强化学习，对TA在动态场景模拟和特效预演有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.04964"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "HelloWorld：视频世界模型社交角色",
-      "sum": "在视频世界模型中实现社交互动角色，增强交互体验的真实感。",
-      "ta": "社交互动角色在视频模型中的实现，对TA在NPC行为和动画生成有启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.05070"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "UniWorld-View：大基线视图合成",
-      "sum": "利用视频扩散模型实现大基线视图合成，提升视角生成的连贯性。",
-      "ta": "视频扩散模型在视图合成中的应用，对TA在场景重建和虚拟拍摄有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.04701"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "SEED：AI驱动24/7社会模拟器",
-      "sum": "Klang的SEED游戏用AI角色持续生活工作，即使玩家离线也塑造社会。",
-      "ta": "AI NPC的持续模拟，对TA在大型开放世界中的角色行为系统有参考。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/this-new-24-7-society-simulator-is-powered-by-thousands-of-ai-controlled-npcs/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Gunstoppable：速度即伤害的Roguelite",
-      "sum": "CAGE Studios创始人分享移动射击游戏Gunstoppable的开发工具和设计理念。",
-      "ta": "独立游戏开发工具链分享，对TA在快速原型和工具选型有参考。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/gunstoppable-how-speed-is-damage-defined-a-roguelite-fps/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "博德之门3第三人称Mod体验",
-      "sum": "增强版Native Camera Tweaks Mod让博德之门3以第三人称游玩。",
-      "ta": "相机Mod的视角调整，对TA在相机系统和沉浸感设计上有参考。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/baldur-s-gate-3-third-person-mod-makes-it-feel-like-a-different-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "免费Blender径向菜单插件",
-      "sum": "Blender插件将常用工具组织为径向菜单，提升操作效率。",
-      "ta": "工具组织优化，对TA在DCC工具中的工作流效率提升有直接帮助。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/check-out-this-free-blender-add-on-for-organizing-your-tools-in-a-radial-menu/"
+      "title": "椭球体稀疏体渲染新方法",
+      "sum": "提出基于椭球体的稀疏体渲染，结构感知原语学习提升效率。",
+      "ta": "对大规模稀疏体积数据（如云、烟雾）的实时渲染有潜在优化价值。",
+      "src": "arXiv · cs.GR · 08-06",
+      "url": "https://arxiv.org/abs/2608.05564v1"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "UV Flex：Blender UV岛编辑工具",
-      "sum": "AlbertoFX的UV Flex提供交互式UV岛分割、合并和重塑功能。",
-      "ta": "UV编辑工具集，对TA在材质贴图和UV布局优化上有实用价值。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/split-merge-reshape-uv-islands-with-this-blender-toolset/"
+      "title": "复古风格现代管线适配",
+      "sum": "Kidbash: Super Legend用Blender建模转Aseprite精灵图，实现复古视觉。",
+      "ta": "了解Blender到2D精灵的转换流程，对风格化资产管线有启发。",
+      "src": "80 Level · 08-06",
+      "url": "https://80.lv/articles/interview-how-kidbash-super-legend-adapts-retro-style-graphics-with-a-modern-art-pipeline/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "生存恐怖FPS创作幕后",
+      "summary": "《The Void》开发者分享受《迷雾》启发的生存恐怖FPS设计过程。",
+      "ta": "可了解恐怖氛围营造与玩法设计结合，对特效叙事有参考。",
+      "src": "80 Level · 08-06",
+      "url": "https://80.lv/articles/the-void-how-to-create-a-survival-horror-fps-inspired-by-the-mist-movie/",
+      "sum": "生存恐怖FPS创作幕后"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "2D复古与真人过场融合",
+      "summary": "《Tenebris Somnia》融合2D复古美术与真人过场，分享制作方法。",
+      "ta": "关注2D与实拍风格统一的技术处理，对混合媒体项目有参考。",
+      "src": "80 Level · 08-06",
+      "url": "https://80.lv/articles/creating-a-survival-horror-game-that-blends-a-2d-retro-style-and-live-action-cutscenes/",
+      "sum": "2D复古与真人过场融合"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "3D雕刻游戏玩法新作",
+      "summary": "《FAKE ME》将3D雕刻与捉迷藏玩法结合，提供新类型体验。",
+      "ta": "对3D雕刻交互玩法感兴趣可速览，了解创意方向。",
+      "src": "80 Level · 08-06",
+      "url": "https://80.lv/articles/meccha-chameleon-prop-hunt-meet-in-this-3d-sculpting-game/",
+      "sum": "3D雕刻游戏玩法新作"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender视口绘制动画路径",
+      "summary": "Motion Painter插件支持在Blender视口绘制运动路径并生成可编辑关键帧。",
+      "ta": "对程序化动画或特效预览工作流有直接效率提升。",
+      "src": "80 Level · 08-06",
+      "url": "https://80.lv/articles/this-blender-add-on-lets-you-draw-animation-paths-in-viewport/",
+      "sum": "Blender视口绘制动画路径"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender写实渲染展示",
+      "summary": "展示Blender制作的逼真3D渲染效果，附工作过程对比。",
+      "ta": "可快速浏览写实渲染效果，但无技术细节。",
+      "src": "80 Level · 08-06",
+      "url": "https://80.lv/articles/impressively-realistic-3d-render-made-with-blender/",
+      "sum": "Blender写实渲染展示"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Secret Mode开设开发工作室",
-      "sum": "发行商Secret Mode成立开发工作室以支持内部项目。",
-      "ta": "行业动态，对TA了解发行商内部开发方向有参考。",
-      "src": "Game Developer · 08-05",
-      "url": "https://www.gamedeveloper.com/business/publisher-secret-mode-opens-development-studio-to-support-internal-projects"
+      "title": "Halo工作室裁员承包商",
+      "summary": "《Halo: Campaign Evolved》发售后，Halo Studios解雇长期承包商。",
+      "ta": "行业动态速览，了解工作室人员变动。",
+      "src": "Game Developer · 08-06",
+      "url": "https://www.gamedeveloper.com/production/halo-studios-jettisons-long-serving-contractors-after-launch-of-halo-campaign-evolved",
+      "sum": "Halo工作室裁员承包商"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "King拒绝员工集体谈判协议",
-      "sum": "Candy Crush开发商King拒绝员工集体谈判协议，称现有福利更优。",
-      "ta": "行业劳资动态，对TA了解游戏公司内部环境有参考。",
-      "src": "Game Developer · 08-05",
-      "url": "https://www.gamedeveloper.com/business/candy-crush-maker-king-has-declined-staff-s-collective-bargaining-agreement"
+      "title": "Devolver欲退市独立发行",
+      "summary": "Devolver认为公开交易与独立发行不兼容，计划退市。",
+      "ta": "行业商业模式观察，对游戏发行生态有影响。",
+      "src": "Game Developer · 08-06",
+      "url": "https://www.gamedeveloper.com/business/devolver-wants-to-delist-because-indie-publishing-is-not-compatible-with-public-trading",
+      "sum": "Devolver欲退市独立发行"
     },
     {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "欧洲政策制定者被敦促支持游戏业",
-      "sum": "欧洲政策制定者被呼吁加大对本地游戏产业的支持力度。",
-      "ta": "行业政策动态，对TA了解区域游戏产业环境有参考。",
-      "src": "Game Developer · 08-05",
-      "url": "https://www.gamedeveloper.com/production/policymakers-across-europe-told-to-do-more-to-support-game-industry"
+      "cat": "ai",
+      "imp": "mid",
+      "title": "ComfyUI材质同步插件",
+      "summary": "ComfyUI-MaterialSync支持Blender、Maya和UE材质同步。",
+      "ta": "对AI生成材质到引擎的流程有直接帮助，值得尝试。",
+      "src": "Tech-Artists · 08-06",
+      "url": "https://www.tech-artists.org/t/comfyui-materialsync-for-blender-maya-and-unrealengine/18483",
+      "sum": "ComfyUI材质同步插件"
     }
   ],
   "flashbackTitle": "",
@@ -323,14 +251,14 @@ window.INTEL_DATA = {
       "NVIDIA",
       "Blender 开发博客",
       "PlayStation Blog",
+      "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：AMD GPUOpen。"
+    "missed": "未覆盖：HuggingFace。"
   },
   "xStale": false
 };
