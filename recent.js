@@ -2,8 +2,91 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-07 11:54",
+  "updated": "2026-08-08 10:57",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "多模态生成式分词器",
+      "sum": "KVAE 提出面向多模态生成模型的分词器家族。",
+      "ta": "关注其 token 化方式是否可迁移到 3D 资产表征。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.05798"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 1,
+      "title": "多人世界模型共享状态",
+      "sum": "MASS 提出多人世界模型，以权威共享状态驱动。",
+      "ta": "对多人实时渲染的服务器权威状态同步有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.06257"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D高斯选择优化",
+      "sum": "GaussianSelector 用图优化实现 3DGS 中轻量物体选择。",
+      "ta": "可提升 3DGS 场景编辑与交互式选择的效率。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.01492"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "MMO 盈利模式反思",
+      "sum": "Bartle 谈虚拟世界起源、玩家契约与免费/付费设计。",
+      "ta": "理解玩家动机有助于设计更健康的游戏内经济系统。",
+      "src": "80 Level · 08-07",
+      "url": "https://80.lv/articles/richard-bartle-mmo-monetization-virtual-worlds-players-express-themselves/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 2,
+      "title": "UE5羽毛毛发制作",
+      "sum": "Owl Harpy 项目用 XGen 与自定义毛发着色器制作羽毛。",
+      "ta": "UE5 中实现柔软羽毛的着色器与灯光设置值得精读。",
+      "src": "80 Level · 08-07",
+      "url": "https://80.lv/articles/how-to-create-hair-and-feathers-for-an-owl-harpy-character/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "育碧免费游戏领取",
+      "sum": "汤姆克兰西游戏在 Ubisoft Connect 免费但玩家反馈领取困难。",
+      "ta": "行业动态速览，与 TA 工作无直接关联。",
+      "src": "80 Level · 08-07",
+      "url": "https://80.lv/articles/tom-clancy-s-game-is-available-for-free-on-ubisoft-connect/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 低模动画",
+      "sum": "展示 Blender 制作的病毒式牛奶脸小猫低模动画。",
+      "ta": "低模风格化动画的趣味案例，可快速浏览。",
+      "src": "80 Level · 08-07",
+      "url": "https://80.lv/articles/check-out-this-cute-blender-animation-of-the-viral-milk-face-kitten/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "猫武士游戏发布",
+      "sum": "《猫武士》改编游戏今秋登陆 PC 与主机，含四族冒险。",
+      "ta": "行业新作信息，与 TA 技术工作无直接关联。",
+      "src": "80 Level · 08-07",
+      "url": "https://80.lv/articles/warrior-cats-clans-of-the-forest-brings-novel-series-to-pc-console/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "游戏本地化要点",
+      "sum": "开发者需了解与本地化团队合作以适配多语言。",
+      "ta": "本地化流程与 TA 工作流无直接关联，速览即可。",
+      "src": "Game Developer · 08-07",
+      "url": "https://www.gamedeveloper.com/production/what-devs-need-to-know-about-localization-ft-concha-fernandez-alvarez-aurelie-perrin-and-guido-di-carlo"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -60,26 +143,6 @@ window.INTEL_RECENT = {
       "src": "80 Level · 08-06",
       "url": "https://80.lv/articles/creating-a-survival-horror-game-that-blends-a-2d-retro-style-and-live-action-cutscenes/",
       "sum": "2D复古与真人过场融合"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "3D雕刻游戏玩法新作",
-      "summary": "《FAKE ME》将3D雕刻与捉迷藏玩法结合，提供新类型体验。",
-      "ta": "对3D雕刻交互玩法感兴趣可速览，了解创意方向。",
-      "src": "80 Level · 08-06",
-      "url": "https://80.lv/articles/meccha-chameleon-prop-hunt-meet-in-this-3d-sculpting-game/",
-      "sum": "3D雕刻游戏玩法新作"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender视口绘制动画路径",
-      "summary": "Motion Painter插件支持在Blender视口绘制运动路径并生成可编辑关键帧。",
-      "ta": "对程序化动画或特效预览工作流有直接效率提升。",
-      "src": "80 Level · 08-06",
-      "url": "https://80.lv/articles/this-blender-add-on-lets-you-draw-animation-paths-in-viewport/",
-      "sum": "Blender视口绘制动画路径"
     },
     {
       "cat": "biz",
@@ -1118,15 +1181,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "UE5 异步叙事系统拆解",
-      "sum": "Tides of Tomorrow 用 UE5 状态机、蓝图、Houdini 实现玩家影响故事。",
-      "ta": "UE5 状态机与 Houdini 管线结合实现异步多人叙事，对程序化叙事工具设计有参考。",
-      "src": "80 Level · 07-23",
-      "url": "https://80.lv/articles/how-tides-of-tomorrow-s-story-link-system-lets-players-shape-each-other-s-stories/"
-    },
-    {
-      "cat": "flow",
       "imp": "lo",
       "title": "ArcBrush 1.5 升级 32 位浮点管线",
       "sum": "ArcBrush 1.5 引入色彩管理 32 位浮点图像管线，支持 Cryptomatte。",
@@ -1769,60 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "动态关卡生成思路，可能涉及程序化布局与碰撞检测优化。",
       "src": "PlayStation Blog · 07-15",
       "url": "https://blog.playstation.com/2026/07/15/everything-to-know-about-modern-warfare-4s-ever-changing-kill-block-multiplayer-mode/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "《Denshattack!》开发访谈",
-      "sum": "开发者谈融合托尼霍克与 Jet Set Radio 的火车玩法与赛璐璐风格。",
-      "ta": "赛璐璐风格与高速运动系统的实现细节对 TA 有启发。",
-      "src": "80 Level · 07-15",
-      "url": "https://80.lv/articles/interview-how-denshattack-blends-tony-hawk-jet-set-radio-with-trains/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前 Epic 高管加入 Saber",
-      "sum": "前 Epic Games VP Steve Allison 任 Saber Interactive 首席商务官。",
-      "ta": "行业人事变动，可能影响 Saber 的引擎合作策略。",
-      "src": "Game Developer · 07-15",
-      "url": "https://www.gamedeveloper.com/business/former-epic-games-vp-appointed-saber-interactive-s-chief-business-officer"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《死亡空间》联合创始人退休",
-      "sum": "Glen Schofield 结束 35 年游戏开发生涯退休。",
-      "ta": "行业资深人物退休，对恐怖游戏视觉风格有历史影响。",
-      "src": "80 Level · 07-15",
-      "url": "https://80.lv/articles/dead-space-creator-retires-after-35-years-in-game-development/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "GPU崩溃调试LLM助手",
-      "sum": "AMD发布RGD MCP Server，用LLM分析GPU崩溃并给出修复建议。",
-      "ta": "调试GPU崩溃可借助LLM自动根因分析，提升Shader/材质调试效率。",
-      "src": "AMD GPUOpen · 07-14",
-      "url": "https://gpuopen.com/learn/post-mortem-gpu-crash-debugging-with-llms/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "非人形头部Blendshape注册",
-      "sum": "RegHead框架为可动画非人形头部构建语义Blendshape集，支持重定向。",
-      "ta": "对非人形角色面部动画有直接参考价值，可简化Blendshape制作流程。",
-      "src": "arXiv · cs.GR · 07-13",
-      "url": "https://arxiv.org/abs/2607.12206v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "曲面自适应流体同调模拟",
-      "sum": "新方法处理非单连通曲面上的无粘不可压流体，关注谐波分量动态。",
-      "ta": "对曲面流体特效（如角色表面水流）有理论支撑，可能影响Niagara实现。",
-      "src": "arXiv · cs.GR · 07-13",
-      "url": "https://arxiv.org/abs/2607.12001v1"
     }
   ]
 };
