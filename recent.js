@@ -2,8 +2,26 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-08 10:57",
+  "updated": "2026-08-09 11:04",
   "cards": [
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "蜈蚣食人游戏",
+      "sum": "一款以蜈蚣食人为主题的游戏介绍。",
+      "ta": "游戏创意题材参考，与TA技术无直接关联。",
+      "src": "80 Level · 08-08",
+      "url": "https://80.lv/articles/this-game-has-you-playing-a-people-eating-centipede/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "资深TA招聘启事",
+      "sum": "招聘10年以上AAA游戏及VFX经验的管线/技术美术支持。",
+      "ta": "反映行业对资深TA技能需求，可作职业参考。",
+      "src": "Tech-Artists · 08-08",
+      "url": "https://www.tech-artists.org/t/pipeline-technical-art-support-10-yrs-aaa-games-vfx/18485"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -1805,24 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "单目重建技术，可能用于快速生成参考视角或辅助材质贴图。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.12000"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《明日方舟：终末地》PSSR 升级",
-      "sum": "PS5 Pro 版 1.4 更新升级 PSSR，提升画质与时间稳定性。",
-      "ta": "PSSR 升级对 UE 游戏在 PS5 Pro 上的渲染管线调优有参考意义。",
-      "src": "PlayStation Blog · 07-15",
-      "url": "https://blog.playstation.com/2026/07/15/arknights-endfield-on-ps5-pro-upgraded-pssr-launches-with-version-1-4/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《使命召唤》动态地图模式",
-      "sum": "MW4 引入 Kill Block 模式，模块化战场每局重新配置。",
-      "ta": "动态关卡生成思路，可能涉及程序化布局与碰撞检测优化。",
-      "src": "PlayStation Blog · 07-15",
-      "url": "https://blog.playstation.com/2026/07/15/everything-to-know-about-modern-warfare-4s-ever-changing-kill-block-multiplayer-mode/"
     }
   ]
 };

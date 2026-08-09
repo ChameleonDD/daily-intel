@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月8日 · 周六",
+  "date": "2026年8月9日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>多人世界模型共享状态</em> / <em>UE5羽毛毛发制作</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>蜈蚣食人游戏</em> / <em>资深TA招聘启事</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,87 +127,22 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "biz",
+      "imp": "lo",
+      "title": "蜈蚣食人游戏",
+      "sum": "一款以蜈蚣食人为主题的游戏介绍。",
+      "ta": "游戏创意题材参考，与TA技术无直接关联。",
+      "src": "80 Level · 08-08",
+      "url": "https://80.lv/articles/this-game-has-you-playing-a-people-eating-centipede/"
+    },
+    {
+      "cat": "flow",
       "imp": "mid",
-      "title": "多模态生成式分词器",
-      "sum": "KVAE 提出面向多模态生成模型的分词器家族。",
-      "ta": "关注其 token 化方式是否可迁移到 3D 资产表征。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.05798"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "rank": 1,
-      "title": "多人世界模型共享状态",
-      "sum": "MASS 提出多人世界模型，以权威共享状态驱动。",
-      "ta": "对多人实时渲染的服务器权威状态同步有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.06257"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D高斯选择优化",
-      "sum": "GaussianSelector 用图优化实现 3DGS 中轻量物体选择。",
-      "ta": "可提升 3DGS 场景编辑与交互式选择的效率。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.01492"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "MMO 盈利模式反思",
-      "sum": "Bartle 谈虚拟世界起源、玩家契约与免费/付费设计。",
-      "ta": "理解玩家动机有助于设计更健康的游戏内经济系统。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/richard-bartle-mmo-monetization-virtual-worlds-players-express-themselves/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "UE5羽毛毛发制作",
-      "sum": "Owl Harpy 项目用 XGen 与自定义毛发着色器制作羽毛。",
-      "ta": "UE5 中实现柔软羽毛的着色器与灯光设置值得精读。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/how-to-create-hair-and-feathers-for-an-owl-harpy-character/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "育碧免费游戏领取",
-      "sum": "汤姆克兰西游戏在 Ubisoft Connect 免费但玩家反馈领取困难。",
-      "ta": "行业动态速览，与 TA 工作无直接关联。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/tom-clancy-s-game-is-available-for-free-on-ubisoft-connect/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 低模动画",
-      "sum": "展示 Blender 制作的病毒式牛奶脸小猫低模动画。",
-      "ta": "低模风格化动画的趣味案例，可快速浏览。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/check-out-this-cute-blender-animation-of-the-viral-milk-face-kitten/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "猫武士游戏发布",
-      "sum": "《猫武士》改编游戏今秋登陆 PC 与主机，含四族冒险。",
-      "ta": "行业新作信息，与 TA 技术工作无直接关联。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/warrior-cats-clans-of-the-forest-brings-novel-series-to-pc-console/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "游戏本地化要点",
-      "sum": "开发者需了解与本地化团队合作以适配多语言。",
-      "ta": "本地化流程与 TA 工作流无直接关联，速览即可。",
-      "src": "Game Developer · 08-07",
-      "url": "https://www.gamedeveloper.com/production/what-devs-need-to-know-about-localization-ft-concha-fernandez-alvarez-aurelie-perrin-and-guido-di-carlo"
+      "title": "资深TA招聘启事",
+      "sum": "招聘10年以上AAA游戏及VFX经验的管线/技术美术支持。",
+      "ta": "反映行业对资深TA技能需求，可作职业参考。",
+      "src": "Tech-Artists · 08-08",
+      "url": "https://www.tech-artists.org/t/pipeline-technical-art-support-10-yrs-aaa-games-vfx/18485"
     }
   ],
   "flashbackTitle": "",
