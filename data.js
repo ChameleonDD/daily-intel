@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月9日 · 周日",
+  "date": "2026年8月10日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>蜈蚣食人游戏</em> / <em>资深TA招聘启事</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>GPU加速轨道传播建模</em> / <em>双变量场合并树精确计算</em> / <em>稀疏采集真实到仿真转换</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,22 +127,59 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "biz",
+      "cat": "gfx",
       "imp": "lo",
-      "title": "蜈蚣食人游戏",
-      "sum": "一款以蜈蚣食人为主题的游戏介绍。",
-      "ta": "游戏创意题材参考，与TA技术无直接关联。",
-      "src": "80 Level · 08-08",
-      "url": "https://80.lv/articles/this-game-has-you-playing-a-people-eating-centipede/"
+      "title": "GPU加速轨道传播建模",
+      "sum": "提出GPU加速的太阳辐射压高保真建模，用于航天器轨道传播。",
+      "ta": "与游戏TA无关，仅作图形学高性能计算参考。",
+      "src": "arXiv · cs.GR · 08-07",
+      "url": "https://arxiv.org/abs/2608.07307v1"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "资深TA招聘启事",
-      "sum": "招聘10年以上AAA游戏及VFX经验的管线/技术美术支持。",
-      "ta": "反映行业对资深TA技能需求，可作职业参考。",
-      "src": "Tech-Artists · 08-08",
-      "url": "https://www.tech-artists.org/t/pipeline-technical-art-support-10-yrs-aaa-games-vfx/18485"
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "双变量场合并树精确计算",
+      "摘要": "提出双变量场特征诱导合并树(TIMT)的精确计算方法，用于多变量数据特征选择。",
+      "ta": "拓扑数据分析方法，与实时渲染或TA工作流无直接关联。",
+      "src": "arXiv · cs.GR · 08-07",
+      "url": "https://arxiv.org/abs/2608.07181v1",
+      "sum": "双变量场合并树精确计算"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "稀疏采集真实到仿真转换",
+      "sum": "提出双代理细化方法，提升稀疏采集下的真实到仿真场景重建效率。",
+      "ta": "涉及场景重建与仿真，对程序化生成或虚拟环境构建有潜在参考价值。",
+      "src": "arXiv · cs.GR · 08-07",
+      "url": "https://arxiv.org/abs/2608.06827v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "不确定性感知世界模型导航",
+      "sum": "提出不确定性感知的世界模型，用于空中图像目标导航任务。",
+      "ta": "机器人导航领域，与游戏AI或实时渲染无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.05597"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "AI生成C++代码质量剖析",
+      "sum": "研究生产环境中AI生成C++代码的质量特征与分布。",
+      "ta": "涉及AI代码生成质量，对工具链或脚本自动化有间接参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.06640"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频世界模型可寻址记忆",
+      "sum": "提出可寻址记忆机制，增强视频世界模型的长期依赖建模能力。",
+      "ta": "视频生成或世界模型技术，对动态场景模拟有潜在参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.07408"
     }
   ],
   "flashbackTitle": "",

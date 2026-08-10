@@ -2,8 +2,63 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-09 11:04",
+  "updated": "2026-08-10 11:14",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GPU加速轨道传播建模",
+      "sum": "提出GPU加速的太阳辐射压高保真建模，用于航天器轨道传播。",
+      "ta": "与游戏TA无关，仅作图形学高性能计算参考。",
+      "src": "arXiv · cs.GR · 08-07",
+      "url": "https://arxiv.org/abs/2608.07307v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "双变量场合并树精确计算",
+      "摘要": "提出双变量场特征诱导合并树(TIMT)的精确计算方法，用于多变量数据特征选择。",
+      "ta": "拓扑数据分析方法，与实时渲染或TA工作流无直接关联。",
+      "src": "arXiv · cs.GR · 08-07",
+      "url": "https://arxiv.org/abs/2608.07181v1",
+      "sum": "双变量场合并树精确计算"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "稀疏采集真实到仿真转换",
+      "sum": "提出双代理细化方法，提升稀疏采集下的真实到仿真场景重建效率。",
+      "ta": "涉及场景重建与仿真，对程序化生成或虚拟环境构建有潜在参考价值。",
+      "src": "arXiv · cs.GR · 08-07",
+      "url": "https://arxiv.org/abs/2608.06827v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "不确定性感知世界模型导航",
+      "sum": "提出不确定性感知的世界模型，用于空中图像目标导航任务。",
+      "ta": "机器人导航领域，与游戏AI或实时渲染无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.05597"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "AI生成C++代码质量剖析",
+      "sum": "研究生产环境中AI生成C++代码的质量特征与分布。",
+      "ta": "涉及AI代码生成质量，对工具链或脚本自动化有间接参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.06640"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频世界模型可寻址记忆",
+      "sum": "提出可寻址记忆机制，增强视频世界模型的长期依赖建模能力。",
+      "ta": "视频生成或世界模型技术，对动态场景模拟有潜在参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.07408"
+    },
     {
       "cat": "biz",
       "imp": "lo",
@@ -104,16 +159,6 @@ window.INTEL_RECENT = {
       "ta": "本地化流程与 TA 工作流无直接关联，速览即可。",
       "src": "Game Developer · 08-07",
       "url": "https://www.gamedeveloper.com/production/what-devs-need-to-know-about-localization-ft-concha-fernandez-alvarez-aurelie-perrin-and-guido-di-carlo"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "GPU自适应细分贝塞尔曲面",
-      "sum": "AMD发布GPU工作图自适应细分方案，无裂缝且大幅降低三角形数量。",
-      "ta": "关注其工作图实现与硬件细分质量对比，对植被曲面减面有直接参考价值。",
-      "src": "AMD GPUOpen · 08-06",
-      "url": "https://gpuopen.com/learn/gpu-view-adaptive-subdivision/"
     },
     {
       "cat": "ai",
@@ -1776,53 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "行业裁员动态，可能影响相关项目资源分配。",
       "src": "Game Developer · 07-16",
       "url": "https://www.gamedeveloper.com/business/zenimax-online-studios-leadership-is-part-of-the-379-laid-off-workers"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Houdini 22 发布",
-      "sum": "SideFX 发布 Houdini 22，原生支持高斯泼溅、新 UI 和程序化工具。",
-      "ta": "原生高斯泼溅支持意味着 TA 可直接在 Houdini 中处理实时渲染点云资产，无需外部转换。",
-      "src": "80 Level · 07-15",
-      "url": "https://80.lv/articles/houdini-22-is-out-now-bringing-native-gaussian-splats-new-ui-and-more/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "超快纹理图集泼溅",
-      "sum": "3DGS 新方法：解耦辐射表示，实现超快纹理图集泼溅渲染。",
-      "ta": "若成熟可大幅降低高斯泼溅的片段着色开销，对实时场景渲染性能优化有直接参考。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13808v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "体积逆渲染新框架",
-      "sum": "提出神经辐射传输方法，从图像恢复参与介质光学属性。",
-      "ta": "对体积云、烟雾等参与介质的材质重建与光照模拟有潜在应用。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13695v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "渐进推理室内场景生成",
-      "sum": "ThinkBLOX 用 VLM 渐进推理生成 3D 室内场景布局。",
-      "ta": "程序化生成室内场景的 AI 辅助方法，可加速关卡原型设计。",
-      "src": "arXiv · cs.GR · 07-15",
-      "url": "https://arxiv.org/abs/2607.13539v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "单目新视角合成",
-      "sum": "MetaView 用尺度感知隐式几何先验实现单目新视角合成。",
-      "ta": "单目重建技术，可能用于快速生成参考视角或辅助材质贴图。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.12000"
     }
   ]
 };
