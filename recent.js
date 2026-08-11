@@ -2,8 +2,199 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-10 11:14",
+  "updated": "2026-08-11 11:06",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Meta 开源 Muse Glimmer 模型",
+      "sum": "Meta 发布 30B 开源权重模型 Muse Glimmer，支持 120K 上下文，面向本地 AI 工作流。",
+      "ta": "关注其本地推理能力是否可被用于游戏内 AI 或工具链，但原文未提游戏关联。",
+      "src": "NVIDIA · 08-10",
+      "url": "https://developer.nvidia.com/blog/run-local-agentic-ai-workflows-with-metas-muse-glimmer-on-nvidia/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "无人深空十周年纪念",
+      "sum": "Hello Games 庆祝《无人深空》发售十周年，回顾玩家首次登陆外星球的时刻。",
+      "ta": "行业里程碑，可观察长线运营游戏的社区维护与内容更新策略。",
+      "src": "PlayStation Blog · 08-10",
+      "url": "https://blog.playstation.com/2026/08/10/no-mans-sky-developer-hello-games-celebrates-10-year-anniversary/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS 商店七月下载榜公布",
+      "sum": "七月 PS5/PS4 下载榜由《使命召唤：黑色行动 II》领跑，PS VR2 榜首为《I Am Cat》。",
+      "ta": "了解平台热销趋势，辅助判断主流玩家偏好与市场方向。",
+      "src": "PlayStation Blog · 08-10",
+      "url": "https://blog.playstation.com/2026/08/10/playstation-store-july-2026s-top-downloads/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "混合神经微表面 BRDF 模型",
+      "sum": "提出混合神经-微表面 BRDF 模型，用于实时渲染中复杂光-表面交互的逼真外观。",
+      "ta": "直接冲击实时渲染管线，可能替代传统微表面模型，需精读其性能与集成方式。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.09604v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高保真机器人洗澡演示捕捉",
+      "sum": "研究用于机器人辅助洗澡的高保真人形演示捕捉、重建与迁移，面向临床任务。",
+      "ta": "非游戏图形学，但捕捉与重建技术或可迁移至角色动画数据采集。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.09127v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "视图自适应 2D 转 3D 渲染器",
+      "sum": "提出视图自适应渲染器，用于视图一致的 2D 到 3D 生成，改进单图重建。",
+      "ta": "关注其视图一致性算法，可能提升程序化生成资产的 3D 重建质量。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.09110v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Rodrigues 空间平滑动作拼接",
+      "sum": "基于 Rodrigues 向量空间的拉普拉斯优化，实现平滑的动作拼接与过渡。",
+      "ta": "对角色动画系统有价值，可改善动作混合与重定向的连续性。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.08986v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "自适应体积参数化方法",
+      "sum": "提出自适应体积参数化，用于将 3-流形映射到简化体积域，扩展标准域限制。",
+      "ta": "偏几何处理基础研究，对程序化生成或网格处理工具链有潜在参考。",
+      "src": "arXiv · cs.GR · 08-09",
+      "url": "https://arxiv.org/abs/2608.08672v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微模拟反向扫描伴随法",
+      "sum": "提出反向扫描伴随法用于块隐式模拟，避免内存随求解器深度增长。",
+      "ta": "对物理模拟与可微渲染管线有启发，可提升基于梯度的优化效率。",
+      "src": "arXiv · cs.GR · 08-09",
+      "url": "https://arxiv.org/abs/2608.08559v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "QoI 感知科学有损压缩框架",
+      "sum": "提出可视化分析框架 FZ-VIS，用于感知关键量的科学有损压缩。",
+      "ta": "非游戏领域，但数据压缩策略或对大规模纹理/几何资源管理有参考。",
+      "src": "arXiv · cs.GR · 08-09",
+      "url": "https://arxiv.org/abs/2608.08386v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "额外视图辅助单图 3D 重建",
+      "sum": "研究何时额外视图有助于单图 3D 重建，提出自适应机制利用附加图像。",
+      "ta": "对程序化资产生成与扫描管线有参考，可提升重建鲁棒性。",
+      "src": "arXiv · cs.GR · 08-08",
+      "url": "https://arxiv.org/abs/2608.08132v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "医学体积高斯泼溅精确裁剪",
+      "sum": "提出 XClipGS 精确半空间裁剪，用于医学体积高斯泼溅的交互渲染。",
+      "ta": "裁剪算法可迁移至游戏体积渲染，提升高斯泼溅的编辑与可视化能力。",
+      "src": "arXiv · cs.GR · 08-07",
+      "url": "https://arxiv.org/abs/2608.07760v1"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 2,
+      "title": "ArtStation 与 Sketchfab 被收购",
+      "sum": "KitBash 收购 ArtStation 和 Sketchfab，与 KitBash3D 等整合，Epic 聚焦 UE6。",
+      "ta": "资产平台易主可能影响 TA 工作流与资产分发生态，需关注后续整合。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/artstation-and-sketchfab-have-been-acquired-by-kitbash/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "剧情驱动游戏《Sultan》推荐",
+      "sum": "介绍一款剧情丰富、需玩家参与而非旁观的游戏《Sultan》。",
+      "ta": "非技术向，但可观察叙事驱动游戏的设计趋势。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/try-to-appease-sultan-by-doing-questionable-things-to-people-animals-in-this-story-rich-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "蜘蛛侠风格几何节点网枪",
+      "sum": "使用 Blender 几何节点实现蜘蛛侠风格网枪效果，附制作展示。",
+      "ta": "几何节点工作流参考，可启发程序化生成工具链设计。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/spider-man-style-web-shooter-with-geometry-nodes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 制作冻虾广告",
+      "sum": "广告几乎完全用 Blender 和 After Effects 制作，未使用 AI。",
+      "ta": "展示 Blender 在商业视觉中的潜力，可参考其材质与渲染技巧。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/this-might-be-the-coolest-frozen-prawns-ad-ever/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5 免费 Box3D 插件",
+      "sum": "Antonio Lattanzio 发布免费开源的 Box3D 集成插件，用于 Unreal Engine 5。",
+      "ta": "免费开源插件，可能简化 UE5 中物理或几何工作流，值得试用。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/try-this-box3d-integration-for-unreal-engine-5/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "修复模拟游戏《ReStory》回本",
+      "sum": "怀旧修复模拟游戏《ReStory》12 小时内收回预算，成为 tinyBuild 最高评分游戏。",
+      "ta": "独立游戏商业案例，可观察小众题材的市场表现。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/nostalgic-repair-sim-restory-recouped-its-budget-in-12-hours/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity 奥日风格 2D 水体系统",
+      "sum": "在 Unity 中创建奥日风格 2D 水体，涉及程序化生成、Shader 与渲染技巧。",
+      "ta": "2D 水体 Shader 与程序化生成实现，对横版游戏 TA 有直接参考价值。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/creating-ori-style-2d-water-system-in-unity/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Walmart 游戏网站裁员",
+      "sum": "Walmart 支持的游戏网站 Restart 解雇其五人编辑团队。",
+      "ta": "行业动态，反映游戏媒体商业环境变化。",
+      "src": "Game Developer · 08-10",
+      "url": "https://www.gamedeveloper.com/business/the-video-game-site-backed-by-walmart-has-laid-off-its-editorial-team"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EVE 工作室聘前部长领导 AI",
+      "sum": "EVE Online 工作室 Fenris Creations 聘请冰岛前部长领导自主 AI 工作。",
+      "ta": "关注游戏公司 AI 战略布局，但原文未提具体技术细节。",
+      "src": "Game Developer · 08-10",
+      "url": "https://www.gamedeveloper.com/business/eve-online-studio-hires-former-icelandic-minister-to-lead-autonomous-ai-efforts"
+    },
     {
       "cat": "gfx",
       "imp": "lo",
@@ -97,15 +288,6 @@ window.INTEL_RECENT = {
       "url": "https://huggingface.co/papers/2608.06257"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D高斯选择优化",
-      "sum": "GaussianSelector 用图优化实现 3DGS 中轻量物体选择。",
-      "ta": "可提升 3DGS 场景编辑与交互式选择的效率。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.01492"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "MMO 盈利模式反思",
@@ -115,16 +297,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/richard-bartle-mmo-monetization-virtual-worlds-players-express-themselves/"
     },
     {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "UE5羽毛毛发制作",
-      "sum": "Owl Harpy 项目用 XGen 与自定义毛发着色器制作羽毛。",
-      "ta": "UE5 中实现柔软羽毛的着色器与灯光设置值得精读。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/how-to-create-hair-and-feathers-for-an-owl-harpy-character/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "育碧免费游戏领取",
@@ -132,15 +304,6 @@ window.INTEL_RECENT = {
       "ta": "行业动态速览，与 TA 工作无直接关联。",
       "src": "80 Level · 08-07",
       "url": "https://80.lv/articles/tom-clancy-s-game-is-available-for-free-on-ubisoft-connect/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 低模动画",
-      "sum": "展示 Blender 制作的病毒式牛奶脸小猫低模动画。",
-      "ta": "低模风格化动画的趣味案例，可快速浏览。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/check-out-this-cute-blender-animation-of-the-viral-milk-face-kitten/"
     },
     {
       "cat": "biz",
@@ -717,15 +880,6 @@ window.INTEL_RECENT = {
       "ta": "动态科学体积数据交互渲染，对 Niagara 或自定义体积特效有启发。",
       "src": "arXiv · cs.GR · 07-30",
       "url": "https://arxiv.org/abs/2607.28047v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "2D特征蒸馏提升3D理解",
-      "sum": "MeshFM 将视觉基础模型 2D 特征蒸馏到 3D，前馈网络无需优化推理。",
-      "ta": "3D 特征提取效率提升，可加速程序化生成中的形状分析与匹配。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.27592v1"
     },
     {
       "cat": "flow",
@@ -1667,160 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "扩散模型改进，可能间接影响AI生成纹理或资产质量。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2607.17972"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Unity 7路线图公布",
-      "sum": "Unity 7基于Unity 6架构，提供不破坏构建的更新路径和新工具。",
-      "ta": "引擎升级策略，确保项目迁移稳定性，对管线维护有影响。",
-      "src": "Game Developer · 07-21",
-      "url": "https://www.gamedeveloper.com/programming/unity-unveils-unity-7-roadmap-with-update-path-that-won-t-break-your-build"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "文本到动作的逐笔时间控制",
-      "sum": "引入动作单元实现文本到动作的逐笔时间控制。",
-      "ta": "对角色动画工作流中的动作生成精度有参考价值。",
-      "src": "arXiv · cs.GR · 07-17",
-      "url": "https://arxiv.org/abs/2607.15717v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频基础模型生成建模",
-      "sum": "通过表示自编码器驯服视频基础模型用于生成。",
-      "ta": "视频生成技术可能间接影响实时渲染中的动态内容创建。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.14088"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE Expanse体积工作流教程",
-      "sum": "Reza Sarkamari发布视频教程，讲解Unreal Engine中Expanse体积效果工作流。",
-      "ta": "可学习Expanse插件在UE中实现云、雾等体积特效的完整流程。",
-      "src": "80 Level · 07-18",
-      "url": "https://80.lv/articles/check-out-this-tutorial-on-expanse-workflow-in-unreal-engine/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Godot极地生存游戏动画",
-      "sum": "Frost Kin是一款Godot引擎开发的极地生存冒险游戏，展示超现实动画。",
-      "ta": "Godot引擎在动画表现上的进展可作为参考，但非UE直接相关。",
-      "src": "80 Level · 07-18",
-      "url": "https://80.lv/articles/surreal-animations-from-an-arctic-survival-game-made-in-godot/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "B社确认多个辐射项目",
-      "sum": "Bethesda确认辐射3/新维加斯重制版及Obsidian新辐射游戏，老滚6仍是重点。",
-      "ta": "辐射IP重制可能带动UE5或自研引擎的渲染管线需求，但无直接技术细节。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/bethesda-confirms-multiple-fallout-projects-including-remasters-and-new-obsidian-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "蜘蛛机甲后末日游戏",
-      "sum": "一款玩家操控蜘蛛状机甲的后末日游戏发布。",
-      "ta": "游戏概念有趣，但无技术或工作流参考价值。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/in-this-game-you-ll-be-a-spider-like-mech-navigating-a-post-apocalyptic-world/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "15年游戏合作经验分享",
-      "sum": "ZiMAD首席BD官分享15年游戏合作经验，聚焦玩家信任与快速变革。",
-      "ta": "商业经验分享，对TA工作流无直接帮助。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/what-15-years-of-game-partnerships-taught-me/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Epic与Google和解安卓商店",
-      "sum": "Epic与Google达成和解，第三方应用商店即将登陆Android。",
-      "ta": "平台生态变化可能影响游戏分发，但非技术相关。",
-      "src": "80 Level · 07-17",
-      "url": "https://80.lv/articles/epic-games-google-withdraw-settlement-third-party-app-stores-are-coming-to-android/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "ZA/UM工作室裁员32人",
-      "sum": "ZA/UM在发布新作两个月后裁员最多32人，称艺术标准不变。",
-      "ta": "行业裁员新闻，无技术参考价值。",
-      "src": "Game Developer · 07-17",
-      "url": "https://www.gamedeveloper.com/business/za-um-studios-to-lay-off-up-to-32-workers-two-months-after-releasing-zero-parades-for-dead-spies"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Todd Howard确认与Obsidian合作",
-      "sum": "辐射总监Todd Howard确认与Obsidian合作开发新辐射游戏。",
-      "ta": "辐射新作可能采用UE5或自研引擎，但无具体技术细节。",
-      "src": "Game Developer · 07-17",
-      "url": "https://www.gamedeveloper.com/business/todd-howard-says-the-timing-is-right-for-a-collaboration-with-obsidian"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "工会挑战Xbox等业界动态",
-      "sum": "工会挑战Xbox、GameStop CEO称实体游戏销售无关紧要、Glen Schofield退休。",
-      "ta": "行业综合新闻，无技术或工作流参考价值。",
-      "src": "Game Developer · 07-17",
-      "url": "https://www.gamedeveloper.com/business/labor-unions-challenge-xbox-gamestop-ceo-says-physical-game-sales-are-irrelevant-and-glen-schofield-retires-patch-notes-61"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "交互世界模型作为游戏引擎",
-      "sum": "论文提出将交互世界模型重新构想为游戏引擎，从像素到状态。",
-      "ta": "可能影响未来游戏AI驱动的动态世界生成，需关注其与实时渲染的接口。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.14076"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "卡普空RE引擎实装路径追踪",
-      "sum": "卡普空在《PRAGMATA》和《生化危机：安魂曲》中同时实装路径追踪。",
-      "ta": "RE引擎路径追踪落地方案，对UE5 TA有直接参考价值。",
-      "src": "NVIDIA · 07-16",
-      "url": "https://developer.nvidia.com/blog/qa-how-capcom-brought-path-tracing-to-re-engine-across-pragmata-and-resident-evil-requiem/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "在线神经时空记忆动态视图合成",
-      "sum": "提出在线神经时空记忆方法，用于多视角流视频的动态新视角合成。",
-      "ta": "实时动态场景重建技术，可能影响未来游戏内动态环境渲染。",
-      "src": "arXiv · cs.GR · 07-16",
-      "url": "https://arxiv.org/abs/2607.15271v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Godot免费2D足球游戏课程",
-      "sum": "12小时免费Godot课程，面向初/中级开发者制作2D街机足球游戏。",
-      "ta": "Godot入门资源，适合TA了解轻量引擎工作流。",
-      "src": "80 Level · 07-16",
-      "url": "https://80.lv/articles/create-your-own-2d-arcade-soccer-game-in-godot-with-this-free-12-hour-course/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "ZeniMax工作室领导层被裁",
-      "sum": "Xbox裁员波及ZeniMax Online Studios，包括工作室负责人等高层。",
-      "ta": "行业裁员动态，可能影响相关项目资源分配。",
-      "src": "Game Developer · 07-16",
-      "url": "https://www.gamedeveloper.com/business/zenimax-online-studios-leadership-is-part-of-the-379-laid-off-workers"
     }
   ]
 };

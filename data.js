@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月10日 · 周一",
+  "date": "2026年8月11日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>GPU加速轨道传播建模</em> / <em>双变量场合并树精确计算</em> / <em>稀疏采集真实到仿真转换</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>混合神经微表面 BRDF 模型</em> / <em>ArtStation 与 Sketchfab 被收购</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,59 +127,195 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Meta 开源 Muse Glimmer 模型",
+      "sum": "Meta 发布 30B 开源权重模型 Muse Glimmer，支持 120K 上下文，面向本地 AI 工作流。",
+      "ta": "关注其本地推理能力是否可被用于游戏内 AI 或工具链，但原文未提游戏关联。",
+      "src": "NVIDIA · 08-10",
+      "url": "https://developer.nvidia.com/blog/run-local-agentic-ai-workflows-with-metas-muse-glimmer-on-nvidia/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "无人深空十周年纪念",
+      "sum": "Hello Games 庆祝《无人深空》发售十周年，回顾玩家首次登陆外星球的时刻。",
+      "ta": "行业里程碑，可观察长线运营游戏的社区维护与内容更新策略。",
+      "src": "PlayStation Blog · 08-10",
+      "url": "https://blog.playstation.com/2026/08/10/no-mans-sky-developer-hello-games-celebrates-10-year-anniversary/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS 商店七月下载榜公布",
+      "sum": "七月 PS5/PS4 下载榜由《使命召唤：黑色行动 II》领跑，PS VR2 榜首为《I Am Cat》。",
+      "ta": "了解平台热销趋势，辅助判断主流玩家偏好与市场方向。",
+      "src": "PlayStation Blog · 08-10",
+      "url": "https://blog.playstation.com/2026/08/10/playstation-store-july-2026s-top-downloads/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "混合神经微表面 BRDF 模型",
+      "sum": "提出混合神经-微表面 BRDF 模型，用于实时渲染中复杂光-表面交互的逼真外观。",
+      "ta": "直接冲击实时渲染管线，可能替代传统微表面模型，需精读其性能与集成方式。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.09604v1"
+    },
+    {
       "cat": "gfx",
       "imp": "lo",
-      "title": "GPU加速轨道传播建模",
-      "sum": "提出GPU加速的太阳辐射压高保真建模，用于航天器轨道传播。",
-      "ta": "与游戏TA无关，仅作图形学高性能计算参考。",
-      "src": "arXiv · cs.GR · 08-07",
-      "url": "https://arxiv.org/abs/2608.07307v1"
+      "title": "高保真机器人洗澡演示捕捉",
+      "sum": "研究用于机器人辅助洗澡的高保真人形演示捕捉、重建与迁移，面向临床任务。",
+      "ta": "非游戏图形学，但捕捉与重建技术或可迁移至角色动画数据采集。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.09127v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "视图自适应 2D 转 3D 渲染器",
+      "sum": "提出视图自适应渲染器，用于视图一致的 2D 到 3D 生成，改进单图重建。",
+      "ta": "关注其视图一致性算法，可能提升程序化生成资产的 3D 重建质量。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.09110v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Rodrigues 空间平滑动作拼接",
+      "sum": "基于 Rodrigues 向量空间的拉普拉斯优化，实现平滑的动作拼接与过渡。",
+      "ta": "对角色动画系统有价值，可改善动作混合与重定向的连续性。",
+      "src": "arXiv · cs.GR · 08-10",
+      "url": "https://arxiv.org/abs/2608.08986v1"
     },
     {
       "cat": "gfx",
       "imp": "lo",
-      "title": "双变量场合并树精确计算",
-      "摘要": "提出双变量场特征诱导合并树(TIMT)的精确计算方法，用于多变量数据特征选择。",
-      "ta": "拓扑数据分析方法，与实时渲染或TA工作流无直接关联。",
+      "title": "自适应体积参数化方法",
+      "sum": "提出自适应体积参数化，用于将 3-流形映射到简化体积域，扩展标准域限制。",
+      "ta": "偏几何处理基础研究，对程序化生成或网格处理工具链有潜在参考。",
+      "src": "arXiv · cs.GR · 08-09",
+      "url": "https://arxiv.org/abs/2608.08672v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微模拟反向扫描伴随法",
+      "sum": "提出反向扫描伴随法用于块隐式模拟，避免内存随求解器深度增长。",
+      "ta": "对物理模拟与可微渲染管线有启发，可提升基于梯度的优化效率。",
+      "src": "arXiv · cs.GR · 08-09",
+      "url": "https://arxiv.org/abs/2608.08559v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "QoI 感知科学有损压缩框架",
+      "sum": "提出可视化分析框架 FZ-VIS，用于感知关键量的科学有损压缩。",
+      "ta": "非游戏领域，但数据压缩策略或对大规模纹理/几何资源管理有参考。",
+      "src": "arXiv · cs.GR · 08-09",
+      "url": "https://arxiv.org/abs/2608.08386v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "额外视图辅助单图 3D 重建",
+      "sum": "研究何时额外视图有助于单图 3D 重建，提出自适应机制利用附加图像。",
+      "ta": "对程序化资产生成与扫描管线有参考，可提升重建鲁棒性。",
+      "src": "arXiv · cs.GR · 08-08",
+      "url": "https://arxiv.org/abs/2608.08132v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "医学体积高斯泼溅精确裁剪",
+      "sum": "提出 XClipGS 精确半空间裁剪，用于医学体积高斯泼溅的交互渲染。",
+      "ta": "裁剪算法可迁移至游戏体积渲染，提升高斯泼溅的编辑与可视化能力。",
       "src": "arXiv · cs.GR · 08-07",
-      "url": "https://arxiv.org/abs/2608.07181v1",
-      "sum": "双变量场合并树精确计算"
+      "url": "https://arxiv.org/abs/2608.07760v1"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "稀疏采集真实到仿真转换",
-      "sum": "提出双代理细化方法，提升稀疏采集下的真实到仿真场景重建效率。",
-      "ta": "涉及场景重建与仿真，对程序化生成或虚拟环境构建有潜在参考价值。",
-      "src": "arXiv · cs.GR · 08-07",
-      "url": "https://arxiv.org/abs/2608.06827v1"
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 2,
+      "title": "ArtStation 与 Sketchfab 被收购",
+      "sum": "KitBash 收购 ArtStation 和 Sketchfab，与 KitBash3D 等整合，Epic 聚焦 UE6。",
+      "ta": "资产平台易主可能影响 TA 工作流与资产分发生态，需关注后续整合。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/artstation-and-sketchfab-have-been-acquired-by-kitbash/"
     },
     {
-      "cat": "ai",
+      "cat": "biz",
       "imp": "lo",
-      "title": "不确定性感知世界模型导航",
-      "sum": "提出不确定性感知的世界模型，用于空中图像目标导航任务。",
-      "ta": "机器人导航领域，与游戏AI或实时渲染无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.05597"
+      "title": "剧情驱动游戏《Sultan》推荐",
+      "sum": "介绍一款剧情丰富、需玩家参与而非旁观的游戏《Sultan》。",
+      "ta": "非技术向，但可观察叙事驱动游戏的设计趋势。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/try-to-appease-sultan-by-doing-questionable-things-to-people-animals-in-this-story-rich-game/"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "AI生成C++代码质量剖析",
-      "sum": "研究生产环境中AI生成C++代码的质量特征与分布。",
-      "ta": "涉及AI代码生成质量，对工具链或脚本自动化有间接参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.06640"
+      "cat": "flow",
+      "imp": "mid",
+      "title": "蜘蛛侠风格几何节点网枪",
+      "sum": "使用 Blender 几何节点实现蜘蛛侠风格网枪效果，附制作展示。",
+      "ta": "几何节点工作流参考，可启发程序化生成工具链设计。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/spider-man-style-web-shooter-with-geometry-nodes/"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
       "imp": "lo",
-      "title": "视频世界模型可寻址记忆",
-      "sum": "提出可寻址记忆机制，增强视频世界模型的长期依赖建模能力。",
-      "ta": "视频生成或世界模型技术，对动态场景模拟有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.07408"
+      "title": "Blender 制作冻虾广告",
+      "sum": "广告几乎完全用 Blender 和 After Effects 制作，未使用 AI。",
+      "ta": "展示 Blender 在商业视觉中的潜力，可参考其材质与渲染技巧。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/this-might-be-the-coolest-frozen-prawns-ad-ever/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5 免费 Box3D 插件",
+      "sum": "Antonio Lattanzio 发布免费开源的 Box3D 集成插件，用于 Unreal Engine 5。",
+      "ta": "免费开源插件，可能简化 UE5 中物理或几何工作流，值得试用。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/try-this-box3d-integration-for-unreal-engine-5/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "修复模拟游戏《ReStory》回本",
+      "sum": "怀旧修复模拟游戏《ReStory》12 小时内收回预算，成为 tinyBuild 最高评分游戏。",
+      "ta": "独立游戏商业案例，可观察小众题材的市场表现。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/nostalgic-repair-sim-restory-recouped-its-budget-in-12-hours/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity 奥日风格 2D 水体系统",
+      "sum": "在 Unity 中创建奥日风格 2D 水体，涉及程序化生成、Shader 与渲染技巧。",
+      "ta": "2D 水体 Shader 与程序化生成实现，对横版游戏 TA 有直接参考价值。",
+      "src": "80 Level · 08-10",
+      "url": "https://80.lv/articles/creating-ori-style-2d-water-system-in-unity/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Walmart 游戏网站裁员",
+      "sum": "Walmart 支持的游戏网站 Restart 解雇其五人编辑团队。",
+      "ta": "行业动态，反映游戏媒体商业环境变化。",
+      "src": "Game Developer · 08-10",
+      "url": "https://www.gamedeveloper.com/business/the-video-game-site-backed-by-walmart-has-laid-off-its-editorial-team"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EVE 工作室聘前部长领导 AI",
+      "sum": "EVE Online 工作室 Fenris Creations 聘请冰岛前部长领导自主 AI 工作。",
+      "ta": "关注游戏公司 AI 战略布局，但原文未提具体技术细节。",
+      "src": "Game Developer · 08-10",
+      "url": "https://www.gamedeveloper.com/business/eve-online-studio-hires-former-icelandic-minister-to-lead-autonomous-ai-efforts"
     }
   ],
   "flashbackTitle": "",
@@ -191,13 +327,12 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": ""
+    "missed": "未覆盖：HuggingFace。"
   },
   "xStale": false
 };
