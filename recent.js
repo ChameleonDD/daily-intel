@@ -2,8 +2,136 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-11 11:06",
+  "updated": "2026-08-12 11:25",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "高斯雕刻实现可控表面重建",
+      "sum": "3DGS新方法Gaussian Sculpting通过场优化实现端到端可控表面重建，解决几何误差难题。",
+      "ta": "对依赖3DGS做扫描资产重建的TA，此法可显著提升表面精度与可控性，值得精读。",
+      "src": "arXiv · cs.GR · 08-11",
+      "url": "https://arxiv.org/abs/2608.10602v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "Amulet实现高频帧外推渲染",
+      "sum": "新渲染法Amulet用稀疏分层场景表示与自适应着色，实现高频帧外推，优于重投影技术。",
+      "ta": "对追求高帧率或VR体验的TA，此法可突破帧生成瓶颈，是渲染管线的重要参考。",
+      "src": "arXiv · cs.GR · 08-11",
+      "url": "https://arxiv.org/abs/2608.10423v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "物理野火模拟融入高斯场景",
+      "sum": "WildFireGS在语义增强的高斯泼溅森林场景中实现基于物理的野火模拟，兼顾真实与规模。",
+      "ta": "对做环境特效或程序化植被的TA，此方法展示了GS场景中物理模拟的集成路径。",
+      "src": "arXiv · cs.GR · 08-11",
+      "url": "https://arxiv.org/abs/2608.11100v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GENEA挑战评估手势生成",
+      "sum": "第四届GENEA挑战赛发布结果，大规模评估五个语音驱动手势生成系统在对话数据集上的表现。",
+      "ta": "对关注NPC动画或程序化动作的TA，可了解当前语音驱动手势生成的技术水平。",
+      "src": "arXiv · cs.GR · 08-11",
+      "url": "https://arxiv.org/abs/2608.10839v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender几何节点制作蛛网龙卷",
+      "sum": "艺术家Cartesian Caramel展示用Blender几何节点制作《蜘蛛侠》蛛网龙卷风效果。",
+      "ta": "对使用程序化工具的TA，此案例是几何节点在复杂动态特效上的绝佳参考。",
+      "src": "80 Level · 08-11",
+      "url": "https://80.lv/articles/artist-shows-web-tornado-made-with-blender-geometry-nodes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Three.js纯着色器构建外星生物",
+      "sum": "开发者Drin展示在Three.js中完全用着色器数学构建的无网格外星生物。",
+      "ta": "对WebGL或轻量级渲染的TA，此案例展示了纯Shader建模的极致技巧与思路。",
+      "src": "80 Level · 08-11",
+      "url": "https://80.lv/articles/this-alien-has-no-mesh-is-built-in-three-js-with-shader-math/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "伊藤润二角色3D化重现",
+      "sum": "艺术家将伊藤润二漫画《漩涡》中的角色以3D形式重现，展示2D风格转3D的过程。",
+      "ta": "对风格化角色或非真实感渲染的TA，可参考其2D到3D的材质与造型转换。",
+      "src": "80 Level · 08-11",
+      "url": "https://80.lv/articles/character-from-junji-ito-s-uzumaki-manga-series-recreated-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "文字构建FPS游戏解析",
+      "sum": "开发者Yechan Choi分享文字FPS游戏《Torizon Telecom》的创作历程与机制设计。",
+      "ta": "对探索非传统渲染或UI交互的TA，此案例提供了独特的视觉与玩法结合思路。",
+      "src": "80 Level · 08-11",
+      "url": "https://80.lv/articles/torizon-telecom-an-fps-built-entirely-out-of-letters-and-words/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《1666阿姆斯特丹》定档",
+      "sum": "Panache Digital Games宣布《1666: Amsterdam》抢先体验日期并公布新玩法视频。",
+      "ta": "对关注行业动态的TA，可留意此作的开发进展与美术风格。",
+      "src": "80 Level · 08-11",
+      "url": "https://80.lv/articles/1666-amsterdam-s-early-access-launch-date-revealed/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《影之刃零》公布实机演示",
+      "sum": "《Phantom Blade Zero》开启预购，并宣布8月17日State of Play将深度展示实机玩法。",
+      "ta": "对关注动作游戏画面表现的TA，可留意其后续实机演示中的渲染与特效。",
+      "src": "PlayStation Blog · 08-12",
+      "url": "https://blog.playstation.com/2026/08/11/watch-the-phantom-blade-zero-gameplay-deep-dive-state-of-play-on-august-17-pre-orders-live-today/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《金刚狼》限定PS5公布",
+      "sum": "Insomniac Games公布《漫威金刚狼》主题PS5数字版限定主机捆绑包及配件。",
+      "ta": "对行业动态感兴趣的TA，可快速了解该作的市场营销节奏。",
+      "src": "PlayStation Blog · 08-11",
+      "url": "https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前育碧员工成立新工作室",
+      "sum": "前育碧巴塞罗那员工在裁员后成立新工作室Dark Ritual Studios。",
+      "ta": "对行业生态关注的TA，可留意新团队的动向与潜在项目。",
+      "src": "Game Developer · 08-11",
+      "url": "https://www.gamedeveloper.com/business/former-ubisoft-barcelona-devs-launch-dark-ritual-studios"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Supermassive再启裁员",
+      "sum": "英国工作室Supermassive Games三年内第三轮裁员，计划裁减多达75个职位。",
+      "ta": "对行业稳定性关注的TA，需了解当前游戏行业的就业形势。",
+      "src": "Game Developer · 08-11",
+      "url": "https://www.gamedeveloper.com/business/supermassive-games-begins-third-round-of-layoffs-in-three-years"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "英国订阅提案引担忧",
+      "sum": "Ukie称英国限制性订阅提案可能损害游戏企业，阻碍投资并造成财务风险。",
+      "ta": "对商业模式敏感的TA，可关注此政策对游戏发行与订阅制的影响。",
+      "src": "Game Developer · 08-11",
+      "url": "https://www.gamedeveloper.com/business/ukie-claims-restrictive-subscription-proposals-could-harm-uk-game-businesses-in-the-uk"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -98,15 +226,6 @@ window.INTEL_RECENT = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "额外视图辅助单图 3D 重建",
-      "sum": "研究何时额外视图有助于单图 3D 重建，提出自适应机制利用附加图像。",
-      "ta": "对程序化资产生成与扫描管线有参考，可提升重建鲁棒性。",
-      "src": "arXiv · cs.GR · 08-08",
-      "url": "https://arxiv.org/abs/2608.08132v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
       "title": "医学体积高斯泼溅精确裁剪",
       "sum": "提出 XClipGS 精确半空间裁剪，用于医学体积高斯泼溅的交互渲染。",
       "ta": "裁剪算法可迁移至游戏体积渲染，提升高斯泼溅的编辑与可视化能力。",
@@ -140,15 +259,6 @@ window.INTEL_RECENT = {
       "ta": "几何节点工作流参考，可启发程序化生成工具链设计。",
       "src": "80 Level · 08-10",
       "url": "https://80.lv/articles/spider-man-style-web-shooter-with-geometry-nodes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 制作冻虾广告",
-      "sum": "广告几乎完全用 Blender 和 After Effects 制作，未使用 AI。",
-      "ta": "展示 Blender 在商业视觉中的潜力，可参考其材质与渲染技巧。",
-      "src": "80 Level · 08-10",
-      "url": "https://80.lv/articles/this-might-be-the-coolest-frozen-prawns-ad-ever/"
     },
     {
       "cat": "flow",
@@ -349,16 +459,6 @@ window.INTEL_RECENT = {
       "ta": "了解Blender到2D精灵的转换流程，对风格化资产管线有启发。",
       "src": "80 Level · 08-06",
       "url": "https://80.lv/articles/interview-how-kidbash-super-legend-adapts-retro-style-graphics-with-a-modern-art-pipeline/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "生存恐怖FPS创作幕后",
-      "summary": "《The Void》开发者分享受《迷雾》启发的生存恐怖FPS设计过程。",
-      "ta": "可了解恐怖氛围营造与玩法设计结合，对特效叙事有参考。",
-      "src": "80 Level · 08-06",
-      "url": "https://80.lv/articles/the-void-how-to-create-a-survival-horror-fps-inspired-by-the-mist-movie/",
-      "sum": "生存恐怖FPS创作幕后"
     },
     {
       "cat": "flow",
@@ -1722,105 +1822,6 @@ window.INTEL_RECENT = {
       "ta": "设计方法论参考，非技术内容。",
       "src": "Game Developer · 07-21",
       "url": "https://www.gamedeveloper.com/design/what-developers-can-learn-from-this-generation-of-games-criticism"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Splitgate开发商裁员",
-      "sum": "1047 Games在《Empulse》发布不到一个月后裁员。",
-      "ta": "行业裁员潮延续，无技术关联。",
-      "src": "Game Developer · 07-21",
-      "url": "https://www.gamedeveloper.com/business/report-splitgate-dev-1047-games-lays-off-staff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Midgar Studio清算",
-      "sum": "法国工作室Midgar Studio被母公司Nacon清算。",
-      "ta": "行业动荡，无技术价值。",
-      "src": "Game Developer · 07-21",
-      "url": "https://www.gamedeveloper.com/business/edge-of-memories-developer-midgar-studio-is-being-liquidated"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "体积数据高效有损压缩",
-      "sum": "EVOLVE 提出跨域数据库上的变速率编码，用于大规模科学模拟体积压缩。",
-      "ta": "体积数据压缩技术可能影响未来体积渲染管线的存储与传输效率。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.18187v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "无损隐式神经体积表示",
-      "sum": "Lossless-INR 实现无损体积隐式神经表示，克服了现有 INR 有损问题。",
-      "ta": "无损 INR 为体积数据在实时渲染中的高保真存储提供新可能。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.18150v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "快速VEM流体模拟",
-      "sum": "提出快速虚拟元法，高效处理复杂边界下的流体-边界交互模拟。",
-      "ta": "流体特效模拟新方法，可能提升Niagara中复杂边界流体性能。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.17725v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "特征引导扩散逆渲染",
-      "sum": "非可微逆渲染方法，用特征引导扩散避免局部最优，减少工程定制。",
-      "ta": "简化材质/光照逆向重建流程，可能用于自动生成PBR贴图。",
-      "src": "arXiv · cs.GR · 07-19",
-      "url": "https://arxiv.org/abs/2607.17411v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "点云快速符号距离计算",
-      "sum": "Points as Tori 方法支持任意分辨率下点云符号距离快速逐点查询。",
-      "ta": "加速点云重建和SDF场计算，对程序化植被或地形工具可能有用。",
-      "src": "arXiv · cs.GR · 07-18",
-      "url": "https://arxiv.org/abs/2607.16946v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可微几何图像薄壳生成",
-      "sum": "DiffGI 用可微几何图像实现高保真薄壳3D生成。",
-      "ta": "薄壳模型生成新范式，对角色或道具的自动拓扑生成有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.13365"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "长尾驾驶数据生成",
-      "sum": "OpenLongTail 生成式扩增长尾驾驶场景数据。",
-      "ta": "自动驾驶仿真数据生成，与游戏AI或开放世界NPC行为无关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.09655"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "实时多模态应用代理",
-      "sum": "FlashRT 提供代理框架，引导部署实时多模态应用。",
-      "ta": "实时应用部署工具，与游戏渲染管线无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.18171"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型推理时对齐",
-      "sum": "DiFA 在推理时进行前向过程对齐，提升扩散模型生成质量。",
-      "ta": "扩散模型改进，可能间接影响AI生成纹理或资产质量。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.17972"
     }
   ]
 };
