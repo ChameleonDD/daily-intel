@@ -2,8 +2,100 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-12 11:25",
+  "updated": "2026-08-13 11:29",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE5.8动画示例项目更新",
+      "sum": "UE5.8版Game Animation Sample Project发布，新增物理、运动匹配、姿态搜索和注视功能。",
+      "ta": "直接对标UE5.8最新动画管线，是验证运动匹配与物理融合效果的官方参考。",
+      "src": "Unreal Engine · 08-12",
+      "url": "https://www.unrealengine.com/tech-blog/download-the-latest-game-animation-sample-project-now-updated-for-ue-5-8"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "测地线切割单元蒙皮先验",
+      "sum": "提出cut-cell skinning几何先验，增强数据驱动蒙皮权重生成的泛化性。",
+      "ta": "对程序化角色绑定和蒙皮权重优化有参考价值，可改善数据驱动方法的几何鲁棒性。",
+      "src": "arXiv · cs.GR · 08-11",
+      "url": "https://arxiv.org/abs/2608.11272v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "物理反射模拟与视频去反射",
+      "sum": "提出物理接地反射模拟与扩散模型视频去反射方法。",
+      "ta": "反射模拟与去反射技术对材质开发和光照调试有潜在应用。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.11562"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "手绘2D与3D环境融合",
+      "sum": "Lunarium团队分享手绘2D美术、3D几何、自定义光照与Unity工具结合的制作流程。",
+      "ta": "手绘风格化渲染的实战案例，对非真实感管线和美术风格统一有借鉴意义。",
+      "src": "80 Level · 08-12",
+      "url": "https://80.lv/articles/how-lunarium-blends-hand-painted-2d-art-with-3d-environments/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 2,
+      "title": "GPU计算程序化2D草",
+      "sum": "Jarl游戏实现GPU Compute程序化2D草，提供浏览器交互演示。",
+      "ta": "GPU Compute生成植被的轻量方案，对移动端或风格化场景的草渲染有直接参考。",
+      "src": "80 Level · 08-12",
+      "url": "https://80.lv/articles/building-procedural-2d-grass-with-gpu-compute/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender纹理绘制插件MatPlus",
+      "sum": "MatPlus在Blender内实现类似Substance Painter的3D模型直接绘制，支持多UDIM和游戏贴图导出。",
+      "ta": "Blender内完成贴图绘制可简化资产管线，对依赖Substance的TA是潜在替代工具。",
+      "src": "80 Level · 08-12",
+      "url": "https://80.lv/articles/matplus-brings-substance-3d-painter-inspired-texture-painting-to-blender/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "UE5童话风夜间列车动画",
+      "sum": "Seb van den Beemt用UE5制作童话风格夜间列车3D动画。",
+      "ta": "UE5风格化场景与光照的视觉参考案例。",
+      "src": "80 Level · 08-12",
+      "url": "https://80.lv/articles/this-night-train-3d-animation-looks-like-a-scene-from-a-fairytale/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Blender超现实人脸墙",
+      "sum": "受贰瓶勉启发的Blender场景，复杂阵列设置几乎导致电脑崩溃。",
+      "ta": "Blender阵列与实例化复杂度的极端案例，对程序化建模性能有警示。",
+      "src": "80 Level · 08-12",
+      "url": "https://80.lv/articles/check-out-this-surreal-3d-face-wall-inspired-by-manga/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Epic出售ArtStation与Sketchfab",
+      "sum": "Epic Games将ArtStation和Sketchfab出售给KitBash，两平台于2021年收购。",
+      "ta": "资产平台易主可能影响TA常用的资产获取与分享生态，需关注后续整合。",
+      "src": "Game Developer · 08-12",
+      "url": "https://www.gamedeveloper.com/business/epics-sells-artstation-and-sketchfab-to-kitbash"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "生成式AI将影响团队规模",
+      "sum": "Gamescom Dev Conference调查显示，开发者预期生成式AI将在三年内影响角色和团队规模。",
+      "ta": "行业对AI工具的态度将影响TA团队构成与工作流演进方向。",
+      "src": "Game Developer · 08-12",
+      "url": "https://www.gamedeveloper.com/business/developers-expect-generative-ai-to-impact-roles-and-team-sizes-in-the-next-three-years"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -41,15 +133,6 @@ window.INTEL_RECENT = {
       "ta": "对关注NPC动画或程序化动作的TA，可了解当前语音驱动手势生成的技术水平。",
       "src": "arXiv · cs.GR · 08-11",
       "url": "https://arxiv.org/abs/2608.10839v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender几何节点制作蛛网龙卷",
-      "sum": "艺术家Cartesian Caramel展示用Blender几何节点制作《蜘蛛侠》蛛网龙卷风效果。",
-      "ta": "对使用程序化工具的TA，此案例是几何节点在复杂动态特效上的绝佳参考。",
-      "src": "80 Level · 08-11",
-      "url": "https://80.lv/articles/artist-shows-web-tornado-made-with-blender-geometry-nodes/"
     },
     {
       "cat": "flow",
@@ -181,15 +264,6 @@ window.INTEL_RECENT = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "视图自适应 2D 转 3D 渲染器",
-      "sum": "提出视图自适应渲染器，用于视图一致的 2D 到 3D 生成，改进单图重建。",
-      "ta": "关注其视图一致性算法，可能提升程序化生成资产的 3D 重建质量。",
-      "src": "arXiv · cs.GR · 08-10",
-      "url": "https://arxiv.org/abs/2608.09110v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
       "title": "Rodrigues 空间平滑动作拼接",
       "sum": "基于 Rodrigues 向量空间的拉普拉斯优化，实现平滑的动作拼接与过渡。",
       "ta": "对角色动画系统有价值，可改善动作混合与重定向的连续性。",
@@ -259,15 +333,6 @@ window.INTEL_RECENT = {
       "ta": "几何节点工作流参考，可启发程序化生成工具链设计。",
       "src": "80 Level · 08-10",
       "url": "https://80.lv/articles/spider-man-style-web-shooter-with-geometry-nodes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5 免费 Box3D 插件",
-      "sum": "Antonio Lattanzio 发布免费开源的 Box3D 集成插件，用于 Unreal Engine 5。",
-      "ta": "免费开源插件，可能简化 UE5 中物理或几何工作流，值得试用。",
-      "src": "80 Level · 08-10",
-      "url": "https://80.lv/articles/try-this-box3d-integration-for-unreal-engine-5/"
     },
     {
       "cat": "biz",
@@ -1164,15 +1229,6 @@ window.INTEL_RECENT = {
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "游戏AI专家谈应用与风险",
-      "sum": "Luke Dicken分析AI在游戏开发中的历史、生成式AI及风险。",
-      "ta": "对AI在游戏管线中的定位有参考价值，但无具体技术方案。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/game-ai-expert-explains-where-ai-actually-belongs-in-game-development-and-the-risks/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
       "title": "EA CEO获3860万美元薪酬",
       "sum": "EA CEO Andrew Wilson在裁员和GenAI采用后获高额薪酬。",
       "ta": "行业动态，反映高管薪酬与公司策略的关联。",
@@ -1768,60 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "行业动荡信号，但无直接技术关联，仅作背景了解。",
       "src": "80 Level · 07-21",
       "url": "https://80.lv/articles/pixar-hit-with-layoffs-despite-toy-story-5-s-massive-box-office-success/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "手绘策略游戏开发幕后",
-      "sum": "Fika Productions分享Unity手绘策略游戏《Don't Kill Them All》开发细节。",
-      "ta": "手绘风格与策略玩法结合，可借鉴其美术管线与优化思路。",
-      "src": "80 Level · 07-21",
-      "url": "https://80.lv/articles/behind-the-development-of-hand-drawn-strategy-game-don-t-kill-them-all/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "SimFest 2026模拟游戏促销",
-      "sum": "模拟游戏节开启，最高90%折扣。",
-      "ta": "促销信息，无技术价值，可忽略。",
-      "src": "80 Level · 07-21",
-      "url": "https://80.lv/articles/simfest-2026-don-t-miss-these-discounted-simulation-games/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Meshy 3D Agent对话式AI",
-      "sum": "Meshy推出3D Agent，用对话式AI辅助游戏艺术家生成风格一致3D资产。",
-      "ta": "直接关联3D资产生成管线，可提升原型阶段效率，但需评估风格控制精度。",
-      "src": "80 Level · 07-21",
-      "url": "https://80.lv/articles/meshy-wants-ai-to-feel-less-like-a-prompt-and-more-like-a-creative-partner/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Cliff Bleszinski谈工作室倒闭",
-      "sum": "Boss Key创始人称过于优厚的发行协议反致工作室失败。",
-      "ta": "行业经验教训，无技术关联。",
-      "src": "80 Level · 07-21",
-      "url": "https://80.lv/articles/cliff-bleszinski-says-his-studio-s-too-good-publishing-deal-worked-against-it/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前Wreckreation团队成立新工作室",
-      "sum": "原团队组建新工作室，正在开发续作。",
-      "ta": "行业动态，无直接技术价值。",
-      "src": "Game Developer · 07-21",
-      "url": "https://www.gamedeveloper.com/business/former-wreckreation-team-starts-up-new-studio-working-on-sequel"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏批评对开发者的启示",
-      "sum": "长视频游戏设计分析获数百万播放，开发者可从中学习。",
-      "ta": "设计方法论参考，非技术内容。",
-      "src": "Game Developer · 07-21",
-      "url": "https://www.gamedeveloper.com/design/what-developers-can-learn-from-this-generation-of-games-criticism"
     }
   ]
 };
