@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月13日 · 周四",
+  "date": "2026年8月14日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>UE5.8动画示例项目更新</em> / <em>GPU计算程序化2D草</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>MiniDXNN 神经纹理压缩</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,96 +127,149 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
+      "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "UE5.8动画示例项目更新",
-      "sum": "UE5.8版Game Animation Sample Project发布，新增物理、运动匹配、姿态搜索和注视功能。",
-      "ta": "直接对标UE5.8最新动画管线，是验证运动匹配与物理融合效果的官方参考。",
-      "src": "Unreal Engine · 08-12",
-      "url": "https://www.unrealengine.com/tech-blog/download-the-latest-game-animation-sample-project-now-updated-for-ue-5-8"
+      "title": "MiniDXNN 神经纹理压缩",
+      "sum": "MiniDXNN v0.4.0 支持 D3D12 线性代数与实时 GUI 训练 MLP 纹理压缩。",
+      "ta": "神经纹理压缩是 TA 关注的前沿方向，D3D12 实时训练与可视化工具链值得上手评估。",
+      "src": "AMD GPUOpen · 08-13",
+      "url": "https://gpuopen.com/learn/minidxnn-v040-interactive-neural-texture-compression/"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "测地线切割单元蒙皮先验",
-      "sum": "提出cut-cell skinning几何先验，增强数据驱动蒙皮权重生成的泛化性。",
-      "ta": "对程序化角色绑定和蒙皮权重优化有参考价值，可改善数据驱动方法的几何鲁棒性。",
-      "src": "arXiv · cs.GR · 08-11",
-      "url": "https://arxiv.org/abs/2608.11272v1"
+      "title": "SCULPT 减法式部件生成",
+      "sum": "SCULPT 提出减法组合方法，在生成循环内构建带结构部件的 3D 资产。",
+      "ta": "部件级 3D 生成对程序化资产管线有参考价值，可关注其结构编辑与复用能力。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.13541v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "物理反射模拟与视频去反射",
-      "sum": "提出物理接地反射模拟与扩散模型视频去反射方法。",
-      "ta": "反射模拟与去反射技术对材质开发和光照调试有潜在应用。",
+      "title": "蓝噪声格点吉布斯模型",
+      "sum": "论文将蓝噪声采样建模为格点吉布斯系综，统一统计建模与可扩展生成。",
+      "ta": "蓝噪声采样是渲染与放置的核心，新理论框架可能带来更高效的采样器实现。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.13446v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "锥束CT金属伪影消除",
+      "sum": "基于 Splat 的多色建模方法减少锥束 CT 中金属引起的束硬化伪影。",
+      "ta": "虽偏医学成像，但多色 X 射线建模思路对体积渲染与材质重建有启发。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.13159v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "四阶 Overhauser 曲面框架",
+      "sum": "提出 Quartic Overhauser 曲面生成框架，解决边界对齐与局部形状修改约束。",
+      "ta": "曲面建模算法对程序化几何工具开发有参考，但偏理论，速览即可。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.12697v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "PlayWorld 世界模型基准",
+      "sum": "PlayWorld 提出用智能体玩家在长时程目标下评测世界模型的基准。",
+      "ta": "世界模型评测基准对游戏 AI 与模拟环境有参考，可关注其任务设计。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.11562"
+      "url": "https://huggingface.co/papers/2608.13552"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "手绘2D与3D环境融合",
-      "sum": "Lunarium团队分享手绘2D美术、3D几何、自定义光照与Unity工具结合的制作流程。",
-      "ta": "手绘风格化渲染的实战案例，对非真实感管线和美术风格统一有借鉴意义。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/how-lunarium-blends-hand-painted-2d-art-with-3d-environments/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "GPU计算程序化2D草",
-      "sum": "Jarl游戏实现GPU Compute程序化2D草，提供浏览器交互演示。",
-      "ta": "GPU Compute生成植被的轻量方案，对移动端或风格化场景的草渲染有直接参考。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/building-procedural-2d-grass-with-gpu-compute/"
+      "title": "Blender 毛发转羽毛工具",
+      "sum": "免费 Blender 工具程序化将毛发梳理转换为羽毛，效果蓬松自然。",
+      "ta": "毛发转羽毛是植被与生物资产管线的实用技巧，值得收藏工具与流程。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/this-free-blender-tool-procedurally-converts-hair-grooms-into-feathers/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender纹理绘制插件MatPlus",
-      "sum": "MatPlus在Blender内实现类似Substance Painter的3D模型直接绘制，支持多UDIM和游戏贴图导出。",
-      "ta": "Blender内完成贴图绘制可简化资产管线，对依赖Substance的TA是潜在替代工具。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/matplus-brings-substance-3d-painter-inspired-texture-painting-to-blender/"
+      "title": "Spline Architect GPU 实例化",
+      "sum": "Spline Architect 新版本支持沿样条线 GPU 实例化 100 万物体。",
+      "ta": "样条线百万级实例化对道路、管线等程序化场景布置效率提升显著。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/spline-architect-s-new-version-adds-gpu-instancing-for-1-000-000-objects-along-splines/"
     },
     {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "UE5童话风夜间列车动画",
-      "sum": "Seb van den Beemt用UE5制作童话风格夜间列车3D动画。",
-      "ta": "UE5风格化场景与光照的视觉参考案例。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/this-night-train-3d-animation-looks-like-a-scene-from-a-fairytale/"
+      "cat": "flow",
+      "imp": "mid",
+      "title": "AAA 级独立角色管线",
+      "sum": "独立开发者用 Character Creator 5 与 iClone 8 构建 AAA 级角色流程。",
+      "ta": "角色资产快速管线对 UE/Unity 项目有参考，可对比现有 DCC 流程。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/unveiling-the-pipeline-behind-aaa-quality-indie-game-characters/"
     },
     {
-      "cat": "gfx",
+      "cat": "flow",
       "imp": "lo",
-      "title": "Blender超现实人脸墙",
-      "sum": "受贰瓶勉启发的Blender场景，复杂阵列设置几乎导致电脑崩溃。",
-      "ta": "Blender阵列与实例化复杂度的极端案例，对程序化建模性能有警示。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/check-out-this-surreal-3d-face-wall-inspired-by-manga/"
+      "title": "Wild Blue Skies 轨道射击",
+      "sum": "开发者分享 Unity 中现代化轨道射击游戏与日式动画风格渲染。",
+      "ta": "Cel-shaded 风格化渲染与 Unity 自定义系统对风格化项目有参考。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/interview-how-wild-blue-skies-modernizes-classic-on-rails-shooters/"
     },
     {
       "cat": "biz",
       "imp": "mid",
-      "title": "Epic出售ArtStation与Sketchfab",
-      "sum": "Epic Games将ArtStation和Sketchfab出售给KitBash，两平台于2021年收购。",
-      "ta": "资产平台易主可能影响TA常用的资产获取与分享生态，需关注后续整合。",
-      "src": "Game Developer · 08-12",
-      "url": "https://www.gamedeveloper.com/business/epics-sells-artstation-and-sketchfab-to-kitbash"
+      "title": "Netflix 关闭两家工作室",
+      "sum": "Netflix 关闭《Oxenfree》开发商 Night School Studio 与 Moonloot Games。",
+      "ta": "行业裁员与工作室关闭影响人才流动，可关注后续招聘市场变化。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/netflix-closing-oxenfree-developer-night-school-studio-and-moonloot-games"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "生成式AI将影响团队规模",
-      "sum": "Gamescom Dev Conference调查显示，开发者预期生成式AI将在三年内影响角色和团队规模。",
-      "ta": "行业对AI工具的态度将影响TA团队构成与工作流演进方向。",
-      "src": "Game Developer · 08-12",
-      "url": "https://www.gamedeveloper.com/business/developers-expect-generative-ai-to-impact-roles-and-team-sizes-in-the-next-three-years"
+      "title": "2K 新温哥华 AAA 工作室",
+      "sum": "2K 宣布由 EA 老将 Aaron McHardy 领导新温哥华 AAA 工作室 Small Axe。",
+      "ta": "新工作室成立可能带来引擎与工具链岗位机会，TA 可关注。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/2k-announces-new-vancouver-based-studio-led-by-ea-veteran"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "CDPR 裁员九人",
+      "sum": "CD Projekt Red 在两个地点裁员九人，另有九人可能调岗。",
+      "ta": "项目调整影响团队稳定性，对引擎与工具开发方向有间接影响。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/report-cd-projekt-red-has-laid-off-some-project-sirius-developers"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Saber 否认 AI 替代编剧",
+      "sum": "Saber Interactive 澄清未用 AI 替代 Rideshare 编剧，Unigine 引擎亦未参与。",
+      "ta": "AI 在游戏内容生产中的边界争议，TA 需关注工具链中 AI 的合规使用。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Twitch 默认训练 AI 模型",
+      "sum": "Twitch 默认用用户内容训练亚马逊生成式 AI，退出选项不彻底。",
+      "ta": "AI 训练数据政策影响创作者权益，TA 需留意平台内容使用条款。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/marketing/twitch-will-sacrifice-you-to-its-ai-overlord-whether-you-like-it-or-not"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏保存项目恢复",
+      "sum": "UNC Greensboro 游戏保存项目在资金削减后恢复，强调平台不可信。",
+      "ta": "游戏资产保存对行业长期有价值，TA 可关注存档与工具链标准化。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/production/library-video-game-preservation-project-back-on-track-after-trump-funding-cuts"
     }
   ],
   "flashbackTitle": "",
@@ -224,7 +277,6 @@ window.INTEL_DATA = {
     "ok": [
       "Unreal Engine",
       "NVIDIA",
-      "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
@@ -234,7 +286,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": ""
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };

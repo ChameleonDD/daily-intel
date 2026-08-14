@@ -2,8 +2,153 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-13 11:29",
+  "updated": "2026-08-14 11:26",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "MiniDXNN 神经纹理压缩",
+      "sum": "MiniDXNN v0.4.0 支持 D3D12 线性代数与实时 GUI 训练 MLP 纹理压缩。",
+      "ta": "神经纹理压缩是 TA 关注的前沿方向，D3D12 实时训练与可视化工具链值得上手评估。",
+      "src": "AMD GPUOpen · 08-13",
+      "url": "https://gpuopen.com/learn/minidxnn-v040-interactive-neural-texture-compression/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "SCULPT 减法式部件生成",
+      "sum": "SCULPT 提出减法组合方法，在生成循环内构建带结构部件的 3D 资产。",
+      "ta": "部件级 3D 生成对程序化资产管线有参考价值，可关注其结构编辑与复用能力。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.13541v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "蓝噪声格点吉布斯模型",
+      "sum": "论文将蓝噪声采样建模为格点吉布斯系综，统一统计建模与可扩展生成。",
+      "ta": "蓝噪声采样是渲染与放置的核心，新理论框架可能带来更高效的采样器实现。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.13446v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "锥束CT金属伪影消除",
+      "sum": "基于 Splat 的多色建模方法减少锥束 CT 中金属引起的束硬化伪影。",
+      "ta": "虽偏医学成像，但多色 X 射线建模思路对体积渲染与材质重建有启发。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.13159v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "四阶 Overhauser 曲面框架",
+      "sum": "提出 Quartic Overhauser 曲面生成框架，解决边界对齐与局部形状修改约束。",
+      "ta": "曲面建模算法对程序化几何工具开发有参考，但偏理论，速览即可。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.12697v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "PlayWorld 世界模型基准",
+      "sum": "PlayWorld 提出用智能体玩家在长时程目标下评测世界模型的基准。",
+      "ta": "世界模型评测基准对游戏 AI 与模拟环境有参考，可关注其任务设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.13552"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 毛发转羽毛工具",
+      "sum": "免费 Blender 工具程序化将毛发梳理转换为羽毛，效果蓬松自然。",
+      "ta": "毛发转羽毛是植被与生物资产管线的实用技巧，值得收藏工具与流程。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/this-free-blender-tool-procedurally-converts-hair-grooms-into-feathers/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Spline Architect GPU 实例化",
+      "sum": "Spline Architect 新版本支持沿样条线 GPU 实例化 100 万物体。",
+      "ta": "样条线百万级实例化对道路、管线等程序化场景布置效率提升显著。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/spline-architect-s-new-version-adds-gpu-instancing-for-1-000-000-objects-along-splines/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "AAA 级独立角色管线",
+      "sum": "独立开发者用 Character Creator 5 与 iClone 8 构建 AAA 级角色流程。",
+      "ta": "角色资产快速管线对 UE/Unity 项目有参考，可对比现有 DCC 流程。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/unveiling-the-pipeline-behind-aaa-quality-indie-game-characters/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Wild Blue Skies 轨道射击",
+      "sum": "开发者分享 Unity 中现代化轨道射击游戏与日式动画风格渲染。",
+      "ta": "Cel-shaded 风格化渲染与 Unity 自定义系统对风格化项目有参考。",
+      "src": "80 Level · 08-13",
+      "url": "https://80.lv/articles/interview-how-wild-blue-skies-modernizes-classic-on-rails-shooters/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Netflix 关闭两家工作室",
+      "sum": "Netflix 关闭《Oxenfree》开发商 Night School Studio 与 Moonloot Games。",
+      "ta": "行业裁员与工作室关闭影响人才流动，可关注后续招聘市场变化。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/netflix-closing-oxenfree-developer-night-school-studio-and-moonloot-games"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "2K 新温哥华 AAA 工作室",
+      "sum": "2K 宣布由 EA 老将 Aaron McHardy 领导新温哥华 AAA 工作室 Small Axe。",
+      "ta": "新工作室成立可能带来引擎与工具链岗位机会，TA 可关注。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/2k-announces-new-vancouver-based-studio-led-by-ea-veteran"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "CDPR 裁员九人",
+      "sum": "CD Projekt Red 在两个地点裁员九人，另有九人可能调岗。",
+      "ta": "项目调整影响团队稳定性，对引擎与工具开发方向有间接影响。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/report-cd-projekt-red-has-laid-off-some-project-sirius-developers"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Saber 否认 AI 替代编剧",
+      "sum": "Saber Interactive 澄清未用 AI 替代 Rideshare 编剧，Unigine 引擎亦未参与。",
+      "ta": "AI 在游戏内容生产中的边界争议，TA 需关注工具链中 AI 的合规使用。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Twitch 默认训练 AI 模型",
+      "sum": "Twitch 默认用用户内容训练亚马逊生成式 AI，退出选项不彻底。",
+      "ta": "AI 训练数据政策影响创作者权益，TA 需留意平台内容使用条款。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/marketing/twitch-will-sacrifice-you-to-its-ai-overlord-whether-you-like-it-or-not"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏保存项目恢复",
+      "sum": "UNC Greensboro 游戏保存项目在资金削减后恢复，强调平台不可信。",
+      "ta": "游戏资产保存对行业长期有价值，TA 可关注存档与工具链标准化。",
+      "src": "Game Developer · 08-13",
+      "url": "https://www.gamedeveloper.com/production/library-video-game-preservation-project-back-on-track-after-trump-funding-cuts"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -68,15 +213,6 @@ window.INTEL_RECENT = {
       "ta": "UE5风格化场景与光照的视觉参考案例。",
       "src": "80 Level · 08-12",
       "url": "https://80.lv/articles/this-night-train-3d-animation-looks-like-a-scene-from-a-fairytale/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Blender超现实人脸墙",
-      "sum": "受贰瓶勉启发的Blender场景，复杂阵列设置几乎导致电脑崩溃。",
-      "ta": "Blender阵列与实例化复杂度的极端案例，对程序化建模性能有警示。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/check-out-this-surreal-3d-face-wall-inspired-by-manga/"
     },
     {
       "cat": "biz",
@@ -1689,141 +1825,6 @@ window.INTEL_RECENT = {
       "ta": "前沿显示技术，长期可能影响实时渲染输出方式。",
       "src": "arXiv · cs.GR · 07-22",
       "url": "https://arxiv.org/abs/2607.19731v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "低功耗AR眼镜色调映射框架",
-      "sum": "提出基于学习的功耗约束色调映射，在 AR 眼镜上优化显示功耗与感知质量。",
-      "ta": "对移动/AR 设备渲染优化有参考价值，但非核心工作流。",
-      "src": "arXiv · cs.GR · 07-21",
-      "url": "https://arxiv.org/abs/2607.19509v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "ATSplat：紧凑前馈3D高斯泼溅",
-      "sum": "提出自适应令牌扩展的前馈 3DGS 方法，减少存储开销。",
-      "ta": "3DGS 压缩方向进展，可能影响实时 3D 重建资产格式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.20417"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "S.T.A.L.K.E.R.2 独占费超开发预算",
-      "sum": "GSC Game World 透露 Xbox 独占协议金额超过游戏自身开发预算。",
-      "ta": "行业商业动态，了解平台独占策略对开发资金的影响。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/s-t-a-l-k-e-r-2-s-xbox-exclusivity-deal-surpassed-the-game-s-own-development-budget/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Kinect游戏Freefall Racers 2026年复活",
-      "sum": "2013年 Kinect 游戏 Freefall Racers 通过 Nex Playground 平台回归。",
-      "ta": "怀旧游戏复活案例，对体感交互设计有参考意义。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/business/a-kinect-game-that-debuted-in-2013-has-been-revived-in-the-year-of-our-lord-2026"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Splatoon Raiders 原型曾是塔防游戏",
-      "sum": "总监分享 Splatoon 衍生作原型为塔防，后回归系列核心玩法。",
-      "ta": "游戏设计迭代案例，了解玩法原型到成品的过程。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/design/splatoon-raiders-started-as-a-tower-defense-game-but-its-splatoon-ness-got-lost"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Human Fall Flat 2取消，直接做3代",
-      "sum": "No Brakes Games 创始人回顾十年历程，宣布取消 2 代直接开发 3 代。",
-      "ta": "独立游戏开发决策案例，了解系列化开发策略。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/production/-human-fall-flat-2-is-cancelled-we-are-making-human-fall-flat-3-no-brakes-games-founder-looks-back-on-a-defining-decade"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Hasbro 取消多款游戏损失5600万美元",
-      "sum": "Hasbro 因取消多个游戏项目记录 5600 万美元减值，将聚焦有特许经营潜力的项目。",
-      "ta": "行业投资风向标，了解大厂项目筛选策略。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/business/hasbro-records-56m-write-down-after-scrapping-several-video-games"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Alpha Dog Games 脱离微软恢复独立",
-      "sum": "被 Xbox 关闭两年后，Alpha Dog Games 重新获得独立运营权。",
-      "ta": "工作室生存案例，了解行业并购后独立回归现象。",
-      "src": "Game Developer · 07-22",
-      "url": "https://www.gamedeveloper.com/business/alpha-dog-games-returns-to-independence-two-years-after-being-shuttered-by-xbox"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Fab夏季大促开启",
-      "sum": "Fab商城数万资产最高70%折扣，持续至7月29日。",
-      "ta": "可趁促销囤积材质、角色包等素材，但需注意资产质量与项目兼容性。",
-      "src": "Unreal Engine · 07-21",
-      "url": "https://www.unrealengine.com/news/the-fab-summer-mega-sale-is-now-on"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "扩散Transformer多模态区域控制",
-      "sum": "提出Appearance Pointers，实现材质、对象身份等精确区域控制。",
-      "ta": "对材质生成和纹理区域控制有参考价值，可能简化贴图工作流。",
-      "src": "arXiv · cs.GR · 07-21",
-      "url": "https://arxiv.org/abs/2607.19344v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "UV空间神经融合人脸重建",
-      "sum": "UVFaceFusion实现多视角拓扑一致的人脸重建，适用于数字人。",
-      "ta": "直接关联数字人制作管线，可提升面部资产重建效率与一致性。",
-      "src": "arXiv · cs.GR · 07-21",
-      "url": "https://arxiv.org/abs/2607.18798v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高效压缩神经高斯溅射体渲染",
-      "sum": "ECoNGS提出压缩高斯原语用于交互式体数据可视化。",
-      "ta": "对体积渲染和3D场景表示有启发，可能影响Niagara特效数据压缩。",
-      "src": "arXiv · cs.GR · 07-20",
-      "url": "https://arxiv.org/abs/2607.18466v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "交互式长时域世界建模",
-      "sum": "AlayaWorld技术报告发布，聚焦长时域交互世界建模。",
-      "ta": "与游戏世界模拟相关，但偏AI研究，暂不直接用于管线。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.18367"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "掩码视觉动作统一世界建模",
-      "sum": "提出Masked Visual Actions方法，统一世界建模框架。",
-      "ta": "对游戏AI行为建模有潜在参考，但偏学术，需跟踪后续应用。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.19343"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "皮克斯裁员",
-      "sum": "迪士尼裁员数百人，皮克斯受影响最大，尽管《玩具5》票房近10亿。",
-      "ta": "行业动荡信号，但无直接技术关联，仅作背景了解。",
-      "src": "80 Level · 07-21",
-      "url": "https://80.lv/articles/pixar-hit-with-layoffs-despite-toy-story-5-s-massive-box-office-success/"
     }
   ]
 };
