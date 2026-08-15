@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月14日 · 周五",
+  "date": "2026年8月15日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>MiniDXNN 神经纹理压缩</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>暗黑幻想材质合集发布</em> / <em>Blender 程序化美国市中心生成器</em> / <em>Blender 简易风格化线稿技法</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,149 +127,58 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "MiniDXNN 神经纹理压缩",
-      "sum": "MiniDXNN v0.4.0 支持 D3D12 线性代数与实时 GUI 训练 MLP 纹理压缩。",
-      "ta": "神经纹理压缩是 TA 关注的前沿方向，D3D12 实时训练与可视化工具链值得上手评估。",
-      "src": "AMD GPUOpen · 08-13",
-      "url": "https://gpuopen.com/learn/minidxnn-v040-interactive-neural-texture-compression/"
-    },
-    {
-      "cat": "gfx",
+      "cat": "flow",
       "imp": "mid",
-      "title": "SCULPT 减法式部件生成",
-      "sum": "SCULPT 提出减法组合方法，在生成循环内构建带结构部件的 3D 资产。",
-      "ta": "部件级 3D 生成对程序化资产管线有参考价值，可关注其结构编辑与复用能力。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13541v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "蓝噪声格点吉布斯模型",
-      "sum": "论文将蓝噪声采样建模为格点吉布斯系综，统一统计建模与可扩展生成。",
-      "ta": "蓝噪声采样是渲染与放置的核心，新理论框架可能带来更高效的采样器实现。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13446v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "锥束CT金属伪影消除",
-      "sum": "基于 Splat 的多色建模方法减少锥束 CT 中金属引起的束硬化伪影。",
-      "ta": "虽偏医学成像，但多色 X 射线建模思路对体积渲染与材质重建有启发。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13159v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "四阶 Overhauser 曲面框架",
-      "sum": "提出 Quartic Overhauser 曲面生成框架，解决边界对齐与局部形状修改约束。",
-      "ta": "曲面建模算法对程序化几何工具开发有参考，但偏理论，速览即可。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.12697v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "PlayWorld 世界模型基准",
-      "sum": "PlayWorld 提出用智能体玩家在长时程目标下评测世界模型的基准。",
-      "ta": "世界模型评测基准对游戏 AI 与模拟环境有参考，可关注其任务设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.13552"
+      "title": "暗黑幻想材质合集发布",
+      "sum": "Kai Mergener 在 Substance 3D Assets 发布 15 款暗黑幻想材质，并分享技术流程。",
+      "ta": "关注 Substance 3D Designer 材质构建思路，可借鉴其风格化纹理制作流程。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/build-eerie-worlds-with-this-dark-fantasy-signature-collection/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender 毛发转羽毛工具",
-      "sum": "免费 Blender 工具程序化将毛发梳理转换为羽毛，效果蓬松自然。",
-      "ta": "毛发转羽毛是植被与生物资产管线的实用技巧，值得收藏工具与流程。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/this-free-blender-tool-procedurally-converts-hair-grooms-into-feathers/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Spline Architect GPU 实例化",
-      "sum": "Spline Architect 新版本支持沿样条线 GPU 实例化 100 万物体。",
-      "ta": "样条线百万级实例化对道路、管线等程序化场景布置效率提升显著。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/spline-architect-s-new-version-adds-gpu-instancing-for-1-000-000-objects-along-splines/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "AAA 级独立角色管线",
-      "sum": "独立开发者用 Character Creator 5 与 iClone 8 构建 AAA 级角色流程。",
-      "ta": "角色资产快速管线对 UE/Unity 项目有参考，可对比现有 DCC 流程。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/unveiling-the-pipeline-behind-aaa-quality-indie-game-characters/"
+      "title": "Blender 程序化美国市中心生成器",
+      "sum": "一款 Blender 工具，可程序化生成美国市中心城市环境，同时保留艺术控制权。",
+      "ta": "程序化城市生成思路可迁移至 UE5 植被或场景布局工具链，值得研究其控制方式。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/procedural-american-downtown-generator-for-blender/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Wild Blue Skies 轨道射击",
-      "sum": "开发者分享 Unity 中现代化轨道射击游戏与日式动画风格渲染。",
-      "ta": "Cel-shaded 风格化渲染与 Unity 自定义系统对风格化项目有参考。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/interview-how-wild-blue-skies-modernizes-classic-on-rails-shooters/"
+      "title": "Blender 简易风格化线稿技法",
+      "sum": "Edutaker 分享一种简易风格化线稿技术，并提供免费设置下载。",
+      "ta": "线稿渲染技巧可参考用于非写实风格化材质或特效边缘处理。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/easy-stylized-line-art-technique-for-blender/"
     },
     {
-      "cat": "biz",
+      "cat": "tech",
       "imp": "mid",
-      "title": "Netflix 关闭两家工作室",
-      "sum": "Netflix 关闭《Oxenfree》开发商 Night School Studio 与 Moonloot Games。",
-      "ta": "行业裁员与工作室关闭影响人才流动，可关注后续招聘市场变化。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/netflix-closing-oxenfree-developer-night-school-studio-and-moonloot-games"
+      "title": "影之刃零采用甄子丹武术动捕",
+      "sum": "S-GAME 工作室使用甄子丹武术指导，为《影之刃零》战斗系统制作真实功夫动作捕捉。",
+      "ta": "高质量武术动捕数据对战斗动画和特效同步有参考价值，可关注其动作设计流程。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/phantom-blade-zero-uses-authentic-kung-fu-motion-capture/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "2K 新温哥华 AAA 工作室",
-      "sum": "2K 宣布由 EA 老将 Aaron McHardy 领导新温哥华 AAA 工作室 Small Axe。",
-      "ta": "新工作室成立可能带来引擎与工具链岗位机会，TA 可关注。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/2k-announces-new-vancouver-based-studio-led-by-ea-veteran"
+      "title": "恶霸鲁尼精神续作Steam差评",
+      "sum": "一款恶霸鲁尼精神续作在 Steam 发售，因技术问题获负面评价，部分玩家认可其独立魅力。",
+      "ta": "技术问题导致差评的案例提醒 TA 在项目早期需重视性能与稳定性。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/bully-spiritual-successor-launches-to-negative-reviews-on-steam/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "CDPR 裁员九人",
-      "sum": "CD Projekt Red 在两个地点裁员九人，另有九人可能调岗。",
-      "ta": "项目调整影响团队稳定性，对引擎与工具开发方向有间接影响。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/report-cd-projekt-red-has-laid-off-some-project-sirius-developers"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Saber 否认 AI 替代编剧",
-      "sum": "Saber Interactive 澄清未用 AI 替代 Rideshare 编剧，Unigine 引擎亦未参与。",
-      "ta": "AI 在游戏内容生产中的边界争议，TA 需关注工具链中 AI 的合规使用。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Twitch 默认训练 AI 模型",
-      "sum": "Twitch 默认用用户内容训练亚马逊生成式 AI，退出选项不彻底。",
-      "ta": "AI 训练数据政策影响创作者权益，TA 需留意平台内容使用条款。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/marketing/twitch-will-sacrifice-you-to-its-ai-overlord-whether-you-like-it-or-not"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏保存项目恢复",
-      "sum": "UNC Greensboro 游戏保存项目在资金削减后恢复，强调平台不可信。",
-      "ta": "游戏资产保存对行业长期有价值，TA 可关注存档与工具链标准化。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/production/library-video-game-preservation-project-back-on-track-after-trump-funding-cuts"
+      "title": "Netflix关闭更多工作室",
+      "sum": "Netflix 关闭更多游戏工作室，Twitch 承认使用生成式 AI，行业动态汇总。",
+      "ta": "行业收缩信号，关注大厂对游戏部门投入变化，可能影响外包与工具生态。",
+      "src": "Game Developer · 08-14",
+      "url": "https://www.gamedeveloper.com/business/scabby-versus-sharma-twitch-s-genai-admission-and-netflix-shutters-more-studios-patch-notes-65"
     }
   ],
   "flashbackTitle": "",

@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-14 11:26",
+  "updated": "2026-08-15 10:15",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "暗黑幻想材质合集发布",
+      "sum": "Kai Mergener 在 Substance 3D Assets 发布 15 款暗黑幻想材质，并分享技术流程。",
+      "ta": "关注 Substance 3D Designer 材质构建思路，可借鉴其风格化纹理制作流程。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/build-eerie-worlds-with-this-dark-fantasy-signature-collection/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 程序化美国市中心生成器",
+      "sum": "一款 Blender 工具，可程序化生成美国市中心城市环境，同时保留艺术控制权。",
+      "ta": "程序化城市生成思路可迁移至 UE5 植被或场景布局工具链，值得研究其控制方式。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/procedural-american-downtown-generator-for-blender/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "影之刃零采用甄子丹武术动捕",
+      "sum": "S-GAME 工作室使用甄子丹武术指导，为《影之刃零》战斗系统制作真实功夫动作捕捉。",
+      "ta": "高质量武术动捕数据对战斗动画和特效同步有参考价值，可关注其动作设计流程。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/phantom-blade-zero-uses-authentic-kung-fu-motion-capture/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "恶霸鲁尼精神续作Steam差评",
+      "sum": "一款恶霸鲁尼精神续作在 Steam 发售，因技术问题获负面评价，部分玩家认可其独立魅力。",
+      "ta": "技术问题导致差评的案例提醒 TA 在项目早期需重视性能与稳定性。",
+      "src": "80 Level · 08-14",
+      "url": "https://80.lv/articles/bully-spiritual-successor-launches-to-negative-reviews-on-steam/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Netflix关闭更多工作室",
+      "sum": "Netflix 关闭更多游戏工作室，Twitch 承认使用生成式 AI，行业动态汇总。",
+      "ta": "行业收缩信号，关注大厂对游戏部门投入变化，可能影响外包与工具生态。",
+      "src": "Game Developer · 08-14",
+      "url": "https://www.gamedeveloper.com/business/scabby-versus-sharma-twitch-s-genai-admission-and-netflix-shutters-more-studios-patch-notes-65"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -62,15 +107,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender 毛发转羽毛工具",
-      "sum": "免费 Blender 工具程序化将毛发梳理转换为羽毛，效果蓬松自然。",
-      "ta": "毛发转羽毛是植被与生物资产管线的实用技巧，值得收藏工具与流程。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/this-free-blender-tool-procedurally-converts-hair-grooms-into-feathers/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "Spline Architect GPU 实例化",
       "sum": "Spline Architect 新版本支持沿样条线 GPU 实例化 100 万物体。",
       "ta": "样条线百万级实例化对道路、管线等程序化场景布置效率提升显著。",
@@ -94,15 +130,6 @@ window.INTEL_RECENT = {
       "ta": "Cel-shaded 风格化渲染与 Unity 自定义系统对风格化项目有参考。",
       "src": "80 Level · 08-13",
       "url": "https://80.lv/articles/interview-how-wild-blue-skies-modernizes-classic-on-rails-shooters/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Netflix 关闭两家工作室",
-      "sum": "Netflix 关闭《Oxenfree》开发商 Night School Studio 与 Moonloot Games。",
-      "ta": "行业裁员与工作室关闭影响人才流动，可关注后续招聘市场变化。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/netflix-closing-oxenfree-developer-night-school-studio-and-moonloot-games"
     },
     {
       "cat": "biz",
@@ -1798,33 +1825,6 @@ window.INTEL_RECENT = {
       "ta": "提升纹理绘制效率，对材质贴图工作流有直接帮助。",
       "src": "80 Level · 07-22",
       "url": "https://80.lv/articles/new-tear-painter-update-lets-you-pick-colors-directly-from-textures/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity URP 地形自适应动态雨系统",
-      "sum": "Prism Works 发布 Unity URP 雨系统，支持地形自适应涟漪和建筑遮挡。",
-      "ta": "Niagara 特效师可参考其地形交互逻辑，移植至 UE5 雨系统。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/this-dynamic-rain-system-brings-terrain-adaptive-real-time-rain-effects-to-unity/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "MR-Compare：3D高斯与网格重建对比框架",
-      "sum": "MR 框架实现 3D Gaussian Splatting 与网格重建在物理环境中的空间对齐比较。",
-      "ta": "为 3D 重建质量评估提供混合现实工具，可能影响扫描资产管线。",
-      "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.20325v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "快速波光学全息显示渲染",
-      "sum": "利用多层图像实现 3D 全息显示的快速波光学渲染方法。",
-      "ta": "前沿显示技术，长期可能影响实时渲染输出方式。",
-      "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.19731v1"
     }
   ]
 };
