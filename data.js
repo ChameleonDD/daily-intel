@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月15日 · 周六",
+  "date": "2026年8月16日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>暗黑幻想材质合集发布</em> / <em>Blender 程序化美国市中心生成器</em> / <em>Blender 简易风格化线稿技法</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。",
   "channels": [
     {
       "key": "x",
@@ -125,60 +125,6 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "Ben Poole · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "暗黑幻想材质合集发布",
-      "sum": "Kai Mergener 在 Substance 3D Assets 发布 15 款暗黑幻想材质，并分享技术流程。",
-      "ta": "关注 Substance 3D Designer 材质构建思路，可借鉴其风格化纹理制作流程。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/build-eerie-worlds-with-this-dark-fantasy-signature-collection/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 程序化美国市中心生成器",
-      "sum": "一款 Blender 工具，可程序化生成美国市中心城市环境，同时保留艺术控制权。",
-      "ta": "程序化城市生成思路可迁移至 UE5 植被或场景布局工具链，值得研究其控制方式。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/procedural-american-downtown-generator-for-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 简易风格化线稿技法",
-      "sum": "Edutaker 分享一种简易风格化线稿技术，并提供免费设置下载。",
-      "ta": "线稿渲染技巧可参考用于非写实风格化材质或特效边缘处理。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/easy-stylized-line-art-technique-for-blender/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "影之刃零采用甄子丹武术动捕",
-      "sum": "S-GAME 工作室使用甄子丹武术指导，为《影之刃零》战斗系统制作真实功夫动作捕捉。",
-      "ta": "高质量武术动捕数据对战斗动画和特效同步有参考价值，可关注其动作设计流程。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/phantom-blade-zero-uses-authentic-kung-fu-motion-capture/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "恶霸鲁尼精神续作Steam差评",
-      "sum": "一款恶霸鲁尼精神续作在 Steam 发售，因技术问题获负面评价，部分玩家认可其独立魅力。",
-      "ta": "技术问题导致差评的案例提醒 TA 在项目早期需重视性能与稳定性。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/bully-spiritual-successor-launches-to-negative-reviews-on-steam/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Netflix关闭更多工作室",
-      "sum": "Netflix 关闭更多游戏工作室，Twitch 承认使用生成式 AI，行业动态汇总。",
-      "ta": "行业收缩信号，关注大厂对游戏部门投入变化，可能影响外包与工具生态。",
-      "src": "Game Developer · 08-14",
-      "url": "https://www.gamedeveloper.com/business/scabby-versus-sharma-twitch-s-genai-admission-and-netflix-shutters-more-studios-patch-notes-65"
     }
   ],
   "flashbackTitle": "",
