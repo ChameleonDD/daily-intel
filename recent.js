@@ -2,8 +2,73 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-16 10:22",
+  "updated": "2026-08-17 10:21",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "不确定感知雅可比集计算",
+      "sum": "提出不确定感知的雅可比集计算方法，用于多场可视化拓扑描述。",
+      "ta": "拓扑描述符在科学可视化中常用，可关注其对多场数据梯度对齐分析的改进。",
+      "src": "arXiv · cs.GR · 08-14",
+      "url": "https://arxiv.org/abs/2608.14409v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "流体动力学可迁移潜算子",
+      "sum": "提出从固定网格到移动粒子的可迁移潜算子，用于流体动力学建模。",
+      "ta": "拉格朗日视角的神经算子可能为粒子流体模拟提供新思路，值得关注。",
+      "src": "arXiv · cs.GR · 08-14",
+      "url": "https://arxiv.org/abs/2608.14120v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "固定预算高斯体编码",
+      "sum": "用各向异性高斯基元在固定预算下编码标量场，用于原位数据缩减。",
+      "ta": "高斯编码策略可能影响体积数据压缩与传输，对程序化生成有参考价值。",
+      "src": "arXiv · cs.GR · 08-14",
+      "url": "https://arxiv.org/abs/2608.14112v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "游戏实况自动解说系统",
+      "sum": "用视觉语言模型为任意游戏录像生成电竞风格口头解说。",
+      "ta": "自动解说可能用于游戏内事件反馈或工具演示，但非核心渲染工作流。",
+      "src": "arXiv · cs.GR · 08-14",
+      "url": "https://arxiv.org/abs/2608.14016v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "G-Buffer条件生成渲染",
+      "sum": "扩散模型作为学习渲染器，以G-Buffer为条件实现真实感生成。",
+      "ta": "生成式渲染与G-Buffer结合可能改变TA的材质输出流程，值得精读。",
+      "src": "arXiv · cs.GR · 08-14",
+      "url": "https://arxiv.org/abs/2608.13929v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 2,
+      "title": "基于大模型的发丝生成",
+      "sum": "用大重建和多模态模型生成基于发丝的头发，减少手工制作依赖。",
+      "ta": "发丝自动生成可大幅提升角色资产制作效率，对TA工具链有直接价值。",
+      "src": "arXiv · cs.GR · 08-13",
+      "url": "https://arxiv.org/abs/2608.13679v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Marionette世界状态预测",
+      "sum": "模型预测世界状态、渲染几何并绘制外观，实现多模态生成。",
+      "ta": "世界状态预测可能用于动态场景生成，但需确认与实时渲染的关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.14530"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -1759,72 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "游戏类型转换中的模型与动画适配经验，对角色系统设计有参考。",
       "src": "80 Level · 07-24",
       "url": "https://80.lv/articles/disgaea-mayhem-shifting-from-tactical-rpg-to-action-rpg/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Halo 初代重制登陆 PlayStation",
-      "sum": "Halo: Campaign Evolved 用新机制和操控现代化经典 FPS。",
-      "ta": "经典 IP 跨平台重制，对引擎适配与现代化改造有参考。",
-      "src": "PlayStation Blog · 07-23",
-      "url": "https://blog.playstation.com/2026/07/23/13-ways-halo-campaign-evolved-modernizes-the-iconic-fps/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "漫威金刚狼故事预告发布",
-      "sum": "Insomniac 在 SDCC 公布漫威金刚狼故事预告与艺术图。",
-      "ta": "3A 游戏叙事与美术展示，对角色渲染与场景设计有参考。",
-      "src": "PlayStation Blog · 07-23",
-      "url": "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "四面体笼驱动海量动画几何光线追踪",
-      "sum": "AMD 提出用四面体笼动画复用静态 BLAS，实时追踪数亿三角形，大幅降低植被/草丛更新开销。",
-      "ta": "对植被渲染和人群系统意义重大，可显著减少每帧 BVH 重建和内存消耗。",
-      "src": "AMD GPUOpen · 07-22",
-      "url": "https://gpuopen.com/learn/ray-tracing-massive-amounts-animated-geometry/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "分裂辐射级联：实时全局光照新方法",
-      "sum": "提出稀疏辐射探针的级联方案，解决传统探针方法细节不足问题，实现实时漫反射全局光照。",
-      "ta": "可能成为 UE5 Lumen 之外的高质量 GI 替代方案，值得关注实现细节。",
-      "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.20384v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 3,
-      "title": "HAWKED 程序化瀑布工具制作详解",
-      "sum": "Serge Filin 分享将 2D 概念转化为动态实时材质的程序化瀑布工具开发过程。",
-      "ta": "直接相关植被/特效工作流，学习如何用程序化材质实现复杂水体效果。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/creating-a-procedural-waterfalls-tool-for-the-game-hawked/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "优化写实水晶材质制作分解",
-      "sum": "Anastasia Gorban 详解水晶材质分层结构、虹彩效果及划痕纹理制作流程。",
-      "ta": "材质分层和虹彩实现技巧可复用至宝石/玻璃类 Shader 开发。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/breakdown-how-to-create-an-optimized-and-realistic-crystal-material/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Tear Painter 更新支持纹理取色",
-      "sum": "Blender 工具 Tear Painter 新版可直接从纹理中选取颜色。",
-      "ta": "提升纹理绘制效率，对材质贴图工作流有直接帮助。",
-      "src": "80 Level · 07-22",
-      "url": "https://80.lv/articles/new-tear-painter-update-lets-you-pick-colors-directly-from-textures/"
     }
   ]
 };
