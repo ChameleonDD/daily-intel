@@ -2,8 +2,98 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-17 10:21",
+  "updated": "2026-08-18 10:17",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "拓扑感知三角网格重建",
+      "sum": "用持续同调改进可微三角网格重建，修正拓扑错误。",
+      "ta": "对程序化生成与几何处理有参考价值，可提升重建网格拓扑正确性。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16848v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "逐像素渲染难度描述符",
+      "sum": "提出稳定传输机制描述符，衡量逐像素渲染难度。",
+      "ta": "对蒙特卡洛渲染采样策略优化有参考价值，可提升渲染效率。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16730v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GPU资源受限虚拟机",
+      "sum": "在GPU上实现资源受限虚拟机，对抗软件膨胀。",
+      "ta": "对GPU计算资源管理有启发，但非TA核心方向。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16387v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "身份保持视频生成新法",
+      "sum": "KeyID解耦草稿与关键帧编辑，实现身份保持视频生成。",
+      "ta": "对角色动画与过场生成有参考价值，可探索身份一致性控制。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16154v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "任意角色语音动画生成",
+      "sum": "AnyTalk无需动画数据，为任意角色生成3D语音动画。",
+      "ta": "对语音驱动面部动画工作流有参考价值，可简化角色动画制作。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16143v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "表面表示可微体素化",
+      "sum": "提出表面表示的可微体素化方法，优化体积查询。",
+      "ta": "对几何处理与体积渲染有参考价值，可提升空间查询效率。",
+      "src": "arXiv · cs.GR · 08-16",
+      "url": "https://arxiv.org/abs/2608.15934v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "隐式曲面ARAP正则化",
+      "sum": "为隐式曲面引入ARAP正则化，保持形状刚性。",
+      "ta": "对隐式曲面建模与优化有参考价值，可提升形状保真度。",
+      "src": "arXiv · cs.GR · 08-16",
+      "url": "https://arxiv.org/abs/2608.15933v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "可探索世界合成数据引擎",
+      "sum": "WorldRover生成带丰富标注的合成视频，用于世界探索。",
+      "ta": "对程序化世界生成与AI训练数据有参考价值，可提升数据质量。",
+      "src": "arXiv · cs.GR · 08-16",
+      "url": "https://arxiv.org/abs/2608.15659v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "大规模部件感知3D生成",
+      "sum": "MegaParts通过令牌高效自回归，生成多达300部件的3D对象。",
+      "ta": "对复杂3D资产生成与可控建模有参考价值，可提升部件级控制。",
+      "src": "arXiv · cs.GR · 08-14",
+      "url": "https://arxiv.org/abs/2608.14783v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender科幻道具表面损伤雕刻",
+      "sum": "详解科幻道具表面损伤与磨损雕刻，含材质与纹理集划分。",
+      "ta": "对道具材质制作有参考价值，可借鉴其纹理集划分思路。",
+      "src": "80 Level · 08-17",
+      "url": "https://80.lv/articles/how-to-sculpt-surface-damage-and-wear-on-a-sci-fi-prop/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -77,15 +167,6 @@ window.INTEL_RECENT = {
       "ta": "关注 Substance 3D Designer 材质构建思路，可借鉴其风格化纹理制作流程。",
       "src": "80 Level · 08-14",
       "url": "https://80.lv/articles/build-eerie-worlds-with-this-dark-fantasy-signature-collection/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 程序化美国市中心生成器",
-      "sum": "一款 Blender 工具，可程序化生成美国市中心城市环境，同时保留艺术控制权。",
-      "ta": "程序化城市生成思路可迁移至 UE5 植被或场景布局工具链，值得研究其控制方式。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/procedural-american-downtown-generator-for-blender/"
     },
     {
       "cat": "tech",
@@ -374,15 +455,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "伊藤润二角色3D化重现",
-      "sum": "艺术家将伊藤润二漫画《漩涡》中的角色以3D形式重现，展示2D风格转3D的过程。",
-      "ta": "对风格化角色或非真实感渲染的TA，可参考其2D到3D的材质与造型转换。",
-      "src": "80 Level · 08-11",
-      "url": "https://80.lv/articles/character-from-junji-ito-s-uzumaki-manga-series-recreated-in-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
       "title": "文字构建FPS游戏解析",
       "sum": "开发者Yechan Choi分享文字FPS游戏《Torizon Telecom》的创作历程与机制设计。",
       "ta": "对探索非传统渲染或UI交互的TA，此案例提供了独特的视觉与玩法结合思路。",
@@ -597,15 +669,6 @@ window.INTEL_RECENT = {
       "ta": "关注游戏公司 AI 战略布局，但原文未提具体技术细节。",
       "src": "Game Developer · 08-10",
       "url": "https://www.gamedeveloper.com/business/eve-online-studio-hires-former-icelandic-minister-to-lead-autonomous-ai-efforts"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "GPU加速轨道传播建模",
-      "sum": "提出GPU加速的太阳辐射压高保真建模，用于航天器轨道传播。",
-      "ta": "与游戏TA无关，仅作图形学高性能计算参考。",
-      "src": "arXiv · cs.GR · 08-07",
-      "url": "https://arxiv.org/abs/2608.07307v1"
     },
     {
       "cat": "gfx",
@@ -1760,70 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "直接提升角色资产迭代效率，值得测试。",
       "src": "Tech-Artists · 07-24",
       "url": "https://www.tech-artists.org/t/fabricatorstudio-a-free-maya-to-unreal-character-pipeline-rigging-ai-skinning-export-and-more/18470"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "可微渲染场景参数显著性",
-      "sum": "利用可微渲染器生成场景参数显著性图，类比神经网络梯度方法。",
-      "ta": "可微渲染用于参数优化之外，还能做场景特征重要性分析，对调试渲染效果有启发。",
-      "src": "arXiv · cs.GR · 07-23",
-      "url": "https://arxiv.org/abs/2607.21562v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "NVIDIA OptiX 光线追踪调试工具",
-      "sum": "介绍使用 OptiX Toolkit 调试光线追踪应用的方法。",
-      "ta": "光线追踪调试工具链更新，有助于定位 RT 管线中的性能或正确性问题。",
-      "src": "NVIDIA · 07-23",
-      "url": "https://developer.nvidia.com/blog/debugging-ray-tracing-applications-using-nvidia-optix-toolkit/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ArcBrush 1.5 升级 32 位浮点管线",
-      "sum": "ArcBrush 1.5 引入色彩管理 32 位浮点图像管线，支持 Cryptomatte。",
-      "ta": "32 位浮点管线对纹理合成与后期处理精度提升，适合高动态范围工作流。",
-      "src": "80 Level · 07-23",
-      "url": "https://80.lv/articles/arcbrush-1-5-upgrades-to-color-managed-32-bit-float-image-pipeline/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D 高斯泼溅补全与 PatchMatch",
-      "sum": "3D-GIMP 用 PatchMatch 改进 3D 高斯场景编辑，减少多视图不一致。",
-      "ta": "3D 高斯编辑新方法，对实时场景修复与一致性维护有潜在应用。",
-      "src": "arXiv · cs.GR · 07-22",
-      "url": "https://arxiv.org/abs/2607.20789v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "缝纫图案缝合对应学习重建",
-      "sum": "图学习框架从 2D 缝纫图案重建两级缝合信息，无需人工标注。",
-      "ta": "自动缝合重建对虚拟服装建模与布料模拟管线自动化有直接帮助。",
-      "src": "arXiv · cs.GR · 07-23",
-      "url": "https://arxiv.org/abs/2607.21213v1"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Vermila 工作室裁员或关闭",
-      "sum": "Vermila Studios 裁员，CEO 称未来数月关闭是可行可能。",
-      "ta": "行业动荡信号，可能影响外包或合作项目稳定性。",
-      "src": "Game Developer · 07-23",
-      "url": "https://www.gamedeveloper.com/business/vermila-studios-lays-off-staff-studio-closure-a-feasible-possibility-in-coming-months"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Disgaea 转型动作 RPG 开发谈",
-      "sum": "开发团队分享从战术 RPG 转动作 RPG 的机制与模型适配经验。",
-      "ta": "游戏类型转换中的模型与动画适配经验，对角色系统设计有参考。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/disgaea-mayhem-shifting-from-tactical-rpg-to-action-rpg/"
     }
   ]
 };

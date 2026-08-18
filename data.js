@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月17日 · 周一",
+  "date": "2026年8月18日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>G-Buffer条件生成渲染</em> / <em>基于大模型的发丝生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>拓扑感知三角网格重建</em> / <em>逐像素渲染难度描述符</em> / <em>GPU资源受限虚拟机</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -129,67 +129,137 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "不确定感知雅可比集计算",
-      "sum": "提出不确定感知的雅可比集计算方法，用于多场可视化拓扑描述。",
-      "ta": "拓扑描述符在科学可视化中常用，可关注其对多场数据梯度对齐分析的改进。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14409v1"
+      "title": "拓扑感知三角网格重建",
+      "sum": "用持续同调改进可微三角网格重建，修正拓扑错误。",
+      "ta": "对程序化生成与几何处理有参考价值，可提升重建网格拓扑正确性。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16848v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "流体动力学可迁移潜算子",
-      "sum": "提出从固定网格到移动粒子的可迁移潜算子，用于流体动力学建模。",
-      "ta": "拉格朗日视角的神经算子可能为粒子流体模拟提供新思路，值得关注。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14120v1"
+      "title": "逐像素渲染难度描述符",
+      "sum": "提出稳定传输机制描述符，衡量逐像素渲染难度。",
+      "ta": "对蒙特卡洛渲染采样策略优化有参考价值，可提升渲染效率。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16730v1"
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "固定预算高斯体编码",
-      "sum": "用各向异性高斯基元在固定预算下编码标量场，用于原位数据缩减。",
-      "ta": "高斯编码策略可能影响体积数据压缩与传输，对程序化生成有参考价值。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14112v1"
+      "imp": "lo",
+      "title": "GPU资源受限虚拟机",
+      "sum": "在GPU上实现资源受限虚拟机，对抗软件膨胀。",
+      "ta": "对GPU计算资源管理有启发，但非TA核心方向。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16387v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "游戏实况自动解说系统",
-      "sum": "用视觉语言模型为任意游戏录像生成电竞风格口头解说。",
-      "ta": "自动解说可能用于游戏内事件反馈或工具演示，但非核心渲染工作流。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14016v1"
+      "title": "身份保持视频生成新法",
+      "sum": "KeyID解耦草稿与关键帧编辑，实现身份保持视频生成。",
+      "ta": "对角色动画与过场生成有参考价值，可探索身份一致性控制。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16154v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "任意角色语音动画生成",
+      "sum": "AnyTalk无需动画数据，为任意角色生成3D语音动画。",
+      "ta": "对语音驱动面部动画工作流有参考价值，可简化角色动画制作。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16143v1"
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "G-Buffer条件生成渲染",
-      "sum": "扩散模型作为学习渲染器，以G-Buffer为条件实现真实感生成。",
-      "ta": "生成式渲染与G-Buffer结合可能改变TA的材质输出流程，值得精读。",
+      "imp": "mid",
+      "title": "表面表示可微体素化",
+      "sum": "提出表面表示的可微体素化方法，优化体积查询。",
+      "ta": "对几何处理与体积渲染有参考价值，可提升空间查询效率。",
+      "src": "arXiv · cs.GR · 08-16",
+      "url": "https://arxiv.org/abs/2608.15934v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "隐式曲面ARAP正则化",
+      "sum": "为隐式曲面引入ARAP正则化，保持形状刚性。",
+      "ta": "对隐式曲面建模与优化有参考价值，可提升形状保真度。",
+      "src": "arXiv · cs.GR · 08-16",
+      "url": "https://arxiv.org/abs/2608.15933v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "可探索世界合成数据引擎",
+      "sum": "WorldRover生成带丰富标注的合成视频，用于世界探索。",
+      "ta": "对程序化世界生成与AI训练数据有参考价值，可提升数据质量。",
+      "src": "arXiv · cs.GR · 08-16",
+      "url": "https://arxiv.org/abs/2608.15659v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "大规模部件感知3D生成",
+      "sum": "MegaParts通过令牌高效自回归，生成多达300部件的3D对象。",
+      "ta": "对复杂3D资产生成与可控建模有参考价值，可提升部件级控制。",
       "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.13929v1"
+      "url": "https://arxiv.org/abs/2608.14783v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "多模态智能体构建3D世界",
+      "sum": "VibeWorlding探索多模态智能体端到端构建3D开放世界。",
+      "ta": "对AI辅助世界构建有参考价值，可探索自动化关卡设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.15265"
     },
     {
       "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "基于大模型的发丝生成",
-      "sum": "用大重建和多模态模型生成基于发丝的头发，减少手工制作依赖。",
-      "ta": "发丝自动生成可大幅提升角色资产制作效率，对TA工具链有直接价值。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13679v1"
+      "imp": "lo",
+      "title": "Blender科幻道具表面损伤雕刻",
+      "sum": "详解科幻道具表面损伤与磨损雕刻，含材质与纹理集划分。",
+      "ta": "对道具材质制作有参考价值，可借鉴其纹理集划分思路。",
+      "src": "80 Level · 08-17",
+      "url": "https://80.lv/articles/how-to-sculpt-surface-damage-and-wear-on-a-sci-fi-prop/"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
       "imp": "lo",
-      "title": "Marionette世界状态预测",
-      "sum": "模型预测世界状态、渲染几何并绘制外观，实现多模态生成。",
-      "ta": "世界状态预测可能用于动态场景生成，但需确认与实时渲染的关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.14530"
+      "title": "Blender平面切割网格免费工具",
+      "sum": "免费Blender工具，支持实时预览，轻松用平面切割网格。",
+      "ta": "对DCC工具链有参考价值，可提升网格切割效率。",
+      "src": "80 Level · 08-17",
+      "url": "https://80.lv/articles/free-blender-tool-for-easily-cutting-meshes-with-planes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender无缝纹理绘制技巧",
+      "sum": "学习在Blender纹理绘制模式中无缝绘制贴图。",
+      "ta": "对贴图制作有参考价值，可提升纹理绘制质量。",
+      "src": "80 Level · 08-17",
+      "url": "https://80.lv/articles/how-to-paint-seamlessly-in-blender-s-texture-paint-mode/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender程序化生物材质",
+      "sum": "Bioform由医生制作，提供高精度程序化生物材质。",
+      "ta": "对生物材质制作有参考价值，可借鉴其程序化思路。",
+      "src": "80 Level · 08-17",
+      "url": "https://80.lv/articles/most-accurate-procedural-biological-materials-for-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender折叠椅绑定教程",
+      "sum": "分析折叠椅运动，设置折叠机制，解决常见问题。",
+      "ta": "对绑定与机械动画有参考价值，可提升复杂绑定技巧。",
+      "src": "80 Level · 08-17",
+      "url": "https://80.lv/articles/tutorial-rigging-folding-chair-in-blender/"
     }
   ],
   "flashbackTitle": "",
