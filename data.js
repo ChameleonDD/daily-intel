@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月18日 · 周二",
+  "date": "2026年8月19日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>拓扑感知三角网格重建</em> / <em>逐像素渲染难度描述符</em> / <em>GPU资源受限虚拟机</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>MetaSapiens v2 实时注视点渲染</em> / <em>3DGS 加速光线追踪新法</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,138 +128,203 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "拓扑感知三角网格重建",
-      "sum": "用持续同调改进可微三角网格重建，修正拓扑错误。",
-      "ta": "对程序化生成与几何处理有参考价值，可提升重建网格拓扑正确性。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16848v1"
+      "imp": "hi",
+      "rank": 1,
+      "title": "MetaSapiens v2 实时注视点渲染",
+      "sum": "提出注视点感知剪枝与立体扭曲，加速点云神经渲染至实时。",
+      "ta": "关注其剪枝与扭曲策略，对 VR/AR 实时渲染管线优化有直接参考价值。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17969v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "3DGS 加速光线追踪新法",
+      "sum": "基于粒子反向传播加速 3DGS 训练，支持反射等次级光线效果。",
+      "ta": "突破光栅化近似限制，对追求真实反射的实时渲染方案意义重大。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17298v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "逐像素渲染难度描述符",
-      "sum": "提出稳定传输机制描述符，衡量逐像素渲染难度。",
-      "ta": "对蒙特卡洛渲染采样策略优化有参考价值，可提升渲染效率。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16730v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "GPU资源受限虚拟机",
-      "sum": "在GPU上实现资源受限虚拟机，对抗软件膨胀。",
-      "ta": "对GPU计算资源管理有启发，但非TA核心方向。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16387v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "身份保持视频生成新法",
-      "sum": "KeyID解耦草稿与关键帧编辑，实现身份保持视频生成。",
-      "ta": "对角色动画与过场生成有参考价值，可探索身份一致性控制。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16154v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "任意角色语音动画生成",
-      "sum": "AnyTalk无需动画数据，为任意角色生成3D语音动画。",
-      "ta": "对语音驱动面部动画工作流有参考价值，可简化角色动画制作。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16143v1"
+      "title": "WebGPU 六法绘制多层地形",
+      "sum": "比较六种 WebGPU 渲染方法，用于可编辑多层高度场地形。",
+      "ta": "游戏地形常非单值高度场，此对比对 TA 选型实时地形渲染方案有启发。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17390v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "表面表示可微体素化",
-      "sum": "提出表面表示的可微体素化方法，优化体积查询。",
-      "ta": "对几何处理与体积渲染有参考价值，可提升空间查询效率。",
-      "src": "arXiv · cs.GR · 08-16",
-      "url": "https://arxiv.org/abs/2608.15934v1"
+      "title": "变分 r 自适应布料模拟",
+      "sum": "首个面向现代布料管线的 r-自适应方法，模拟褶皱与摩擦接触。",
+      "ta": "自适应分辨率可提升布料细节模拟效率，对角色布料系统有参考价值。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17833v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "隐式曲面ARAP正则化",
-      "sum": "为隐式曲面引入ARAP正则化，保持形状刚性。",
-      "ta": "对隐式曲面建模与优化有参考价值，可提升形状保真度。",
-      "src": "arXiv · cs.GR · 08-16",
-      "url": "https://arxiv.org/abs/2608.15933v1"
+      "title": "RADmesh 重网格感知形变",
+      "sum": "提出重网格增强的网格形变方法，避免大形变时三角质量恶化。",
+      "ta": "对程序化形变或绑定系统，可改善大形变下的网格质量与稳定性。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.17182v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "PXDepth 像素级单目深度",
+      "sum": "像素空间建模提升单目深度估计对细粒度结构与边界的保持。",
+      "ta": "对基于深度估计的自动 LOD、植被放置等 TA 工具链有潜在价值。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16984v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Love Handles 形变手柄简化",
+      "sum": "为形变手柄提供低内存、紧支撑的网格简化方法。",
+      "ta": "可优化物理模拟中形变手柄的存储与计算效率。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17930v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Lambda-Hold 肌肉骨骼模拟",
+      "sum": "最小任务奖励即可让肌肉骨骼模型涌现类人运动。",
+      "ta": "对角色动画或生物力学模拟的 RL 训练策略有参考意义。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.17030v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "可探索世界合成数据引擎",
-      "sum": "WorldRover生成带丰富标注的合成视频，用于世界探索。",
-      "ta": "对程序化世界生成与AI训练数据有参考价值，可提升数据质量。",
-      "src": "arXiv · cs.GR · 08-16",
-      "url": "https://arxiv.org/abs/2608.15659v1"
+      "title": "aDSL 智能体 3D 程序化创建",
+      "sum": "联合智能体与程序设计，提升 LLM 生成 3D 程序的稳定性。",
+      "ta": "对探索 LLM 辅助程序化资产生成工作流的 TA 有参考价值。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17975v1"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
       "imp": "mid",
-      "title": "大规模部件感知3D生成",
-      "sum": "MegaParts通过令牌高效自回归，生成多达300部件的3D对象。",
-      "ta": "对复杂3D资产生成与可控建模有参考价值，可提升部件级控制。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14783v1"
+      "title": "ZBrush 2D 概念转 3D 角色",
+      "sum": "David Papunashvili 分享 Punk Knight 项目，投影 2D 概念到雕刻并 PolyPaint 上色。",
+      "ta": "2D 概念直接投影参考的工作流，可提升风格化角色制作效率。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/creating-a-stylized-3d-character-in-a-2d-illustrated-look-with-zbrush/"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 程序化手绘风 Shader",
+      "sum": "lassyla 发布教程与下载，制作程序化手绘外观 Blender 着色器。",
+      "ta": "程序化手绘风 Shader 对风格化渲染有直接参考价值。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/tutorial-procedural-blender-shader-with-hand-painted-look/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 雕刻感边缘贴花",
+      "sum": "在 Blender 中快速生成贴花，用于创建雕刻感边缘细节。",
+      "ta": "贴花生成工具可加速硬表面或风格化资产的细节制作。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/create-sculpted-looking-edge-details-with-decals-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "珊瑚生长模拟视觉效果",
+      "sum": "展示一个美观且令人着迷的珊瑚生长模拟。",
+      "ta": "可关注其模拟算法与视觉表现，对自然现象特效有启发。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/this-coral-growth-simulation-looks-beautiful-and-mesmerizing/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "尼龙张力模拟设置展示",
+      "sum": "展示一个令人印象深刻的 3D 尼龙张力模拟设置。",
+      "ta": "可关注其布料/张力模拟设置，对角色布料或道具模拟有参考。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/check-out-this-impressive-nylon-tension-simulation-set-up-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 专业 VFX 工具捆绑",
+      "sum": "RBDLab、VDBLab 和 FluidLab 三款 Blender VFX 工具捆绑销售。",
+      "ta": "工具捆绑可提升 Blender 特效制作效率，值得关注。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/three-professional-vfx-tools-for-blender-in-one-bundle/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "OpenStudioHub 简化 Blender 管线",
+      "sum": "介绍 OpenStudioHub，用于简化 Blender 工作室工具、Kitsu 与管线。",
+      "ta": "对使用 Blender 的 TA 团队，可简化资产管理流程。",
+      "src": "Tech-Artists · 08-18",
+      "url": "https://www.tech-artists.org/t/simplifying-blender-studio-tools-kitsu-and-blender-pipeline-meet-openstudiohub/18500"
+    },
+    {
+      "cat": "biz",
       "imp": "mid",
-      "title": "多模态智能体构建3D世界",
-      "sum": "VibeWorlding探索多模态智能体端到端构建3D开放世界。",
-      "ta": "对AI辅助世界构建有参考价值，可探索自动化关卡设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.15265"
+      "title": "游戏工作室转向外部开发合作",
+      "sum": "Juego Studios 讨论外部开发、全流程制作、AI 辅助工作流与 LiveOps。",
+      "ta": "了解行业外包趋势，对 TA 的跨团队协作与流程设计有参考。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/why-game-studios-are-turning-to-external-development-partnerships/"
     },
     {
-      "cat": "flow",
+      "cat": "biz",
       "imp": "lo",
-      "title": "Blender科幻道具表面损伤雕刻",
-      "sum": "详解科幻道具表面损伤与磨损雕刻，含材质与纹理集划分。",
-      "ta": "对道具材质制作有参考价值，可借鉴其纹理集划分思路。",
-      "src": "80 Level · 08-17",
-      "url": "https://80.lv/articles/how-to-sculpt-surface-damage-and-wear-on-a-sci-fi-prop/"
+      "title": "Deus Ex 总监 Warren Spector 退休",
+      "sum": "《杀出重围》总监 Warren Spector 在游戏行业近 45 年后宣布退休。",
+      "ta": "行业资深人物动向，可速览。",
+      "src": "Game Developer · 08-18",
+      "url": "https://www.gamedeveloper.com/business/deus-ex-director-warren-spector-is-retiring-after-43-years"
     },
     {
-      "cat": "flow",
+      "cat": "biz",
       "imp": "lo",
-      "title": "Blender平面切割网格免费工具",
-      "sum": "免费Blender工具，支持实时预览，轻松用平面切割网格。",
-      "ta": "对DCC工具链有参考价值，可提升网格切割效率。",
-      "src": "80 Level · 08-17",
-      "url": "https://80.lv/articles/free-blender-tool-for-easily-cutting-meshes-with-planes/"
+      "title": "WINGS 资助独立游戏新途径",
+      "sum": "独立游戏投资机构 WINGS 为 PC 项目推出新资助途径。",
+      "ta": "行业投资动态，可速览。",
+      "src": "Game Developer · 08-18",
+      "url": "https://www.gamedeveloper.com/business/wings-really-really-wants-to-fund-your-neat-indie-video-game"
     },
     {
-      "cat": "flow",
+      "cat": "biz",
       "imp": "lo",
-      "title": "Blender无缝纹理绘制技巧",
-      "sum": "学习在Blender纹理绘制模式中无缝绘制贴图。",
-      "ta": "对贴图制作有参考价值，可提升纹理绘制质量。",
-      "src": "80 Level · 08-17",
-      "url": "https://80.lv/articles/how-to-paint-seamlessly-in-blender-s-texture-paint-mode/"
+      "title": "NBA 2K27 新玩法细节公布",
+      "sum": "NBA 2K27 公布 The City、合作模式、MyNBA 时代等新玩法细节。",
+      "ta": "商业游戏动态，可速览。",
+      "src": "PlayStation Blog · 08-18",
+      "url": "https://blog.playstation.com/2026/08/18/new-nba-2k27-gameplay-details-on-the-city-co-op-mynba-eras-and-more/"
     },
     {
-      "cat": "flow",
+      "cat": "biz",
       "imp": "lo",
-      "title": "Blender程序化生物材质",
-      "sum": "Bioform由医生制作，提供高精度程序化生物材质。",
-      "ta": "对生物材质制作有参考价值，可借鉴其程序化思路。",
-      "src": "80 Level · 08-17",
-      "url": "https://80.lv/articles/most-accurate-procedural-biological-materials-for-blender/"
+      "title": "Phantom Blade Zero 深度实机",
+      "sum": "State of Play 深入展示《Phantom Blade Zero》战斗与武林世界。",
+      "ta": "商业游戏动态，可速览。",
+      "src": "PlayStation Blog · 08-18",
+      "url": "https://blog.playstation.com/2026/08/17/phantom-blade-zero-state-of-play-dives-deep-into-combat-and-the-wulin-world/"
     },
     {
-      "cat": "flow",
+      "cat": "biz",
       "imp": "lo",
-      "title": "Blender折叠椅绑定教程",
-      "sum": "分析折叠椅运动，设置折叠机制，解决常见问题。",
-      "ta": "对绑定与机械动画有参考价值，可提升复杂绑定技巧。",
-      "src": "80 Level · 08-17",
-      "url": "https://80.lv/articles/tutorial-rigging-folding-chair-in-blender/"
+      "title": "PS Store 七月下载榜公布",
+      "sum": "PlayStation 公布 2026 年 7 月亚洲区 PS5、PS4 等下载排行榜。",
+      "ta": "行业数据，可速览。",
+      "src": "PlayStation Blog · 08-18",
+      "url": "https://blog.playstation.com/2026/08/17/20260818-top/"
     }
   ],
   "flashbackTitle": "",

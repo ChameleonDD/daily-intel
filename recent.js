@@ -2,8 +2,208 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-18 10:17",
+  "updated": "2026-08-19 10:20",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "MetaSapiens v2 实时注视点渲染",
+      "sum": "提出注视点感知剪枝与立体扭曲，加速点云神经渲染至实时。",
+      "ta": "关注其剪枝与扭曲策略，对 VR/AR 实时渲染管线优化有直接参考价值。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17969v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "3DGS 加速光线追踪新法",
+      "sum": "基于粒子反向传播加速 3DGS 训练，支持反射等次级光线效果。",
+      "ta": "突破光栅化近似限制，对追求真实反射的实时渲染方案意义重大。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17298v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "WebGPU 六法绘制多层地形",
+      "sum": "比较六种 WebGPU 渲染方法，用于可编辑多层高度场地形。",
+      "ta": "游戏地形常非单值高度场，此对比对 TA 选型实时地形渲染方案有启发。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17390v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "变分 r 自适应布料模拟",
+      "sum": "首个面向现代布料管线的 r-自适应方法，模拟褶皱与摩擦接触。",
+      "ta": "自适应分辨率可提升布料细节模拟效率，对角色布料系统有参考价值。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17833v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RADmesh 重网格感知形变",
+      "sum": "提出重网格增强的网格形变方法，避免大形变时三角质量恶化。",
+      "ta": "对程序化形变或绑定系统，可改善大形变下的网格质量与稳定性。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.17182v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "PXDepth 像素级单目深度",
+      "sum": "像素空间建模提升单目深度估计对细粒度结构与边界的保持。",
+      "ta": "对基于深度估计的自动 LOD、植被放置等 TA 工具链有潜在价值。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.16984v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Love Handles 形变手柄简化",
+      "sum": "为形变手柄提供低内存、紧支撑的网格简化方法。",
+      "ta": "可优化物理模拟中形变手柄的存储与计算效率。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17930v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Lambda-Hold 肌肉骨骼模拟",
+      "sum": "最小任务奖励即可让肌肉骨骼模型涌现类人运动。",
+      "ta": "对角色动画或生物力学模拟的 RL 训练策略有参考意义。",
+      "src": "arXiv · cs.GR · 08-17",
+      "url": "https://arxiv.org/abs/2608.17030v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "aDSL 智能体 3D 程序化创建",
+      "sum": "联合智能体与程序设计，提升 LLM 生成 3D 程序的稳定性。",
+      "ta": "对探索 LLM 辅助程序化资产生成工作流的 TA 有参考价值。",
+      "src": "arXiv · cs.GR · 08-18",
+      "url": "https://arxiv.org/abs/2608.17975v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "ZBrush 2D 概念转 3D 角色",
+      "sum": "David Papunashvili 分享 Punk Knight 项目，投影 2D 概念到雕刻并 PolyPaint 上色。",
+      "ta": "2D 概念直接投影参考的工作流，可提升风格化角色制作效率。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/creating-a-stylized-3d-character-in-a-2d-illustrated-look-with-zbrush/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 程序化手绘风 Shader",
+      "sum": "lassyla 发布教程与下载，制作程序化手绘外观 Blender 着色器。",
+      "ta": "程序化手绘风 Shader 对风格化渲染有直接参考价值。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/tutorial-procedural-blender-shader-with-hand-painted-look/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 雕刻感边缘贴花",
+      "sum": "在 Blender 中快速生成贴花，用于创建雕刻感边缘细节。",
+      "ta": "贴花生成工具可加速硬表面或风格化资产的细节制作。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/create-sculpted-looking-edge-details-with-decals-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "珊瑚生长模拟视觉效果",
+      "sum": "展示一个美观且令人着迷的珊瑚生长模拟。",
+      "ta": "可关注其模拟算法与视觉表现，对自然现象特效有启发。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/this-coral-growth-simulation-looks-beautiful-and-mesmerizing/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "尼龙张力模拟设置展示",
+      "sum": "展示一个令人印象深刻的 3D 尼龙张力模拟设置。",
+      "ta": "可关注其布料/张力模拟设置，对角色布料或道具模拟有参考。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/check-out-this-impressive-nylon-tension-simulation-set-up-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 专业 VFX 工具捆绑",
+      "sum": "RBDLab、VDBLab 和 FluidLab 三款 Blender VFX 工具捆绑销售。",
+      "ta": "工具捆绑可提升 Blender 特效制作效率，值得关注。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/three-professional-vfx-tools-for-blender-in-one-bundle/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "OpenStudioHub 简化 Blender 管线",
+      "sum": "介绍 OpenStudioHub，用于简化 Blender 工作室工具、Kitsu 与管线。",
+      "ta": "对使用 Blender 的 TA 团队，可简化资产管理流程。",
+      "src": "Tech-Artists · 08-18",
+      "url": "https://www.tech-artists.org/t/simplifying-blender-studio-tools-kitsu-and-blender-pipeline-meet-openstudiohub/18500"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "游戏工作室转向外部开发合作",
+      "sum": "Juego Studios 讨论外部开发、全流程制作、AI 辅助工作流与 LiveOps。",
+      "ta": "了解行业外包趋势，对 TA 的跨团队协作与流程设计有参考。",
+      "src": "80 Level · 08-18",
+      "url": "https://80.lv/articles/why-game-studios-are-turning-to-external-development-partnerships/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Deus Ex 总监 Warren Spector 退休",
+      "sum": "《杀出重围》总监 Warren Spector 在游戏行业近 45 年后宣布退休。",
+      "ta": "行业资深人物动向，可速览。",
+      "src": "Game Developer · 08-18",
+      "url": "https://www.gamedeveloper.com/business/deus-ex-director-warren-spector-is-retiring-after-43-years"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "WINGS 资助独立游戏新途径",
+      "sum": "独立游戏投资机构 WINGS 为 PC 项目推出新资助途径。",
+      "ta": "行业投资动态，可速览。",
+      "src": "Game Developer · 08-18",
+      "url": "https://www.gamedeveloper.com/business/wings-really-really-wants-to-fund-your-neat-indie-video-game"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "NBA 2K27 新玩法细节公布",
+      "sum": "NBA 2K27 公布 The City、合作模式、MyNBA 时代等新玩法细节。",
+      "ta": "商业游戏动态，可速览。",
+      "src": "PlayStation Blog · 08-18",
+      "url": "https://blog.playstation.com/2026/08/18/new-nba-2k27-gameplay-details-on-the-city-co-op-mynba-eras-and-more/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Phantom Blade Zero 深度实机",
+      "sum": "State of Play 深入展示《Phantom Blade Zero》战斗与武林世界。",
+      "ta": "商业游戏动态，可速览。",
+      "src": "PlayStation Blog · 08-18",
+      "url": "https://blog.playstation.com/2026/08/17/phantom-blade-zero-state-of-play-dives-deep-into-combat-and-the-wulin-world/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS Store 七月下载榜公布",
+      "sum": "PlayStation 公布 2026 年 7 月亚洲区 PS5、PS4 等下载排行榜。",
+      "ta": "行业数据，可速览。",
+      "src": "PlayStation Blog · 08-18",
+      "url": "https://blog.playstation.com/2026/08/17/20260818-top/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -84,15 +284,6 @@ window.INTEL_RECENT = {
       "ta": "对复杂3D资产生成与可控建模有参考价值，可提升部件级控制。",
       "src": "arXiv · cs.GR · 08-14",
       "url": "https://arxiv.org/abs/2608.14783v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender科幻道具表面损伤雕刻",
-      "sum": "详解科幻道具表面损伤与磨损雕刻，含材质与纹理集划分。",
-      "ta": "对道具材质制作有参考价值，可借鉴其纹理集划分思路。",
-      "src": "80 Level · 08-17",
-      "url": "https://80.lv/articles/how-to-sculpt-surface-damage-and-wear-on-a-sci-fi-prop/"
     },
     {
       "cat": "gfx",
@@ -788,15 +979,6 @@ window.INTEL_RECENT = {
       "ta": "本地化流程与 TA 工作流无直接关联，速览即可。",
       "src": "Game Developer · 08-07",
       "url": "https://www.gamedeveloper.com/production/what-devs-need-to-know-about-localization-ft-concha-fernandez-alvarez-aurelie-perrin-and-guido-di-carlo"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "多视角几何先验提升3DGS重建",
-      "sum": "利用多视角几何先验优化3D高斯泼溅重建，改善几何精度。",
-      "ta": "对程序化生成资产或场景重建的几何质量提升有参考意义。",
-      "src": "arXiv · cs.GR · 08-06",
-      "url": "https://arxiv.org/abs/2608.06117v1"
     },
     {
       "cat": "gfx",
@@ -1642,187 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "对角色头部建模和生成式管线有参考价值。",
       "src": "arXiv · cs.GR · 07-26",
       "url": "https://arxiv.org/abs/2607.23687v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "极小曲面神经表示",
-      "sum": "提出精确神经表示方法用于极小曲面。",
-      "ta": "对几何建模和曲面优化有理论参考。",
-      "src": "arXiv · cs.GR · 07-26",
-      "url": "https://arxiv.org/abs/2607.23437v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "光线追踪AO阴影复用",
-      "sum": "提出遮挡点复用技术加速光线追踪AO和阴影。",
-      "ta": "对实时光线追踪性能优化有直接参考。",
-      "src": "arXiv · cs.GR · 07-25",
-      "url": "https://arxiv.org/abs/2607.23122v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "无网格域随机化",
-      "sum": "用3D高斯泼溅参数扰动实现无网格域随机化。",
-      "ta": "对Sim-to-Real和有机体渲染有直接参考。",
-      "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22890v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "视差伪管道内部技巧",
-      "sum": "用经典视差窗口技巧伪造地铁管道内部。",
-      "ta": "对低成本环境伪装有直接参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/fake-tube-interior-using-classic-parallax-windows-trick/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "无模拟伪流水技巧",
-      "sum": "经典技巧伪造流动水面，无需流体模拟。",
-      "ta": "对低性能开销水效果有参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/classic-trick-to-fake-flowing-water-without-fluid-simulation/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "血源猎人游戏就绪资产",
-      "sum": "Victor Monge López分享血源猎人粉丝资产制作流程。",
-      "ta": "对角色雕刻、头发卡片和游戏就绪管线有参考。",
-      "src": "80 Level · 07-27",
-      "url": "https://80.lv/articles/breakdown-game-ready-bloodborne-s-old-hunter-fan-art/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "雅达利经典IP电影化",
-      "sum": "Atari与环球合作制作《小行星》等经典游戏电影。",
-      "ta": "对游戏IP跨媒体开发有参考。",
-      "src": "Game Developer · 07-27",
-      "url": "https://www.gamedeveloper.com/business/atari-and-universal-to-create-movies-based-on-classic-properties-including-asteroids-and-missile-command"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "可变形三角形Splatting",
-      "sum": "新方法用非凸三角形基元实现实时辐射场渲染，减少冗余基元。",
-      "ta": "实时渲染新基元，可能替代高斯泼溅，值得关注其光栅化效率。",
-      "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22446v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "卷发模拟新方法",
-      "sum": "将卷发分解为卷曲单元，结合杆基与几何细节进行仿真。",
-      "ta": "对毛发模拟管线有参考价值，尤其卷发动态与性能平衡。",
-      "src": "arXiv · cs.GR · 07-24",
-      "url": "https://arxiv.org/abs/2607.22103v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "无训练自回归渲染一致性",
-      "sum": "提出无需训练的自回归生成渲染一致性方法。",
-      "ta": "可能影响实时渲染中的生成式管线，关注其与引擎集成潜力。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.21848"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "古墓丽影新作幕后细节",
-      "sum": "展示《Tomb Raider: Legacy of Atlantis》开发幕后。",
-      "ta": "可观察AAA级场景美术与资产制作流程。",
-      "src": "80 Level · 07-25",
-      "url": "https://80.lv/articles/check-out-these-behind-the-scenes-details-of-tomb-raider-legacy-of-atlantis/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏开发模拟器内置引擎",
-      "sum": "《Let's Build a Dungeon》内置编辑器，模拟真实开发流程。",
-      "ta": "编辑器设计思路可参考，但非直接技术工具。",
-      "src": "80 Level · 07-25",
-      "url": "https://80.lv/articles/building-a-game-development-simulator-with-a-game-engine-inside-it/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前PS高管欲复兴AA游戏",
-      "sum": "Shawn Layden计划填补独立与3A之间的空白。",
-      "ta": "行业趋势，可能影响中小团队资源分配。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/former-playstation-boss-shawn-layden-plans-to-bring-back-aa-games/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Fable风格无职业RPG访谈",
-      "sum": "《Forsaken Realms》开发者谈类Fable风格与无职业系统。",
-      "ta": "美术风格参考，但无具体技术细节。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/interview-buidling-a-fable-inspired-classless-rpg-where-you-re-not-the-hero/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "鹅鸭杀开发经验谈",
-      "sum": "Gaggle Studios分享社交推理游戏成功经验。",
-      "ta": "项目管理参考，非技术向。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/staying-lean-how-we-built-the-world-s-biggest-social-deduction-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "370+扫描PBR材质包",
-      "sum": "限时96%折扣，含370+扫描PBR材质。",
-      "ta": "快速填充材质库，注意许可与性能。",
-      "src": "80 Level · 07-24",
-      "url": "https://80.lv/articles/get-over-370-scanned-pbr-materials-in-one-bundle/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Jackbox应对后疫情销售下滑",
-      "sum": "CEO谈派对游戏如何度过疫情后销售低谷。",
-      "ta": "行业商业策略，非技术相关。",
-      "src": "Game Developer · 07-24",
-      "url": "https://www.gamedeveloper.com/business/how-jackbox-games-navigated-the-post-pandemic-sales-slump-ft-mike-bilder"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "EA收购获欧盟批准等新闻",
-      "sum": "沙特-led EA收购获批，Xbox测试广告流媒体等。",
-      "ta": "行业宏观动态，无直接技术影响。",
-      "src": "Game Developer · 07-24",
-      "url": "https://www.gamedeveloper.com/business/saudi-led-ea-buyout-receives-eu-approval-xbox-trials-ad-supported-game-streaming-and-poinpy-is-eternal-patch-notes-62"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "CATS角色动画工具系统",
-      "sum": "开源角色动画工具系统，支持绑定与动画。",
-      "ta": "可集成到动画管线，关注其与UE5兼容性。",
-      "src": "Tech-Artists · 07-27",
-      "url": "https://www.tech-artists.org/t/cats-character-animation-tool-system/18471"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "FabricatorStudio免费管线",
-      "sum": "Maya到Unreal免费管线，含绑定、AI蒙皮、导出。",
-      "ta": "直接提升角色资产迭代效率，值得测试。",
-      "src": "Tech-Artists · 07-24",
-      "url": "https://www.tech-artists.org/t/fabricatorstudio-a-free-maya-to-unreal-character-pipeline-rigging-ai-skinning-export-and-more/18470"
     }
   ]
 };
