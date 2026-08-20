@@ -2,8 +2,98 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-19 10:20",
+  "updated": "2026-08-20 10:19",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "音频驱动鼓手动作合成",
+      "sum": "新方法从音乐音频生成高精度鼓手演奏动作，兼顾高速动态与空间精度。",
+      "ta": "对角色动画与程序化动作生成有参考价值，可关注其动作-音频对齐技术。",
+      "src": "arXiv · cs.GR · 08-19",
+      "url": "https://arxiv.org/abs/2608.19055v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "稻草人转人类角色设计",
+      "sum": "Anna Cerutti 分享 Harvey 项目工作流，融合卡通比例与写实细节。",
+      "ta": "角色建模与材质混合思路可借鉴，适合生物角色设计参考。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/breakdown-how-to-design-a-scarecrow-turned-human-character/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "真菌生物雕刻与纹理制作",
+      "sum": "Kamil Tondera 详解藤蔓树皮制作工具与手绘材质实现有机外观。",
+      "ta": "植被与有机表面材质制作流程，对程序化植被工具开发有启发。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/sculpting-and-texturing-a-fungal-creature-inspired-by-the-last-of-us/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 手动重拓扑工具",
+      "sum": "Quad Maker 插件帮助手动重拓扑，保持模型布线干净整洁。",
+      "ta": "重拓扑是 TA 常用环节，此工具可提升模型清理效率。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/manually-retopologize-your-3d-meshes-with-this-blender-tool/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Unity 无缝地牢生成算法",
+      "sum": "Labyrinth 程序化生成器实现无缝地牢，提供演示可试玩。",
+      "ta": "程序化生成算法可参考，对关卡自动生成工具设计有借鉴。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/unity-based-algorithm-for-seamless-dungeon-generation/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "阴影驱动角色面部变化",
+      "sum": "利用阴影效果让角色面部产生诡异变化，鼓励自行尝试复现。",
+      "ta": "光影对角色表现力影响显著，可关注其着色器或光照技巧。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/shadows-make-this-character-s-face-change-in-the-creepiest-way/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Arkane 老兵成立新工作室",
+      "sum": "Harvey Smith 等 Arkane Austin 老将创立 Black Pony Immersive，专注第一人称动作 RPG。",
+      "ta": "行业动向，关注其后续技术选型或沉浸式设计理念。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/harvey-smith-and-fellow-arkane-austin-veterans-launch-a-new-studio"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "3A 老兵成立合作制工作室",
+      "sum": "Raze and Rebuild Studio 由 3A 老兵与无障碍专家创立，采用合作制结构。",
+      "ta": "行业模式创新，可关注其协作流程对开发效率的影响。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/triple-a-vets-and-accessibility-experts-launch-new-game-dev-co-op-raze-and-rebuild-studio"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "索尼缩减地平线服务型游戏",
+      "sum": "Guerrilla 据报因反馈不佳，移除 Horizon Hunters Gathering 的在线服务元素。",
+      "ta": "服务型游戏趋势调整，影响在线渲染与后端技术需求。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/report-playstation-reworks-horizon-live-service-game-after-negative-feedback"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Human Fall Flat 老兵建新工作室",
+      "sum": "Pretty Cool Games 在英国成立，已获融资并开始招聘。",
+      "ta": "行业动态，关注其首款作品的技术栈选择。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/human-fall-flat-veterans-launch-new-uk-studio-pretty-cool-games"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -104,15 +194,6 @@ window.INTEL_RECENT = {
       "ta": "程序化手绘风 Shader 对风格化渲染有直接参考价值。",
       "src": "80 Level · 08-18",
       "url": "https://80.lv/articles/tutorial-procedural-blender-shader-with-hand-painted-look/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 雕刻感边缘贴花",
-      "sum": "在 Blender 中快速生成贴花，用于创建雕刻感边缘细节。",
-      "ta": "贴花生成工具可加速硬表面或风格化资产的细节制作。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/create-sculpted-looking-edge-details-with-decals-in-blender/"
     },
     {
       "cat": "flow",
@@ -1239,15 +1320,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Unity地牢环境资产包",
-      "sum": "资产合集含291个独特网格和478个预制件，用于构建地牢环境。",
-      "ta": "可直接复用的地牢模块化资产，适合快速搭建关卡原型。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/this-asset-collection-helps-you-build-dungeon-style-environments-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "MetaHuman角色制作解析",
       "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
       "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
@@ -1752,78 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "独立游戏开发经验，对合作模式与公路题材有参考。",
       "src": "80 Level · 07-28",
       "url": "https://80.lv/articles/over-the-hill-creating-a-co-op-driving-adventure-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "电影级VFX幕后",
-      "sum": "动画师分享《降世神通》电影中Appa口水特效的幕后制作。",
-      "ta": "电影级VFX制作流程，对角色特效与液体模拟有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/animator-unveils-behind-the-scenes-of-vfx-for-appa-s-slobber-in-avatar-aang-movie/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "自定义遮挡系统",
-      "sum": "为《Control》风格游戏Psych Rift开发自定义遮挡系统。",
-      "ta": "自定义遮挡系统实现，对类似扭曲现实风格游戏有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/custom-occlusion-system-for-control-inspired-reality-bending-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "TaleWorlds联合创始人去世",
-      "sum": "《骑马与砍杀》工作室TaleWorlds联合创始人İpek Yavuz逝世。",
-      "ta": "行业人物讣告，了解工作室历史。",
-      "src": "Game Developer · 07-28",
-      "url": "https://www.gamedeveloper.com/business/obituary-taleworlds-co-founder-i-pek-yavuz-has-passed-away"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏业副业条款争议",
-      "sum": "开发者讨论副业条款对创意自由的限制与困扰。",
-      "ta": "行业法律问题，了解对自由职业者的影响。",
-      "src": "Game Developer · 07-28",
-      "url": "https://www.gamedeveloper.com/production/-i-have-been-hunted-down-by-hr-reps-lawyers-and-comms-people-developers-discuss-the-pain-and-prevalence-of-side-work-clauses"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "显式弹塑性损伤更新",
-      "sum": "提出一种平滑显式弹塑性-损伤更新，适用于图形模拟。",
-      "ta": "对物理模拟中的材料破坏和塑性变形有直接参考价值。",
-      "src": "arXiv · cs.GR · 07-27",
-      "url": "https://arxiv.org/abs/2607.24509v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "草图纹理感知着色",
-      "sum": "TexSketch提出参考草图着色方法，解决数据集限制。",
-      "ta": "对风格化纹理生成和草图辅助工作流有参考意义。",
-      "src": "arXiv · cs.GR · 07-27",
-      "url": "https://arxiv.org/abs/2607.24261v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态头发头部虚拟人",
-      "sum": "DynHair用3D高斯泼溅跟踪和建模动态头发。",
-      "ta": "对角色头发实时渲染和虚拟人管线有直接参考。",
-      "src": "arXiv · cs.GR · 07-26",
-      "url": "https://arxiv.org/abs/2607.23861v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "生成式头部测量模型",
-      "sum": "GNM Head提出生成式人体头部参数模型。",
-      "ta": "对角色头部建模和生成式管线有参考价值。",
-      "src": "arXiv · cs.GR · 07-26",
-      "url": "https://arxiv.org/abs/2607.23687v1"
     }
   ]
 };

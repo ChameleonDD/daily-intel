@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月19日 · 周三",
+  "date": "2026年8月20日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>MetaSapiens v2 实时注视点渲染</em> / <em>3DGS 加速光线追踪新法</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>音频驱动鼓手动作合成</em> / <em>稻草人转人类角色设计</em> / <em>真菌生物雕刻与纹理制作</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,204 +127,94 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "MetaSapiens v2 实时注视点渲染",
-      "sum": "提出注视点感知剪枝与立体扭曲，加速点云神经渲染至实时。",
-      "ta": "关注其剪枝与扭曲策略，对 VR/AR 实时渲染管线优化有直接参考价值。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17969v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "3DGS 加速光线追踪新法",
-      "sum": "基于粒子反向传播加速 3DGS 训练，支持反射等次级光线效果。",
-      "ta": "突破光栅化近似限制，对追求真实反射的实时渲染方案意义重大。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17298v1"
-    },
-    {
-      "cat": "gfx",
+      "cat": "tech",
       "imp": "mid",
-      "title": "WebGPU 六法绘制多层地形",
-      "sum": "比较六种 WebGPU 渲染方法，用于可编辑多层高度场地形。",
-      "ta": "游戏地形常非单值高度场，此对比对 TA 选型实时地形渲染方案有启发。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17390v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "变分 r 自适应布料模拟",
-      "sum": "首个面向现代布料管线的 r-自适应方法，模拟褶皱与摩擦接触。",
-      "ta": "自适应分辨率可提升布料细节模拟效率，对角色布料系统有参考价值。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17833v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RADmesh 重网格感知形变",
-      "sum": "提出重网格增强的网格形变方法，避免大形变时三角质量恶化。",
-      "ta": "对程序化形变或绑定系统，可改善大形变下的网格质量与稳定性。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.17182v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "PXDepth 像素级单目深度",
-      "sum": "像素空间建模提升单目深度估计对细粒度结构与边界的保持。",
-      "ta": "对基于深度估计的自动 LOD、植被放置等 TA 工具链有潜在价值。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16984v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Love Handles 形变手柄简化",
-      "sum": "为形变手柄提供低内存、紧支撑的网格简化方法。",
-      "ta": "可优化物理模拟中形变手柄的存储与计算效率。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17930v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Lambda-Hold 肌肉骨骼模拟",
-      "sum": "最小任务奖励即可让肌肉骨骼模型涌现类人运动。",
-      "ta": "对角色动画或生物力学模拟的 RL 训练策略有参考意义。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.17030v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "aDSL 智能体 3D 程序化创建",
-      "sum": "联合智能体与程序设计，提升 LLM 生成 3D 程序的稳定性。",
-      "ta": "对探索 LLM 辅助程序化资产生成工作流的 TA 有参考价值。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17975v1"
+      "title": "音频驱动鼓手动作合成",
+      "sum": "新方法从音乐音频生成高精度鼓手演奏动作，兼顾高速动态与空间精度。",
+      "ta": "对角色动画与程序化动作生成有参考价值，可关注其动作-音频对齐技术。",
+      "src": "arXiv · cs.GR · 08-19",
+      "url": "https://arxiv.org/abs/2608.19055v1"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "ZBrush 2D 概念转 3D 角色",
-      "sum": "David Papunashvili 分享 Punk Knight 项目，投影 2D 概念到雕刻并 PolyPaint 上色。",
-      "ta": "2D 概念直接投影参考的工作流，可提升风格化角色制作效率。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/creating-a-stylized-3d-character-in-a-2d-illustrated-look-with-zbrush/"
+      "title": "稻草人转人类角色设计",
+      "sum": "Anna Cerutti 分享 Harvey 项目工作流，融合卡通比例与写实细节。",
+      "ta": "角色建模与材质混合思路可借鉴，适合生物角色设计参考。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/breakdown-how-to-design-a-scarecrow-turned-human-character/"
     },
     {
       "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 程序化手绘风 Shader",
-      "sum": "lassyla 发布教程与下载，制作程序化手绘外观 Blender 着色器。",
-      "ta": "程序化手绘风 Shader 对风格化渲染有直接参考价值。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/tutorial-procedural-blender-shader-with-hand-painted-look/"
+      "imp": "mid",
+      "title": "真菌生物雕刻与纹理制作",
+      "sum": "Kamil Tondera 详解藤蔓树皮制作工具与手绘材质实现有机外观。",
+      "ta": "植被与有机表面材质制作流程，对程序化植被工具开发有启发。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/sculpting-and-texturing-a-fungal-creature-inspired-by-the-last-of-us/"
     },
     {
       "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 雕刻感边缘贴花",
-      "sum": "在 Blender 中快速生成贴花，用于创建雕刻感边缘细节。",
-      "ta": "贴花生成工具可加速硬表面或风格化资产的细节制作。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/create-sculpted-looking-edge-details-with-decals-in-blender/"
+      "imp": "mid",
+      "title": "Blender 手动重拓扑工具",
+      "sum": "Quad Maker 插件帮助手动重拓扑，保持模型布线干净整洁。",
+      "ta": "重拓扑是 TA 常用环节，此工具可提升模型清理效率。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/manually-retopologize-your-3d-meshes-with-this-blender-tool/"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "珊瑚生长模拟视觉效果",
-      "sum": "展示一个美观且令人着迷的珊瑚生长模拟。",
-      "ta": "可关注其模拟算法与视觉表现，对自然现象特效有启发。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/this-coral-growth-simulation-looks-beautiful-and-mesmerizing/"
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Unity 无缝地牢生成算法",
+      "sum": "Labyrinth 程序化生成器实现无缝地牢，提供演示可试玩。",
+      "ta": "程序化生成算法可参考，对关卡自动生成工具设计有借鉴。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/unity-based-algorithm-for-seamless-dungeon-generation/"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "lo",
-      "title": "尼龙张力模拟设置展示",
-      "sum": "展示一个令人印象深刻的 3D 尼龙张力模拟设置。",
-      "ta": "可关注其布料/张力模拟设置，对角色布料或道具模拟有参考。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/check-out-this-impressive-nylon-tension-simulation-set-up-in-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 专业 VFX 工具捆绑",
-      "sum": "RBDLab、VDBLab 和 FluidLab 三款 Blender VFX 工具捆绑销售。",
-      "ta": "工具捆绑可提升 Blender 特效制作效率，值得关注。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/three-professional-vfx-tools-for-blender-in-one-bundle/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "OpenStudioHub 简化 Blender 管线",
-      "sum": "介绍 OpenStudioHub，用于简化 Blender 工作室工具、Kitsu 与管线。",
-      "ta": "对使用 Blender 的 TA 团队，可简化资产管理流程。",
-      "src": "Tech-Artists · 08-18",
-      "url": "https://www.tech-artists.org/t/simplifying-blender-studio-tools-kitsu-and-blender-pipeline-meet-openstudiohub/18500"
+      "title": "阴影驱动角色面部变化",
+      "sum": "利用阴影效果让角色面部产生诡异变化，鼓励自行尝试复现。",
+      "ta": "光影对角色表现力影响显著，可关注其着色器或光照技巧。",
+      "src": "80 Level · 08-19",
+      "url": "https://80.lv/articles/shadows-make-this-character-s-face-change-in-the-creepiest-way/"
     },
     {
       "cat": "biz",
       "imp": "mid",
-      "title": "游戏工作室转向外部开发合作",
-      "sum": "Juego Studios 讨论外部开发、全流程制作、AI 辅助工作流与 LiveOps。",
-      "ta": "了解行业外包趋势，对 TA 的跨团队协作与流程设计有参考。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/why-game-studios-are-turning-to-external-development-partnerships/"
+      "title": "Arkane 老兵成立新工作室",
+      "sum": "Harvey Smith 等 Arkane Austin 老将创立 Black Pony Immersive，专注第一人称动作 RPG。",
+      "ta": "行业动向，关注其后续技术选型或沉浸式设计理念。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/harvey-smith-and-fellow-arkane-austin-veterans-launch-a-new-studio"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Deus Ex 总监 Warren Spector 退休",
-      "sum": "《杀出重围》总监 Warren Spector 在游戏行业近 45 年后宣布退休。",
-      "ta": "行业资深人物动向，可速览。",
-      "src": "Game Developer · 08-18",
-      "url": "https://www.gamedeveloper.com/business/deus-ex-director-warren-spector-is-retiring-after-43-years"
+      "title": "3A 老兵成立合作制工作室",
+      "sum": "Raze and Rebuild Studio 由 3A 老兵与无障碍专家创立，采用合作制结构。",
+      "ta": "行业模式创新，可关注其协作流程对开发效率的影响。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/triple-a-vets-and-accessibility-experts-launch-new-game-dev-co-op-raze-and-rebuild-studio"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "索尼缩减地平线服务型游戏",
+      "sum": "Guerrilla 据报因反馈不佳，移除 Horizon Hunters Gathering 的在线服务元素。",
+      "ta": "服务型游戏趋势调整，影响在线渲染与后端技术需求。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/report-playstation-reworks-horizon-live-service-game-after-negative-feedback"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "WINGS 资助独立游戏新途径",
-      "sum": "独立游戏投资机构 WINGS 为 PC 项目推出新资助途径。",
-      "ta": "行业投资动态，可速览。",
-      "src": "Game Developer · 08-18",
-      "url": "https://www.gamedeveloper.com/business/wings-really-really-wants-to-fund-your-neat-indie-video-game"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "NBA 2K27 新玩法细节公布",
-      "sum": "NBA 2K27 公布 The City、合作模式、MyNBA 时代等新玩法细节。",
-      "ta": "商业游戏动态，可速览。",
-      "src": "PlayStation Blog · 08-18",
-      "url": "https://blog.playstation.com/2026/08/18/new-nba-2k27-gameplay-details-on-the-city-co-op-mynba-eras-and-more/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Phantom Blade Zero 深度实机",
-      "sum": "State of Play 深入展示《Phantom Blade Zero》战斗与武林世界。",
-      "ta": "商业游戏动态，可速览。",
-      "src": "PlayStation Blog · 08-18",
-      "url": "https://blog.playstation.com/2026/08/17/phantom-blade-zero-state-of-play-dives-deep-into-combat-and-the-wulin-world/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS Store 七月下载榜公布",
-      "sum": "PlayStation 公布 2026 年 7 月亚洲区 PS5、PS4 等下载排行榜。",
-      "ta": "行业数据，可速览。",
-      "src": "PlayStation Blog · 08-18",
-      "url": "https://blog.playstation.com/2026/08/17/20260818-top/"
+      "title": "Human Fall Flat 老兵建新工作室",
+      "sum": "Pretty Cool Games 在英国成立，已获融资并开始招聘。",
+      "ta": "行业动态，关注其首款作品的技术栈选择。",
+      "src": "Game Developer · 08-19",
+      "url": "https://www.gamedeveloper.com/business/human-fall-flat-veterans-launch-new-uk-studio-pretty-cool-games"
     }
   ],
   "flashbackTitle": "",
@@ -335,13 +225,12 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": "未覆盖：Blender 开发博客、HuggingFace。"
   },
   "xStale": false
 };
