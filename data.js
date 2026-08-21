@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月20日 · 周四",
+  "date": "2026年8月21日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>音频驱动鼓手动作合成</em> / <em>稻草人转人类角色设计</em> / <em>真菌生物雕刻与纹理制作</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>生成式推荐系统新范式</em> / <em>渐进式因果视频世界模型</em> / <em>Human Fall Flat 开发商推 VR 新作</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,94 +127,85 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
+      "cat": "ai",
       "imp": "mid",
-      "title": "音频驱动鼓手动作合成",
-      "sum": "新方法从音乐音频生成高精度鼓手演奏动作，兼顾高速动态与空间精度。",
-      "ta": "对角色动画与程序化动作生成有参考价值，可关注其动作-音频对齐技术。",
-      "src": "arXiv · cs.GR · 08-19",
-      "url": "https://arxiv.org/abs/2608.19055v1"
+      "title": "生成式推荐系统新范式",
+      "sum": "NVIDIA 探讨生成式推荐系统在规模化的训练挑战与重构。",
+      "ta": "虽非游戏直接相关，但生成式架构思路可迁移至程序化内容推荐。",
+      "src": "NVIDIA · 08-20",
+      "url": "https://developer.nvidia.com/blog/how-generative-recommenders-are-redefining-recsys-at-scale/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "渐进式因果视频世界模型",
+      "sum": "ForgeWM 提出少步动作条件视频世界模型的渐进式因果训练。",
+      "ta": "视频世界模型进展可能影响未来实时场景生成与交互模拟。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.14022"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Human Fall Flat 开发商推 VR 新作",
+      "sum": "开发商宣布一款 cozy VR 解谜游戏，风格延续轻松幽默。",
+      "ta": "VR 解谜玩法或带来新的交互设计参考，但技术含量有限。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/human-fall-flat-developers-announce-a-new-cozy-vr-puzzle-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "行业动荡期入行游戏美术时机",
+      "sum": "Vertex School 认为行业动荡为掌握基础与工作流的新人创造机会。",
+      "ta": "对 TA 新人而言，强调工作流熟练度是入行关键信号。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/why-now-might-be-the-right-time-to-start-a-career-in-game-art/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "稻草人转人类角色设计",
-      "sum": "Anna Cerutti 分享 Harvey 项目工作流，融合卡通比例与写实细节。",
-      "ta": "角色建模与材质混合思路可借鉴，适合生物角色设计参考。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/breakdown-how-to-design-a-scarecrow-turned-human-character/"
+      "title": "Aura 加速 Dark and Darker 开发",
+      "sum": "IRONMACE 用 Aura 让非技术设计师直接改代码，功能开发时间减半。",
+      "ta": "Aura 这类工具可能改变 TA 与策划协作方式，值得关注其工作流潜力。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/how-dark-and-darker-s-devs-used-aura-to-build-a-major-feature-in-half-the-time/"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "真菌生物雕刻与纹理制作",
-      "sum": "Kamil Tondera 详解藤蔓树皮制作工具与手绘材质实现有机外观。",
-      "ta": "植被与有机表面材质制作流程，对程序化植被工具开发有启发。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/sculpting-and-texturing-a-fungal-creature-inspired-by-the-last-of-us/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 手动重拓扑工具",
-      "sum": "Quad Maker 插件帮助手动重拓扑，保持模型布线干净整洁。",
-      "ta": "重拓扑是 TA 常用环节，此工具可提升模型清理效率。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/manually-retopologize-your-3d-meshes-with-this-blender-tool/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Unity 无缝地牢生成算法",
-      "sum": "Labyrinth 程序化生成器实现无缝地牢，提供演示可试玩。",
-      "ta": "程序化生成算法可参考，对关卡自动生成工具设计有借鉴。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/unity-based-algorithm-for-seamless-dungeon-generation/"
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前耻辱2创意总监创立新工作室",
+      "sum": "Black Pony Immersive 专注单人第一人称动作 RPG，成员来自 Arkane。",
+      "ta": "新工作室动向对行业人才流动有参考，但无直接技术内容。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/ex-dishonored-2-creative-director-founds-his-own-studio-with-former-arkane-devs/"
     },
     {
       "cat": "gfx",
       "imp": "lo",
-      "title": "阴影驱动角色面部变化",
-      "sum": "利用阴影效果让角色面部产生诡异变化，鼓励自行尝试复现。",
-      "ta": "光影对角色表现力影响显著，可关注其着色器或光照技巧。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/shadows-make-this-character-s-face-change-in-the-creepiest-way/"
+      "title": "空洞骑士 Hornet 动画赏析",
+      "sum": "Brad Faucheux 制作的 Hornet 动画动作流畅，2D 特效出色。",
+      "ta": "2D 动画与特效结合是 TA 可借鉴的视觉表现案例。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/this-hollow-knight-s-hornet-animation-belongs-in-smash-bros/"
     },
     {
-      "cat": "biz",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "Arkane 老兵成立新工作室",
-      "sum": "Harvey Smith 等 Arkane Austin 老将创立 Black Pony Immersive，专注第一人称动作 RPG。",
-      "ta": "行业动向，关注其后续技术选型或沉浸式设计理念。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/harvey-smith-and-fellow-arkane-austin-veterans-launch-a-new-studio"
+      "title": "Blender 与 3DGS 打造梦境巴士",
+      "sum": "用 Blender 和 3DGS 制作巴士场景，欠训练产生有趣视觉效果。",
+      "ta": "3DGS 欠训练伪影可作风格化手段，探索非写实渲染新路径。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/bus-ride-straight-out-of-dream-made-with-blender-3dgs/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "3A 老兵成立合作制工作室",
-      "sum": "Raze and Rebuild Studio 由 3A 老兵与无障碍专家创立，采用合作制结构。",
-      "ta": "行业模式创新，可关注其协作流程对开发效率的影响。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/triple-a-vets-and-accessibility-experts-launch-new-game-dev-co-op-raze-and-rebuild-studio"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "索尼缩减地平线服务型游戏",
-      "sum": "Guerrilla 据报因反馈不佳，移除 Horizon Hunters Gathering 的在线服务元素。",
-      "ta": "服务型游戏趋势调整，影响在线渲染与后端技术需求。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/report-playstation-reworks-horizon-live-service-game-after-negative-feedback"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Human Fall Flat 老兵建新工作室",
-      "sum": "Pretty Cool Games 在英国成立，已获融资并开始招聘。",
-      "ta": "行业动态，关注其首款作品的技术栈选择。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/human-fall-flat-veterans-launch-new-uk-studio-pretty-cool-games"
+      "title": "Makers Fund 募资 2.5 亿美元",
+      "sum": "Makers Fund 完成 2.5 亿美元融资，扩大游戏行业投资版图。",
+      "ta": "资本动向影响行业生态，但对日常 TA 工作无直接指导。",
+      "src": "Game Developer · 08-20",
+      "url": "https://www.gamedeveloper.com/business/makers-fund-expands-game-industry-footprint-after-closing-250-million-investment-round"
     }
   ],
   "flashbackTitle": "",
@@ -225,12 +216,13 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
+      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客、HuggingFace。"
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };

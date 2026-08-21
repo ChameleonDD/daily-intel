@@ -2,8 +2,89 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-20 10:19",
+  "updated": "2026-08-21 10:25",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "生成式推荐系统新范式",
+      "sum": "NVIDIA 探讨生成式推荐系统在规模化的训练挑战与重构。",
+      "ta": "虽非游戏直接相关，但生成式架构思路可迁移至程序化内容推荐。",
+      "src": "NVIDIA · 08-20",
+      "url": "https://developer.nvidia.com/blog/how-generative-recommenders-are-redefining-recsys-at-scale/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "渐进式因果视频世界模型",
+      "sum": "ForgeWM 提出少步动作条件视频世界模型的渐进式因果训练。",
+      "ta": "视频世界模型进展可能影响未来实时场景生成与交互模拟。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.14022"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Human Fall Flat 开发商推 VR 新作",
+      "sum": "开发商宣布一款 cozy VR 解谜游戏，风格延续轻松幽默。",
+      "ta": "VR 解谜玩法或带来新的交互设计参考，但技术含量有限。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/human-fall-flat-developers-announce-a-new-cozy-vr-puzzle-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "行业动荡期入行游戏美术时机",
+      "sum": "Vertex School 认为行业动荡为掌握基础与工作流的新人创造机会。",
+      "ta": "对 TA 新人而言，强调工作流熟练度是入行关键信号。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/why-now-might-be-the-right-time-to-start-a-career-in-game-art/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Aura 加速 Dark and Darker 开发",
+      "sum": "IRONMACE 用 Aura 让非技术设计师直接改代码，功能开发时间减半。",
+      "ta": "Aura 这类工具可能改变 TA 与策划协作方式，值得关注其工作流潜力。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/how-dark-and-darker-s-devs-used-aura-to-build-a-major-feature-in-half-the-time/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前耻辱2创意总监创立新工作室",
+      "sum": "Black Pony Immersive 专注单人第一人称动作 RPG，成员来自 Arkane。",
+      "ta": "新工作室动向对行业人才流动有参考，但无直接技术内容。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/ex-dishonored-2-creative-director-founds-his-own-studio-with-former-arkane-devs/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "空洞骑士 Hornet 动画赏析",
+      "sum": "Brad Faucheux 制作的 Hornet 动画动作流畅，2D 特效出色。",
+      "ta": "2D 动画与特效结合是 TA 可借鉴的视觉表现案例。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/this-hollow-knight-s-hornet-animation-belongs-in-smash-bros/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Blender 与 3DGS 打造梦境巴士",
+      "sum": "用 Blender 和 3DGS 制作巴士场景，欠训练产生有趣视觉效果。",
+      "ta": "3DGS 欠训练伪影可作风格化手段，探索非写实渲染新路径。",
+      "src": "80 Level · 08-20",
+      "url": "https://80.lv/articles/bus-ride-straight-out-of-dream-made-with-blender-3dgs/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Makers Fund 募资 2.5 亿美元",
+      "sum": "Makers Fund 完成 2.5 亿美元融资，扩大游戏行业投资版图。",
+      "ta": "资本动向影响行业生态，但对日常 TA 工作无直接指导。",
+      "src": "Game Developer · 08-20",
+      "url": "https://www.gamedeveloper.com/business/makers-fund-expands-game-industry-footprint-after-closing-250-million-investment-round"
+    },
     {
       "cat": "tech",
       "imp": "mid",
@@ -1743,87 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "对角色动画管线有启发，可关注其运动重定向质量。",
       "src": "arXiv · cs.GR · 07-28",
       "url": "https://arxiv.org/abs/2607.26108v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时视觉语言动作模型",
-      "sum": "TurboVLA在RTX 4090上以32Hz运行，显存低于1GB。",
-      "ta": "低显存实时推理对游戏AI或交互系统有潜在应用，但未明确游戏场景。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.27205"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "实体木偶在数字时代价值",
-      "sum": "Furry Puppet Studio讨论实体木偶制作流程及其不可替代性。",
-      "ta": "对角色设计和特效制作有启发，但非直接技术参考。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/interview-why-practical-puppets-still-matter-in-the-age-of-digital-characters/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "卡普空年更生化危机",
-      "sum": "Capcom计划每年发布一款《生化危机》游戏，含重制版。",
-      "ta": "行业动态，对游戏开发周期有参考意义，但无直接技术细节。",
-      "src": "80 Level · 07-29",
-      "url": "https://80.lv/articles/capcom-is-aiming-to-release-a-resident-evil-game-every-year/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "EA CEO获3860万美元薪酬",
-      "sum": "EA CEO Andrew Wilson在裁员和GenAI采用后获高额薪酬。",
-      "ta": "行业动态，反映高管薪酬与公司策略的关联。",
-      "src": "Game Developer · 07-29",
-      "url": "https://www.gamedeveloper.com/business/ea-boss-awarded-38-6m-after-year-of-franchise-success-studio-layoffs-and-genai-adoption"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "实时视频世界模型",
-      "sum": "Wonder模型支持实时、可控制摄像头的视频世界探索。",
-      "ta": "关注实时可交互视频世界模型，可能影响未来游戏场景生成与动态环境构建。",
-      "src": "arXiv · cs.GR · 07-28",
-      "url": "https://arxiv.org/abs/2607.26037v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "高斯体渲染加速",
-      "sum": "提出基于高斯的体渲染表示，用于高效剪切-扭曲可视化。",
-      "ta": "体渲染加速技术，对医学可视化或体积特效有参考价值。",
-      "src": "arXiv · cs.GR · 07-28",
-      "url": "https://arxiv.org/abs/2607.25377v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "网格注意力机制",
-      "sum": "提出内在且三角化无关的注意力机制，用于网格学习。",
-      "ta": "网格上的注意力机制，可能提升3D模型处理与生成质量。",
-      "src": "arXiv · cs.GR · 07-27",
-      "url": "https://arxiv.org/abs/2607.24954v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "EverQuest视觉重建",
-      "sum": "EverQuest Legends团队分享恢复经典视觉风格的自定义管线。",
-      "ta": "经典MMO视觉重建流程，对复古风格或资产恢复项目有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/interview-how-everquest-legends-recreates-classic-everquest-s-iconic-visual-style/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "合作驾驶冒险游戏幕后",
-      "sum": "Funselektor分享合作驾驶冒险游戏《over the hill》创作历程。",
-      "ta": "独立游戏开发经验，对合作模式与公路题材有参考。",
-      "src": "80 Level · 07-28",
-      "url": "https://80.lv/articles/over-the-hill-creating-a-co-op-driving-adventure-game/"
     }
   ]
 };
