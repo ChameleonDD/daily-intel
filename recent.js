@@ -2,8 +2,89 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-21 10:25",
+  "updated": "2026-08-22 10:17",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "物理模拟剑斗游戏",
+      "sum": "独立开发者用物理模拟武器实现第一人称近战，碰撞反弹锁定偏转全实时。",
+      "ta": "关注物理武器交互与玩家操控的实时反馈，对战斗手感设计有参考价值。",
+      "src": "80 Level · 08-21",
+      "url": "https://80.lv/articles/this-first-person-sword-fighting-game-s-combat-is-100-physics-based/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "真实服装扫描工作流",
+      "sum": "Render Ready用真实服装扫描替代数字布料模拟，配合自定义可摆姿势模特。",
+      "ta": "了解实拍扫描在角色服装制作中的流程，可能提升资产真实度与效率。",
+      "src": "80 Level · 08-21",
+      "url": "https://80.lv/articles/building-a-hero-garment-from-real-world-data/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "HTML5游戏转独立网站",
+      "sum": "Playgama Wrap免费服务将HTML5游戏转为带支付、分析、SEO的独立网站。",
+      "ta": "对游戏分发渠道有影响，但技术含量低，可速览。",
+      "src": "80 Level · 08-21",
+      "url": "https://80.lv/articles/this-free-tool-turns-html5-games-into-full-standalone-websites/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "黑神话钟馗实机预告",
+      "sum": "《黑神话：钟馗》发布15分钟实机预告，画面表现优于前作《悟空》。",
+      "ta": "关注国产3A画面表现趋势，但非技术细节，速览即可。",
+      "src": "80 Level · 08-21",
+      "url": "https://80.lv/articles/see-what-black-myth-zhong-kui-brings-in-15-minute-gameplay-trailer/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rusty Lake新作开发访谈",
+      "sum": "Rusty Lake联合创始人谈新作《Servant of the Lake》的谜题设计与世界观。",
+      "ta": "了解解谜游戏设计思路，对关卡设计有启发，但非硬核技术。",
+      "src": "80 Level · 08-21",
+      "url": "https://80.lv/articles/puzzles-lore-inspiration-get-glimpse-of-rusty-lake-development/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "GTA6泄密事件升级",
+      "sum": "Take-Two传唤微软和Discord，以阻止GTA VI大规模泄密，泄密者或持有可玩版本。",
+      "ta": "行业安全事件，对游戏开发保密流程有警示，但非技术内容。",
+      "src": "Game Developer · 08-21",
+      "url": "https://www.gamedeveloper.com/business/rockstar-subpoenas-microsoft-and-discord-in-bid-to-halt-extensive-grand-theft-auto-vi-leak"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "游戏AI价值讨论",
+      "sum": "开发者David 'Rez' Graham和Luke Dicken讨论AI技术及其在游戏开发中的价值。",
+      "ta": "关注游戏AI技术应用与工作本质的讨论，对AI在游戏中的定位有参考。",
+      "src": "Game Developer · 08-21",
+      "url": "https://www.gamedeveloper.com/programming/we-re-finally-talking-about-ai-ft-david-rez-graham-and-luke-dicken"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "使命召唤现代战争4详情",
+      "sum": "COD Next展示《现代战争4》多人模式、地图、武器、战区等新内容，并公布Beta测试。",
+      "ta": "了解主流FPS多人模式设计，但非技术细节，速览即可。",
+      "src": "PlayStation Blog · 08-21",
+      "url": "https://blog.playstation.com/2026/08/21/call-of-duty-modern-warfare-4-new-multiplayer-and-early-access-beta-details/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Tails of Iron 2免费扩展",
+      "sum": "《Tails of Iron 2》免费扩展包上线，新增11个任务、10个Boss和9套护甲。",
+      "ta": "游戏内容更新，无技术参考价值。",
+      "src": "PlayStation Blog · 08-21",
+      "url": "https://blog.playstation.com/2026/08/21/tails-of-iron-2-blood-brine-free-expansion/"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -748,15 +829,6 @@ window.INTEL_RECENT = {
       "ta": "资产平台易主可能影响TA常用的资产获取与分享生态，需关注后续整合。",
       "src": "Game Developer · 08-12",
       "url": "https://www.gamedeveloper.com/business/epics-sells-artstation-and-sketchfab-to-kitbash"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "生成式AI将影响团队规模",
-      "sum": "Gamescom Dev Conference调查显示，开发者预期生成式AI将在三年内影响角色和团队规模。",
-      "ta": "行业对AI工具的态度将影响TA团队构成与工作流演进方向。",
-      "src": "Game Developer · 08-12",
-      "url": "https://www.gamedeveloper.com/business/developers-expect-generative-ai-to-impact-roles-and-team-sizes-in-the-next-three-years"
     },
     {
       "cat": "gfx",
@@ -1752,78 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "恐怖游戏技术风格参考，可关注其美术与交互设计。",
       "src": "PlayStation Blog · 07-30",
       "url": "https://blog.playstation.com/2026/07/30/silent-hill-townfall-developers-discuss-the-scottish-setting-retro-technology-first-person-combat/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "暗黑奇幻游戏角色揭晓",
-      "sum": "1666: Amsterdam 公布主要角色，游戏为暗黑奇幻题材。",
-      "ta": "角色美术风格参考，可关注其概念设计与渲染表现。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/meet-the-main-characters-from-dark-fantasy-game-1666-amsterdam/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏公司知识流失引担忧",
-      "sum": "文章探讨游戏公司裁员导致生产知识流失的问题。",
-      "ta": "行业人才流动影响项目稳定性，对团队知识管理有警示。",
-      "src": "Game Developer · 07-30",
-      "url": "https://www.gamedeveloper.com/production/if-knowledge-if-power-why-are-game-companies-choosing-impotence-"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "凸碰撞自由区域",
-      "sum": "提出CCFR方法，用局部凸可行区域显式表示碰撞约束。",
-      "ta": "对碰撞检测和物理模拟有参考价值，可关注其与网格原语的集成方式。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26901v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "结构感知高斯泼溅",
-      "sum": "StructureGS用于铰接物体重建，分离几何、外观和运动参数。",
-      "ta": "3DGS在可动部件重建上的进展，可能影响程序化资产生成管线。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26889v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "面向XR的3DGS压缩",
-      "sum": "AtlasLC实现物体级3DGS快速编解码，适配XR资产管线。",
-      "ta": "压缩和解码效率对实时渲染和XR部署有实际意义，可跟踪其性能数据。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26525v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "全局Pass屏障研究",
-      "sum": "Blade渲染器用全局屏障替代逐资源追踪，跨厂商验证性能。",
-      "ta": "对Vulkan管线屏障策略有参考价值，可了解全局屏障的跨平台表现。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26506v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CG世界状态数据集",
-      "sum": "CG-World提供大规模工业CG世界状态数据，用于世界模型训练。",
-      "ta": "数据集来自工业CG，可能为游戏场景理解或程序化生成提供训练基础。",
-      "src": "arXiv · cs.GR · 07-29",
-      "url": "https://arxiv.org/abs/2607.26452v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "人体运动转四足动画",
-      "sum": "Two2Four从人体运动生成四足动物动作，用于虚拟制作。",
-      "ta": "对角色动画管线有启发，可关注其运动重定向质量。",
-      "src": "arXiv · cs.GR · 07-28",
-      "url": "https://arxiv.org/abs/2607.26108v1"
     }
   ]
 };
