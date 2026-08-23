@@ -2,8 +2,26 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-22 10:17",
+  "updated": "2026-08-23 10:25",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender风格化鼓手猫绑定",
+      "sum": "JuanCarlos CR展示风格化鼓手猫角色绑定作品。",
+      "ta": "可参考其风格化角色绑定与动画表现手法。",
+      "src": "80 Level · 08-22",
+      "url": "https://80.lv/articles/awesome-stylized-drummer-cat-rig-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "数字解压盒触感交互",
+      "sum": "一款数字解压盒游戏提供令人满足的触觉交互，可试玩。",
+      "ta": "关注其交互反馈设计，对游戏手感与UI动效有参考价值。",
+      "src": "80 Level · 08-22",
+      "url": "https://80.lv/articles/this-digital-fidget-box-game-has-a-lot-of-satisfying-tactile-interactions/"
+    },
     {
       "cat": "tech",
       "imp": "mid",
@@ -192,15 +210,6 @@ window.INTEL_RECENT = {
       "ta": "植被与有机表面材质制作流程，对程序化植被工具开发有启发。",
       "src": "80 Level · 08-19",
       "url": "https://80.lv/articles/sculpting-and-texturing-a-fungal-creature-inspired-by-the-last-of-us/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 手动重拓扑工具",
-      "sum": "Quad Maker 插件帮助手动重拓扑，保持模型布线干净整洁。",
-      "ta": "重拓扑是 TA 常用环节，此工具可提升模型清理效率。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/manually-retopologize-your-3d-meshes-with-this-blender-tool/"
     },
     {
       "cat": "tech",
@@ -1815,15 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "新兴市场动态，可能影响全球化发行与外包合作策略。",
       "src": "80 Level · 07-30",
       "url": "https://80.lv/articles/india-s-gaming-boom-is-just-getting-started/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "寂静岭新作开发访谈",
-      "sum": "Silent Hill: Townfall 开发者讨论苏格兰背景、复古技术与第一人称战斗。",
-      "ta": "恐怖游戏技术风格参考，可关注其美术与交互设计。",
-      "src": "PlayStation Blog · 07-30",
-      "url": "https://blog.playstation.com/2026/07/30/silent-hill-townfall-developers-discuss-the-scottish-setting-retro-technology-first-person-combat/"
     }
   ]
 };

@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月22日 · 周六",
+  "date": "2026年8月23日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>物理模拟剑斗游戏</em> / <em>真实服装扫描工作流</em> / <em>HTML5游戏转独立网站</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Blender风格化鼓手猫绑定</em> / <em>数字解压盒触感交互</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,85 +127,22 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "物理模拟剑斗游戏",
-      "sum": "独立开发者用物理模拟武器实现第一人称近战，碰撞反弹锁定偏转全实时。",
-      "ta": "关注物理武器交互与玩家操控的实时反馈，对战斗手感设计有参考价值。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/this-first-person-sword-fighting-game-s-combat-is-100-physics-based/"
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender风格化鼓手猫绑定",
+      "sum": "JuanCarlos CR展示风格化鼓手猫角色绑定作品。",
+      "ta": "可参考其风格化角色绑定与动画表现手法。",
+      "src": "80 Level · 08-22",
+      "url": "https://80.lv/articles/awesome-stylized-drummer-cat-rig-in-blender/"
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "真实服装扫描工作流",
-      "sum": "Render Ready用真实服装扫描替代数字布料模拟，配合自定义可摆姿势模特。",
-      "ta": "了解实拍扫描在角色服装制作中的流程，可能提升资产真实度与效率。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/building-a-hero-garment-from-real-world-data/"
-    },
-    {
-      "cat": "tech",
       "imp": "lo",
-      "title": "HTML5游戏转独立网站",
-      "sum": "Playgama Wrap免费服务将HTML5游戏转为带支付、分析、SEO的独立网站。",
-      "ta": "对游戏分发渠道有影响，但技术含量低，可速览。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/this-free-tool-turns-html5-games-into-full-standalone-websites/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "黑神话钟馗实机预告",
-      "sum": "《黑神话：钟馗》发布15分钟实机预告，画面表现优于前作《悟空》。",
-      "ta": "关注国产3A画面表现趋势，但非技术细节，速览即可。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/see-what-black-myth-zhong-kui-brings-in-15-minute-gameplay-trailer/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Rusty Lake新作开发访谈",
-      "sum": "Rusty Lake联合创始人谈新作《Servant of the Lake》的谜题设计与世界观。",
-      "ta": "了解解谜游戏设计思路，对关卡设计有启发，但非硬核技术。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/puzzles-lore-inspiration-get-glimpse-of-rusty-lake-development/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "GTA6泄密事件升级",
-      "sum": "Take-Two传唤微软和Discord，以阻止GTA VI大规模泄密，泄密者或持有可玩版本。",
-      "ta": "行业安全事件，对游戏开发保密流程有警示，但非技术内容。",
-      "src": "Game Developer · 08-21",
-      "url": "https://www.gamedeveloper.com/business/rockstar-subpoenas-microsoft-and-discord-in-bid-to-halt-extensive-grand-theft-auto-vi-leak"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "游戏AI价值讨论",
-      "sum": "开发者David 'Rez' Graham和Luke Dicken讨论AI技术及其在游戏开发中的价值。",
-      "ta": "关注游戏AI技术应用与工作本质的讨论，对AI在游戏中的定位有参考。",
-      "src": "Game Developer · 08-21",
-      "url": "https://www.gamedeveloper.com/programming/we-re-finally-talking-about-ai-ft-david-rez-graham-and-luke-dicken"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "使命召唤现代战争4详情",
-      "sum": "COD Next展示《现代战争4》多人模式、地图、武器、战区等新内容，并公布Beta测试。",
-      "ta": "了解主流FPS多人模式设计，但非技术细节，速览即可。",
-      "src": "PlayStation Blog · 08-21",
-      "url": "https://blog.playstation.com/2026/08/21/call-of-duty-modern-warfare-4-new-multiplayer-and-early-access-beta-details/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Tails of Iron 2免费扩展",
-      "sum": "《Tails of Iron 2》免费扩展包上线，新增11个任务、10个Boss和9套护甲。",
-      "ta": "游戏内容更新，无技术参考价值。",
-      "src": "PlayStation Blog · 08-21",
-      "url": "https://blog.playstation.com/2026/08/21/tails-of-iron-2-blood-brine-free-expansion/"
+      "title": "数字解压盒触感交互",
+      "sum": "一款数字解压盒游戏提供令人满足的触觉交互，可试玩。",
+      "ta": "关注其交互反馈设计，对游戏手感与UI动效有参考价值。",
+      "src": "80 Level · 08-22",
+      "url": "https://80.lv/articles/this-digital-fidget-box-game-has-a-lot-of-satisfying-tactile-interactions/"
     }
   ],
   "flashbackTitle": "",
