@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月23日 · 周日",
+  "date": "2026年8月24日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Blender风格化鼓手猫绑定</em> / <em>数字解压盒触感交互</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>可微矢量图前向松弛优化</em> / <em>高斯面片与网格表面重建闭环</em> / <em>组合式3D生成部件级控制</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,22 +127,31 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender风格化鼓手猫绑定",
-      "sum": "JuanCarlos CR展示风格化鼓手猫角色绑定作品。",
-      "ta": "可参考其风格化角色绑定与动画表现手法。",
-      "src": "80 Level · 08-22",
-      "url": "https://80.lv/articles/awesome-stylized-drummer-cat-rig-in-blender/"
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微矢量图前向松弛优化",
+      "sum": "提出CubicSplat，用误差有界前向松弛实现矢量图可微优化。",
+      "ta": "矢量图可微优化对程序化生成和资产管线有潜在价值，可关注其误差控制方法。",
+      "src": "arXiv · cs.GR · 08-21",
+      "url": "https://arxiv.org/abs/2608.20803v1"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "数字解压盒触感交互",
-      "sum": "一款数字解压盒游戏提供令人满足的触觉交互，可试玩。",
-      "ta": "关注其交互反馈设计，对游戏手感与UI动效有参考价值。",
-      "src": "80 Level · 08-22",
-      "url": "https://80.lv/articles/this-digital-fidget-box-game-has-a-lot-of-satisfying-tactile-interactions/"
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯面片与网格表面重建闭环",
+      "sum": "TopoSurfel方法结合高斯面片与网格，提升3DGS表面重建精度。",
+      "ta": "3DGS表面重建是TA常用技术，此方法可能改善扫描资产质量。",
+      "src": "arXiv · cs.GR · 08-21",
+      "url": "https://arxiv.org/abs/2608.20687v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "组合式3D生成部件级控制",
+      "sum": "MultiCube支持部件级语义与空间控制，生成组合式3D对象。",
+      "ta": "部件级控制对程序化生成和资产复用有直接价值，可关注其控制粒度。",
+      "src": "arXiv · cs.GR · 08-20",
+      "url": "https://arxiv.org/abs/2608.20448v1"
     }
   ],
   "flashbackTitle": "",
@@ -153,13 +162,12 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": "未覆盖：Blender 开发博客、HuggingFace。"
   },
   "xStale": false
 };

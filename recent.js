@@ -2,8 +2,35 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-23 10:25",
+  "updated": "2026-08-24 10:24",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微矢量图前向松弛优化",
+      "sum": "提出CubicSplat，用误差有界前向松弛实现矢量图可微优化。",
+      "ta": "矢量图可微优化对程序化生成和资产管线有潜在价值，可关注其误差控制方法。",
+      "src": "arXiv · cs.GR · 08-21",
+      "url": "https://arxiv.org/abs/2608.20803v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯面片与网格表面重建闭环",
+      "sum": "TopoSurfel方法结合高斯面片与网格，提升3DGS表面重建精度。",
+      "ta": "3DGS表面重建是TA常用技术，此方法可能改善扫描资产质量。",
+      "src": "arXiv · cs.GR · 08-21",
+      "url": "https://arxiv.org/abs/2608.20687v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "组合式3D生成部件级控制",
+      "sum": "MultiCube支持部件级语义与空间控制，生成组合式3D对象。",
+      "ta": "部件级控制对程序化生成和资产复用有直接价值，可关注其控制粒度。",
+      "src": "arXiv · cs.GR · 08-20",
+      "url": "https://arxiv.org/abs/2608.20448v1"
+    },
     {
       "cat": "flow",
       "imp": "lo",
@@ -527,15 +554,6 @@ window.INTEL_RECENT = {
       "ta": "对程序化世界生成与AI训练数据有参考价值，可提升数据质量。",
       "src": "arXiv · cs.GR · 08-16",
       "url": "https://arxiv.org/abs/2608.15659v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "大规模部件感知3D生成",
-      "sum": "MegaParts通过令牌高效自回归，生成多达300部件的3D对象。",
-      "ta": "对复杂3D资产生成与可控建模有参考价值，可提升部件级控制。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14783v1"
     },
     {
       "cat": "gfx",
@@ -1806,24 +1824,6 @@ window.INTEL_RECENT = {
       "ta": "引擎平台生态扩展，可能影响跨平台游戏项目的技术选型。",
       "src": "Game Developer · 07-30",
       "url": "https://www.gamedeveloper.com/business/unity-brings-dedicated-engine-support-to-netflix-games"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Subnautica2销量破五百万",
-      "sum": "Subnautica 2 在 22 天内售出 500 万份，助力 KRAFTON 最佳第二季度。",
-      "ta": "行业销售数据，反映市场对生存类游戏的需求热度。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/subnautica-2-sold-5-million-copies-in-22-days-gave-krafton-its-best-second-quarter-ever/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "印度游戏产业持续增长",
-      "sum": "GDAI 总监分析印度 5.5 亿年轻玩家与本土 IP 开发潜力。",
-      "ta": "新兴市场动态，可能影响全球化发行与外包合作策略。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/india-s-gaming-boom-is-just-getting-started/"
     }
   ]
 };
