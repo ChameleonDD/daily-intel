@@ -2,8 +2,107 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-24 10:24",
+  "updated": "2026-08-25 10:21",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "虚拟人表情生成新法",
+      "sum": "CVAE模型基于真实人脸数据合成可控虚拟人面部表情。",
+      "ta": "关注表情强度控制与真实感，对角色动画管线有参考价值。",
+      "src": "arXiv · cs.GR · 08-22",
+      "url": "https://arxiv.org/abs/2608.21697v1"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "武侠沙盒万人NPC",
+      "sum": "《太吾绘卷》实现一万动态NPC与七百武学技能的系统设计。",
+      "ta": "大规模NPC系统与程序化生成思路，对开放世界TA有借鉴意义。",
+      "src": "80 Level · 08-24",
+      "url": "https://80.lv/articles/interview-building-a-wuxia-sandbox-rpg-with-up-to-10-000-dynamic-npcs/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Unity地图交互资产包",
+      "sum": "Unity资产包支持游戏内2D与3D交互地图，现五折促销。",
+      "ta": "可快速集成地图功能，节省TA开发时间。",
+      "src": "80 Level · 08-24",
+      "url": "https://80.lv/articles/this-unity-asset-pack-allows-you-to-add-interactive-2d-and-3d-maps-to-your-games/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "独立钓鱼游戏两日百万",
+      "sum": "一款独立钓鱼模拟游戏发售两天内销量破百万。",
+      "ta": "独立游戏市场表现参考，与TA技术关联弱。",
+      "src": "80 Level · 08-24",
+      "url": "https://80.lv/articles/this-indie-fishing-simulation-game-sold-1-million-copies-in-2-days/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "异形生物眼部系统开发",
+      "sum": "电影与游戏角色工作坊展示复杂异形生物眼部系统制作。",
+      "ta": "眼部着色与材质细节技术，对生物角色TA有参考价值。",
+      "src": "80 Level · 08-24",
+      "url": "https://80.lv/articles/developing-complex-eye-system-for-strange-alien-creature/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "空间流式3D资产交付",
+      "sum": "Miris将视频自适应流式技术引入3D资产传输，实现近即时加载。",
+      "ta": "空间流式传输可改变大型3D资产加载方式，影响TA资源管线。",
+      "src": "80 Level · 08-24",
+      "url": "https://80.lv/articles/how-spatial-streaming-is-unlocking-new-possibilities-in-3d-asset-delivery/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "title": "MD新增布料撕裂捏合",
+      "sum": "Marvelous Designer 2026.1新增缝线撕裂、笔刷捏合与模拟覆盖工具。",
+      "ta": "布料塑形工具增强，直接提升TA制作服装与布料模拟效率。",
+      "src": "80 Level · 08-24",
+      "url": "https://80.lv/articles/new-marvelous-designer-update-lets-artists-rip-pinch-shape-fabric-like-never-before/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Blender BSDF支持色散",
+      "sum": "Blender 5.3 Cycles的Principled BSDF新增色散支持。",
+      "ta": "材质色散效果增强，对离线渲染与材质测试有参考价值。",
+      "src": "80 Level · 08-24",
+      "url": "https://80.lv/articles/principled-bsdf-in-blender-s-cycles-now-supports-dispersion/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "CAA成立独立游戏基金",
+      "sum": "Creative Artists Agency推出Frame1Games，支持资源不足的独立团队。",
+      "ta": "行业资金动向，与TA技术无直接关联。",
+      "src": "Game Developer · 08-24",
+      "url": "https://www.gamedeveloper.com/business/creative-artists-agency-spins-up-indie-funding-venture-frame1games"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "科隆游戏展奖项揭晓",
+      "sum": "Gamescom Dev Awards 2026在科隆颁发六个奖项。",
+      "ta": "行业奖项信息，与TA技术无直接关联。",
+      "src": "Game Developer · 08-24",
+      "url": "https://www.gamedeveloper.com/business/mutter-and-blue-prince-among-winners-at-gamescom-dev-awards-2026"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Gamescom寻求负责任扩张",
+      "sum": "Gamescom 2026规模创纪录，主办方强调本地化与市场相关性。",
+      "ta": "行业展会动态，与TA技术无直接关联。",
+      "src": "Game Developer · 08-24",
+      "url": "https://www.gamedeveloper.com/business/-each-event-has-to-feel-local-and-relevant-to-its-market-gamescom-boss-wants-responsible-expansion-after-record-breaking-year"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -21,15 +120,6 @@ window.INTEL_RECENT = {
       "ta": "3DGS表面重建是TA常用技术，此方法可能改善扫描资产质量。",
       "src": "arXiv · cs.GR · 08-21",
       "url": "https://arxiv.org/abs/2608.20687v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "组合式3D生成部件级控制",
-      "sum": "MultiCube支持部件级语义与空间控制，生成组合式3D对象。",
-      "ta": "部件级控制对程序化生成和资产复用有直接价值，可关注其控制粒度。",
-      "src": "arXiv · cs.GR · 08-20",
-      "url": "https://arxiv.org/abs/2608.20448v1"
     },
     {
       "cat": "flow",
@@ -237,15 +327,6 @@ window.INTEL_RECENT = {
       "ta": "植被与有机表面材质制作流程，对程序化植被工具开发有启发。",
       "src": "80 Level · 08-19",
       "url": "https://80.lv/articles/sculpting-and-texturing-a-fungal-creature-inspired-by-the-last-of-us/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Unity 无缝地牢生成算法",
-      "sum": "Labyrinth 程序化生成器实现无缝地牢，提供演示可试玩。",
-      "ta": "程序化生成算法可参考，对关卡自动生成工具设计有借鉴。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/unity-based-algorithm-for-seamless-dungeon-generation/"
     },
     {
       "cat": "gfx",
@@ -1742,88 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "单图重建可驱动高斯头模，对虚拟人资产生产管线有直接参考价值。",
       "src": "arXiv · cs.GR · 07-30",
       "url": "https://arxiv.org/abs/2607.28164v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "4D高斯时空排序新格式",
-      "sum": "TSOG 扩展 SOG 框架至时间域，高效表示 4D 高斯溅射内容。",
-      "ta": "4DGS 资产压缩与流式加载是实时特效和虚拟制作的关键，此格式值得关注。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28049v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "共享高斯压缩SVBRDF贴图",
-      "sum": "提出用共享高斯紧凑表示 mipmapped SVBRDF，降低存储负担。",
-      "ta": "材质贴图内存优化新思路，可能影响 PBR 材质资产的标准格式。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.27943v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "时变隐式神经场体渲染",
-      "sum": "提出查询高效的随机体渲染框架，用于时变隐式神经体积。",
-      "ta": "动态科学体积数据交互渲染，对 Niagara 或自定义体积特效有启发。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28047v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "HDR10+助力游戏艺术表达",
-      "sum": "访谈讨论 HDR10+ GAMING 在 UE 集成、HDR 工作流及显示感知渲染中的应用。",
-      "ta": "HDR 管线与显示感知渲染是 TA 调色和材质输出的关键环节。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/interview-how-hdr10-can-help-game-devs-preserve-their-artistic-vision/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Mixtape同步玩法动画音乐",
-      "sum": "开发者详解 UE5 中 MetaSounds、动画分层与玩法系统如何同步。",
-      "ta": "MetaSounds 与动画分层联动案例，对音画同步类特效设计有参考。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/interview-how-mixtape-synchronizes-gameplay-animation-music-with-ue5/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Roblox推出Blender风格建模",
-      "sum": "开发者制作 Blender 风格建模插件，可在 Roblox Studio 内直接建资产。",
-      "ta": "跨工具建模流程简化，对多平台资产生产管线有潜在价值。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/modeler-creates-a-blender-style-modeling-plugin-for-roblox-studio/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "动态布料特效资产包发布",
-      "sum": "一款可创建动态布料特效的资产包，售价 11.20 美元。",
-      "ta": "现成布料特效方案，可快速用于原型验证或补充特效库。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/you-ll-be-able-to-create-dynamic-cloth-based-effects-with-this-pack/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender模型一键3D打印",
-      "sum": "Dovetail Key 通过绘制线条，两步即可让 Blender 模型可 3D 打印。",
-      "ta": "快速生成可打印资产，对实体道具或原型制作有辅助作用。",
-      "src": "80 Level · 07-30",
-      "url": "https://80.lv/articles/easily-make-your-blender-models-3d-printable-by-drawing-lines/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Unity为Netflix游戏提供支持",
-      "sum": "Unity 宣布为 Netflix Games 提供专用引擎支持，助力多平台开发。",
-      "ta": "引擎平台生态扩展，可能影响跨平台游戏项目的技术选型。",
-      "src": "Game Developer · 07-30",
-      "url": "https://www.gamedeveloper.com/business/unity-brings-dedicated-engine-support-to-netflix-games"
     }
   ]
 };
