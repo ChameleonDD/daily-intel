@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月25日 · 周二",
+  "date": "2026年8月26日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>MD新增布料撕裂捏合</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>多视图重建可重光照网格</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,103 +127,185 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
+      "cat": "tech",
       "imp": "mid",
-      "title": "虚拟人表情生成新法",
-      "sum": "CVAE模型基于真实人脸数据合成可控虚拟人面部表情。",
-      "ta": "关注表情强度控制与真实感，对角色动画管线有参考价值。",
-      "src": "arXiv · cs.GR · 08-22",
-      "url": "https://arxiv.org/abs/2608.21697v1"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "武侠沙盒万人NPC",
-      "sum": "《太吾绘卷》实现一万动态NPC与七百武学技能的系统设计。",
-      "ta": "大规模NPC系统与程序化生成思路，对开放世界TA有借鉴意义。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/interview-building-a-wuxia-sandbox-rpg-with-up-to-10-000-dynamic-npcs/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Unity地图交互资产包",
-      "sum": "Unity资产包支持游戏内2D与3D交互地图，现五折促销。",
-      "ta": "可快速集成地图功能，节省TA开发时间。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/this-unity-asset-pack-allows-you-to-add-interactive-2d-and-3d-maps-to-your-games/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立钓鱼游戏两日百万",
-      "sum": "一款独立钓鱼模拟游戏发售两天内销量破百万。",
-      "ta": "独立游戏市场表现参考，与TA技术关联弱。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/this-indie-fishing-simulation-game-sold-1-million-copies-in-2-days/"
+      "title": "星战新作采用UE5开发",
+      "sum": "Bit Reactor技术总监谈为何选择UE5及开发中亮点功能。",
+      "ta": "了解3A战术游戏在UE5中的技术选型与管线实践。",
+      "src": "Unreal Engine · 08-25",
+      "url": "https://www.unrealengine.com/developer-interviews/star-wars-zero-company-bit-reactor-crafts-a-galaxy-of-tactical-possibilities-with-ue5"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "异形生物眼部系统开发",
-      "sum": "电影与游戏角色工作坊展示复杂异形生物眼部系统制作。",
-      "ta": "眼部着色与材质细节技术，对生物角色TA有参考价值。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/developing-complex-eye-system-for-strange-alien-creature/"
+      "title": "语义优先动作编解码器",
+      "sum": "SeMoCo提出语义优先的离散动作表示，用于文本生成动作。",
+      "ta": "关注动作生成中语义与细节的平衡，对动画管线有参考价值。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.24334v1"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "空间流式3D资产交付",
-      "sum": "Miris将视频自适应流式技术引入3D资产传输，实现近即时加载。",
-      "ta": "空间流式传输可改变大型3D资产加载方式，影响TA资源管线。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/how-spatial-streaming-is-unlocking-new-possibilities-in-3d-asset-delivery/"
+      "title": "视觉中心智能几何编辑",
+      "sum": "ViSculpt利用LLM进行视觉驱动的3D几何编辑，减少手动操作。",
+      "ta": "探索LLM在DCC工具中辅助几何编辑的潜力，提升效率。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.24169v1"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "hi",
-      "title": "MD新增布料撕裂捏合",
-      "sum": "Marvelous Designer 2026.1新增缝线撕裂、笔刷捏合与模拟覆盖工具。",
-      "ta": "布料塑形工具增强，直接提升TA制作服装与布料模拟效率。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/new-marvelous-designer-update-lets-artists-rip-pinch-shape-fabric-like-never-before/"
+      "rank": 2,
+      "title": "多视图重建可重光照网格",
+      "sum": "ExMesh++从多视图图像重建带UV和PBR材质的可编辑网格资产。",
+      "ta": "直接产出可用的PBR资产，对程序化资产管线意义重大。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.24109v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "Blender BSDF支持色散",
-      "sum": "Blender 5.3 Cycles的Principled BSDF新增色散支持。",
-      "ta": "材质色散效果增强，对离线渲染与材质测试有参考价值。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/principled-bsdf-in-blender-s-cycles-now-supports-dispersion/"
+      "title": "可重光照高斯3D资产生成",
+      "sum": "Luce提出可重光照的高斯表示，支持PBR材质生成。",
+      "ta": "关注高斯泼溅向PBR管线的集成，可能影响实时渲染资产流程。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.23943v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "三参数细分曲线设计",
+      "sum": "提出一种三参数9点二进制近似细分方案用于曲线形状控制。",
+      "ta": "基础数学研究，对曲线建模工具的实现有潜在参考。",
+      "src": "arXiv · cs.GR · 08-23",
+      "url": "https://arxiv.org/abs/2608.23637v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "扩展位置动力学旋转处理",
+      "sum": "利用李群统一处理XPBD中的旋转自由度，提升刚体和Cosserat杆模拟。",
+      "ta": "对物理模拟中旋转约束的稳定性有改进，值得关注。",
+      "src": "arXiv · cs.GR · 08-21",
+      "url": "https://arxiv.org/abs/2608.23606v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "地铁新作展示自研引擎进化",
+      "sum": "Metro 2039 gamescom预告展示4A引擎最新进化，环境更压抑。",
+      "ta": "观察4A引擎在光照、氛围渲染上的技术演进。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/metro-2039-looks-darker-and-more-claustrophobic-than-ever-in-new-gameplay/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "巫师3免费重制版将发布",
+      "sum": "巫师3将获得包含Switch 2版本在内的免费全面重制升级。",
+      "ta": "关注重制版在新技术下的画面表现与性能优化。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/the-witcher-3-is-getting-a-massive-full-remaster-as-a-free-upgrade-very-soon/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender幻想村庄概念艺术",
+      "sum": "Eugenia Chernova分享使用Blender创建幻想村庄概念艺术的工作流。",
+      "ta": "学习Blender在概念设计阶段的建模与场景搭建技巧。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/creating-fantasy-village-concept-art-using-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "波西杰克逊VFX特效解析",
+      "sum": "解析剧中石像鬼Sirens特效，使用自定义Bullet和Vellum解算器。",
+      "ta": "了解影视级VFX中刚体与布料解算器的实际应用。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/inside-vfx-of-percy-jackson-and-the-olympians-season-2/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "免费Blender玻璃折射工具",
+      "sum": "Patterned Glass Compositor工具可在Blender中创建玻璃扭曲折射效果。",
+      "ta": "快速实现玻璃效果，适合在后期合成中增加细节。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/check-out-free-blender-tool-for-glass-distortion-refraction-effects/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender几何节点实时碰撞",
+      "sum": "基于几何节点的实时碰撞系统，可创建挤压变形效果。",
+      "ta": "利用几何节点实现程序化碰撞动画，拓展特效制作手段。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/geometry-nodes-powered-real-time-collision-system-for-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender毛毡风格水下世界",
+      "sum": "艺术家在Blender中实验毛毡风格，创建水下3D世界。",
+      "ta": "探索非真实感渲染风格在Blender中的实现。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/check-out-this-felt-like-underwater-3d-world-made-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Riot停止2XKO开发",
+      "sum": "Riot宣布12月停止格斗游戏2XKO的积极开发，因留存不足。",
+      "ta": "行业动态，关注格斗游戏市场表现与运营策略。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/riot-games-is-winding-down-fighter-2xko-in-december-2026"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "CAA成立独立游戏基金",
-      "sum": "Creative Artists Agency推出Frame1Games，支持资源不足的独立团队。",
-      "ta": "行业资金动向，与TA技术无直接关联。",
-      "src": "Game Developer · 08-24",
-      "url": "https://www.gamedeveloper.com/business/creative-artists-agency-spins-up-indie-funding-venture-frame1games"
+      "title": "Among Us 3D开发商裁员",
+      "sum": "Schell Games被报道裁员，此前曾多次谈及避免裁员。",
+      "ta": "行业动态，关注外包与协作工作室的稳定性。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/report-among-us-3d-dev-schell-games-lays-off-staff"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "科隆游戏展奖项揭晓",
-      "sum": "Gamescom Dev Awards 2026在科隆颁发六个奖项。",
-      "ta": "行业奖项信息，与TA技术无直接关联。",
-      "src": "Game Developer · 08-24",
-      "url": "https://www.gamedeveloper.com/business/mutter-and-blue-prince-among-winners-at-gamescom-dev-awards-2026"
+      "title": "浏览器游戏新创公司融资",
+      "sum": "爱尔兰浏览器游戏公司Entity融资500万美元，目标2027年推出平台。",
+      "ta": "关注WebGPU等新技术在浏览器游戏中的应用前景。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/irish-browser-games-start-up-entity-raises-5m-in-funding-for-console-quality-games-for-the-new-web-era-"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Gamescom寻求负责任扩张",
-      "sum": "Gamescom 2026规模创纪录，主办方强调本地化与市场相关性。",
-      "ta": "行业展会动态，与TA技术无直接关联。",
-      "src": "Game Developer · 08-24",
-      "url": "https://www.gamedeveloper.com/business/-each-event-has-to-feel-local-and-relevant-to-its-market-gamescom-boss-wants-responsible-expansion-after-record-breaking-year"
+      "title": "thatgamecompany成立发行部门",
+      "sum": "《光·遇》开发商thatgamecompany宣布成立发行部门thatgamepublisher。",
+      "ta": "行业动态，关注独立游戏发行生态变化。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/journey-maker-thatgamecompany-announces-thatgamepublisher"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "W4 Games融资扩展Godot",
+      "sum": "W4 Games融资1800万美元，并与腾讯合作拓展亚洲Godot生态。",
+      "ta": "Godot引擎商业支持增强，可能影响跨引擎工具链选择。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/w4-games-raises-18m-to-expand-its-international-team"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini地理追踪器稳定版",
+      "sum": "GeoTracker for Houdini发布稳定版，支持Houdini 22。",
+      "ta": "用于Houdini的相机追踪工具，对特效合成工作流有用。",
+      "src": "Tech-Artists · 08-25",
+      "url": "https://www.tech-artists.org/t/geotracker-for-houdini-stable-release-houdini-22-support/18508"
     }
   ],
   "flashbackTitle": "",
@@ -234,12 +316,13 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
+      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客、HuggingFace。"
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };

@@ -2,8 +2,162 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-25 10:21",
+  "updated": "2026-08-26 10:27",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "星战新作采用UE5开发",
+      "sum": "Bit Reactor技术总监谈为何选择UE5及开发中亮点功能。",
+      "ta": "了解3A战术游戏在UE5中的技术选型与管线实践。",
+      "src": "Unreal Engine · 08-25",
+      "url": "https://www.unrealengine.com/developer-interviews/star-wars-zero-company-bit-reactor-crafts-a-galaxy-of-tactical-possibilities-with-ue5"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "语义优先动作编解码器",
+      "sum": "SeMoCo提出语义优先的离散动作表示，用于文本生成动作。",
+      "ta": "关注动作生成中语义与细节的平衡，对动画管线有参考价值。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.24334v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "视觉中心智能几何编辑",
+      "sum": "ViSculpt利用LLM进行视觉驱动的3D几何编辑，减少手动操作。",
+      "ta": "探索LLM在DCC工具中辅助几何编辑的潜力，提升效率。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.24169v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "多视图重建可重光照网格",
+      "sum": "ExMesh++从多视图图像重建带UV和PBR材质的可编辑网格资产。",
+      "ta": "直接产出可用的PBR资产，对程序化资产管线意义重大。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.24109v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可重光照高斯3D资产生成",
+      "sum": "Luce提出可重光照的高斯表示，支持PBR材质生成。",
+      "ta": "关注高斯泼溅向PBR管线的集成，可能影响实时渲染资产流程。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.23943v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "三参数细分曲线设计",
+      "sum": "提出一种三参数9点二进制近似细分方案用于曲线形状控制。",
+      "ta": "基础数学研究，对曲线建模工具的实现有潜在参考。",
+      "src": "arXiv · cs.GR · 08-23",
+      "url": "https://arxiv.org/abs/2608.23637v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "扩展位置动力学旋转处理",
+      "sum": "利用李群统一处理XPBD中的旋转自由度，提升刚体和Cosserat杆模拟。",
+      "ta": "对物理模拟中旋转约束的稳定性有改进，值得关注。",
+      "src": "arXiv · cs.GR · 08-21",
+      "url": "https://arxiv.org/abs/2608.23606v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "地铁新作展示自研引擎进化",
+      "sum": "Metro 2039 gamescom预告展示4A引擎最新进化，环境更压抑。",
+      "ta": "观察4A引擎在光照、氛围渲染上的技术演进。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/metro-2039-looks-darker-and-more-claustrophobic-than-ever-in-new-gameplay/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "巫师3免费重制版将发布",
+      "sum": "巫师3将获得包含Switch 2版本在内的免费全面重制升级。",
+      "ta": "关注重制版在新技术下的画面表现与性能优化。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/the-witcher-3-is-getting-a-massive-full-remaster-as-a-free-upgrade-very-soon/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender幻想村庄概念艺术",
+      "sum": "Eugenia Chernova分享使用Blender创建幻想村庄概念艺术的工作流。",
+      "ta": "学习Blender在概念设计阶段的建模与场景搭建技巧。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/creating-fantasy-village-concept-art-using-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "波西杰克逊VFX特效解析",
+      "sum": "解析剧中石像鬼Sirens特效，使用自定义Bullet和Vellum解算器。",
+      "ta": "了解影视级VFX中刚体与布料解算器的实际应用。",
+      "src": "80 Level · 08-25",
+      "url": "https://80.lv/articles/inside-vfx-of-percy-jackson-and-the-olympians-season-2/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Riot停止2XKO开发",
+      "sum": "Riot宣布12月停止格斗游戏2XKO的积极开发，因留存不足。",
+      "ta": "行业动态，关注格斗游戏市场表现与运营策略。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/riot-games-is-winding-down-fighter-2xko-in-december-2026"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Among Us 3D开发商裁员",
+      "sum": "Schell Games被报道裁员，此前曾多次谈及避免裁员。",
+      "ta": "行业动态，关注外包与协作工作室的稳定性。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/report-among-us-3d-dev-schell-games-lays-off-staff"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "浏览器游戏新创公司融资",
+      "sum": "爱尔兰浏览器游戏公司Entity融资500万美元，目标2027年推出平台。",
+      "ta": "关注WebGPU等新技术在浏览器游戏中的应用前景。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/irish-browser-games-start-up-entity-raises-5m-in-funding-for-console-quality-games-for-the-new-web-era-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "thatgamecompany成立发行部门",
+      "sum": "《光·遇》开发商thatgamecompany宣布成立发行部门thatgamepublisher。",
+      "ta": "行业动态，关注独立游戏发行生态变化。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/journey-maker-thatgamecompany-announces-thatgamepublisher"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "W4 Games融资扩展Godot",
+      "sum": "W4 Games融资1800万美元，并与腾讯合作拓展亚洲Godot生态。",
+      "ta": "Godot引擎商业支持增强，可能影响跨引擎工具链选择。",
+      "src": "Game Developer · 08-25",
+      "url": "https://www.gamedeveloper.com/business/w4-games-raises-18m-to-expand-its-international-team"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini地理追踪器稳定版",
+      "sum": "GeoTracker for Houdini发布稳定版，支持Houdini 22。",
+      "ta": "用于Houdini的相机追踪工具，对特效合成工作流有用。",
+      "src": "Tech-Artists · 08-25",
+      "url": "https://www.tech-artists.org/t/geotracker-for-houdini-stable-release-houdini-22-support/18508"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -48,15 +202,6 @@ window.INTEL_RECENT = {
       "ta": "眼部着色与材质细节技术，对生物角色TA有参考价值。",
       "src": "80 Level · 08-24",
       "url": "https://80.lv/articles/developing-complex-eye-system-for-strange-alien-creature/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "空间流式3D资产交付",
-      "sum": "Miris将视频自适应流式技术引入3D资产传输，实现近即时加载。",
-      "ta": "空间流式传输可改变大型3D资产加载方式，影响TA资源管线。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/how-spatial-streaming-is-unlocking-new-possibilities-in-3d-asset-delivery/"
     },
     {
       "cat": "flow",
@@ -120,15 +265,6 @@ window.INTEL_RECENT = {
       "ta": "3DGS表面重建是TA常用技术，此方法可能改善扫描资产质量。",
       "src": "arXiv · cs.GR · 08-21",
       "url": "https://arxiv.org/abs/2608.20687v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender风格化鼓手猫绑定",
-      "sum": "JuanCarlos CR展示风格化鼓手猫角色绑定作品。",
-      "ta": "可参考其风格化角色绑定与动画表现手法。",
-      "src": "80 Level · 08-22",
-      "url": "https://80.lv/articles/awesome-stylized-drummer-cat-rig-in-blender/"
     },
     {
       "cat": "flow",
@@ -921,15 +1057,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/matplus-brings-substance-3d-painter-inspired-texture-painting-to-blender/"
     },
     {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "UE5童话风夜间列车动画",
-      "sum": "Seb van den Beemt用UE5制作童话风格夜间列车3D动画。",
-      "ta": "UE5风格化场景与光照的视觉参考案例。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/this-night-train-3d-animation-looks-like-a-scene-from-a-fairytale/"
-    },
-    {
       "cat": "biz",
       "imp": "mid",
       "title": "Epic出售ArtStation与Sketchfab",
@@ -1696,133 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "合成数据管线或可用于生成训练TA工具所需的标注图像数据。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.00440"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "光遇艺术深度访谈",
-      "sum": "thatgamecompany分享光遇的实时服务美术方向、Beyond引擎与Figma工作流。",
-      "ta": "了解大型实时服务游戏的美术管线与工具链，对TA工作流设计有参考价值。",
-      "src": "80 Level · 08-03",
-      "url": "https://80.lv/articles/interview-a-deep-dive-into-the-art-of-sky-children-of-the-light-with-thatgamecompany/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "像素化水着色器效果奇特",
-      "sum": "展示一款像素化风格的水着色器，视觉效果引人注目。",
-      "ta": "像素化水效果或可启发风格化渲染中的水体表现。",
-      "src": "80 Level · 08-03",
-      "url": "https://80.lv/articles/this-pixelated-water-shader-looks-weirdly-fascinating/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Grabbit 2编辑器内物理模拟",
-      "sum": "Grabbit 2在Unity编辑器内模拟物理，用于关卡设计与布景，处理碰撞。",
-      "ta": "编辑器内物理模拟可提升关卡布景效率，对TA工具链有直接参考。",
-      "src": "80 Level · 08-03",
-      "url": "https://80.lv/articles/how-grabbit-2-simulates-physics-inside-the-unity-editor/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Houdini森林溪流模拟",
-      "sum": "艺术家用Houdini制作森林溪流液体模拟，并分享创作过程。",
-      "ta": "Houdini液体模拟案例，可参考其技术实现与艺术表现。",
-      "src": "80 Level · 08-03",
-      "url": "https://80.lv/articles/stunning-forest-stream-simulation-made-with-houdini/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "弹性曲线几何力学新解",
-      "sum": "论文探讨弹性杆平衡态曲线，与力学、几何及计算机图形学深度关联。",
-      "ta": "弹性曲线是布料/头发模拟的数学基础，可关注其约束求解新思路。",
-      "src": "arXiv · cs.GR · 07-31",
-      "url": "https://arxiv.org/abs/2607.29654v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "title": "交互式生成运动编辑",
-      "sum": "提出基于调度修复的交互式生成运动编辑，支持大规模结构修改。",
-      "ta": "直接命中TA动画工作流，可大幅提升动作库修改效率，值得精读。",
-      "src": "arXiv · cs.GR · 07-31",
-      "url": "https://arxiv.org/abs/2607.29133v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高维点云各向异性曲面逼近",
-      "sum": "提出HD-PEA框架，基于学习直接处理非结构化点云，实现高效各向异性曲面逼近。",
-      "ta": "点云曲面重建是扫描资产管线关键，该框架可能提升实时处理性能。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28855v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型正则化新方法",
-      "sum": "QQWorld方法通过分位数匹配实现世界模型正则化，提升模型泛化。",
-      "ta": "世界模型与游戏AI/模拟相关，正则化技术或可借鉴到程序化生成。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.28415"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "title": "Meshy T2快速原生网格生成",
-      "sum": "Meshy T2采用流匹配技术，实现快速原生网格生成，无需中间表示。",
-      "ta": "原生网格生成直接服务3D资产生成流程，流匹配方法值得关注。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2607.28675"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Epic 七月学习内容更新",
-      "sum": "Epic 发布七月学习内容，涵盖 Sequencer 动画、MetaHuman 动捕、Chaos 可破坏物及移动端开发教程。",
-      "ta": "官方教程覆盖 TA 常用工具链，可快速跟进 UE5 动画与破坏系统的最新工作流。",
-      "src": "Unreal Engine · 07-31",
-      "url": "https://www.unrealengine.com/learning/julys-epic-learning-content-animation-mobile-game-development-and-more"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Substance 3D 金属丝工艺材质",
-      "sum": "Jinho Yum 分享 Ornamental Filigree 项目，讲解扭曲基础形状、调整曲线方向与宝石制作流程。",
-      "ta": "Substance 3D 复杂金属图案程序化生成思路，对材质细节与装饰纹理制作有参考价值。",
-      "src": "80 Level · 07-31",
-      "url": "https://80.lv/articles/creating-intricate-filigree-metalwork-patterns-for-a-material-with-substance-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender VHS 复古效果制作",
-      "sum": "Triqlide Studios 展示在 Blender 中实现的 VHS 风格复古视觉效果。",
-      "ta": "VHS 风格化后处理效果在 Blender 中的实现，可借鉴用于游戏内复古滤镜或过场。",
-      "src": "80 Level · 07-31",
-      "url": "https://80.lv/articles/check-out-this-cool-vhs-like-effect-made-in-blender/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Double Fine 裁员 Xbox 营收下滑",
-      "sum": "Double Fine 裁员，Xbox 硬件营收持续下滑，Buckshot Roulette 开发商推出马里奥派对恐怖版。",
-      "ta": "行业动态速览，了解大厂人员变动与硬件趋势，对项目规划无直接影响。",
-      "src": "Game Developer · 07-31",
-      "url": "https://www.gamedeveloper.com/business/xbox-perpetual-hardware-revenue-decline-leon-kennedy-pays-off-and-double-fine-cuts-staff-patch-notes-63"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "单图生成可驱动高斯头模",
-      "sum": "S-Avatar 提出扩散引导的单图 3D 头模生成，并支持 3DGS 动画化。",
-      "ta": "单图重建可驱动高斯头模，对虚拟人资产生产管线有直接参考价值。",
-      "src": "arXiv · cs.GR · 07-30",
-      "url": "https://arxiv.org/abs/2607.28164v1"
     }
   ]
 };
