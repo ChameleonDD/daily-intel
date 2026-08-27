@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月26日 · 周三",
+  "date": "2026年8月27日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>多视图重建可重光照网格</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>GLOSS 纹理填充新方法</em> / <em>非线性波与3D流双向耦合</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,185 +127,159 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "星战新作采用UE5开发",
-      "sum": "Bit Reactor技术总监谈为何选择UE5及开发中亮点功能。",
-      "ta": "了解3A战术游戏在UE5中的技术选型与管线实践。",
-      "src": "Unreal Engine · 08-25",
-      "url": "https://www.unrealengine.com/developer-interviews/star-wars-zero-company-bit-reactor-crafts-a-galaxy-of-tactical-possibilities-with-ue5"
-    },
-    {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "语义优先动作编解码器",
-      "sum": "SeMoCo提出语义优先的离散动作表示，用于文本生成动作。",
-      "ta": "关注动作生成中语义与细节的平衡，对动画管线有参考价值。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.24334v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "视觉中心智能几何编辑",
-      "sum": "ViSculpt利用LLM进行视觉驱动的3D几何编辑，减少手动操作。",
-      "ta": "探索LLM在DCC工具中辅助几何编辑的潜力，提升效率。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.24169v1"
+      "imp": "hi",
+      "rank": 1,
+      "title": "GLOSS 纹理填充新方法",
+      "sum": "GLOSS 提出几何局部自相似学习，忠实参考引导纹理填充。",
+      "ta": "对材质/贴图工作流有直接参考价值，可探索几何细节保持的自动纹理生成。",
+      "src": "arXiv · cs.GR · 08-26",
+      "url": "https://arxiv.org/abs/2608.25461v1"
     },
     {
       "cat": "gfx",
       "imp": "hi",
       "rank": 2,
-      "title": "多视图重建可重光照网格",
-      "sum": "ExMesh++从多视图图像重建带UV和PBR材质的可编辑网格资产。",
-      "ta": "直接产出可用的PBR资产，对程序化资产管线意义重大。",
+      "title": "非线性波与3D流双向耦合",
+      "sum": "哈密顿方法实现非线性波与3D流双向耦合，提升水面模拟。",
+      "ta": "对流体特效TA是硬核突破，可提升真实感水面模拟效率与精度。",
       "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.24109v1"
+      "url": "https://arxiv.org/abs/2608.25203v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Godot 4.8 开发新特性",
+      "sum": "Godot 4.8 新增3D轨迹节点、VisualShader节点组、多反弹AO等。",
+      "ta": "关注引擎进展，多反弹AO和VisualShader节点组对TA工具链有参考。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/godot-4-8-development-is-in-full-swing/"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "可重光照高斯3D资产生成",
-      "sum": "Luce提出可重光照的高斯表示，支持PBR材质生成。",
-      "ta": "关注高斯泼溅向PBR管线的集成，可能影响实时渲染资产流程。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.23943v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "三参数细分曲线设计",
-      "sum": "提出一种三参数9点二进制近似细分方案用于曲线形状控制。",
-      "ta": "基础数学研究，对曲线建模工具的实现有潜在参考。",
-      "src": "arXiv · cs.GR · 08-23",
-      "url": "https://arxiv.org/abs/2608.23637v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "扩展位置动力学旋转处理",
-      "sum": "利用李群统一处理XPBD中的旋转自由度，提升刚体和Cosserat杆模拟。",
-      "ta": "对物理模拟中旋转约束的稳定性有改进，值得关注。",
-      "src": "arXiv · cs.GR · 08-21",
-      "url": "https://arxiv.org/abs/2608.23606v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "地铁新作展示自研引擎进化",
-      "sum": "Metro 2039 gamescom预告展示4A引擎最新进化，环境更压抑。",
-      "ta": "观察4A引擎在光照、氛围渲染上的技术演进。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/metro-2039-looks-darker-and-more-claustrophobic-than-ever-in-new-gameplay/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "巫师3免费重制版将发布",
-      "sum": "巫师3将获得包含Switch 2版本在内的免费全面重制升级。",
-      "ta": "关注重制版在新技术下的画面表现与性能优化。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/the-witcher-3-is-getting-a-massive-full-remaster-as-a-free-upgrade-very-soon/"
+      "title": "Morrowind 重制版 RTX 预览",
+      "sum": "NVIDIA 展示 Morrowind 重制版路径追踪效果与新资源。",
+      "ta": "看路径追踪在经典场景的落地效果，对光照管线有参考。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/nvidia-shows-preview-of-the-elder-scrolls-iii-morrowind-remastered-with-rtx/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender幻想村庄概念艺术",
-      "sum": "Eugenia Chernova分享使用Blender创建幻想村庄概念艺术的工作流。",
-      "ta": "学习Blender在概念设计阶段的建模与场景搭建技巧。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/creating-fantasy-village-concept-art-using-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "波西杰克逊VFX特效解析",
-      "sum": "解析剧中石像鬼Sirens特效，使用自定义Bullet和Vellum解算器。",
-      "ta": "了解影视级VFX中刚体与布料解算器的实际应用。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/inside-vfx-of-percy-jackson-and-the-olympians-season-2/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "免费Blender玻璃折射工具",
-      "sum": "Patterned Glass Compositor工具可在Blender中创建玻璃扭曲折射效果。",
-      "ta": "快速实现玻璃效果，适合在后期合成中增加细节。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/check-out-free-blender-tool-for-glass-distortion-refraction-effects/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender几何节点实时碰撞",
-      "sum": "基于几何节点的实时碰撞系统，可创建挤压变形效果。",
-      "ta": "利用几何节点实现程序化碰撞动画，拓展特效制作手段。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/geometry-nodes-powered-real-time-collision-system-for-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender毛毡风格水下世界",
-      "sum": "艺术家在Blender中实验毛毡风格，创建水下3D世界。",
-      "ta": "探索非真实感渲染风格在Blender中的实现。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/check-out-this-felt-like-underwater-3d-world-made-in-blender/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Riot停止2XKO开发",
-      "sum": "Riot宣布12月停止格斗游戏2XKO的积极开发，因留存不足。",
-      "ta": "行业动态，关注格斗游戏市场表现与运营策略。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/riot-games-is-winding-down-fighter-2xko-in-december-2026"
+      "title": "暗黑奇幻角色雕刻流程",
+      "sum": "Kang Jeong 详解 CLOCK SAINT 角色四段雕刻与材质金属度粗糙度管理。",
+      "ta": "材质参数管理思路对角色贴图工作流有实操参考。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/sculpting-a-dark-fantasy-character-with-clockwork-elements-religious-imagery/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Among Us 3D开发商裁员",
-      "sum": "Schell Games被报道裁员，此前曾多次谈及避免裁员。",
-      "ta": "行业动态，关注外包与协作工作室的稳定性。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/report-among-us-3d-dev-schell-games-lays-off-staff"
+      "title": "CDPR 与暴雪合作",
+      "sum": "巫师3重制版登陆Battle.net，并推出杰洛特皮肤。",
+      "ta": "行业合作动态，对TA无直接技术关联。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/the-witcher-developer-cd-projekt-red-partners-with-blizzard/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "浏览器游戏新创公司融资",
-      "sum": "爱尔兰浏览器游戏公司Entity融资500万美元，目标2027年推出平台。",
-      "ta": "关注WebGPU等新技术在浏览器游戏中的应用前景。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/irish-browser-games-start-up-entity-raises-5m-in-funding-for-console-quality-games-for-the-new-web-era-"
+      "title": "Exodus 发售定档 2027",
+      "sum": "前质量效应开发者科幻RPG Exodus 2027年4月发售。",
+      "ta": "行业动态，关注其技术展示但无直接TA关联。",
+      "src": "80 Level · 08-26",
+      "url": "https://80.lv/articles/mass-effect-sci-fi-rpg-exodus-launch-date-2027/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "thatgamecompany成立发行部门",
-      "sum": "《光·遇》开发商thatgamecompany宣布成立发行部门thatgamepublisher。",
-      "ta": "行业动态，关注独立游戏发行生态变化。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/journey-maker-thatgamecompany-announces-thatgamepublisher"
+      "title": "GTA6 大规模泄露事件",
+      "sum": "Rockstar 回应 GTA6 大规模泄露，表示心碎。",
+      "ta": "行业事件，对TA工作无直接技术影响。",
+      "src": "Game Developer · 08-26",
+      "url": "https://www.gamedeveloper.com/business/rockstar-games-heartbroken-by-grand-theft-auto-6-leaks"
     },
     {
       "cat": "biz",
-      "imp": "mid",
-      "title": "W4 Games融资扩展Godot",
-      "sum": "W4 Games融资1800万美元，并与腾讯合作拓展亚洲Godot生态。",
-      "ta": "Godot引擎商业支持增强，可能影响跨引擎工具链选择。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/w4-games-raises-18m-to-expand-its-international-team"
+      "imp": "lo",
+      "title": "育碧推出玩家委员会",
+      "sum": "育碧启动Player Council平台，邀请测试早期概念与原型。",
+      "ta": "玩家反馈机制，对TA工作流无直接关联。",
+      "src": "Game Developer · 08-26",
+      "url": "https://www.gamedeveloper.com/business/ubisoft-debuts-player-council-platform-to-expand-early-game-development-feedback"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini地理追踪器稳定版",
-      "sum": "GeoTracker for Houdini发布稳定版，支持Houdini 22。",
-      "ta": "用于Houdini的相机追踪工具，对特效合成工作流有用。",
-      "src": "Tech-Artists · 08-25",
-      "url": "https://www.tech-artists.org/t/geotracker-for-houdini-stable-release-houdini-22-support/18508"
+      "cat": "biz",
+      "imp": "lo",
+      "title": "世嘉多款新作试玩亮相",
+      "sum": "世嘉在Gamescom 2026展出六款可玩新作。",
+      "ta": "行业动态，关注新作技术表现但无直接TA关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/sega-gameplay-updates-persona-4-revival-crazy-taxi-world-tour-total-war-warhammer-40000-and-more/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "星球大战策略新作试玩",
+      "sum": "Bit Reactor与Respawn合作开发星战策略游戏Zero Company。",
+      "ta": "策略游戏技术表现可关注，但无直接TA关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/hands-on-report-star-wars-zero-company/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "卡普空双作试玩报告",
+      "sum": "Gamescom试玩洛克人双重重置与龙之信条2暗黑觉醒。",
+      "ta": "行业动态，无直接TA技术关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/hands-on-report-mega-man-dual-override-and-dragons-dogma-2-dark-arisen/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PlayStation Plus 九月阵容",
+      "sum": "九月PS Plus含狙击精英抵抗、MLB秀26等四款游戏。",
+      "ta": "纯商业资讯，无TA关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "赛博朋克枪斗游戏定档",
+      "sum": "John Wick风格赛博朋克动作游戏确认明年发售。",
+      "ta": "行业动态，无直接TA关联。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/this-cyberpunk-gun-fu-game-gets-a-confirmed-release-window/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Poppy Playtime 新合作游戏",
+      "sum": "Poppy Playtime宇宙推出合作生存恐怖游戏Escape from Playtime。",
+      "ta": "行业动态，无直接TA关联。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/poppy-playtime-universe-gets-a-new-survival-horror-co-op-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "天野喜孝艺术访谈",
+      "sum": "最终幻想艺术家天野喜孝谈视觉风格、跨媒介创作与建议。",
+      "ta": "艺术风格参考，对TA审美有启发但非技术。",
+      "src": "80 Level · 08-26",
+      "url": "https://80.lv/articles/interview-yoshitaka-amano-on-creating-art-that-transcends-games-anime-and-generations/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "演员蒂姆·库里去世",
+      "sum": "演员蒂姆·库里去世，享年80岁，曾参与多款游戏。",
+      "ta": "行业悼念，无TA技术关联。",
+      "src": "Game Developer · 08-26",
+      "url": "https://www.gamedeveloper.com/audio/obituary-actor-tim-curry-celebrated-for-his-work-in-games-has-passed-at-age-80"
     }
   ],
   "flashbackTitle": "",

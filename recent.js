@@ -2,8 +2,163 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-26 10:27",
+  "updated": "2026-08-27 19:06",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "GLOSS 纹理填充新方法",
+      "sum": "GLOSS 提出几何局部自相似学习，忠实参考引导纹理填充。",
+      "ta": "对材质/贴图工作流有直接参考价值，可探索几何细节保持的自动纹理生成。",
+      "src": "arXiv · cs.GR · 08-26",
+      "url": "https://arxiv.org/abs/2608.25461v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "非线性波与3D流双向耦合",
+      "sum": "哈密顿方法实现非线性波与3D流双向耦合，提升水面模拟。",
+      "ta": "对流体特效TA是硬核突破，可提升真实感水面模拟效率与精度。",
+      "src": "arXiv · cs.GR · 08-25",
+      "url": "https://arxiv.org/abs/2608.25203v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Godot 4.8 开发新特性",
+      "sum": "Godot 4.8 新增3D轨迹节点、VisualShader节点组、多反弹AO等。",
+      "ta": "关注引擎进展，多反弹AO和VisualShader节点组对TA工具链有参考。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/godot-4-8-development-is-in-full-swing/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Morrowind 重制版 RTX 预览",
+      "sum": "NVIDIA 展示 Morrowind 重制版路径追踪效果与新资源。",
+      "ta": "看路径追踪在经典场景的落地效果，对光照管线有参考。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/nvidia-shows-preview-of-the-elder-scrolls-iii-morrowind-remastered-with-rtx/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "暗黑奇幻角色雕刻流程",
+      "sum": "Kang Jeong 详解 CLOCK SAINT 角色四段雕刻与材质金属度粗糙度管理。",
+      "ta": "材质参数管理思路对角色贴图工作流有实操参考。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/sculpting-a-dark-fantasy-character-with-clockwork-elements-religious-imagery/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "CDPR 与暴雪合作",
+      "sum": "巫师3重制版登陆Battle.net，并推出杰洛特皮肤。",
+      "ta": "行业合作动态，对TA无直接技术关联。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/the-witcher-developer-cd-projekt-red-partners-with-blizzard/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Exodus 发售定档 2027",
+      "sum": "前质量效应开发者科幻RPG Exodus 2027年4月发售。",
+      "ta": "行业动态，关注其技术展示但无直接TA关联。",
+      "src": "80 Level · 08-26",
+      "url": "https://80.lv/articles/mass-effect-sci-fi-rpg-exodus-launch-date-2027/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "GTA6 大规模泄露事件",
+      "sum": "Rockstar 回应 GTA6 大规模泄露，表示心碎。",
+      "ta": "行业事件，对TA工作无直接技术影响。",
+      "src": "Game Developer · 08-26",
+      "url": "https://www.gamedeveloper.com/business/rockstar-games-heartbroken-by-grand-theft-auto-6-leaks"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "育碧推出玩家委员会",
+      "sum": "育碧启动Player Council平台，邀请测试早期概念与原型。",
+      "ta": "玩家反馈机制，对TA工作流无直接关联。",
+      "src": "Game Developer · 08-26",
+      "url": "https://www.gamedeveloper.com/business/ubisoft-debuts-player-council-platform-to-expand-early-game-development-feedback"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "世嘉多款新作试玩亮相",
+      "sum": "世嘉在Gamescom 2026展出六款可玩新作。",
+      "ta": "行业动态，关注新作技术表现但无直接TA关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/sega-gameplay-updates-persona-4-revival-crazy-taxi-world-tour-total-war-warhammer-40000-and-more/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "星球大战策略新作试玩",
+      "sum": "Bit Reactor与Respawn合作开发星战策略游戏Zero Company。",
+      "ta": "策略游戏技术表现可关注，但无直接TA关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/hands-on-report-star-wars-zero-company/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "卡普空双作试玩报告",
+      "sum": "Gamescom试玩洛克人双重重置与龙之信条2暗黑觉醒。",
+      "ta": "行业动态，无直接TA技术关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/hands-on-report-mega-man-dual-override-and-dragons-dogma-2-dark-arisen/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PlayStation Plus 九月阵容",
+      "sum": "九月PS Plus含狙击精英抵抗、MLB秀26等四款游戏。",
+      "ta": "纯商业资讯，无TA关联。",
+      "src": "PlayStation Blog · 08-26",
+      "url": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "赛博朋克枪斗游戏定档",
+      "sum": "John Wick风格赛博朋克动作游戏确认明年发售。",
+      "ta": "行业动态，无直接TA关联。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/this-cyberpunk-gun-fu-game-gets-a-confirmed-release-window/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Poppy Playtime 新合作游戏",
+      "sum": "Poppy Playtime宇宙推出合作生存恐怖游戏Escape from Playtime。",
+      "ta": "行业动态，无直接TA关联。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/poppy-playtime-universe-gets-a-new-survival-horror-co-op-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "天野喜孝艺术访谈",
+      "sum": "最终幻想艺术家天野喜孝谈视觉风格、跨媒介创作与建议。",
+      "ta": "艺术风格参考，对TA审美有启发但非技术。",
+      "src": "80 Level · 08-26",
+      "url": "https://80.lv/articles/interview-yoshitaka-amano-on-creating-art-that-transcends-games-anime-and-generations/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "演员蒂姆·库里去世",
+      "sum": "演员蒂姆·库里去世，享年80岁，曾参与多款游戏。",
+      "ta": "行业悼念，无TA技术关联。",
+      "src": "Game Developer · 08-26",
+      "url": "https://www.gamedeveloper.com/audio/obituary-actor-tim-curry-celebrated-for-his-work-in-games-has-passed-at-age-80"
+    },
     {
       "cat": "tech",
       "imp": "mid",
@@ -40,15 +195,6 @@ window.INTEL_RECENT = {
       "ta": "直接产出可用的PBR资产，对程序化资产管线意义重大。",
       "src": "arXiv · cs.GR · 08-25",
       "url": "https://arxiv.org/abs/2608.24109v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可重光照高斯3D资产生成",
-      "sum": "Luce提出可重光照的高斯表示，支持PBR材质生成。",
-      "ta": "关注高斯泼溅向PBR管线的集成，可能影响实时渲染资产流程。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.23943v1"
     },
     {
       "cat": "gfx",
@@ -319,15 +465,6 @@ window.INTEL_RECENT = {
       "ta": "了解解谜游戏设计思路，对关卡设计有启发，但非硬核技术。",
       "src": "80 Level · 08-21",
       "url": "https://80.lv/articles/puzzles-lore-inspiration-get-glimpse-of-rusty-lake-development/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "GTA6泄密事件升级",
-      "sum": "Take-Two传唤微软和Discord，以阻止GTA VI大规模泄密，泄密者或持有可玩版本。",
-      "ta": "行业安全事件，对游戏开发保密流程有警示，但非技术内容。",
-      "src": "Game Developer · 08-21",
-      "url": "https://www.gamedeveloper.com/business/rockstar-subpoenas-microsoft-and-discord-in-bid-to-halt-extensive-grand-theft-auto-vi-leak"
     },
     {
       "cat": "ai",
@@ -963,15 +1100,6 @@ window.INTEL_RECENT = {
       "ta": "新工作室成立可能带来引擎与工具链岗位机会，TA 可关注。",
       "src": "Game Developer · 08-13",
       "url": "https://www.gamedeveloper.com/business/2k-announces-new-vancouver-based-studio-led-by-ea-veteran"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "CDPR 裁员九人",
-      "sum": "CD Projekt Red 在两个地点裁员九人，另有九人可能调岗。",
-      "ta": "项目调整影响团队稳定性，对引擎与工具开发方向有间接影响。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/report-cd-projekt-red-has-laid-off-some-project-sirius-developers"
     },
     {
       "cat": "biz",
@@ -1695,134 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.02711"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型综述引路",
-      "sum": "论文探讨世界模型领域现状与未来方向，涵盖生成与推理。",
-      "ta": "世界模型进展或影响游戏内动态场景生成与NPC行为模拟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02713"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman角色制作解析",
-      "sum": "艺术家分享Ariadne角色制作，用MetaHuman调比例、处理3D扫描并转AI输出为ZBrush笔刷。",
-      "ta": "MetaHuman与AI转笔刷流程对角色资产生产有直接参考价值。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/creating-a-detailed-and-expressive-character-inspired-by-cretan-mycenaean-culture/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "游戏工作室弃用旧版控",
-      "sum": "Diversion定位为Perforce和Git的现代替代，支持UE、Unity及大文件管线。",
-      "ta": "版本控制工具演进影响大文件与协作流程，TA需关注兼容性。",
-      "src": "80 Level · 08-04",
-      "url": "https://80.lv/articles/game-studios-are-moving-beyond-legacy-version-control-and-here-s-why/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏行业困难基金募款",
-      "sum": "开发者五天筹款13万美元，支持裁员同行，目标20万美元。",
-      "ta": "行业裁员潮持续，关注对团队稳定与项目周期的影响。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/the-game-industry-hardship-fund-bundle-surpasses-130-000"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "腾讯Lightspeed LA裁员",
-      "sum": "腾讯旗下Lightspeed LA裁员68人，因项目创意方向调整。",
-      "ta": "项目方向变动可能影响技术栈选择与管线调整。",
-      "src": "Game Developer · 08-04",
-      "url": "https://www.gamedeveloper.com/business/tencent-owned-lightspeed-la-is-laying-off-staff"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "分层符号色彩寻址系统",
-      "sum": "提出PTI，基于RGB立方体递归二分构建分层符号色彩寻址系统。",
-      "ta": "关注其分层色彩组织方式，或可启发材质与调色工具的数据结构设计。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.02460v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "傅里叶潜空间扩散生成TPMS",
-      "sum": "提出扩散框架，可控生成低残余平均曲率的三周期极小曲面结构。",
-      "ta": "TPMS在程序化纹理与体积建模中有潜力，值得关注其可控性方法。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.02151v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "稀疏负采样加速大规模图布局",
-      "sum": "提出SNAP-tFDP，用稀疏负采样实现大规模图布局的力导向放置。",
-      "ta": "图布局算法或可用于程序化生成中的节点网络可视化与调试。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.01907v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "非线性光谱预处理纳米显微",
-      "sum": "通过非线性光谱预处理，实现实验室级高保真叠层衍射纳米成像。",
-      "ta": "成像技术虽非游戏直接相关，但或可启发离线渲染中的细节捕捉。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.01746v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "关键姿态锚定的流式手势生成",
-      "sum": "提出StreamTalk，用关键姿态锚定实现流式共语手势生成，避免误差累积。",
-      "ta": "实时角色动画领域相关，关键姿态锚定思路或可借鉴于动画状态机。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.01643v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "rank": 2,
-      "title": "自回归绑定模型适配植物骨架",
-      "sum": "提出PlantRig，将自回归绑定模型适配到植物骨骼重建，处理非规范分支。",
-      "ta": "植物程序化生成与绑定是本行方向，此方法或可简化植被资产制作流程。",
-      "src": "arXiv · cs.GR · 08-02",
-      "url": "https://arxiv.org/abs/2608.01072v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "rank": 3,
-      "title": "多智能体系统生成粒子特效",
-      "sum": "提出ParticleGen，用多智能体系统自动化生成高质量粒子特效。",
-      "ta": "粒子特效是TA核心工作，此系统或可显著降低特效制作门槛与成本。",
-      "src": "arXiv · cs.GR · 08-01",
-      "url": "https://arxiv.org/abs/2608.00629v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "世界模型基准测试WorldExam",
-      "sum": "提出WorldExam基准，从外观到反应性评估世界模型能力。",
-      "ta": "世界模型基准或可间接影响游戏AI与模拟环境的评估方法。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02603"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "人体中心图像数据集合成管线",
-      "sum": "提出Poplar，可扩展的以人为中心的图像数据集合成管线。",
-      "ta": "合成数据管线或可用于生成训练TA工具所需的标注图像数据。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.00440"
     }
   ]
 };
