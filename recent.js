@@ -2,8 +2,173 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-27 19:06",
+  "updated": "2026-08-28 20:38",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "城市示例项目大更新",
+      "sum": "City Sample 更新至 UE5.8，新增 PCG 与 Unreal MCP 工作流。",
+      "ta": "PCG 与 MCP 工作流是程序化世界构建的核心，值得精读新示例。",
+      "src": "Unreal Engine · 08-27",
+      "url": "https://www.unrealengine.com/learning/city-sample-gets-a-major-update-with-pcg-and-unreal-mcp-workflows"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 2,
+      "title": "AMD FSR 插件更新",
+      "sum": "AMD FSR 插件更新至 UE5.8，支持 ML 升频与帧生成。",
+      "ta": "FSR 插件更新直接影响 UE5.8 渲染管线的性能优化方案。",
+      "src": "AMD GPUOpen · 08-27",
+      "url": "https://gpuopen.com/learn/amd-fsr-plugin-updated-for-unreal-engine-58/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "三维重建方法对比评估",
+      "sum": "对比摄影测量、NeRF、高斯泼溅等四种三维重建方法。",
+      "ta": "了解不同重建方法的优劣，有助于选择资产制作技术路线。",
+      "src": "arXiv · cs.GR · 08-27",
+      "url": "https://arxiv.org/abs/2608.27301v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 3,
+      "title": "程序化控制的三维建模",
+      "sum": "提出“形状即代码”范式，实现可编辑的程序化三维建模。",
+      "ta": "该研究有望解决生成网格不可编辑的痛点，对程序化资产管线意义重大。",
+      "src": "arXiv · cs.GR · 08-26",
+      "url": "https://arxiv.org/abs/2608.26238v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "游戏世界动作模型",
+      "sum": "GameWAM 提出用于视频游戏的世界动作模型。",
+      "ta": "世界模型是游戏 AI 前沿，可能影响未来 NPC 与关卡生成。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.26200"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "代理式游戏开发引擎",
+      "sum": "将代理式游戏开发作为可验证轨迹数据引擎，用于扩展世界模型。",
+      "ta": "该思路可能为程序化内容生成提供新的数据驱动方法。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.25518"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "实时游戏世界渲染器",
+      "sum": "Magpie 提出用于交互游戏的实时世界渲染器。",
+      "ta": "实时渲染器是 TA 核心关注点，该技术可能带来渲染管线革新。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.27168"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Blender 2D 风格水门",
+      "sum": "艺术家在 Blender 中制作了 2D 风格的水中传送门。",
+      "ta": "视差效果制作技巧，可参考用于风格化场景。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/magical-2d-style-aquatic-portal-in-blender/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Godot 重现博德之门着色器",
+      "sum": "艺术家在 Godot 中重现了《博德之门3》的遮挡着色器。",
+      "ta": "跨引擎着色器实现案例，对理解遮挡效果原理有参考价值。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/artist-recreates-baldur-s-gate-3-s-occlusion-shader-in-godot/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Nomad Sculpt 直连 Blender",
+      "sum": "Nomad Sculpt 新增直接链接 Blender 与 ZBrush 功能。",
+      "ta": "移动端雕刻到桌面软件的直连，简化了资产制作流程。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/nomad-sculpt-adds-direct-app-linking-to-blender-zbrush/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "低成本 Nanite 视差着色器",
+      "sum": "POM 着色器以更低成本实现类似 Nanite 的位移效果。",
+      "ta": "支持贴花、材质和地形，是性能敏感场景下的重要替代方案。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/pom-shader-that-achieves-nanite-like-displacement-at-lower-cost/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《星际公民》跳票至2027",
+      "sum": "《星际公民》的 Squadron 42 因与 GTA 6 发售期重叠而延期。",
+      "ta": "行业发售策略调整，对项目排期有一定参考意义。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/star-citizen-s-squadron-42-delayed-over-gta-6-release-overlap/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "矮人要塞程序化魔法系统",
+      "sum": "《矮人要塞》20周年更新将加入程序化魔法系统。",
+      "ta": "程序化生成在游戏玩法中的应用案例，值得关注。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/dwarf-fortress-will-get-an-update-with-procedural-magic-systems/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "模块化建筑与植被工作流",
+      "sum": "Elie Paquiet 详解《庭院》项目模块化套件与多层着色器制作。",
+      "ta": "模块化建筑套件与植被制作流程，对 TA 工作流有直接参考价值。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/modeling-and-texturing-assets-and-foliage-for-a-detailed-3d-environment/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "程序化贝壳石窟制作",
+      "sum": "Coraline Lyu 分享用 Substance 3D Designer 与 UE 制作程序化石窟。",
+      "ta": "节点式程序化建模与材质流程，是 TA 技能树的重要参考。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/building-a-procedural-shell-grotto-with-substance-3d-designer-unreal-engine/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "巫师4全平台同步开发",
+      "sum": "CD Projekt Red 吸取《赛博朋克2077》教训，全平台同步开发《巫师4》。",
+      "ta": "跨平台开发策略调整，对多平台渲染优化有间接影响。",
+      "src": "Game Developer · 08-27",
+      "url": "https://www.gamedeveloper.com/production/cd-projekt-red-has-the-witcher-4-running-on-all-target-platforms-after-cyberpunk-2077-lesson"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏业需拓展北美以外市场",
+      "sum": "Saber 高管称游戏行业需寻求北美以外市场以分散风险。",
+      "ta": "行业市场策略讨论，对团队项目立项方向有参考意义。",
+      "src": "Game Developer · 08-27",
+      "url": "https://www.gamedeveloper.com/business/saber-exec-the-game-industry-must-look-beyond-north-america-and-dilute-risk"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "MBC 集团进军游戏业",
+      "sum": "沙特 MBC 集团成立游戏工作室，已招募多位资深开发者。",
+      "ta": "行业资本动态，可能影响未来人才市场与项目合作。",
+      "src": "Game Developer · 08-27",
+      "url": "https://www.gamedeveloper.com/business/saudi-owned-media-conglomerate-mbc-expands-into-the-game-industry"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -474,15 +639,6 @@ window.INTEL_RECENT = {
       "ta": "关注游戏AI技术应用与工作本质的讨论，对AI在游戏中的定位有参考。",
       "src": "Game Developer · 08-21",
       "url": "https://www.gamedeveloper.com/programming/we-re-finally-talking-about-ai-ft-david-rez-graham-and-luke-dicken"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "使命召唤现代战争4详情",
-      "sum": "COD Next展示《现代战争4》多人模式、地图、武器、战区等新内容，并公布Beta测试。",
-      "ta": "了解主流FPS多人模式设计，但非技术细节，速览即可。",
-      "src": "PlayStation Blog · 08-21",
-      "url": "https://blog.playstation.com/2026/08/21/call-of-duty-modern-warfare-4-new-multiplayer-and-early-access-beta-details/"
     },
     {
       "cat": "biz",
@@ -1670,159 +1826,6 @@ window.INTEL_RECENT = {
       "ta": "深度补全技术对实时渲染中的深度感知和特效交互有潜在应用。",
       "src": "arXiv · cs.GR · 08-05",
       "url": "https://arxiv.org/abs/2608.04737v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态高斯实现多视角面部手势动画",
-      "sum": "用动态高斯重建逼真3D化身，兼顾面部细节和手部姿态。",
-      "ta": "动态高斯在角色动画中的应用，对TA在角色渲染和动画管线有参考价值。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04722v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "OutLangSplat：无人机户外语言高斯",
-      "sum": "将开放词汇语言特征嵌入3DGS，扩展至无人机户外大规模场景理解。",
-      "ta": "语言嵌入3DGS在户外场景的应用，对TA在场景理解和交互设计上有启发。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04560v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "现代艺术中的不确定性量化",
-      "sum": "文本生成视频模型对同一艺术品的多次生成差异被视为信号而非噪声。",
-      "ta": "生成式AI的多样性分析，对TA在创意工具中的可控性设计有参考。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.04038v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "从叙事重建持久世界",
-      "sum": "从叙事文本重建持久世界，用于叙事驱动的交互式体验生成。",
-      "ta": "叙事驱动的世界生成，对TA在程序化内容生成和关卡设计上有潜在应用。",
-      "src": "arXiv · cs.GR · 08-03",
-      "url": "https://arxiv.org/abs/2608.04037v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "LLM个性化幻象与自我监控误导",
-      "sum": "研究LLM如何虚构用户画像，并指出自我监控机制可能产生误导。",
-      "ta": "AI个性化技术的局限性，对TA在AI驱动工具的用户建模有警示。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.04570"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "WorldCycle：长时程视频世界模型",
-      "sum": "用自验证强化学习训练长时程视频世界模型，提升生成稳定性。",
-      "ta": "视频世界模型的强化学习，对TA在动态场景模拟和特效预演有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.04964"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "HelloWorld：视频世界模型社交角色",
-      "sum": "在视频世界模型中实现社交互动角色，增强交互体验的真实感。",
-      "ta": "社交互动角色在视频模型中的实现，对TA在NPC行为和动画生成有启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.05070"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "UniWorld-View：大基线视图合成",
-      "sum": "利用视频扩散模型实现大基线视图合成，提升视角生成的连贯性。",
-      "ta": "视频扩散模型在视图合成中的应用，对TA在场景重建和虚拟拍摄有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.04701"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "SEED：AI驱动24/7社会模拟器",
-      "sum": "Klang的SEED游戏用AI角色持续生活工作，即使玩家离线也塑造社会。",
-      "ta": "AI NPC的持续模拟，对TA在大型开放世界中的角色行为系统有参考。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/this-new-24-7-society-simulator-is-powered-by-thousands-of-ai-controlled-npcs/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Gunstoppable：速度即伤害的Roguelite",
-      "sum": "CAGE Studios创始人分享移动射击游戏Gunstoppable的开发工具和设计理念。",
-      "ta": "独立游戏开发工具链分享，对TA在快速原型和工具选型有参考。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/gunstoppable-how-speed-is-damage-defined-a-roguelite-fps/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "博德之门3第三人称Mod体验",
-      "sum": "增强版Native Camera Tweaks Mod让博德之门3以第三人称游玩。",
-      "ta": "相机Mod的视角调整，对TA在相机系统和沉浸感设计上有参考。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/baldur-s-gate-3-third-person-mod-makes-it-feel-like-a-different-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UV Flex：Blender UV岛编辑工具",
-      "sum": "AlbertoFX的UV Flex提供交互式UV岛分割、合并和重塑功能。",
-      "ta": "UV编辑工具集，对TA在材质贴图和UV布局优化上有实用价值。",
-      "src": "80 Level · 08-05",
-      "url": "https://80.lv/articles/split-merge-reshape-uv-islands-with-this-blender-toolset/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Secret Mode开设开发工作室",
-      "sum": "发行商Secret Mode成立开发工作室以支持内部项目。",
-      "ta": "行业动态，对TA了解发行商内部开发方向有参考。",
-      "src": "Game Developer · 08-05",
-      "url": "https://www.gamedeveloper.com/business/publisher-secret-mode-opens-development-studio-to-support-internal-projects"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "King拒绝员工集体谈判协议",
-      "sum": "Candy Crush开发商King拒绝员工集体谈判协议，称现有福利更优。",
-      "ta": "行业劳资动态，对TA了解游戏公司内部环境有参考。",
-      "src": "Game Developer · 08-05",
-      "url": "https://www.gamedeveloper.com/business/candy-crush-maker-king-has-declined-staff-s-collective-bargaining-agreement"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "欧洲政策制定者被敦促支持游戏业",
-      "sum": "欧洲政策制定者被呼吁加大对本地游戏产业的支持力度。",
-      "ta": "行业政策动态，对TA了解区域游戏产业环境有参考。",
-      "src": "Game Developer · 08-05",
-      "url": "https://www.gamedeveloper.com/production/policymakers-across-europe-told-to-do-more-to-support-game-industry"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "JoyAI 实时视频编辑模型",
-      "sum": "自回归扩散模型实现实时开放式视频编辑，支持任意指令修改。",
-      "ta": "视频编辑模型可辅助制作动态材质预览或快速迭代特效参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.03974"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "title": "混元3D Buffalo 统一生成",
-      "sum": "腾讯混元3D Buffalo 1.0发布，统一多模态3D生成、理解与编辑。",
-      "ta": "统一3D生成与编辑模型可能重塑程序化资产生产管线，值得深入评估。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.02711"
     }
   ]
 };
