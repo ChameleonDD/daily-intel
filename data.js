@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月28日 · 周五",
+  "date": "2026年8月29日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>城市示例项目大更新</em> / <em>AMD FSR 插件更新</em> / <em>程序化控制的三维建模</em> / <em>实时游戏世界渲染器</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Epic 八月学习内容发布</em> / <em>Tripo 攻克 3D 资产拓扑</em> / <em>EditaLive 实时角色视频编辑</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,171 +128,71 @@ window.INTEL_DATA = {
     },
     {
       "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "城市示例项目大更新",
-      "sum": "City Sample 更新至 UE5.8，新增 PCG 与 Unreal MCP 工作流。",
-      "ta": "PCG 与 MCP 工作流是程序化世界构建的核心，值得精读新示例。",
-      "src": "Unreal Engine · 08-27",
-      "url": "https://www.unrealengine.com/learning/city-sample-gets-a-major-update-with-pcg-and-unreal-mcp-workflows"
+      "imp": "mid",
+      "title": "Epic 八月学习内容发布",
+      "sum": "Epic 发布免费学习内容，涵盖网络物理、Mesh Terrain、项目优化与材质创建。",
+      "ta": "Mesh Terrain 与材质工作流是 TA 日常，可快速获取官方最新实践。",
+      "src": "Unreal Engine · 08-28",
+      "url": "https://www.unrealengine.com/learning/augusts-epic-learning-content-networked-physics-dynamic-audio-and-more"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Tripo 攻克 3D 资产拓扑",
+      "sum": "Tripo 推出 Smart Mesh，数秒生成可用拓扑，增强艺术家对生成资产的控制。",
+      "ta": "生成式 3D 资产若具备干净拓扑，可直接进入 DCC 管线，减少重拓扑工作量。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/how-tripo-is-tackling-clean-topology-for-its-3d-asset-pipeline/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "EditaLive 实时角色视频编辑",
+      "sum": "论文提出 EditaLive，用于直播场景的统一角色视频编辑方法。",
+      "ta": "实时角色编辑若用于虚拟制片或直播，可能影响 TA 的实时渲染管线设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.27123"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Mistfall Hunter 融合魂系与撤离玩法",
+      "sum": "Bellring Games 谈魂系战斗与撤离机制结合，及北欧废墟美术风格设计。",
+      "ta": "PvPvE 可读性设计对 TA 的视觉引导与特效表现有参考价值。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/interview-how-mistfall-hunter-blends-soulslike-combat-with-dark-fantasy-rpg-extraction-mechanics/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Fable 展示风格化战斗系统",
+      "sum": "Fable 新演示聚焦风格化战斗，强调玩家自定义英雄与技能组合。",
+      "ta": "风格化战斗的视觉反馈设计，可关注其特效与动画的配合方式。",
+      "src": "PlayStation Blog · 08-28",
+      "url": "https://blog.playstation.com/2026/08/28/a-new-look-at-fables-style-weaving-combat/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Godot 4.8 开发新特性",
+      "sum": "Godot 4.8 新增3D轨迹节点、VisualShader节点组、多反弹AO等。",
+      "ta": "关注引擎进展，多反弹AO和VisualShader节点组对TA工具链有参考。",
+      "src": "80 Level · 08-27",
+      "url": "https://80.lv/articles/godot-4-8-development-is-in-full-swing/",
+      "flashback": true
     },
     {
       "cat": "tech",
-      "imp": "hi",
-      "rank": 2,
-      "title": "AMD FSR 插件更新",
-      "sum": "AMD FSR 插件更新至 UE5.8，支持 ML 升频与帧生成。",
-      "ta": "FSR 插件更新直接影响 UE5.8 渲染管线的性能优化方案。",
-      "src": "AMD GPUOpen · 08-27",
-      "url": "https://gpuopen.com/learn/amd-fsr-plugin-updated-for-unreal-engine-58/"
-    },
-    {
-      "cat": "gfx",
       "imp": "mid",
-      "title": "三维重建方法对比评估",
-      "sum": "对比摄影测量、NeRF、高斯泼溅等四种三维重建方法。",
-      "ta": "了解不同重建方法的优劣，有助于选择资产制作技术路线。",
-      "src": "arXiv · cs.GR · 08-27",
-      "url": "https://arxiv.org/abs/2608.27301v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "rank": 3,
-      "title": "程序化控制的三维建模",
-      "sum": "提出“形状即代码”范式，实现可编辑的程序化三维建模。",
-      "ta": "该研究有望解决生成网格不可编辑的痛点，对程序化资产管线意义重大。",
-      "src": "arXiv · cs.GR · 08-26",
-      "url": "https://arxiv.org/abs/2608.26238v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "游戏世界动作模型",
-      "sum": "GameWAM 提出用于视频游戏的世界动作模型。",
-      "ta": "世界模型是游戏 AI 前沿，可能影响未来 NPC 与关卡生成。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.26200"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "代理式游戏开发引擎",
-      "sum": "将代理式游戏开发作为可验证轨迹数据引擎，用于扩展世界模型。",
-      "ta": "该思路可能为程序化内容生成提供新的数据驱动方法。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.25518"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "实时游戏世界渲染器",
-      "sum": "Magpie 提出用于交互游戏的实时世界渲染器。",
-      "ta": "实时渲染器是 TA 核心关注点，该技术可能带来渲染管线革新。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.27168"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Blender 2D 风格水门",
-      "sum": "艺术家在 Blender 中制作了 2D 风格的水中传送门。",
-      "ta": "视差效果制作技巧，可参考用于风格化场景。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/magical-2d-style-aquatic-portal-in-blender/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Godot 重现博德之门着色器",
-      "sum": "艺术家在 Godot 中重现了《博德之门3》的遮挡着色器。",
-      "ta": "跨引擎着色器实现案例，对理解遮挡效果原理有参考价值。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/artist-recreates-baldur-s-gate-3-s-occlusion-shader-in-godot/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Nomad Sculpt 直连 Blender",
-      "sum": "Nomad Sculpt 新增直接链接 Blender 与 ZBrush 功能。",
-      "ta": "移动端雕刻到桌面软件的直连，简化了资产制作流程。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/nomad-sculpt-adds-direct-app-linking-to-blender-zbrush/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "低成本 Nanite 视差着色器",
-      "sum": "POM 着色器以更低成本实现类似 Nanite 的位移效果。",
-      "ta": "支持贴花、材质和地形，是性能敏感场景下的重要替代方案。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/pom-shader-that-achieves-nanite-like-displacement-at-lower-cost/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《星际公民》跳票至2027",
-      "sum": "《星际公民》的 Squadron 42 因与 GTA 6 发售期重叠而延期。",
-      "ta": "行业发售策略调整，对项目排期有一定参考意义。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/star-citizen-s-squadron-42-delayed-over-gta-6-release-overlap/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "矮人要塞程序化魔法系统",
-      "sum": "《矮人要塞》20周年更新将加入程序化魔法系统。",
-      "ta": "程序化生成在游戏玩法中的应用案例，值得关注。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/dwarf-fortress-will-get-an-update-with-procedural-magic-systems/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "模块化建筑与植被工作流",
-      "sum": "Elie Paquiet 详解《庭院》项目模块化套件与多层着色器制作。",
-      "ta": "模块化建筑套件与植被制作流程，对 TA 工作流有直接参考价值。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/modeling-and-texturing-assets-and-foliage-for-a-detailed-3d-environment/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "程序化贝壳石窟制作",
-      "sum": "Coraline Lyu 分享用 Substance 3D Designer 与 UE 制作程序化石窟。",
-      "ta": "节点式程序化建模与材质流程，是 TA 技能树的重要参考。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/building-a-procedural-shell-grotto-with-substance-3d-designer-unreal-engine/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "巫师4全平台同步开发",
-      "sum": "CD Projekt Red 吸取《赛博朋克2077》教训，全平台同步开发《巫师4》。",
-      "ta": "跨平台开发策略调整，对多平台渲染优化有间接影响。",
-      "src": "Game Developer · 08-27",
-      "url": "https://www.gamedeveloper.com/production/cd-projekt-red-has-the-witcher-4-running-on-all-target-platforms-after-cyberpunk-2077-lesson"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏业需拓展北美以外市场",
-      "sum": "Saber 高管称游戏行业需寻求北美以外市场以分散风险。",
-      "ta": "行业市场策略讨论，对团队项目立项方向有参考意义。",
-      "src": "Game Developer · 08-27",
-      "url": "https://www.gamedeveloper.com/business/saber-exec-the-game-industry-must-look-beyond-north-america-and-dilute-risk"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "MBC 集团进军游戏业",
-      "sum": "沙特 MBC 集团成立游戏工作室，已招募多位资深开发者。",
-      "ta": "行业资本动态，可能影响未来人才市场与项目合作。",
-      "src": "Game Developer · 08-27",
-      "url": "https://www.gamedeveloper.com/business/saudi-owned-media-conglomerate-mbc-expands-into-the-game-industry"
+      "title": "星战新作采用UE5开发",
+      "sum": "Bit Reactor技术总监谈为何选择UE5及开发中亮点功能。",
+      "ta": "了解3A战术游戏在UE5中的技术选型与管线实践。",
+      "src": "Unreal Engine · 08-25",
+      "url": "https://www.unrealengine.com/developer-interviews/star-wars-zero-company-bit-reactor-crafts-a-galaxy-of-tactical-possibilities-with-ue5",
+      "flashback": true
     }
   ],
-  "flashbackTitle": "",
+  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
   "sources": {
     "ok": [
       "Unreal Engine",

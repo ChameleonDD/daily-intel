@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-28 20:38",
+  "updated": "2026-08-29 15:47",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Epic 八月学习内容发布",
+      "sum": "Epic 发布免费学习内容，涵盖网络物理、Mesh Terrain、项目优化与材质创建。",
+      "ta": "Mesh Terrain 与材质工作流是 TA 日常，可快速获取官方最新实践。",
+      "src": "Unreal Engine · 08-28",
+      "url": "https://www.unrealengine.com/learning/augusts-epic-learning-content-networked-physics-dynamic-audio-and-more"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Tripo 攻克 3D 资产拓扑",
+      "sum": "Tripo 推出 Smart Mesh，数秒生成可用拓扑，增强艺术家对生成资产的控制。",
+      "ta": "生成式 3D 资产若具备干净拓扑，可直接进入 DCC 管线，减少重拓扑工作量。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/how-tripo-is-tackling-clean-topology-for-its-3d-asset-pipeline/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "EditaLive 实时角色视频编辑",
+      "sum": "论文提出 EditaLive，用于直播场景的统一角色视频编辑方法。",
+      "ta": "实时角色编辑若用于虚拟制片或直播，可能影响 TA 的实时渲染管线设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.27123"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Mistfall Hunter 融合魂系与撤离玩法",
+      "sum": "Bellring Games 谈魂系战斗与撤离机制结合，及北欧废墟美术风格设计。",
+      "ta": "PvPvE 可读性设计对 TA 的视觉引导与特效表现有参考价值。",
+      "src": "80 Level · 08-28",
+      "url": "https://80.lv/articles/interview-how-mistfall-hunter-blends-soulslike-combat-with-dark-fantasy-rpg-extraction-mechanics/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Fable 展示风格化战斗系统",
+      "sum": "Fable 新演示聚焦风格化战斗，强调玩家自定义英雄与技能组合。",
+      "ta": "风格化战斗的视觉反馈设计，可关注其特效与动画的配合方式。",
+      "src": "PlayStation Blog · 08-28",
+      "url": "https://blog.playstation.com/2026/08/28/a-new-look-at-fables-style-weaving-combat/"
+    },
     {
       "cat": "flow",
       "imp": "hi",
@@ -1780,52 +1825,6 @@ window.INTEL_RECENT = {
       "src": "Game Developer · 08-06",
       "url": "https://www.gamedeveloper.com/business/devolver-wants-to-delist-because-indie-publishing-is-not-compatible-with-public-trading",
       "sum": "Devolver欲退市独立发行"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "ComfyUI材质同步插件",
-      "summary": "ComfyUI-MaterialSync支持Blender、Maya和UE材质同步。",
-      "ta": "对AI生成材质到引擎的流程有直接帮助，值得尝试。",
-      "src": "Tech-Artists · 08-06",
-      "url": "https://www.tech-artists.org/t/comfyui-materialsync-for-blender-maya-and-unrealengine/18483",
-      "sum": "ComfyUI材质同步插件"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "跨现实投影与头显过渡研究",
-      "sum": "研究用户在大规模投影与MR头显间跨现实对象与场景级过渡的感知。",
-      "ta": "关注沉浸式展览中混合现实过渡的感知设计，对TA在跨平台视觉一致性上有参考价值。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04971v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RORA：带关节的真实物体重建",
-      "sum": "用NeRF和3DGS重建真实环境，并支持物体关节运动，缩小机器人学习模拟差距。",
-      "ta": "3DGS结合关节物体重建，对程序化生成和交互式场景的资产制作有启发。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04842v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "基于Splat的CT金属伪影消除",
-      "sum": "通过紧凑衰减建模减少锥束CT中高衰减物体引起的金属伪影。",
-      "ta": "Splat渲染在医学成像的应用，展示3DGS在非游戏领域的扩展潜力。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04764v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "稀疏dToF传感器的稠密深度补全",
-      "sum": "从稀疏直接飞行时间传感器生成稠密度量深度，提升恶劣条件下的鲁棒性。",
-      "ta": "深度补全技术对实时渲染中的深度感知和特效交互有潜在应用。",
-      "src": "arXiv · cs.GR · 08-05",
-      "url": "https://arxiv.org/abs/2608.04737v1"
     }
   ]
 };
