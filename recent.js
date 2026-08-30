@@ -2,8 +2,45 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-29 15:47",
+  "updated": "2026-08-30 14:26",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Maya风格化曲线毛发教程",
+      "sum": "教程展示Maya中制作风格化曲线毛发，并提供Blender版本。",
+      "ta": "风格化毛发是TA常用技能，曲线方案可参考用于角色或植被。",
+      "src": "80 Level · 08-29",
+      "url": "https://80.lv/articles/how-to-make-stylized-hair-look-like-curves-in-maya/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender沸水特效教程",
+      "sum": "CGMatter分享两种制作沸水效果的方法。",
+      "ta": "流体模拟思路可借鉴，但Blender方案需自行转换到UE Niagara。",
+      "src": "80 Level · 08-29",
+      "url": "https://80.lv/articles/blender-tutorial-creating-boiling-water/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Claude Code驱动Blender工具",
+      "sum": "用Claude Code快速生成Blender工具，提升自动化效率。",
+      "ta": "AI辅助工具开发是趋势，可探索用于DCC脚本自动化。",
+      "src": "Tech-Artists · 08-29",
+      "url": "https://www.tech-artists.org/t/claude-in-blender-quick-blender-tools-with-claude-code/18530"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Roji端到端OpenUSD工作流",
+      "sum": "Roji提供场景组装、外观开发、灯光渲染的完整OpenUSD流程。",
+      "ta": "OpenUSD标准化是TA管线核心，端到端方案值得深入评估。",
+      "src": "Tech-Artists · 08-29",
+      "url": "https://www.tech-artists.org/t/introducing-roji-an-end-to-end-openusd-workflow-for-scene-assembly-look-development-lighting-and-rendering/18528"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -441,15 +478,6 @@ window.INTEL_RECENT = {
       "ta": "关注重制版在新技术下的画面表现与性能优化。",
       "src": "80 Level · 08-25",
       "url": "https://80.lv/articles/the-witcher-3-is-getting-a-massive-full-remaster-as-a-free-upgrade-very-soon/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender幻想村庄概念艺术",
-      "sum": "Eugenia Chernova分享使用Blender创建幻想村庄概念艺术的工作流。",
-      "ta": "学习Blender在概念设计阶段的建模与场景搭建技巧。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/creating-fantasy-village-concept-art-using-blender/"
     },
     {
       "cat": "flow",
@@ -1795,36 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "了解Blender到2D精灵的转换流程，对风格化资产管线有启发。",
       "src": "80 Level · 08-06",
       "url": "https://80.lv/articles/interview-how-kidbash-super-legend-adapts-retro-style-graphics-with-a-modern-art-pipeline/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "2D复古与真人过场融合",
-      "summary": "《Tenebris Somnia》融合2D复古美术与真人过场，分享制作方法。",
-      "ta": "关注2D与实拍风格统一的技术处理，对混合媒体项目有参考。",
-      "src": "80 Level · 08-06",
-      "url": "https://80.lv/articles/creating-a-survival-horror-game-that-blends-a-2d-retro-style-and-live-action-cutscenes/",
-      "sum": "2D复古与真人过场融合"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Halo工作室裁员承包商",
-      "summary": "《Halo: Campaign Evolved》发售后，Halo Studios解雇长期承包商。",
-      "ta": "行业动态速览，了解工作室人员变动。",
-      "src": "Game Developer · 08-06",
-      "url": "https://www.gamedeveloper.com/production/halo-studios-jettisons-long-serving-contractors-after-launch-of-halo-campaign-evolved",
-      "sum": "Halo工作室裁员承包商"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Devolver欲退市独立发行",
-      "summary": "Devolver认为公开交易与独立发行不兼容，计划退市。",
-      "ta": "行业商业模式观察，对游戏发行生态有影响。",
-      "src": "Game Developer · 08-06",
-      "url": "https://www.gamedeveloper.com/business/devolver-wants-to-delist-because-indie-publishing-is-not-compatible-with-public-trading",
-      "sum": "Devolver欲退市独立发行"
     }
   ]
 };
