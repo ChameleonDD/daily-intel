@@ -2,8 +2,72 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-30 14:26",
+  "updated": "2026-08-31 14:53",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "CAD透明渲染综述",
+      "sum": "综述CAD中透明渲染的工业部署与底层算法，梳理方法、权衡与挑战。",
+      "ta": "透明排序与性能权衡是实时渲染常客，可借鉴CAD工业方案。",
+      "src": "arXiv · cs.GR · 08-28",
+      "url": "https://arxiv.org/abs/2608.28310v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "铜氧化外观预测PBR化",
+      "sum": "提出管线预测铜表面氧化后外观，并转为albedo、法线、粗糙度、金属度贴图。",
+      "ta": "材质老化预测直接服务PBR工作流，可扩展至植被或场景风化。",
+      "src": "arXiv · cs.GR · 08-28",
+      "url": "https://arxiv.org/abs/2608.28102v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "神经纹理压缩线程高效解码",
+      "sum": "提出共享解码器MLP与渐进冻结训练，解决NTC的GPU线程分歧问题。",
+      "ta": "NTC性能瓶颈在分歧，此方案直接提升运行时解码效率，值得精读。",
+      "src": "arXiv · cs.GR · 08-28",
+      "url": "https://arxiv.org/abs/2608.27888v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "恒定显存辐射场训练",
+      "sum": "ABCD框架以块坐标下降实现3DGS外核训练，仅激活一个空间块参数。",
+      "ta": "3DGS训练显存受限，此方法可支撑更大场景，对程序化生成有参考。",
+      "src": "arXiv · cs.GR · 08-27",
+      "url": "https://arxiv.org/abs/2608.27735v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频生成模型学几何",
+      "sum": "论文探讨视频生成模型作为几何学习器的能力，未提游戏或实时应用。",
+      "ta": "视频模型几何能力或影响未来3D重建，但当前无直接TA关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.28549"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自回归视频扩散长记忆",
+      "sum": "提出Ring Forcing方法提升自回归视频扩散的长期记忆精度。",
+      "ta": "视频扩散长时一致性或影响特效预览，但无实时渲染关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.26794"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频时空定位新方法",
+      "sum": "提出高效生成式时空视频定位方法，用于视频中目标定位。",
+      "ta": "视频定位与TA工作流无直接关联，仅作AI技术速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.28192"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -1759,70 +1823,6 @@ window.INTEL_RECENT = {
       "ta": "关注其 token 化方式是否可迁移到 3D 资产表征。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.05798"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "rank": 1,
-      "title": "多人世界模型共享状态",
-      "sum": "MASS 提出多人世界模型，以权威共享状态驱动。",
-      "ta": "对多人实时渲染的服务器权威状态同步有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.06257"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "MMO 盈利模式反思",
-      "sum": "Bartle 谈虚拟世界起源、玩家契约与免费/付费设计。",
-      "ta": "理解玩家动机有助于设计更健康的游戏内经济系统。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/richard-bartle-mmo-monetization-virtual-worlds-players-express-themselves/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "育碧免费游戏领取",
-      "sum": "汤姆克兰西游戏在 Ubisoft Connect 免费但玩家反馈领取困难。",
-      "ta": "行业动态速览，与 TA 工作无直接关联。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/tom-clancy-s-game-is-available-for-free-on-ubisoft-connect/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "猫武士游戏发布",
-      "sum": "《猫武士》改编游戏今秋登陆 PC 与主机，含四族冒险。",
-      "ta": "行业新作信息，与 TA 技术工作无直接关联。",
-      "src": "80 Level · 08-07",
-      "url": "https://80.lv/articles/warrior-cats-clans-of-the-forest-brings-novel-series-to-pc-console/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "游戏本地化要点",
-      "sum": "开发者需了解与本地化团队合作以适配多语言。",
-      "ta": "本地化流程与 TA 工作流无直接关联，速览即可。",
-      "src": "Game Developer · 08-07",
-      "url": "https://www.gamedeveloper.com/production/what-devs-need-to-know-about-localization-ft-concha-fernandez-alvarez-aurelie-perrin-and-guido-di-carlo"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "椭球体稀疏体渲染新方法",
-      "sum": "提出基于椭球体的稀疏体渲染，结构感知原语学习提升效率。",
-      "ta": "对大规模稀疏体积数据（如云、烟雾）的实时渲染有潜在优化价值。",
-      "src": "arXiv · cs.GR · 08-06",
-      "url": "https://arxiv.org/abs/2608.05564v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "复古风格现代管线适配",
-      "sum": "Kidbash: Super Legend用Blender建模转Aseprite精灵图，实现复古视觉。",
-      "ta": "了解Blender到2D精灵的转换流程，对风格化资产管线有启发。",
-      "src": "80 Level · 08-06",
-      "url": "https://80.lv/articles/interview-how-kidbash-super-legend-adapts-retro-style-graphics-with-a-modern-art-pipeline/"
     }
   ]
 };

@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月30日 · 周日",
+  "date": "2026年8月31日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Roji端到端OpenUSD工作流</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>神经纹理压缩线程高效解码</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,54 +127,71 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "Maya风格化曲线毛发教程",
-      "sum": "教程展示Maya中制作风格化曲线毛发，并提供Blender版本。",
-      "ta": "风格化毛发是TA常用技能，曲线方案可参考用于角色或植被。",
-      "src": "80 Level · 08-29",
-      "url": "https://80.lv/articles/how-to-make-stylized-hair-look-like-curves-in-maya/"
+      "title": "CAD透明渲染综述",
+      "sum": "综述CAD中透明渲染的工业部署与底层算法，梳理方法、权衡与挑战。",
+      "ta": "透明排序与性能权衡是实时渲染常客，可借鉴CAD工业方案。",
+      "src": "arXiv · cs.GR · 08-28",
+      "url": "https://arxiv.org/abs/2608.28310v1"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender沸水特效教程",
-      "sum": "CGMatter分享两种制作沸水效果的方法。",
-      "ta": "流体模拟思路可借鉴，但Blender方案需自行转换到UE Niagara。",
-      "src": "80 Level · 08-29",
-      "url": "https://80.lv/articles/blender-tutorial-creating-boiling-water/"
-    },
-    {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "Claude Code驱动Blender工具",
-      "sum": "用Claude Code快速生成Blender工具，提升自动化效率。",
-      "ta": "AI辅助工具开发是趋势，可探索用于DCC脚本自动化。",
-      "src": "Tech-Artists · 08-29",
-      "url": "https://www.tech-artists.org/t/claude-in-blender-quick-blender-tools-with-claude-code/18530"
+      "title": "铜氧化外观预测PBR化",
+      "sum": "提出管线预测铜表面氧化后外观，并转为albedo、法线、粗糙度、金属度贴图。",
+      "ta": "材质老化预测直接服务PBR工作流，可扩展至植被或场景风化。",
+      "src": "arXiv · cs.GR · 08-28",
+      "url": "https://arxiv.org/abs/2608.28102v1"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "Roji端到端OpenUSD工作流",
-      "sum": "Roji提供场景组装、外观开发、灯光渲染的完整OpenUSD流程。",
-      "ta": "OpenUSD标准化是TA管线核心，端到端方案值得深入评估。",
-      "src": "Tech-Artists · 08-29",
-      "url": "https://www.tech-artists.org/t/introducing-roji-an-end-to-end-openusd-workflow-for-scene-assembly-look-development-lighting-and-rendering/18528"
+      "title": "神经纹理压缩线程高效解码",
+      "sum": "提出共享解码器MLP与渐进冻结训练，解决NTC的GPU线程分歧问题。",
+      "ta": "NTC性能瓶颈在分歧，此方案直接提升运行时解码效率，值得精读。",
+      "src": "arXiv · cs.GR · 08-28",
+      "url": "https://arxiv.org/abs/2608.27888v1"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "Godot 4.8 开发新特性",
-      "sum": "Godot 4.8 新增3D轨迹节点、VisualShader节点组、多反弹AO等。",
-      "ta": "关注引擎进展，多反弹AO和VisualShader节点组对TA工具链有参考。",
-      "src": "80 Level · 08-27",
-      "url": "https://80.lv/articles/godot-4-8-development-is-in-full-swing/",
-      "flashback": true
+      "title": "恒定显存辐射场训练",
+      "sum": "ABCD框架以块坐标下降实现3DGS外核训练，仅激活一个空间块参数。",
+      "ta": "3DGS训练显存受限，此方法可支撑更大场景，对程序化生成有参考。",
+      "src": "arXiv · cs.GR · 08-27",
+      "url": "https://arxiv.org/abs/2608.27735v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频生成模型学几何",
+      "sum": "论文探讨视频生成模型作为几何学习器的能力，未提游戏或实时应用。",
+      "ta": "视频模型几何能力或影响未来3D重建，但当前无直接TA关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.28549"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自回归视频扩散长记忆",
+      "sum": "提出Ring Forcing方法提升自回归视频扩散的长期记忆精度。",
+      "ta": "视频扩散长时一致性或影响特效预览，但无实时渲染关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.26794"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频时空定位新方法",
+      "sum": "提出高效生成式时空视频定位方法，用于视频中目标定位。",
+      "ta": "视频定位与TA工作流无直接关联，仅作AI技术速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.28192"
     }
   ],
-  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
+  "flashbackTitle": "",
   "sources": {
     "ok": [
       "Unreal Engine",
