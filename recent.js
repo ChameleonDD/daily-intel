@@ -2,8 +2,126 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-08-31 14:53",
+  "updated": "2026-09-01 14:10",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "高斯辐射场刚体变形新法",
+      "sum": "提出ARAP约束下的3DGS变形方法，保持局部刚性，提升编辑质量。",
+      "ta": "3DGS资产变形是TA做动态场景或角色特效的关键，此方法直接提升可控性。",
+      "src": "arXiv · cs.GR · 08-30",
+      "url": "https://arxiv.org/abs/2608.29538v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "扩散残差风格化高斯泼溅",
+      "sum": "DReSG用扩散模型残差增强3DGS风格化，更好捕捉参考风格细节。",
+      "ta": "风格化3DGS是快速迭代概念美术的利器，此方法能提升风格迁移的保真度。",
+      "src": "arXiv · cs.GR · 08-29",
+      "url": "https://arxiv.org/abs/2608.29048v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "视频驱动3D物体动画新法",
+      "sum": "BLARM从视频中提取刚性运动基元，混合生成3D物体动画。",
+      "ta": "从视频直接驱动3D资产动画，可加速动画预演和动态资产制作流程。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.31113"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "实时流式交互世界模型增强",
+      "sum": "Matrix-Game 3.5引入Patch Memory，增强实时流式交互世界模型性能。",
+      "ta": "实时交互世界模型是游戏AI和动态环境生成的前沿，值得关注其技术演进。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.29910"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "生成先于重建的潜变量模型",
+      "sum": "GenFirst提出先生成后重建的端到端潜变量生成建模，提升稳定性。",
+      "ta": "潜变量生成模型稳定性提升，可能影响未来3D资产生成工具的开发方向。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2608.29335"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "独立游戏全本地AI训练实践",
+      "sum": "Atelico工作室用自家美术作品训练本地AI模型，分享10个原型开发经验。",
+      "ta": "本地AI模型训练与美术资产结合，为工作室内部AI工具链提供真实案例。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/interview-new-indie-game-uses-local-ai-model-trained-entirely-on-studio-s-own-artists/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender制作后室场景教程",
+      "sum": "Blender Guru分享用Blender创建Backrooms场景的完整流程。",
+      "ta": "环境搭建和程序化纹理技巧可借鉴，适合快速产出氛围场景。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/blender-guru-shares-how-to-create-the-backrooms-using-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "叙事沙盒开放世界RPG评测",
+      "sum": "Rebel Wolves新作《血之黎明行者》获好评，或成年度游戏竞争者。",
+      "ta": "关注其叙事沙盒设计，可能影响开放世界关卡和任务流程的构建方式。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/the-blood-of-dawnwalker-is-a-special-kind-of-open-world-rpg-with-a-narrative-sandbox/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "2XKO角色特效制作解析",
+      "sum": "Sonia Firsova展示《英雄联盟》格斗游戏2XKO的角色VFX制作细节。",
+      "ta": "角色特效的材质和Shader设计是TA核心技能，此案例提供实战参考。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/take-closer-look-at-character-vfx-made-for-2xko/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Unity闪耀特效制作展示",
+      "sum": "展示用Unity制作的精细闪耀VFX效果，视觉上很魔幻。",
+      "ta": "Unity特效案例可对比UE5工作流，关注粒子系统和Shader实现差异。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/check-out-these-detailed-sparkling-vfx-made-with-unity/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender与Krita纹理绘制桥接",
+      "sum": "新工具连接Blender场景与Krita绘制，支持投影式纹理绘画。",
+      "ta": "纹理绘制工作流优化，可减少DCC工具切换成本，提升贴图制作效率。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/this-tool-connects-blender-krita-for-texture-painting/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Steam 13TB数据泄露事件",
+      "sum": "Steam公开端点泄露13TB数据，含Valve及EA、WB等厂商预发布内容。",
+      "ta": "数据泄露可能暴露未发布引擎特性或资产，但需关注官方后续声明。",
+      "src": "Game Developer · 08-31",
+      "url": "https://www.gamedeveloper.com/pc/report-13tb-of-steam-data-leaked-after-users-access-publicly-accessible-endpoint-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Gamescom设备盗窃事件",
+      "sum": "Gamescom独立展区遭窃，多家小团队笔记本电脑和Steam Deck被盗。",
+      "ta": "行业展会安全事件，对独立开发者影响大，但无直接技术关联。",
+      "src": "Game Developer · 08-31",
+      "url": "https://www.gamedeveloper.com/business/indie-devs-and-publishers-hit-in-gamescom-equipment-thefts"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -76,15 +194,6 @@ window.INTEL_RECENT = {
       "ta": "风格化毛发是TA常用技能，曲线方案可参考用于角色或植被。",
       "src": "80 Level · 08-29",
       "url": "https://80.lv/articles/how-to-make-stylized-hair-look-like-curves-in-maya/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender沸水特效教程",
-      "sum": "CGMatter分享两种制作沸水效果的方法。",
-      "ta": "流体模拟思路可借鉴，但Blender方案需自行转换到UE Niagara。",
-      "src": "80 Level · 08-29",
-      "url": "https://80.lv/articles/blender-tutorial-creating-boiling-water/"
     },
     {
       "cat": "flow",
@@ -324,16 +433,6 @@ window.INTEL_RECENT = {
       "ta": "对材质/贴图工作流有直接参考价值，可探索几何细节保持的自动纹理生成。",
       "src": "arXiv · cs.GR · 08-26",
       "url": "https://arxiv.org/abs/2608.25461v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "非线性波与3D流双向耦合",
-      "sum": "哈密顿方法实现非线性波与3D流双向耦合，提升水面模拟。",
-      "ta": "对流体特效TA是硬核突破，可提升真实感水面模拟效率与精度。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.25203v1"
     },
     {
       "cat": "flow",
@@ -625,15 +724,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/interview-building-a-wuxia-sandbox-rpg-with-up-to-10-000-dynamic-npcs/"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Unity地图交互资产包",
-      "sum": "Unity资产包支持游戏内2D与3D交互地图，现五折促销。",
-      "ta": "可快速集成地图功能，节省TA开发时间。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/this-unity-asset-pack-allows-you-to-add-interactive-2d-and-3d-maps-to-your-games/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "独立钓鱼游戏两日百万",
@@ -686,15 +776,6 @@ window.INTEL_RECENT = {
       "ta": "行业奖项信息，与TA技术无直接关联。",
       "src": "Game Developer · 08-24",
       "url": "https://www.gamedeveloper.com/business/mutter-and-blue-prince-among-winners-at-gamescom-dev-awards-2026"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Gamescom寻求负责任扩张",
-      "sum": "Gamescom 2026规模创纪录，主办方强调本地化与市场相关性。",
-      "ta": "行业展会动态，与TA技术无直接关联。",
-      "src": "Game Developer · 08-24",
-      "url": "https://www.gamedeveloper.com/business/-each-event-has-to-feel-local-and-relevant-to-its-market-gamescom-boss-wants-responsible-expansion-after-record-breaking-year"
     },
     {
       "cat": "gfx",
@@ -767,15 +848,6 @@ window.INTEL_RECENT = {
       "ta": "了解解谜游戏设计思路，对关卡设计有启发，但非硬核技术。",
       "src": "80 Level · 08-21",
       "url": "https://80.lv/articles/puzzles-lore-inspiration-get-glimpse-of-rusty-lake-development/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "游戏AI价值讨论",
-      "sum": "开发者David 'Rez' Graham和Luke Dicken讨论AI技术及其在游戏开发中的价值。",
-      "ta": "关注游戏AI技术应用与工作本质的讨论，对AI在游戏中的定位有参考。",
-      "src": "Game Developer · 08-21",
-      "url": "https://www.gamedeveloper.com/programming/we-re-finally-talking-about-ai-ft-david-rez-graham-and-luke-dicken"
     },
     {
       "cat": "biz",
@@ -1750,79 +1822,6 @@ window.INTEL_RECENT = {
       "ta": "关注游戏公司 AI 战略布局，但原文未提具体技术细节。",
       "src": "Game Developer · 08-10",
       "url": "https://www.gamedeveloper.com/business/eve-online-studio-hires-former-icelandic-minister-to-lead-autonomous-ai-efforts"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "双变量场合并树精确计算",
-      "摘要": "提出双变量场特征诱导合并树(TIMT)的精确计算方法，用于多变量数据特征选择。",
-      "ta": "拓扑数据分析方法，与实时渲染或TA工作流无直接关联。",
-      "src": "arXiv · cs.GR · 08-07",
-      "url": "https://arxiv.org/abs/2608.07181v1",
-      "sum": "双变量场合并树精确计算"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "稀疏采集真实到仿真转换",
-      "sum": "提出双代理细化方法，提升稀疏采集下的真实到仿真场景重建效率。",
-      "ta": "涉及场景重建与仿真，对程序化生成或虚拟环境构建有潜在参考价值。",
-      "src": "arXiv · cs.GR · 08-07",
-      "url": "https://arxiv.org/abs/2608.06827v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "不确定性感知世界模型导航",
-      "sum": "提出不确定性感知的世界模型，用于空中图像目标导航任务。",
-      "ta": "机器人导航领域，与游戏AI或实时渲染无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.05597"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "AI生成C++代码质量剖析",
-      "sum": "研究生产环境中AI生成C++代码的质量特征与分布。",
-      "ta": "涉及AI代码生成质量，对工具链或脚本自动化有间接参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.06640"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频世界模型可寻址记忆",
-      "sum": "提出可寻址记忆机制，增强视频世界模型的长期依赖建模能力。",
-      "ta": "视频生成或世界模型技术，对动态场景模拟有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.07408"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "蜈蚣食人游戏",
-      "sum": "一款以蜈蚣食人为主题的游戏介绍。",
-      "ta": "游戏创意题材参考，与TA技术无直接关联。",
-      "src": "80 Level · 08-08",
-      "url": "https://80.lv/articles/this-game-has-you-playing-a-people-eating-centipede/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "资深TA招聘启事",
-      "sum": "招聘10年以上AAA游戏及VFX经验的管线/技术美术支持。",
-      "ta": "反映行业对资深TA技能需求，可作职业参考。",
-      "src": "Tech-Artists · 08-08",
-      "url": "https://www.tech-artists.org/t/pipeline-technical-art-support-10-yrs-aaa-games-vfx/18485"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "多模态生成式分词器",
-      "sum": "KVAE 提出面向多模态生成模型的分词器家族。",
-      "ta": "关注其 token 化方式是否可迁移到 3D 资产表征。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.05798"
     }
   ]
 };

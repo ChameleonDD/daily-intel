@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年8月31日 · 周一",
+  "date": "2026年9月1日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>神经纹理压缩线程高效解码</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>高斯辐射场刚体变形新法</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,67 +128,121 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "CAD透明渲染综述",
-      "sum": "综述CAD中透明渲染的工业部署与底层算法，梳理方法、权衡与挑战。",
-      "ta": "透明排序与性能权衡是实时渲染常客，可借鉴CAD工业方案。",
-      "src": "arXiv · cs.GR · 08-28",
-      "url": "https://arxiv.org/abs/2608.28310v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "铜氧化外观预测PBR化",
-      "sum": "提出管线预测铜表面氧化后外观，并转为albedo、法线、粗糙度、金属度贴图。",
-      "ta": "材质老化预测直接服务PBR工作流，可扩展至植被或场景风化。",
-      "src": "arXiv · cs.GR · 08-28",
-      "url": "https://arxiv.org/abs/2608.28102v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "神经纹理压缩线程高效解码",
-      "sum": "提出共享解码器MLP与渐进冻结训练，解决NTC的GPU线程分歧问题。",
-      "ta": "NTC性能瓶颈在分歧，此方案直接提升运行时解码效率，值得精读。",
-      "src": "arXiv · cs.GR · 08-28",
-      "url": "https://arxiv.org/abs/2608.27888v1"
+      "title": "高斯辐射场刚体变形新法",
+      "sum": "提出ARAP约束下的3DGS变形方法，保持局部刚性，提升编辑质量。",
+      "ta": "3DGS资产变形是TA做动态场景或角色特效的关键，此方法直接提升可控性。",
+      "src": "arXiv · cs.GR · 08-30",
+      "url": "https://arxiv.org/abs/2608.29538v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "恒定显存辐射场训练",
-      "sum": "ABCD框架以块坐标下降实现3DGS外核训练，仅激活一个空间块参数。",
-      "ta": "3DGS训练显存受限，此方法可支撑更大场景，对程序化生成有参考。",
-      "src": "arXiv · cs.GR · 08-27",
-      "url": "https://arxiv.org/abs/2608.27735v1"
+      "title": "扩散残差风格化高斯泼溅",
+      "sum": "DReSG用扩散模型残差增强3DGS风格化，更好捕捉参考风格细节。",
+      "ta": "风格化3DGS是快速迭代概念美术的利器，此方法能提升风格迁移的保真度。",
+      "src": "arXiv · cs.GR · 08-29",
+      "url": "https://arxiv.org/abs/2608.29048v1"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "视频生成模型学几何",
-      "sum": "论文探讨视频生成模型作为几何学习器的能力，未提游戏或实时应用。",
-      "ta": "视频模型几何能力或影响未来3D重建，但当前无直接TA关联。",
+      "imp": "mid",
+      "title": "视频驱动3D物体动画新法",
+      "sum": "BLARM从视频中提取刚性运动基元，混合生成3D物体动画。",
+      "ta": "从视频直接驱动3D资产动画，可加速动画预演和动态资产制作流程。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.28549"
+      "url": "https://huggingface.co/papers/2608.31113"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "自回归视频扩散长记忆",
-      "sum": "提出Ring Forcing方法提升自回归视频扩散的长期记忆精度。",
-      "ta": "视频扩散长时一致性或影响特效预览，但无实时渲染关联。",
+      "imp": "mid",
+      "title": "实时流式交互世界模型增强",
+      "sum": "Matrix-Game 3.5引入Patch Memory，增强实时流式交互世界模型性能。",
+      "ta": "实时交互世界模型是游戏AI和动态环境生成的前沿，值得关注其技术演进。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.26794"
+      "url": "https://huggingface.co/papers/2608.29910"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "视频时空定位新方法",
-      "sum": "提出高效生成式时空视频定位方法，用于视频中目标定位。",
-      "ta": "视频定位与TA工作流无直接关联，仅作AI技术速览。",
+      "imp": "mid",
+      "title": "生成先于重建的潜变量模型",
+      "sum": "GenFirst提出先生成后重建的端到端潜变量生成建模，提升稳定性。",
+      "ta": "潜变量生成模型稳定性提升，可能影响未来3D资产生成工具的开发方向。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.28192"
+      "url": "https://huggingface.co/papers/2608.29335"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "独立游戏全本地AI训练实践",
+      "sum": "Atelico工作室用自家美术作品训练本地AI模型，分享10个原型开发经验。",
+      "ta": "本地AI模型训练与美术资产结合，为工作室内部AI工具链提供真实案例。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/interview-new-indie-game-uses-local-ai-model-trained-entirely-on-studio-s-own-artists/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender制作后室场景教程",
+      "sum": "Blender Guru分享用Blender创建Backrooms场景的完整流程。",
+      "ta": "环境搭建和程序化纹理技巧可借鉴，适合快速产出氛围场景。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/blender-guru-shares-how-to-create-the-backrooms-using-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "叙事沙盒开放世界RPG评测",
+      "sum": "Rebel Wolves新作《血之黎明行者》获好评，或成年度游戏竞争者。",
+      "ta": "关注其叙事沙盒设计，可能影响开放世界关卡和任务流程的构建方式。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/the-blood-of-dawnwalker-is-a-special-kind-of-open-world-rpg-with-a-narrative-sandbox/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "2XKO角色特效制作解析",
+      "sum": "Sonia Firsova展示《英雄联盟》格斗游戏2XKO的角色VFX制作细节。",
+      "ta": "角色特效的材质和Shader设计是TA核心技能，此案例提供实战参考。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/take-closer-look-at-character-vfx-made-for-2xko/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Unity闪耀特效制作展示",
+      "sum": "展示用Unity制作的精细闪耀VFX效果，视觉上很魔幻。",
+      "ta": "Unity特效案例可对比UE5工作流，关注粒子系统和Shader实现差异。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/check-out-these-detailed-sparkling-vfx-made-with-unity/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender与Krita纹理绘制桥接",
+      "sum": "新工具连接Blender场景与Krita绘制，支持投影式纹理绘画。",
+      "ta": "纹理绘制工作流优化，可减少DCC工具切换成本，提升贴图制作效率。",
+      "src": "80 Level · 08-31",
+      "url": "https://80.lv/articles/this-tool-connects-blender-krita-for-texture-painting/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Steam 13TB数据泄露事件",
+      "sum": "Steam公开端点泄露13TB数据，含Valve及EA、WB等厂商预发布内容。",
+      "ta": "数据泄露可能暴露未发布引擎特性或资产，但需关注官方后续声明。",
+      "src": "Game Developer · 08-31",
+      "url": "https://www.gamedeveloper.com/pc/report-13tb-of-steam-data-leaked-after-users-access-publicly-accessible-endpoint-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Gamescom设备盗窃事件",
+      "sum": "Gamescom独立展区遭窃，多家小团队笔记本电脑和Steam Deck被盗。",
+      "ta": "行业展会安全事件，对独立开发者影响大，但无直接技术关联。",
+      "src": "Game Developer · 08-31",
+      "url": "https://www.gamedeveloper.com/business/indie-devs-and-publishers-hit-in-gamescom-equipment-thefts"
     }
   ],
   "flashbackTitle": "",
