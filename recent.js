@@ -2,8 +2,134 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-01 14:10",
+  "updated": "2026-09-02 13:37",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "金刚狼日本扫描之旅",
+      "sum": "Insomniac 团队赴日本进行实景扫描，采集自然与建筑资产用于《金刚狼》开发。",
+      "ta": "展示了 3A 工作室外景扫描的流程与规模，可参考其资产采集与整理思路。",
+      "src": "PlayStation Blog · 09-01",
+      "url": "https://blog.playstation.com/2026/09/01/marvels-wolverine-inside-insomniac-games-location-scanning-trip-to-japan/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "三角形神经渲染基准发布",
+      "sum": "MeshSplatBench 提出统一基准，评估基于三角形的神经渲染在标准光栅硬件上的表现。",
+      "ta": "为评估可光栅化的神经渲染方法提供标准，对探索混合渲染管线的 TA 有参考价值。",
+      "src": "arXiv · cs.GR · 09-01",
+      "url": "https://arxiv.org/abs/2609.01306v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "程序化生成可编辑科学图表",
+      "sum": "新方法将科学图表生成视为程序合成，可递归生成并支持编辑，优于纯图像生成。",
+      "ta": "程序化生成思路或可迁移至技术文档与资产管线中的可编辑图表制作。",
+      "src": "arXiv · cs.GR · 09-01",
+      "url": "https://arxiv.org/abs/2609.01006v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "可控视频素描风格生成",
+      "sum": "HyperSketch 在风格超空间中实现可控的矢量素描动画生成，提升风格多样性与控制力。",
+      "ta": "矢量风格化动画的可控生成，对探索非写实渲染与动态分镜的 TA 有启发。",
+      "src": "arXiv · cs.GR · 09-01",
+      "url": "https://arxiv.org/abs/2609.00919v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "填补动漫上色遗漏区域",
+      "sum": "研究聚焦动画上色流程中常见的小面积未上色缝隙，提出针对性填补方法。",
+      "ta": "针对 2D 动画管线的痛点，其思路或可辅助 3D 风格化贴图与手绘资产的自动化处理。",
+      "src": "arXiv · cs.GR · 09-01",
+      "url": "https://arxiv.org/abs/2609.00800v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "线条图逆向绑定优化",
+      "sum": "提出从手绘轮廓线逆向推断并优化角色绑定参数的方法，以直接表达艺术意图。",
+      "ta": "将 2D 轮廓意图映射到 3D 绑定，为风格化角色动画的创作提供新交互范式。",
+      "src": "arXiv · cs.GR · 09-01",
+      "url": "https://arxiv.org/abs/2609.00732v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "线图元逆向渲染建模",
+      "sum": "新方法利用线图元逆向渲染，捕捉毛发、纤维等模糊各向异性结构用于实时可视化。",
+      "ta": "针对毛发等复杂结构的实时渲染建模，对植被与特效资产的程序化生成有直接参考。",
+      "src": "arXiv · cs.GR · 09-01",
+      "url": "https://arxiv.org/abs/2609.00625v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频推断参数化折纸程序",
+      "sum": "FoldingAgent 框架从演示视频中推断显式参数化折纸程序，结合 VLM 与专用工具。",
+      "ta": "从视频学习程序化几何操作，或可启发程序化生成中从演示到规则提取的思路。",
+      "src": "arXiv · cs.GR · 08-31",
+      "url": "https://arxiv.org/abs/2609.00377v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "实时体素建筑破坏演示",
+      "sum": "Dennis Gustafsson 发布新演示，展示令人满意的实时体素建筑拆除效果。",
+      "ta": "体素破坏的实时效果演示，可关注其物理模拟与渲染性能平衡的实现细节。",
+      "src": "80 Level · 09-01",
+      "url": "https://80.lv/articles/this-real-time-voxel-building-demolition-is-so-satisfying/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "免费高级 Maya 绑定发布",
+      "sum": "一款包含面部表情的免费 Maya 绑定，提供高级控制功能供下载。",
+      "ta": "可直接用于动画测试与绑定学习，节省制作高质量面部绑定原型的时间。",
+      "src": "80 Level · 09-01",
+      "url": "https://80.lv/articles/get-this-free-maya-rig-with-advanced-controls/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "免费获取 70+ Shader 教程",
+      "sum": "XorDev 提供超过 70 个 Shader 教程的免费访问权限。",
+      "ta": "大量 Shader 教程资源，适合系统学习或查漏补缺，提升材质编写能力。",
+      "src": "80 Level · 09-01",
+      "url": "https://80.lv/articles/get-free-access-to-over-70-shader-tutorials/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 一键生成线稿",
+      "sum": "Masamune Sakaki 发布免费工具，可一键从任意 3D 模型生成线稿。",
+      "ta": "快速生成线稿的工具，可用于概念设计、技术美术文档或风格化渲染辅助。",
+      "src": "80 Level · 09-01",
+      "url": "https://80.lv/articles/one-click-line-art-from-any-3d-model-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "C4D 与 Blender 损伤插件",
+      "sum": "Edgy 插件为 C4D 与 Blender 提供六种预设，可创建逼真损伤效果并支持扩展。",
+      "ta": "快速生成逼真损伤效果，适合用于场景破坏与资产老化，提升效率。",
+      "src": "80 Level · 09-01",
+      "url": "https://80.lv/articles/check-out-this-plug-in-for-c4d-blender-that-created-realistic-damage/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Paradox 新作吸引策略新手",
+      "sum": "《Afterworld》游戏总监解释如何用 RPG 钩子吸引新玩家进入宏大策略游戏。",
+      "ta": "了解策略游戏设计趋势，对理解玩家体验与引导机制设计有参考。",
+      "src": "Game Developer · 09-01",
+      "url": "https://www.gamedeveloper.com/design/paradox-interactive-s-afterworld-wants-to-entice-new-players-to-grand-strategy-with-tasty-rpg-hooks"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -58,15 +184,6 @@ window.INTEL_RECENT = {
       "ta": "本地AI模型训练与美术资产结合，为工作室内部AI工具链提供真实案例。",
       "src": "80 Level · 08-31",
       "url": "https://80.lv/articles/interview-new-indie-game-uses-local-ai-model-trained-entirely-on-studio-s-own-artists/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender制作后室场景教程",
-      "sum": "Blender Guru分享用Blender创建Backrooms场景的完整流程。",
-      "ta": "环境搭建和程序化纹理技巧可借鉴，适合快速产出氛围场景。",
-      "src": "80 Level · 08-31",
-      "url": "https://80.lv/articles/blender-guru-shares-how-to-create-the-backrooms-using-blender/"
     },
     {
       "cat": "biz",
@@ -185,15 +302,6 @@ window.INTEL_RECENT = {
       "ta": "视频定位与TA工作流无直接关联，仅作AI技术速览。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.28192"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Maya风格化曲线毛发教程",
-      "sum": "教程展示Maya中制作风格化曲线毛发，并提供Blender版本。",
-      "ta": "风格化毛发是TA常用技能，曲线方案可参考用于角色或植被。",
-      "src": "80 Level · 08-29",
-      "url": "https://80.lv/articles/how-to-make-stylized-hair-look-like-curves-in-maya/"
     },
     {
       "cat": "flow",
@@ -1713,115 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "非游戏图形学，但捕捉与重建技术或可迁移至角色动画数据采集。",
       "src": "arXiv · cs.GR · 08-10",
       "url": "https://arxiv.org/abs/2608.09127v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Rodrigues 空间平滑动作拼接",
-      "sum": "基于 Rodrigues 向量空间的拉普拉斯优化，实现平滑的动作拼接与过渡。",
-      "ta": "对角色动画系统有价值，可改善动作混合与重定向的连续性。",
-      "src": "arXiv · cs.GR · 08-10",
-      "url": "https://arxiv.org/abs/2608.08986v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "自适应体积参数化方法",
-      "sum": "提出自适应体积参数化，用于将 3-流形映射到简化体积域，扩展标准域限制。",
-      "ta": "偏几何处理基础研究，对程序化生成或网格处理工具链有潜在参考。",
-      "src": "arXiv · cs.GR · 08-09",
-      "url": "https://arxiv.org/abs/2608.08672v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可微模拟反向扫描伴随法",
-      "sum": "提出反向扫描伴随法用于块隐式模拟，避免内存随求解器深度增长。",
-      "ta": "对物理模拟与可微渲染管线有启发，可提升基于梯度的优化效率。",
-      "src": "arXiv · cs.GR · 08-09",
-      "url": "https://arxiv.org/abs/2608.08559v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "QoI 感知科学有损压缩框架",
-      "sum": "提出可视化分析框架 FZ-VIS，用于感知关键量的科学有损压缩。",
-      "ta": "非游戏领域，但数据压缩策略或对大规模纹理/几何资源管理有参考。",
-      "src": "arXiv · cs.GR · 08-09",
-      "url": "https://arxiv.org/abs/2608.08386v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "医学体积高斯泼溅精确裁剪",
-      "sum": "提出 XClipGS 精确半空间裁剪，用于医学体积高斯泼溅的交互渲染。",
-      "ta": "裁剪算法可迁移至游戏体积渲染，提升高斯泼溅的编辑与可视化能力。",
-      "src": "arXiv · cs.GR · 08-07",
-      "url": "https://arxiv.org/abs/2608.07760v1"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 2,
-      "title": "ArtStation 与 Sketchfab 被收购",
-      "sum": "KitBash 收购 ArtStation 和 Sketchfab，与 KitBash3D 等整合，Epic 聚焦 UE6。",
-      "ta": "资产平台易主可能影响 TA 工作流与资产分发生态，需关注后续整合。",
-      "src": "80 Level · 08-10",
-      "url": "https://80.lv/articles/artstation-and-sketchfab-have-been-acquired-by-kitbash/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "剧情驱动游戏《Sultan》推荐",
-      "sum": "介绍一款剧情丰富、需玩家参与而非旁观的游戏《Sultan》。",
-      "ta": "非技术向，但可观察叙事驱动游戏的设计趋势。",
-      "src": "80 Level · 08-10",
-      "url": "https://80.lv/articles/try-to-appease-sultan-by-doing-questionable-things-to-people-animals-in-this-story-rich-game/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "蜘蛛侠风格几何节点网枪",
-      "sum": "使用 Blender 几何节点实现蜘蛛侠风格网枪效果，附制作展示。",
-      "ta": "几何节点工作流参考，可启发程序化生成工具链设计。",
-      "src": "80 Level · 08-10",
-      "url": "https://80.lv/articles/spider-man-style-web-shooter-with-geometry-nodes/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "修复模拟游戏《ReStory》回本",
-      "sum": "怀旧修复模拟游戏《ReStory》12 小时内收回预算，成为 tinyBuild 最高评分游戏。",
-      "ta": "独立游戏商业案例，可观察小众题材的市场表现。",
-      "src": "80 Level · 08-10",
-      "url": "https://80.lv/articles/nostalgic-repair-sim-restory-recouped-its-budget-in-12-hours/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity 奥日风格 2D 水体系统",
-      "sum": "在 Unity 中创建奥日风格 2D 水体，涉及程序化生成、Shader 与渲染技巧。",
-      "ta": "2D 水体 Shader 与程序化生成实现，对横版游戏 TA 有直接参考价值。",
-      "src": "80 Level · 08-10",
-      "url": "https://80.lv/articles/creating-ori-style-2d-water-system-in-unity/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Walmart 游戏网站裁员",
-      "sum": "Walmart 支持的游戏网站 Restart 解雇其五人编辑团队。",
-      "ta": "行业动态，反映游戏媒体商业环境变化。",
-      "src": "Game Developer · 08-10",
-      "url": "https://www.gamedeveloper.com/business/the-video-game-site-backed-by-walmart-has-laid-off-its-editorial-team"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "EVE 工作室聘前部长领导 AI",
-      "sum": "EVE Online 工作室 Fenris Creations 聘请冰岛前部长领导自主 AI 工作。",
-      "ta": "关注游戏公司 AI 战略布局，但原文未提具体技术细节。",
-      "src": "Game Developer · 08-10",
-      "url": "https://www.gamedeveloper.com/business/eve-online-studio-hires-former-icelandic-minister-to-lead-autonomous-ai-efforts"
     }
   ]
 };
