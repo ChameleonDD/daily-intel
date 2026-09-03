@@ -2,8 +2,127 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-02 13:37",
+  "updated": "2026-09-03 13:37",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "投影仿射刚体动力学",
+      "sum": "提出多体系统投影仿射动力学方法，处理非光滑交互与复杂约束。",
+      "ta": "关注其约束求解与稳定性，或可借鉴到植被/布料等程序化物理模拟。",
+      "src": "arXiv · cs.GR · 09-02",
+      "url": "https://arxiv.org/abs/2609.02675v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "3DGS前馈重光照新法",
+      "sum": "LightBridge实现3D高斯泼溅的生成式前馈重光照，无需逐场景逆渲染。",
+      "ta": "直接关系3DGS资产可编辑性，是TA评估重光照工作流的重要参考。",
+      "src": "arXiv · cs.GR · 09-02",
+      "url": "https://arxiv.org/abs/2609.02543v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "文本驱动图形诗生成",
+      "sum": "Telligram用扩散引导骨架优化，从纯文本生成紧凑图形诗。",
+      "ta": "文本驱动字形布局思路，或可启发程序化纹理与装饰图案生成。",
+      "src": "arXiv · cs.GR · 09-02",
+      "url": "https://arxiv.org/abs/2609.02511v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "多轴3D打印鲁棒处理",
+      "sum": "WildFab处理含实体-壳组合及非流形结构的真实世界模型。",
+      "ta": "非流形几何处理思路，对DCC工具链中网格修复有参考价值。",
+      "src": "arXiv · cs.GR · 09-02",
+      "url": "https://arxiv.org/abs/2609.02413v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "统一动作重定向至人形",
+      "sum": "利用点云对应学习，将人类动作统一重定向到不同人形机器人。",
+      "ta": "跨形态动作迁移方法，或可用于多角色动画系统与程序化绑定。",
+      "src": "arXiv · cs.GR · 09-02",
+      "url": "https://arxiv.org/abs/2609.02134v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长时程视频世界模型",
+      "sum": "SolarWM开放数据与可扩展训练，用于长时程视频世界模型。",
+      "ta": "世界模型进展或影响未来实时场景生成与游戏AI预测。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.02886"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "野外视频生成动物动作",
+      "sum": "Kirin从野外视频生成动物运动，无需专门动捕设备。",
+      "ta": "动物动作生成新数据源，或可辅助游戏内非人形角色动画。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.01823"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Nexus收购SteamDB",
+      "sum": "Nexus Mods所有者收购SteamDB，计划利用版本历史识别不兼容模组。",
+      "ta": "模组生态数据整合，影响游戏更新对玩家模组兼容性管理。",
+      "src": "80 Level · 09-02",
+      "url": "https://80.lv/articles/nexus-mods-owner-acquires-steamdb-after-co-founder-struggled-with-burnout/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender模型防御插件",
+      "sum": "新Blender插件让模型遭受随机攻击，增加工作流趣味性。",
+      "ta": "趣味性插件，展示Blender生态创意，非核心生产工具。",
+      "src": "80 Level · 09-02",
+      "url": "https://80.lv/articles/this-blender-add-on-makes-you-defend-your-model-from-random-attacks/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动森启发六边形球体",
+      "sum": "利用《动物森友会》启发技巧构建六边形球体，附Shader展示。",
+      "ta": "六边形球体Shader技巧，对风格化植被与几何体生成有借鉴。",
+      "src": "80 Level · 09-02",
+      "url": "https://80.lv/articles/building-hexagon-sphere-using-animal-crossing-inspired-trick/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 2,
+      "title": "鬼武者动捕怪物动画",
+      "sum": "CAPCOM分享《鬼武者》多臂怪物动捕动画制作流程。",
+      "ta": "多臂怪物动捕与重定向案例，对非人形角色动画管线有直接参考。",
+      "src": "80 Level · 09-02",
+      "url": "https://80.lv/articles/how-onimusha-way-of-the-sword-s-team-used-motion-capture-for-animating-monsters/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "2.5D视差动画幕后",
+      "sum": "Guillaume Scoffié展示音乐艺术家2.5D视差动画制作视口。",
+      "ta": "2.5D视差动画工作流，对风格化过场与UI特效有启发。",
+      "src": "80 Level · 09-02",
+      "url": "https://80.lv/articles/inside-the-making-of-2-5d-parallax-animation-for-music-artist/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "PSX风格恐怖海水",
+      "sum": "为DREDGE类恐怖游戏制作PSX风格海水，氛围出色。",
+      "ta": "PSX风格水体Shader案例，对低多边形恐怖游戏视觉有参考。",
+      "src": "80 Level · 09-02",
+      "url": "https://80.lv/articles/beautiful-psx-style-water-for-dredge-like-game-but-scarier/"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -106,15 +225,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender 一键生成线稿",
-      "sum": "Masamune Sakaki 发布免费工具，可一键从任意 3D 模型生成线稿。",
-      "ta": "快速生成线稿的工具，可用于概念设计、技术美术文档或风格化渲染辅助。",
-      "src": "80 Level · 09-01",
-      "url": "https://80.lv/articles/one-click-line-art-from-any-3d-model-in-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "C4D 与 Blender 损伤插件",
       "sum": "Edgy 插件为 C4D 与 Blender 提供六种预设，可创建逼真损伤效果并支持扩展。",
       "ta": "快速生成逼真损伤效果，适合用于场景破坏与资产老化，提升效率。",
@@ -148,15 +258,6 @@ window.INTEL_RECENT = {
       "ta": "风格化3DGS是快速迭代概念美术的利器，此方法能提升风格迁移的保真度。",
       "src": "arXiv · cs.GR · 08-29",
       "url": "https://arxiv.org/abs/2608.29048v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "视频驱动3D物体动画新法",
-      "sum": "BLARM从视频中提取刚性运动基元，混合生成3D物体动画。",
-      "ta": "从视频直接驱动3D资产动画，可加速动画预演和动态资产制作流程。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.31113"
     },
     {
       "cat": "ai",
@@ -1131,16 +1232,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "3DGS 加速光线追踪新法",
-      "sum": "基于粒子反向传播加速 3DGS 训练，支持反射等次级光线效果。",
-      "ta": "突破光栅化近似限制，对追求真实反射的实时渲染方案意义重大。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17298v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "mid",
       "title": "WebGPU 六法绘制多层地形",
       "sum": "比较六种 WebGPU 渲染方法，用于可编辑多层高度场地形。",
@@ -1730,97 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "对关注行业动态的TA，可留意此作的开发进展与美术风格。",
       "src": "80 Level · 08-11",
       "url": "https://80.lv/articles/1666-amsterdam-s-early-access-launch-date-revealed/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《影之刃零》公布实机演示",
-      "sum": "《Phantom Blade Zero》开启预购，并宣布8月17日State of Play将深度展示实机玩法。",
-      "ta": "对关注动作游戏画面表现的TA，可留意其后续实机演示中的渲染与特效。",
-      "src": "PlayStation Blog · 08-12",
-      "url": "https://blog.playstation.com/2026/08/11/watch-the-phantom-blade-zero-gameplay-deep-dive-state-of-play-on-august-17-pre-orders-live-today/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《金刚狼》限定PS5公布",
-      "sum": "Insomniac Games公布《漫威金刚狼》主题PS5数字版限定主机捆绑包及配件。",
-      "ta": "对行业动态感兴趣的TA，可快速了解该作的市场营销节奏。",
-      "src": "PlayStation Blog · 08-11",
-      "url": "https://blog.playstation.com/2026/08/11/first-look-at-marvels-wolverine-limited-edition-ps5-console-bundle-and-accessories/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前育碧员工成立新工作室",
-      "sum": "前育碧巴塞罗那员工在裁员后成立新工作室Dark Ritual Studios。",
-      "ta": "对行业生态关注的TA，可留意新团队的动向与潜在项目。",
-      "src": "Game Developer · 08-11",
-      "url": "https://www.gamedeveloper.com/business/former-ubisoft-barcelona-devs-launch-dark-ritual-studios"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Supermassive再启裁员",
-      "sum": "英国工作室Supermassive Games三年内第三轮裁员，计划裁减多达75个职位。",
-      "ta": "对行业稳定性关注的TA，需了解当前游戏行业的就业形势。",
-      "src": "Game Developer · 08-11",
-      "url": "https://www.gamedeveloper.com/business/supermassive-games-begins-third-round-of-layoffs-in-three-years"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "英国订阅提案引担忧",
-      "sum": "Ukie称英国限制性订阅提案可能损害游戏企业，阻碍投资并造成财务风险。",
-      "ta": "对商业模式敏感的TA，可关注此政策对游戏发行与订阅制的影响。",
-      "src": "Game Developer · 08-11",
-      "url": "https://www.gamedeveloper.com/business/ukie-claims-restrictive-subscription-proposals-could-harm-uk-game-businesses-in-the-uk"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Meta 开源 Muse Glimmer 模型",
-      "sum": "Meta 发布 30B 开源权重模型 Muse Glimmer，支持 120K 上下文，面向本地 AI 工作流。",
-      "ta": "关注其本地推理能力是否可被用于游戏内 AI 或工具链，但原文未提游戏关联。",
-      "src": "NVIDIA · 08-10",
-      "url": "https://developer.nvidia.com/blog/run-local-agentic-ai-workflows-with-metas-muse-glimmer-on-nvidia/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "无人深空十周年纪念",
-      "sum": "Hello Games 庆祝《无人深空》发售十周年，回顾玩家首次登陆外星球的时刻。",
-      "ta": "行业里程碑，可观察长线运营游戏的社区维护与内容更新策略。",
-      "src": "PlayStation Blog · 08-10",
-      "url": "https://blog.playstation.com/2026/08/10/no-mans-sky-developer-hello-games-celebrates-10-year-anniversary/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS 商店七月下载榜公布",
-      "sum": "七月 PS5/PS4 下载榜由《使命召唤：黑色行动 II》领跑，PS VR2 榜首为《I Am Cat》。",
-      "ta": "了解平台热销趋势，辅助判断主流玩家偏好与市场方向。",
-      "src": "PlayStation Blog · 08-10",
-      "url": "https://blog.playstation.com/2026/08/10/playstation-store-july-2026s-top-downloads/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "混合神经微表面 BRDF 模型",
-      "sum": "提出混合神经-微表面 BRDF 模型，用于实时渲染中复杂光-表面交互的逼真外观。",
-      "ta": "直接冲击实时渲染管线，可能替代传统微表面模型，需精读其性能与集成方式。",
-      "src": "arXiv · cs.GR · 08-10",
-      "url": "https://arxiv.org/abs/2608.09604v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "高保真机器人洗澡演示捕捉",
-      "sum": "研究用于机器人辅助洗澡的高保真人形演示捕捉、重建与迁移，面向临床任务。",
-      "ta": "非游戏图形学，但捕捉与重建技术或可迁移至角色动画数据采集。",
-      "src": "arXiv · cs.GR · 08-10",
-      "url": "https://arxiv.org/abs/2608.09127v1"
     }
   ]
 };
