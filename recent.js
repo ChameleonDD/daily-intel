@@ -2,8 +2,119 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-03 13:37",
+  "updated": "2026-09-04 13:42",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Capcom详解RE引擎刀剑战斗",
+      "sum": "Capcom访谈：RE引擎实时计算刀剑碰撞，含京都环境美术管线。",
+      "ta": "RE引擎的实时物理与美术管线结合案例，对战斗特效与场景制作有直接参考价值。",
+      "src": "80 Level · 09-03",
+      "url": "https://80.lv/articles/how-capcom-built-onimushas-real-time-sword-combat-re-engine/"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 2,
+      "title": "UE5重现80年代动漫渲染",
+      "sum": "Shapefarm用UE5自定义着色器与胶片特效，重现80-90年代动漫风格。",
+      "ta": "自定义着色器与风格化后处理的实战案例，适合研究非写实渲染管线的实现路径。",
+      "src": "Unreal Engine · 09-03",
+      "url": "https://www.unrealengine.com/tech-blog/stepping-inside-a-retro-anime-inspired-game-a-look-into-the-rendering-of-orbitals"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "TileGS优化高斯溅射光栅化",
+      "sum": "TileGS提出瓦片局部深度分箱，减少全局排序流量，提升3DGS渲染效率。",
+      "ta": "3DGS光栅化新优化，直接关系实时渲染性能，值得深入评估其对管线的影响。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03613v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS实时调色编辑框架",
+      "sum": "新框架支持3DGS基于调色板的实时颜色与亮度编辑，含独立色调曲线。",
+      "ta": "为3DGS场景提供专业级调色工具，可能简化TA在场景后期色彩调整的工作流。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03897v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "点云神经编辑表面一致性",
+      "sum": "P-CORE提出自监督表面一致性方法，用于点云神经表示的非刚性编辑。",
+      "ta": "点云表示的可编辑性增强，对TA在资产编辑与变形工作流中有潜在应用。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03349v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "点云表示几何纹理同编",
+      "sum": "PointGT实现点云表示的几何与纹理同步编辑，支持高保真重建。",
+      "ta": "点云编辑新方案，可能简化TA对扫描资产的后期处理与修改流程。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03341v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "相机条件世界模型奖励建模",
+      "sum": "WorldReward提出为相机条件世界模型设计奖励建模方法。",
+      "ta": "世界模型训练新方向，可能影响未来AI驱动的场景生成工具。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.03952"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "少步生成渲染新方法",
+      "sum": "FlashRender通过相机控制视频MeanFlow实现少步生成渲染。",
+      "ta": "生成式渲染新思路，可能对实时预览或快速迭代有潜在价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.03563"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "自然肩部衣物绑定技巧",
+      "sum": "展示高质量过肩衣物绑定的权重绘制细节。",
+      "ta": "衣物绑定权重示例，对角色特效与布料模拟有直接参考价值。",
+      "src": "80 Level · 09-03",
+      "url": "https://80.lv/articles/perfectly-natural-over-the-shoulder-clothing-rig/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox云游戏时长设上限",
+      "sum": "Game Pass订阅者将不再享有Xbox云游戏无限时长。",
+      "ta": "云游戏政策调整，可能影响TA对云端测试与部署策略的考量。",
+      "src": "Game Developer · 09-03",
+      "url": "https://www.gamedeveloper.com/cloud/xbox-to-cap-cloud-gaming-hours-for-game-pass-subscribers"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Supercell收购Metacore将完成",
+      "sum": "Supercell收购Metacore交易预计本月完成，Merge Mansion将入其组合。",
+      "ta": "行业并购动态，对游戏市场格局有间接影响。",
+      "src": "Game Developer · 09-03",
+      "url": "https://www.gamedeveloper.com/business/supercell-s-acquisition-of-metacore-expected-to-close-this-month"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "汉堡游戏原型资助启动",
+      "sum": "Gamecity Hamburg启动第二轮原型资助，最高提供8万欧元。",
+      "ta": "地区性资助机会，对独立开发者或小团队有参考价值。",
+      "src": "Game Developer · 09-03",
+      "url": "https://www.gamedeveloper.com/business/gamecity-hamburg-launches-second-round-of-prototype-funding"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -12,16 +123,6 @@ window.INTEL_RECENT = {
       "ta": "关注其约束求解与稳定性，或可借鉴到植被/布料等程序化物理模拟。",
       "src": "arXiv · cs.GR · 09-02",
       "url": "https://arxiv.org/abs/2609.02675v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "3DGS前馈重光照新法",
-      "sum": "LightBridge实现3D高斯泼溅的生成式前馈重光照，无需逐场景逆渲染。",
-      "ta": "直接关系3DGS资产可编辑性，是TA评估重光照工作流的重要参考。",
-      "src": "arXiv · cs.GR · 09-02",
-      "url": "https://arxiv.org/abs/2609.02543v1"
     },
     {
       "cat": "gfx",
@@ -777,15 +878,6 @@ window.INTEL_RECENT = {
       "ta": "行业悼念，无TA技术关联。",
       "src": "Game Developer · 08-26",
       "url": "https://www.gamedeveloper.com/audio/obituary-actor-tim-curry-celebrated-for-his-work-in-games-has-passed-at-age-80"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "星战新作采用UE5开发",
-      "sum": "Bit Reactor技术总监谈为何选择UE5及开发中亮点功能。",
-      "ta": "了解3A战术游戏在UE5中的技术选型与管线实践。",
-      "src": "Unreal Engine · 08-25",
-      "url": "https://www.unrealengine.com/developer-interviews/star-wars-zero-company-bit-reactor-crafts-a-galaxy-of-tactical-possibilities-with-ue5"
     },
     {
       "cat": "gfx",
@@ -1728,99 +1820,6 @@ window.INTEL_RECENT = {
       "ta": "手绘风格化渲染的实战案例，对非真实感管线和美术风格统一有借鉴意义。",
       "src": "80 Level · 08-12",
       "url": "https://80.lv/articles/how-lunarium-blends-hand-painted-2d-art-with-3d-environments/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "GPU计算程序化2D草",
-      "sum": "Jarl游戏实现GPU Compute程序化2D草，提供浏览器交互演示。",
-      "ta": "GPU Compute生成植被的轻量方案，对移动端或风格化场景的草渲染有直接参考。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/building-procedural-2d-grass-with-gpu-compute/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender纹理绘制插件MatPlus",
-      "sum": "MatPlus在Blender内实现类似Substance Painter的3D模型直接绘制，支持多UDIM和游戏贴图导出。",
-      "ta": "Blender内完成贴图绘制可简化资产管线，对依赖Substance的TA是潜在替代工具。",
-      "src": "80 Level · 08-12",
-      "url": "https://80.lv/articles/matplus-brings-substance-3d-painter-inspired-texture-painting-to-blender/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Epic出售ArtStation与Sketchfab",
-      "sum": "Epic Games将ArtStation和Sketchfab出售给KitBash，两平台于2021年收购。",
-      "ta": "资产平台易主可能影响TA常用的资产获取与分享生态，需关注后续整合。",
-      "src": "Game Developer · 08-12",
-      "url": "https://www.gamedeveloper.com/business/epics-sells-artstation-and-sketchfab-to-kitbash"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "高斯雕刻实现可控表面重建",
-      "sum": "3DGS新方法Gaussian Sculpting通过场优化实现端到端可控表面重建，解决几何误差难题。",
-      "ta": "对依赖3DGS做扫描资产重建的TA，此法可显著提升表面精度与可控性，值得精读。",
-      "src": "arXiv · cs.GR · 08-11",
-      "url": "https://arxiv.org/abs/2608.10602v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "Amulet实现高频帧外推渲染",
-      "sum": "新渲染法Amulet用稀疏分层场景表示与自适应着色，实现高频帧外推，优于重投影技术。",
-      "ta": "对追求高帧率或VR体验的TA，此法可突破帧生成瓶颈，是渲染管线的重要参考。",
-      "src": "arXiv · cs.GR · 08-11",
-      "url": "https://arxiv.org/abs/2608.10423v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "物理野火模拟融入高斯场景",
-      "sum": "WildFireGS在语义增强的高斯泼溅森林场景中实现基于物理的野火模拟，兼顾真实与规模。",
-      "ta": "对做环境特效或程序化植被的TA，此方法展示了GS场景中物理模拟的集成路径。",
-      "src": "arXiv · cs.GR · 08-11",
-      "url": "https://arxiv.org/abs/2608.11100v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "GENEA挑战评估手势生成",
-      "sum": "第四届GENEA挑战赛发布结果，大规模评估五个语音驱动手势生成系统在对话数据集上的表现。",
-      "ta": "对关注NPC动画或程序化动作的TA，可了解当前语音驱动手势生成的技术水平。",
-      "src": "arXiv · cs.GR · 08-11",
-      "url": "https://arxiv.org/abs/2608.10839v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Three.js纯着色器构建外星生物",
-      "sum": "开发者Drin展示在Three.js中完全用着色器数学构建的无网格外星生物。",
-      "ta": "对WebGL或轻量级渲染的TA，此案例展示了纯Shader建模的极致技巧与思路。",
-      "src": "80 Level · 08-11",
-      "url": "https://80.lv/articles/this-alien-has-no-mesh-is-built-in-three-js-with-shader-math/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "文字构建FPS游戏解析",
-      "sum": "开发者Yechan Choi分享文字FPS游戏《Torizon Telecom》的创作历程与机制设计。",
-      "ta": "对探索非传统渲染或UI交互的TA，此案例提供了独特的视觉与玩法结合思路。",
-      "src": "80 Level · 08-11",
-      "url": "https://80.lv/articles/torizon-telecom-an-fps-built-entirely-out-of-letters-and-words/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《1666阿姆斯特丹》定档",
-      "sum": "Panache Digital Games宣布《1666: Amsterdam》抢先体验日期并公布新玩法视频。",
-      "ta": "对关注行业动态的TA，可留意此作的开发进展与美术风格。",
-      "src": "80 Level · 08-11",
-      "url": "https://80.lv/articles/1666-amsterdam-s-early-access-launch-date-revealed/"
     }
   ]
 };

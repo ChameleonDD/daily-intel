@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月3日 · 周四",
+  "date": "2026年9月4日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>3DGS前馈重光照新法</em> / <em>鬼武者动捕怪物动画</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Capcom详解RE引擎刀剑战斗</em> / <em>UE5重现80年代动漫渲染</em> / <em>TileGS优化高斯溅射光栅化</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,123 +127,133 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "投影仿射刚体动力学",
-      "sum": "提出多体系统投影仿射动力学方法，处理非光滑交互与复杂约束。",
-      "ta": "关注其约束求解与稳定性，或可借鉴到植被/布料等程序化物理模拟。",
-      "src": "arXiv · cs.GR · 09-02",
-      "url": "https://arxiv.org/abs/2609.02675v1"
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Capcom详解RE引擎刀剑战斗",
+      "sum": "Capcom访谈：RE引擎实时计算刀剑碰撞，含京都环境美术管线。",
+      "ta": "RE引擎的实时物理与美术管线结合案例，对战斗特效与场景制作有直接参考价值。",
+      "src": "80 Level · 09-03",
+      "url": "https://80.lv/articles/how-capcom-built-onimushas-real-time-sword-combat-re-engine/"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 2,
+      "title": "UE5重现80年代动漫渲染",
+      "sum": "Shapefarm用UE5自定义着色器与胶片特效，重现80-90年代动漫风格。",
+      "ta": "自定义着色器与风格化后处理的实战案例，适合研究非写实渲染管线的实现路径。",
+      "src": "Unreal Engine · 09-03",
+      "url": "https://www.unrealengine.com/tech-blog/stepping-inside-a-retro-anime-inspired-game-a-look-into-the-rendering-of-orbitals"
     },
     {
       "cat": "gfx",
       "imp": "hi",
-      "rank": 1,
-      "title": "3DGS前馈重光照新法",
-      "sum": "LightBridge实现3D高斯泼溅的生成式前馈重光照，无需逐场景逆渲染。",
-      "ta": "直接关系3DGS资产可编辑性，是TA评估重光照工作流的重要参考。",
-      "src": "arXiv · cs.GR · 09-02",
-      "url": "https://arxiv.org/abs/2609.02543v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "文本驱动图形诗生成",
-      "sum": "Telligram用扩散引导骨架优化，从纯文本生成紧凑图形诗。",
-      "ta": "文本驱动字形布局思路，或可启发程序化纹理与装饰图案生成。",
-      "src": "arXiv · cs.GR · 09-02",
-      "url": "https://arxiv.org/abs/2609.02511v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "多轴3D打印鲁棒处理",
-      "sum": "WildFab处理含实体-壳组合及非流形结构的真实世界模型。",
-      "ta": "非流形几何处理思路，对DCC工具链中网格修复有参考价值。",
-      "src": "arXiv · cs.GR · 09-02",
-      "url": "https://arxiv.org/abs/2609.02413v1"
+      "rank": 3,
+      "title": "TileGS优化高斯溅射光栅化",
+      "sum": "TileGS提出瓦片局部深度分箱，减少全局排序流量，提升3DGS渲染效率。",
+      "ta": "3DGS光栅化新优化，直接关系实时渲染性能，值得深入评估其对管线的影响。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03613v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "统一动作重定向至人形",
-      "sum": "利用点云对应学习，将人类动作统一重定向到不同人形机器人。",
-      "ta": "跨形态动作迁移方法，或可用于多角色动画系统与程序化绑定。",
-      "src": "arXiv · cs.GR · 09-02",
-      "url": "https://arxiv.org/abs/2609.02134v1"
+      "title": "3DGS实时调色编辑框架",
+      "sum": "新框架支持3DGS基于调色板的实时颜色与亮度编辑，含独立色调曲线。",
+      "ta": "为3DGS场景提供专业级调色工具，可能简化TA在场景后期色彩调整的工作流。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03897v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "截断梯度提升3DGS鲁棒性",
+      "sum": "TruncGradGS通过截断梯度更新，解决3DGS优化中的梯度消失问题。",
+      "ta": "针对3DGS训练不稳定性的改进，对提升重建质量有潜在帮助，值得关注。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03534v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "点云神经编辑表面一致性",
+      "sum": "P-CORE提出自监督表面一致性方法，用于点云神经表示的非刚性编辑。",
+      "ta": "点云表示的可编辑性增强，对TA在资产编辑与变形工作流中有潜在应用。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03349v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "点云表示几何纹理同编",
+      "sum": "PointGT实现点云表示的几何与纹理同步编辑，支持高保真重建。",
+      "ta": "点云编辑新方案，可能简化TA对扫描资产的后期处理与修改流程。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03341v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "长时程视频世界模型",
-      "sum": "SolarWM开放数据与可扩展训练，用于长时程视频世界模型。",
-      "ta": "世界模型进展或影响未来实时场景生成与游戏AI预测。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.02886"
+      "title": "UE5管线生成世界模型数据",
+      "sum": "论文提出基于UE5的管线，为动作条件视频生成构建预训练数据。",
+      "ta": "UE5用于合成训练数据，对TA探索AI辅助内容生成有直接参考意义。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.03557v1"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "野外视频生成动物动作",
-      "sum": "Kirin从野外视频生成动物运动，无需专门动捕设备。",
-      "ta": "动物动作生成新数据源，或可辅助游戏内非人形角色动画。",
+      "title": "相机条件世界模型奖励建模",
+      "sum": "WorldReward提出为相机条件世界模型设计奖励建模方法。",
+      "ta": "世界模型训练新方向，可能影响未来AI驱动的场景生成工具。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.01823"
+      "url": "https://huggingface.co/papers/2609.03952"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "少步生成渲染新方法",
+      "sum": "FlashRender通过相机控制视频MeanFlow实现少步生成渲染。",
+      "ta": "生成式渲染新思路，可能对实时预览或快速迭代有潜在价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.03563"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "自然肩部衣物绑定技巧",
+      "sum": "展示高质量过肩衣物绑定的权重绘制细节。",
+      "ta": "衣物绑定权重示例，对角色特效与布料模拟有直接参考价值。",
+      "src": "80 Level · 09-03",
+      "url": "https://80.lv/articles/perfectly-natural-over-the-shoulder-clothing-rig/"
     },
     {
       "cat": "biz",
-      "imp": "mid",
-      "title": "Nexus收购SteamDB",
-      "sum": "Nexus Mods所有者收购SteamDB，计划利用版本历史识别不兼容模组。",
-      "ta": "模组生态数据整合，影响游戏更新对玩家模组兼容性管理。",
-      "src": "80 Level · 09-02",
-      "url": "https://80.lv/articles/nexus-mods-owner-acquires-steamdb-after-co-founder-struggled-with-burnout/"
-    },
-    {
-      "cat": "flow",
       "imp": "lo",
-      "title": "Blender模型防御插件",
-      "sum": "新Blender插件让模型遭受随机攻击，增加工作流趣味性。",
-      "ta": "趣味性插件，展示Blender生态创意，非核心生产工具。",
-      "src": "80 Level · 09-02",
-      "url": "https://80.lv/articles/this-blender-add-on-makes-you-defend-your-model-from-random-attacks/"
+      "title": "Xbox云游戏时长设上限",
+      "sum": "Game Pass订阅者将不再享有Xbox云游戏无限时长。",
+      "ta": "云游戏政策调整，可能影响TA对云端测试与部署策略的考量。",
+      "src": "Game Developer · 09-03",
+      "url": "https://www.gamedeveloper.com/cloud/xbox-to-cap-cloud-gaming-hours-for-game-pass-subscribers"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动森启发六边形球体",
-      "sum": "利用《动物森友会》启发技巧构建六边形球体，附Shader展示。",
-      "ta": "六边形球体Shader技巧，对风格化植被与几何体生成有借鉴。",
-      "src": "80 Level · 09-02",
-      "url": "https://80.lv/articles/building-hexagon-sphere-using-animal-crossing-inspired-trick/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "鬼武者动捕怪物动画",
-      "sum": "CAPCOM分享《鬼武者》多臂怪物动捕动画制作流程。",
-      "ta": "多臂怪物动捕与重定向案例，对非人形角色动画管线有直接参考。",
-      "src": "80 Level · 09-02",
-      "url": "https://80.lv/articles/how-onimusha-way-of-the-sword-s-team-used-motion-capture-for-animating-monsters/"
-    },
-    {
-      "cat": "flow",
+      "cat": "biz",
       "imp": "lo",
-      "title": "2.5D视差动画幕后",
-      "sum": "Guillaume Scoffié展示音乐艺术家2.5D视差动画制作视口。",
-      "ta": "2.5D视差动画工作流，对风格化过场与UI特效有启发。",
-      "src": "80 Level · 09-02",
-      "url": "https://80.lv/articles/inside-the-making-of-2-5d-parallax-animation-for-music-artist/"
+      "title": "Supercell收购Metacore将完成",
+      "sum": "Supercell收购Metacore交易预计本月完成，Merge Mansion将入其组合。",
+      "ta": "行业并购动态，对游戏市场格局有间接影响。",
+      "src": "Game Developer · 09-03",
+      "url": "https://www.gamedeveloper.com/business/supercell-s-acquisition-of-metacore-expected-to-close-this-month"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "PSX风格恐怖海水",
-      "sum": "为DREDGE类恐怖游戏制作PSX风格海水，氛围出色。",
-      "ta": "PSX风格水体Shader案例，对低多边形恐怖游戏视觉有参考。",
-      "src": "80 Level · 09-02",
-      "url": "https://80.lv/articles/beautiful-psx-style-water-for-dredge-like-game-but-scarier/"
+      "cat": "biz",
+      "imp": "lo",
+      "title": "汉堡游戏原型资助启动",
+      "sum": "Gamecity Hamburg启动第二轮原型资助，最高提供8万欧元。",
+      "ta": "地区性资助机会，对独立开发者或小团队有参考价值。",
+      "src": "Game Developer · 09-03",
+      "url": "https://www.gamedeveloper.com/business/gamecity-hamburg-launches-second-round-of-prototype-funding"
     }
   ],
   "flashbackTitle": "",
