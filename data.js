@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月4日 · 周五",
+  "date": "2026年9月5日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Capcom详解RE引擎刀剑战斗</em> / <em>UE5重现80年代动漫渲染</em> / <em>TileGS优化高斯溅射光栅化</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>权游RTS的UE5美术管线</em> / <em>地铁2039主机光追4K60</em> / <em>Blender开放OVERGROWN幕后档案</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,133 +127,67 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "权游RTS的UE5美术管线",
+      "sum": "PlaySide总监谈《权游：维斯特洛之战》非对称阵营、沙盒战役及UE5美术流程。",
+      "ta": "关注UE5大规模战斗与阵营差异化在美术资产与场景组织上的落地经验。",
+      "src": "80 Level · 09-04",
+      "url": "https://80.lv/articles/interview-how-war-for-westeros-turns-game-of-thrones-into-an-epic-rts/"
+    },
+    {
       "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Capcom详解RE引擎刀剑战斗",
-      "sum": "Capcom访谈：RE引擎实时计算刀剑碰撞，含京都环境美术管线。",
-      "ta": "RE引擎的实时物理与美术管线结合案例，对战斗特效与场景制作有直接参考价值。",
-      "src": "80 Level · 09-03",
-      "url": "https://80.lv/articles/how-capcom-built-onimushas-real-time-sword-combat-re-engine/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 2,
-      "title": "UE5重现80年代动漫渲染",
-      "sum": "Shapefarm用UE5自定义着色器与胶片特效，重现80-90年代动漫风格。",
-      "ta": "自定义着色器与风格化后处理的实战案例，适合研究非写实渲染管线的实现路径。",
-      "src": "Unreal Engine · 09-03",
-      "url": "https://www.unrealengine.com/tech-blog/stepping-inside-a-retro-anime-inspired-game-a-look-into-the-rendering-of-orbitals"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "TileGS优化高斯溅射光栅化",
-      "sum": "TileGS提出瓦片局部深度分箱，减少全局排序流量，提升3DGS渲染效率。",
-      "ta": "3DGS光栅化新优化，直接关系实时渲染性能，值得深入评估其对管线的影响。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.03613v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "mid",
-      "title": "3DGS实时调色编辑框架",
-      "sum": "新框架支持3DGS基于调色板的实时颜色与亮度编辑，含独立色调曲线。",
-      "ta": "为3DGS场景提供专业级调色工具，可能简化TA在场景后期色彩调整的工作流。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.03897v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "截断梯度提升3DGS鲁棒性",
-      "sum": "TruncGradGS通过截断梯度更新，解决3DGS优化中的梯度消失问题。",
-      "ta": "针对3DGS训练不稳定性的改进，对提升重建质量有潜在帮助，值得关注。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.03534v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "点云神经编辑表面一致性",
-      "sum": "P-CORE提出自监督表面一致性方法，用于点云神经表示的非刚性编辑。",
-      "ta": "点云表示的可编辑性增强，对TA在资产编辑与变形工作流中有潜在应用。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.03349v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "点云表示几何纹理同编",
-      "sum": "PointGT实现点云表示的几何与纹理同步编辑，支持高保真重建。",
-      "ta": "点云编辑新方案，可能简化TA对扫描资产的后期处理与修改流程。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.03341v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "UE5管线生成世界模型数据",
-      "sum": "论文提出基于UE5的管线，为动作条件视频生成构建预训练数据。",
-      "ta": "UE5用于合成训练数据，对TA探索AI辅助内容生成有直接参考意义。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.03557v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "相机条件世界模型奖励建模",
-      "sum": "WorldReward提出为相机条件世界模型设计奖励建模方法。",
-      "ta": "世界模型训练新方向，可能影响未来AI驱动的场景生成工具。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.03952"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "少步生成渲染新方法",
-      "sum": "FlashRender通过相机控制视频MeanFlow实现少步生成渲染。",
-      "ta": "生成式渲染新思路，可能对实时预览或快速迭代有潜在价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.03563"
+      "title": "地铁2039主机光追4K60",
+      "sum": "《地铁2039》2月发售，PS5/Xbox实现4K60帧与光线追踪。",
+      "ta": "主机平台光追性能标杆，可参考其渲染优化策略与画质取舍。",
+      "src": "80 Level · 09-04",
+      "url": "https://80.lv/articles/metro-2039-runs-at-4k-with-60-fps-and-ray-tracing-even-on-ps5-and-xbox/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "自然肩部衣物绑定技巧",
-      "sum": "展示高质量过肩衣物绑定的权重绘制细节。",
-      "ta": "衣物绑定权重示例，对角色特效与布料模拟有直接参考价值。",
-      "src": "80 Level · 09-03",
-      "url": "https://80.lv/articles/perfectly-natural-over-the-shoulder-clothing-rig/"
+      "title": "Blender开放OVERGROWN幕后档案",
+      "sum": "Blender Studio限时免费开放动画、绑定、毛发、着色、水效等制作日志。",
+      "ta": "毛发与水效等环节的完整生产记录，对植被与特效工作流有参考价值。",
+      "src": "80 Level · 09-04",
+      "url": "https://80.lv/articles/blender-studio-opens-overgrown-s-free-behind-the-scenes-archive/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush雕刻人树角色",
+      "sum": "Andrea Buitrago分享将人树角色Uri雕刻成大理石质感3D作品的流程。",
+      "ta": "关注角色与植物形态融合的雕刻思路及材质质感表现手法。",
+      "src": "80 Level · 09-04",
+      "url": "https://80.lv/articles/book-character-to-a-3d-piece-sculpting-human-tree-character-in-zbrush-and-maya/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Deadlock风格蜡烛人动画",
+      "sum": "Folio为pwnisher挑战赛创作蜡烛头角色Paraffin的动画作品。",
+      "ta": "社区挑战赛作品，可快速浏览角色动画与风格化表现。",
+      "src": "80 Level · 09-04",
+      "url": "https://80.lv/articles/deadlock-inspired-candleman-animation-for-the-gauntlet-of-gods-challenge/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Xbox云游戏时长设上限",
-      "sum": "Game Pass订阅者将不再享有Xbox云游戏无限时长。",
-      "ta": "云游戏政策调整，可能影响TA对云端测试与部署策略的考量。",
-      "src": "Game Developer · 09-03",
-      "url": "https://www.gamedeveloper.com/cloud/xbox-to-cap-cloud-gaming-hours-for-game-pass-subscribers"
+      "title": "Xbox云游戏月度时长限制",
+      "sum": "Xbox对Game Pass云游戏订阅设置每月5至15小时的游玩上限。",
+      "ta": "云游戏服务策略变化，可能影响远程测试与协作流程的可行性。",
+      "src": "80 Level · 09-04",
+      "url": "https://80.lv/articles/xbox-puts-monthly-limits-on-cloud-gaming-for-game-pass-subscribers/"
     },
     {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Supercell收购Metacore将完成",
-      "sum": "Supercell收购Metacore交易预计本月完成，Merge Mansion将入其组合。",
-      "ta": "行业并购动态，对游戏市场格局有间接影响。",
-      "src": "Game Developer · 09-03",
-      "url": "https://www.gamedeveloper.com/business/supercell-s-acquisition-of-metacore-expected-to-close-this-month"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "汉堡游戏原型资助启动",
-      "sum": "Gamecity Hamburg启动第二轮原型资助，最高提供8万欧元。",
-      "ta": "地区性资助机会，对独立开发者或小团队有参考价值。",
-      "src": "Game Developer · 09-03",
-      "url": "https://www.gamedeveloper.com/business/gamecity-hamburg-launches-second-round-of-prototype-funding"
+      "cat": "ai",
+      "imp": "mid",
+      "title": "VeriPhy世界模型物理推理",
+      "sum": "论文提出VeriPhy，用于世界模型评估与改进的智能体物理推理框架。",
+      "ta": "世界模型与物理推理结合，或为程序化生成与场景仿真提供新思路。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.03153"
     }
   ],
   "flashbackTitle": "",
