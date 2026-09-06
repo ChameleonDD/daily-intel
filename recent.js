@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-05 13:31",
+  "updated": "2026-09-06 13:44",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 音频插头动画",
+      "sum": "艺术家分享 Blender 制作的音频插头诡异动画。",
+      "ta": "可参考其程序化动画思路，但非核心 TA 内容。",
+      "src": "80 Level · 09-05",
+      "url": "https://80.lv/articles/artist-shares-a-cool-blender-animation-of-jack-plugs-acting-weird/"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -221,15 +230,6 @@ window.INTEL_RECENT = {
       "ta": "模组生态数据整合，影响游戏更新对玩家模组兼容性管理。",
       "src": "80 Level · 09-02",
       "url": "https://80.lv/articles/nexus-mods-owner-acquires-steamdb-after-co-founder-struggled-with-burnout/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender模型防御插件",
-      "sum": "新Blender插件让模型遭受随机攻击，增加工作流趣味性。",
-      "ta": "趣味性插件，展示Blender生态创意，非核心生产工具。",
-      "src": "80 Level · 09-02",
-      "url": "https://80.lv/articles/this-blender-add-on-makes-you-defend-your-model-from-random-attacks/"
     },
     {
       "cat": "gfx",

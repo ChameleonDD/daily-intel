@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月5日 · 周六",
+  "date": "2026年9月6日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>权游RTS的UE5美术管线</em> / <em>地铁2039主机光追4K60</em> / <em>Blender开放OVERGROWN幕后档案</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Blender 音频插头动画</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,66 +128,12 @@ window.INTEL_DATA = {
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "权游RTS的UE5美术管线",
-      "sum": "PlaySide总监谈《权游：维斯特洛之战》非对称阵营、沙盒战役及UE5美术流程。",
-      "ta": "关注UE5大规模战斗与阵营差异化在美术资产与场景组织上的落地经验。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/interview-how-war-for-westeros-turns-game-of-thrones-into-an-epic-rts/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "地铁2039主机光追4K60",
-      "sum": "《地铁2039》2月发售，PS5/Xbox实现4K60帧与光线追踪。",
-      "ta": "主机平台光追性能标杆，可参考其渲染优化策略与画质取舍。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/metro-2039-runs-at-4k-with-60-fps-and-ray-tracing-even-on-ps5-and-xbox/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender开放OVERGROWN幕后档案",
-      "sum": "Blender Studio限时免费开放动画、绑定、毛发、着色、水效等制作日志。",
-      "ta": "毛发与水效等环节的完整生产记录，对植被与特效工作流有参考价值。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/blender-studio-opens-overgrown-s-free-behind-the-scenes-archive/"
-    },
-    {
-      "cat": "flow",
       "imp": "lo",
-      "title": "ZBrush雕刻人树角色",
-      "sum": "Andrea Buitrago分享将人树角色Uri雕刻成大理石质感3D作品的流程。",
-      "ta": "关注角色与植物形态融合的雕刻思路及材质质感表现手法。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/book-character-to-a-3d-piece-sculpting-human-tree-character-in-zbrush-and-maya/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Deadlock风格蜡烛人动画",
-      "sum": "Folio为pwnisher挑战赛创作蜡烛头角色Paraffin的动画作品。",
-      "ta": "社区挑战赛作品，可快速浏览角色动画与风格化表现。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/deadlock-inspired-candleman-animation-for-the-gauntlet-of-gods-challenge/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox云游戏月度时长限制",
-      "sum": "Xbox对Game Pass云游戏订阅设置每月5至15小时的游玩上限。",
-      "ta": "云游戏服务策略变化，可能影响远程测试与协作流程的可行性。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/xbox-puts-monthly-limits-on-cloud-gaming-for-game-pass-subscribers/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "VeriPhy世界模型物理推理",
-      "sum": "论文提出VeriPhy，用于世界模型评估与改进的智能体物理推理框架。",
-      "ta": "世界模型与物理推理结合，或为程序化生成与场景仿真提供新思路。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.03153"
+      "title": "Blender 音频插头动画",
+      "sum": "艺术家分享 Blender 制作的音频插头诡异动画。",
+      "ta": "可参考其程序化动画思路，但非核心 TA 内容。",
+      "src": "80 Level · 09-05",
+      "url": "https://80.lv/articles/artist-shares-a-cool-blender-animation-of-jack-plugs-acting-weird/"
     }
   ],
   "flashbackTitle": "",
