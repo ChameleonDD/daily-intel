@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月6日 · 周日",
+  "date": "2026年9月7日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Blender 音频插头动画</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>统一骨骼动画生成模型</em> / <em>高斯泼溅紧凑外观模型</em> / <em>高斯泼溅可微蒙皮权重</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,13 +127,49 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
+      "cat": "ai",
+      "imp": "mid",
+      "title": "统一骨骼动画生成模型",
+      "sum": "UniMate 提出统一模型，可驱动多种骨架的动画生成，无需逐骨架微调。",
+      "ta": "关注其跨骨架泛化能力，有望简化程序化生成资产的动画绑定流程。",
+      "src": "arXiv · cs.GR · 09-04",
+      "url": "https://arxiv.org/abs/2609.05415v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯泼溅紧凑外观模型",
+      "sum": "新方法用紧凑神经模型替代球谐函数，降低高斯泼溅存储与内存带宽。",
+      "ta": "对实时渲染性能敏感，此方法可减少显存占用，提升复杂场景渲染效率。",
+      "src": "arXiv · cs.GR · 09-04",
+      "url": "https://arxiv.org/abs/2609.05255v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯泼溅可微蒙皮权重",
+      "sum": "GradRig 提出可微权重方法，用于高斯泼溅的骨骼变形，提升动态形变质量。",
+      "ta": "涉及高斯泼溅与骨骼动画结合，对程序化生成角色的动态表现有参考价值。",
+      "src": "arXiv · cs.GR · 09-04",
+      "url": "https://arxiv.org/abs/2609.05127v1"
+    },
+    {
+      "cat": "ai",
       "imp": "lo",
-      "title": "Blender 音频插头动画",
-      "sum": "艺术家分享 Blender 制作的音频插头诡异动画。",
-      "ta": "可参考其程序化动画思路，但非核心 TA 内容。",
-      "src": "80 Level · 09-05",
-      "url": "https://80.lv/articles/artist-shares-a-cool-blender-animation-of-jack-plugs-acting-weird/"
+      "title": "少样本动作风格迁移",
+      "sum": "STyMo 实现少样本动作风格迁移，无需大型风格化数据集或预训练模型。",
+      "ta": "可快速为角色动作库添加风格变体，提升动画资产多样性。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.04500v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "端到端语音驱动全身动作",
+      "sum": "Motion-Omni 实现语音到全身动作的端到端生成，面向对话场景。",
+      "ta": "对 NPC 对话动画生成有潜在应用，但需评估其动作质量与实时性。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.04250"
     }
   ],
   "flashbackTitle": "",

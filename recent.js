@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-06 13:44",
+  "updated": "2026-09-07 13:55",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "统一骨骼动画生成模型",
+      "sum": "UniMate 提出统一模型，可驱动多种骨架的动画生成，无需逐骨架微调。",
+      "ta": "关注其跨骨架泛化能力，有望简化程序化生成资产的动画绑定流程。",
+      "src": "arXiv · cs.GR · 09-04",
+      "url": "https://arxiv.org/abs/2609.05415v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯泼溅紧凑外观模型",
+      "sum": "新方法用紧凑神经模型替代球谐函数，降低高斯泼溅存储与内存带宽。",
+      "ta": "对实时渲染性能敏感，此方法可减少显存占用，提升复杂场景渲染效率。",
+      "src": "arXiv · cs.GR · 09-04",
+      "url": "https://arxiv.org/abs/2609.05255v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯泼溅可微蒙皮权重",
+      "sum": "GradRig 提出可微权重方法，用于高斯泼溅的骨骼变形，提升动态形变质量。",
+      "ta": "涉及高斯泼溅与骨骼动画结合，对程序化生成角色的动态表现有参考价值。",
+      "src": "arXiv · cs.GR · 09-04",
+      "url": "https://arxiv.org/abs/2609.05127v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "少样本动作风格迁移",
+      "sum": "STyMo 实现少样本动作风格迁移，无需大型风格化数据集或预训练模型。",
+      "ta": "可快速为角色动作库添加风格变体，提升动画资产多样性。",
+      "src": "arXiv · cs.GR · 09-03",
+      "url": "https://arxiv.org/abs/2609.04500v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "端到端语音驱动全身动作",
+      "sum": "Motion-Omni 实现语音到全身动作的端到端生成，面向对话场景。",
+      "ta": "对 NPC 对话动画生成有潜在应用，但需评估其动作质量与实时性。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.04250"
+    },
     {
       "cat": "flow",
       "imp": "lo",
@@ -1773,51 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "样条线百万级实例化对道路、管线等程序化场景布置效率提升显著。",
       "src": "80 Level · 08-13",
       "url": "https://80.lv/articles/spline-architect-s-new-version-adds-gpu-instancing-for-1-000-000-objects-along-splines/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "AAA 级独立角色管线",
-      "sum": "独立开发者用 Character Creator 5 与 iClone 8 构建 AAA 级角色流程。",
-      "ta": "角色资产快速管线对 UE/Unity 项目有参考，可对比现有 DCC 流程。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/unveiling-the-pipeline-behind-aaa-quality-indie-game-characters/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Wild Blue Skies 轨道射击",
-      "sum": "开发者分享 Unity 中现代化轨道射击游戏与日式动画风格渲染。",
-      "ta": "Cel-shaded 风格化渲染与 Unity 自定义系统对风格化项目有参考。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/interview-how-wild-blue-skies-modernizes-classic-on-rails-shooters/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "2K 新温哥华 AAA 工作室",
-      "sum": "2K 宣布由 EA 老将 Aaron McHardy 领导新温哥华 AAA 工作室 Small Axe。",
-      "ta": "新工作室成立可能带来引擎与工具链岗位机会，TA 可关注。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/2k-announces-new-vancouver-based-studio-led-by-ea-veteran"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Saber 否认 AI 替代编剧",
-      "sum": "Saber Interactive 澄清未用 AI 替代 Rideshare 编剧，Unigine 引擎亦未参与。",
-      "ta": "AI 在游戏内容生产中的边界争议，TA 需关注工具链中 AI 的合规使用。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/business/saber-interactive-denies-replacing-writers-with-ai-on-rideshare-stimulator-"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Twitch 默认训练 AI 模型",
-      "sum": "Twitch 默认用用户内容训练亚马逊生成式 AI，退出选项不彻底。",
-      "ta": "AI 训练数据政策影响创作者权益，TA 需留意平台内容使用条款。",
-      "src": "Game Developer · 08-13",
-      "url": "https://www.gamedeveloper.com/marketing/twitch-will-sacrifice-you-to-its-ai-overlord-whether-you-like-it-or-not"
     }
   ]
 };
