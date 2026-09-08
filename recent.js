@@ -2,8 +2,89 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-07 13:55",
+  "updated": "2026-09-08 13:47",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "开源贴图神器发布",
+      "sum": "开源 Substance 3D Painter 替代品 ArmorPaint 1.0 发布，体积极小。",
+      "ta": "可作为轻量级贴图工具，适合快速迭代或原型验证，关注其功能覆盖度。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender顶点吸附工具",
+      "sum": "免费一键式 Blender 工具，可将顶点吸附至最近表面，修复网格穿插。",
+      "ta": "程序化生成或手工建模时，可快速修复植被与地形穿插问题，提升效率。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/free-one-click-blender-tool-to-snap-vertices-to-nearest-surface/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "程序化风格天空生成器",
+      "sum": "Blender 全程序化风格化天空生成器发布，支持一键生成、动画与导出。",
+      "ta": "风格化场景开发中可快速生成天空背景，减少手工贴图依赖，便于迭代。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/fully-procedural-stylized-sky-generator-for-blender-released/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "头发液态化着色器",
+      "sum": "免费 VRChat 着色器可将头发变为动画液体效果，附带水材质贴图。",
+      "ta": "实时渲染中探索非传统材质表现，可借鉴其液体动画原理用于特效。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/this-free-vrchat-shader-turns-hair-into-beautiful-animated-liquid/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "黎明行者销量破百万",
+      "sum": "游戏《The Blood of Dawnwalker》全球销量已超过 100 万份。",
+      "ta": "行业销量数据可作市场参考，但与本职能关联度低。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/the-blood-of-dawnwalker-sold-over-1-million-copies-worldwide/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "战锤新作弃用生成式AI",
+      "sum": "Saber CEO 支持 AI，但《Space Marine 3》确认不含生成式 AI 内容。",
+      "ta": "大厂对生成式 AI 的取舍态度，可作为管线引入 AI 的参考案例。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/despite-saber-interactive-ceo-s-pro-ai-course-space-marine-3-is-genai-free/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前BioWare设计师辩护",
+      "sum": "前 BioWare 设计师为工作室辩护，回应《质量效应》新作质疑。",
+      "ta": "行业舆论动态，与 TA 技术工作无直接关联。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/former-bioware-designer-defends-studio-amid-next-mass-effect-doubts/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前R星开发者盗窃判刑",
+      "sum": "前《RuneScape》开发者因窃取玩家超 40 万美元被判刑。",
+      "ta": "行业法律事件，与 TA 技术工作无直接关联。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/former-runescape-developer-sentenced-for-stealing-over-usd400k-from-players/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "木工游戏原型展示",
+      "sum": "独立开发者展示木工游戏原型片段，效果惊艳。",
+      "ta": "可关注其程序化建模或物理交互实现，但信息有限。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/indie-dev-shows-a-prorotype-of-a-woodworking-game-and-it-s-amazing/"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -48,15 +129,6 @@ window.INTEL_RECENT = {
       "ta": "对 NPC 对话动画生成有潜在应用，但需评估其动作质量与实时性。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.04250"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 音频插头动画",
-      "sum": "艺术家分享 Blender 制作的音频插头诡异动画。",
-      "ta": "可参考其程序化动画思路，但非核心 TA 内容。",
-      "src": "80 Level · 09-05",
-      "url": "https://80.lv/articles/artist-shares-a-cool-blender-animation-of-jack-plugs-acting-weird/"
     },
     {
       "cat": "flow",
@@ -466,15 +538,6 @@ window.INTEL_RECENT = {
       "ta": "潜变量生成模型稳定性提升，可能影响未来3D资产生成工具的开发方向。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.29335"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "独立游戏全本地AI训练实践",
-      "sum": "Atelico工作室用自家美术作品训练本地AI模型，分享10个原型开发经验。",
-      "ta": "本地AI模型训练与美术资产结合，为工作室内部AI工具链提供真实案例。",
-      "src": "80 Level · 08-31",
-      "url": "https://80.lv/articles/interview-new-indie-game-uses-local-ai-model-trained-entirely-on-studio-s-own-artists/"
     },
     {
       "cat": "biz",
@@ -1423,15 +1486,6 @@ window.INTEL_RECENT = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "变分 r 自适应布料模拟",
-      "sum": "首个面向现代布料管线的 r-自适应方法，模拟褶皱与摩擦接触。",
-      "ta": "自适应分辨率可提升布料细节模拟效率，对角色布料系统有参考价值。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17833v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
       "title": "RADmesh 重网格感知形变",
       "sum": "提出重网格增强的网格形变方法，避免大形变时三角质量恶化。",
       "ta": "对程序化形变或绑定系统，可改善大形变下的网格质量与稳定性。",
@@ -1764,60 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "神经纹理压缩是 TA 关注的前沿方向，D3D12 实时训练与可视化工具链值得上手评估。",
       "src": "AMD GPUOpen · 08-13",
       "url": "https://gpuopen.com/learn/minidxnn-v040-interactive-neural-texture-compression/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "SCULPT 减法式部件生成",
-      "sum": "SCULPT 提出减法组合方法，在生成循环内构建带结构部件的 3D 资产。",
-      "ta": "部件级 3D 生成对程序化资产管线有参考价值，可关注其结构编辑与复用能力。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13541v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "蓝噪声格点吉布斯模型",
-      "sum": "论文将蓝噪声采样建模为格点吉布斯系综，统一统计建模与可扩展生成。",
-      "ta": "蓝噪声采样是渲染与放置的核心，新理论框架可能带来更高效的采样器实现。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13446v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "锥束CT金属伪影消除",
-      "sum": "基于 Splat 的多色建模方法减少锥束 CT 中金属引起的束硬化伪影。",
-      "ta": "虽偏医学成像，但多色 X 射线建模思路对体积渲染与材质重建有启发。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13159v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "四阶 Overhauser 曲面框架",
-      "sum": "提出 Quartic Overhauser 曲面生成框架，解决边界对齐与局部形状修改约束。",
-      "ta": "曲面建模算法对程序化几何工具开发有参考，但偏理论，速览即可。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.12697v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "PlayWorld 世界模型基准",
-      "sum": "PlayWorld 提出用智能体玩家在长时程目标下评测世界模型的基准。",
-      "ta": "世界模型评测基准对游戏 AI 与模拟环境有参考，可关注其任务设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.13552"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Spline Architect GPU 实例化",
-      "sum": "Spline Architect 新版本支持沿样条线 GPU 实例化 100 万物体。",
-      "ta": "样条线百万级实例化对道路、管线等程序化场景布置效率提升显著。",
-      "src": "80 Level · 08-13",
-      "url": "https://80.lv/articles/spline-architect-s-new-version-adds-gpu-instancing-for-1-000-000-objects-along-splines/"
     }
   ]
 };

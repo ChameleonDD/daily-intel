@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月7日 · 周一",
+  "date": "2026年9月8日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>统一骨骼动画生成模型</em> / <em>高斯泼溅紧凑外观模型</em> / <em>高斯泼溅可微蒙皮权重</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>开源贴图神器发布</em> / <em>Blender顶点吸附工具</em> / <em>程序化风格天空生成器</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,49 +127,85 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
       "imp": "mid",
-      "title": "统一骨骼动画生成模型",
-      "sum": "UniMate 提出统一模型，可驱动多种骨架的动画生成，无需逐骨架微调。",
-      "ta": "关注其跨骨架泛化能力，有望简化程序化生成资产的动画绑定流程。",
-      "src": "arXiv · cs.GR · 09-04",
-      "url": "https://arxiv.org/abs/2609.05415v1"
+      "title": "开源贴图神器发布",
+      "sum": "开源 Substance 3D Painter 替代品 ArmorPaint 1.0 发布，体积极小。",
+      "ta": "可作为轻量级贴图工具，适合快速迭代或原型验证，关注其功能覆盖度。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender顶点吸附工具",
+      "sum": "免费一键式 Blender 工具，可将顶点吸附至最近表面，修复网格穿插。",
+      "ta": "程序化生成或手工建模时，可快速修复植被与地形穿插问题，提升效率。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/free-one-click-blender-tool-to-snap-vertices-to-nearest-surface/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "程序化风格天空生成器",
+      "sum": "Blender 全程序化风格化天空生成器发布，支持一键生成、动画与导出。",
+      "ta": "风格化场景开发中可快速生成天空背景，减少手工贴图依赖，便于迭代。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/fully-procedural-stylized-sky-generator-for-blender-released/"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "高斯泼溅紧凑外观模型",
-      "sum": "新方法用紧凑神经模型替代球谐函数，降低高斯泼溅存储与内存带宽。",
-      "ta": "对实时渲染性能敏感，此方法可减少显存占用，提升复杂场景渲染效率。",
-      "src": "arXiv · cs.GR · 09-04",
-      "url": "https://arxiv.org/abs/2609.05255v1"
+      "title": "头发液态化着色器",
+      "sum": "免费 VRChat 着色器可将头发变为动画液体效果，附带水材质贴图。",
+      "ta": "实时渲染中探索非传统材质表现，可借鉴其液体动画原理用于特效。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/this-free-vrchat-shader-turns-hair-into-beautiful-animated-liquid/"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯泼溅可微蒙皮权重",
-      "sum": "GradRig 提出可微权重方法，用于高斯泼溅的骨骼变形，提升动态形变质量。",
-      "ta": "涉及高斯泼溅与骨骼动画结合，对程序化生成角色的动态表现有参考价值。",
-      "src": "arXiv · cs.GR · 09-04",
-      "url": "https://arxiv.org/abs/2609.05127v1"
-    },
-    {
-      "cat": "ai",
+      "cat": "biz",
       "imp": "lo",
-      "title": "少样本动作风格迁移",
-      "sum": "STyMo 实现少样本动作风格迁移，无需大型风格化数据集或预训练模型。",
-      "ta": "可快速为角色动作库添加风格变体，提升动画资产多样性。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.04500v1"
+      "title": "黎明行者销量破百万",
+      "sum": "游戏《The Blood of Dawnwalker》全球销量已超过 100 万份。",
+      "ta": "行业销量数据可作市场参考，但与本职能关联度低。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/the-blood-of-dawnwalker-sold-over-1-million-copies-worldwide/"
     },
     {
-      "cat": "ai",
+      "cat": "biz",
       "imp": "lo",
-      "title": "端到端语音驱动全身动作",
-      "sum": "Motion-Omni 实现语音到全身动作的端到端生成，面向对话场景。",
-      "ta": "对 NPC 对话动画生成有潜在应用，但需评估其动作质量与实时性。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.04250"
+      "title": "战锤新作弃用生成式AI",
+      "sum": "Saber CEO 支持 AI，但《Space Marine 3》确认不含生成式 AI 内容。",
+      "ta": "大厂对生成式 AI 的取舍态度，可作为管线引入 AI 的参考案例。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/despite-saber-interactive-ceo-s-pro-ai-course-space-marine-3-is-genai-free/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前BioWare设计师辩护",
+      "sum": "前 BioWare 设计师为工作室辩护，回应《质量效应》新作质疑。",
+      "ta": "行业舆论动态，与 TA 技术工作无直接关联。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/former-bioware-designer-defends-studio-amid-next-mass-effect-doubts/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前R星开发者盗窃判刑",
+      "sum": "前《RuneScape》开发者因窃取玩家超 40 万美元被判刑。",
+      "ta": "行业法律事件，与 TA 技术工作无直接关联。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/former-runescape-developer-sentenced-for-stealing-over-usd400k-from-players/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "木工游戏原型展示",
+      "sum": "独立开发者展示木工游戏原型片段，效果惊艳。",
+      "ta": "可关注其程序化建模或物理交互实现，但信息有限。",
+      "src": "80 Level · 09-07",
+      "url": "https://80.lv/articles/indie-dev-shows-a-prorotype-of-a-woodworking-game-and-it-s-amazing/"
     }
   ],
   "flashbackTitle": "",
@@ -180,13 +216,12 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": "未覆盖：Blender 开发博客、HuggingFace。"
   },
   "xStale": false
 };
