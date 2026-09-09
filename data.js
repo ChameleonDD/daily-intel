@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月8日 · 周二",
+  "date": "2026年9月9日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>开源贴图神器发布</em> / <em>Blender顶点吸附工具</em> / <em>程序化风格天空生成器</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>CUDA Rust 双轨 GPU 编程</em> / <em>可微物理接触大步长模拟</em> / <em>逆向数字大理石纹生成</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,85 +127,212 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
+      "cat": "tech",
       "imp": "mid",
-      "title": "开源贴图神器发布",
-      "sum": "开源 Substance 3D Painter 替代品 ArmorPaint 1.0 发布，体积极小。",
-      "ta": "可作为轻量级贴图工具，适合快速迭代或原型验证，关注其功能覆盖度。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender顶点吸附工具",
-      "sum": "免费一键式 Blender 工具，可将顶点吸附至最近表面，修复网格穿插。",
-      "ta": "程序化生成或手工建模时，可快速修复植被与地形穿插问题，提升效率。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/free-one-click-blender-tool-to-snap-vertices-to-nearest-surface/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "程序化风格天空生成器",
-      "sum": "Blender 全程序化风格化天空生成器发布，支持一键生成、动画与导出。",
-      "ta": "风格化场景开发中可快速生成天空背景，减少手工贴图依赖，便于迭代。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/fully-procedural-stylized-sky-generator-for-blender-released/"
+      "title": "CUDA Rust 双轨 GPU 编程",
+      "sum": "NVIDIA 宣布支持 Rust 原生 GPU 内核编程，提供两条开发路径。",
+      "ta": "关注 Rust 在 GPU 计算中的成熟度，可能影响未来引擎底层工具链选型。",
+      "src": "NVIDIA · 09-08",
+      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "头发液态化着色器",
-      "sum": "免费 VRChat 着色器可将头发变为动画液体效果，附带水材质贴图。",
-      "ta": "实时渲染中探索非传统材质表现，可借鉴其液体动画原理用于特效。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/this-free-vrchat-shader-turns-hair-into-beautiful-animated-liquid/"
+      "title": "可微物理接触大步长模拟",
+      "摘要": "Ostrich 提出新方法，在可微物理模拟中实现大步长刚体接触，兼顾精度与梯度可靠性。",
+      "ta": "对基于物理的动画和机器人控制优化有参考价值，可关注其梯度计算效率。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08800v1",
+      "sum": "可微物理接触大步长模拟"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "逆向数字大理石纹生成",
+      "sum": "从目标图像逆向恢复可执行的数字大理石纹生成程序。",
+      "ta": "程序化纹理逆向思路，或可启发程序化资产生成工具。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08722v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经质心 Voronoi 剖分",
+      "sum": "用神经网络加速表面 CVT 计算，用于高质量采样和网格重拓扑。",
+      "ta": "可能加速程序化网格生成中的重拓扑步骤，值得关注其精度与速度。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08497v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "拓扑保持视频生成扩散模型",
+      "sum": "提出测地线信息引导的扩散模型，用于保持图像视频生成中的拓扑结构。",
+      "ta": "对生成资产的拓扑一致性有潜在价值，但需验证在实时渲染中的实用性。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08153v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "语言与风格驱动的动作生成",
+      "sum": "FlexMoGen 框架，根据自然语言和风格参考生成灵活的人体动作。",
+      "ta": "对动画师快速生成风格化动作有参考价值，可关注其风格控制精度。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.08032v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "热核纹理替代 UV 贴图",
+      "sum": "提出热核纹理，用测地线高斯替代传统 UV 映射，降低内存占用。",
+      "ta": "可能解决 UV 映射痛点，对材质和贴图管线有潜在革新意义。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.07557v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "多视角物体重打光 Transformer",
+      "sum": "RelightFormer 用前馈生成式 Transformer 从多视角图像实现物体重打光。",
+      "ta": "对离线资产制作和光照管线有参考价值，可关注其多视角一致性。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.07414v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "CT 扫描重建钩针纱线路径",
+      "sum": "CT2Yarn 从微 CT 扫描中恢复真实钩针制品的连续纱线路径。",
+      "ta": "对程序化生成复杂编织结构有启发，但应用场景较垂直。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.06950v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "亚像素级太空碎片图像配准",
+      "sum": "利用 Radon 点扩散函数实现太空碎片图像的亚像素仿射配准。",
+      "ta": "与游戏图形学关联较弱，但亚像素配准技术或可迁移至其他图像处理。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.06929v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "双曲曲面网格嵌入可视化",
+      "sum": "通过网格嵌入在欧几里得空间可视化双曲曲面，用于数学演示。",
+      "ta": "对数学可视化有参考价值，但与游戏 TA 工作流关联不大。",
+      "src": "arXiv · cs.GR · 09-06",
+      "url": "https://arxiv.org/abs/2609.06766v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "自适应 Delaunay 网格重建",
+      "sum": "ADELE 直接从图像重建高保真网格，无需中间 NeRF/3DGS 表示。",
+      "ta": "对网格资产生产管线有直接价值，可关注其重建质量和速度。",
+      "src": "arXiv · cs.GR · 09-06",
+      "url": "https://arxiv.org/abs/2609.06723v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "物理人形交互统一控制器",
+      "sum": "提出上下文条件交互先验，统一物理人形控制器的导航与操作。",
+      "ta": "对游戏 NPC 物理动画控制有潜在参考，但工程化程度尚远。",
+      "src": "arXiv · cs.GR · 09-06",
+      "url": "https://arxiv.org/abs/2609.06591v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "混合智能体场景布局生成",
+      "sum": "SceneMosaic 用混合智能体布局进化生成多样化、可模拟的场景。",
+      "ta": "对程序化关卡和场景生成有参考价值，可关注其布局多样性与可控性。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.05594"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自回归视频扩散蒸馏改进",
+      "sum": "Mask Forcing 通过双噪声掩码滚动提升自回归视频扩散模型的蒸馏效果。",
+      "ta": "对视频生成模型效率提升有参考，但直接游戏应用尚远。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.09123"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "智能体控制视觉生成",
+      "sum": "探讨从生成模型到智能体控制的视觉生成范式转变。",
+      "ta": "概念性文章，对 TA 工作流暂无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.06758"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "几何引导法线估计模型",
+      "sum": "TransNormal-2 用几何接地整流流与边缘感知解码实现精确法线估计。",
+      "ta": "对材质扫描和资产重建中的法线贴图生成有直接参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.06665"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "黎明行者销量破百万",
-      "sum": "游戏《The Blood of Dawnwalker》全球销量已超过 100 万份。",
-      "ta": "行业销量数据可作市场参考，但与本职能关联度低。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/the-blood-of-dawnwalker-sold-over-1-million-copies-worldwide/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "战锤新作弃用生成式AI",
-      "sum": "Saber CEO 支持 AI，但《Space Marine 3》确认不含生成式 AI 内容。",
-      "ta": "大厂对生成式 AI 的取舍态度，可作为管线引入 AI 的参考案例。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/despite-saber-interactive-ceo-s-pro-ai-course-space-marine-3-is-genai-free/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前BioWare设计师辩护",
-      "sum": "前 BioWare 设计师为工作室辩护，回应《质量效应》新作质疑。",
-      "ta": "行业舆论动态，与 TA 技术工作无直接关联。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/former-bioware-designer-defends-studio-amid-next-mass-effect-doubts/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前R星开发者盗窃判刑",
-      "sum": "前《RuneScape》开发者因窃取玩家超 40 万美元被判刑。",
-      "ta": "行业法律事件，与 TA 技术工作无直接关联。",
+      "title": "卡普空重启老 IP 计划",
+      "sum": "Capcom 表示将专注于重启近期无新作的经典 IP。",
+      "ta": "行业动态，可能影响未来游戏技术方向，但无直接 TA 关联。",
       "src": "80 Level · 09-08",
-      "url": "https://80.lv/articles/former-runescape-developer-sentenced-for-stealing-over-usd400k-from-players/"
+      "url": "https://80.lv/articles/capcom-is-focusing-on-reactivating-ips-that-haven-t-had-a-recent-launch/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "坦克世界 HEAT 艺术管线解析",
+      "sum": "WoT: HEAT 总监详解其专有引擎、载具设计、跨平台优化与艺术管线。",
+      "ta": "了解大型跨平台项目的艺术与引擎协作流程，有流程参考价值。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/inside-world-of-tanks-heat-s-art-engine-vehicle-design-pipeline/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "哈瑞宝小熊糖果材质制作",
+      "sum": "QiYu Dai 分享用几何体建模和颜色分层实现半透明小熊糖果材质。",
+      "ta": "半透明材质分层思路对食品类或软体材质制作有直接参考。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/how-to-create-a-haribo-style-translucent-jelly-bear-candy-material/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "木工游戏原型展示",
-      "sum": "独立开发者展示木工游戏原型片段，效果惊艳。",
-      "ta": "可关注其程序化建模或物理交互实现，但信息有限。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/indie-dev-shows-a-prorotype-of-a-woodworking-game-and-it-s-amazing/"
+      "title": "宝可梦风格全息卡牌效果",
+      "sum": "Kazehaya Fuyuka 用 Clip Studio Paint Pro 和 After Effects 制作全息卡牌。",
+      "ta": "2D 全息效果制作案例，对非实时渲染流程有参考。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/pok-mon-style-holographic-card-effect-check-out-fuyuka-shadow-striker/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender GPU 多物理工具",
+      "sum": "Pro Particles 在 Blender 中统一处理粒子、液体、Pyro 和 MPM 模拟。",
+      "ta": "对 DCC 工具链中的物理模拟流程有参考价值，可关注其 GPU 性能。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/advanced-gpu-powered-multi-physics-toolkit-for-blender-artists/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EA 用生成 AI 制作 NHL 解说",
+      "sum": "据报道 EA 在 NHL 27 中使用生成式 AI 制作解说员语音。",
+      "ta": "行业动态，AI 语音在游戏中的应用案例，对音频管线有参考。",
+      "src": "Game Developer · 09-08",
+      "url": "https://www.gamedeveloper.com/business/report-ea-s-nhl-27-is-using-genai-to-create-voiceover-claims-a-sports-commentator"
     }
   ],
   "flashbackTitle": "",
@@ -216,12 +343,13 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
+      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客、HuggingFace。"
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };

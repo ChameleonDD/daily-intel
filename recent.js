@@ -2,8 +2,216 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-08 13:47",
+  "updated": "2026-09-09 13:51",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "CUDA Rust 双轨 GPU 编程",
+      "sum": "NVIDIA 宣布支持 Rust 原生 GPU 内核编程，提供两条开发路径。",
+      "ta": "关注 Rust 在 GPU 计算中的成熟度，可能影响未来引擎底层工具链选型。",
+      "src": "NVIDIA · 09-08",
+      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微物理接触大步长模拟",
+      "摘要": "Ostrich 提出新方法，在可微物理模拟中实现大步长刚体接触，兼顾精度与梯度可靠性。",
+      "ta": "对基于物理的动画和机器人控制优化有参考价值，可关注其梯度计算效率。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08800v1",
+      "sum": "可微物理接触大步长模拟"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "逆向数字大理石纹生成",
+      "sum": "从目标图像逆向恢复可执行的数字大理石纹生成程序。",
+      "ta": "程序化纹理逆向思路，或可启发程序化资产生成工具。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08722v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经质心 Voronoi 剖分",
+      "sum": "用神经网络加速表面 CVT 计算，用于高质量采样和网格重拓扑。",
+      "ta": "可能加速程序化网格生成中的重拓扑步骤，值得关注其精度与速度。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08497v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "拓扑保持视频生成扩散模型",
+      "sum": "提出测地线信息引导的扩散模型，用于保持图像视频生成中的拓扑结构。",
+      "ta": "对生成资产的拓扑一致性有潜在价值，但需验证在实时渲染中的实用性。",
+      "src": "arXiv · cs.GR · 09-08",
+      "url": "https://arxiv.org/abs/2609.08153v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "语言与风格驱动的动作生成",
+      "sum": "FlexMoGen 框架，根据自然语言和风格参考生成灵活的人体动作。",
+      "ta": "对动画师快速生成风格化动作有参考价值，可关注其风格控制精度。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.08032v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "热核纹理替代 UV 贴图",
+      "sum": "提出热核纹理，用测地线高斯替代传统 UV 映射，降低内存占用。",
+      "ta": "可能解决 UV 映射痛点，对材质和贴图管线有潜在革新意义。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.07557v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "多视角物体重打光 Transformer",
+      "sum": "RelightFormer 用前馈生成式 Transformer 从多视角图像实现物体重打光。",
+      "ta": "对离线资产制作和光照管线有参考价值，可关注其多视角一致性。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.07414v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "CT 扫描重建钩针纱线路径",
+      "sum": "CT2Yarn 从微 CT 扫描中恢复真实钩针制品的连续纱线路径。",
+      "ta": "对程序化生成复杂编织结构有启发，但应用场景较垂直。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.06950v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "亚像素级太空碎片图像配准",
+      "sum": "利用 Radon 点扩散函数实现太空碎片图像的亚像素仿射配准。",
+      "ta": "与游戏图形学关联较弱，但亚像素配准技术或可迁移至其他图像处理。",
+      "src": "arXiv · cs.GR · 09-07",
+      "url": "https://arxiv.org/abs/2609.06929v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "双曲曲面网格嵌入可视化",
+      "sum": "通过网格嵌入在欧几里得空间可视化双曲曲面，用于数学演示。",
+      "ta": "对数学可视化有参考价值，但与游戏 TA 工作流关联不大。",
+      "src": "arXiv · cs.GR · 09-06",
+      "url": "https://arxiv.org/abs/2609.06766v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "自适应 Delaunay 网格重建",
+      "sum": "ADELE 直接从图像重建高保真网格，无需中间 NeRF/3DGS 表示。",
+      "ta": "对网格资产生产管线有直接价值，可关注其重建质量和速度。",
+      "src": "arXiv · cs.GR · 09-06",
+      "url": "https://arxiv.org/abs/2609.06723v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "物理人形交互统一控制器",
+      "sum": "提出上下文条件交互先验，统一物理人形控制器的导航与操作。",
+      "ta": "对游戏 NPC 物理动画控制有潜在参考，但工程化程度尚远。",
+      "src": "arXiv · cs.GR · 09-06",
+      "url": "https://arxiv.org/abs/2609.06591v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "混合智能体场景布局生成",
+      "sum": "SceneMosaic 用混合智能体布局进化生成多样化、可模拟的场景。",
+      "ta": "对程序化关卡和场景生成有参考价值，可关注其布局多样性与可控性。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.05594"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自回归视频扩散蒸馏改进",
+      "sum": "Mask Forcing 通过双噪声掩码滚动提升自回归视频扩散模型的蒸馏效果。",
+      "ta": "对视频生成模型效率提升有参考，但直接游戏应用尚远。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.09123"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "智能体控制视觉生成",
+      "sum": "探讨从生成模型到智能体控制的视觉生成范式转变。",
+      "ta": "概念性文章，对 TA 工作流暂无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.06758"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "几何引导法线估计模型",
+      "sum": "TransNormal-2 用几何接地整流流与边缘感知解码实现精确法线估计。",
+      "ta": "对材质扫描和资产重建中的法线贴图生成有直接参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.06665"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "卡普空重启老 IP 计划",
+      "sum": "Capcom 表示将专注于重启近期无新作的经典 IP。",
+      "ta": "行业动态，可能影响未来游戏技术方向，但无直接 TA 关联。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/capcom-is-focusing-on-reactivating-ips-that-haven-t-had-a-recent-launch/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "坦克世界 HEAT 艺术管线解析",
+      "sum": "WoT: HEAT 总监详解其专有引擎、载具设计、跨平台优化与艺术管线。",
+      "ta": "了解大型跨平台项目的艺术与引擎协作流程，有流程参考价值。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/inside-world-of-tanks-heat-s-art-engine-vehicle-design-pipeline/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "哈瑞宝小熊糖果材质制作",
+      "sum": "QiYu Dai 分享用几何体建模和颜色分层实现半透明小熊糖果材质。",
+      "ta": "半透明材质分层思路对食品类或软体材质制作有直接参考。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/how-to-create-a-haribo-style-translucent-jelly-bear-candy-material/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "宝可梦风格全息卡牌效果",
+      "sum": "Kazehaya Fuyuka 用 Clip Studio Paint Pro 和 After Effects 制作全息卡牌。",
+      "ta": "2D 全息效果制作案例，对非实时渲染流程有参考。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/pok-mon-style-holographic-card-effect-check-out-fuyuka-shadow-striker/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender GPU 多物理工具",
+      "sum": "Pro Particles 在 Blender 中统一处理粒子、液体、Pyro 和 MPM 模拟。",
+      "ta": "对 DCC 工具链中的物理模拟流程有参考价值，可关注其 GPU 性能。",
+      "src": "80 Level · 09-08",
+      "url": "https://80.lv/articles/advanced-gpu-powered-multi-physics-toolkit-for-blender-artists/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "EA 用生成 AI 制作 NHL 解说",
+      "sum": "据报道 EA 在 NHL 27 中使用生成式 AI 制作解说员语音。",
+      "ta": "行业动态，AI 语音在游戏中的应用案例，对音频管线有参考。",
+      "src": "Game Developer · 09-08",
+      "url": "https://www.gamedeveloper.com/business/report-ea-s-nhl-27-is-using-genai-to-create-voiceover-claims-a-sports-commentator"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -1608,216 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "行业投资动态，可速览。",
       "src": "Game Developer · 08-18",
       "url": "https://www.gamedeveloper.com/business/wings-really-really-wants-to-fund-your-neat-indie-video-game"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "NBA 2K27 新玩法细节公布",
-      "sum": "NBA 2K27 公布 The City、合作模式、MyNBA 时代等新玩法细节。",
-      "ta": "商业游戏动态，可速览。",
-      "src": "PlayStation Blog · 08-18",
-      "url": "https://blog.playstation.com/2026/08/18/new-nba-2k27-gameplay-details-on-the-city-co-op-mynba-eras-and-more/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Phantom Blade Zero 深度实机",
-      "sum": "State of Play 深入展示《Phantom Blade Zero》战斗与武林世界。",
-      "ta": "商业游戏动态，可速览。",
-      "src": "PlayStation Blog · 08-18",
-      "url": "https://blog.playstation.com/2026/08/17/phantom-blade-zero-state-of-play-dives-deep-into-combat-and-the-wulin-world/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS Store 七月下载榜公布",
-      "sum": "PlayStation 公布 2026 年 7 月亚洲区 PS5、PS4 等下载排行榜。",
-      "ta": "行业数据，可速览。",
-      "src": "PlayStation Blog · 08-18",
-      "url": "https://blog.playstation.com/2026/08/17/20260818-top/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "拓扑感知三角网格重建",
-      "sum": "用持续同调改进可微三角网格重建，修正拓扑错误。",
-      "ta": "对程序化生成与几何处理有参考价值，可提升重建网格拓扑正确性。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16848v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "逐像素渲染难度描述符",
-      "sum": "提出稳定传输机制描述符，衡量逐像素渲染难度。",
-      "ta": "对蒙特卡洛渲染采样策略优化有参考价值，可提升渲染效率。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16730v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "GPU资源受限虚拟机",
-      "sum": "在GPU上实现资源受限虚拟机，对抗软件膨胀。",
-      "ta": "对GPU计算资源管理有启发，但非TA核心方向。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16387v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "身份保持视频生成新法",
-      "sum": "KeyID解耦草稿与关键帧编辑，实现身份保持视频生成。",
-      "ta": "对角色动画与过场生成有参考价值，可探索身份一致性控制。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16154v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "任意角色语音动画生成",
-      "sum": "AnyTalk无需动画数据，为任意角色生成3D语音动画。",
-      "ta": "对语音驱动面部动画工作流有参考价值，可简化角色动画制作。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16143v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "表面表示可微体素化",
-      "sum": "提出表面表示的可微体素化方法，优化体积查询。",
-      "ta": "对几何处理与体积渲染有参考价值，可提升空间查询效率。",
-      "src": "arXiv · cs.GR · 08-16",
-      "url": "https://arxiv.org/abs/2608.15934v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "隐式曲面ARAP正则化",
-      "sum": "为隐式曲面引入ARAP正则化，保持形状刚性。",
-      "ta": "对隐式曲面建模与优化有参考价值，可提升形状保真度。",
-      "src": "arXiv · cs.GR · 08-16",
-      "url": "https://arxiv.org/abs/2608.15933v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "可探索世界合成数据引擎",
-      "sum": "WorldRover生成带丰富标注的合成视频，用于世界探索。",
-      "ta": "对程序化世界生成与AI训练数据有参考价值，可提升数据质量。",
-      "src": "arXiv · cs.GR · 08-16",
-      "url": "https://arxiv.org/abs/2608.15659v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "不确定感知雅可比集计算",
-      "sum": "提出不确定感知的雅可比集计算方法，用于多场可视化拓扑描述。",
-      "ta": "拓扑描述符在科学可视化中常用，可关注其对多场数据梯度对齐分析的改进。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14409v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "流体动力学可迁移潜算子",
-      "sum": "提出从固定网格到移动粒子的可迁移潜算子，用于流体动力学建模。",
-      "ta": "拉格朗日视角的神经算子可能为粒子流体模拟提供新思路，值得关注。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14120v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "固定预算高斯体编码",
-      "sum": "用各向异性高斯基元在固定预算下编码标量场，用于原位数据缩减。",
-      "ta": "高斯编码策略可能影响体积数据压缩与传输，对程序化生成有参考价值。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14112v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "游戏实况自动解说系统",
-      "sum": "用视觉语言模型为任意游戏录像生成电竞风格口头解说。",
-      "ta": "自动解说可能用于游戏内事件反馈或工具演示，但非核心渲染工作流。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.14016v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "G-Buffer条件生成渲染",
-      "sum": "扩散模型作为学习渲染器，以G-Buffer为条件实现真实感生成。",
-      "ta": "生成式渲染与G-Buffer结合可能改变TA的材质输出流程，值得精读。",
-      "src": "arXiv · cs.GR · 08-14",
-      "url": "https://arxiv.org/abs/2608.13929v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "基于大模型的发丝生成",
-      "sum": "用大重建和多模态模型生成基于发丝的头发，减少手工制作依赖。",
-      "ta": "发丝自动生成可大幅提升角色资产制作效率，对TA工具链有直接价值。",
-      "src": "arXiv · cs.GR · 08-13",
-      "url": "https://arxiv.org/abs/2608.13679v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Marionette世界状态预测",
-      "sum": "模型预测世界状态、渲染几何并绘制外观，实现多模态生成。",
-      "ta": "世界状态预测可能用于动态场景生成，但需确认与实时渲染的关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.14530"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "暗黑幻想材质合集发布",
-      "sum": "Kai Mergener 在 Substance 3D Assets 发布 15 款暗黑幻想材质，并分享技术流程。",
-      "ta": "关注 Substance 3D Designer 材质构建思路，可借鉴其风格化纹理制作流程。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/build-eerie-worlds-with-this-dark-fantasy-signature-collection/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "影之刃零采用甄子丹武术动捕",
-      "sum": "S-GAME 工作室使用甄子丹武术指导，为《影之刃零》战斗系统制作真实功夫动作捕捉。",
-      "ta": "高质量武术动捕数据对战斗动画和特效同步有参考价值，可关注其动作设计流程。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/phantom-blade-zero-uses-authentic-kung-fu-motion-capture/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "恶霸鲁尼精神续作Steam差评",
-      "sum": "一款恶霸鲁尼精神续作在 Steam 发售，因技术问题获负面评价，部分玩家认可其独立魅力。",
-      "ta": "技术问题导致差评的案例提醒 TA 在项目早期需重视性能与稳定性。",
-      "src": "80 Level · 08-14",
-      "url": "https://80.lv/articles/bully-spiritual-successor-launches-to-negative-reviews-on-steam/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Netflix关闭更多工作室",
-      "sum": "Netflix 关闭更多游戏工作室，Twitch 承认使用生成式 AI，行业动态汇总。",
-      "ta": "行业收缩信号，关注大厂对游戏部门投入变化，可能影响外包与工具生态。",
-      "src": "Game Developer · 08-14",
-      "url": "https://www.gamedeveloper.com/business/scabby-versus-sharma-twitch-s-genai-admission-and-netflix-shutters-more-studios-patch-notes-65"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "MiniDXNN 神经纹理压缩",
-      "sum": "MiniDXNN v0.4.0 支持 D3D12 线性代数与实时 GUI 训练 MLP 纹理压缩。",
-      "ta": "神经纹理压缩是 TA 关注的前沿方向，D3D12 实时训练与可视化工具链值得上手评估。",
-      "src": "AMD GPUOpen · 08-13",
-      "url": "https://gpuopen.com/learn/minidxnn-v040-interactive-neural-texture-compression/"
     }
   ]
 };
