@@ -2,8 +2,173 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-09 13:51",
+  "updated": "2026-09-10 13:46",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "单步扩散实现实时全局光照",
+      "sum": "AMD提出单步潜扩散模型做实时GI，无需迭代即可输出时序稳定的高质量光照。",
+      "ta": "若落地，可替代部分光追GI方案，重点关注其时序稳定性与显存/延迟开销。",
+      "src": "AMD GPUOpen · 09-09",
+      "url": "https://gpuopen.com/learn/temporally-stable-generative-illumination/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "路径追踪按重要性优先渲染",
+      "sum": "HiPR分层渐进渲染利用场景变化与光传输，优先渲染最关键的像素。",
+      "ta": "对离线/实时PT交互响应有直接参考价值，可借鉴其像素优先级调度思路。",
+      "src": "80 Level · 09-09",
+      "url": "https://80.lv/articles/how-hipr-makes-path-tracing-feel-more-responsive-by-rendering-what-matters-first/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "3D物体直接生成高分辨率贴图",
+      "sum": "SceneHI将2D扩散的高分辨率光照先验提升到3D，无需微调即可在3D物体上生成纹理。",
+      "ta": "程序化植被/道具贴图流程的潜在加速点，关注其光照可控性与UV一致性。",
+      "src": "arXiv · cs.GR · 09-09",
+      "url": "https://arxiv.org/abs/2609.10363v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "CUDA 13.4支持Windows on Arm",
+      "sum": "CUDA Toolkit 13.4新增Windows on Arm支持，并加强对共享GPU的控制能力。",
+      "ta": "若团队有Arm笔记本或共享GPU调度需求，可评估工具链迁移成本。",
+      "src": "NVIDIA · 09-09",
+      "url": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多模态推理EPD解耦优化",
+      "sum": "NVIDIA介绍编码-预填充-解码解耦，用于加速多模态模型推理服务。",
+      "ta": "偏服务端推理优化，与实时渲染管线关联弱，速览即可。",
+      "src": "NVIDIA · 09-09",
+      "url": "https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "动画VFX前期评审意图对齐",
+      "sum": "MOONWALK研究动画/VFX前期评审中意图-证据-动作对齐，减少反复澄清。",
+      "ta": "对TA与美术协作流程有参考，可借鉴其评审信息结构化思路。",
+      "src": "arXiv · cs.GR · 09-09",
+      "url": "https://arxiv.org/abs/2609.10385v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "非局部连续介质半隐式模拟",
+      "sum": "SIPD将FEM运动方程重构为成对力表示，统一模拟大规模超弹性材料接触摩擦。",
+      "ta": "布料/软组织模拟的潜在新解法，关注其在大规模接触场景的稳定性。",
+      "src": "arXiv · cs.GR · 09-09",
+      "url": "https://arxiv.org/abs/2609.09834v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "在线真实到仿真自适应",
+      "sum": "RealSimLoop用可微降阶仿真与视觉反馈，在线恢复形变物体的内部物理量。",
+      "ta": "对数字孪生式物理校准有启发，可关注其视觉反馈闭环的工程可行性。",
+      "src": "arXiv · cs.GR · 09-09",
+      "url": "https://arxiv.org/abs/2609.09828v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "秒级学习物理角色技能",
+      "sum": "InstantMimic提出高性能系统，可在数秒内学习基于物理的角色技能。",
+      "ta": "对物理动画与角色控制管线有潜在价值，关注其训练效率与泛化性。",
+      "src": "arXiv · cs.GR · 09-09",
+      "url": "https://arxiv.org/abs/2609.09821v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "可编程世界模型",
+      "sum": "HuggingFace收录Programmable World Model论文，探索可编程的世界模型构建。",
+      "ta": "若涉及3D场景生成与可控仿真，值得关注其接口设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.10540"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "奇幻RPG角色绑定与动画",
+      "sum": "Yeyo Studio拆解兽人、龙等不同解剖结构角色的绑定、蒙皮、移动与战斗动画。",
+      "ta": "可复用动画集与引擎测试经验，对多角色管线搭建有直接参考。",
+      "src": "80 Level · 09-09",
+      "url": "https://80.lv/articles/behind-the-rigging-animation-of-fantasy-action-rpg-characters-like-orcs-and-dragons/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender免费CAD重拓扑工具",
+      "sum": "Hardcraft提供免费CAD数据重拓扑，输出四边面与三角面混合网格。",
+      "ta": "硬表面资产导入Blender后的拓扑处理可省事，速览工具即可。",
+      "src": "80 Level · 09-09",
+      "url": "https://80.lv/articles/try-this-free-cad-data-retopology-tool-for-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "老年矮人皱纹皮肤纹理",
+      "sum": "Nikita Popp分享矮人项目，讲解老化皮肤纹理难点与Paragon毛发材质使用。",
+      "ta": "角色皮肤与毛发材质参考，速览其纹理分层思路。",
+      "src": "80 Level · 09-09",
+      "url": "https://80.lv/articles/mastering-wrinkly-skin-texture-by-making-an-old-medieval-dwarf-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "RAID角色同人建模与贴图",
+      "sum": "Dahye Han分享RAID: Shadow Legends爱丽丝同人，讲解皮革与兔毛贴图流程。",
+      "ta": "材质细节处理参考，速览即可。",
+      "src": "80 Level · 09-09",
+      "url": "https://80.lv/articles/modeling-and-texturing-a-fan-art-of-alice-from-raid-shadow-legends/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "暴雪工会合同限制生成式AI",
+      "sum": "暴雪工会成员批准覆盖1900名员工的合同，含生成式AI使用护栏与裁员保护。",
+      "ta": "AI工具在3A生产中的使用边界正被制度化，值得关注对TA工作流的影响。",
+      "src": "Game Developer · 09-09",
+      "url": "https://www.gamedeveloper.com/production/blizzard-union-workers-ratify-historic-contract-covering-1-900-employees"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Cerny与Keighley设游戏奖学金",
+      "sum": "Nova Games Foundation每年向20名年轻游戏设计师提供六位数资助。",
+      "ta": "行业人才项目，与TA日常无直接关联，速览。",
+      "src": "Game Developer · 09-09",
+      "url": "https://www.gamedeveloper.com/business/mark-cerny-and-geoff-keighley-launch-university-affiliated-fellowship-program"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xsolla推出游戏B2B平台",
+      "sum": "Game Biz Institute是Xsolla推出的游戏行业B2B平台，提供开发者与运营者实践洞察。",
+      "ta": "偏商务资讯，速览即可。",
+      "src": "80 Level · 09-09",
+      "url": "https://80.lv/articles/game-biz-institute-is-a-new-b2b-platform-for-the-game-industry-by-xsolla/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "UE5 Niagara实时VFX教程合集",
+      "sum": "Tech-Artists论坛汇总UE5 Niagara实时VFX的教程与拆解。",
+      "ta": "Niagara特效学习资源，可按需查阅。",
+      "src": "Tech-Artists · 09-07",
+      "url": "https://www.tech-artists.org/t/realtimevfx-in-unreal-engine-5-niagara-tutorials-breakdowns/18538"
+    },
     {
       "cat": "tech",
       "imp": "mid",
@@ -260,15 +425,6 @@ window.INTEL_RECENT = {
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "战锤新作弃用生成式AI",
-      "sum": "Saber CEO 支持 AI，但《Space Marine 3》确认不含生成式 AI 内容。",
-      "ta": "大厂对生成式 AI 的取舍态度，可作为管线引入 AI 的参考案例。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/despite-saber-interactive-ceo-s-pro-ai-course-space-marine-3-is-genai-free/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
       "title": "前BioWare设计师辩护",
       "sum": "前 BioWare 设计师为工作室辩护，回应《质量效应》新作质疑。",
       "ta": "行业舆论动态，与 TA 技术工作无直接关联。",
@@ -337,15 +493,6 @@ window.INTEL_RECENT = {
       "ta": "对 NPC 对话动画生成有潜在应用，但需评估其动作质量与实时性。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.04250"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "权游RTS的UE5美术管线",
-      "sum": "PlaySide总监谈《权游：维斯特洛之战》非对称阵营、沙盒战役及UE5美术流程。",
-      "ta": "关注UE5大规模战斗与阵营差异化在美术资产与场景组织上的落地经验。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/interview-how-war-for-westeros-turns-game-of-thrones-into-an-epic-rts/"
     },
     {
       "cat": "tech",
@@ -510,15 +657,6 @@ window.INTEL_RECENT = {
       "ta": "文本驱动字形布局思路，或可启发程序化纹理与装饰图案生成。",
       "src": "arXiv · cs.GR · 09-02",
       "url": "https://arxiv.org/abs/2609.02511v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "多轴3D打印鲁棒处理",
-      "sum": "WildFab处理含实体-壳组合及非流形结构的真实世界模型。",
-      "ta": "非流形几何处理思路，对DCC工具链中网格修复有参考价值。",
-      "src": "arXiv · cs.GR · 09-02",
-      "url": "https://arxiv.org/abs/2609.02413v1"
     },
     {
       "cat": "gfx",
@@ -746,15 +884,6 @@ window.INTEL_RECENT = {
       "ta": "潜变量生成模型稳定性提升，可能影响未来3D资产生成工具的开发方向。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.29335"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "叙事沙盒开放世界RPG评测",
-      "sum": "Rebel Wolves新作《血之黎明行者》获好评，或成年度游戏竞争者。",
-      "ta": "关注其叙事沙盒设计，可能影响开放世界关卡和任务流程的构建方式。",
-      "src": "80 Level · 08-31",
-      "url": "https://80.lv/articles/the-blood-of-dawnwalker-is-a-special-kind-of-open-world-rpg-with-a-narrative-sandbox/"
     },
     {
       "cat": "flow",
@@ -1304,15 +1433,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/the-witcher-3-is-getting-a-massive-full-remaster-as-a-free-upgrade-very-soon/"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "波西杰克逊VFX特效解析",
-      "sum": "解析剧中石像鬼Sirens特效，使用自定义Bullet和Vellum解算器。",
-      "ta": "了解影视级VFX中刚体与布料解算器的实际应用。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/inside-vfx-of-percy-jackson-and-the-olympians-season-2/"
-    },
-    {
       "cat": "biz",
       "imp": "mid",
       "title": "Riot停止2XKO开发",
@@ -1699,123 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "对程序化形变或绑定系统，可改善大形变下的网格质量与稳定性。",
       "src": "arXiv · cs.GR · 08-17",
       "url": "https://arxiv.org/abs/2608.17182v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "PXDepth 像素级单目深度",
-      "sum": "像素空间建模提升单目深度估计对细粒度结构与边界的保持。",
-      "ta": "对基于深度估计的自动 LOD、植被放置等 TA 工具链有潜在价值。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.16984v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Love Handles 形变手柄简化",
-      "sum": "为形变手柄提供低内存、紧支撑的网格简化方法。",
-      "ta": "可优化物理模拟中形变手柄的存储与计算效率。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17930v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Lambda-Hold 肌肉骨骼模拟",
-      "sum": "最小任务奖励即可让肌肉骨骼模型涌现类人运动。",
-      "ta": "对角色动画或生物力学模拟的 RL 训练策略有参考意义。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.17030v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "aDSL 智能体 3D 程序化创建",
-      "sum": "联合智能体与程序设计，提升 LLM 生成 3D 程序的稳定性。",
-      "ta": "对探索 LLM 辅助程序化资产生成工作流的 TA 有参考价值。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17975v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "ZBrush 2D 概念转 3D 角色",
-      "sum": "David Papunashvili 分享 Punk Knight 项目，投影 2D 概念到雕刻并 PolyPaint 上色。",
-      "ta": "2D 概念直接投影参考的工作流，可提升风格化角色制作效率。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/creating-a-stylized-3d-character-in-a-2d-illustrated-look-with-zbrush/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 程序化手绘风 Shader",
-      "sum": "lassyla 发布教程与下载，制作程序化手绘外观 Blender 着色器。",
-      "ta": "程序化手绘风 Shader 对风格化渲染有直接参考价值。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/tutorial-procedural-blender-shader-with-hand-painted-look/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "珊瑚生长模拟视觉效果",
-      "sum": "展示一个美观且令人着迷的珊瑚生长模拟。",
-      "ta": "可关注其模拟算法与视觉表现，对自然现象特效有启发。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/this-coral-growth-simulation-looks-beautiful-and-mesmerizing/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "尼龙张力模拟设置展示",
-      "sum": "展示一个令人印象深刻的 3D 尼龙张力模拟设置。",
-      "ta": "可关注其布料/张力模拟设置，对角色布料或道具模拟有参考。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/check-out-this-impressive-nylon-tension-simulation-set-up-in-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 专业 VFX 工具捆绑",
-      "sum": "RBDLab、VDBLab 和 FluidLab 三款 Blender VFX 工具捆绑销售。",
-      "ta": "工具捆绑可提升 Blender 特效制作效率，值得关注。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/three-professional-vfx-tools-for-blender-in-one-bundle/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "OpenStudioHub 简化 Blender 管线",
-      "sum": "介绍 OpenStudioHub，用于简化 Blender 工作室工具、Kitsu 与管线。",
-      "ta": "对使用 Blender 的 TA 团队，可简化资产管理流程。",
-      "src": "Tech-Artists · 08-18",
-      "url": "https://www.tech-artists.org/t/simplifying-blender-studio-tools-kitsu-and-blender-pipeline-meet-openstudiohub/18500"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "游戏工作室转向外部开发合作",
-      "sum": "Juego Studios 讨论外部开发、全流程制作、AI 辅助工作流与 LiveOps。",
-      "ta": "了解行业外包趋势，对 TA 的跨团队协作与流程设计有参考。",
-      "src": "80 Level · 08-18",
-      "url": "https://80.lv/articles/why-game-studios-are-turning-to-external-development-partnerships/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Deus Ex 总监 Warren Spector 退休",
-      "sum": "《杀出重围》总监 Warren Spector 在游戏行业近 45 年后宣布退休。",
-      "ta": "行业资深人物动向，可速览。",
-      "src": "Game Developer · 08-18",
-      "url": "https://www.gamedeveloper.com/business/deus-ex-director-warren-spector-is-retiring-after-43-years"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "WINGS 资助独立游戏新途径",
-      "sum": "独立游戏投资机构 WINGS 为 PC 项目推出新资助途径。",
-      "ta": "行业投资动态，可速览。",
-      "src": "Game Developer · 08-18",
-      "url": "https://www.gamedeveloper.com/business/wings-really-really-wants-to-fund-your-neat-indie-video-game"
     }
   ]
 };
