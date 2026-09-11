@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月10日 · 周四",
+  "date": "2026年9月11日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>单步扩散实现实时全局光照</em> / <em>路径追踪按重要性优先渲染</em> / <em>3D物体直接生成高分辨率贴图</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>13D高斯混合解全局光照</em> / <em>ABCD恒定显存训练大高斯场景</em> / <em>二次相位高斯做全息表示</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -130,166 +130,184 @@ window.INTEL_DATA = {
       "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "单步扩散实现实时全局光照",
-      "sum": "AMD提出单步潜扩散模型做实时GI，无需迭代即可输出时序稳定的高质量光照。",
-      "ta": "若落地，可替代部分光追GI方案，重点关注其时序稳定性与显存/延迟开销。",
-      "src": "AMD GPUOpen · 09-09",
-      "url": "https://gpuopen.com/learn/temporally-stable-generative-illumination/"
+      "title": "13D高斯混合解全局光照",
+      "sum": "将光传输方程解表示为位置、方向、法线与材质上的13D高斯混合模型。",
+      "ta": "把GI求解统一进高斯表示，若可实时化将直接影响UE5 Lumen类方案的替代思路。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11430v1"
     },
     {
       "cat": "gfx",
       "imp": "hi",
       "rank": 2,
-      "title": "路径追踪按重要性优先渲染",
-      "sum": "HiPR分层渐进渲染利用场景变化与光传输，优先渲染最关键的像素。",
-      "ta": "对离线/实时PT交互响应有直接参考价值，可借鉴其像素优先级调度思路。",
-      "src": "80 Level · 09-09",
-      "url": "https://80.lv/articles/how-hipr-makes-path-tracing-feel-more-responsive-by-rendering-what-matters-first/"
+      "title": "ABCD恒定显存训练大高斯场景",
+      "sum": "Alpha合成块坐标下降法将大辐射场分块训练，保持全场景上下文且显存恒定。",
+      "ta": "大场景高斯泼溅训练的显存瓶颈解法，对程序化植被/大世界扫描资产重建有直接参考价值。",
+      "src": "80 Level · 09-10",
+      "url": "https://80.lv/articles/how-abcd-trains-large-gaussian-splat-scenes-with-constant-vram/"
     },
     {
       "cat": "gfx",
       "imp": "hi",
       "rank": 3,
-      "title": "3D物体直接生成高分辨率贴图",
-      "sum": "SceneHI将2D扩散的高分辨率光照先验提升到3D，无需微调即可在3D物体上生成纹理。",
-      "ta": "程序化植被/道具贴图流程的潜在加速点，关注其光照可控性与UV一致性。",
-      "src": "arXiv · cs.GR · 09-09",
-      "url": "https://arxiv.org/abs/2609.10363v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "CUDA 13.4支持Windows on Arm",
-      "sum": "CUDA Toolkit 13.4新增Windows on Arm支持，并加强对共享GPU的控制能力。",
-      "ta": "若团队有Arm笔记本或共享GPU调度需求，可评估工具链迁移成本。",
-      "src": "NVIDIA · 09-09",
-      "url": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多模态推理EPD解耦优化",
-      "sum": "NVIDIA介绍编码-预填充-解码解耦，用于加速多模态模型推理服务。",
-      "ta": "偏服务端推理优化，与实时渲染管线关联弱，速览即可。",
-      "src": "NVIDIA · 09-09",
-      "url": "https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving/"
+      "title": "二次相位高斯做全息表示",
+      "sum": "CVQPG用2D二次相位函数替换2D高斯，附加可学习曲率参数表示全息图。",
+      "ta": "高斯泼溅的复数域扩展，关注其可学习参数设计对泼溅基元表达力的启发。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11434v1"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "动画VFX前期评审意图对齐",
-      "sum": "MOONWALK研究动画/VFX前期评审中意图-证据-动作对齐，减少反复澄清。",
-      "ta": "对TA与美术协作流程有参考，可借鉴其评审信息结构化思路。",
-      "src": "arXiv · cs.GR · 09-09",
-      "url": "https://arxiv.org/abs/2609.10385v1"
+      "title": "Blender公布两年战略目标",
+      "sum": "Blender开发博客首次公开未来两年的战略方向概览。",
+      "ta": "小团队路线图决定DCC工具链走向，值得关注是否影响植被/程序化建模管线。",
+      "src": "Blender 开发博客 · 09-10",
+      "url": "https://code.blender.org/2026/09/small-teams-ambitious-projects/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender程序化冰块材质教程",
+      "sum": "Ryan King讲解如何制作易编辑、可自定义的程序化冰块材质。",
+      "ta": "程序化材质节点思路可迁移到植被/环境材质的可控参数化设计。",
+      "src": "80 Level · 09-10",
+      "url": "https://80.lv/articles/tutorial-realistic-procedural-ice-cube-material-in-blender-with-easy-customization/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "2D概念转3D奇幻角色拆解",
+      "sum": "Artem Bieliakov分享从剪影到褶皱、缝线与羽毛的层叠服装建模流程。",
+      "ta": "角色建模流程拆解，对硬表面/服装分层思路有轻度参考。",
+      "src": "80 Level · 09-10",
+      "url": "https://80.lv/articles/breakdown-modeling-a-3d-fantasy-character-based-on-a-2d-concept/"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "非局部连续介质半隐式模拟",
-      "sum": "SIPD将FEM运动方程重构为成对力表示，统一模拟大规模超弹性材料接触摩擦。",
-      "ta": "布料/软组织模拟的潜在新解法，关注其在大规模接触场景的稳定性。",
-      "src": "arXiv · cs.GR · 09-09",
-      "url": "https://arxiv.org/abs/2609.09834v1"
+      "title": "毫米波雷达点泼溅新视角合成",
+      "sum": "提出物理忠实、复值、多视角可解的可微蒙特卡洛雷达光线追踪器。",
+      "ta": "非可见光波段的泼溅渲染，关注其复值渲染框架对特殊传感器可视化的借鉴。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11894v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "在线真实到仿真自适应",
-      "sum": "RealSimLoop用可微降阶仿真与视觉反馈，在线恢复形变物体的内部物理量。",
-      "ta": "对数字孪生式物理校准有启发，可关注其视觉反馈闭环的工程可行性。",
-      "src": "arXiv · cs.GR · 09-09",
-      "url": "https://arxiv.org/abs/2609.09828v1"
+      "title": "反射驱动神经肌肉强化学习",
+      "sum": "结合反射机制与强化学习，生成生理合理且可适应扰动的肌肉驱动运动。",
+      "ta": "肌肉驱动运动生成，对角色动画物理拟真与程序化运动有潜在参考。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11733v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "秒级学习物理角色技能",
-      "sum": "InstantMimic提出高性能系统，可在数秒内学习基于物理的角色技能。",
-      "ta": "对物理动画与角色控制管线有潜在价值，关注其训练效率与泛化性。",
-      "src": "arXiv · cs.GR · 09-09",
-      "url": "https://arxiv.org/abs/2609.09821v1"
+      "title": "无示范学习高速冲刺运动",
+      "sum": "将生物力学运动员模型接入高性能GPU模拟器，无需动作示范生成冲刺运动。",
+      "ta": "GPU模拟器+生物力学模型，关注其高性能仿真架构对物理动画的启发。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11083v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "ReCHOIR跨角色交互动作重定向",
+      "sum": "以接触为引导，将人-物交互动作迁移到多样化人形角色并保留语义。",
+      "ta": "接触引导的重定向，对角色动画复用与交互资产管线有参考价值。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.10982v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "图像与布局先验联合生成模板",
+      "sum": "提出联合图像-布局生成方法，从文本直接产出和谐的设计模板。",
+      "ta": "图形设计生成，与实时渲染关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11519v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GeoTrussRover可重构机器人",
+      "sum": "结合可变几何桁架与移动底座，用接触语义控制原语解决高维协调问题。",
+      "ta": "机器人形态计算，与游戏渲染管线无直接关联。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11361v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "可编程世界模型",
-      "sum": "HuggingFace收录Programmable World Model论文，探索可编程的世界模型构建。",
-      "ta": "若涉及3D场景生成与可控仿真，值得关注其接口设计。",
+      "title": "递归代码世界模型构建复杂场景",
+      "sum": "通过递归场景程序构建复杂世界，探索代码化世界模型表示。",
+      "ta": "若世界模型以程序化场景代码表达，可能影响程序化生成与关卡自动化思路。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.10540"
+      "url": "https://huggingface.co/papers/2609.11499"
     },
     {
-      "cat": "flow",
+      "cat": "ai",
       "imp": "mid",
-      "title": "奇幻RPG角色绑定与动画",
-      "sum": "Yeyo Studio拆解兽人、龙等不同解剖结构角色的绑定、蒙皮、移动与战斗动画。",
-      "ta": "可复用动画集与引擎测试经验，对多角色管线搭建有直接参考。",
-      "src": "80 Level · 09-09",
-      "url": "https://80.lv/articles/behind-the-rigging-animation-of-fantasy-action-rpg-characters-like-orcs-and-dragons/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender免费CAD重拓扑工具",
-      "sum": "Hardcraft提供免费CAD数据重拓扑，输出四边面与三角面混合网格。",
-      "ta": "硬表面资产导入Blender后的拓扑处理可省事，速览工具即可。",
-      "src": "80 Level · 09-09",
-      "url": "https://80.lv/articles/try-this-free-cad-data-retopology-tool-for-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "老年矮人皱纹皮肤纹理",
-      "sum": "Nikita Popp分享矮人项目，讲解老化皮肤纹理难点与Paragon毛发材质使用。",
-      "ta": "角色皮肤与毛发材质参考，速览其纹理分层思路。",
-      "src": "80 Level · 09-09",
-      "url": "https://80.lv/articles/mastering-wrinkly-skin-texture-by-making-an-old-medieval-dwarf-in-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "RAID角色同人建模与贴图",
-      "sum": "Dahye Han分享RAID: Shadow Legends爱丽丝同人，讲解皮革与兔毛贴图流程。",
-      "ta": "材质细节处理参考，速览即可。",
-      "src": "80 Level · 09-09",
-      "url": "https://80.lv/articles/modeling-and-texturing-a-fan-art-of-alice-from-raid-shadow-legends/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "暴雪工会合同限制生成式AI",
-      "sum": "暴雪工会成员批准覆盖1900名员工的合同，含生成式AI使用护栏与裁员保护。",
-      "ta": "AI工具在3A生产中的使用边界正被制度化，值得关注对TA工作流的影响。",
-      "src": "Game Developer · 09-09",
-      "url": "https://www.gamedeveloper.com/production/blizzard-union-workers-ratify-historic-contract-covering-1-900-employees"
+      "title": "World in World世界模型探索",
+      "sum": "提出World in World方法，用世界模型进行环境探索。",
+      "ta": "世界模型探索方向，关注其对程序化环境生成与AI驱动的潜在影响。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.11548"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Cerny与Keighley设游戏奖学金",
-      "sum": "Nova Games Foundation每年向20名年轻游戏设计师提供六位数资助。",
-      "ta": "行业人才项目，与TA日常无直接关联，速览。",
-      "src": "Game Developer · 09-09",
-      "url": "https://www.gamedeveloper.com/business/mark-cerny-and-geoff-keighley-launch-university-affiliated-fellowship-program"
+      "title": "可玩游戏片段助独立游戏曝光",
+      "sum": "Ludeo讨论云端即时可玩片段如何降低营销门槛、提升独立游戏愿望单转化。",
+      "ta": "发行侧营销手段，与TA日常无直接关系，速览。",
+      "src": "80 Level · 09-10",
+      "url": "https://80.lv/articles/how-playable-game-moments-could-help-indie-games-get-discovered/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Xsolla推出游戏B2B平台",
-      "sum": "Game Biz Institute是Xsolla推出的游戏行业B2B平台，提供开发者与运营者实践洞察。",
-      "ta": "偏商务资讯，速览即可。",
-      "src": "80 Level · 09-09",
-      "url": "https://80.lv/articles/game-biz-institute-is-a-new-b2b-platform-for-the-game-industry-by-xsolla/"
+      "title": "id老将谈十年后转独立开发",
+      "sum": "Doom Eternal艺术总监Tony Garza等分享离开id后创办Turnkey Games的经历。",
+      "ta": "行业人物访谈，无技术信息量。",
+      "src": "Game Developer · 09-10",
+      "url": "https://www.gamedeveloper.com/production/-ship-a-good-game-learn-from-it-and-build-from-there-lessons-from-going-indie-after-a-decade-at-id-software"
     },
     {
-      "cat": "tech",
+      "cat": "biz",
       "imp": "lo",
-      "title": "UE5 Niagara实时VFX教程合集",
-      "sum": "Tech-Artists论坛汇总UE5 Niagara实时VFX的教程与拆解。",
-      "ta": "Niagara特效学习资源，可按需查阅。",
-      "src": "Tech-Artists · 09-07",
-      "url": "https://www.tech-artists.org/t/realtimevfx-in-unreal-engine-5-niagara-tutorials-breakdowns/18538"
+      "title": "Control Resonant扩展辅助模式",
+      "sum": "Control Resonant公布围绕新战斗系统设计的扩展Assist Mode，9月24日发售。",
+      "ta": "游戏功能宣发，无技术细节。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Muramasa新作定档2027年2月",
+      "sum": "Vanillaware与Marvelous公布Muramasa: Revenant Blades将于2027年2月4日发售。",
+      "ta": "发售日宣发，速览。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/10/muramasa-revenant-blades-launches-february-4-2027/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS商店8月下载榜公布",
+      "sum": "亚洲区PS5/PS4/PS VR2下载榜公布，黑神话悟空等居前。",
+      "ta": "榜单数据，无技术信息。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/09/20260910-top/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "星际大战新作获月度玩家选择",
+      "sum": "Star Wars Zero Company获PlayStation玩家选择2026年8月最佳新游。",
+      "ta": "玩家投票结果，速览。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/10/players-choice-vote-for-augusts-best-new-game-3/"
     }
   ],
   "flashbackTitle": "",
@@ -297,6 +315,7 @@ window.INTEL_DATA = {
     "ok": [
       "Unreal Engine",
       "NVIDIA",
+      "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
@@ -306,7 +325,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": ""
   },
   "xStale": false
 };

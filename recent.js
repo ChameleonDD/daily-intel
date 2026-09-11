@@ -2,8 +2,182 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-10 13:46",
+  "updated": "2026-09-11 13:46",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "13D高斯混合解全局光照",
+      "sum": "将光传输方程解表示为位置、方向、法线与材质上的13D高斯混合模型。",
+      "ta": "把GI求解统一进高斯表示，若可实时化将直接影响UE5 Lumen类方案的替代思路。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11430v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "ABCD恒定显存训练大高斯场景",
+      "sum": "Alpha合成块坐标下降法将大辐射场分块训练，保持全场景上下文且显存恒定。",
+      "ta": "大场景高斯泼溅训练的显存瓶颈解法，对程序化植被/大世界扫描资产重建有直接参考价值。",
+      "src": "80 Level · 09-10",
+      "url": "https://80.lv/articles/how-abcd-trains-large-gaussian-splat-scenes-with-constant-vram/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "二次相位高斯做全息表示",
+      "sum": "CVQPG用2D二次相位函数替换2D高斯，附加可学习曲率参数表示全息图。",
+      "ta": "高斯泼溅的复数域扩展，关注其可学习参数设计对泼溅基元表达力的启发。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11434v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender公布两年战略目标",
+      "sum": "Blender开发博客首次公开未来两年的战略方向概览。",
+      "ta": "小团队路线图决定DCC工具链走向，值得关注是否影响植被/程序化建模管线。",
+      "src": "Blender 开发博客 · 09-10",
+      "url": "https://code.blender.org/2026/09/small-teams-ambitious-projects/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "2D概念转3D奇幻角色拆解",
+      "sum": "Artem Bieliakov分享从剪影到褶皱、缝线与羽毛的层叠服装建模流程。",
+      "ta": "角色建模流程拆解，对硬表面/服装分层思路有轻度参考。",
+      "src": "80 Level · 09-10",
+      "url": "https://80.lv/articles/breakdown-modeling-a-3d-fantasy-character-based-on-a-2d-concept/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "毫米波雷达点泼溅新视角合成",
+      "sum": "提出物理忠实、复值、多视角可解的可微蒙特卡洛雷达光线追踪器。",
+      "ta": "非可见光波段的泼溅渲染，关注其复值渲染框架对特殊传感器可视化的借鉴。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11894v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "反射驱动神经肌肉强化学习",
+      "sum": "结合反射机制与强化学习，生成生理合理且可适应扰动的肌肉驱动运动。",
+      "ta": "肌肉驱动运动生成，对角色动画物理拟真与程序化运动有潜在参考。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11733v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "无示范学习高速冲刺运动",
+      "sum": "将生物力学运动员模型接入高性能GPU模拟器，无需动作示范生成冲刺运动。",
+      "ta": "GPU模拟器+生物力学模型，关注其高性能仿真架构对物理动画的启发。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11083v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "ReCHOIR跨角色交互动作重定向",
+      "sum": "以接触为引导，将人-物交互动作迁移到多样化人形角色并保留语义。",
+      "ta": "接触引导的重定向，对角色动画复用与交互资产管线有参考价值。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.10982v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "图像与布局先验联合生成模板",
+      "sum": "提出联合图像-布局生成方法，从文本直接产出和谐的设计模板。",
+      "ta": "图形设计生成，与实时渲染关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11519v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GeoTrussRover可重构机器人",
+      "sum": "结合可变几何桁架与移动底座，用接触语义控制原语解决高维协调问题。",
+      "ta": "机器人形态计算，与游戏渲染管线无直接关联。",
+      "src": "arXiv · cs.GR · 09-10",
+      "url": "https://arxiv.org/abs/2609.11361v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "递归代码世界模型构建复杂场景",
+      "sum": "通过递归场景程序构建复杂世界，探索代码化世界模型表示。",
+      "ta": "若世界模型以程序化场景代码表达，可能影响程序化生成与关卡自动化思路。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.11499"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "World in World世界模型探索",
+      "sum": "提出World in World方法，用世界模型进行环境探索。",
+      "ta": "世界模型探索方向，关注其对程序化环境生成与AI驱动的潜在影响。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.11548"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "可玩游戏片段助独立游戏曝光",
+      "sum": "Ludeo讨论云端即时可玩片段如何降低营销门槛、提升独立游戏愿望单转化。",
+      "ta": "发行侧营销手段，与TA日常无直接关系，速览。",
+      "src": "80 Level · 09-10",
+      "url": "https://80.lv/articles/how-playable-game-moments-could-help-indie-games-get-discovered/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "id老将谈十年后转独立开发",
+      "sum": "Doom Eternal艺术总监Tony Garza等分享离开id后创办Turnkey Games的经历。",
+      "ta": "行业人物访谈，无技术信息量。",
+      "src": "Game Developer · 09-10",
+      "url": "https://www.gamedeveloper.com/production/-ship-a-good-game-learn-from-it-and-build-from-there-lessons-from-going-indie-after-a-decade-at-id-software"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Control Resonant扩展辅助模式",
+      "sum": "Control Resonant公布围绕新战斗系统设计的扩展Assist Mode，9月24日发售。",
+      "ta": "游戏功能宣发，无技术细节。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Muramasa新作定档2027年2月",
+      "sum": "Vanillaware与Marvelous公布Muramasa: Revenant Blades将于2027年2月4日发售。",
+      "ta": "发售日宣发，速览。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/10/muramasa-revenant-blades-launches-february-4-2027/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS商店8月下载榜公布",
+      "sum": "亚洲区PS5/PS4/PS VR2下载榜公布，黑神话悟空等居前。",
+      "ta": "榜单数据，无技术信息。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/09/20260910-top/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "星际大战新作获月度玩家选择",
+      "sum": "Star Wars Zero Company获PlayStation玩家选择2026年8月最佳新游。",
+      "ta": "玩家投票结果，速览。",
+      "src": "PlayStation Blog · 09-10",
+      "url": "https://blog.playstation.com/2026/09/10/players-choice-vote-for-augusts-best-new-game-3/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -385,15 +559,6 @@ window.INTEL_RECENT = {
       "ta": "可作为轻量级贴图工具，适合快速迭代或原型验证，关注其功能覆盖度。",
       "src": "80 Level · 09-07",
       "url": "https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender顶点吸附工具",
-      "sum": "免费一键式 Blender 工具，可将顶点吸附至最近表面，修复网格穿插。",
-      "ta": "程序化生成或手工建模时，可快速修复植被与地形穿插问题，提升效率。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/free-one-click-blender-tool-to-snap-vertices-to-nearest-surface/"
     },
     {
       "cat": "flow",
@@ -1656,169 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "视频世界模型进展可能影响未来实时场景生成与交互模拟。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.14022"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Human Fall Flat 开发商推 VR 新作",
-      "sum": "开发商宣布一款 cozy VR 解谜游戏，风格延续轻松幽默。",
-      "ta": "VR 解谜玩法或带来新的交互设计参考，但技术含量有限。",
-      "src": "80 Level · 08-20",
-      "url": "https://80.lv/articles/human-fall-flat-developers-announce-a-new-cozy-vr-puzzle-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "行业动荡期入行游戏美术时机",
-      "sum": "Vertex School 认为行业动荡为掌握基础与工作流的新人创造机会。",
-      "ta": "对 TA 新人而言，强调工作流熟练度是入行关键信号。",
-      "src": "80 Level · 08-20",
-      "url": "https://80.lv/articles/why-now-might-be-the-right-time-to-start-a-career-in-game-art/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Aura 加速 Dark and Darker 开发",
-      "sum": "IRONMACE 用 Aura 让非技术设计师直接改代码，功能开发时间减半。",
-      "ta": "Aura 这类工具可能改变 TA 与策划协作方式，值得关注其工作流潜力。",
-      "src": "80 Level · 08-20",
-      "url": "https://80.lv/articles/how-dark-and-darker-s-devs-used-aura-to-build-a-major-feature-in-half-the-time/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前耻辱2创意总监创立新工作室",
-      "sum": "Black Pony Immersive 专注单人第一人称动作 RPG，成员来自 Arkane。",
-      "ta": "新工作室动向对行业人才流动有参考，但无直接技术内容。",
-      "src": "80 Level · 08-20",
-      "url": "https://80.lv/articles/ex-dishonored-2-creative-director-founds-his-own-studio-with-former-arkane-devs/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "空洞骑士 Hornet 动画赏析",
-      "sum": "Brad Faucheux 制作的 Hornet 动画动作流畅，2D 特效出色。",
-      "ta": "2D 动画与特效结合是 TA 可借鉴的视觉表现案例。",
-      "src": "80 Level · 08-20",
-      "url": "https://80.lv/articles/this-hollow-knight-s-hornet-animation-belongs-in-smash-bros/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Blender 与 3DGS 打造梦境巴士",
-      "sum": "用 Blender 和 3DGS 制作巴士场景，欠训练产生有趣视觉效果。",
-      "ta": "3DGS 欠训练伪影可作风格化手段，探索非写实渲染新路径。",
-      "src": "80 Level · 08-20",
-      "url": "https://80.lv/articles/bus-ride-straight-out-of-dream-made-with-blender-3dgs/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Makers Fund 募资 2.5 亿美元",
-      "sum": "Makers Fund 完成 2.5 亿美元融资，扩大游戏行业投资版图。",
-      "ta": "资本动向影响行业生态，但对日常 TA 工作无直接指导。",
-      "src": "Game Developer · 08-20",
-      "url": "https://www.gamedeveloper.com/business/makers-fund-expands-game-industry-footprint-after-closing-250-million-investment-round"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "音频驱动鼓手动作合成",
-      "sum": "新方法从音乐音频生成高精度鼓手演奏动作，兼顾高速动态与空间精度。",
-      "ta": "对角色动画与程序化动作生成有参考价值，可关注其动作-音频对齐技术。",
-      "src": "arXiv · cs.GR · 08-19",
-      "url": "https://arxiv.org/abs/2608.19055v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "稻草人转人类角色设计",
-      "sum": "Anna Cerutti 分享 Harvey 项目工作流，融合卡通比例与写实细节。",
-      "ta": "角色建模与材质混合思路可借鉴，适合生物角色设计参考。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/breakdown-how-to-design-a-scarecrow-turned-human-character/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "真菌生物雕刻与纹理制作",
-      "sum": "Kamil Tondera 详解藤蔓树皮制作工具与手绘材质实现有机外观。",
-      "ta": "植被与有机表面材质制作流程，对程序化植被工具开发有启发。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/sculpting-and-texturing-a-fungal-creature-inspired-by-the-last-of-us/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "阴影驱动角色面部变化",
-      "sum": "利用阴影效果让角色面部产生诡异变化，鼓励自行尝试复现。",
-      "ta": "光影对角色表现力影响显著，可关注其着色器或光照技巧。",
-      "src": "80 Level · 08-19",
-      "url": "https://80.lv/articles/shadows-make-this-character-s-face-change-in-the-creepiest-way/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Arkane 老兵成立新工作室",
-      "sum": "Harvey Smith 等 Arkane Austin 老将创立 Black Pony Immersive，专注第一人称动作 RPG。",
-      "ta": "行业动向，关注其后续技术选型或沉浸式设计理念。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/harvey-smith-and-fellow-arkane-austin-veterans-launch-a-new-studio"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "3A 老兵成立合作制工作室",
-      "sum": "Raze and Rebuild Studio 由 3A 老兵与无障碍专家创立，采用合作制结构。",
-      "ta": "行业模式创新，可关注其协作流程对开发效率的影响。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/triple-a-vets-and-accessibility-experts-launch-new-game-dev-co-op-raze-and-rebuild-studio"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "索尼缩减地平线服务型游戏",
-      "sum": "Guerrilla 据报因反馈不佳，移除 Horizon Hunters Gathering 的在线服务元素。",
-      "ta": "服务型游戏趋势调整，影响在线渲染与后端技术需求。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/report-playstation-reworks-horizon-live-service-game-after-negative-feedback"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Human Fall Flat 老兵建新工作室",
-      "sum": "Pretty Cool Games 在英国成立，已获融资并开始招聘。",
-      "ta": "行业动态，关注其首款作品的技术栈选择。",
-      "src": "Game Developer · 08-19",
-      "url": "https://www.gamedeveloper.com/business/human-fall-flat-veterans-launch-new-uk-studio-pretty-cool-games"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "MetaSapiens v2 实时注视点渲染",
-      "sum": "提出注视点感知剪枝与立体扭曲，加速点云神经渲染至实时。",
-      "ta": "关注其剪枝与扭曲策略，对 VR/AR 实时渲染管线优化有直接参考价值。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17969v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "WebGPU 六法绘制多层地形",
-      "sum": "比较六种 WebGPU 渲染方法，用于可编辑多层高度场地形。",
-      "ta": "游戏地形常非单值高度场，此对比对 TA 选型实时地形渲染方案有启发。",
-      "src": "arXiv · cs.GR · 08-18",
-      "url": "https://arxiv.org/abs/2608.17390v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RADmesh 重网格感知形变",
-      "sum": "提出重网格增强的网格形变方法，避免大形变时三角质量恶化。",
-      "ta": "对程序化形变或绑定系统，可改善大形变下的网格质量与稳定性。",
-      "src": "arXiv · cs.GR · 08-17",
-      "url": "https://arxiv.org/abs/2608.17182v1"
     }
   ]
 };
