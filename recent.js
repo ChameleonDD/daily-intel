@@ -2,8 +2,71 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-11 13:46",
+  "updated": "2026-09-12 13:34",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Cycles 实现真光子焦散",
+      "sum": "Blender Cycles 新增真光子追踪焦散，渲染设置勾选即可，兼容现有场景。",
+      "ta": "焦散长期是离线渲染痛点，若实现足够稳健，可参考其光子映射思路反哺实时近似方案。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/true-photon-traced-caustics-for-blender-s-cycles/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Godot 复刻 PS1 渲染",
+      "sum": "开发者基于硬件原理拆解 PS1 图形管线，做成 Godot 复古渲染插件。",
+      "ta": "顶点抖动、仿射贴图、低精度深度等 PS1 特性拆解，对理解固定管线与风格化渲染有参考价值。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/try-this-authentic-ps1-style-rendering-add-on-for-godot/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 布料抖动插件",
+      "sum": "新 Blender 插件可为身体、衣物和头发添加抖动物理，支持任意数量衣物。",
+      "ta": "轻量级次级动力学方案，可对比 UE 骨骼链/Chaos Cloth 的抖动实现成本。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/this-blender-add-on-lets-you-add-jiggle-physics-to-bodies-clothes-and-hair/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE+ZBrush 复刻毁灭博士",
+      "sum": "作者用 MetaHuman 建模面部、ZBrush 与 Marvelous Designer 制作服装，并做披风磨损。",
+      "ta": "MetaHuman 面部 + 传统服装建模的混合流程，磨损细节处理值得一看。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/making-a-recreation-of-dr-doom-using-unreal-engine-and-zbrush/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "EchoForge 用声音建 3D 世界",
+      "sum": "研究结合空间音频分析、场景图与程序化生成，把录音转成 Unity 可探索 3D 环境。",
+      "ta": "音频驱动的程序化生成思路，对植被/场景工具的程序化管线设计有启发。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/echoforge-uses-spatial-sound-to-build-3d-worlds-in-unity/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Steam 泄露未公布成就",
+      "sum": "Exophase 发现 Steam 泄露了未发售与未公布游戏的成就信息。",
+      "ta": "行业情报向，与 TA 工作无直接关联，速览即可。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/steam-leak-reveals-achievements-for-unreleased-and-unannounced-games/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rockstar 工会案核心论点",
+      "sum": "Rockstar 与被解雇 GTA 开发者双方在工会打压仲裁中提交法律文件陈述论点。",
+      "ta": "劳动法务向行业新闻，与 TA 技术工作无关。",
+      "src": "Game Developer · 09-11",
+      "url": "https://www.gamedeveloper.com/production/rockstar-and-fired-gta-developers-outline-core-arguments-during-union-busting-tribunal"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -33,15 +96,6 @@ window.INTEL_RECENT = {
       "ta": "高斯泼溅的复数域扩展，关注其可学习参数设计对泼溅基元表达力的启发。",
       "src": "arXiv · cs.GR · 09-10",
       "url": "https://arxiv.org/abs/2609.11434v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender公布两年战略目标",
-      "sum": "Blender开发博客首次公开未来两年的战略方向概览。",
-      "ta": "小团队路线图决定DCC工具链走向，值得关注是否影响植被/程序化建模管线。",
-      "src": "Blender 开发博客 · 09-10",
-      "url": "https://code.blender.org/2026/09/small-teams-ambitious-projects/"
     },
     {
       "cat": "flow",
@@ -1767,60 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "了解实拍扫描在角色服装制作中的流程，可能提升资产真实度与效率。",
       "src": "80 Level · 08-21",
       "url": "https://80.lv/articles/building-a-hero-garment-from-real-world-data/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "HTML5游戏转独立网站",
-      "sum": "Playgama Wrap免费服务将HTML5游戏转为带支付、分析、SEO的独立网站。",
-      "ta": "对游戏分发渠道有影响，但技术含量低，可速览。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/this-free-tool-turns-html5-games-into-full-standalone-websites/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "黑神话钟馗实机预告",
-      "sum": "《黑神话：钟馗》发布15分钟实机预告，画面表现优于前作《悟空》。",
-      "ta": "关注国产3A画面表现趋势，但非技术细节，速览即可。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/see-what-black-myth-zhong-kui-brings-in-15-minute-gameplay-trailer/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Rusty Lake新作开发访谈",
-      "sum": "Rusty Lake联合创始人谈新作《Servant of the Lake》的谜题设计与世界观。",
-      "ta": "了解解谜游戏设计思路，对关卡设计有启发，但非硬核技术。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/puzzles-lore-inspiration-get-glimpse-of-rusty-lake-development/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Tails of Iron 2免费扩展",
-      "sum": "《Tails of Iron 2》免费扩展包上线，新增11个任务、10个Boss和9套护甲。",
-      "ta": "游戏内容更新，无技术参考价值。",
-      "src": "PlayStation Blog · 08-21",
-      "url": "https://blog.playstation.com/2026/08/21/tails-of-iron-2-blood-brine-free-expansion/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "生成式推荐系统新范式",
-      "sum": "NVIDIA 探讨生成式推荐系统在规模化的训练挑战与重构。",
-      "ta": "虽非游戏直接相关，但生成式架构思路可迁移至程序化内容推荐。",
-      "src": "NVIDIA · 08-20",
-      "url": "https://developer.nvidia.com/blog/how-generative-recommenders-are-redefining-recsys-at-scale/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "渐进式因果视频世界模型",
-      "sum": "ForgeWM 提出少步动作条件视频世界模型的渐进式因果训练。",
-      "ta": "视频世界模型进展可能影响未来实时场景生成与交互模拟。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.14022"
     }
   ]
 };

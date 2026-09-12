@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月11日 · 周五",
+  "date": "2026年9月12日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>13D高斯混合解全局光照</em> / <em>ABCD恒定显存训练大高斯场景</em> / <em>二次相位高斯做全息表示</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Cycles 实现真光子焦散</em> / <em>Godot 复刻 PS1 渲染</em> / <em>Blender 布料抖动插件</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,186 +128,84 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "13D高斯混合解全局光照",
-      "sum": "将光传输方程解表示为位置、方向、法线与材质上的13D高斯混合模型。",
-      "ta": "把GI求解统一进高斯表示，若可实时化将直接影响UE5 Lumen类方案的替代思路。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.11430v1"
+      "imp": "mid",
+      "title": "Cycles 实现真光子焦散",
+      "sum": "Blender Cycles 新增真光子追踪焦散，渲染设置勾选即可，兼容现有场景。",
+      "ta": "焦散长期是离线渲染痛点，若实现足够稳健，可参考其光子映射思路反哺实时近似方案。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/true-photon-traced-caustics-for-blender-s-cycles/"
     },
     {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "ABCD恒定显存训练大高斯场景",
-      "sum": "Alpha合成块坐标下降法将大辐射场分块训练，保持全场景上下文且显存恒定。",
-      "ta": "大场景高斯泼溅训练的显存瓶颈解法，对程序化植被/大世界扫描资产重建有直接参考价值。",
-      "src": "80 Level · 09-10",
-      "url": "https://80.lv/articles/how-abcd-trains-large-gaussian-splat-scenes-with-constant-vram/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "二次相位高斯做全息表示",
-      "sum": "CVQPG用2D二次相位函数替换2D高斯，附加可学习曲率参数表示全息图。",
-      "ta": "高斯泼溅的复数域扩展，关注其可学习参数设计对泼溅基元表达力的启发。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.11434v1"
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Godot 复刻 PS1 渲染",
+      "sum": "开发者基于硬件原理拆解 PS1 图形管线，做成 Godot 复古渲染插件。",
+      "ta": "顶点抖动、仿射贴图、低精度深度等 PS1 特性拆解，对理解固定管线与风格化渲染有参考价值。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/try-this-authentic-ps1-style-rendering-add-on-for-godot/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender公布两年战略目标",
-      "sum": "Blender开发博客首次公开未来两年的战略方向概览。",
-      "ta": "小团队路线图决定DCC工具链走向，值得关注是否影响植被/程序化建模管线。",
-      "src": "Blender 开发博客 · 09-10",
-      "url": "https://code.blender.org/2026/09/small-teams-ambitious-projects/"
+      "title": "Blender 布料抖动插件",
+      "sum": "新 Blender 插件可为身体、衣物和头发添加抖动物理，支持任意数量衣物。",
+      "ta": "轻量级次级动力学方案，可对比 UE 骨骼链/Chaos Cloth 的抖动实现成本。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/this-blender-add-on-lets-you-add-jiggle-physics-to-bodies-clothes-and-hair/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender程序化冰块材质教程",
-      "sum": "Ryan King讲解如何制作易编辑、可自定义的程序化冰块材质。",
-      "ta": "程序化材质节点思路可迁移到植被/环境材质的可控参数化设计。",
-      "src": "80 Level · 09-10",
-      "url": "https://80.lv/articles/tutorial-realistic-procedural-ice-cube-material-in-blender-with-easy-customization/"
+      "title": "UE+ZBrush 复刻毁灭博士",
+      "sum": "作者用 MetaHuman 建模面部、ZBrush 与 Marvelous Designer 制作服装，并做披风磨损。",
+      "ta": "MetaHuman 面部 + 传统服装建模的混合流程，磨损细节处理值得一看。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/making-a-recreation-of-dr-doom-using-unreal-engine-and-zbrush/"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "2D概念转3D奇幻角色拆解",
-      "sum": "Artem Bieliakov分享从剪影到褶皱、缝线与羽毛的层叠服装建模流程。",
-      "ta": "角色建模流程拆解，对硬表面/服装分层思路有轻度参考。",
-      "src": "80 Level · 09-10",
-      "url": "https://80.lv/articles/breakdown-modeling-a-3d-fantasy-character-based-on-a-2d-concept/"
-    },
-    {
-      "cat": "gfx",
+      "cat": "tech",
       "imp": "mid",
-      "title": "毫米波雷达点泼溅新视角合成",
-      "sum": "提出物理忠实、复值、多视角可解的可微蒙特卡洛雷达光线追踪器。",
-      "ta": "非可见光波段的泼溅渲染，关注其复值渲染框架对特殊传感器可视化的借鉴。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.11894v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "反射驱动神经肌肉强化学习",
-      "sum": "结合反射机制与强化学习，生成生理合理且可适应扰动的肌肉驱动运动。",
-      "ta": "肌肉驱动运动生成，对角色动画物理拟真与程序化运动有潜在参考。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.11733v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "无示范学习高速冲刺运动",
-      "sum": "将生物力学运动员模型接入高性能GPU模拟器，无需动作示范生成冲刺运动。",
-      "ta": "GPU模拟器+生物力学模型，关注其高性能仿真架构对物理动画的启发。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.11083v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "ReCHOIR跨角色交互动作重定向",
-      "sum": "以接触为引导，将人-物交互动作迁移到多样化人形角色并保留语义。",
-      "ta": "接触引导的重定向，对角色动画复用与交互资产管线有参考价值。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.10982v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "图像与布局先验联合生成模板",
-      "sum": "提出联合图像-布局生成方法，从文本直接产出和谐的设计模板。",
-      "ta": "图形设计生成，与实时渲染关联弱，速览即可。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.11519v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "GeoTrussRover可重构机器人",
-      "sum": "结合可变几何桁架与移动底座，用接触语义控制原语解决高维协调问题。",
-      "ta": "机器人形态计算，与游戏渲染管线无直接关联。",
-      "src": "arXiv · cs.GR · 09-10",
-      "url": "https://arxiv.org/abs/2609.11361v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "递归代码世界模型构建复杂场景",
-      "sum": "通过递归场景程序构建复杂世界，探索代码化世界模型表示。",
-      "ta": "若世界模型以程序化场景代码表达，可能影响程序化生成与关卡自动化思路。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.11499"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "World in World世界模型探索",
-      "sum": "提出World in World方法，用世界模型进行环境探索。",
-      "ta": "世界模型探索方向，关注其对程序化环境生成与AI驱动的潜在影响。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.11548"
+      "title": "EchoForge 用声音建 3D 世界",
+      "sum": "研究结合空间音频分析、场景图与程序化生成，把录音转成 Unity 可探索 3D 环境。",
+      "ta": "音频驱动的程序化生成思路，对植被/场景工具的程序化管线设计有启发。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/echoforge-uses-spatial-sound-to-build-3d-worlds-in-unity/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "可玩游戏片段助独立游戏曝光",
-      "sum": "Ludeo讨论云端即时可玩片段如何降低营销门槛、提升独立游戏愿望单转化。",
-      "ta": "发行侧营销手段，与TA日常无直接关系，速览。",
-      "src": "80 Level · 09-10",
-      "url": "https://80.lv/articles/how-playable-game-moments-could-help-indie-games-get-discovered/"
+      "title": "Steam 泄露未公布成就",
+      "sum": "Exophase 发现 Steam 泄露了未发售与未公布游戏的成就信息。",
+      "ta": "行业情报向，与 TA 工作无直接关联，速览即可。",
+      "src": "80 Level · 09-11",
+      "url": "https://80.lv/articles/steam-leak-reveals-achievements-for-unreleased-and-unannounced-games/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "id老将谈十年后转独立开发",
-      "sum": "Doom Eternal艺术总监Tony Garza等分享离开id后创办Turnkey Games的经历。",
-      "ta": "行业人物访谈，无技术信息量。",
+      "title": "Rockstar 工会案核心论点",
+      "sum": "Rockstar 与被解雇 GTA 开发者双方在工会打压仲裁中提交法律文件陈述论点。",
+      "ta": "劳动法务向行业新闻，与 TA 技术工作无关。",
+      "src": "Game Developer · 09-11",
+      "url": "https://www.gamedeveloper.com/production/rockstar-and-fired-gta-developers-outline-core-arguments-during-union-busting-tribunal"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rockstar 指控前员工诽谤",
+      "sum": "律师解读 Rockstar 指控前员工在 Discord 诽谤一案中「诽谤」的法律界定。",
+      "ta": "法务解读向，与 TA 无关。",
+      "src": "Game Developer · 09-11",
+      "url": "https://www.gamedeveloper.com/business/an-honest-opinion-or-defamation-a-solicitor-outlines-the-legal-nuance"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Steam 澳洲年龄验证",
+      "sum": "多名用户称 Valve 对澳洲 Steam 用户启用信用卡年龄验证以访问 R18+ 游戏。",
+      "ta": "平台合规新闻，与 TA 工作无直接关联。",
       "src": "Game Developer · 09-10",
-      "url": "https://www.gamedeveloper.com/production/-ship-a-good-game-learn-from-it-and-build-from-there-lessons-from-going-indie-after-a-decade-at-id-software"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Control Resonant扩展辅助模式",
-      "sum": "Control Resonant公布围绕新战斗系统设计的扩展Assist Mode，9月24日发售。",
-      "ta": "游戏功能宣发，无技术细节。",
-      "src": "PlayStation Blog · 09-10",
-      "url": "https://blog.playstation.com/2026/09/10/play-your-way-with-control-resonants-expanded-assist-mode/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Muramasa新作定档2027年2月",
-      "sum": "Vanillaware与Marvelous公布Muramasa: Revenant Blades将于2027年2月4日发售。",
-      "ta": "发售日宣发，速览。",
-      "src": "PlayStation Blog · 09-10",
-      "url": "https://blog.playstation.com/2026/09/10/muramasa-revenant-blades-launches-february-4-2027/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS商店8月下载榜公布",
-      "sum": "亚洲区PS5/PS4/PS VR2下载榜公布，黑神话悟空等居前。",
-      "ta": "榜单数据，无技术信息。",
-      "src": "PlayStation Blog · 09-10",
-      "url": "https://blog.playstation.com/2026/09/09/20260910-top/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "星际大战新作获月度玩家选择",
-      "sum": "Star Wars Zero Company获PlayStation玩家选择2026年8月最佳新游。",
-      "ta": "玩家投票结果，速览。",
-      "src": "PlayStation Blog · 09-10",
-      "url": "https://blog.playstation.com/2026/09/10/players-choice-vote-for-augusts-best-new-game-3/"
+      "url": "https://www.gamedeveloper.com/pc/report-steam-now-requires-australian-users-to-verify-their-age-with-credit-cards"
     }
   ],
   "flashbackTitle": "",
@@ -315,7 +213,6 @@ window.INTEL_DATA = {
     "ok": [
       "Unreal Engine",
       "NVIDIA",
-      "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
@@ -325,7 +222,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": ""
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };
