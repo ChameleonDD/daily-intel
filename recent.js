@@ -2,8 +2,26 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-12 13:34",
+  "updated": "2026-09-13 13:54",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "免费Blender工具简化头发绑定",
+      "sum": "一款免费Blender工具可沿风格化发丝自动生成变形骨骼链。",
+      "ta": "植被/毛发类程序化绑定的思路可借鉴，自动骨骼链生成逻辑或能迁移到草叶、藤蔓等植被骨骼化流程。",
+      "src": "80 Level · 09-12",
+      "url": "https://80.lv/articles/this-free-blender-tool-makes-hair-rigging-easier/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "科幻恐怖游戏实现视线外房间变换",
+      "sum": "开发者liamflannery56在一周内做出「移开视线房间即变化」的科幻恐怖游戏。",
+      "ta": "视线触发场景切换是低成本空间叙事技巧，可参考其可见性判定与场景流式加载的实现思路。",
+      "src": "80 Level · 09-12",
+      "url": "https://80.lv/articles/rooms-change-when-you-look-away-in-this-sci-fi-horror-game/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -21,15 +39,6 @@ window.INTEL_RECENT = {
       "ta": "顶点抖动、仿射贴图、低精度深度等 PS1 特性拆解，对理解固定管线与风格化渲染有参考价值。",
       "src": "80 Level · 09-11",
       "url": "https://80.lv/articles/try-this-authentic-ps1-style-rendering-add-on-for-godot/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 布料抖动插件",
-      "sum": "新 Blender 插件可为身体、衣物和头发添加抖动物理，支持任意数量衣物。",
-      "ta": "轻量级次级动力学方案，可对比 UE 骨骼链/Chaos Cloth 的抖动实现成本。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/this-blender-add-on-lets-you-add-jiggle-physics-to-bodies-clothes-and-hair/"
     },
     {
       "cat": "flow",
@@ -1812,15 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "关注物理武器交互与玩家操控的实时反馈，对战斗手感设计有参考价值。",
       "src": "80 Level · 08-21",
       "url": "https://80.lv/articles/this-first-person-sword-fighting-game-s-combat-is-100-physics-based/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "真实服装扫描工作流",
-      "sum": "Render Ready用真实服装扫描替代数字布料模拟，配合自定义可摆姿势模特。",
-      "ta": "了解实拍扫描在角色服装制作中的流程，可能提升资产真实度与效率。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/building-a-hero-garment-from-real-world-data/"
     }
   ]
 };

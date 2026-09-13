@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月12日 · 周六",
+  "date": "2026年9月13日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Cycles 实现真光子焦散</em> / <em>Godot 复刻 PS1 渲染</em> / <em>Blender 布料抖动插件</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>免费Blender工具简化头发绑定</em> / <em>科幻恐怖游戏实现视线外房间变换</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,85 +127,22 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
+      "cat": "flow",
       "imp": "mid",
-      "title": "Cycles 实现真光子焦散",
-      "sum": "Blender Cycles 新增真光子追踪焦散，渲染设置勾选即可，兼容现有场景。",
-      "ta": "焦散长期是离线渲染痛点，若实现足够稳健，可参考其光子映射思路反哺实时近似方案。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/true-photon-traced-caustics-for-blender-s-cycles/"
+      "title": "免费Blender工具简化头发绑定",
+      "sum": "一款免费Blender工具可沿风格化发丝自动生成变形骨骼链。",
+      "ta": "植被/毛发类程序化绑定的思路可借鉴，自动骨骼链生成逻辑或能迁移到草叶、藤蔓等植被骨骼化流程。",
+      "src": "80 Level · 09-12",
+      "url": "https://80.lv/articles/this-free-blender-tool-makes-hair-rigging-easier/"
     },
     {
       "cat": "tech",
-      "imp": "mid",
-      "title": "Godot 复刻 PS1 渲染",
-      "sum": "开发者基于硬件原理拆解 PS1 图形管线，做成 Godot 复古渲染插件。",
-      "ta": "顶点抖动、仿射贴图、低精度深度等 PS1 特性拆解，对理解固定管线与风格化渲染有参考价值。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/try-this-authentic-ps1-style-rendering-add-on-for-godot/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 布料抖动插件",
-      "sum": "新 Blender 插件可为身体、衣物和头发添加抖动物理，支持任意数量衣物。",
-      "ta": "轻量级次级动力学方案，可对比 UE 骨骼链/Chaos Cloth 的抖动实现成本。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/this-blender-add-on-lets-you-add-jiggle-physics-to-bodies-clothes-and-hair/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE+ZBrush 复刻毁灭博士",
-      "sum": "作者用 MetaHuman 建模面部、ZBrush 与 Marvelous Designer 制作服装，并做披风磨损。",
-      "ta": "MetaHuman 面部 + 传统服装建模的混合流程，磨损细节处理值得一看。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/making-a-recreation-of-dr-doom-using-unreal-engine-and-zbrush/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "EchoForge 用声音建 3D 世界",
-      "sum": "研究结合空间音频分析、场景图与程序化生成，把录音转成 Unity 可探索 3D 环境。",
-      "ta": "音频驱动的程序化生成思路，对植被/场景工具的程序化管线设计有启发。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/echoforge-uses-spatial-sound-to-build-3d-worlds-in-unity/"
-    },
-    {
-      "cat": "biz",
       "imp": "lo",
-      "title": "Steam 泄露未公布成就",
-      "sum": "Exophase 发现 Steam 泄露了未发售与未公布游戏的成就信息。",
-      "ta": "行业情报向，与 TA 工作无直接关联，速览即可。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/steam-leak-reveals-achievements-for-unreleased-and-unannounced-games/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Rockstar 工会案核心论点",
-      "sum": "Rockstar 与被解雇 GTA 开发者双方在工会打压仲裁中提交法律文件陈述论点。",
-      "ta": "劳动法务向行业新闻，与 TA 技术工作无关。",
-      "src": "Game Developer · 09-11",
-      "url": "https://www.gamedeveloper.com/production/rockstar-and-fired-gta-developers-outline-core-arguments-during-union-busting-tribunal"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Rockstar 指控前员工诽谤",
-      "sum": "律师解读 Rockstar 指控前员工在 Discord 诽谤一案中「诽谤」的法律界定。",
-      "ta": "法务解读向，与 TA 无关。",
-      "src": "Game Developer · 09-11",
-      "url": "https://www.gamedeveloper.com/business/an-honest-opinion-or-defamation-a-solicitor-outlines-the-legal-nuance"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Steam 澳洲年龄验证",
-      "sum": "多名用户称 Valve 对澳洲 Steam 用户启用信用卡年龄验证以访问 R18+ 游戏。",
-      "ta": "平台合规新闻，与 TA 工作无直接关联。",
-      "src": "Game Developer · 09-10",
-      "url": "https://www.gamedeveloper.com/pc/report-steam-now-requires-australian-users-to-verify-their-age-with-credit-cards"
+      "title": "科幻恐怖游戏实现视线外房间变换",
+      "sum": "开发者liamflannery56在一周内做出「移开视线房间即变化」的科幻恐怖游戏。",
+      "ta": "视线触发场景切换是低成本空间叙事技巧，可参考其可见性判定与场景流式加载的实现思路。",
+      "src": "80 Level · 09-12",
+      "url": "https://80.lv/articles/rooms-change-when-you-look-away-in-this-sci-fi-horror-game/"
     }
   ],
   "flashbackTitle": "",
@@ -213,16 +150,16 @@ window.INTEL_DATA = {
     "ok": [
       "Unreal Engine",
       "NVIDIA",
+      "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
-      "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Blender 开发博客。"
+    "missed": "未覆盖：arXiv · cs.GR。"
   },
   "xStale": false
 };
