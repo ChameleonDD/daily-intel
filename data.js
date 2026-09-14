@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月13日 · 周日",
+  "date": "2026年9月14日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>免费Blender工具简化头发绑定</em> / <em>科幻恐怖游戏实现视线外房间变换</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。",
   "channels": [
     {
       "key": "x",
@@ -125,24 +125,6 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "Ben Poole · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "免费Blender工具简化头发绑定",
-      "sum": "一款免费Blender工具可沿风格化发丝自动生成变形骨骼链。",
-      "ta": "植被/毛发类程序化绑定的思路可借鉴，自动骨骼链生成逻辑或能迁移到草叶、藤蔓等植被骨骼化流程。",
-      "src": "80 Level · 09-12",
-      "url": "https://80.lv/articles/this-free-blender-tool-makes-hair-rigging-easier/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "科幻恐怖游戏实现视线外房间变换",
-      "sum": "开发者liamflannery56在一周内做出「移开视线房间即变化」的科幻恐怖游戏。",
-      "ta": "视线触发场景切换是低成本空间叙事技巧，可参考其可见性判定与场景流式加载的实现思路。",
-      "src": "80 Level · 09-12",
-      "url": "https://80.lv/articles/rooms-change-when-you-look-away-in-this-sci-fi-horror-game/"
     }
   ],
   "flashbackTitle": "",
@@ -153,13 +135,12 @@ window.INTEL_DATA = {
       "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：arXiv · cs.GR。"
+    "missed": "未覆盖：arXiv · cs.GR、HuggingFace。"
   },
   "xStale": false
 };
