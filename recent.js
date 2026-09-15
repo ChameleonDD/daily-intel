@@ -2,8 +2,152 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-14 14:00",
+  "updated": "2026-09-15 14:00",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "NVIDIA 加速 JAX 无丢弃 MoE 训练",
+      "sum": "NVIDIA 用 Transformer Engine 在 JAX 中实现 dropless MoE 训练加速。",
+      "ta": "MoE 训练优化与 TA 本职关联弱，但可留意其并行/通信策略对大规模管线调度的思路。",
+      "src": "NVIDIA · 09-14",
+      "url": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《漫威金刚狼》9月15日发售",
+      "sum": "Insomniac 团队谈如何还原罗根的角色气质，游戏 9 月 15 日登陆 PS5。",
+      "ta": "美术向访谈，可速览角色与美术方向，无技术管线细节。",
+      "src": "PlayStation Blog · 09-14",
+      "url": "https://blog.playstation.com/2026/09/14/marvels-wolverine-developers-discuss-capturing-the-essence-of-logan-out-september-15/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Vidu S2 实时可编辑空间视频生成",
+      "sum": "Vidu S2 提出实时交互、可编辑且具空间性的视频生成方案。",
+      "ta": "实时可编辑视频生成若成熟，可能影响过场与预渲染素材流程，值得关注其延迟与可控性。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.11638"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "BVB：用 Blender 重建评测视频理解",
+      "sum": "BVB 通过 Blender 程序化重建来基准测试智能体视频理解能力。",
+      "ta": "用 Blender 做程序化重建评测，与 DCC 工具链和 3D 数据生成有交集，可看其重建管线设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.15478"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "LLaDA-UI 引入块状扩散 GUI 智能体",
+      "sum": "LLaDA-UI 将块状扩散引入视觉语言 GUI 智能体。",
+      "ta": "GUI 智能体方向，与游戏 TA 工作流关联有限，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.13287"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Realtime-Venus 全双工交互系统",
+      "sum": "Realtime-Venus 提出带异步委派的全双工交互系统。",
+      "ta": "实时交互系统架构，可留意其异步调度思路，与图形管线无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.13814"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Attention-DP3 空间物体感知 3D 扩散策略",
+      "sum": "Attention-DP3 通过几何对齐注意力条件实现空间物体感知的 3D 扩散策略。",
+      "ta": "偏机器人 3D 策略，与游戏实时渲染关联弱，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.13318"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "EVE Frontier 打造高可模组宇宙",
+      "sum": "Fenris 谈 EVE Frontier 的数字物理、模组系统与生产管线如何借鉴 EVE Online。",
+      "ta": "可模组化系统与生产管线设计对工具链与内容扩展性有参考价值。",
+      "src": "80 Level · 09-14",
+      "url": "https://80.lv/articles/interview-how-fenris-is-building-eve-frontier-as-a-massively-moddable-universe/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《Wardogs》24小时破百万销量",
+      "sum": "《Wardogs》发售首 24 小时销量突破 100 万份。",
+      "ta": "纯销量消息，速览即可。",
+      "src": "80 Level · 09-14",
+      "url": "https://80.lv/articles/wardogs-sold-over-1-million-copies-in-its-first-24-hours/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender OVERGROWN 预告片发布",
+      "sum": "Blender Studio 发布 OVERGROWN 首支预告，展示绘画感后人类世界与开源工作流。",
+      "ta": "开源影视制作流程的验证案例，可关注其工具与工作流沉淀。",
+      "src": "80 Level · 09-14",
+      "url": "https://80.lv/articles/blender-s-overgrown-teaser-is-a-proof-of-concept-for-open-filmmaking/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "80 Level 本周招聘汇总",
+      "sum": "汇总 Playground、Insomniac、Respawn、Naughty Dog 等工作室本周职位。",
+      "ta": "招聘信息，按规则丢弃价值低，速览。",
+      "src": "80 Level · 09-14",
+      "url": "https://80.lv/articles/80-level-job-digest-this-week-s-featured-creative-roles/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Psych Rift 动画参考 Old Spice",
+      "sum": "分享《Psych Rift》玩法动画制作中引用 Old Spice 广告的参考思路。",
+      "ta": "动画参考趣闻，速览即可。",
+      "src": "80 Level · 09-14",
+      "url": "https://80.lv/articles/unexpected-old-spice-deodorant-reference-for-gameplay-animation/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "2D 插画转双人写实 3D 作品",
+      "sum": "Anna Smirnova 分享 No Mercy 项目，用基础网格并在贴图中直接构建细节而非程序化着色器。",
+      "ta": "贴图内建细节替代程序化 shader 的做法，对材质制作思路有直接参考。",
+      "src": "80 Level · 09-14",
+      "url": "https://80.lv/articles/turning-a-2d-illustration-into-a-realistic-two-character-3d-piece/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Valve Steam Frame 售价 1059 美元起",
+      "sum": "Valve 公布 Steam Frame 头显定价 1059 美元起，并推出面向 VR 开发者的开发套件。",
+      "ta": "新 VR 硬件与开发套件，关注其对 VR 内容性能预算与渲染目标的影响。",
+      "src": "Game Developer · 09-14",
+      "url": "https://www.gamedeveloper.com/extended-reality/valve-s-steam-frame-will-retail-for-1-059"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "《Moss》开发商 Polyarc 关闭",
+      "sum": "西雅图 VR 工作室 Polyarc 在运营十余年后关闭。",
+      "ta": "VR 工作室关停，反映 VR 内容市场现状，值得关注。",
+      "src": "Game Developer · 09-14",
+      "url": "https://www.gamedeveloper.com/business/moss-developer-polyarc-has-shut-down"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "KO_OP 确认裁员 13 人",
+      "sum": "工人自治工作室 KO_OP 确认裁撤 13 个岗位。",
+      "ta": "行业裁员消息，速览。",
+      "src": "Game Developer · 09-14",
+      "url": "https://www.gamedeveloper.com/business/worker-owned-studio-ko_op-confirms-layoffs"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -105,15 +249,6 @@ window.INTEL_RECENT = {
       "ta": "高斯泼溅的复数域扩展，关注其可学习参数设计对泼溅基元表达力的启发。",
       "src": "arXiv · cs.GR · 09-10",
       "url": "https://arxiv.org/abs/2609.11434v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "2D概念转3D奇幻角色拆解",
-      "sum": "Artem Bieliakov分享从剪影到褶皱、缝线与羽毛的层叠服装建模流程。",
-      "ta": "角色建模流程拆解，对硬表面/服装分层思路有轻度参考。",
-      "src": "80 Level · 09-10",
-      "url": "https://80.lv/articles/breakdown-modeling-a-3d-fantasy-character-based-on-a-2d-concept/"
     },
     {
       "cat": "gfx",
@@ -730,15 +865,6 @@ window.INTEL_RECENT = {
       "ta": "主机平台光追性能标杆，可参考其渲染优化策略与画质取舍。",
       "src": "80 Level · 09-04",
       "url": "https://80.lv/articles/metro-2039-runs-at-4k-with-60-fps-and-ray-tracing-even-on-ps5-and-xbox/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender开放OVERGROWN幕后档案",
-      "sum": "Blender Studio限时免费开放动画、绑定、毛发、着色、水效等制作日志。",
-      "ta": "毛发与水效等环节的完整生产记录，对植被与特效工作流有参考价值。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/blender-studio-opens-overgrown-s-free-behind-the-scenes-archive/"
     },
     {
       "cat": "flow",
@@ -1695,132 +1821,6 @@ window.INTEL_RECENT = {
       "ta": "行业动态，关注独立游戏发行生态变化。",
       "src": "Game Developer · 08-25",
       "url": "https://www.gamedeveloper.com/business/journey-maker-thatgamecompany-announces-thatgamepublisher"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "W4 Games融资扩展Godot",
-      "sum": "W4 Games融资1800万美元，并与腾讯合作拓展亚洲Godot生态。",
-      "ta": "Godot引擎商业支持增强，可能影响跨引擎工具链选择。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/w4-games-raises-18m-to-expand-its-international-team"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini地理追踪器稳定版",
-      "sum": "GeoTracker for Houdini发布稳定版，支持Houdini 22。",
-      "ta": "用于Houdini的相机追踪工具，对特效合成工作流有用。",
-      "src": "Tech-Artists · 08-25",
-      "url": "https://www.tech-artists.org/t/geotracker-for-houdini-stable-release-houdini-22-support/18508"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "虚拟人表情生成新法",
-      "sum": "CVAE模型基于真实人脸数据合成可控虚拟人面部表情。",
-      "ta": "关注表情强度控制与真实感，对角色动画管线有参考价值。",
-      "src": "arXiv · cs.GR · 08-22",
-      "url": "https://arxiv.org/abs/2608.21697v1"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "武侠沙盒万人NPC",
-      "sum": "《太吾绘卷》实现一万动态NPC与七百武学技能的系统设计。",
-      "ta": "大规模NPC系统与程序化生成思路，对开放世界TA有借鉴意义。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/interview-building-a-wuxia-sandbox-rpg-with-up-to-10-000-dynamic-npcs/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立钓鱼游戏两日百万",
-      "sum": "一款独立钓鱼模拟游戏发售两天内销量破百万。",
-      "ta": "独立游戏市场表现参考，与TA技术关联弱。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/this-indie-fishing-simulation-game-sold-1-million-copies-in-2-days/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "异形生物眼部系统开发",
-      "sum": "电影与游戏角色工作坊展示复杂异形生物眼部系统制作。",
-      "ta": "眼部着色与材质细节技术，对生物角色TA有参考价值。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/developing-complex-eye-system-for-strange-alien-creature/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "title": "MD新增布料撕裂捏合",
-      "sum": "Marvelous Designer 2026.1新增缝线撕裂、笔刷捏合与模拟覆盖工具。",
-      "ta": "布料塑形工具增强，直接提升TA制作服装与布料模拟效率。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/new-marvelous-designer-update-lets-artists-rip-pinch-shape-fabric-like-never-before/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Blender BSDF支持色散",
-      "sum": "Blender 5.3 Cycles的Principled BSDF新增色散支持。",
-      "ta": "材质色散效果增强，对离线渲染与材质测试有参考价值。",
-      "src": "80 Level · 08-24",
-      "url": "https://80.lv/articles/principled-bsdf-in-blender-s-cycles-now-supports-dispersion/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "CAA成立独立游戏基金",
-      "sum": "Creative Artists Agency推出Frame1Games，支持资源不足的独立团队。",
-      "ta": "行业资金动向，与TA技术无直接关联。",
-      "src": "Game Developer · 08-24",
-      "url": "https://www.gamedeveloper.com/business/creative-artists-agency-spins-up-indie-funding-venture-frame1games"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "科隆游戏展奖项揭晓",
-      "sum": "Gamescom Dev Awards 2026在科隆颁发六个奖项。",
-      "ta": "行业奖项信息，与TA技术无直接关联。",
-      "src": "Game Developer · 08-24",
-      "url": "https://www.gamedeveloper.com/business/mutter-and-blue-prince-among-winners-at-gamescom-dev-awards-2026"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可微矢量图前向松弛优化",
-      "sum": "提出CubicSplat，用误差有界前向松弛实现矢量图可微优化。",
-      "ta": "矢量图可微优化对程序化生成和资产管线有潜在价值，可关注其误差控制方法。",
-      "src": "arXiv · cs.GR · 08-21",
-      "url": "https://arxiv.org/abs/2608.20803v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯面片与网格表面重建闭环",
-      "sum": "TopoSurfel方法结合高斯面片与网格，提升3DGS表面重建精度。",
-      "ta": "3DGS表面重建是TA常用技术，此方法可能改善扫描资产质量。",
-      "src": "arXiv · cs.GR · 08-21",
-      "url": "https://arxiv.org/abs/2608.20687v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "数字解压盒触感交互",
-      "sum": "一款数字解压盒游戏提供令人满足的触觉交互，可试玩。",
-      "ta": "关注其交互反馈设计，对游戏手感与UI动效有参考价值。",
-      "src": "80 Level · 08-22",
-      "url": "https://80.lv/articles/this-digital-fidget-box-game-has-a-lot-of-satisfying-tactile-interactions/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "物理模拟剑斗游戏",
-      "sum": "独立开发者用物理模拟武器实现第一人称近战，碰撞反弹锁定偏转全实时。",
-      "ta": "关注物理武器交互与玩家操控的实时反馈，对战斗手感设计有参考价值。",
-      "src": "80 Level · 08-21",
-      "url": "https://80.lv/articles/this-first-person-sword-fighting-game-s-combat-is-100-physics-based/"
     }
   ]
 };
