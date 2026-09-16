@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月15日 · 周二",
+  "date": "2026年9月16日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>NVIDIA 加速 JAX 无丢弃 MoE 训练</em> / <em>《漫威金刚狼》9月15日发售</em> / <em>Vidu S2 实时可编辑空间视频生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>发丝卡片自动转发丝几何</em> / <em>拓扑无关自动面部绑定</em> / <em>3D生成器扩展到部件级</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,148 +127,166 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "NVIDIA 加速 JAX 无丢弃 MoE 训练",
-      "sum": "NVIDIA 用 Transformer Engine 在 JAX 中实现 dropless MoE 训练加速。",
-      "ta": "MoE 训练优化与 TA 本职关联弱，但可留意其并行/通信策略对大规模管线调度的思路。",
-      "src": "NVIDIA · 09-14",
-      "url": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/"
+      "title": "发丝卡片自动转发丝几何",
+      "sum": "HairCS 提出自动流水线，把发丝卡片模型重建为高质量发丝级发型。",
+      "ta": "植被/毛发类程序化生成的同类思路：从低模代理还原高精度几何，可迁移到草叶卡片转真实草簇。",
+      "src": "arXiv · cs.GR · 09-15",
+      "url": "https://arxiv.org/abs/2609.16465v1"
     },
     {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《漫威金刚狼》9月15日发售",
-      "sum": "Insomniac 团队谈如何还原罗根的角色气质，游戏 9 月 15 日登陆 PS5。",
-      "ta": "美术向访谈，可速览角色与美术方向，无技术管线细节。",
-      "src": "PlayStation Blog · 09-14",
-      "url": "https://blog.playstation.com/2026/09/14/marvels-wolverine-developers-discuss-capturing-the-essence-of-logan-out-september-15/"
-    },
-    {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "Vidu S2 实时可编辑空间视频生成",
-      "sum": "Vidu S2 提出实时交互、可编辑且具空间性的视频生成方案。",
-      "ta": "实时可编辑视频生成若成熟，可能影响过场与预渲染素材流程，值得关注其延迟与可控性。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.11638"
+      "title": "拓扑无关自动面部绑定",
+      "sum": "TopoRig 用多源监督实现跨异构网格拓扑的自动面部绑定。",
+      "ta": "角色管线里绑定环节的自动化尝试，值得关注其如何绕开标准模板的对应误差。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.15746v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "BVB：用 Blender 重建评测视频理解",
-      "sum": "BVB 通过 Blender 程序化重建来基准测试智能体视频理解能力。",
-      "ta": "用 Blender 做程序化重建评测，与 DCC 工具链和 3D 数据生成有交集，可看其重建管线设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.15478"
+      "title": "3D生成器扩展到部件级",
+      "sum": "KaiNinja 把原生3D生成从单一融合网格扩展到部件级资产输出。",
+      "ta": "部件级输出才对接得上编辑、绑定、模拟等下游流程，是3D生成进引擎管线的关键一步。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.15659v2"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "文本生成物理一致动态场景",
+      "sum": "ESG 从自然语言描述生成物理一致的动态3D场景，需联合推理结构与时间。",
+      "ta": "程序化场景生成从静态走向动态，关注其物理约束如何与场景结构联合求解。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.15392v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "流式物理视频生成可细控",
+      "sum": "PhysStream 用结构化场景记忆与细粒度运动控制实现流式物理视频生成。",
+      "ta": "交互式视频生成的控制粒度提升，对实时预览类工具链有潜在参考价值。",
+      "src": "arXiv · cs.GR · 09-15",
+      "url": "https://arxiv.org/abs/2609.17521v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "超光速物体延迟光渲染",
+      "sum": "论文提出非相对论设定下有限光速信号的实时渲染方法，超光速物体会呈现多重像。",
+      "ta": "纯图形学趣味课题，延迟光/多重像的实时实现思路可作渲染技巧储备。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.16180v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "不透明度不只是遮挡",
+      "sum": "论文指出 Web 图形中 opacity 实际控制的是对象与背景的混合方式，而非单纯遮挡程度。",
+      "ta": "材质混合语义的澄清，写 UI/材质透明度时值得留意其与背景色的耦合。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.14971v2"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GPIS 当参与介质渲染",
+      "sum": "论文用水平穿越统计把高斯过程隐式曲面与参与介质散射理论双向打通。",
+      "ta": "隐式曲面与体积散射的统一理论，对体积雾/参与介质渲染有理论参考。",
+      "src": "arXiv · cs.GR · 09-13",
+      "url": "https://arxiv.org/abs/2609.14695v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "HKTex 去掉网格特征系统",
+      "sum": "论文用局部展开与随机热特征加速 HKTex，免去50次全局拉普拉斯特征分解。",
+      "ta": "表面外观表示的性能优化案例，思路可类比到其他依赖全局基的材质方案。",
+      "src": "arXiv · cs.GR · 09-12",
+      "url": "https://arxiv.org/abs/2609.14105v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高雅可比六面体细分模板",
+      "sum": "论文提出平面面片与高雅可比的两种六面体细分模板，用于自动生成高质量共形六面体网格。",
+      "ta": "网格生成偏仿真方向，程序化几何与碰撞体生成可留意其细分策略。",
+      "src": "arXiv · cs.GR · 09-13",
+      "url": "https://arxiv.org/abs/2609.14729v1"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "LLaDA-UI 引入块状扩散 GUI 智能体",
-      "sum": "LLaDA-UI 将块状扩散引入视觉语言 GUI 智能体。",
-      "ta": "GUI 智能体方向，与游戏 TA 工作流关联有限，速览即可。",
+      "imp": "mid",
+      "title": "基础模型时代的游戏AI",
+      "sum": "HuggingFace 收录论文探讨基础模型时代游戏中的 AI 应用。",
+      "ta": "游戏+基础模型的综述性方向，可快速扫一眼其分类框架。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.13287"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Realtime-Venus 全双工交互系统",
-      "sum": "Realtime-Venus 提出带异步委派的全双工交互系统。",
-      "ta": "实时交互系统架构，可留意其异步调度思路，与图形管线无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.13814"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Attention-DP3 空间物体感知 3D 扩散策略",
-      "sum": "Attention-DP3 通过几何对齐注意力条件实现空间物体感知的 3D 扩散策略。",
-      "ta": "偏机器人 3D 策略，与游戏实时渲染关联弱，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.13318"
+      "url": "https://huggingface.co/papers/2609.16679"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "EVE Frontier 打造高可模组宇宙",
-      "sum": "Fenris 谈 EVE Frontier 的数字物理、模组系统与生产管线如何借鉴 EVE Online。",
-      "ta": "可模组化系统与生产管线设计对工具链与内容扩展性有参考价值。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/interview-how-fenris-is-building-eve-frontier-as-a-massively-moddable-universe/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《Wardogs》24小时破百万销量",
-      "sum": "《Wardogs》发售首 24 小时销量突破 100 万份。",
-      "ta": "纯销量消息，速览即可。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/wardogs-sold-over-1-million-copies-in-its-first-24-hours/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender OVERGROWN 预告片发布",
-      "sum": "Blender Studio 发布 OVERGROWN 首支预告，展示绘画感后人类世界与开源工作流。",
-      "ta": "开源影视制作流程的验证案例，可关注其工具与工作流沉淀。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/blender-s-overgrown-teaser-is-a-proof-of-concept-for-open-filmmaking/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "80 Level 本周招聘汇总",
-      "sum": "汇总 Playground、Insomniac、Respawn、Naughty Dog 等工作室本周职位。",
-      "ta": "招聘信息，按规则丢弃价值低，速览。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/80-level-job-digest-this-week-s-featured-creative-roles/"
+      "title": "Blender 绑定还原 Deadlock 表情",
+      "sum": "zombielord999 用 Blender 绑定展示 Deadlock 角色 Mina 的面部表演表现力。",
+      "ta": "面部绑定与表演参考，可看其骨骼/形态键组织方式。",
+      "src": "80 Level · 09-15",
+      "url": "https://80.lv/articles/see-how-expressive-deadlock-s-mina-s-face-can-be-with-this-blender-rig/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Psych Rift 动画参考 Old Spice",
-      "sum": "分享《Psych Rift》玩法动画制作中引用 Old Spice 广告的参考思路。",
-      "ta": "动画参考趣闻，速览即可。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/unexpected-old-spice-deodorant-reference-for-gameplay-animation/"
+      "title": "复古FPS敌人AI设计复盘",
+      "sum": "独立开发者分享 Agent 64 如何复刻90年代末主机射击游戏的敌人AI，强调可读性优先于智能。",
+      "ta": "战斗可读性优先的设计取舍，对特效/反馈设计有借鉴意义。",
+      "src": "80 Level · 09-15",
+      "url": "https://80.lv/articles/solo-developer-on-recreating-the-late-90s-console-shooter-enemy-ai-for-an-fps/"
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "2D 插画转双人写实 3D 作品",
-      "sum": "Anna Smirnova 分享 No Mercy 项目，用基础网格并在贴图中直接构建细节而非程序化着色器。",
-      "ta": "贴图内建细节替代程序化 shader 的做法，对材质制作思路有直接参考。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/turning-a-2d-illustration-into-a-realistic-two-character-3d-piece/"
+      "imp": "lo",
+      "title": "角色动画社区挑战作品",
+      "sum": "Trần Quốc Khánh 分享其为 Pwnisher 社区挑战制作的 Hellsing 风格角色动画。",
+      "ta": "动画表现参考，速览即可。",
+      "src": "80 Level · 09-15",
+      "url": "https://80.lv/articles/hellsing-ultimate-inspired-character-animation-for-pwnisher-s-community-challenge/"
     },
     {
       "cat": "biz",
       "imp": "mid",
-      "title": "Valve Steam Frame 售价 1059 美元起",
-      "sum": "Valve 公布 Steam Frame 头显定价 1059 美元起，并推出面向 VR 开发者的开发套件。",
-      "ta": "新 VR 硬件与开发套件，关注其对 VR 内容性能预算与渲染目标的影响。",
-      "src": "Game Developer · 09-14",
-      "url": "https://www.gamedeveloper.com/extended-reality/valve-s-steam-frame-will-retail-for-1-059"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "《Moss》开发商 Polyarc 关闭",
-      "sum": "西雅图 VR 工作室 Polyarc 在运营十余年后关闭。",
-      "ta": "VR 工作室关停，反映 VR 内容市场现状，值得关注。",
-      "src": "Game Developer · 09-14",
-      "url": "https://www.gamedeveloper.com/business/moss-developer-polyarc-has-shut-down"
+      "title": "Roblox 允许游戏独立上架",
+      "sum": "Roblox 将允许开发者把游戏作为独立应用发布到其他商店，仍沿用相同分成经济。",
+      "ta": "平台分发策略变化，关注其对跨平台打包与资源规格的潜在影响。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/roblox-will-allow-devs-to-release-games-as-standalone-apps-on-other-stores"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "KO_OP 确认裁员 13 人",
-      "sum": "工人自治工作室 KO_OP 确认裁撤 13 个岗位。",
-      "ta": "行业裁员消息，速览。",
-      "src": "Game Developer · 09-14",
-      "url": "https://www.gamedeveloper.com/business/worker-owned-studio-ko_op-confirms-layoffs"
+      "title": "Wardogs 主创拒招批评加班者",
+      "sum": "Wardogs 负责人称不会雇佣在社交媒体上抨击 crunch 的人。",
+      "ta": "行业劳资话题，速览。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/wardogs-lead-says-the-studio-won-t-hire-people-who-decry-crunch-on-social-media"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "政客谈游戏软实力",
+      "sum": "华盛顿州州务卿 Steve Hobbs 在 SLICE 与 PAX West 2026 上向开发者推销游戏作为软实力的概念。",
+      "ta": "行业政策话题，速览。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/why-does-this-prominent-washington-state-politician-think-video-games-can-be-soft-power-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Bohemia 入股 Enjoy Studio",
+      "sum": "Bohemia Interactive 收购 Everwind 开发商 Enjoy Studio 的少数股权。",
+      "ta": "工作室资本动向，速览。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/bohemia-interactive-acquires-minority-stake-in-everwind-developer-enjoy-studio"
     }
   ],
   "flashbackTitle": "",
@@ -279,13 +297,14 @@ window.INTEL_DATA = {
       "Blender 开发博客",
       "PlayStation Blog",
       "AMD GPUOpen",
+      "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：arXiv · cs.GR。"
+    "missed": ""
   },
   "xStale": false
 };

@@ -2,8 +2,170 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-15 14:00",
+  "updated": "2026-09-16 13:51",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "发丝卡片自动转发丝几何",
+      "sum": "HairCS 提出自动流水线，把发丝卡片模型重建为高质量发丝级发型。",
+      "ta": "植被/毛发类程序化生成的同类思路：从低模代理还原高精度几何，可迁移到草叶卡片转真实草簇。",
+      "src": "arXiv · cs.GR · 09-15",
+      "url": "https://arxiv.org/abs/2609.16465v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "拓扑无关自动面部绑定",
+      "sum": "TopoRig 用多源监督实现跨异构网格拓扑的自动面部绑定。",
+      "ta": "角色管线里绑定环节的自动化尝试，值得关注其如何绕开标准模板的对应误差。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.15746v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D生成器扩展到部件级",
+      "sum": "KaiNinja 把原生3D生成从单一融合网格扩展到部件级资产输出。",
+      "ta": "部件级输出才对接得上编辑、绑定、模拟等下游流程，是3D生成进引擎管线的关键一步。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.15659v2"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "文本生成物理一致动态场景",
+      "sum": "ESG 从自然语言描述生成物理一致的动态3D场景，需联合推理结构与时间。",
+      "ta": "程序化场景生成从静态走向动态，关注其物理约束如何与场景结构联合求解。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.15392v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "流式物理视频生成可细控",
+      "sum": "PhysStream 用结构化场景记忆与细粒度运动控制实现流式物理视频生成。",
+      "ta": "交互式视频生成的控制粒度提升，对实时预览类工具链有潜在参考价值。",
+      "src": "arXiv · cs.GR · 09-15",
+      "url": "https://arxiv.org/abs/2609.17521v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "超光速物体延迟光渲染",
+      "sum": "论文提出非相对论设定下有限光速信号的实时渲染方法，超光速物体会呈现多重像。",
+      "ta": "纯图形学趣味课题，延迟光/多重像的实时实现思路可作渲染技巧储备。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.16180v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "不透明度不只是遮挡",
+      "sum": "论文指出 Web 图形中 opacity 实际控制的是对象与背景的混合方式，而非单纯遮挡程度。",
+      "ta": "材质混合语义的澄清，写 UI/材质透明度时值得留意其与背景色的耦合。",
+      "src": "arXiv · cs.GR · 09-14",
+      "url": "https://arxiv.org/abs/2609.14971v2"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GPIS 当参与介质渲染",
+      "sum": "论文用水平穿越统计把高斯过程隐式曲面与参与介质散射理论双向打通。",
+      "ta": "隐式曲面与体积散射的统一理论，对体积雾/参与介质渲染有理论参考。",
+      "src": "arXiv · cs.GR · 09-13",
+      "url": "https://arxiv.org/abs/2609.14695v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "HKTex 去掉网格特征系统",
+      "sum": "论文用局部展开与随机热特征加速 HKTex，免去50次全局拉普拉斯特征分解。",
+      "ta": "表面外观表示的性能优化案例，思路可类比到其他依赖全局基的材质方案。",
+      "src": "arXiv · cs.GR · 09-12",
+      "url": "https://arxiv.org/abs/2609.14105v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高雅可比六面体细分模板",
+      "sum": "论文提出平面面片与高雅可比的两种六面体细分模板，用于自动生成高质量共形六面体网格。",
+      "ta": "网格生成偏仿真方向，程序化几何与碰撞体生成可留意其细分策略。",
+      "src": "arXiv · cs.GR · 09-13",
+      "url": "https://arxiv.org/abs/2609.14729v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "基础模型时代的游戏AI",
+      "sum": "HuggingFace 收录论文探讨基础模型时代游戏中的 AI 应用。",
+      "ta": "游戏+基础模型的综述性方向，可快速扫一眼其分类框架。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.16679"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 绑定还原 Deadlock 表情",
+      "sum": "zombielord999 用 Blender 绑定展示 Deadlock 角色 Mina 的面部表演表现力。",
+      "ta": "面部绑定与表演参考，可看其骨骼/形态键组织方式。",
+      "src": "80 Level · 09-15",
+      "url": "https://80.lv/articles/see-how-expressive-deadlock-s-mina-s-face-can-be-with-this-blender-rig/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "复古FPS敌人AI设计复盘",
+      "sum": "独立开发者分享 Agent 64 如何复刻90年代末主机射击游戏的敌人AI，强调可读性优先于智能。",
+      "ta": "战斗可读性优先的设计取舍，对特效/反馈设计有借鉴意义。",
+      "src": "80 Level · 09-15",
+      "url": "https://80.lv/articles/solo-developer-on-recreating-the-late-90s-console-shooter-enemy-ai-for-an-fps/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "角色动画社区挑战作品",
+      "sum": "Trần Quốc Khánh 分享其为 Pwnisher 社区挑战制作的 Hellsing 风格角色动画。",
+      "ta": "动画表现参考，速览即可。",
+      "src": "80 Level · 09-15",
+      "url": "https://80.lv/articles/hellsing-ultimate-inspired-character-animation-for-pwnisher-s-community-challenge/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Roblox 允许游戏独立上架",
+      "sum": "Roblox 将允许开发者把游戏作为独立应用发布到其他商店，仍沿用相同分成经济。",
+      "ta": "平台分发策略变化，关注其对跨平台打包与资源规格的潜在影响。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/roblox-will-allow-devs-to-release-games-as-standalone-apps-on-other-stores"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Wardogs 主创拒招批评加班者",
+      "sum": "Wardogs 负责人称不会雇佣在社交媒体上抨击 crunch 的人。",
+      "ta": "行业劳资话题，速览。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/wardogs-lead-says-the-studio-won-t-hire-people-who-decry-crunch-on-social-media"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "政客谈游戏软实力",
+      "sum": "华盛顿州州务卿 Steve Hobbs 在 SLICE 与 PAX West 2026 上向开发者推销游戏作为软实力的概念。",
+      "ta": "行业政策话题，速览。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/why-does-this-prominent-washington-state-politician-think-video-games-can-be-soft-power-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Bohemia 入股 Enjoy Studio",
+      "sum": "Bohemia Interactive 收购 Everwind 开发商 Enjoy Studio 的少数股权。",
+      "ta": "工作室资本动向，速览。",
+      "src": "Game Developer · 09-15",
+      "url": "https://www.gamedeveloper.com/business/bohemia-interactive-acquires-minority-stake-in-everwind-developer-enjoy-studio"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -397,16 +559,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/how-hipr-makes-path-tracing-feel-more-responsive-by-rendering-what-matters-first/"
     },
     {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "3D物体直接生成高分辨率贴图",
-      "sum": "SceneHI将2D扩散的高分辨率光照先验提升到3D，无需微调即可在3D物体上生成纹理。",
-      "ta": "程序化植被/道具贴图流程的潜在加速点，关注其光照可控性与UV一致性。",
-      "src": "arXiv · cs.GR · 09-09",
-      "url": "https://arxiv.org/abs/2609.10363v1"
-    },
-    {
       "cat": "tech",
       "imp": "mid",
       "title": "CUDA 13.4支持Windows on Arm",
@@ -504,15 +656,6 @@ window.INTEL_RECENT = {
       "ta": "材质细节处理参考，速览即可。",
       "src": "80 Level · 09-09",
       "url": "https://80.lv/articles/modeling-and-texturing-a-fan-art-of-alice-from-raid-shadow-legends/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "暴雪工会合同限制生成式AI",
-      "sum": "暴雪工会成员批准覆盖1900名员工的合同，含生成式AI使用护栏与裁员保护。",
-      "ta": "AI工具在3A生产中的使用边界正被制度化，值得关注对TA工作流的影响。",
-      "src": "Game Developer · 09-09",
-      "url": "https://www.gamedeveloper.com/production/blizzard-union-workers-ratify-historic-contract-covering-1-900-employees"
     },
     {
       "cat": "biz",
@@ -1676,151 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "行业动态，无直接TA技术关联。",
       "src": "PlayStation Blog · 08-26",
       "url": "https://blog.playstation.com/2026/08/26/hands-on-report-mega-man-dual-override-and-dragons-dogma-2-dark-arisen/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PlayStation Plus 九月阵容",
-      "sum": "九月PS Plus含狙击精英抵抗、MLB秀26等四款游戏。",
-      "ta": "纯商业资讯，无TA关联。",
-      "src": "PlayStation Blog · 08-26",
-      "url": "https://blog.playstation.com/2026/08/26/playstation-plus-monthly-games-for-september-sniper-elite-resistance-mlb-the-show-26-wobbly-life-chained-echoes/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "赛博朋克枪斗游戏定档",
-      "sum": "John Wick风格赛博朋克动作游戏确认明年发售。",
-      "ta": "行业动态，无直接TA关联。",
-      "src": "80 Level · 08-27",
-      "url": "https://80.lv/articles/this-cyberpunk-gun-fu-game-gets-a-confirmed-release-window/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Poppy Playtime 新合作游戏",
-      "sum": "Poppy Playtime宇宙推出合作生存恐怖游戏Escape from Playtime。",
-      "ta": "行业动态，无直接TA关联。",
-      "src": "80 Level · 08-27",
-      "url": "https://80.lv/articles/poppy-playtime-universe-gets-a-new-survival-horror-co-op-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "天野喜孝艺术访谈",
-      "sum": "最终幻想艺术家天野喜孝谈视觉风格、跨媒介创作与建议。",
-      "ta": "艺术风格参考，对TA审美有启发但非技术。",
-      "src": "80 Level · 08-26",
-      "url": "https://80.lv/articles/interview-yoshitaka-amano-on-creating-art-that-transcends-games-anime-and-generations/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "演员蒂姆·库里去世",
-      "sum": "演员蒂姆·库里去世，享年80岁，曾参与多款游戏。",
-      "ta": "行业悼念，无TA技术关联。",
-      "src": "Game Developer · 08-26",
-      "url": "https://www.gamedeveloper.com/audio/obituary-actor-tim-curry-celebrated-for-his-work-in-games-has-passed-at-age-80"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "语义优先动作编解码器",
-      "sum": "SeMoCo提出语义优先的离散动作表示，用于文本生成动作。",
-      "ta": "关注动作生成中语义与细节的平衡，对动画管线有参考价值。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.24334v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "视觉中心智能几何编辑",
-      "sum": "ViSculpt利用LLM进行视觉驱动的3D几何编辑，减少手动操作。",
-      "ta": "探索LLM在DCC工具中辅助几何编辑的潜力，提升效率。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.24169v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "多视图重建可重光照网格",
-      "sum": "ExMesh++从多视图图像重建带UV和PBR材质的可编辑网格资产。",
-      "ta": "直接产出可用的PBR资产，对程序化资产管线意义重大。",
-      "src": "arXiv · cs.GR · 08-25",
-      "url": "https://arxiv.org/abs/2608.24109v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "三参数细分曲线设计",
-      "sum": "提出一种三参数9点二进制近似细分方案用于曲线形状控制。",
-      "ta": "基础数学研究，对曲线建模工具的实现有潜在参考。",
-      "src": "arXiv · cs.GR · 08-23",
-      "url": "https://arxiv.org/abs/2608.23637v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "扩展位置动力学旋转处理",
-      "sum": "利用李群统一处理XPBD中的旋转自由度，提升刚体和Cosserat杆模拟。",
-      "ta": "对物理模拟中旋转约束的稳定性有改进，值得关注。",
-      "src": "arXiv · cs.GR · 08-21",
-      "url": "https://arxiv.org/abs/2608.23606v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "地铁新作展示自研引擎进化",
-      "sum": "Metro 2039 gamescom预告展示4A引擎最新进化，环境更压抑。",
-      "ta": "观察4A引擎在光照、氛围渲染上的技术演进。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/metro-2039-looks-darker-and-more-claustrophobic-than-ever-in-new-gameplay/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "巫师3免费重制版将发布",
-      "sum": "巫师3将获得包含Switch 2版本在内的免费全面重制升级。",
-      "ta": "关注重制版在新技术下的画面表现与性能优化。",
-      "src": "80 Level · 08-25",
-      "url": "https://80.lv/articles/the-witcher-3-is-getting-a-massive-full-remaster-as-a-free-upgrade-very-soon/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Riot停止2XKO开发",
-      "sum": "Riot宣布12月停止格斗游戏2XKO的积极开发，因留存不足。",
-      "ta": "行业动态，关注格斗游戏市场表现与运营策略。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/riot-games-is-winding-down-fighter-2xko-in-december-2026"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Among Us 3D开发商裁员",
-      "sum": "Schell Games被报道裁员，此前曾多次谈及避免裁员。",
-      "ta": "行业动态，关注外包与协作工作室的稳定性。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/report-among-us-3d-dev-schell-games-lays-off-staff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "浏览器游戏新创公司融资",
-      "sum": "爱尔兰浏览器游戏公司Entity融资500万美元，目标2027年推出平台。",
-      "ta": "关注WebGPU等新技术在浏览器游戏中的应用前景。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/irish-browser-games-start-up-entity-raises-5m-in-funding-for-console-quality-games-for-the-new-web-era-"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "thatgamecompany成立发行部门",
-      "sum": "《光·遇》开发商thatgamecompany宣布成立发行部门thatgamepublisher。",
-      "ta": "行业动态，关注独立游戏发行生态变化。",
-      "src": "Game Developer · 08-25",
-      "url": "https://www.gamedeveloper.com/business/journey-maker-thatgamecompany-announces-thatgamepublisher"
     }
   ]
 };
