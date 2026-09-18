@@ -2,8 +2,125 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-17 13:58",
+  "updated": "2026-09-18 13:44",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "溅射液体多视角重建新法",
+      "sum": "SplashSplat 从真实多视角视频重建飞溅液体，解决瞬时撕裂与无纹理难题。",
+      "ta": "流体特效师可关注其重建思路，用于离线参考或验证 Niagara 溅射形态。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.20818v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "程序化场景穿模自动修复",
+      "sum": "S4R 用尺度延拓法解决程序化生成场景中的刚体互穿，供物理仿真前清理。",
+      "ta": "植被/道具程序化摆放常遇穿模，此法可作为生成后处理步骤参考。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.20524v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "微片介质多重散射解析式BRDF",
+      "sum": "新漫反射型 BRDF 在 Smith 阴影假设下精确计入所有散射阶数，且可解析求值与重要性采样。",
+      "ta": "对植被/毛发等微片材质的多重散射近似有直接价值，可评估替换现有 diffuse 模型。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.20394v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "GS转PBR高斯资产分解法",
+      "sum": "GS-PI 解耦外观分解，把高斯泼溅的烘焙辐照转为可接入 PBR 管线的材质资产。",
+      "ta": "3D 扫描/泼溅资产进 UE5 PBR 管线的关键一步，值得跟进其解耦与重光照效果。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19907v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "绘画多解性三维实体化",
+      "sum": "研究具象绘画对应的多种三维构型，而非收敛到单一重建模型。",
+      "ta": "偏学术艺术方向，与实时渲染工作流关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19782v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "实时粒子流式传输编解码",
+      "sum": "DELUGE 用分解式熵编码实现非结构化几何的实时粒子流式传输，面向 VR/AR 共享仿真。",
+      "ta": "Niagara 流体多人同步可参考其压缩与流式方案，降低网络带宽压力。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19750v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "语言驱动全身接触控制",
+      "sum": "LYRIC 用流匹配控制器，让角色按自然语言完成富接触的全身物体交互。",
+      "ta": "若做角色动画或物理交互，可关注其稀疏目标加语言指令的控制范式。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19688v1"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Steam 折扣页个性化改版",
+      "sum": "Valve 将折扣与活动网格个性化，为小游戏带来数千月访问量。",
+      "ta": "发行侧变化，与 TA 工作无直接关系，速览。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/steam-quietly-made-a-huge-discoverability-change-for-indie-games/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "title": "CDPR TA 发布扫描PBR求解器",
+      "sum": "CD Projekt Red 技术美术推出 sigmaPBR，把 3D 扫描转为可重光照材质。",
+      "ta": "扫描资产转 PBR 是植被/道具管线常见痛点，可直接试用其求解流程。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "角色建模工作流拆解",
+      "sum": "Seori Nam 分享角色制作流程，涵盖基础网格雕脸、Marvelous Designer 服装与纹素密度取舍。",
+      "ta": "纹素密度与配色平衡的经验对角色/植被贴图规划有参考价值。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/modeling-3d-character-with-medieval-fantasy-post-apocalyptic-elements/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "PS1风格预渲染背景进引擎",
+      "sum": "Static Between Stations 开发者展示 PS1 风格预渲染背景在引擎内的呈现与制作方式。",
+      "ta": "预渲染背景转实时呈现的取舍思路，对风格化场景搭建有借鉴意义。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/see-how-this-rpg-s-ps1-style-pre-rendered-backgrounds-look-in-engine/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 链条生成插件发布",
+      "sum": "PeakDreams Studio 发布 Blender Chain Generator v1.0.0，含 250+ 可用资产。",
+      "ta": "程序化生成链条类道具可省手工建模时间，适合快速搭场景。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/blender-add-on-that-generates-adjustable-chains-in-seconds/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Heart Machine 大规模裁员",
+      "sum": "《Hyper Light Drifter》开发商 Heart Machine 裁掉大部分员工，工作室面临存亡关口。",
+      "ta": "行业收缩信号，关注独立团队生存环境变化。",
+      "src": "Game Developer · 09-17",
+      "url": "https://www.gamedeveloper.com/business/hyper-light-drifter-developer-heart-machine-has-laid-off-the-majority-of-staff"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -491,15 +608,6 @@ window.INTEL_RECENT = {
       "url": "https://www.gamedeveloper.com/business/worker-owned-studio-ko_op-confirms-layoffs"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "免费Blender工具简化头发绑定",
-      "sum": "一款免费Blender工具可沿风格化发丝自动生成变形骨骼链。",
-      "ta": "植被/毛发类程序化绑定的思路可借鉴，自动骨骼链生成逻辑或能迁移到草叶、藤蔓等植被骨骼化流程。",
-      "src": "80 Level · 09-12",
-      "url": "https://80.lv/articles/this-free-blender-tool-makes-hair-rigging-easier/"
-    },
-    {
       "cat": "tech",
       "imp": "lo",
       "title": "科幻恐怖游戏实现视线外房间变换",
@@ -543,15 +651,6 @@ window.INTEL_RECENT = {
       "ta": "音频驱动的程序化生成思路，对植被/场景工具的程序化管线设计有启发。",
       "src": "80 Level · 09-11",
       "url": "https://80.lv/articles/echoforge-uses-spatial-sound-to-build-3d-worlds-in-unity/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Steam 泄露未公布成就",
-      "sum": "Exophase 发现 Steam 泄露了未发售与未公布游戏的成就信息。",
-      "ta": "行业情报向，与 TA 工作无直接关联，速览即可。",
-      "src": "80 Level · 09-11",
-      "url": "https://80.lv/articles/steam-leak-reveals-achievements-for-unreleased-and-unannounced-games/"
     },
     {
       "cat": "biz",
@@ -1716,108 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "实时角色编辑若用于虚拟制片或直播，可能影响 TA 的实时渲染管线设计。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2608.27123"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Mistfall Hunter 融合魂系与撤离玩法",
-      "sum": "Bellring Games 谈魂系战斗与撤离机制结合，及北欧废墟美术风格设计。",
-      "ta": "PvPvE 可读性设计对 TA 的视觉引导与特效表现有参考价值。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/interview-how-mistfall-hunter-blends-soulslike-combat-with-dark-fantasy-rpg-extraction-mechanics/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Fable 展示风格化战斗系统",
-      "sum": "Fable 新演示聚焦风格化战斗，强调玩家自定义英雄与技能组合。",
-      "ta": "风格化战斗的视觉反馈设计，可关注其特效与动画的配合方式。",
-      "src": "PlayStation Blog · 08-28",
-      "url": "https://blog.playstation.com/2026/08/28/a-new-look-at-fables-style-weaving-combat/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "城市示例项目大更新",
-      "sum": "City Sample 更新至 UE5.8，新增 PCG 与 Unreal MCP 工作流。",
-      "ta": "PCG 与 MCP 工作流是程序化世界构建的核心，值得精读新示例。",
-      "src": "Unreal Engine · 08-27",
-      "url": "https://www.unrealengine.com/learning/city-sample-gets-a-major-update-with-pcg-and-unreal-mcp-workflows"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 2,
-      "title": "AMD FSR 插件更新",
-      "sum": "AMD FSR 插件更新至 UE5.8，支持 ML 升频与帧生成。",
-      "ta": "FSR 插件更新直接影响 UE5.8 渲染管线的性能优化方案。",
-      "src": "AMD GPUOpen · 08-27",
-      "url": "https://gpuopen.com/learn/amd-fsr-plugin-updated-for-unreal-engine-58/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "三维重建方法对比评估",
-      "sum": "对比摄影测量、NeRF、高斯泼溅等四种三维重建方法。",
-      "ta": "了解不同重建方法的优劣，有助于选择资产制作技术路线。",
-      "src": "arXiv · cs.GR · 08-27",
-      "url": "https://arxiv.org/abs/2608.27301v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "hi",
-      "rank": 3,
-      "title": "程序化控制的三维建模",
-      "sum": "提出“形状即代码”范式，实现可编辑的程序化三维建模。",
-      "ta": "该研究有望解决生成网格不可编辑的痛点，对程序化资产管线意义重大。",
-      "src": "arXiv · cs.GR · 08-26",
-      "url": "https://arxiv.org/abs/2608.26238v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "游戏世界动作模型",
-      "sum": "GameWAM 提出用于视频游戏的世界动作模型。",
-      "ta": "世界模型是游戏 AI 前沿，可能影响未来 NPC 与关卡生成。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.26200"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "代理式游戏开发引擎",
-      "sum": "将代理式游戏开发作为可验证轨迹数据引擎，用于扩展世界模型。",
-      "ta": "该思路可能为程序化内容生成提供新的数据驱动方法。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.25518"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "实时游戏世界渲染器",
-      "sum": "Magpie 提出用于交互游戏的实时世界渲染器。",
-      "ta": "实时渲染器是 TA 核心关注点，该技术可能带来渲染管线革新。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.27168"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Blender 2D 风格水门",
-      "sum": "艺术家在 Blender 中制作了 2D 风格的水中传送门。",
-      "ta": "视差效果制作技巧，可参考用于风格化场景。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/magical-2d-style-aquatic-portal-in-blender/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Godot 重现博德之门着色器",
-      "sum": "艺术家在 Godot 中重现了《博德之门3》的遮挡着色器。",
-      "ta": "跨引擎着色器实现案例，对理解遮挡效果原理有参考价值。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/artist-recreates-baldur-s-gate-3-s-occlusion-shader-in-godot/"
     }
   ]
 };

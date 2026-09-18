@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月17日 · 周四",
+  "date": "2026年9月18日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>AI代理自动准备3D仿真场景</em> / <em>TensorRT边缘LLM提速6.4倍</em> / <em>代理AI把CUDA Tile译到Rust</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>微片介质多重散射解析式BRDF</em> / <em>GS转PBR高斯资产分解法</em> / <em>实时粒子流式传输编解码</em> / <em>CDPR TA 发布扫描PBR求解器</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,202 +127,121 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "AI代理自动准备3D仿真场景",
-      "sum": "NVIDIA展示用Agentic AI检查3D场景并编写仿真数据，服务数字孪生。",
-      "ta": "可关注代理如何自动校验场景资产，未来或用于植被/关卡批量预处理。",
-      "src": "NVIDIA · 09-16",
-      "url": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "TensorRT边缘LLM提速6.4倍",
-      "sum": "TensorRT Edge-LLM在Jetson AGX Thor上完成MLPerf边缘代理基准，快6.4倍。",
-      "ta": "边缘端代理推理加速，与游戏TA关联弱，速览即可。",
-      "src": "NVIDIA · 09-16",
-      "url": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "代理AI把CUDA Tile译到Rust",
-      "sum": "cuTile Rust用代理AI将Python的CUDA tile操作翻译为Rust GPU内核。",
-      "ta": "GPU内核跨语言迁移思路，对写compute shader有间接参考。",
-      "src": "NVIDIA · 09-16",
-      "url": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS Plus东京电玩展促销",
-      "sum": "9月17至30日加入PS Plus可省最多25%年费。",
-      "ta": "纯促销，与TA工作无关。",
-      "src": "PlayStation Blog · 09-17",
-      "url": "https://blog.playstation.com/2026/09/16/20260917-psplus/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "怪猎荒野资料片2027年",
-      "sum": "《Monster Hunter Wilds: Ascendance》2027年发售，新增剧情区域怪物与大师等级。",
-      "ta": "仅发行信息，无技术细节可参考。",
-      "src": "PlayStation Blog · 09-17",
-      "url": "https://blog.playstation.com/2026/09/16/monster-hunter-wilds-ascendance-hands-on-report-taking-on-new-monster-araketa-and-elder-dragon-teostra/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "洛克人新作公布Proto Man",
-      "sum": "《Mega Man: Dual Override》公布第二可玩角色Proto Man。",
-      "ta": "纯游戏内容新闻，无技术价值。",
-      "src": "PlayStation Blog · 09-17",
-      "url": "https://blog.playstation.com/2026/09/16/a-close-quarters-look-at-proto-man-in-mega-man-dual-override/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "姆明游戏9月18日发售",
-      "sum": "独立游戏《Moomintroll: Winter's Warmth》9月18日登陆PS5。",
-      "ta": "独立游戏发行信息，无技术内容。",
-      "src": "PlayStation Blog · 09-16",
-      "url": "https://blog.playstation.com/2026/09/16/moomintroll-winters-warmth-launches-on-september-18/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "寂静岭Townfall9月24日",
-      "sum": "《Silent Hill: Townfall》9月24日发售，开发者解析PS5特性运用。",
-      "ta": "可略看PS5特性整合方式，技术深度有限。",
-      "src": "PlayStation Blog · 09-16",
-      "url": "https://blog.playstation.com/2026/09/16/silent-hill-townfall-creators-break-down-ps5-features-out-september-25/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "ADLX 2.0开放AI代理控制显卡",
-      "sum": "AMD ADLX 2.0新增AI扩展与MCP服务器，让代理监控管理优化AMD显卡。",
-      "ta": "TA可关注用代理自动化显卡性能监控与调优的接口。",
-      "src": "AMD GPUOpen · 09-16",
-      "url": "https://gpuopen.com/learn/adlx-2-0-extending-graphics-control-to-ai-agents-apps/"
+      "title": "溅射液体多视角重建新法",
+      "sum": "SplashSplat 从真实多视角视频重建飞溅液体，解决瞬时撕裂与无纹理难题。",
+      "ta": "流体特效师可关注其重建思路，用于离线参考或验证 Niagara 溅射形态。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.20818v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "MoQ自适应流式传输3DGS",
-      "sum": "MoQSplat用MoQ协议实现3D高斯泼溅的自适应渐进流式传输，避免TCP队头阻塞。",
-      "ta": "大场景3DGS流式传输方案，对开放世界资产流送有参考价值。",
-      "src": "arXiv · cs.GR · 09-16",
-      "url": "https://arxiv.org/abs/2609.18624v1"
+      "title": "程序化场景穿模自动修复",
+      "sum": "S4R 用尺度延拓法解决程序化生成场景中的刚体互穿，供物理仿真前清理。",
+      "ta": "植被/道具程序化摆放常遇穿模，此法可作为生成后处理步骤参考。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.20524v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "微片介质多重散射解析式BRDF",
+      "sum": "新漫反射型 BRDF 在 Smith 阴影假设下精确计入所有散射阶数，且可解析求值与重要性采样。",
+      "ta": "对植被/毛发等微片材质的多重散射近似有直接价值，可评估替换现有 diffuse 模型。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.20394v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "GS转PBR高斯资产分解法",
+      "sum": "GS-PI 解耦外观分解，把高斯泼溅的烘焙辐照转为可接入 PBR 管线的材质资产。",
+      "ta": "3D 扫描/泼溅资产进 UE5 PBR 管线的关键一步，值得跟进其解耦与重光照效果。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19907v1"
     },
     {
       "cat": "gfx",
       "imp": "lo",
-      "title": "统一人手机器人抓取表示",
-      "sum": "InterMASH提出跨人手与机器人手的统一几何表示用于抓取合成。",
-      "ta": "与游戏TA关联弱，速览。",
-      "src": "arXiv · cs.GR · 09-16",
-      "url": "https://arxiv.org/abs/2609.18504v1"
+      "title": "绘画多解性三维实体化",
+      "sum": "研究具象绘画对应的多种三维构型，而非收敛到单一重建模型。",
+      "ta": "偏学术艺术方向，与实时渲染工作流关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19782v1"
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "CAD先验辅助稀疏视图3DGS",
-      "sum": "CADSplat用CAD形状先验正则化3DGS，从少于15视图重建逼真数字孪生。",
-      "ta": "稀疏视图重建数字孪生，对资产扫描与场景重建流程有参考。",
-      "src": "arXiv · cs.GR · 09-16",
-      "url": "https://arxiv.org/abs/2609.18473v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "点云几何先验评估攀岩难度",
-      "sum": "PointGrade用点云几何先验预测MoonBoard攀岩问题难度。",
-      "ta": "与游戏TA无关，速览。",
-      "src": "arXiv · cs.GR · 09-15",
-      "url": "https://arxiv.org/abs/2609.17770v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "平面设计生成加入3D人体",
-      "sum": "研究将3D人体引入图形设计生成，考虑姿态与构图引导视觉。",
-      "ta": "与实时渲染关联弱，速览。",
-      "src": "arXiv · cs.GR · 09-15",
-      "url": "https://arxiv.org/abs/2609.17689v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "扩散技能发现学习可复用动作",
-      "sum": "DSD用扩散技能发现让模拟角色学习多样可复用运动技能。",
-      "ta": "角色动画技能复用思路，对程序化动画有潜在参考。",
-      "src": "arXiv · cs.GR · 09-15",
-      "url": "https://arxiv.org/abs/2609.17682v1"
+      "imp": "hi",
+      "title": "实时粒子流式传输编解码",
+      "sum": "DELUGE 用分解式熵编码实现非结构化几何的实时粒子流式传输，面向 VR/AR 共享仿真。",
+      "ta": "Niagara 流体多人同步可参考其压缩与流式方案，降低网络带宽压力。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19750v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "Zing-0.5实时联合动作文本控制",
-      "sum": "Zing-0.5实现实时联合动作与文本控制，面向可玩世界生成。",
-      "ta": "可玩世界实时生成方向，关注其对交互式内容生成的潜力。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.17909"
+      "title": "语言驱动全身接触控制",
+      "sum": "LYRIC 用流匹配控制器，让角色按自然语言完成富接触的全身物体交互。",
+      "ta": "若做角色动画或物理交互，可关注其稀疏目标加语言指令的控制范式。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.19688v1"
     },
     {
-      "cat": "gfx",
+      "cat": "biz",
       "imp": "lo",
-      "title": "事件相机第一人称3D手部重建",
-      "sum": "EventEgoHands++用事件相机与真实数据集做第一人称3D手部网格重建。",
-      "ta": "与游戏TA关联弱，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.17189"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实时切割撕裂虚拟人体解剖",
-      "sum": "普渡大学用位置动力学、SDF与体积泼溅把冷冻切片转为可实时切割撕裂的形变模型。",
-      "ta": "PBD+SDF+体积泼溅的实时形变切割方案，对可破坏物体有参考。",
+      "title": "Steam 折扣页个性化改版",
+      "sum": "Valve 将折扣与活动网格个性化，为小游戏带来数千月访问量。",
+      "ta": "发行侧变化，与 TA 工作无直接关系，速览。",
       "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/dissectible-anatomy-lets-users-cut-tear-virtual-bodies-in-real-time/"
+      "url": "https://80.lv/articles/steam-quietly-made-a-huge-discoverability-change-for-indie-games/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "title": "CDPR TA 发布扫描PBR求解器",
+      "sum": "CD Projekt Red 技术美术推出 sigmaPBR，把 3D 扫描转为可重光照材质。",
+      "ta": "扫描资产转 PBR 是植被/道具管线常见痛点，可直接试用其求解流程。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "几何插件生成逼真磨损边缘",
-      "sum": "Egdy插件为Cinema 4D和Blender提供6个损伤模块，生成裂纹缺口等边缘磨损。",
-      "ta": "程序化边缘磨损工具，可借鉴其几何损伤生成思路。",
-      "src": "80 Level · 09-16",
-      "url": "https://80.lv/articles/3d-artist-on-creating-a-geometry-based-plugin-that-makes-realistic-worn-edges/"
+      "title": "角色建模工作流拆解",
+      "sum": "Seori Nam 分享角色制作流程，涵盖基础网格雕脸、Marvelous Designer 服装与纹素密度取舍。",
+      "ta": "纹素密度与配色平衡的经验对角色/植被贴图规划有参考价值。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/modeling-3d-character-with-medieval-fantasy-post-apocalyptic-elements/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "PS1风格预渲染背景进引擎",
+      "sum": "Static Between Stations 开发者展示 PS1 风格预渲染背景在引擎内的呈现与制作方式。",
+      "ta": "预渲染背景转实时呈现的取舍思路，对风格化场景搭建有借鉴意义。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/see-how-this-rpg-s-ps1-style-pre-rendered-backgrounds-look-in-engine/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 链条生成插件发布",
+      "sum": "PeakDreams Studio 发布 Blender Chain Generator v1.0.0，含 250+ 可用资产。",
+      "ta": "程序化生成链条类道具可省手工建模时间，适合快速搭场景。",
+      "src": "80 Level · 09-17",
+      "url": "https://80.lv/articles/blender-add-on-that-generates-adjustable-chains-in-seconds/"
     },
     {
       "cat": "biz",
-      "imp": "lo",
-      "title": "Valve解释Steam Frame选Alyx",
-      "sum": "Valve称Steam Frame套件附赠《半条命：Alyx》而非新VR游戏，可独立运行。",
-      "ta": "硬件发行信息，无技术细节。",
-      "src": "80 Level · 09-16",
-      "url": "https://80.lv/articles/valve-explains-why-steam-frame-uses-half-life-alyx-instead-of-a-new-vr-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Build a Rocket Boy疑似关闭",
-      "sum": "报道称《MindsEye》开发商Build a Rocket Boy在更多裁员后疑似关闭。",
-      "ta": "行业裁员动态，与TA工作无直接关联。",
-      "src": "Game Developer · 09-16",
-      "url": "https://www.gamedeveloper.com/business/report-mindseye-developer-build-a-rocket-boy-seemingly-closing-after-more-layoffs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "动视暴雪遭前员工起诉",
-      "sum": "一名工作14年的前员工起诉动视暴雪，指控10名男性性骚扰与报复。",
-      "ta": "行业法律新闻，与TA工作无关。",
-      "src": "Game Developer · 09-16",
-      "url": "https://www.gamedeveloper.com/production/activision-blizzard-sued-by-former-employee-over-sexual-harassment"
+      "imp": "mid",
+      "title": "Heart Machine 大规模裁员",
+      "sum": "《Hyper Light Drifter》开发商 Heart Machine 裁掉大部分员工，工作室面临存亡关口。",
+      "ta": "行业收缩信号，关注独立团队生存环境变化。",
+      "src": "Game Developer · 09-17",
+      "url": "https://www.gamedeveloper.com/business/hyper-light-drifter-developer-heart-machine-has-laid-off-the-majority-of-staff"
     }
   ],
   "flashbackTitle": "",
@@ -333,13 +252,12 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
-      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine。"
+    "missed": "未覆盖：Unreal Engine、HuggingFace。"
   },
   "xStale": false
 };
