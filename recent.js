@@ -2,8 +2,98 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-18 13:44",
+  "updated": "2026-09-19 13:40",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "赛博朋克夜之城几乎全手工搭建",
+      "sum": "CDPR美术总监讲述夜之城手工制作流程，第一人称视角如何影响尺度与细节，路径追踪为何契合其光照管线。",
+      "ta": "值得看路径追踪与手工场景搭建的配合逻辑，对植被/环境美术的管线设计有参考价值。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/interview-how-cyberpunk-2077-s-night-city-was-built-almost-entirely-by-hand/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 5.3 原生支持 3D 高斯泼溅",
+      "sum": "Blender 5.3 将获得原生 3D Gaussian Splatting 支持。",
+      "ta": "高斯泼溅进主流DCC，未来植被/环境扫描资产的导入与实时预览流程可能被改写。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "安卡拉街景写实3D环境拆解",
+      "sum": "作者分享安卡拉小巷项目，用Substance 3D Designer制作平铺墙面与路面材质，并营造温馨氛围。",
+      "ta": "平铺材质与氛围营造的具体做法，对程序化材质与场景美术有直接借鉴意义。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/breakdown-creating-a-realistic-3d-environment-of-an-ankara-street/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Pass式工作流搭建中东庭院",
+      "sum": "作者讲述用pass-based流程加速制作废弃中东庭院，并搭建高效易用的材质系统。",
+      "ta": "pass-based流程与快速材质系统的思路，对TA优化美术迭代效率有参考。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/assembling-abandoned-middle-eastern-courtyard-in-3d-using-pass-based-workflow/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "85%日本开发者已用生成式AI",
+      "sum": "CESA报告称超85%日本游戏开发者至少偶尔使用生成式AI，工作室强调人工审核与限制工具。",
+      "ta": "了解行业AI采用现状与审核策略，对TA评估AI工具在管线中的落地边界有帮助。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "米哈游AI配音侵权获赔11.2万",
+      "sum": "上海法院判决AI语音服务模仿原神角色，米哈游获赔11.2万美元，或成中国法院对生成式AI的判例信号。",
+      "ta": "AI生成内容版权边界收紧，TA在引入AI资产/语音工具时需关注合规风险。",
+      "src": "Game Developer · 09-18",
+      "url": "https://www.gamedeveloper.com/business/mihoyo-awarded-112-000-by-chinese-court-after-ai-voice-service-dupes-genshin-impact-characters"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ARM谈如何与开发者协作做工具",
+      "sum": "ARM的Peter Hodges讨论游戏开发工具及1969年短片Lemon。",
+      "ta": "速览即可，工具厂商与开发者协作方式或对跨团队工具设计有零星启发。",
+      "src": "Game Developer · 09-18",
+      "url": "https://www.gamedeveloper.com/art/how-toolmakers-like-arm-work-with-devs-ft-peter-hodges"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "King员工谈判破裂宣布罢工",
+      "sum": "Candy Crush工作室工会员工因集体协议谈判停滞，将于9月25日罢工。",
+      "ta": "行业劳资动态，与TA日常工作无直接关联，速览即可。",
+      "src": "Game Developer · 09-18",
+      "url": "https://www.gamedeveloper.com/production/king-workers-call-strike-after-collective-agreement-negotiations-stall"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Control Resonant延续Remedy风格",
+      "sum": "评测称Control Resonant融合激进近战、开放探索与超现实世界观，是Remedy公式的进化。",
+      "ta": "游戏设计向评测，与TA技术工作无直接关联，速览即可。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/control-resonant-is-a-fantastic-evolution-of-remedy-s-formula/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Blood of Dawnwalker时间机制或不再回归",
+      "sum": "Blood of Dawnwalker的时间机制在续作中可能不会保留。",
+      "ta": "纯游戏设计动态，与TA工作无关，速览即可。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/blood-of-dawnwalker-s-time-mechanic-might-not-return-in-the-sequel/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -237,15 +327,6 @@ window.INTEL_RECENT = {
       "ta": "与游戏TA无关，速览。",
       "src": "arXiv · cs.GR · 09-15",
       "url": "https://arxiv.org/abs/2609.17770v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "平面设计生成加入3D人体",
-      "sum": "研究将3D人体引入图形设计生成，考虑姿态与构图引导视觉。",
-      "ta": "与实时渲染关联弱，速览。",
-      "src": "arXiv · cs.GR · 09-15",
-      "url": "https://arxiv.org/abs/2609.17689v1"
     },
     {
       "cat": "gfx",
@@ -1733,88 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "NTC性能瓶颈在分歧，此方案直接提升运行时解码效率，值得精读。",
       "src": "arXiv · cs.GR · 08-28",
       "url": "https://arxiv.org/abs/2608.27888v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "恒定显存辐射场训练",
-      "sum": "ABCD框架以块坐标下降实现3DGS外核训练，仅激活一个空间块参数。",
-      "ta": "3DGS训练显存受限，此方法可支撑更大场景，对程序化生成有参考。",
-      "src": "arXiv · cs.GR · 08-27",
-      "url": "https://arxiv.org/abs/2608.27735v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频生成模型学几何",
-      "sum": "论文探讨视频生成模型作为几何学习器的能力，未提游戏或实时应用。",
-      "ta": "视频模型几何能力或影响未来3D重建，但当前无直接TA关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.28549"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自回归视频扩散长记忆",
-      "sum": "提出Ring Forcing方法提升自回归视频扩散的长期记忆精度。",
-      "ta": "视频扩散长时一致性或影响特效预览，但无实时渲染关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.26794"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频时空定位新方法",
-      "sum": "提出高效生成式时空视频定位方法，用于视频中目标定位。",
-      "ta": "视频定位与TA工作流无直接关联，仅作AI技术速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.28192"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Claude Code驱动Blender工具",
-      "sum": "用Claude Code快速生成Blender工具，提升自动化效率。",
-      "ta": "AI辅助工具开发是趋势，可探索用于DCC脚本自动化。",
-      "src": "Tech-Artists · 08-29",
-      "url": "https://www.tech-artists.org/t/claude-in-blender-quick-blender-tools-with-claude-code/18530"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Roji端到端OpenUSD工作流",
-      "sum": "Roji提供场景组装、外观开发、灯光渲染的完整OpenUSD流程。",
-      "ta": "OpenUSD标准化是TA管线核心，端到端方案值得深入评估。",
-      "src": "Tech-Artists · 08-29",
-      "url": "https://www.tech-artists.org/t/introducing-roji-an-end-to-end-openusd-workflow-for-scene-assembly-look-development-lighting-and-rendering/18528"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Epic 八月学习内容发布",
-      "sum": "Epic 发布免费学习内容，涵盖网络物理、Mesh Terrain、项目优化与材质创建。",
-      "ta": "Mesh Terrain 与材质工作流是 TA 日常，可快速获取官方最新实践。",
-      "src": "Unreal Engine · 08-28",
-      "url": "https://www.unrealengine.com/learning/augusts-epic-learning-content-networked-physics-dynamic-audio-and-more"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Tripo 攻克 3D 资产拓扑",
-      "sum": "Tripo 推出 Smart Mesh，数秒生成可用拓扑，增强艺术家对生成资产的控制。",
-      "ta": "生成式 3D 资产若具备干净拓扑，可直接进入 DCC 管线，减少重拓扑工作量。",
-      "src": "80 Level · 08-28",
-      "url": "https://80.lv/articles/how-tripo-is-tackling-clean-topology-for-its-3d-asset-pipeline/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "EditaLive 实时角色视频编辑",
-      "sum": "论文提出 EditaLive，用于直播场景的统一角色视频编辑方法。",
-      "ta": "实时角色编辑若用于虚拟制片或直播，可能影响 TA 的实时渲染管线设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2608.27123"
     }
   ]
 };

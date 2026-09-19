@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月18日 · 周五",
+  "date": "2026年9月19日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>微片介质多重散射解析式BRDF</em> / <em>GS转PBR高斯资产分解法</em> / <em>实时粒子流式传输编解码</em> / <em>CDPR TA 发布扫描PBR求解器</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>赛博朋克夜之城几乎全手工搭建</em> / <em>Blender 5.3 原生支持 3D 高斯泼溅</em> / <em>安卡拉街景写实3D环境拆解</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,121 +127,94 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "溅射液体多视角重建新法",
-      "sum": "SplashSplat 从真实多视角视频重建飞溅液体，解决瞬时撕裂与无纹理难题。",
-      "ta": "流体特效师可关注其重建思路，用于离线参考或验证 Niagara 溅射形态。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.20818v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "程序化场景穿模自动修复",
-      "sum": "S4R 用尺度延拓法解决程序化生成场景中的刚体互穿，供物理仿真前清理。",
-      "ta": "植被/道具程序化摆放常遇穿模，此法可作为生成后处理步骤参考。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.20524v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "微片介质多重散射解析式BRDF",
-      "sum": "新漫反射型 BRDF 在 Smith 阴影假设下精确计入所有散射阶数，且可解析求值与重要性采样。",
-      "ta": "对植被/毛发等微片材质的多重散射近似有直接价值，可评估替换现有 diffuse 模型。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.20394v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "GS转PBR高斯资产分解法",
-      "sum": "GS-PI 解耦外观分解，把高斯泼溅的烘焙辐照转为可接入 PBR 管线的材质资产。",
-      "ta": "3D 扫描/泼溅资产进 UE5 PBR 管线的关键一步，值得跟进其解耦与重光照效果。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19907v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "绘画多解性三维实体化",
-      "sum": "研究具象绘画对应的多种三维构型，而非收敛到单一重建模型。",
-      "ta": "偏学术艺术方向，与实时渲染工作流关联弱，速览即可。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19782v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "实时粒子流式传输编解码",
-      "sum": "DELUGE 用分解式熵编码实现非结构化几何的实时粒子流式传输，面向 VR/AR 共享仿真。",
-      "ta": "Niagara 流体多人同步可参考其压缩与流式方案，降低网络带宽压力。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19750v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "语言驱动全身接触控制",
-      "sum": "LYRIC 用流匹配控制器，让角色按自然语言完成富接触的全身物体交互。",
-      "ta": "若做角色动画或物理交互，可关注其稀疏目标加语言指令的控制范式。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19688v1"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Steam 折扣页个性化改版",
-      "sum": "Valve 将折扣与活动网格个性化，为小游戏带来数千月访问量。",
-      "ta": "发行侧变化，与 TA 工作无直接关系，速览。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/steam-quietly-made-a-huge-discoverability-change-for-indie-games/"
-    },
-    {
       "cat": "flow",
-      "imp": "hi",
-      "title": "CDPR TA 发布扫描PBR求解器",
-      "sum": "CD Projekt Red 技术美术推出 sigmaPBR，把 3D 扫描转为可重光照材质。",
-      "ta": "扫描资产转 PBR 是植被/道具管线常见痛点，可直接试用其求解流程。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans/"
+      "imp": "mid",
+      "title": "赛博朋克夜之城几乎全手工搭建",
+      "sum": "CDPR美术总监讲述夜之城手工制作流程，第一人称视角如何影响尺度与细节，路径追踪为何契合其光照管线。",
+      "ta": "值得看路径追踪与手工场景搭建的配合逻辑，对植被/环境美术的管线设计有参考价值。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/interview-how-cyberpunk-2077-s-night-city-was-built-almost-entirely-by-hand/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "角色建模工作流拆解",
-      "sum": "Seori Nam 分享角色制作流程，涵盖基础网格雕脸、Marvelous Designer 服装与纹素密度取舍。",
-      "ta": "纹素密度与配色平衡的经验对角色/植被贴图规划有参考价值。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/modeling-3d-character-with-medieval-fantasy-post-apocalyptic-elements/"
+      "title": "Blender 5.3 原生支持 3D 高斯泼溅",
+      "sum": "Blender 5.3 将获得原生 3D Gaussian Splatting 支持。",
+      "ta": "高斯泼溅进主流DCC，未来植被/环境扫描资产的导入与实时预览流程可能被改写。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "PS1风格预渲染背景进引擎",
-      "sum": "Static Between Stations 开发者展示 PS1 风格预渲染背景在引擎内的呈现与制作方式。",
-      "ta": "预渲染背景转实时呈现的取舍思路，对风格化场景搭建有借鉴意义。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/see-how-this-rpg-s-ps1-style-pre-rendered-backgrounds-look-in-engine/"
+      "title": "安卡拉街景写实3D环境拆解",
+      "sum": "作者分享安卡拉小巷项目，用Substance 3D Designer制作平铺墙面与路面材质，并营造温馨氛围。",
+      "ta": "平铺材质与氛围营造的具体做法，对程序化材质与场景美术有直接借鉴意义。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/breakdown-creating-a-realistic-3d-environment-of-an-ankara-street/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender 链条生成插件发布",
-      "sum": "PeakDreams Studio 发布 Blender Chain Generator v1.0.0，含 250+ 可用资产。",
-      "ta": "程序化生成链条类道具可省手工建模时间，适合快速搭场景。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/blender-add-on-that-generates-adjustable-chains-in-seconds/"
+      "title": "Pass式工作流搭建中东庭院",
+      "sum": "作者讲述用pass-based流程加速制作废弃中东庭院，并搭建高效易用的材质系统。",
+      "ta": "pass-based流程与快速材质系统的思路，对TA优化美术迭代效率有参考。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/assembling-abandoned-middle-eastern-courtyard-in-3d-using-pass-based-workflow/"
     },
     {
       "cat": "biz",
       "imp": "mid",
-      "title": "Heart Machine 大规模裁员",
-      "sum": "《Hyper Light Drifter》开发商 Heart Machine 裁掉大部分员工，工作室面临存亡关口。",
-      "ta": "行业收缩信号，关注独立团队生存环境变化。",
-      "src": "Game Developer · 09-17",
-      "url": "https://www.gamedeveloper.com/business/hyper-light-drifter-developer-heart-machine-has-laid-off-the-majority-of-staff"
+      "title": "85%日本开发者已用生成式AI",
+      "sum": "CESA报告称超85%日本游戏开发者至少偶尔使用生成式AI，工作室强调人工审核与限制工具。",
+      "ta": "了解行业AI采用现状与审核策略，对TA评估AI工具在管线中的落地边界有帮助。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "米哈游AI配音侵权获赔11.2万",
+      "sum": "上海法院判决AI语音服务模仿原神角色，米哈游获赔11.2万美元，或成中国法院对生成式AI的判例信号。",
+      "ta": "AI生成内容版权边界收紧，TA在引入AI资产/语音工具时需关注合规风险。",
+      "src": "Game Developer · 09-18",
+      "url": "https://www.gamedeveloper.com/business/mihoyo-awarded-112-000-by-chinese-court-after-ai-voice-service-dupes-genshin-impact-characters"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ARM谈如何与开发者协作做工具",
+      "sum": "ARM的Peter Hodges讨论游戏开发工具及1969年短片Lemon。",
+      "ta": "速览即可，工具厂商与开发者协作方式或对跨团队工具设计有零星启发。",
+      "src": "Game Developer · 09-18",
+      "url": "https://www.gamedeveloper.com/art/how-toolmakers-like-arm-work-with-devs-ft-peter-hodges"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "King员工谈判破裂宣布罢工",
+      "sum": "Candy Crush工作室工会员工因集体协议谈判停滞，将于9月25日罢工。",
+      "ta": "行业劳资动态，与TA日常工作无直接关联，速览即可。",
+      "src": "Game Developer · 09-18",
+      "url": "https://www.gamedeveloper.com/production/king-workers-call-strike-after-collective-agreement-negotiations-stall"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Control Resonant延续Remedy风格",
+      "sum": "评测称Control Resonant融合激进近战、开放探索与超现实世界观，是Remedy公式的进化。",
+      "ta": "游戏设计向评测，与TA技术工作无直接关联，速览即可。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/control-resonant-is-a-fantastic-evolution-of-remedy-s-formula/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Blood of Dawnwalker时间机制或不再回归",
+      "sum": "Blood of Dawnwalker的时间机制在续作中可能不会保留。",
+      "ta": "纯游戏设计动态，与TA工作无关，速览即可。",
+      "src": "80 Level · 09-18",
+      "url": "https://80.lv/articles/blood-of-dawnwalker-s-time-mechanic-might-not-return-in-the-sequel/"
     }
   ],
   "flashbackTitle": "",
@@ -252,12 +225,13 @@ window.INTEL_DATA = {
       "PlayStation Blog",
       "AMD GPUOpen",
       "arXiv · cs.GR",
+      "HuggingFace",
       "80 Level",
       "Game Developer",
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、HuggingFace。"
+    "missed": "未覆盖：Unreal Engine。"
   },
   "xStale": false
 };
