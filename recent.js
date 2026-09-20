@@ -2,8 +2,26 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-19 13:40",
+  "updated": "2026-09-20 13:58",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 卡通渲染星之卡比",
+      "sum": "作者 TheMathewFlames 用 Blender 制作漫画风 3D 卡比同人作品。",
+      "ta": "可参考其卡通描边与风格化材质在 Blender 中的实现思路。",
+      "src": "80 Level · 09-19",
+      "url": "https://80.lv/articles/comic-book-style-3d-kirby-fan-art-made-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "模拟游戏玩转游戏UI",
+      "sum": "一款模拟游戏以点击操作游戏界面按钮为核心玩法。",
+      "ta": "与渲染和工具链无关，仅作行业趣味速览。",
+      "src": "80 Level · 09-19",
+      "url": "https://80.lv/articles/this-simulation-game-lets-you-play-with-video-game-interfaces/"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -192,15 +210,6 @@ window.INTEL_RECENT = {
       "ta": "预渲染背景转实时呈现的取舍思路，对风格化场景搭建有借鉴意义。",
       "src": "80 Level · 09-17",
       "url": "https://80.lv/articles/see-how-this-rpg-s-ps1-style-pre-rendered-backgrounds-look-in-engine/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 链条生成插件发布",
-      "sum": "PeakDreams Studio 发布 Blender Chain Generator v1.0.0，含 250+ 可用资产。",
-      "ta": "程序化生成链条类道具可省手工建模时间，适合快速搭场景。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/blender-add-on-that-generates-adjustable-chains-in-seconds/"
     },
     {
       "cat": "biz",
@@ -1804,16 +1813,6 @@ window.INTEL_RECENT = {
       "ta": "材质老化预测直接服务PBR工作流，可扩展至植被或场景风化。",
       "src": "arXiv · cs.GR · 08-28",
       "url": "https://arxiv.org/abs/2608.28102v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "神经纹理压缩线程高效解码",
-      "sum": "提出共享解码器MLP与渐进冻结训练，解决NTC的GPU线程分歧问题。",
-      "ta": "NTC性能瓶颈在分歧，此方案直接提升运行时解码效率，值得精读。",
-      "src": "arXiv · cs.GR · 08-28",
-      "url": "https://arxiv.org/abs/2608.27888v1"
     }
   ]
 };

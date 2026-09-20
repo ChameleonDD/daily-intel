@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月19日 · 周六",
+  "date": "2026年9月20日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>赛博朋克夜之城几乎全手工搭建</em> / <em>Blender 5.3 原生支持 3D 高斯泼溅</em> / <em>安卡拉街景写实3D环境拆解</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Blender 卡通渲染星之卡比</em> / <em>模拟游戏玩转游戏UI</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,12 +128,21 @@ window.INTEL_DATA = {
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "赛博朋克夜之城几乎全手工搭建",
-      "sum": "CDPR美术总监讲述夜之城手工制作流程，第一人称视角如何影响尺度与细节，路径追踪为何契合其光照管线。",
-      "ta": "值得看路径追踪与手工场景搭建的配合逻辑，对植被/环境美术的管线设计有参考价值。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/interview-how-cyberpunk-2077-s-night-city-was-built-almost-entirely-by-hand/"
+      "imp": "lo",
+      "title": "Blender 卡通渲染星之卡比",
+      "sum": "作者 TheMathewFlames 用 Blender 制作漫画风 3D 卡比同人作品。",
+      "ta": "可参考其卡通描边与风格化材质在 Blender 中的实现思路。",
+      "src": "80 Level · 09-19",
+      "url": "https://80.lv/articles/comic-book-style-3d-kirby-fan-art-made-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "模拟游戏玩转游戏UI",
+      "sum": "一款模拟游戏以点击操作游戏界面按钮为核心玩法。",
+      "ta": "与渲染和工具链无关，仅作行业趣味速览。",
+      "src": "80 Level · 09-19",
+      "url": "https://80.lv/articles/this-simulation-game-lets-you-play-with-video-game-interfaces/"
     },
     {
       "cat": "flow",
@@ -142,82 +151,11 @@ window.INTEL_DATA = {
       "sum": "Blender 5.3 将获得原生 3D Gaussian Splatting 支持。",
       "ta": "高斯泼溅进主流DCC，未来植被/环境扫描资产的导入与实时预览流程可能被改写。",
       "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "安卡拉街景写实3D环境拆解",
-      "sum": "作者分享安卡拉小巷项目，用Substance 3D Designer制作平铺墙面与路面材质，并营造温馨氛围。",
-      "ta": "平铺材质与氛围营造的具体做法，对程序化材质与场景美术有直接借鉴意义。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/breakdown-creating-a-realistic-3d-environment-of-an-ankara-street/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Pass式工作流搭建中东庭院",
-      "sum": "作者讲述用pass-based流程加速制作废弃中东庭院，并搭建高效易用的材质系统。",
-      "ta": "pass-based流程与快速材质系统的思路，对TA优化美术迭代效率有参考。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/assembling-abandoned-middle-eastern-courtyard-in-3d-using-pass-based-workflow/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "85%日本开发者已用生成式AI",
-      "sum": "CESA报告称超85%日本游戏开发者至少偶尔使用生成式AI，工作室强调人工审核与限制工具。",
-      "ta": "了解行业AI采用现状与审核策略，对TA评估AI工具在管线中的落地边界有帮助。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "米哈游AI配音侵权获赔11.2万",
-      "sum": "上海法院判决AI语音服务模仿原神角色，米哈游获赔11.2万美元，或成中国法院对生成式AI的判例信号。",
-      "ta": "AI生成内容版权边界收紧，TA在引入AI资产/语音工具时需关注合规风险。",
-      "src": "Game Developer · 09-18",
-      "url": "https://www.gamedeveloper.com/business/mihoyo-awarded-112-000-by-chinese-court-after-ai-voice-service-dupes-genshin-impact-characters"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ARM谈如何与开发者协作做工具",
-      "sum": "ARM的Peter Hodges讨论游戏开发工具及1969年短片Lemon。",
-      "ta": "速览即可，工具厂商与开发者协作方式或对跨团队工具设计有零星启发。",
-      "src": "Game Developer · 09-18",
-      "url": "https://www.gamedeveloper.com/art/how-toolmakers-like-arm-work-with-devs-ft-peter-hodges"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "King员工谈判破裂宣布罢工",
-      "sum": "Candy Crush工作室工会员工因集体协议谈判停滞，将于9月25日罢工。",
-      "ta": "行业劳资动态，与TA日常工作无直接关联，速览即可。",
-      "src": "Game Developer · 09-18",
-      "url": "https://www.gamedeveloper.com/production/king-workers-call-strike-after-collective-agreement-negotiations-stall"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Control Resonant延续Remedy风格",
-      "sum": "评测称Control Resonant融合激进近战、开放探索与超现实世界观，是Remedy公式的进化。",
-      "ta": "游戏设计向评测，与TA技术工作无直接关联，速览即可。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/control-resonant-is-a-fantastic-evolution-of-remedy-s-formula/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Blood of Dawnwalker时间机制或不再回归",
-      "sum": "Blood of Dawnwalker的时间机制在续作中可能不会保留。",
-      "ta": "纯游戏设计动态，与TA工作无关，速览即可。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/blood-of-dawnwalker-s-time-mechanic-might-not-return-in-the-sequel/"
+      "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support/",
+      "flashback": true
     }
   ],
-  "flashbackTitle": "",
+  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
   "sources": {
     "ok": [
       "NVIDIA",
