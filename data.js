@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月20日 · 周日",
+  "date": "2026年9月21日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Blender 卡通渲染星之卡比</em> / <em>模拟游戏玩转游戏UI</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>潜空间物理渲染新范式</em> / <em>流式语音手势生成</em> / <em>可形变资产分层生成</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,22 +127,49 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 卡通渲染星之卡比",
-      "sum": "作者 TheMathewFlames 用 Blender 制作漫画风 3D 卡比同人作品。",
-      "ta": "可参考其卡通描边与风格化材质在 Blender 中的实现思路。",
-      "src": "80 Level · 09-19",
-      "url": "https://80.lv/articles/comic-book-style-3d-kirby-fan-art-made-in-blender/"
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "潜空间物理渲染新范式",
+      "sum": "研究将光传输现象与扩散模型潜空间建立联系，实现可控的物理渲染式生成。",
+      "ta": "值得关注潜空间与PBR的桥接思路，或可启发材质/光照的可控生成管线。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.21054v1"
     },
     {
-      "cat": "biz",
+      "cat": "ai",
       "imp": "lo",
-      "title": "模拟游戏玩转游戏UI",
-      "sum": "一款模拟游戏以点击操作游戏界面按钮为核心玩法。",
-      "ta": "与渲染和工具链无关，仅作行业趣味速览。",
-      "src": "80 Level · 09-19",
-      "url": "https://80.lv/articles/this-simulation-game-lets-you-play-with-video-game-interfaces/"
+      "title": "流式语音手势生成",
+      "sum": "GestureFAR用流自回归在用户说话时实时生成共语手势，面向具身对话代理。",
+      "ta": "实时流式动作生成思路可参考，但与游戏植被/渲染管线关联较弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-18",
+      "url": "https://arxiv.org/abs/2609.21576v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "可形变资产分层生成",
+      "sum": "DeformSmith用物理约束引导分层生成机器人操作所需的可形变资产。",
+      "ta": "物理引导的形变资产生成思路，对程序化生成有间接参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.18620"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "3D扩散策略无轨迹预判",
+      "sum": "研究让3D扩散策略无需显式轨迹即可学习前瞻能力。",
+      "ta": "与游戏TA工作流关联有限，仅作AI生成方向速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.20669"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender+Maya风格化角色",
+      "sum": "Fabien Metais分享Water Woman项目，Maya建模不重拓扑，黑白绘制后整体换色。",
+      "ta": "黑白绘制再换调色板的贴图流程，对风格化角色材质制作有借鉴意义。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/creating-a-stylized-3d-character-of-a-water-woman-with-blender-maya/"
     },
     {
       "cat": "flow",
@@ -166,10 +193,9 @@ window.INTEL_DATA = {
       "HuggingFace",
       "80 Level",
       "Game Developer",
-      "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine。"
+    "missed": "未覆盖：Unreal Engine、Tech-Artists。"
   },
   "xStale": false
 };

@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-20 13:58",
+  "updated": "2026-09-21 14:05",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "潜空间物理渲染新范式",
+      "sum": "研究将光传输现象与扩散模型潜空间建立联系，实现可控的物理渲染式生成。",
+      "ta": "值得关注潜空间与PBR的桥接思路，或可启发材质/光照的可控生成管线。",
+      "src": "arXiv · cs.GR · 09-17",
+      "url": "https://arxiv.org/abs/2609.21054v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "流式语音手势生成",
+      "sum": "GestureFAR用流自回归在用户说话时实时生成共语手势，面向具身对话代理。",
+      "ta": "实时流式动作生成思路可参考，但与游戏植被/渲染管线关联较弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-18",
+      "url": "https://arxiv.org/abs/2609.21576v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "可形变资产分层生成",
+      "sum": "DeformSmith用物理约束引导分层生成机器人操作所需的可形变资产。",
+      "ta": "物理引导的形变资产生成思路，对程序化生成有间接参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.18620"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "3D扩散策略无轨迹预判",
+      "sum": "研究让3D扩散策略无需显式轨迹即可学习前瞻能力。",
+      "ta": "与游戏TA工作流关联有限，仅作AI生成方向速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.20669"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender+Maya风格化角色",
+      "sum": "Fabien Metais分享Water Woman项目，Maya建模不重拓扑，黑白绘制后整体换色。",
+      "ta": "黑白绘制再换调色板的贴图流程，对风格化角色材质制作有借鉴意义。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/creating-a-stylized-3d-character-of-a-water-woman-with-blender-maya/"
+    },
     {
       "cat": "flow",
       "imp": "lo",
@@ -39,15 +84,6 @@ window.INTEL_RECENT = {
       "ta": "高斯泼溅进主流DCC，未来植被/环境扫描资产的导入与实时预览流程可能被改写。",
       "src": "80 Level · 09-18",
       "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "安卡拉街景写实3D环境拆解",
-      "sum": "作者分享安卡拉小巷项目，用Substance 3D Designer制作平铺墙面与路面材质，并营造温馨氛围。",
-      "ta": "平铺材质与氛围营造的具体做法，对程序化材质与场景美术有直接借鉴意义。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/breakdown-creating-a-realistic-3d-environment-of-an-ankara-street/"
     },
     {
       "cat": "flow",
@@ -1777,42 +1813,6 @@ window.INTEL_RECENT = {
       "ta": "纹理绘制工作流优化，可减少DCC工具切换成本，提升贴图制作效率。",
       "src": "80 Level · 08-31",
       "url": "https://80.lv/articles/this-tool-connects-blender-krita-for-texture-painting/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Steam 13TB数据泄露事件",
-      "sum": "Steam公开端点泄露13TB数据，含Valve及EA、WB等厂商预发布内容。",
-      "ta": "数据泄露可能暴露未发布引擎特性或资产，但需关注官方后续声明。",
-      "src": "Game Developer · 08-31",
-      "url": "https://www.gamedeveloper.com/pc/report-13tb-of-steam-data-leaked-after-users-access-publicly-accessible-endpoint-"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Gamescom设备盗窃事件",
-      "sum": "Gamescom独立展区遭窃，多家小团队笔记本电脑和Steam Deck被盗。",
-      "ta": "行业展会安全事件，对独立开发者影响大，但无直接技术关联。",
-      "src": "Game Developer · 08-31",
-      "url": "https://www.gamedeveloper.com/business/indie-devs-and-publishers-hit-in-gamescom-equipment-thefts"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CAD透明渲染综述",
-      "sum": "综述CAD中透明渲染的工业部署与底层算法，梳理方法、权衡与挑战。",
-      "ta": "透明排序与性能权衡是实时渲染常客，可借鉴CAD工业方案。",
-      "src": "arXiv · cs.GR · 08-28",
-      "url": "https://arxiv.org/abs/2608.28310v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "铜氧化外观预测PBR化",
-      "sum": "提出管线预测铜表面氧化后外观，并转为albedo、法线、粗糙度、金属度贴图。",
-      "ta": "材质老化预测直接服务PBR工作流，可扩展至植被或场景风化。",
-      "src": "arXiv · cs.GR · 08-28",
-      "url": "https://arxiv.org/abs/2608.28102v1"
     }
   ]
 };
