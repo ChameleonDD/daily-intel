@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月21日 · 周一",
+  "date": "2026年9月22日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>潜空间物理渲染新范式</em> / <em>流式语音手势生成</em> / <em>可形变资产分层生成</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>TT Games 用 UE5 造哥谭开放世界</em> / <em>WorldCrafter 隐式 3D 记忆世界模型</em> / <em>Mira-Scene 像素对齐场景布局</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,64 +127,220 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "TT Games 用 UE5 造哥谭开放世界",
+      "sum": "TT Games 访谈披露用 World Partition 与 GAS 构建乐高蝙蝠侠开放世界哥谭。",
+      "ta": "World Partition 与 Gameplay Ability System 的实战落地案例，值得看大世界分区与技能系统的组织方式。",
+      "src": "Unreal Engine · 09-21",
+      "url": "https://www.unrealengine.com/developer-interviews/tt-games-brings-gotham-city-to-life-in-lego-batman-legacy-of-the-dark-knight"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "WorldCrafter 隐式 3D 记忆世界模型",
+      "sum": "WorldCrafter 提出可相机查询的隐式 3D 感知记忆，实现长时序一致的视频世界模型。",
+      "ta": "长时序跨视角一致性是世界模型的老大难，隐式 3D 记忆的思路对程序化场景与实时探索有参考价值。",
+      "src": "arXiv · cs.GR · 09-21",
+      "url": "https://arxiv.org/abs/2609.24984v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "Mira-Scene 像素对齐场景布局",
+      "sum": "Mira-Scene 提出像素对齐的布局表示，解决单图生成 3D 物体难以准确摆入场景的问题。",
+      "ta": "单图资产生成已成熟，瓶颈在布局；像素对齐表示对程序化摆放与场景组装工具有直接启发。",
+      "src": "arXiv · cs.GR · 09-20",
+      "url": "https://arxiv.org/abs/2609.23796v1"
+    },
+    {
       "cat": "gfx",
       "imp": "mid",
-      "title": "潜空间物理渲染新范式",
-      "sum": "研究将光传输现象与扩散模型潜空间建立联系，实现可控的物理渲染式生成。",
-      "ta": "值得关注潜空间与PBR的桥接思路，或可启发材质/光照的可控生成管线。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.21054v1"
+      "title": "ProxyBuild 文本生成可编辑建筑",
+      "sum": "ProxyBuild 用网格锚定程序化代理，从文本生成结构化、可编辑的 3D 建筑。",
+      "ta": "输出可编辑层级结构而非死网格，对程序化建筑工具链与规则生成方向值得一看。",
+      "src": "arXiv · cs.GR · 09-20",
+      "url": "https://arxiv.org/abs/2609.23386v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "LINGO 稀疏视角 X 光 3DGS 重建",
+      "sum": "LINGO 结合隐式初始化与梯度优化，用 3DGS 做稀疏视角 X 光新视角合成与 CT 重建。",
+      "ta": "3DGS 结合物理吸收模型的思路，对体积渲染与稀疏数据重建有方法层面的借鉴。",
+      "src": "arXiv · cs.GR · 09-19",
+      "url": "https://arxiv.org/abs/2609.22849v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "VISTA 视频注入风格化动画",
+      "sum": "VISTA 两阶段框架融合文本结构与参考视频风格，生成风格化 3D 人体动作。",
+      "ta": "无需配对三元组的风格迁移思路，对动捕数据复用与风格化动画管线有参考意义。",
+      "src": "arXiv · cs.GR · 09-20",
+      "url": "https://arxiv.org/abs/2609.23817v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "MoSAT 空间音频驱动动作生成",
+      "sum": "MoSAT 从空间音频与文本描述联合生成人体动作。",
+      "ta": "音频驱动动作对音效与动画联动、环境交互式动画有潜在应用价值。",
+      "src": "arXiv · cs.GR · 09-20",
+      "url": "https://arxiv.org/abs/2609.23797v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "暗视觉显示 RGB 转 S/P 比评估",
+      "sum": "论文对自然场景做高光谱表征，评估闭式 RGB 到 S/P 比估计在中间视觉显示中的适用性。",
+      "ta": "低光显示色调映射的底层信号问题，做夜景与暗部渲染时值得留意。",
+      "src": "arXiv · cs.GR · 09-21",
+      "url": "https://arxiv.org/abs/2609.24819v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "0.8B 模型生成 3D 反应动画",
+      "sum": "论文用 0.8B 小模型做约束程序生成，产出忠实化学过程的 3D 反应动画。",
+      "ta": "小模型加约束生成的范式，对程序化动画与规则约束生成有方法参考。",
+      "src": "arXiv · cs.GR · 09-21",
+      "url": "https://arxiv.org/abs/2609.24457v1"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "流式语音手势生成",
-      "sum": "GestureFAR用流自回归在用户说话时实时生成共语手势，面向具身对话代理。",
-      "ta": "实时流式动作生成思路可参考，但与游戏植被/渲染管线关联较弱，速览即可。",
-      "src": "arXiv · cs.GR · 09-18",
-      "url": "https://arxiv.org/abs/2609.21576v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "可形变资产分层生成",
-      "sum": "DeformSmith用物理约束引导分层生成机器人操作所需的可形变资产。",
-      "ta": "物理引导的形变资产生成思路，对程序化生成有间接参考价值。",
+      "imp": "mid",
+      "title": "视频扩散模型为何违反物理",
+      "sum": "论文剖析注意力机制缺陷，解释视频扩散模型为何产生违反物理的结果。",
+      "ta": "理解生成模型的物理失效机制，对判断 AI 生成素材能否进实时管线有直接价值。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.18620"
+      "url": "https://huggingface.co/papers/2609.23658"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "GameHorizon 游戏多时域评测集",
+      "sum": "GameHorizon Suite 提供游戏玩法场景下的多时域数据与评测基准。",
+      "ta": "游戏玩法评测基准，可用于衡量 AI 在实时交互场景中的表现。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.25001"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "3D扩散策略无轨迹预判",
-      "sum": "研究让3D扩散策略无需显式轨迹即可学习前瞻能力。",
-      "ta": "与游戏TA工作流关联有限，仅作AI生成方向速览。",
+      "title": "GPU 内核基准测试变异分析",
+      "sum": "论文用变异分析方法检验 GPU 内核基准测试判定器的有效性。",
+      "ta": "做 GPU 性能基准与优化验证时，可参考其测试判定可靠性的评估思路。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.20669"
+      "url": "https://huggingface.co/papers/2609.22220"
     },
     {
-      "cat": "flow",
+      "cat": "ai",
       "imp": "lo",
-      "title": "Blender+Maya风格化角色",
-      "sum": "Fabien Metais分享Water Woman项目，Maya建模不重拓扑，黑白绘制后整体换色。",
-      "ta": "黑白绘制再换调色板的贴图流程，对风格化角色材质制作有借鉴意义。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/creating-a-stylized-3d-character-of-a-water-woman-with-blender-maya/"
+      "title": "世界模型表征蒸馏进机器人策略",
+      "sum": "论文将世界模型表征蒸馏进紧凑的 VLA 机器人策略。",
+      "ta": "世界模型到轻量策略的蒸馏路线，对实时 AI 决策的算力压缩有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.24682"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender 5.3 原生支持 3D 高斯泼溅",
-      "sum": "Blender 5.3 将获得原生 3D Gaussian Splatting 支持。",
-      "ta": "高斯泼溅进主流DCC，未来植被/环境扫描资产的导入与实时预览流程可能被改写。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support/",
-      "flashback": true
+      "title": "Blender 插件面板合并成单菜单",
+      "sum": "一款免费工具可将 Blender 所有插件面板合并进一个菜单。",
+      "ta": "插件面板爆炸是 TA 日常痛点，这个免费工具能直接改善 Blender 工作流整洁度。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/this-tool-merges-all-your-blender-add-on-panels-into-one-menu/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 模型上直接画四边面拓扑",
+      "sum": "TopoPen 支持在模型表面直接绘制干净四边面拓扑，自动处理吸附、对称与网格生成。",
+      "ta": "重拓扑是植被与道具资产的高频环节，直接在模型上画四边面能显著提速。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/draw-clean-quad-topology-directly-over-your-model-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity 抖动运动物理工具",
+      "sum": "一款 Unity 工具为动画角色添加真实的抖动运动，适用于胸部、腹部、尾巴等部位。",
+      "ta": "次级运动是角色表现力的关键，这类工具可省去手写弹簧骨骼的成本。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/give-animated-characters-realistic-jiggle-motion-with-this-unity-tool/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini 拉格朗日波浪流体模拟",
+      "sum": "初级特效师 Fred Bello 分享基于 Wētā 拉格朗日波浪研究的 Houdini 水体模拟搭建细节。",
+      "ta": "流体特效的实战拆解，对做水体与波浪类 Niagara/Houdini 效果有直接参考。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/hypnotizing-fluid-simulation-based-on-w-t-s-research-on-lagrangian-waves/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 几何节点做风格化 VFX",
+      "sum": "3D 艺术家 Good Good 逐步讲解用 Blender 几何节点制作风格化 VFX 的流程。",
+      "ta": "几何节点做风格化特效的思路，可迁移到程序化特效与植被工具的节点设计。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/artist-shows-process-of-creating-stylized-vfx-with-blender-s-geometry-nodes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "闪光紧身裤 Shader 制作揭秘",
+      "sum": "作者 Bleeding_Hart 分享闪光紧身裤从各角度闪烁的 Shader 制作方法。",
+      "ta": "各向异性闪光类 Shader 的实现细节，对布料与亮片材质有参考。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/see-these-glitter-tights-sparkle-from-every-angle/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 角色绑定入门教程",
+      "sum": "Noggi 发布近一小时视频，覆盖 Blender 角色绑定全部基础内容。",
+      "ta": "绑定基础教程，适合团队新人补课或梳理流程。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/watch-this-blender-tutorial-if-you-re-starting-character-rigging/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "绘画风格格斗动画展示",
+      "sum": "Ave Espelita 发布一支绘画风格强烈的格斗动画作品。",
+      "ta": "动画表现力参考，可看节奏与打击感的处理。",
+      "src": "80 Level · 09-21",
+      "url": "https://80.lv/articles/check-out-this-impressive-painterly-style-fighting-animation/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "寂静岭 Townfall 改第一人称",
+      "sum": "寂静岭 Townfall 从第三人称转为第一人称，官方列出九点设计变化。",
+      "ta": "视角切换对关卡尺度、恐怖氛围与镜头语言的影响，可作设计参考。",
+      "src": "PlayStation Blog · 09-21",
+      "url": "https://blog.playstation.com/2026/09/21/silent-hill-townfall-9-ways-first-person-changes-the-iconic-horror-formula/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Bungie 称命运系列尚未完结",
+      "sum": "Bungie 公布工作室未来规划，强调命运系列仍是其未来基石。",
+      "ta": "行业动向速览，与 TA 技术工作无直接关联。",
+      "src": "Game Developer · 09-21",
+      "url": "https://www.gamedeveloper.com/console/bungie-declares-it-s-not-done-with-destiny-as-it-lays-out-studio-s-future"
     }
   ],
-  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
+  "flashbackTitle": "",
   "sources": {
     "ok": [
+      "Unreal Engine",
       "NVIDIA",
       "Blender 开发博客",
       "PlayStation Blog",
@@ -195,7 +351,7 @@ window.INTEL_DATA = {
       "Game Developer",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：Unreal Engine、Tech-Artists。"
+    "missed": "未覆盖：Tech-Artists。"
   },
   "xStale": false
 };
