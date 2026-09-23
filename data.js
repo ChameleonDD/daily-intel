@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月22日 · 周二",
+  "date": "2026年9月23日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>TT Games 用 UE5 造哥谭开放世界</em> / <em>WorldCrafter 隐式 3D 记忆世界模型</em> / <em>Mira-Scene 像素对齐场景布局</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>DLSS 5 引入 3D 引导神经渲染</em> / <em>随机高斯泼溅去噪神经推理</em> / <em>3DGS 重建升级为可交互环境</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -130,211 +130,202 @@ window.INTEL_DATA = {
       "cat": "tech",
       "imp": "hi",
       "rank": 1,
-      "title": "TT Games 用 UE5 造哥谭开放世界",
-      "sum": "TT Games 访谈披露用 World Partition 与 GAS 构建乐高蝙蝠侠开放世界哥谭。",
-      "ta": "World Partition 与 Gameplay Ability System 的实战落地案例，值得看大世界分区与技能系统的组织方式。",
-      "src": "Unreal Engine · 09-21",
-      "url": "https://www.unrealengine.com/developer-interviews/tt-games-brings-gotham-city-to-life-in-lego-batman-legacy-of-the-dark-knight"
+      "title": "DLSS 5 引入 3D 引导神经渲染",
+      "sum": "NVIDIA 发布 DLSS 5，新增 3D-Guided Neural Rendering 与细粒度控制，并更新 ACE 与 RTX Kit。",
+      "ta": "3D 引导神经渲染直接关系光照与材质细节的实时重建方式，是渲染管线层面需要评估的新选项。",
+      "src": "NVIDIA · 09-22",
+      "url": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/"
     },
     {
       "cat": "gfx",
       "imp": "hi",
       "rank": 2,
-      "title": "WorldCrafter 隐式 3D 记忆世界模型",
-      "sum": "WorldCrafter 提出可相机查询的隐式 3D 感知记忆，实现长时序一致的视频世界模型。",
-      "ta": "长时序跨视角一致性是世界模型的老大难，隐式 3D 记忆的思路对程序化场景与实时探索有参考价值。",
-      "src": "arXiv · cs.GR · 09-21",
-      "url": "https://arxiv.org/abs/2609.24984v1"
+      "title": "随机高斯泼溅去噪神经推理",
+      "sum": "针对随机高斯泼溅渲染产生的空间噪声，提出像素流上的时序神经去噪器，实现超快推理。",
+      "ta": "随机泼溅省去排序与 alpha 混合，去噪质量与推理开销是能否进实时管线的关键。",
+      "src": "arXiv · cs.GR · 09-22",
+      "url": "https://arxiv.org/abs/2609.25604v1"
     },
     {
       "cat": "gfx",
       "imp": "hi",
       "rank": 3,
-      "title": "Mira-Scene 像素对齐场景布局",
-      "sum": "Mira-Scene 提出像素对齐的布局表示，解决单图生成 3D 物体难以准确摆入场景的问题。",
-      "ta": "单图资产生成已成熟，瓶颈在布局；像素对齐表示对程序化摆放与场景组装工具有直接启发。",
-      "src": "arXiv · cs.GR · 09-20",
-      "url": "https://arxiv.org/abs/2609.23796v1"
+      "title": "3DGS 重建升级为可交互环境",
+      "sum": "φ-RIE 让 3D 高斯泼溅重建结果支持物体级独立运动与接触，面向机器人仿真交互。",
+      "ta": "把静态泼溅场景拆成可独立运动的物体，是程序化场景与仿真复用的关键一步。",
+      "src": "arXiv · cs.GR · 09-22",
+      "url": "https://arxiv.org/abs/2609.26795v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "ProxyBuild 文本生成可编辑建筑",
-      "sum": "ProxyBuild 用网格锚定程序化代理，从文本生成结构化、可编辑的 3D 建筑。",
-      "ta": "输出可编辑层级结构而非死网格，对程序化建筑工具链与规则生成方向值得一看。",
+      "title": "单图生成 3D 场景的像素对齐布局",
+      "sum": "Mira-Scene 提出像素对齐的布局表示，解决单图生成物体放入连贯场景时的摆放难题。",
+      "ta": "布局表示方式决定生成场景能否直接落地，值得关注其对齐精度与可控性。",
       "src": "arXiv · cs.GR · 09-20",
-      "url": "https://arxiv.org/abs/2609.23386v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "LINGO 稀疏视角 X 光 3DGS 重建",
-      "sum": "LINGO 结合隐式初始化与梯度优化，用 3DGS 做稀疏视角 X 光新视角合成与 CT 重建。",
-      "ta": "3DGS 结合物理吸收模型的思路，对体积渲染与稀疏数据重建有方法层面的借鉴。",
-      "src": "arXiv · cs.GR · 09-19",
-      "url": "https://arxiv.org/abs/2609.22849v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "VISTA 视频注入风格化动画",
-      "sum": "VISTA 两阶段框架融合文本结构与参考视频风格，生成风格化 3D 人体动作。",
-      "ta": "无需配对三元组的风格迁移思路，对动捕数据复用与风格化动画管线有参考意义。",
-      "src": "arXiv · cs.GR · 09-20",
-      "url": "https://arxiv.org/abs/2609.23817v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "MoSAT 空间音频驱动动作生成",
-      "sum": "MoSAT 从空间音频与文本描述联合生成人体动作。",
-      "ta": "音频驱动动作对音效与动画联动、环境交互式动画有潜在应用价值。",
-      "src": "arXiv · cs.GR · 09-20",
-      "url": "https://arxiv.org/abs/2609.23797v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "暗视觉显示 RGB 转 S/P 比评估",
-      "sum": "论文对自然场景做高光谱表征，评估闭式 RGB 到 S/P 比估计在中间视觉显示中的适用性。",
-      "ta": "低光显示色调映射的底层信号问题，做夜景与暗部渲染时值得留意。",
-      "src": "arXiv · cs.GR · 09-21",
-      "url": "https://arxiv.org/abs/2609.24819v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "0.8B 模型生成 3D 反应动画",
-      "sum": "论文用 0.8B 小模型做约束程序生成，产出忠实化学过程的 3D 反应动画。",
-      "ta": "小模型加约束生成的范式，对程序化动画与规则约束生成有方法参考。",
-      "src": "arXiv · cs.GR · 09-21",
-      "url": "https://arxiv.org/abs/2609.24457v1"
+      "url": "https://arxiv.org/abs/2609.23796v2"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "视频扩散模型为何违反物理",
-      "sum": "论文剖析注意力机制缺陷，解释视频扩散模型为何产生违反物理的结果。",
-      "ta": "理解生成模型的物理失效机制，对判断 AI 生成素材能否进实时管线有直接价值。",
+      "title": "几何原生隐空间实现 3D 一致世界生成",
+      "sum": "GAE 提出几何原生隐空间，用于生成具备 3D 一致性的世界内容。",
+      "ta": "3D 一致性是世界生成能否用于场景搭建的前提，可留意其隐空间设计思路。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.23658"
+      "url": "https://huggingface.co/papers/2609.24981"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "GameHorizon 游戏多时域评测集",
-      "sum": "GameHorizon Suite 提供游戏玩法场景下的多时域数据与评测基准。",
-      "ta": "游戏玩法评测基准，可用于衡量 AI 在实时交互场景中的表现。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.25001"
+      "title": "PartLLM 统一 3D 部件分割基础模型",
+      "sum": "PartLLM 提出统一多模态基础，同时支持文本引导与点交互的 3D 部件分割。",
+      "ta": "部件级分割是资产拆分与程序化重组的输入，统一多模态接口值得关注。",
+      "src": "arXiv · cs.GR · 09-22",
+      "url": "https://arxiv.org/abs/2609.25832v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "农业机器人仿真大规模场景生成",
+      "sum": "AgriGen 提出大规模场景生成框架，用于生成逼真的农业机器人仿真环境。",
+      "ta": "面向仿真的程序化场景生成思路，可借鉴其规模化与真实感兼顾的做法。",
+      "src": "arXiv · cs.GR · 09-22",
+      "url": "https://arxiv.org/abs/2609.25725v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "指令式视频编辑的数据中心方案",
+      "sum": "VideoX-Qwen 通过构建大规模配对监督并适配视频生成骨干，实现指令驱动视频编辑。",
+      "ta": "编辑需保留无关主体与场景，其数据构造与骨干适配策略对特效迭代有参考价值。",
+      "src": "arXiv · cs.GR · 09-22",
+      "url": "https://arxiv.org/abs/2609.26015v1"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "GPU 内核基准测试变异分析",
-      "sum": "论文用变异分析方法检验 GPU 内核基准测试判定器的有效性。",
-      "ta": "做 GPU 性能基准与优化验证时，可参考其测试判定可靠性的评估思路。",
+      "title": "扩散 LLM 的 IO 感知 KV 缓存",
+      "sum": "Flash-dLLM 提出 IO 感知 KV 缓存与并行解码，提升扩散语言模型速度并降低显存。",
+      "ta": "与图形无直接关联，仅作推理效率技术储备速览。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.22220"
+      "url": "https://huggingface.co/papers/2609.26796"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "世界模型表征蒸馏进机器人策略",
-      "sum": "论文将世界模型表征蒸馏进紧凑的 VLA 机器人策略。",
-      "ta": "世界模型到轻量策略的蒸馏路线，对实时 AI 决策的算力压缩有参考。",
+      "title": "量子增强扩散语言模型超网络",
+      "sum": "提出 Circuit Hypernetworks，用于量子增强的扩散语言模型。",
+      "ta": "与实时渲染无直接关联，速览即可。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.24682"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 插件面板合并成单菜单",
-      "sum": "一款免费工具可将 Blender 所有插件面板合并进一个菜单。",
-      "ta": "插件面板爆炸是 TA 日常痛点，这个免费工具能直接改善 Blender 工作流整洁度。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/this-tool-merges-all-your-blender-add-on-panels-into-one-menu/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 模型上直接画四边面拓扑",
-      "sum": "TopoPen 支持在模型表面直接绘制干净四边面拓扑，自动处理吸附、对称与网格生成。",
-      "ta": "重拓扑是植被与道具资产的高频环节，直接在模型上画四边面能显著提速。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/draw-clean-quad-topology-directly-over-your-model-in-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity 抖动运动物理工具",
-      "sum": "一款 Unity 工具为动画角色添加真实的抖动运动，适用于胸部、腹部、尾巴等部位。",
-      "ta": "次级运动是角色表现力的关键，这类工具可省去手写弹簧骨骼的成本。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/give-animated-characters-realistic-jiggle-motion-with-this-unity-tool/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini 拉格朗日波浪流体模拟",
-      "sum": "初级特效师 Fred Bello 分享基于 Wētā 拉格朗日波浪研究的 Houdini 水体模拟搭建细节。",
-      "ta": "流体特效的实战拆解，对做水体与波浪类 Niagara/Houdini 效果有直接参考。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/hypnotizing-fluid-simulation-based-on-w-t-s-research-on-lagrangian-waves/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 几何节点做风格化 VFX",
-      "sum": "3D 艺术家 Good Good 逐步讲解用 Blender 几何节点制作风格化 VFX 的流程。",
-      "ta": "几何节点做风格化特效的思路，可迁移到程序化特效与植被工具的节点设计。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/artist-shows-process-of-creating-stylized-vfx-with-blender-s-geometry-nodes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "闪光紧身裤 Shader 制作揭秘",
-      "sum": "作者 Bleeding_Hart 分享闪光紧身裤从各角度闪烁的 Shader 制作方法。",
-      "ta": "各向异性闪光类 Shader 的实现细节，对布料与亮片材质有参考。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/see-these-glitter-tights-sparkle-from-every-angle/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 角色绑定入门教程",
-      "sum": "Noggi 发布近一小时视频，覆盖 Blender 角色绑定全部基础内容。",
-      "ta": "绑定基础教程，适合团队新人补课或梳理流程。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/watch-this-blender-tutorial-if-you-re-starting-character-rigging/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "绘画风格格斗动画展示",
-      "sum": "Ave Espelita 发布一支绘画风格强烈的格斗动画作品。",
-      "ta": "动画表现力参考，可看节奏与打击感的处理。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/check-out-this-impressive-painterly-style-fighting-animation/"
+      "url": "https://huggingface.co/papers/2609.24657"
     },
     {
       "cat": "tech",
       "imp": "lo",
-      "title": "寂静岭 Townfall 改第一人称",
-      "sum": "寂静岭 Townfall 从第三人称转为第一人称，官方列出九点设计变化。",
-      "ta": "视角切换对关卡尺度、恐怖氛围与镜头语言的影响，可作设计参考。",
-      "src": "PlayStation Blog · 09-21",
-      "url": "https://blog.playstation.com/2026/09/21/silent-hill-townfall-9-ways-first-person-changes-the-iconic-horror-formula/"
+      "title": "NVIDIA 机密计算支持生产级推理",
+      "sum": "NVIDIA 介绍机密计算如何为生产环境的 LLM 推理提供私有高性能支持。",
+      "ta": "偏企业部署安全，与游戏渲染管线无关，速览。",
+      "src": "NVIDIA · 09-22",
+      "url": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Topograph 拓扑感知负载调度",
+      "sum": "NVIDIA Topograph 针对 AI 工厂做拓扑感知的 GPU 工作负载调度优化。",
+      "ta": "面向集群调度而非单机渲染，速览即可。",
+      "src": "NVIDIA · 09-22",
+      "url": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Isaac ROS 用 AI Agent 加速节点",
+      "sum": "NVIDIA 介绍用 AI Agent 与 Isaac ROS 加速 ROS 2 节点，指出单靠 CUDA 内核不足以保证图性能。",
+      "ta": "机器人方向，与游戏管线无直接关联，速览。",
+      "src": "NVIDIA · 09-22",
+      "url": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Studio Orange 三渲二管线解析",
+      "sum": "80 Level 深入解析制作《Beastars》《Trigun Stampede》的 Studio Orange 的 3D 转 2D 动画管线。",
+      "ta": "三渲二管线是风格化渲染的实战参考，值得看其如何用 3D 流程产出 2D 观感。",
+      "src": "80 Level · 09-22",
+      "url": "https://80.lv/articles/how-anime-studio-behind-beastars-trigun-stampede-makes-3d-animation-look-2d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "800+ PBR 材质合集免费获取",
+      "sum": "Julio Sillet 提供包含木材、瓷砖、布料、金属、混凝土等 800 多种 PBR 材质合集。",
+      "ta": "材质库可直接补充植被与场景的材质测试素材。",
+      "src": "80 Level · 09-22",
+      "url": "https://80.lv/articles/get-this-huge-collection-of-over-800-pbr-materials/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Xbox 重组：Halo 工作室裁员",
+      "sum": "Xbox 继续重组，Halo Studios 裁员、Undead Labs 被剥离，Ninja Theory 关闭，下一部 Halo 由 Activision 开发。",
+      "ta": "第一方工作室格局变动，影响后续引擎与项目技术路线走向。",
+      "src": "Game Developer · 09-22",
+      "url": "https://www.gamedeveloper.com/business/xbox-continues-reset-with-halo-studios-layoffs-and-undead-labs-divestment"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Bungie 称命运系列尚未完结",
-      "sum": "Bungie 公布工作室未来规划，强调命运系列仍是其未来基石。",
-      "ta": "行业动向速览，与 TA 技术工作无直接关联。",
-      "src": "Game Developer · 09-21",
-      "url": "https://www.gamedeveloper.com/console/bungie-declares-it-s-not-done-with-destiny-as-it-lays-out-studio-s-future"
+      "title": "Bungie 称未放弃《命运》",
+      "sum": "Bungie 发布视频说明《命运》与《Marathon》计划，此前下架内容将回归并有更新。",
+      "ta": "运营层面消息，速览。",
+      "src": "80 Level · 09-22",
+      "url": "https://80.lv/articles/bungie-is-not-done-with-destiny-vaulted-content-will-be-back-game-updates-are-coming/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rockstar 公布 GTA6 模组规则",
+      "sum": "Rockstar 在 GTA VI 上线前明确模组规则，官方剧情、角色与既定连续性内容不可使用。",
+      "ta": "模组政策影响社区内容生态，速览。",
+      "src": "Game Developer · 09-22",
+      "url": "https://www.gamedeveloper.com/production/-do-not-rockstar-outlines-modding-rules-before-gta-vi-touches-down"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "塔科夫开发商成立发行部门",
+      "sum": "Battlestate Games 成立发行部门，计划支持硬核向游戏。",
+      "ta": "行业发行动态，速览。",
+      "src": "Game Developer · 09-22",
+      "url": "https://www.gamedeveloper.com/business/escape-from-tarkov-dev-wants-to-bet-on-risky-games-with-its-new-publishing-arm"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "古墓丽影迎来 30 周年",
+      "sum": "《古墓丽影》与劳拉将于今年 10 月迎来 30 周年纪念。",
+      "ta": "纯纪念性内容，速览。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/lara-croft-and-tomb-raider-celebrate-their-30th-anniversary-this-october/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "A24 被指未联系 SCP 作者",
+      "sum": "报道称 A24 就 SCP 电影从未联系 SCP 基金会作者，且存在限制其获利的授权问题。",
+      "ta": "影视授权纠纷，与游戏技术无关，速览。",
+      "src": "80 Level · 09-22",
+      "url": "https://80.lv/articles/a24-reportedly-never-contacted-scp-foundation-authors-over-film/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Fading Echo 登陆 PS5",
+      "sum": "Emeteria 开发的元素动作 RPG《Fading Echo》今日登陆 PlayStation 5。",
+      "ta": "新作发售信息，速览。",
+      "src": "PlayStation Blog · 09-22",
+      "url": "https://blog.playstation.com/2026/09/22/fading-echo-makes-a-splash-on-playstation-5-today/"
     }
   ],
   "flashbackTitle": "",
