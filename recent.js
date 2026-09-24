@@ -2,8 +2,125 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-23 13:46",
+  "updated": "2026-09-24 14:00",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可动可重打光Surfel化身",
+      "sum": "ARS-Avatar用surfel表示从多视角图像生成可动画、可重打光的人体化身。",
+      "ta": "surfel+可学习环境光遮蔽，对角色材质与光照解耦有参考价值。",
+      "src": "arXiv · cs.GR · 09-23",
+      "url": "https://arxiv.org/abs/2609.27600v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "实时机器人切割仿真新法",
+      "sum": "BladeMaster在线生成持久断裂面，实现实时可形变物体切割仿真。",
+      "ta": "拓扑变化+持久断裂的实时方案，可借鉴到破坏/切割类特效系统。",
+      "src": "arXiv · cs.GR · 09-23",
+      "url": "https://arxiv.org/abs/2609.27342v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "灵巧抓取解耦对齐表示",
+      "sum": "DEAL-Grasp解耦全局刚体运动与局部姿态，生成几何感知的灵巧抓取。",
+      "ta": "VR/数字人抓取动画生成，关注其解耦表示思路。",
+      "src": "arXiv · cs.GR · 09-23",
+      "url": "https://arxiv.org/abs/2609.28131v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "物理世界模型InternW0",
+      "sum": "InternW0提出面向高效真实世界交互的基础物理世界模型。",
+      "ta": "物理世界模型方向，与实时交互仿真潜在相关，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.27656"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender盒投影做无人机贴图",
+      "sum": "Sandro Bonfanti分享昆虫形间谍无人机从概念到功能与剪影的完整流程。",
+      "ta": "盒投影贴图与产品级布光摆景，硬表面资产流程可参考。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/designing-a-functional-looking-spy-drone-with-an-insect-like-form/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "ZBrush+Substance做收音机",
+      "sum": "Ravikanth Gupta用ZBrush建模有机磨损细节，六张UV加UDIM准备贴图。",
+      "ta": "UDIM多象限与老化磨损处理，硬表面道具贴图流程示范。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/breakdown-how-to-create-a-hard-surface-philips-radio-with-zbrush-substance-3d/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Undead Labs脱离Xbox后大裁员",
+      "sum": "微软今年早前释放剥离信号后，Undead Labs进行重大裁员。",
+      "ta": "工作室动荡，关注其对项目与团队稳定性的影响。",
+      "src": "Game Developer · 09-23",
+      "url": "https://www.gamedeveloper.com/business/undead-labs-makes-significant-layoffs-after-splitting-from-xbox"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "微软拟在加载屏插广告",
+      "sum": "微软申请专利，在游戏自然停顿处展示广告。",
+      "ta": "加载屏广告若落地，或影响加载流程与UI设计。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/microsoft-may-bring-ads-to-game-loading-screens/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "手绘银河城Well Dweller发售",
+      "sum": "手绘风格银河恶魔城游戏Well Dweller已正式发售。",
+      "ta": "2D手绘美术风格参考，速览。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/the-hand-drawn-metroidvania-well-dweller-has-been-released/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "像素卡牌游戏以投喂代杀敌",
+      "sum": "Hungry Horrors以英爱民俗为背景，用烹饪击败怪物。",
+      "ta": "像素美术与题材创意，速览。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/you-feed-your-enemies-instead-of-killing-them-in-this-deckbuilding-pixel-art-adventure/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "浏览器寻物游戏十年未完",
+      "sum": "Where's Waldo风格浏览器游戏Floor796近十年仍在更新，完成度62%。",
+      "ta": "长线个人项目，速览。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/nearly-ten-years-later-this-where-s-waldo-style-browser-game-keeps-growing/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "时装裁剪缝纫模拟游戏",
+      "sum": "一款模拟游戏让玩家裁剪并缝制自己的连衣裙。",
+      "ta": "布料模拟题材，速览。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/this-simulation-game-lets-you-cut-and-sew-your-own-dresses/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "搏击俱乐部结局赛博朋克重制",
+      "sum": "Wonki Choi分享搏击俱乐部结尾场景的赛博朋克风3D动画。",
+      "ta": "风格化3D动画参考，速览。",
+      "src": "80 Level · 09-23",
+      "url": "https://80.lv/articles/fight-club-s-final-scene-reimagined-as-a-cyberpunk-style-3d-animation/"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -315,15 +432,6 @@ window.INTEL_RECENT = {
       "ta": "世界模型到轻量策略的蒸馏路线，对实时 AI 决策的算力压缩有参考。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.24682"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 插件面板合并成单菜单",
-      "sum": "一款免费工具可将 Blender 所有插件面板合并进一个菜单。",
-      "ta": "插件面板爆炸是 TA 日常痛点，这个免费工具能直接改善 Blender 工作流整洁度。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/this-tool-merges-all-your-blender-add-on-panels-into-one-menu/"
     },
     {
       "cat": "flow",
@@ -1707,116 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "可关注其程序化建模或物理交互实现，但信息有限。",
       "src": "80 Level · 09-07",
       "url": "https://80.lv/articles/indie-dev-shows-a-prorotype-of-a-woodworking-game-and-it-s-amazing/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "统一骨骼动画生成模型",
-      "sum": "UniMate 提出统一模型，可驱动多种骨架的动画生成，无需逐骨架微调。",
-      "ta": "关注其跨骨架泛化能力，有望简化程序化生成资产的动画绑定流程。",
-      "src": "arXiv · cs.GR · 09-04",
-      "url": "https://arxiv.org/abs/2609.05415v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯泼溅紧凑外观模型",
-      "sum": "新方法用紧凑神经模型替代球谐函数，降低高斯泼溅存储与内存带宽。",
-      "ta": "对实时渲染性能敏感，此方法可减少显存占用，提升复杂场景渲染效率。",
-      "src": "arXiv · cs.GR · 09-04",
-      "url": "https://arxiv.org/abs/2609.05255v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯泼溅可微蒙皮权重",
-      "sum": "GradRig 提出可微权重方法，用于高斯泼溅的骨骼变形，提升动态形变质量。",
-      "ta": "涉及高斯泼溅与骨骼动画结合，对程序化生成角色的动态表现有参考价值。",
-      "src": "arXiv · cs.GR · 09-04",
-      "url": "https://arxiv.org/abs/2609.05127v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "少样本动作风格迁移",
-      "sum": "STyMo 实现少样本动作风格迁移，无需大型风格化数据集或预训练模型。",
-      "ta": "可快速为角色动作库添加风格变体，提升动画资产多样性。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.04500v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "端到端语音驱动全身动作",
-      "sum": "Motion-Omni 实现语音到全身动作的端到端生成，面向对话场景。",
-      "ta": "对 NPC 对话动画生成有潜在应用，但需评估其动作质量与实时性。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.04250"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "地铁2039主机光追4K60",
-      "sum": "《地铁2039》2月发售，PS5/Xbox实现4K60帧与光线追踪。",
-      "ta": "主机平台光追性能标杆，可参考其渲染优化策略与画质取舍。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/metro-2039-runs-at-4k-with-60-fps-and-ray-tracing-even-on-ps5-and-xbox/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ZBrush雕刻人树角色",
-      "sum": "Andrea Buitrago分享将人树角色Uri雕刻成大理石质感3D作品的流程。",
-      "ta": "关注角色与植物形态融合的雕刻思路及材质质感表现手法。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/book-character-to-a-3d-piece-sculpting-human-tree-character-in-zbrush-and-maya/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Deadlock风格蜡烛人动画",
-      "sum": "Folio为pwnisher挑战赛创作蜡烛头角色Paraffin的动画作品。",
-      "ta": "社区挑战赛作品，可快速浏览角色动画与风格化表现。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/deadlock-inspired-candleman-animation-for-the-gauntlet-of-gods-challenge/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox云游戏月度时长限制",
-      "sum": "Xbox对Game Pass云游戏订阅设置每月5至15小时的游玩上限。",
-      "ta": "云游戏服务策略变化，可能影响远程测试与协作流程的可行性。",
-      "src": "80 Level · 09-04",
-      "url": "https://80.lv/articles/xbox-puts-monthly-limits-on-cloud-gaming-for-game-pass-subscribers/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "VeriPhy世界模型物理推理",
-      "sum": "论文提出VeriPhy，用于世界模型评估与改进的智能体物理推理框架。",
-      "ta": "世界模型与物理推理结合，或为程序化生成与场景仿真提供新思路。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.03153"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Capcom详解RE引擎刀剑战斗",
-      "sum": "Capcom访谈：RE引擎实时计算刀剑碰撞，含京都环境美术管线。",
-      "ta": "RE引擎的实时物理与美术管线结合案例，对战斗特效与场景制作有直接参考价值。",
-      "src": "80 Level · 09-03",
-      "url": "https://80.lv/articles/how-capcom-built-onimushas-real-time-sword-combat-re-engine/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "TileGS优化高斯溅射光栅化",
-      "sum": "TileGS提出瓦片局部深度分箱，减少全局排序流量，提升3DGS渲染效率。",
-      "ta": "3DGS光栅化新优化，直接关系实时渲染性能，值得深入评估其对管线的影响。",
-      "src": "arXiv · cs.GR · 09-03",
-      "url": "https://arxiv.org/abs/2609.03613v1"
     }
   ]
 };
