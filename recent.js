@@ -2,8 +2,143 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-24 14:00",
+  "updated": "2026-09-25 14:02",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "OREO 用渲染编辑对齐 3D 生成",
+      "sum": "借 2D 扩散先验在生成过程中实时渲染并编辑，提升 3D 资产视觉保真度。",
+      "ta": "程序化资产生成若接入这种在线渲染-编辑回路，可减少后期手工修形，值得关注其对齐策略。",
+      "src": "arXiv · cs.GR · 09-24",
+      "url": "https://arxiv.org/abs/2609.29788v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "CuACD 实现全 GPU 凸分解",
+      "sum": "近似凸分解全程驻留 GPU，为物理模拟、碰撞检测与机器人学习做预处理。",
+      "ta": "碰撞体生成是植被/道具批处理管线常客，全 GPU 化有望大幅压缩离线预处理耗时。",
+      "src": "arXiv · cs.GR · 09-23",
+      "url": "https://arxiv.org/abs/2609.28731v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "M-plicits 嵌套多尺度隐式曲面",
+      "sum": "用嵌套多尺度残差改进正弦编码 MLP，兼顾训练效率、渲染速度与抗噪。",
+      "ta": "隐式表示若能在速度与鲁棒性上同时改善，对程序化植被/地形 SDF 建模有直接参考价值。",
+      "src": "arXiv · cs.GR · 09-23",
+      "url": "https://arxiv.org/abs/2609.28684v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Heartian 生理感知可重光照头像",
+      "sum": "为高斯头部头像加入心跳周期驱动的逐帧反照率调制，补足皮肤颜色细微变化。",
+      "ta": "可重光照高斯头像的时序细节建模思路，可迁移到角色皮肤材质的动态微变化处理。",
+      "src": "arXiv · cs.GR · 09-22",
+      "url": "https://arxiv.org/abs/2609.28539v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "胶带贴附仿真 TAPESIM",
+      "sum": "面向机器人操作的胶带剥离与贴附高效仿真，避免逐层解算粘合层。",
+      "ta": "柔性条带与粘附/脱附的简化求解思路，对布料与藤蔓类植被的接触仿真有借鉴意义。",
+      "src": "arXiv · cs.GR · 09-23",
+      "url": "https://arxiv.org/abs/2609.28766v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型中的客体永久性训练",
+      "sum": "论文探讨在世界模型中训练客体永久性，让模型维持被遮挡物体的持续表征。",
+      "ta": "若世界模型能稳定维持遮挡物表征，对场景流式加载与遮挡剔除的预测式方案有潜在启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.28654"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "面向 LLM 智能体的世界模型",
+      "sum": "提出 Agent-Editing World Model，重新思考 LLM 智能体所需的世界建模方式。",
+      "ta": "与实时渲染无直接关联，仅作智能体工具链方向的泛读参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.28416"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 做鸣潮风格动态头发",
+      "sum": "教程演示如何在 Blender 中制作鸣潮风格的动态头发效果。",
+      "ta": "二次元角色动态发型的绑定与解算流程，可对照引擎内发丝方案的实现差异。",
+      "src": "80 Level · 09-24",
+      "url": "https://80.lv/articles/how-to-create-dynamic-wuthering-waves-style-hair-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE 环境资产包含风格化植被",
+      "sum": "Meshingun Studio 发布 UE 环境资产包，含哥特家具、亚洲寺庙场景与风格化植被等 20 余个包。",
+      "ta": "风格化植被资产可直接用于搭建测试场景，验证植被工具与材质性能。",
+      "src": "80 Level · 09-24",
+      "url": "https://80.lv/articles/get-hundreds-of-striking-production-ready-assets-with-this-unreal-engine-environment-bundle/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "锈蚀材质先研究物理再动手",
+      "sum": "Loic Anquetil 讲解用 Substance 3D Designer 制作写实锈蚀材质，强调先理解材料物理复杂性。",
+      "ta": "程序化锈蚀的探索式工作流，对材质函数分层与噪声组合思路有直接参考。",
+      "src": "80 Level · 09-24",
+      "url": "https://80.lv/articles/desirable-patina-how-to-make-realistic-rust-in-3d/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Meta 发布百克重 VR 眼镜",
+      "sum": "Meta 公布约 100 克、售价 1300 美元的 VR 眼镜，并有多款游戏将登陆该平台。",
+      "ta": "新 VR 硬件规格影响未来移动端渲染预算与注视点渲染策略，可留意其性能定位。",
+      "src": "Game Developer · 09-24",
+      "url": "https://www.gamedeveloper.com/business/meta-announces-new-vr-glasses-that-weigh-about-100-grams-and-cost-1-300"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "黑曜石将保留创作独立性",
+      "sum": "Bethesda 总裁称黑曜石加入后领导层与创作优势将保持完整。",
+      "ta": "工作室整合动向，与日常 TA 工作无直接关联，速览即可。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/obsidian-will-preserve-its-creative-identity-bethesda-president-says/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "爱尔兰游戏基金增设资助通道",
+      "sum": "爱尔兰游戏基金扩展为开发基金、原型基金与发行基金三条路径。",
+      "ta": "区域性资金政策，与 TA 技术工作无关，仅作行业动态速览。",
+      "src": "Game Developer · 09-24",
+      "url": "https://www.gamedeveloper.com/business/irish-game-fund-expands-with-additional-funding-pathways"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Massive 任命新任总经理",
+      "sum": "前 Avalanche Studios 负责人 Natalie Francis 将于 10 月 1 日加入 Massive Entertainment 任总经理。",
+      "ta": "人事变动类行业新闻，与渲染技术无直接关联。",
+      "src": "Game Developer · 09-24",
+      "url": "https://www.gamedeveloper.com/business/former-avalanche-studios-chief-natalie-francis-joins-massive-entertainment-as-managing-director"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "凭记忆画国界线的免费游戏",
+      "sum": "一款要求玩家凭记忆在地图上绘制国界线的免费游戏上线。",
+      "ta": "独立小游戏，与 TA 技术栈无关，可忽略。",
+      "src": "80 Level · 09-24",
+      "url": "https://80.lv/articles/in-this-game-you-have-to-draw-border-lines-from-memory-on-a-map/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -39,15 +174,6 @@ window.INTEL_RECENT = {
       "ta": "物理世界模型方向，与实时交互仿真潜在相关，速览即可。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.27656"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender盒投影做无人机贴图",
-      "sum": "Sandro Bonfanti分享昆虫形间谍无人机从概念到功能与剪影的完整流程。",
-      "ta": "盒投影贴图与产品级布光摆景，硬表面资产流程可参考。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/designing-a-functional-looking-spy-drone-with-an-insect-like-form/"
     },
     {
       "cat": "flow",
@@ -1689,132 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "概念性文章，对 TA 工作流暂无直接关联。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.06758"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "几何引导法线估计模型",
-      "sum": "TransNormal-2 用几何接地整流流与边缘感知解码实现精确法线估计。",
-      "ta": "对材质扫描和资产重建中的法线贴图生成有直接参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.06665"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "卡普空重启老 IP 计划",
-      "sum": "Capcom 表示将专注于重启近期无新作的经典 IP。",
-      "ta": "行业动态，可能影响未来游戏技术方向，但无直接 TA 关联。",
-      "src": "80 Level · 09-08",
-      "url": "https://80.lv/articles/capcom-is-focusing-on-reactivating-ips-that-haven-t-had-a-recent-launch/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "坦克世界 HEAT 艺术管线解析",
-      "sum": "WoT: HEAT 总监详解其专有引擎、载具设计、跨平台优化与艺术管线。",
-      "ta": "了解大型跨平台项目的艺术与引擎协作流程，有流程参考价值。",
-      "src": "80 Level · 09-08",
-      "url": "https://80.lv/articles/inside-world-of-tanks-heat-s-art-engine-vehicle-design-pipeline/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "哈瑞宝小熊糖果材质制作",
-      "sum": "QiYu Dai 分享用几何体建模和颜色分层实现半透明小熊糖果材质。",
-      "ta": "半透明材质分层思路对食品类或软体材质制作有直接参考。",
-      "src": "80 Level · 09-08",
-      "url": "https://80.lv/articles/how-to-create-a-haribo-style-translucent-jelly-bear-candy-material/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "宝可梦风格全息卡牌效果",
-      "sum": "Kazehaya Fuyuka 用 Clip Studio Paint Pro 和 After Effects 制作全息卡牌。",
-      "ta": "2D 全息效果制作案例，对非实时渲染流程有参考。",
-      "src": "80 Level · 09-08",
-      "url": "https://80.lv/articles/pok-mon-style-holographic-card-effect-check-out-fuyuka-shadow-striker/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender GPU 多物理工具",
-      "sum": "Pro Particles 在 Blender 中统一处理粒子、液体、Pyro 和 MPM 模拟。",
-      "ta": "对 DCC 工具链中的物理模拟流程有参考价值，可关注其 GPU 性能。",
-      "src": "80 Level · 09-08",
-      "url": "https://80.lv/articles/advanced-gpu-powered-multi-physics-toolkit-for-blender-artists/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "EA 用生成 AI 制作 NHL 解说",
-      "sum": "据报道 EA 在 NHL 27 中使用生成式 AI 制作解说员语音。",
-      "ta": "行业动态，AI 语音在游戏中的应用案例，对音频管线有参考。",
-      "src": "Game Developer · 09-08",
-      "url": "https://www.gamedeveloper.com/business/report-ea-s-nhl-27-is-using-genai-to-create-voiceover-claims-a-sports-commentator"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "开源贴图神器发布",
-      "sum": "开源 Substance 3D Painter 替代品 ArmorPaint 1.0 发布，体积极小。",
-      "ta": "可作为轻量级贴图工具，适合快速迭代或原型验证，关注其功能覆盖度。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/open-source-substance-3d-painter-alternative-armorpaint-1-0-released/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "程序化风格天空生成器",
-      "sum": "Blender 全程序化风格化天空生成器发布，支持一键生成、动画与导出。",
-      "ta": "风格化场景开发中可快速生成天空背景，减少手工贴图依赖，便于迭代。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/fully-procedural-stylized-sky-generator-for-blender-released/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "头发液态化着色器",
-      "sum": "免费 VRChat 着色器可将头发变为动画液体效果，附带水材质贴图。",
-      "ta": "实时渲染中探索非传统材质表现，可借鉴其液体动画原理用于特效。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/this-free-vrchat-shader-turns-hair-into-beautiful-animated-liquid/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "黎明行者销量破百万",
-      "sum": "游戏《The Blood of Dawnwalker》全球销量已超过 100 万份。",
-      "ta": "行业销量数据可作市场参考，但与本职能关联度低。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/the-blood-of-dawnwalker-sold-over-1-million-copies-worldwide/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前BioWare设计师辩护",
-      "sum": "前 BioWare 设计师为工作室辩护，回应《质量效应》新作质疑。",
-      "ta": "行业舆论动态，与 TA 技术工作无直接关联。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/former-bioware-designer-defends-studio-amid-next-mass-effect-doubts/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前R星开发者盗窃判刑",
-      "sum": "前《RuneScape》开发者因窃取玩家超 40 万美元被判刑。",
-      "ta": "行业法律事件，与 TA 技术工作无直接关联。",
-      "src": "80 Level · 09-08",
-      "url": "https://80.lv/articles/former-runescape-developer-sentenced-for-stealing-over-usd400k-from-players/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "木工游戏原型展示",
-      "sum": "独立开发者展示木工游戏原型片段，效果惊艳。",
-      "ta": "可关注其程序化建模或物理交互实现，但信息有限。",
-      "src": "80 Level · 09-07",
-      "url": "https://80.lv/articles/indie-dev-shows-a-prorotype-of-a-woodworking-game-and-it-s-amazing/"
     }
   ]
 };
