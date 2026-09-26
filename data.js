@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月25日 · 周五",
+  "date": "2026年9月26日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>OREO 用渲染编辑对齐 3D 生成</em> / <em>CuACD 实现全 GPU 凸分解</em> / <em>M-plicits 嵌套多尺度隐式曲面</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>UE5悬浮载具场景制作拆解</em> / <em>Demogorgon皮肤材质Lookdev复盘</em> / <em>小体型角色巨武器动画拆解</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,148 +127,94 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "OREO 用渲染编辑对齐 3D 生成",
-      "sum": "借 2D 扩散先验在生成过程中实时渲染并编辑，提升 3D 资产视觉保真度。",
-      "ta": "程序化资产生成若接入这种在线渲染-编辑回路，可减少后期手工修形，值得关注其对齐策略。",
-      "src": "arXiv · cs.GR · 09-24",
-      "url": "https://arxiv.org/abs/2609.29788v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CuACD 实现全 GPU 凸分解",
-      "sum": "近似凸分解全程驻留 GPU，为物理模拟、碰撞检测与机器人学习做预处理。",
-      "ta": "碰撞体生成是植被/道具批处理管线常客，全 GPU 化有望大幅压缩离线预处理耗时。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.28731v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "M-plicits 嵌套多尺度隐式曲面",
-      "sum": "用嵌套多尺度残差改进正弦编码 MLP，兼顾训练效率、渲染速度与抗噪。",
-      "ta": "隐式表示若能在速度与鲁棒性上同时改善，对程序化植被/地形 SDF 建模有直接参考价值。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.28684v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Heartian 生理感知可重光照头像",
-      "sum": "为高斯头部头像加入心跳周期驱动的逐帧反照率调制，补足皮肤颜色细微变化。",
-      "ta": "可重光照高斯头像的时序细节建模思路，可迁移到角色皮肤材质的动态微变化处理。",
-      "src": "arXiv · cs.GR · 09-22",
-      "url": "https://arxiv.org/abs/2609.28539v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "胶带贴附仿真 TAPESIM",
-      "sum": "面向机器人操作的胶带剥离与贴附高效仿真，避免逐层解算粘合层。",
-      "ta": "柔性条带与粘附/脱附的简化求解思路，对布料与藤蔓类植被的接触仿真有借鉴意义。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.28766v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "世界模型中的客体永久性训练",
-      "sum": "论文探讨在世界模型中训练客体永久性，让模型维持被遮挡物体的持续表征。",
-      "ta": "若世界模型能稳定维持遮挡物表征，对场景流式加载与遮挡剔除的预测式方案有潜在启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.28654"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "面向 LLM 智能体的世界模型",
-      "sum": "提出 Agent-Editing World Model，重新思考 LLM 智能体所需的世界建模方式。",
-      "ta": "与实时渲染无直接关联，仅作智能体工具链方向的泛读参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.28416"
-    },
-    {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender 做鸣潮风格动态头发",
-      "sum": "教程演示如何在 Blender 中制作鸣潮风格的动态头发效果。",
-      "ta": "二次元角色动态发型的绑定与解算流程，可对照引擎内发丝方案的实现差异。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/how-to-create-dynamic-wuthering-waves-style-hair-in-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE 环境资产包含风格化植被",
-      "sum": "Meshingun Studio 发布 UE 环境资产包，含哥特家具、亚洲寺庙场景与风格化植被等 20 余个包。",
-      "ta": "风格化植被资产可直接用于搭建测试场景，验证植被工具与材质性能。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/get-hundreds-of-striking-production-ready-assets-with-this-unreal-engine-environment-bundle/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "锈蚀材质先研究物理再动手",
-      "sum": "Loic Anquetil 讲解用 Substance 3D Designer 制作写实锈蚀材质，强调先理解材料物理复杂性。",
-      "ta": "程序化锈蚀的探索式工作流，对材质函数分层与噪声组合思路有直接参考。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/desirable-patina-how-to-make-realistic-rust-in-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 复刻二维动画巴士场景",
-      "sum": "3D 艺术家 Aniket Rawat 用 Blender 以延时视频形式复刻二维动画巴士场景。",
-      "ta": "三渲二场景的搭建与打光流程，可速览其风格化处理手法。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/watch-3d-artist-recreate-2d-anime-bus-scene-in-blender/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Meta 发布百克重 VR 眼镜",
-      "sum": "Meta 公布约 100 克、售价 1300 美元的 VR 眼镜，并有多款游戏将登陆该平台。",
-      "ta": "新 VR 硬件规格影响未来移动端渲染预算与注视点渲染策略，可留意其性能定位。",
-      "src": "Game Developer · 09-24",
-      "url": "https://www.gamedeveloper.com/business/meta-announces-new-vr-glasses-that-weigh-about-100-grams-and-cost-1-300"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "黑曜石将保留创作独立性",
-      "sum": "Bethesda 总裁称黑曜石加入后领导层与创作优势将保持完整。",
-      "ta": "工作室整合动向，与日常 TA 工作无直接关联，速览即可。",
+      "title": "UE5悬浮载具场景制作拆解",
+      "sum": "作者分享基于《黑客帝国觉醒》UE5场景的悬浮载具飞行模拟制作流程与散热方案。",
+      "ta": "可参考其UE5场景搭建思路与PC散热应对，适合植被/程序化场景的TA借鉴大场景性能取舍。",
       "src": "80 Level · 09-25",
-      "url": "https://80.lv/articles/obsidian-will-preserve-its-creative-identity-bethesda-president-says/"
+      "url": "https://80.lv/articles/how-to-create-futuristic-hovercraft-flight-simulator-inspired-by-matrix/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Demogorgon皮肤材质Lookdev复盘",
+      "sum": "作者复盘《怪奇物语》Demogorgon的薄苍白黏液皮肤材质，强调位移不等于真实感。",
+      "ta": "对材质/Shader TA有直接参考：位移与光照配合的写实皮肤lookdev思路。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/exploring-thin-pale-slimy-skin-texture-by-recreating-the-demogorgon-from-stranger-things/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "小体型角色巨武器动画拆解",
+      "sum": "以《Moss: Book 2》为例讲解小角色持巨型双手武器时如何保持清晰剪影。",
+      "ta": "动画剪影可读性思路对角色/特效表现有借鉴，非核心TA方向。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/breakdown-animating-tiny-character-with-massive-two-handed-weapon/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "狐娘巨剑连招动画展示",
+      "sum": "展示狐娘角色巨剑连招动画，强调重量感与运动节奏。",
+      "ta": "速览级动画参考，重量感表现可借鉴到特效节奏设计。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/fox-girl-s-powerful-giant-sword-combo-attack-animation/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "1940年杂志广告实为2D矢量动画",
+      "sum": "一则1940年《Life》杂志广告实为2D矢量动画制作。",
+      "ta": "与游戏TA工作流关联弱，速览即可。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/this-1940-life-magazine-ad-is-actually-2d-vector-animation/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "爱尔兰游戏基金增设资助通道",
-      "sum": "爱尔兰游戏基金扩展为开发基金、原型基金与发行基金三条路径。",
-      "ta": "区域性资金政策，与 TA 技术工作无关，仅作行业动态速览。",
-      "src": "Game Developer · 09-24",
-      "url": "https://www.gamedeveloper.com/business/irish-game-fund-expands-with-additional-funding-pathways"
+      "title": "留存玩家才是增长关键",
+      "sum": "Adikteev观点：游戏增长最大杠杆不是新增安装，而是早期识别流失并召回玩家。",
+      "ta": "偏运营增长，与TA本职关联弱，速览。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/the-players-you-already-have-are-your-biggest-growth-opportunity/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Massive 任命新任总经理",
-      "sum": "前 Avalanche Studios 负责人 Natalie Francis 将于 10 月 1 日加入 Massive Entertainment 任总经理。",
-      "ta": "人事变动类行业新闻，与渲染技术无直接关联。",
-      "src": "Game Developer · 09-24",
-      "url": "https://www.gamedeveloper.com/business/former-avalanche-studios-chief-natalie-francis-joins-massive-entertainment-as-managing-director"
+      "title": "《皇牌空战8》改用第一人称叙事",
+      "sum": "Project Aces在《皇牌空战8》中改变叙事方式，以第一人称讲述更私人的故事。",
+      "ta": "偏叙事设计，与TA技术方向关联弱。",
+      "src": "PlayStation Blog · 09-25",
+      "url": "https://blog.playstation.com/2026/09/25/how-ace-combat-8-wings-of-theve-uses-first-person-to-tell-a-more-personal-story/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "凭记忆画国界线的免费游戏",
-      "sum": "一款要求玩家凭记忆在地图上绘制国界线的免费游戏上线。",
-      "ta": "独立小游戏，与 TA 技术栈无关，可忽略。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/in-this-game-you-have-to-draw-border-lines-from-memory-on-a-map/"
+      "title": "PS博客本周精选与播客",
+      "sum": "PlayStation官方播客第548期回顾九月发售游戏，另有《金刚狼》截图精选。",
+      "ta": "纯社区/营销内容，无技术信息。",
+      "src": "PlayStation Blog · 09-25",
+      "url": "https://blog.playstation.com/2026/09/25/official-playstation-podcast-episode-548-september-selects/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "编码智能体用于任务与运动规划",
+      "sum": "论文提出用编码智能体解决广义任务与运动规划问题。",
+      "ta": "原文未提及游戏/实时/3D引擎关联，仅作AI方向速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.30233"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "音视频联合生成的扩散强化学习",
+      "sum": "AV-GRPO提出模态锚定解耦的扩散强化学习方法，用于音视频联合生成。",
+      "ta": "原文未提及游戏/实时引擎关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.29816"
     }
   ],
   "flashbackTitle": "",

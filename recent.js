@@ -2,8 +2,98 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-25 14:02",
+  "updated": "2026-09-26 14:01",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5悬浮载具场景制作拆解",
+      "sum": "作者分享基于《黑客帝国觉醒》UE5场景的悬浮载具飞行模拟制作流程与散热方案。",
+      "ta": "可参考其UE5场景搭建思路与PC散热应对，适合植被/程序化场景的TA借鉴大场景性能取舍。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/how-to-create-futuristic-hovercraft-flight-simulator-inspired-by-matrix/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Demogorgon皮肤材质Lookdev复盘",
+      "sum": "作者复盘《怪奇物语》Demogorgon的薄苍白黏液皮肤材质，强调位移不等于真实感。",
+      "ta": "对材质/Shader TA有直接参考：位移与光照配合的写实皮肤lookdev思路。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/exploring-thin-pale-slimy-skin-texture-by-recreating-the-demogorgon-from-stranger-things/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "小体型角色巨武器动画拆解",
+      "sum": "以《Moss: Book 2》为例讲解小角色持巨型双手武器时如何保持清晰剪影。",
+      "ta": "动画剪影可读性思路对角色/特效表现有借鉴，非核心TA方向。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/breakdown-animating-tiny-character-with-massive-two-handed-weapon/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "狐娘巨剑连招动画展示",
+      "sum": "展示狐娘角色巨剑连招动画，强调重量感与运动节奏。",
+      "ta": "速览级动画参考，重量感表现可借鉴到特效节奏设计。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/fox-girl-s-powerful-giant-sword-combo-attack-animation/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "1940年杂志广告实为2D矢量动画",
+      "sum": "一则1940年《Life》杂志广告实为2D矢量动画制作。",
+      "ta": "与游戏TA工作流关联弱，速览即可。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/this-1940-life-magazine-ad-is-actually-2d-vector-animation/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "留存玩家才是增长关键",
+      "sum": "Adikteev观点：游戏增长最大杠杆不是新增安装，而是早期识别流失并召回玩家。",
+      "ta": "偏运营增长，与TA本职关联弱，速览。",
+      "src": "80 Level · 09-25",
+      "url": "https://80.lv/articles/the-players-you-already-have-are-your-biggest-growth-opportunity/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《皇牌空战8》改用第一人称叙事",
+      "sum": "Project Aces在《皇牌空战8》中改变叙事方式，以第一人称讲述更私人的故事。",
+      "ta": "偏叙事设计，与TA技术方向关联弱。",
+      "src": "PlayStation Blog · 09-25",
+      "url": "https://blog.playstation.com/2026/09/25/how-ace-combat-8-wings-of-theve-uses-first-person-to-tell-a-more-personal-story/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS博客本周精选与播客",
+      "sum": "PlayStation官方播客第548期回顾九月发售游戏，另有《金刚狼》截图精选。",
+      "ta": "纯社区/营销内容，无技术信息。",
+      "src": "PlayStation Blog · 09-25",
+      "url": "https://blog.playstation.com/2026/09/25/official-playstation-podcast-episode-548-september-selects/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "编码智能体用于任务与运动规划",
+      "sum": "论文提出用编码智能体解决广义任务与运动规划问题。",
+      "ta": "原文未提及游戏/实时/3D引擎关联，仅作AI方向速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.30233"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "音视频联合生成的扩散强化学习",
+      "sum": "AV-GRPO提出模态锚定解耦的扩散强化学习方法，用于音视频联合生成。",
+      "ta": "原文未提及游戏/实时引擎关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.29816"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -438,16 +528,6 @@ window.INTEL_RECENT = {
       "ta": "新作发售信息，速览。",
       "src": "PlayStation Blog · 09-22",
       "url": "https://blog.playstation.com/2026/09/22/fading-echo-makes-a-splash-on-playstation-5-today/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "TT Games 用 UE5 造哥谭开放世界",
-      "sum": "TT Games 访谈披露用 World Partition 与 GAS 构建乐高蝙蝠侠开放世界哥谭。",
-      "ta": "World Partition 与 Gameplay Ability System 的实战落地案例，值得看大世界分区与技能系统的组织方式。",
-      "src": "Unreal Engine · 09-21",
-      "url": "https://www.unrealengine.com/developer-interviews/tt-games-brings-gotham-city-to-life-in-lego-batman-legacy-of-the-dark-knight"
     },
     {
       "cat": "gfx",
@@ -1734,87 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "可能解决 UV 映射痛点，对材质和贴图管线有潜在革新意义。",
       "src": "arXiv · cs.GR · 09-07",
       "url": "https://arxiv.org/abs/2609.07557v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多视角物体重打光 Transformer",
-      "sum": "RelightFormer 用前馈生成式 Transformer 从多视角图像实现物体重打光。",
-      "ta": "对离线资产制作和光照管线有参考价值，可关注其多视角一致性。",
-      "src": "arXiv · cs.GR · 09-07",
-      "url": "https://arxiv.org/abs/2609.07414v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "CT 扫描重建钩针纱线路径",
-      "sum": "CT2Yarn 从微 CT 扫描中恢复真实钩针制品的连续纱线路径。",
-      "ta": "对程序化生成复杂编织结构有启发，但应用场景较垂直。",
-      "src": "arXiv · cs.GR · 09-07",
-      "url": "https://arxiv.org/abs/2609.06950v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "亚像素级太空碎片图像配准",
-      "sum": "利用 Radon 点扩散函数实现太空碎片图像的亚像素仿射配准。",
-      "ta": "与游戏图形学关联较弱，但亚像素配准技术或可迁移至其他图像处理。",
-      "src": "arXiv · cs.GR · 09-07",
-      "url": "https://arxiv.org/abs/2609.06929v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "双曲曲面网格嵌入可视化",
-      "sum": "通过网格嵌入在欧几里得空间可视化双曲曲面，用于数学演示。",
-      "ta": "对数学可视化有参考价值，但与游戏 TA 工作流关联不大。",
-      "src": "arXiv · cs.GR · 09-06",
-      "url": "https://arxiv.org/abs/2609.06766v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "自适应 Delaunay 网格重建",
-      "sum": "ADELE 直接从图像重建高保真网格，无需中间 NeRF/3DGS 表示。",
-      "ta": "对网格资产生产管线有直接价值，可关注其重建质量和速度。",
-      "src": "arXiv · cs.GR · 09-06",
-      "url": "https://arxiv.org/abs/2609.06723v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "物理人形交互统一控制器",
-      "sum": "提出上下文条件交互先验，统一物理人形控制器的导航与操作。",
-      "ta": "对游戏 NPC 物理动画控制有潜在参考，但工程化程度尚远。",
-      "src": "arXiv · cs.GR · 09-06",
-      "url": "https://arxiv.org/abs/2609.06591v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "混合智能体场景布局生成",
-      "sum": "SceneMosaic 用混合智能体布局进化生成多样化、可模拟的场景。",
-      "ta": "对程序化关卡和场景生成有参考价值，可关注其布局多样性与可控性。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.05594"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自回归视频扩散蒸馏改进",
-      "sum": "Mask Forcing 通过双噪声掩码滚动提升自回归视频扩散模型的蒸馏效果。",
-      "ta": "对视频生成模型效率提升有参考，但直接游戏应用尚远。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.09123"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "智能体控制视觉生成",
-      "sum": "探讨从生成模型到智能体控制的视觉生成范式转变。",
-      "ta": "概念性文章，对 TA 工作流暂无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.06758"
     }
   ]
 };
