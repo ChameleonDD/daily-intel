@@ -2,7 +2,7 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-26 14:01",
+  "updated": "2026-09-27 14:28",
   "cards": [
     {
       "cat": "flow",
