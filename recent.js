@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-27 14:28",
+  "updated": "2026-09-28 14:36",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "多时相高斯泼溅融合方案",
+      "sum": "ChronoFuseGS 融合多个独立训练的高斯泼溅模型，处理场景随时间变化的重建。",
+      "ta": "植被季节变化、场景迭代重建可参考此多时相融合思路，值得关注其 per-splat 持久化机制。",
+      "src": "arXiv · cs.GR · 09-25",
+      "url": "https://arxiv.org/abs/2609.31339v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "扩散模型缓存体积阴影",
+      "sum": "DiffusionShadow 用扩散模型缓存阴影，加速隐式神经表示的高级光照体积渲染。",
+      "ta": "体积渲染实时化是 Niagara 流体/云雾特效的痛点，此缓存思路对实时体积光照有参考价值。",
+      "src": "arXiv · cs.GR · 09-25",
+      "url": "https://arxiv.org/abs/2609.30658v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "语音驱动3D面部动画改进",
+      "sum": "研究学习可见发音器官动态，提升语音驱动3D面部动画的发音一致性。",
+      "ta": "偏角色动画方向，与植被/特效管线关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-24",
+      "url": "https://arxiv.org/abs/2609.30517v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "生成轨迹的感知距离度量",
+      "sum": "FoMo 提出将生成轨迹的分叉时刻作为感知距离度量。",
+      "ta": "纯生成模型评估方法，原文未涉及游戏/实时/3D，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.25716"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "竞技环境下的LLM评测",
+      "sum": "Game Arena 提出在竞争性游戏环境中评测大语言模型的策略能力。",
+      "ta": "属 LLM 评测基准，与 TA 渲染/工具管线无直接关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.31473"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -147,15 +192,6 @@ window.INTEL_RECENT = {
       "ta": "若世界模型能稳定维持遮挡物表征，对场景流式加载与遮挡剔除的预测式方案有潜在启发。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.28654"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "面向 LLM 智能体的世界模型",
-      "sum": "提出 Agent-Editing World Model，重新思考 LLM 智能体所需的世界建模方式。",
-      "ta": "与实时渲染无直接关联，仅作智能体工具链方向的泛读参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.28416"
     },
     {
       "cat": "flow",
@@ -366,15 +402,6 @@ window.INTEL_RECENT = {
       "ta": "把静态泼溅场景拆成可独立运动的物体，是程序化场景与仿真复用的关键一步。",
       "src": "arXiv · cs.GR · 09-22",
       "url": "https://arxiv.org/abs/2609.26795v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单图生成 3D 场景的像素对齐布局",
-      "sum": "Mira-Scene 提出像素对齐的布局表示，解决单图生成物体放入连贯场景时的摆放难题。",
-      "ta": "布局表示方式决定生成场景能否直接落地，值得关注其对齐精度与可控性。",
-      "src": "arXiv · cs.GR · 09-20",
-      "url": "https://arxiv.org/abs/2609.23796v2"
     },
     {
       "cat": "ai",
@@ -1787,33 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "可能加速程序化网格生成中的重拓扑步骤，值得关注其精度与速度。",
       "src": "arXiv · cs.GR · 09-08",
       "url": "https://arxiv.org/abs/2609.08497v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "拓扑保持视频生成扩散模型",
-      "sum": "提出测地线信息引导的扩散模型，用于保持图像视频生成中的拓扑结构。",
-      "ta": "对生成资产的拓扑一致性有潜在价值，但需验证在实时渲染中的实用性。",
-      "src": "arXiv · cs.GR · 09-08",
-      "url": "https://arxiv.org/abs/2609.08153v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "语言与风格驱动的动作生成",
-      "sum": "FlexMoGen 框架，根据自然语言和风格参考生成灵活的人体动作。",
-      "ta": "对动画师快速生成风格化动作有参考价值，可关注其风格控制精度。",
-      "src": "arXiv · cs.GR · 09-07",
-      "url": "https://arxiv.org/abs/2609.08032v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "热核纹理替代 UV 贴图",
-      "sum": "提出热核纹理，用测地线高斯替代传统 UV 映射，降低内存占用。",
-      "ta": "可能解决 UV 映射痛点，对材质和贴图管线有潜在革新意义。",
-      "src": "arXiv · cs.GR · 09-07",
-      "url": "https://arxiv.org/abs/2609.07557v1"
     }
   ]
 };

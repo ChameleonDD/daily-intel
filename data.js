@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月27日 · 周日",
+  "date": "2026年9月28日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。",
+  "todayHtml": "今天值得停下精读的有：<em>多时相高斯泼溅融合方案</em> / <em>扩散模型缓存体积阴影</em> / <em>语音驱动3D面部动画改进</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -125,6 +125,51 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "Ben Poole · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "多时相高斯泼溅融合方案",
+      "sum": "ChronoFuseGS 融合多个独立训练的高斯泼溅模型，处理场景随时间变化的重建。",
+      "ta": "植被季节变化、场景迭代重建可参考此多时相融合思路，值得关注其 per-splat 持久化机制。",
+      "src": "arXiv · cs.GR · 09-25",
+      "url": "https://arxiv.org/abs/2609.31339v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "扩散模型缓存体积阴影",
+      "sum": "DiffusionShadow 用扩散模型缓存阴影，加速隐式神经表示的高级光照体积渲染。",
+      "ta": "体积渲染实时化是 Niagara 流体/云雾特效的痛点，此缓存思路对实时体积光照有参考价值。",
+      "src": "arXiv · cs.GR · 09-25",
+      "url": "https://arxiv.org/abs/2609.30658v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "语音驱动3D面部动画改进",
+      "sum": "研究学习可见发音器官动态，提升语音驱动3D面部动画的发音一致性。",
+      "ta": "偏角色动画方向，与植被/特效管线关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 09-24",
+      "url": "https://arxiv.org/abs/2609.30517v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "生成轨迹的感知距离度量",
+      "sum": "FoMo 提出将生成轨迹的分叉时刻作为感知距离度量。",
+      "ta": "纯生成模型评估方法，原文未涉及游戏/实时/3D，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.25716"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "竞技环境下的LLM评测",
+      "sum": "Game Arena 提出在竞争性游戏环境中评测大语言模型的策略能力。",
+      "ta": "属 LLM 评测基准，与 TA 渲染/工具管线无直接关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.31473"
     }
   ],
   "flashbackTitle": "",
