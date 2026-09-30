@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年9月29日 · 周二",
+  "date": "2026年9月30日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>毛发重建免专用数据集</em> / <em>恒定内存可微光追追踪</em> / <em>XR 渲染感知高斯条件化</em> / <em>多层 RBD 精修破坏效果</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>纹理空间材质扩散生成</em> / <em>高斯泼溅残差场提表达</em> / <em>可仿真3D场景智能体重建</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -130,220 +130,229 @@ window.INTEL_DATA = {
       "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "毛发重建免专用数据集",
-      "sum": "FurE 提出无需动物毛发数据集的多视角实例级 3D 毛发重建方法。",
-      "ta": "植被/毛发类程序化生成的实例化思路可借鉴，关注其细尺度细节与自遮挡处理。",
-      "src": "arXiv · cs.GR · 09-28",
-      "url": "https://arxiv.org/abs/2609.35770v1"
+      "title": "纹理空间材质扩散生成",
+      "sum": "微调视频扩散Transformer，在纹理空间做文本引导材质生成与超分。",
+      "ta": "直接在UV纹理空间生成PBR材质，比多视图烘焙更贴合现有材质管线，值得看投影映射思路。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.37654v1"
     },
     {
       "cat": "gfx",
       "imp": "hi",
       "rank": 2,
-      "title": "恒定内存可微光追追踪",
-      "sum": "提出恒定内存的可微光追追踪，突破路径长度导致的计算图内存瓶颈。",
-      "ta": "可微渲染内存优化对离线/实时混合管线有参考价值，值得精读其反向传播策略。",
-      "src": "arXiv · cs.GR · 09-26",
-      "url": "https://arxiv.org/abs/2609.32920v1"
+      "title": "高斯泼溅残差场提表达",
+      "sum": "用神经残差场替代低阶球谐，缓解3DGS视角相关反射的表达冗余。",
+      "ta": "低阶SH是3DGS高光发糊的根因，这套残差建模对植被/材质高光重建有直接参考价值。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.37115v1"
     },
     {
       "cat": "gfx",
       "imp": "hi",
       "rank": 3,
-      "title": "XR 渲染感知高斯条件化",
-      "sum": "ControlGS 针对 XR 下游后处理与光学路径，条件化神经高斯渲染。",
-      "ta": "XR 渲染需考虑运行时后处理变化，对 UE5 XR 管线与高斯方案有直接启发。",
-      "src": "arXiv · cs.GR · 09-25",
-      "url": "https://arxiv.org/abs/2609.32038v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实时反射感知高斯 SLAM",
-      "sum": "RRG-SLAM 首个实时反射感知高斯 SLAM，分离漫反射与反射分量。",
-      "ta": "反射分离的 TSDF-高斯混合表示，对室内场景重建与实时渲染有参考。",
+      "title": "可仿真3D场景智能体重建",
+      "sum": "从真实观测重建含可变形曲线、曲面、体数据的仿真就绪3D场景。",
+      "ta": "明确面向游戏与机器人，可变形几何的仿真就绪重建对程序化植被/布料资产有借鉴意义。",
       "src": "arXiv · cs.GR · 09-28",
-      "url": "https://arxiv.org/abs/2609.34527v1"
+      "url": "https://arxiv.org/abs/2609.36024v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "语义感知动作重定向",
-      "sum": "ReFM 提出语义感知精炼流模型，跨骨骼结构迁移动作并保持语义。",
-      "ta": "动作重定向对动画管线有用，关注其无需高质量配对数据的语义学习方式。",
-      "src": "arXiv · cs.GR · 09-25",
-      "url": "https://arxiv.org/abs/2609.32068v1"
+      "title": "文本生成物理仿真管线",
+      "sum": "Text2Sim用智能体管线把纯文本请求转成可执行可编辑的物理仿真。",
+      "ta": "资产、布局、物理参数、运动、渲染联合生成，可关注其对特效预演自动化的启发。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.36593v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "虚拟人视觉符号框架",
-      "sum": "A.D.A.M.O. 提出语言驱动的视觉符号框架，整合感知推理与动作控制环。",
-      "ta": "虚拟人控制环设计对 NPC/数字人交互有参考，关注其 3D 环境接地方式。",
+      "title": "域是残差的自监督迁移",
+      "sum": "不换生成器，只适配DINO自监督特征，实现去雾去雨与渲染转照片。",
+      "ta": "渲染转照片的思路对风格化后处理与去噪有参考，特征层迁移比像素层更稳。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.37330v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "变长神经运动拼接",
+      "sum": "用聚类转移图实现变长过渡的运动拼接，无需手工指定过渡区间。",
+      "ta": "变长过渡对动画状态机与运动匹配的衔接逻辑有直接参考价值。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.37167v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可解性查询加速关卡反馈",
+      "sum": "用带约束的可解性查询，为3D障碍关卡设计提供快速解法反馈。",
+      "ta": "程序化关卡与障碍设计的自动化验证思路，可迁移到跑酷/攀爬关卡工具链。",
       "src": "arXiv · cs.GR · 09-28",
-      "url": "https://arxiv.org/abs/2609.35463v1"
+      "url": "https://arxiv.org/abs/2609.36225v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "交互视频世界模型注意力",
+      "sum": "WorldAttention提出面向交互式视频世界模型的高效注意力架构。",
+      "ta": "实时交互式世界生成的注意力效率问题，与实时渲染的算力预算思路相通。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.34606"
     },
     {
       "cat": "gfx",
       "imp": "lo",
-      "title": "增材制造晶格优化",
-      "sum": "面向增材制造的晶格结构多目标优化与帕累托前沿构建方法。",
-      "ta": "与游戏渲染关联弱，仅程序化几何生成思路可速览。",
-      "src": "arXiv · cs.GR · 09-27",
-      "url": "https://arxiv.org/abs/2609.33598v1"
+      "title": "像素扩散对抗训练",
+      "sum": "针对像素空间扩散模型引入对抗训练以提升生成质量。",
+      "ta": "像素域扩散的稳定性改进，与实时渲染关联有限，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.38170"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "多字符语义排版生成",
+      "sum": "MSTypography在词可读性与物体可辨识度间平衡，做多字符语义排版。",
+      "ta": "偏平面设计生成，对游戏UI字体工具链有间接参考。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.37141v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "商品硬件分割体可视化",
+      "sum": "Volcanite在消费级硬件上做TB级分割体数据的可视化。",
+      "ta": "面向连接组学，但大体积数据在消费级GPU上的可视化策略可借鉴。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.36898v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "可微渲染做手眼标定",
+      "sum": "DRHeC用基于RGB梯度的可微渲染实现无标记手眼标定。",
+      "ta": "可微渲染在标定上的应用，与游戏渲染管线关联较弱。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.36779v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "实时交互世界模型扩展",
-      "sum": "WorldPlay2 扩展实时交互世界模型的控制能力与预测视野。",
-      "ta": "世界模型若用于游戏内容生成，关注其实时性与控制接口。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.35560"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "交互式 3D 头部生成",
-      "sum": "EvolvingAvatar 提出随对话展开而自适应的交互式 3D 头部生成。",
-      "ta": "对数字人/面部动画管线有潜在价值，关注其自适应机制。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.35616"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "稀疏视角新视图合成",
-      "sum": "VGGT-Diff 结合视觉几何与扩散模型实现稀疏视角新视图合成。",
-      "ta": "稀疏视角合成对场景重建与资产生成有参考，关注几何先验的引入方式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.33253"
+      "title": "反事实视频生成训人形",
+      "sum": "用反事实视频生成扩充高质量交互视频，训练人形机器人运动操作。",
+      "ta": "视频生成做数据增广的思路，对动画/动作数据合成有间接启发。",
+      "src": "arXiv · cs.GR · 09-29",
+      "url": "https://arxiv.org/abs/2609.38172v1"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "流式世界空间手部估计",
-      "sum": "InfiniHand 从第一视角视频流式估计世界空间手部运动。",
-      "ta": "对动捕与手部交互有潜在用途，速览即可。",
+      "title": "JEPA世界模型各向异性表征",
+      "sum": "各向异性表征可改善JEPA世界模型中的规划能力。",
+      "ta": "世界模型表征学习，与游戏AI规划有潜在关联，速览即可。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.35743"
+      "url": "https://huggingface.co/papers/2609.37441"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "运动中心视频预训练",
-      "sum": "TT-VidT 解耦时间轴，实现高效运动中心视频预训练。",
-      "ta": "视频预训练效率优化，与游戏动画关联间接，速览。",
+      "title": "动作驱动视觉仿真",
+      "sum": "WorldLine用动作驱动的视觉仿真支持机器人操作。",
+      "ta": "机器人操作仿真，与游戏实时渲染关联有限。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.33419"
+      "url": "https://huggingface.co/papers/2609.38059"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "扩散奖励模型",
-      "sum": "提出扩散奖励模型用于生成质量评估。",
-      "ta": "与游戏/实时渲染无直接关联，速览即可。",
+      "title": "稠密检索需非对称几何",
+      "sum": "提出共享与双投影的偏差-方差理论，解释稠密检索何时需要非对称几何。",
+      "ta": "纯检索理论，与TA工作流无关。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.33803"
+      "url": "https://huggingface.co/papers/2609.32488"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "具身反应式聆听框架",
-      "sum": "REALM 提出由粗到细的具身反应式聆听生成框架。",
-      "ta": "与游戏技术关联弱，速览。",
+      "title": "表格基础模型自演化管线",
+      "sum": "TabFM-Auto为表格基础模型构建自演化管线。",
+      "ta": "表格数据方向，与游戏技术无关。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.33095"
+      "url": "https://huggingface.co/papers/2609.37989"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "生成模型视觉解题基准",
-      "sum": "SolveEdit 提出生成模型视觉问题求解的评测基准。",
-      "ta": "评测基准类，与 TA 工作流关联弱，速览。",
+      "title": "超球语义轨迹分析",
+      "sum": "用超球语义轨迹分析映射预印本、专利与算力规模的技术扩散。",
+      "ta": "科技情报分析，与TA工作无关。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.35504"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "title": "多层 RBD 精修破坏效果",
-      "sum": "前皮克斯 FX TD 分享多层 RBD 仿真工作流，保留已批准破坏运动并叠加碎裂细节。",
-      "ta": "破坏特效精修流程对 Houdini 特效师直接可用，值得精读其分层策略。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/former-pixar-fx-artist-reveals-a-smarter-way-to-refine-destruction/"
+      "url": "https://huggingface.co/papers/2609.35845"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Unity 高级攀爬检测系统",
-      "sum": "面向 Unity 的高级边缘检测与穿越系统，支持复杂几何与 IK 驱动动画。",
-      "ta": "IK 驱动动画工作流对角色移动系统有参考，关注其最小配置设计。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/advanced-ledge-detection-traversal-system-for-unity/"
+      "title": "巫师3重制版视觉大升级",
+      "sum": "巫师3本周大规模升级，重做视觉、战斗、进度、操作与界面，并推Switch 2原生版。",
+      "ta": "老游戏视觉现代化改造的完整案例，可关注其材质/光照重制的取舍。",
+      "src": "80 Level · 09-29",
+      "url": "https://80.lv/articles/the-witcher-3-remastered-makes-an-11-year-old-rpg-feel-new-again/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "水沙模拟打造治愈沙盒",
-      "sum": "Bubblebird 工作室分享 Unity 中水与沙模拟的优化及玩法塑造经验。",
-      "ta": "流体/沙粒模拟在 Unity 中的落地经验，对特效与程序化场景有参考。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/creating-cozy-sandbox-sandcastle-with-a-focus-on-water-sand-simulation/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "角色雕刻的叙事细节",
-      "sum": "Quentin Riviale 分享魂类角色雕刻中视觉丰富度与清晰度的平衡经验。",
-      "ta": "角色资产制作中信息传达与视觉清晰度的权衡，对美术管线有参考。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/storytelling-through-details-sculpting-souls-like-corvus-soldiers/"
+      "title": "角色头部完整重拓扑教程",
+      "sum": "Anna Beganska的教程覆盖从中模拓扑到低模优化的完整重拓扑流程。",
+      "ta": "面向动画的角色头部重拓扑全流程，可直接用于角色资产规范参考。",
+      "src": "80 Level · 09-29",
+      "url": "https://80.lv/articles/learn-complete-retopology-workflow-for-animation-ready-character-heads/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "石墨铅笔粒子特效",
-      "sum": "wildWillowPillow 创作的石墨铅笔风格破坏粒子特效作品展示。",
-      "ta": "粒子特效风格化参考，速览即可。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/take-a-look-at-this-trippy-graphite-pencil-particle-fx/"
+      "title": "Maya角色动画作品展示",
+      "sum": "动画师Adrian Nita分享用Maya制作的漫威Carnage角色动画。",
+      "ta": "纯作品展示，可看角色动画表现力，无技术细节。",
+      "src": "80 Level · 09-29",
+      "url": "https://80.lv/articles/take-a-look-at-this-jaw-dropping-fan-made-3d-animation-of-marvel-s-carnage/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "免费日常动作动捕包",
-      "sum": "免费动捕动画包，包含遛狗、刷牙、开车、喝咖啡等日常动作。",
-      "ta": "可直接用于角色动画原型，速览下载。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/download-this-free-pack-of-mocap-animations-with-everyday-actions/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "面部动画拓扑大师课",
-      "sum": "Nur Diker Köksal 展示情绪化老妇面部动画测试，聚焦拓扑。",
-      "ta": "面部拓扑与表情动画参考，速览。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/facial-animation-test-with-very-emotional-old-lady/"
+      "title": "恐怖Roguelike开发分享",
+      "sum": "Max Soloha谈恐怖Roguelike《I'm not a Psycho Invader》的灵感与技术细节。",
+      "ta": "独立开发技术分享，可速览其机制组合思路。",
+      "src": "80 Level · 09-29",
+      "url": "https://80.lv/articles/creating-horror-roguelike-inspired-by-no-i-m-not-a-human-buckshot-roulette/"
     },
     {
       "cat": "biz",
       "imp": "mid",
-      "title": "微软三年裁撤逾五千岗",
-      "sum": "微软 CEO 称 Xbox 在「精简」，三年裁员超 5750 人并关闭多家工作室。",
-      "ta": "行业收缩信号，关注对引擎与工具团队预算的潜在影响。",
-      "src": "Game Developer · 09-28",
-      "url": "https://www.gamedeveloper.com/production/microsoft-ceo-says-xbox-is-streamlining-after-laying-off-5-750-workers-in-three-years"
+      "title": "Steam折扣活动页全算法化",
+      "sum": "Steam宣布折扣与活动页将改为完全算法驱动，影响玩家看到的游戏。",
+      "ta": "曝光分发逻辑变化会影响独立/中小团队发行策略，值得关注。",
+      "src": "Game Developer · 09-29",
+      "url": "https://www.gamedeveloper.com/pc/steam-s-discounts-and-events-tab-will-soon-be-fully-algorithm-driven"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Suri 第七音符定档",
-      "sum": "Suri: The Seventh Note 将于 10 月 30 日登陆 PS5，历时四年开发。",
-      "ta": "独立游戏视觉风格参考，速览。",
-      "src": "PlayStation Blog · 09-28",
-      "url": "https://blog.playstation.com/2026/09/28/suri-the-seventh-note-launches-oct-30-on-ps5/"
+      "title": "顽皮狗筹备新美末项目",
+      "sum": "顽皮狗在完成Intergalactic后，正筹备新的《最后生还者》项目。",
+      "ta": "行业动向，与TA工作无直接关联。",
+      "src": "Game Developer · 09-29",
+      "url": "https://www.gamedeveloper.com/console/naughty-dog-is-working-on-new-the-last-of-us-projects-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "消逝光芒前主创加入Bloober",
+      "sum": "《消逝的光芒》系列前负责人加入Bloober Team旗下恐怖厂牌Broken Mirror Games。",
+      "ta": "人事变动，速览即可。",
+      "src": "Game Developer · 09-29",
+      "url": "https://www.gamedeveloper.com/business/former-dying-light-franchise-lead-joins-bloober-team-horror-imprint-broken-mirror-games"
     }
   ],
   "flashbackTitle": "",
