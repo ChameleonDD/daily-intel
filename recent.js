@@ -2,8 +2,117 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-09-30 14:33",
+  "updated": "2026-10-01 15:06",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE5.8 MCP服务器与AnimGen实验",
+      "sum": "Epic九月学习内容涵盖UE 5.8的MCP服务器与全新实验性AnimGen工作流。",
+      "ta": "MCP服务器可能改变TA与引擎交互方式，AnimGen实验流程值得提前评估。",
+      "src": "Unreal Engine · 09-30",
+      "url": "https://www.unrealengine.com/learning/septembers-epic-learning-content-metahumans-physics-animation-and-more"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "RSIGame递归自改进做游戏",
+      "sum": "提出用递归自我改进的自主智能体完成游戏开发流程。",
+      "ta": "可关注其自动化管线思路，是否可用于TA工具链的脚本生成。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.39045"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "A2Z基准测编码智能体做游戏",
+      "sum": "新基准评估编码智能体从游戏设计规格生成游戏的忠实度。",
+      "ta": "可了解AI生成游戏原型的当前上限，评估对工具链的参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.39564"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自博弈游戏引导技能发现",
+      "sum": "通过自博弈实现可玩智能体控制的游戏引导技能发现方法。",
+      "ta": "偏AI研究，与TA日常工作关联弱，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.40137"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Physis-Lang自演化物理表征",
+      "sum": "提出自演化语言作为视频世界模型的物理表征方法。",
+      "ta": "与实时渲染管线暂无直接关联，可略过。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.40358"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "中文文本渲染部首分解奖励",
+      "sum": "通过分解部首再奖励的细粒度检查提升中文文本渲染准确度。",
+      "ta": "若涉及游戏内UI文字生成可留意，否则关联有限。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.37569"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "DC-SAE加速扩散收敛",
+      "sum": "提出深度压缩语义自编码器以加速扩散模型收敛。",
+      "ta": "纯AI方法，与实时渲染无直接关系，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.39222"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "古森林石墙浮雕制作解析",
+      "sum": "Ilya Oskanyan分享Heart of the Forest项目中自然浮雕资产的省时制作流程。",
+      "ta": "可参考其焦距选择与浮雕雕刻流程，对植被环境资产制作有借鉴。",
+      "src": "80 Level · 09-30",
+      "url": "https://80.lv/articles/sculpting-nature-inspired-bas-reliefs-on-a-stone-wall-in-a-moody-ancient-forest-environment/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender蜡笔新增形态键",
+      "sum": "Mumu Mundo在角色绑定上测试Blender Grease Pencil新形态键功能。",
+      "ta": "若涉及2D动画与绑定流程，可关注形态键在蜡笔工具中的实际表现。",
+      "src": "80 Level · 09-30",
+      "url": "https://80.lv/articles/the-long-awaited-shape-keys-for-blender-s-grease-pencil-tested-on-a-character-rig/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "007 First Light的VFX与世界观",
+      "sum": "IO Interactive开发者分享007 First Light的世界、角色、场景与VFX制作。",
+      "ta": "可参考其VFX与场景美术实现，了解3A级项目的美术管线。",
+      "src": "80 Level · 09-30",
+      "url": "https://80.lv/articles/insighful-look-at-007-first-light-s-world-characters-concent-vfx/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "四色漫画风3D动作游戏",
+      "sum": "Kenji Ma展示仅用四种颜色的漫画风格3D动作游戏，角色以画笔泼墨战场。",
+      "ta": "可看其极简配色下的风格化渲染实现思路。",
+      "src": "80 Level · 09-30",
+      "url": "https://80.lv/articles/check-out-this-comic-book-style-game-with-only-four-colors-used/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS Plus十月会免公布",
+      "sum": "十月PS Plus月度游戏为F1 25、Hunt: Showdown 1896与地球防卫军World Brothers 2。",
+      "ta": "行业动态速览，与TA工作无直接关联。",
+      "src": "PlayStation Blog · 09-30",
+      "url": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -23,16 +132,6 @@ window.INTEL_RECENT = {
       "ta": "低阶SH是3DGS高光发糊的根因，这套残差建模对植被/材质高光重建有直接参考价值。",
       "src": "arXiv · cs.GR · 09-29",
       "url": "https://arxiv.org/abs/2609.37115v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "可仿真3D场景智能体重建",
-      "sum": "从真实观测重建含可变形曲线、曲面、体数据的仿真就绪3D场景。",
-      "ta": "明确面向游戏与机器人，可变形几何的仿真就绪重建对程序化植被/布料资产有借鉴意义。",
-      "src": "arXiv · cs.GR · 09-28",
-      "url": "https://arxiv.org/abs/2609.36024v1"
     },
     {
       "cat": "gfx",
@@ -621,15 +720,6 @@ window.INTEL_RECENT = {
       "ta": "若世界模型能稳定维持遮挡物表征，对场景流式加载与遮挡剔除的预测式方案有潜在启发。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.28654"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 做鸣潮风格动态头发",
-      "sum": "教程演示如何在 Blender 中制作鸣潮风格的动态头发效果。",
-      "ta": "二次元角色动态发型的绑定与解算流程，可对照引擎内发丝方案的实现差异。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/how-to-create-dynamic-wuthering-waves-style-hair-in-blender/"
     },
     {
       "cat": "flow",
@@ -1395,15 +1485,6 @@ window.INTEL_RECENT = {
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "PS Plus东京电玩展促销",
-      "sum": "9月17至30日加入PS Plus可省最多25%年费。",
-      "ta": "纯促销，与TA工作无关。",
-      "src": "PlayStation Blog · 09-17",
-      "url": "https://blog.playstation.com/2026/09/16/20260917-psplus/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
       "title": "怪猎荒野资料片2027年",
       "sum": "《Monster Hunter Wilds: Ascendance》2027年发售，新增剧情区域怪物与大师等级。",
       "ta": "仅发行信息，无技术细节可参考。",
@@ -1733,87 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "用 Blender 做程序化重建评测，与 DCC 工具链和 3D 数据生成有交集，可看其重建管线设计。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.15478"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "LLaDA-UI 引入块状扩散 GUI 智能体",
-      "sum": "LLaDA-UI 将块状扩散引入视觉语言 GUI 智能体。",
-      "ta": "GUI 智能体方向，与游戏 TA 工作流关联有限，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.13287"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Realtime-Venus 全双工交互系统",
-      "sum": "Realtime-Venus 提出带异步委派的全双工交互系统。",
-      "ta": "实时交互系统架构，可留意其异步调度思路，与图形管线无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.13814"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Attention-DP3 空间物体感知 3D 扩散策略",
-      "sum": "Attention-DP3 通过几何对齐注意力条件实现空间物体感知的 3D 扩散策略。",
-      "ta": "偏机器人 3D 策略，与游戏实时渲染关联弱，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.13318"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "EVE Frontier 打造高可模组宇宙",
-      "sum": "Fenris 谈 EVE Frontier 的数字物理、模组系统与生产管线如何借鉴 EVE Online。",
-      "ta": "可模组化系统与生产管线设计对工具链与内容扩展性有参考价值。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/interview-how-fenris-is-building-eve-frontier-as-a-massively-moddable-universe/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《Wardogs》24小时破百万销量",
-      "sum": "《Wardogs》发售首 24 小时销量突破 100 万份。",
-      "ta": "纯销量消息，速览即可。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/wardogs-sold-over-1-million-copies-in-its-first-24-hours/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender OVERGROWN 预告片发布",
-      "sum": "Blender Studio 发布 OVERGROWN 首支预告，展示绘画感后人类世界与开源工作流。",
-      "ta": "开源影视制作流程的验证案例，可关注其工具与工作流沉淀。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/blender-s-overgrown-teaser-is-a-proof-of-concept-for-open-filmmaking/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "80 Level 本周招聘汇总",
-      "sum": "汇总 Playground、Insomniac、Respawn、Naughty Dog 等工作室本周职位。",
-      "ta": "招聘信息，按规则丢弃价值低，速览。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/80-level-job-digest-this-week-s-featured-creative-roles/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Psych Rift 动画参考 Old Spice",
-      "sum": "分享《Psych Rift》玩法动画制作中引用 Old Spice 广告的参考思路。",
-      "ta": "动画参考趣闻，速览即可。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/unexpected-old-spice-deodorant-reference-for-gameplay-animation/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "2D 插画转双人写实 3D 作品",
-      "sum": "Anna Smirnova 分享 No Mercy 项目，用基础网格并在贴图中直接构建细节而非程序化着色器。",
-      "ta": "贴图内建细节替代程序化 shader 的做法，对材质制作思路有直接参考。",
-      "src": "80 Level · 09-14",
-      "url": "https://80.lv/articles/turning-a-2d-illustration-into-a-realistic-two-character-3d-piece/"
     }
   ]
 };
