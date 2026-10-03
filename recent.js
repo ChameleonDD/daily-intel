@@ -2,8 +2,71 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-02 14:54",
+  "updated": "2026-10-03 14:18",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Marvel Rivals 角色管线揭秘",
+      "sum": "漫威争锋美术团队详解自定义 NPR/PBR 渲染、英雄专属 VFX 与可扩展破坏系统。",
+      "ta": "NPR/PBR 混合渲染与英雄级 VFX 的工程化落地，值得对照自家角色管线看材质分层与破坏性能取舍。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/inside-marvel-rivals-character-art-vfx-destruction-pipeline/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 权重绘制插件增强",
+      "sum": "一款插件支持在 Edit Mode 内直接为多骨骼绘制与微调权重。",
+      "ta": "省去反复切换模式的权重调整流程，对植被/角色绑定迭代效率有直接参考价值。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/check-out-this-add-on-that-adds-advanced-weight-painting-tools-to-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Reigns 开发商停摆裁员",
+      "sum": "Reigns 开发商 Nerial 进入「休眠模式」并裁撤员工。",
+      "ta": "小型工作室收缩的又一案例，可作为行业环境冷热的速览信号。",
+      "src": "Game Developer · 10-02",
+      "url": "https://www.gamedeveloper.com/business/nerial-to-enter-hibernation-mode-and-lay-off-developers"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "星战新作口碑创二十年最佳",
+      "sum": "Star Wars: Galactic Racer 融合 Burnout 式撞击与 podracing，成二十年来评分最高星战游戏。",
+      "ta": "与 TA 本职关联弱，仅作行业口碑速览。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/star-wars-galactic-racer-is-the-best-reviewed-star-wars-game-in-20-years/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "GTA6 发售前情报汇总",
+      "sum": "随 11 月发售临近，媒体汇总目前已知的 GTA6 全部信息。",
+      "ta": "无技术细节，仅作行业大事件速览。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/grand-theft-auto-6-what-we-know-about-rockstar-s-anticipated-game/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "流式世界模型线性记忆方案",
+      "sum": "LOCI 提出面向流式世界模型的空间线性记忆机制。",
+      "ta": "世界模型的长时序空间一致性是程序化生成与实时场景推演的关键，可关注其记忆结构设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.40222"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频生成文字渲染基准",
+      "sum": "VTR-Bench 提出系统评估视频生成中视觉文字渲染质量的基准。",
+      "ta": "若涉及游戏内 UI/字幕类生成素材，可参考其评测维度。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.01499"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -277,15 +340,6 @@ window.INTEL_RECENT = {
       "ta": "可参考其焦距选择与浮雕雕刻流程，对植被环境资产制作有借鉴。",
       "src": "80 Level · 09-30",
       "url": "https://80.lv/articles/sculpting-nature-inspired-bas-reliefs-on-a-stone-wall-in-a-moody-ancient-forest-environment/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender蜡笔新增形态键",
-      "sum": "Mumu Mundo在角色绑定上测试Blender Grease Pencil新形态键功能。",
-      "ta": "若涉及2D动画与绑定流程，可关注形态键在蜡笔工具中的实际表现。",
-      "src": "80 Level · 09-30",
-      "url": "https://80.lv/articles/the-long-awaited-shape-keys-for-blender-s-grease-pencil-tested-on-a-character-rig/"
     },
     {
       "cat": "gfx",
@@ -1762,60 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "PBD+SDF+体积泼溅的实时形变切割方案，对可破坏物体有参考。",
       "src": "80 Level · 09-17",
       "url": "https://80.lv/articles/dissectible-anatomy-lets-users-cut-tear-virtual-bodies-in-real-time/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "几何插件生成逼真磨损边缘",
-      "sum": "Egdy插件为Cinema 4D和Blender提供6个损伤模块，生成裂纹缺口等边缘磨损。",
-      "ta": "程序化边缘磨损工具，可借鉴其几何损伤生成思路。",
-      "src": "80 Level · 09-16",
-      "url": "https://80.lv/articles/3d-artist-on-creating-a-geometry-based-plugin-that-makes-realistic-worn-edges/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Valve解释Steam Frame选Alyx",
-      "sum": "Valve称Steam Frame套件附赠《半条命：Alyx》而非新VR游戏，可独立运行。",
-      "ta": "硬件发行信息，无技术细节。",
-      "src": "80 Level · 09-16",
-      "url": "https://80.lv/articles/valve-explains-why-steam-frame-uses-half-life-alyx-instead-of-a-new-vr-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Build a Rocket Boy疑似关闭",
-      "sum": "报道称《MindsEye》开发商Build a Rocket Boy在更多裁员后疑似关闭。",
-      "ta": "行业裁员动态，与TA工作无直接关联。",
-      "src": "Game Developer · 09-16",
-      "url": "https://www.gamedeveloper.com/business/report-mindseye-developer-build-a-rocket-boy-seemingly-closing-after-more-layoffs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "动视暴雪遭前员工起诉",
-      "sum": "一名工作14年的前员工起诉动视暴雪，指控10名男性性骚扰与报复。",
-      "ta": "行业法律新闻，与TA工作无关。",
-      "src": "Game Developer · 09-16",
-      "url": "https://www.gamedeveloper.com/production/activision-blizzard-sued-by-former-employee-over-sexual-harassment"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "发丝卡片自动转发丝几何",
-      "sum": "HairCS 提出自动流水线，把发丝卡片模型重建为高质量发丝级发型。",
-      "ta": "植被/毛发类程序化生成的同类思路：从低模代理还原高精度几何，可迁移到草叶卡片转真实草簇。",
-      "src": "arXiv · cs.GR · 09-15",
-      "url": "https://arxiv.org/abs/2609.16465v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "拓扑无关自动面部绑定",
-      "sum": "TopoRig 用多源监督实现跨异构网格拓扑的自动面部绑定。",
-      "ta": "角色管线里绑定环节的自动化尝试，值得关注其如何绕开标准模板的对应误差。",
-      "src": "arXiv · cs.GR · 09-14",
-      "url": "https://arxiv.org/abs/2609.15746v1"
     }
   ]
 };

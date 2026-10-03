@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月2日 · 周五",
+  "date": "2026年10月3日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>战争机器E-Day用UE5回归恐怖</em> / <em>战争机器E-Day成15年最高分</em> / <em>PSSR AI超分将登陆PS5</em> / <em>AMD发布高级着色器交付编译器</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Marvel Rivals 角色管线揭秘</em> / <em>Blender 权重绘制插件增强</em> / <em>Reigns 开发商停摆裁员</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,223 +127,67 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "战争机器E-Day用UE5回归恐怖",
-      "sum": "The Coalition用UE5重现初代\"毁灭之美\"美学，并进化玩法与动画。",
-      "ta": "官方开发者访谈，可看Nanite环境、硬件光追与实时破坏的落地取舍。",
-      "src": "Unreal Engine · 10-01",
-      "url": "https://www.unrealengine.com/developer-interviews/gears-of-war-e-day-sees-a-return-to-dark-survival-horror-roots-with-ue5"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 2,
-      "title": "战争机器E-Day成15年最高分",
-      "sum": "该前传结合硬件光追、Nanite环境、实时破坏与数百动态阴影光源。",
-      "ta": "数百动态阴影光源+实时破坏的性能预算，是光照与几何管线的实战参考。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/gears-of-war-e-day-is-the-highest-rated-gears-game-in-over-15-years/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 3,
-      "title": "PSSR AI超分将登陆PS5",
-      "sum": "索尼把PS5 Pro的PSSR逐像素AI超分下放到基础版PS5主机。",
-      "ta": "主机端AI超分普及，跨平台项目的分辨率与后处理预算需重新评估。",
-      "src": "PlayStation Blog · 10-01",
-      "url": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/"
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Marvel Rivals 角色管线揭秘",
+      "sum": "漫威争锋美术团队详解自定义 NPR/PBR 渲染、英雄专属 VFX 与可扩展破坏系统。",
+      "ta": "NPR/PBR 混合渲染与英雄级 VFX 的工程化落地，值得对照自家角色管线看材质分层与破坏性能取舍。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/inside-marvel-rivals-character-art-vfx-destruction-pipeline/"
     },
     {
       "cat": "flow",
-      "imp": "hi",
-      "title": "AMD发布高级着色器交付编译器",
-      "sum": "AMD推出Direct3D 12 State Object Compiler插件，支持微软ASD预编译。",
-      "ta": "预编译PSO可大幅削减首次运行卡顿，是管线优化必跟的工具链更新。",
-      "src": "AMD GPUOpen · 10-01",
-      "url": "https://gpuopen.com/news/asd-compiler-launch/"
+      "imp": "mid",
+      "title": "Blender 权重绘制插件增强",
+      "sum": "一款插件支持在 Edit Mode 内直接为多骨骼绘制与微调权重。",
+      "ta": "省去反复切换模式的权重调整流程，对植被/角色绑定迭代效率有直接参考价值。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/check-out-this-add-on-that-adds-advanced-weight-painting-tools-to-blender/"
     },
     {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Lumen降噪不牺牲光照质量",
-      "sum": "Aleksander Goryachev分享UE复杂多光源场景下的Lumen降噪设置。",
-      "ta": "多光源场景Lumen噪点治理的实操经验，可直接对照自己的光照配置。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/suppressing-noise-without-sacrificing-lighting-quality-when-using-unreal-engine-s-lumen/"
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Reigns 开发商停摆裁员",
+      "sum": "Reigns 开发商 Nerial 进入「休眠模式」并裁撤员工。",
+      "ta": "小型工作室收缩的又一案例，可作为行业环境冷热的速览信号。",
+      "src": "Game Developer · 10-02",
+      "url": "https://www.gamedeveloper.com/business/nerial-to-enter-hibernation-mode-and-lay-off-developers"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "亮度主导3DGS几何形成",
-      "sum": "研究通过分通道监督，发现亮度而非色度主导3D高斯泼溅的几何学习。",
-      "ta": "理解3DGS几何与外观解耦，对重建管线的监督信号设计有启发。",
-      "src": "arXiv · cs.GR · 09-30",
-      "url": "https://arxiv.org/abs/2610.00749v1"
+      "cat": "biz",
+      "imp": "lo",
+      "title": "星战新作口碑创二十年最佳",
+      "sum": "Star Wars: Galactic Racer 融合 Burnout 式撞击与 podracing，成二十年来评分最高星战游戏。",
+      "ta": "与 TA 本职关联弱，仅作行业口碑速览。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/star-wars-galactic-racer-is-the-best-reviewed-star-wars-game-in-20-years/"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯点画实现免排序渲染",
-      "sum": "Gaussian Stippling用混合采样与时空重建，实现免深度排序的3DGS渲染。",
-      "ta": "免排序可省掉3DGS的排序开销，对实时高斯渲染性能有直接价值。",
-      "src": "arXiv · cs.GR · 09-29",
-      "url": "https://arxiv.org/abs/2609.38488v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Dirichlet泼溅做波动逆问题",
-      "sum": "针对太赫兹、合成孔径声学等波动成像，提出Dirichlet核的可微渲染方法。",
-      "ta": "非高斯PSF的可微渲染思路，对非常规成像与重建方向有参考意义。",
-      "src": "arXiv · cs.GR · 09-30",
-      "url": "https://arxiv.org/abs/2610.00618v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "文生3D评测配置脆弱性",
-      "sum": "研究显示固定场景下，仅改相机与描述词即可改变文生3D排行榜结果。",
-      "ta": "提醒评估3D生成资产时，渲染与描述协议本身会左右结论。",
-      "src": "arXiv · cs.GR · 09-30",
-      "url": "https://arxiv.org/abs/2610.00447v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "镜头光晕去除与重建",
-      "sum": "论文提出去除镜头光晕的方法，以提升3D场景重建等下游任务质量。",
-      "ta": "做扫描重建或照片建模时，光晕是常见污染源，可关注其去除策略。",
-      "src": "arXiv · cs.GR · 09-30",
-      "url": "https://arxiv.org/abs/2609.39527v1"
+      "cat": "biz",
+      "imp": "lo",
+      "title": "GTA6 发售前情报汇总",
+      "sum": "随 11 月发售临近，媒体汇总目前已知的 GTA6 全部信息。",
+      "ta": "无技术细节，仅作行业大事件速览。",
+      "src": "80 Level · 10-02",
+      "url": "https://80.lv/articles/grand-theft-auto-6-what-we-know-about-rockstar-s-anticipated-game/"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "智能体重建可交互3D室内场景",
-      "sum": "LiteReality-Agent把RGB-D扫描重建为可动、可仿真的3D室内场景。",
-      "ta": "面向仿真就绪的场景重建，对程序化关卡与场景资产管线有借鉴。",
-      "src": "arXiv · cs.GR · 10-01",
-      "url": "https://arxiv.org/abs/2610.01863v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "原生3D纹理生成是否需3D资产",
-      "sum": "论文探讨原生3D纹理生成是否必须依赖3D资产进行训练。",
-      "ta": "若成立可降低3D纹理生成的数据门槛，与材质生成工作流相关。",
+      "title": "流式世界模型线性记忆方案",
+      "sum": "LOCI 提出面向流式世界模型的空间线性记忆机制。",
+      "ta": "世界模型的长时序空间一致性是程序化生成与实时场景推演的关键，可关注其记忆结构设计。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.34621"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "SILSA保拓扑高分辨率3D生成",
-      "sum": "SILSA用滑窗切片潜变量实现保拓扑的高分辨率3D生成。",
-      "ta": "高分辨率3D生成的拓扑保持，对资产可用性与后续绑定有意义。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.02201"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "4Director用刚体几何控视频世界模型",
-      "sum": "4Director以刚性3D几何控制视频世界模型，实现更可控的生成。",
-      "ta": "用3D几何约束视频生成，是预演与镜头控制方向的可用思路。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.02160"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "ROWBench检验视频模型渲染程序",
-      "sum": "ROWBench评测视频模型是否按程序规范渲染出正确结果。",
-      "ta": "为程序化生成的视频验证提供基准，与程序化内容评测思路相通。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.02205"
+      "url": "https://huggingface.co/papers/2609.40222"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "世界观察者联合生成持久世界",
-      "sum": "World Observer提出联合actor-observer生成，用于持久世界建模。",
-      "ta": "持久世界建模方向，可留意其对长时序场景一致性的处理。",
+      "title": "视频生成文字渲染基准",
+      "sum": "VTR-Bench 提出系统评估视频生成中视觉文字渲染质量的基准。",
+      "ta": "若涉及游戏内 UI/字幕类生成素材，可参考其评测维度。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.02162"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Memorizon让世界模型超上下文训练",
-      "sum": "Memorizon提出让世界模型在超出上下文窗口的情况下继续训练。",
-      "ta": "长时程世界模型训练技巧，对长序列场景模拟有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.00544"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "像素扩散用稠密预测做表征对齐",
-      "sum": "PixelDense把稠密预测作为像素扩散的表征对齐手段。",
-      "ta": "像素级扩散的表征对齐思路，可关注其对生成细节的影响。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.00483"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自适应奖励路由优化音视频扩散",
-      "sum": "论文提出动态多奖励优化，用前向过程RL联合音视频扩散。",
-      "ta": "多奖励联合优化思路，对音视频同步生成方向有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.37200"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "分层连续扩散语言模型",
-      "sum": "论文提出分层连续扩散的语言模型方法。",
-      "ta": "与图形工作流关联较弱，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.02193"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender与Substance做外星角色",
-      "sum": "Artur Ledur分享一周内用Blender与Substance 3D完成科幻短片角色。",
-      "ta": "短周期角色设计与贴图流程，可看其设计与场景匹配的做法。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/creating-an-alien-character-for-a-sci-fi-short-film-with-blender-substance-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Godot与Unity矢量图形资源集",
-      "sum": "DK Liao用极简风格矢量图形库制作游戏，资源可供Godot与Unity使用。",
-      "ta": "轻量2D矢量资源，适合快速原型或小体量项目取用。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/check-out-this-free-collection-of-vector-graphics-for-godot-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "布料撕裂自缝合特效演示",
-      "sum": "一段布料撕裂后自行缝合的惊悚特效演示，含密集恐惧提示。",
-      "ta": "可看其布料撕裂与缝合的形变与材质表现手法。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/watch-this-creepy-fabric-rip-apart-stitch-itself-back-together/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "奇异人生风磁带机手绘3D动画",
-      "sum": "Alexandra Mallinson分享受复古科技启发的绘画风道具作品。",
-      "ta": "手绘质感3D道具的风格化处理，可参考其材质与渲染取向。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/check-out-this-painterly-life-is-strange-style-3d-animation-of-an-audio-cassette-player/"
+      "url": "https://huggingface.co/papers/2610.01499"
     }
   ],
   "flashbackTitle": "",
