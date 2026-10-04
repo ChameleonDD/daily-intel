@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月3日 · 周六",
+  "date": "2026年10月4日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Marvel Rivals 角色管线揭秘</em> / <em>Blender 权重绘制插件增强</em> / <em>Reigns 开发商停摆裁员</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>地狱之刃2角色模型展示</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,69 +128,26 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "Marvel Rivals 角色管线揭秘",
-      "sum": "漫威争锋美术团队详解自定义 NPR/PBR 渲染、英雄专属 VFX 与可扩展破坏系统。",
-      "ta": "NPR/PBR 混合渲染与英雄级 VFX 的工程化落地，值得对照自家角色管线看材质分层与破坏性能取舍。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/inside-marvel-rivals-character-art-vfx-destruction-pipeline/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 权重绘制插件增强",
-      "sum": "一款插件支持在 Edit Mode 内直接为多骨骼绘制与微调权重。",
-      "ta": "省去反复切换模式的权重调整流程，对植被/角色绑定迭代效率有直接参考价值。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/check-out-this-add-on-that-adds-advanced-weight-painting-tools-to-blender/"
-    },
-    {
-      "cat": "biz",
       "imp": "lo",
-      "title": "Reigns 开发商停摆裁员",
-      "sum": "Reigns 开发商 Nerial 进入「休眠模式」并裁撤员工。",
-      "ta": "小型工作室收缩的又一案例，可作为行业环境冷热的速览信号。",
-      "src": "Game Developer · 10-02",
-      "url": "https://www.gamedeveloper.com/business/nerial-to-enter-hibernation-mode-and-lay-off-developers"
+      "title": "地狱之刃2角色模型展示",
+      "sum": "Ninja Theory团队展示《地狱之刃2》角色Astridr的模型作品。",
+      "ta": "可参考其高精度角色建模与材质细节，适合作为角色资产制作的学习案例。",
+      "src": "80 Level · 10-03",
+      "url": "https://80.lv/articles/check-out-astridr-s-character-model-from-senua-s-saga-hellblade-2/"
     },
     {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "星战新作口碑创二十年最佳",
-      "sum": "Star Wars: Galactic Racer 融合 Burnout 式撞击与 podracing，成二十年来评分最高星战游戏。",
-      "ta": "与 TA 本职关联弱，仅作行业口碑速览。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/star-wars-galactic-racer-is-the-best-reviewed-star-wars-game-in-20-years/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "GTA6 发售前情报汇总",
-      "sum": "随 11 月发售临近，媒体汇总目前已知的 GTA6 全部信息。",
-      "ta": "无技术细节，仅作行业大事件速览。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/grand-theft-auto-6-what-we-know-about-rockstar-s-anticipated-game/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "流式世界模型线性记忆方案",
-      "sum": "LOCI 提出面向流式世界模型的空间线性记忆机制。",
-      "ta": "世界模型的长时序空间一致性是程序化生成与实时场景推演的关键，可关注其记忆结构设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.40222"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频生成文字渲染基准",
-      "sum": "VTR-Bench 提出系统评估视频生成中视觉文字渲染质量的基准。",
-      "ta": "若涉及游戏内 UI/字幕类生成素材，可参考其评测维度。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.01499"
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "战争机器E-Day用UE5回归恐怖",
+      "sum": "The Coalition用UE5重现初代\"毁灭之美\"美学，并进化玩法与动画。",
+      "ta": "官方开发者访谈，可看Nanite环境、硬件光追与实时破坏的落地取舍。",
+      "src": "Unreal Engine · 10-01",
+      "url": "https://www.unrealengine.com/developer-interviews/gears-of-war-e-day-sees-a-return-to-dark-survival-horror-roots-with-ue5",
+      "flashback": true
     }
   ],
-  "flashbackTitle": "",
+  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
   "sources": {
     "ok": [
       "Unreal Engine",

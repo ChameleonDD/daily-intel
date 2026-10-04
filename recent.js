@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-03 14:18",
+  "updated": "2026-10-04 14:43",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "地狱之刃2角色模型展示",
+      "sum": "Ninja Theory团队展示《地狱之刃2》角色Astridr的模型作品。",
+      "ta": "可参考其高精度角色建模与材质细节，适合作为角色资产制作的学习案例。",
+      "src": "80 Level · 10-03",
+      "url": "https://80.lv/articles/check-out-astridr-s-character-model-from-senua-s-saga-hellblade-2/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -1807,15 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "可玩世界实时生成方向，关注其对交互式内容生成的潜力。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.17909"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实时切割撕裂虚拟人体解剖",
-      "sum": "普渡大学用位置动力学、SDF与体积泼溅把冷冻切片转为可实时切割撕裂的形变模型。",
-      "ta": "PBD+SDF+体积泼溅的实时形变切割方案，对可破坏物体有参考。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/dissectible-anatomy-lets-users-cut-tear-virtual-bodies-in-real-time/"
     }
   ]
 };
