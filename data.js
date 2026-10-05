@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月4日 · 周日",
+  "date": "2026年10月5日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>地狱之刃2角色模型展示</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>城市级高斯泼溅实时化</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,26 +128,79 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "lo",
-      "title": "地狱之刃2角色模型展示",
-      "sum": "Ninja Theory团队展示《地狱之刃2》角色Astridr的模型作品。",
-      "ta": "可参考其高精度角色建模与材质细节，适合作为角色资产制作的学习案例。",
-      "src": "80 Level · 10-03",
-      "url": "https://80.lv/articles/check-out-astridr-s-character-model-from-senua-s-saga-hellblade-2/"
-    },
-    {
-      "cat": "tech",
       "imp": "hi",
       "rank": 1,
-      "title": "战争机器E-Day用UE5回归恐怖",
-      "sum": "The Coalition用UE5重现初代\"毁灭之美\"美学，并进化玩法与动画。",
-      "ta": "官方开发者访谈，可看Nanite环境、硬件光追与实时破坏的落地取舍。",
-      "src": "Unreal Engine · 10-01",
-      "url": "https://www.unrealengine.com/developer-interviews/gears-of-war-e-day-sees-a-return-to-dark-survival-horror-roots-with-ue5",
-      "flashback": true
+      "title": "城市级高斯泼溅实时化",
+      "sum": "Budgeted-GS 通过分解 LOD 实现大规模高斯泼溅的实时渲染，解决百万级图元显存瓶颈。",
+      "ta": "关注其 LOD 分解策略，可迁移到植被海量实例的实时渲染与显存预算控制。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03162v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "矢量图形可微渲染闭式解",
+      "sum": "Windfoil 用闭式求解二次贝塞尔轮廓的盒滤波环绕数，在 WebGPU 上统一光栅化与可微矢量图形。",
+      "ta": "闭式环绕数算法对 UI/图标类矢量渲染与可微管线有参考价值。",
+      "src": "arXiv · cs.GR · 10-01",
+      "url": "https://arxiv.org/abs/2610.02468v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "冻结DiT的外观几何解耦",
+      "sum": "DAGS 对冻结的图像 DiT 做无注意力解耦式外观与几何引导，实现时序稳定的生成式渲染。",
+      "ta": "时序稳定性方案可参考用于生成式贴图或程序化材质的帧间一致控制。",
+      "src": "arXiv · cs.GR · 10-01",
+      "url": "https://arxiv.org/abs/2610.02567v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "动态场景逆图形基准",
+      "sum": "4DCodeBench 让智能体从视频重建动态场景为可执行图形程序，评测逆图形能力。",
+      "ta": "可关注其程序化表示思路，对场景重建与程序化生成的自动化流程有启发。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03715v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长程部件级3D编辑基准",
+      "sum": "EditHero 提出首个长程、部件级 3D 编辑基准，要求每次修改不影响其余部分。",
+      "ta": "部件级编辑的约束评测对资产迭代工作流的自动化质检有参考意义。",
+      "src": "arXiv · cs.GR · 10-01",
+      "url": "https://arxiv.org/abs/2610.02298v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "语音驱动面部协同发音度量",
+      "sum": "提出唇部路径长度等几何度量，量化语音驱动 3D 面部动画中的协同发音轨迹。",
+      "ta": "面部动画质量度量思路可借鉴到口型驱动的效果评估。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03436v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "空间锚定手势生成基准",
+      "sum": "提出评测生成手势是否指向环境中正确指称物的基准框架。",
+      "ta": "与游戏内 NPC 手势/指向动画的自动生成评测相关。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03105v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "实时交互视听世界模型",
+      "sum": "HelixWorld 提出实时交互的音频-视觉世界模型。",
+      "ta": "世界模型方向可关注，但与当前渲染管线落地距离较远。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.38123"
     }
   ],
-  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
+  "flashbackTitle": "",
   "sources": {
     "ok": [
       "Unreal Engine",

@@ -2,8 +2,81 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-04 14:43",
+  "updated": "2026-10-05 14:47",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "城市级高斯泼溅实时化",
+      "sum": "Budgeted-GS 通过分解 LOD 实现大规模高斯泼溅的实时渲染，解决百万级图元显存瓶颈。",
+      "ta": "关注其 LOD 分解策略，可迁移到植被海量实例的实时渲染与显存预算控制。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03162v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "矢量图形可微渲染闭式解",
+      "sum": "Windfoil 用闭式求解二次贝塞尔轮廓的盒滤波环绕数，在 WebGPU 上统一光栅化与可微矢量图形。",
+      "ta": "闭式环绕数算法对 UI/图标类矢量渲染与可微管线有参考价值。",
+      "src": "arXiv · cs.GR · 10-01",
+      "url": "https://arxiv.org/abs/2610.02468v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "冻结DiT的外观几何解耦",
+      "sum": "DAGS 对冻结的图像 DiT 做无注意力解耦式外观与几何引导，实现时序稳定的生成式渲染。",
+      "ta": "时序稳定性方案可参考用于生成式贴图或程序化材质的帧间一致控制。",
+      "src": "arXiv · cs.GR · 10-01",
+      "url": "https://arxiv.org/abs/2610.02567v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "动态场景逆图形基准",
+      "sum": "4DCodeBench 让智能体从视频重建动态场景为可执行图形程序，评测逆图形能力。",
+      "ta": "可关注其程序化表示思路，对场景重建与程序化生成的自动化流程有启发。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03715v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长程部件级3D编辑基准",
+      "sum": "EditHero 提出首个长程、部件级 3D 编辑基准，要求每次修改不影响其余部分。",
+      "ta": "部件级编辑的约束评测对资产迭代工作流的自动化质检有参考意义。",
+      "src": "arXiv · cs.GR · 10-01",
+      "url": "https://arxiv.org/abs/2610.02298v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "语音驱动面部协同发音度量",
+      "sum": "提出唇部路径长度等几何度量，量化语音驱动 3D 面部动画中的协同发音轨迹。",
+      "ta": "面部动画质量度量思路可借鉴到口型驱动的效果评估。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03436v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "空间锚定手势生成基准",
+      "sum": "提出评测生成手势是否指向环境中正确指称物的基准框架。",
+      "ta": "与游戏内 NPC 手势/指向动画的自动生成评测相关。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.03105v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "实时交互视听世界模型",
+      "sum": "HelixWorld 提出实时交互的音频-视觉世界模型。",
+      "ta": "世界模型方向可关注，但与当前渲染管线落地距离较远。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.38123"
+    },
     {
       "cat": "gfx",
       "imp": "lo",
@@ -150,15 +223,6 @@ window.INTEL_RECENT = {
       "ta": "非高斯PSF的可微渲染思路，对非常规成像与重建方向有参考意义。",
       "src": "arXiv · cs.GR · 09-30",
       "url": "https://arxiv.org/abs/2610.00618v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "文生3D评测配置脆弱性",
-      "sum": "研究显示固定场景下，仅改相机与描述词即可改变文生3D排行榜结果。",
-      "ta": "提醒评估3D生成资产时，渲染与描述协议本身会左右结论。",
-      "src": "arXiv · cs.GR · 09-30",
-      "url": "https://arxiv.org/abs/2610.00447v1"
     },
     {
       "cat": "gfx",
@@ -1753,69 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "可略看PS5特性整合方式，技术深度有限。",
       "src": "PlayStation Blog · 09-16",
       "url": "https://blog.playstation.com/2026/09/16/silent-hill-townfall-creators-break-down-ps5-features-out-september-25/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "ADLX 2.0开放AI代理控制显卡",
-      "sum": "AMD ADLX 2.0新增AI扩展与MCP服务器，让代理监控管理优化AMD显卡。",
-      "ta": "TA可关注用代理自动化显卡性能监控与调优的接口。",
-      "src": "AMD GPUOpen · 09-16",
-      "url": "https://gpuopen.com/learn/adlx-2-0-extending-graphics-control-to-ai-agents-apps/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "MoQ自适应流式传输3DGS",
-      "sum": "MoQSplat用MoQ协议实现3D高斯泼溅的自适应渐进流式传输，避免TCP队头阻塞。",
-      "ta": "大场景3DGS流式传输方案，对开放世界资产流送有参考价值。",
-      "src": "arXiv · cs.GR · 09-16",
-      "url": "https://arxiv.org/abs/2609.18624v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "统一人手机器人抓取表示",
-      "sum": "InterMASH提出跨人手与机器人手的统一几何表示用于抓取合成。",
-      "ta": "与游戏TA关联弱，速览。",
-      "src": "arXiv · cs.GR · 09-16",
-      "url": "https://arxiv.org/abs/2609.18504v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CAD先验辅助稀疏视图3DGS",
-      "sum": "CADSplat用CAD形状先验正则化3DGS，从少于15视图重建逼真数字孪生。",
-      "ta": "稀疏视图重建数字孪生，对资产扫描与场景重建流程有参考。",
-      "src": "arXiv · cs.GR · 09-16",
-      "url": "https://arxiv.org/abs/2609.18473v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "点云几何先验评估攀岩难度",
-      "sum": "PointGrade用点云几何先验预测MoonBoard攀岩问题难度。",
-      "ta": "与游戏TA无关，速览。",
-      "src": "arXiv · cs.GR · 09-15",
-      "url": "https://arxiv.org/abs/2609.17770v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "扩散技能发现学习可复用动作",
-      "sum": "DSD用扩散技能发现让模拟角色学习多样可复用运动技能。",
-      "ta": "角色动画技能复用思路，对程序化动画有潜在参考。",
-      "src": "arXiv · cs.GR · 09-15",
-      "url": "https://arxiv.org/abs/2609.17682v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Zing-0.5实时联合动作文本控制",
-      "sum": "Zing-0.5实现实时联合动作与文本控制，面向可玩世界生成。",
-      "ta": "可玩世界实时生成方向，关注其对交互式内容生成的潜力。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.17909"
     }
   ]
 };
