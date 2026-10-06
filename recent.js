@@ -2,8 +2,245 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-05 14:47",
+  "updated": "2026-10-06 15:26",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Blender几何节点研讨会纪要",
+      "sum": "Blender发布几何节点研讨会总结，涉及程序化建模与工具链更新方向。",
+      "ta": "植被工具与程序化生成直接相关，值得精读节点系统演进方向。",
+      "src": "Blender 开发博客 · 10-05",
+      "url": "https://code.blender.org/2026/10/geometry-nodes-workshop-september-2026/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "预积分神经发光体实时渲染",
+      "sum": "提出预积分神经发光体方案，解决带遮挡外壳的高面数发光网格直接光照瓶颈。",
+      "ta": "实时直接光照的硬核突破，对材质/Shader性能优化有直接参考价值。",
+      "src": "arXiv · cs.GR · 10-05",
+      "url": "https://arxiv.org/abs/2610.06762v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "低方差高斯重采样抗噪",
+      "sum": "SteadySplats对低方差高斯重采样，降低随机顺序无关透明渲染的高频噪声。",
+      "ta": "3DGS渲染噪声抑制方案，对半透明植被/粒子渲染有借鉴意义。",
+      "src": "arXiv · cs.GR · 10-04",
+      "url": "https://arxiv.org/abs/2610.05576v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "实时神经发丝仿真",
+      "sum": "Neuroll用模拟器在环展开实现实时神经发丝仿真。",
+      "ta": "发丝实时仿真思路可迁移到植被/毛发类程序化动画。",
+      "src": "arXiv · cs.GR · 10-03",
+      "url": "https://arxiv.org/abs/2610.04689v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "前馈3DGS实时重建",
+      "sum": "LoCoSplat以最小3D推理实现实时前馈3D高斯泼溅。",
+      "ta": "轻量前馈3DGS对场景快速重建与工具链集成有参考。",
+      "src": "arXiv · cs.GR · 10-03",
+      "url": "https://arxiv.org/abs/2610.04351v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "八叉树无损网格压缩",
+      "sum": "OctMesh提出统一八叉树层级框架，实现无损三角网格压缩。",
+      "ta": "网格压缩对资产管线与运行时内存优化有潜在价值。",
+      "src": "arXiv · cs.GR · 10-03",
+      "url": "https://arxiv.org/abs/2610.04281v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "骨骼无关动画压缩",
+      "sum": "CurveCodec 2用学习熵模型实现骨骼无关的动画压缩。",
+      "ta": "动画压缩方案对大规模角色/植被动画数据管理有参考。",
+      "src": "arXiv · cs.GR · 10-03",
+      "url": "https://arxiv.org/abs/2610.04211v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "图像条件B-Rep生成",
+      "sum": "UniBRep以几何优先框架从单图生成统一几何与拓扑的B-Rep。",
+      "ta": "CAD级几何生成对硬表面资产程序化有潜在启发。",
+      "src": "arXiv · cs.GR · 10-02",
+      "url": "https://arxiv.org/abs/2610.04092v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "类比关系迁移3D资产生成",
+      "sum": "CreativeFlow用类比发散思维缓解文本到3D的创意同质化。",
+      "ta": "3D资产生成的多样性方法，对程序化资产生成有思路借鉴。",
+      "src": "arXiv · cs.GR · 10-04",
+      "url": "https://arxiv.org/abs/2610.05167v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "扩散Transformer上下文令牌",
+      "sum": "研究多模态扩散Transformer中动态上下文令牌的功能机制。",
+      "ta": "理解MM-DiT内部机制，对AI生成管线调优有理论参考。",
+      "src": "arXiv · cs.GR · 10-05",
+      "url": "https://arxiv.org/abs/2610.06844v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "感知均匀图像编辑滑块",
+      "sum": "UniSlider提出感知均匀的滑块实现连续图像编辑。",
+      "ta": "对AI辅助纹理/材质编辑的交互设计有参考。",
+      "src": "arXiv · cs.GR · 10-05",
+      "url": "https://arxiv.org/abs/2610.06831v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "人形运动模仿自演化框架",
+      "sum": "InterMimicGen通过自演化运动模仿扩展人形机器人运动操作。",
+      "ta": "与游戏TA关联较弱，仅作运动生成技术速览。",
+      "src": "arXiv · cs.GR · 10-05",
+      "url": "https://arxiv.org/abs/2610.06850v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自由曲面灯罩计算设计",
+      "sum": "提出可3D打印的自由曲面灯罩计算设计方法以控制光照。",
+      "ta": "光学设计思路，与实时渲染关联有限，速览即可。",
+      "src": "arXiv · cs.GR · 10-05",
+      "url": "https://arxiv.org/abs/2610.05770v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "编码智能体生成游戏世界",
+      "sum": "Code2Games让编码智能体面向游戏世界生成。",
+      "ta": "AI生成游戏世界的探索，对程序化关卡/世界工具有潜在启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.05033"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "实时世界动作模型",
+      "sum": "RealtimeWAM提出单步异步世界动作模型。",
+      "ta": "实时世界模型方向，与游戏TA关联间接，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.06617"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散语言模型自适应循环",
+      "sum": "ALoDLM提出自适应循环的扩散语言模型。",
+      "ta": "纯语言模型方向，与游戏渲染无关，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.04198"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型定向偏置注入",
+      "sum": "通过闭环激活引导在扩散语言模型中定向注入偏置。",
+      "ta": "语言模型安全方向，与游戏TA无关，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.05894"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散语言模型表示空间MMD",
+      "sum": "为扩散语言模型提出表示空间MMD方法。",
+      "ta": "纯语言模型理论，与游戏渲染无关，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.06648"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "皇牌空战8用UE5获系列最高分",
+      "sum": "Project Aces结合UE5、自研云技术与高细节战机，获系列自2001年来最高评价。",
+      "ta": "UE5在3A空战游戏中的落地案例，值得关注其技术组合。",
+      "src": "80 Level · 10-05",
+      "url": "https://80.lv/articles/ace-combat-8-is-the-highest-reviewed-game-in-the-series-since-the-ps2/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Capcom计划用AI进化RE引擎",
+      "sum": "Capcom公布REX项目，目标是以AI共同创造游戏来进化RE引擎。",
+      "ta": "主流引擎引入AI功能的动向，值得关注对TA工作流的影响。",
+      "src": "80 Level · 10-05",
+      "url": "https://80.lv/articles/capcom-reveals-plans-to-evolve-re-engine-with-ai-features/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini空间殖民+Pyro烟雾",
+      "sum": "Karlis Stigis用Houdini几何节点结合空间殖民求解器与Pyro模拟制作循环烟雾爆发。",
+      "ta": "程序化+流体特效的实战案例，对Niagara流体思路有借鉴。",
+      "src": "80 Level · 10-05",
+      "url": "https://80.lv/articles/merging-space-colonization-solver-with-pyro-simulation-to-create-looping-smoke-bursts/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini角色水附着R&D",
+      "sum": "Milad Sãvar分享在动画角色上控制水附着、滴落与飞溅的程序化工作流R&D。",
+      "ta": "程序化流体交互R&D，对特效与材质工作流有参考。",
+      "src": "80 Level · 10-05",
+      "url": "https://80.lv/articles/artist-explores-realistic-water-adhesion-on-animated-characters-in-houdini/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender绑定引入RBF求解器",
+      "sum": "RBF Nodes插件为Blender绑定带来RBF求解器，用多输入驱动多属性。",
+      "ta": "绑定工具链增强，对角色/植被骨骼驱动有实用价值。",
+      "src": "80 Level · 10-05",
+      "url": "https://80.lv/articles/bring-rbf-solver-to-your-blender-rigs/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Ninja Theory据报裁员",
+      "sum": "Hellblade开发商Ninja Theory在脱离Xbox失败后据报裁员。",
+      "ta": "行业动态，反映3A工作室整合压力，速览。",
+      "src": "Game Developer · 10-05",
+      "url": "https://www.gamedeveloper.com/business/report-ninja-theory-lays-off-workers-after-failing-to-spin-off-from-xbox"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "ARC Raiders等将影视化",
+      "sum": "Embark Studios的The Finals与ARC Raiders获影视改编。",
+      "ta": "商业动态，与TA工作无直接关联，速览。",
+      "src": "Game Developer · 10-05",
+      "url": "https://www.gamedeveloper.com/business/arc-raiders-and-the-finals-set-for-tv-and-film-adaptations-from-backrooms-co-producer"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "沉浸式模拟仍值得做",
+      "sum": "Harvey Smith与Ben Horne阐述Black Pony Immersive的设计愿景。",
+      "ta": "设计理念访谈，与TA技术关联弱，速览。",
+      "src": "Game Developer · 10-05",
+      "url": "https://www.gamedeveloper.com/design/why-it-s-still-worth-making-immersive-sims-ft-harvey-smith-ben-horne"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -40,15 +277,6 @@ window.INTEL_RECENT = {
       "ta": "可关注其程序化表示思路，对场景重建与程序化生成的自动化流程有启发。",
       "src": "arXiv · cs.GR · 10-02",
       "url": "https://arxiv.org/abs/2610.03715v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "长程部件级3D编辑基准",
-      "sum": "EditHero 提出首个长程、部件级 3D 编辑基准，要求每次修改不影响其余部分。",
-      "ta": "部件级编辑的约束评测对资产迭代工作流的自动化质检有参考意义。",
-      "src": "arXiv · cs.GR · 10-01",
-      "url": "https://arxiv.org/abs/2610.02298v1"
     },
     {
       "cat": "gfx",
@@ -94,15 +322,6 @@ window.INTEL_RECENT = {
       "ta": "NPR/PBR 混合渲染与英雄级 VFX 的工程化落地，值得对照自家角色管线看材质分层与破坏性能取舍。",
       "src": "80 Level · 10-02",
       "url": "https://80.lv/articles/inside-marvel-rivals-character-art-vfx-destruction-pipeline/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 权重绘制插件增强",
-      "sum": "一款插件支持在 Edit Mode 内直接为多骨骼绘制与微调权重。",
-      "ta": "省去反复切换模式的权重调整流程，对植被/角色绑定迭代效率有直接参考价值。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/check-out-this-add-on-that-adds-advanced-weight-painting-tools-to-blender/"
     },
     {
       "cat": "biz",
@@ -152,16 +371,6 @@ window.INTEL_RECENT = {
     {
       "cat": "tech",
       "imp": "hi",
-      "rank": 1,
-      "title": "战争机器E-Day用UE5回归恐怖",
-      "sum": "The Coalition用UE5重现初代\"毁灭之美\"美学，并进化玩法与动画。",
-      "ta": "官方开发者访谈，可看Nanite环境、硬件光追与实时破坏的落地取舍。",
-      "src": "Unreal Engine · 10-01",
-      "url": "https://www.unrealengine.com/developer-interviews/gears-of-war-e-day-sees-a-return-to-dark-survival-horror-roots-with-ue5"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
       "rank": 2,
       "title": "战争机器E-Day成15年最高分",
       "sum": "该前传结合硬件光追、Nanite环境、实时破坏与数百动态阴影光源。",
@@ -196,15 +405,6 @@ window.INTEL_RECENT = {
       "ta": "多光源场景Lumen噪点治理的实操经验，可直接对照自己的光照配置。",
       "src": "80 Level · 10-01",
       "url": "https://80.lv/articles/suppressing-noise-without-sacrificing-lighting-quality-when-using-unreal-engine-s-lumen/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "亮度主导3DGS几何形成",
-      "sum": "研究通过分通道监督，发现亮度而非色度主导3D高斯泼溅的几何学习。",
-      "ta": "理解3DGS几何与外观解耦，对重建管线的监督信号设计有启发。",
-      "src": "arXiv · cs.GR · 09-30",
-      "url": "https://arxiv.org/abs/2610.00749v1"
     },
     {
       "cat": "gfx",
@@ -1619,204 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "AI生成内容版权边界收紧，TA在引入AI资产/语音工具时需关注合规风险。",
       "src": "Game Developer · 09-18",
       "url": "https://www.gamedeveloper.com/business/mihoyo-awarded-112-000-by-chinese-court-after-ai-voice-service-dupes-genshin-impact-characters"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ARM谈如何与开发者协作做工具",
-      "sum": "ARM的Peter Hodges讨论游戏开发工具及1969年短片Lemon。",
-      "ta": "速览即可，工具厂商与开发者协作方式或对跨团队工具设计有零星启发。",
-      "src": "Game Developer · 09-18",
-      "url": "https://www.gamedeveloper.com/art/how-toolmakers-like-arm-work-with-devs-ft-peter-hodges"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "King员工谈判破裂宣布罢工",
-      "sum": "Candy Crush工作室工会员工因集体协议谈判停滞，将于9月25日罢工。",
-      "ta": "行业劳资动态，与TA日常工作无直接关联，速览即可。",
-      "src": "Game Developer · 09-18",
-      "url": "https://www.gamedeveloper.com/production/king-workers-call-strike-after-collective-agreement-negotiations-stall"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Control Resonant延续Remedy风格",
-      "sum": "评测称Control Resonant融合激进近战、开放探索与超现实世界观，是Remedy公式的进化。",
-      "ta": "游戏设计向评测，与TA技术工作无直接关联，速览即可。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/control-resonant-is-a-fantastic-evolution-of-remedy-s-formula/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Blood of Dawnwalker时间机制或不再回归",
-      "sum": "Blood of Dawnwalker的时间机制在续作中可能不会保留。",
-      "ta": "纯游戏设计动态，与TA工作无关，速览即可。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/blood-of-dawnwalker-s-time-mechanic-might-not-return-in-the-sequel/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "溅射液体多视角重建新法",
-      "sum": "SplashSplat 从真实多视角视频重建飞溅液体，解决瞬时撕裂与无纹理难题。",
-      "ta": "流体特效师可关注其重建思路，用于离线参考或验证 Niagara 溅射形态。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.20818v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "程序化场景穿模自动修复",
-      "sum": "S4R 用尺度延拓法解决程序化生成场景中的刚体互穿，供物理仿真前清理。",
-      "ta": "植被/道具程序化摆放常遇穿模，此法可作为生成后处理步骤参考。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.20524v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "微片介质多重散射解析式BRDF",
-      "sum": "新漫反射型 BRDF 在 Smith 阴影假设下精确计入所有散射阶数，且可解析求值与重要性采样。",
-      "ta": "对植被/毛发等微片材质的多重散射近似有直接价值，可评估替换现有 diffuse 模型。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.20394v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "GS转PBR高斯资产分解法",
-      "sum": "GS-PI 解耦外观分解，把高斯泼溅的烘焙辐照转为可接入 PBR 管线的材质资产。",
-      "ta": "3D 扫描/泼溅资产进 UE5 PBR 管线的关键一步，值得跟进其解耦与重光照效果。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19907v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "绘画多解性三维实体化",
-      "sum": "研究具象绘画对应的多种三维构型，而非收敛到单一重建模型。",
-      "ta": "偏学术艺术方向，与实时渲染工作流关联弱，速览即可。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19782v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "实时粒子流式传输编解码",
-      "sum": "DELUGE 用分解式熵编码实现非结构化几何的实时粒子流式传输，面向 VR/AR 共享仿真。",
-      "ta": "Niagara 流体多人同步可参考其压缩与流式方案，降低网络带宽压力。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19750v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "语言驱动全身接触控制",
-      "sum": "LYRIC 用流匹配控制器，让角色按自然语言完成富接触的全身物体交互。",
-      "ta": "若做角色动画或物理交互，可关注其稀疏目标加语言指令的控制范式。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.19688v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "title": "CDPR TA 发布扫描PBR求解器",
-      "sum": "CD Projekt Red 技术美术推出 sigmaPBR，把 3D 扫描转为可重光照材质。",
-      "ta": "扫描资产转 PBR 是植被/道具管线常见痛点，可直接试用其求解流程。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/cd-projekt-red-s-technical-artist-unveils-pbr-solver-for-3d-scans/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "角色建模工作流拆解",
-      "sum": "Seori Nam 分享角色制作流程，涵盖基础网格雕脸、Marvelous Designer 服装与纹素密度取舍。",
-      "ta": "纹素密度与配色平衡的经验对角色/植被贴图规划有参考价值。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/modeling-3d-character-with-medieval-fantasy-post-apocalyptic-elements/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "PS1风格预渲染背景进引擎",
-      "sum": "Static Between Stations 开发者展示 PS1 风格预渲染背景在引擎内的呈现与制作方式。",
-      "ta": "预渲染背景转实时呈现的取舍思路，对风格化场景搭建有借鉴意义。",
-      "src": "80 Level · 09-17",
-      "url": "https://80.lv/articles/see-how-this-rpg-s-ps1-style-pre-rendered-backgrounds-look-in-engine/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Heart Machine 大规模裁员",
-      "sum": "《Hyper Light Drifter》开发商 Heart Machine 裁掉大部分员工，工作室面临存亡关口。",
-      "ta": "行业收缩信号，关注独立团队生存环境变化。",
-      "src": "Game Developer · 09-17",
-      "url": "https://www.gamedeveloper.com/business/hyper-light-drifter-developer-heart-machine-has-laid-off-the-majority-of-staff"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "AI代理自动准备3D仿真场景",
-      "sum": "NVIDIA展示用Agentic AI检查3D场景并编写仿真数据，服务数字孪生。",
-      "ta": "可关注代理如何自动校验场景资产，未来或用于植被/关卡批量预处理。",
-      "src": "NVIDIA · 09-16",
-      "url": "https://developer.nvidia.com/blog/how-to-use-ai-agents-to-prepare-3d-scenes-for-simulation/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "TensorRT边缘LLM提速6.4倍",
-      "sum": "TensorRT Edge-LLM在Jetson AGX Thor上完成MLPerf边缘代理基准，快6.4倍。",
-      "ta": "边缘端代理推理加速，与游戏TA关联弱，速览即可。",
-      "src": "NVIDIA · 09-16",
-      "url": "https://developer.nvidia.com/blog/tensorrt-edge-llm-completes-the-mlperf-edge-agentic-benchmark-6-4x-faster-on-jetson-agx-thor/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "代理AI把CUDA Tile译到Rust",
-      "sum": "cuTile Rust用代理AI将Python的CUDA tile操作翻译为Rust GPU内核。",
-      "ta": "GPU内核跨语言迁移思路，对写compute shader有间接参考。",
-      "src": "NVIDIA · 09-16",
-      "url": "https://developer.nvidia.com/blog/translating-cuda-tile-operations-from-python-to-rust-using-agentic-ai/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "怪猎荒野资料片2027年",
-      "sum": "《Monster Hunter Wilds: Ascendance》2027年发售，新增剧情区域怪物与大师等级。",
-      "ta": "仅发行信息，无技术细节可参考。",
-      "src": "PlayStation Blog · 09-17",
-      "url": "https://blog.playstation.com/2026/09/16/monster-hunter-wilds-ascendance-hands-on-report-taking-on-new-monster-araketa-and-elder-dragon-teostra/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "洛克人新作公布Proto Man",
-      "sum": "《Mega Man: Dual Override》公布第二可玩角色Proto Man。",
-      "ta": "纯游戏内容新闻，无技术价值。",
-      "src": "PlayStation Blog · 09-17",
-      "url": "https://blog.playstation.com/2026/09/16/a-close-quarters-look-at-proto-man-in-mega-man-dual-override/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "姆明游戏9月18日发售",
-      "sum": "独立游戏《Moomintroll: Winter's Warmth》9月18日登陆PS5。",
-      "ta": "独立游戏发行信息，无技术内容。",
-      "src": "PlayStation Blog · 09-16",
-      "url": "https://blog.playstation.com/2026/09/16/moomintroll-winters-warmth-launches-on-september-18/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "寂静岭Townfall9月24日",
-      "sum": "《Silent Hill: Townfall》9月24日发售，开发者解析PS5特性运用。",
-      "ta": "可略看PS5特性整合方式，技术深度有限。",
-      "src": "PlayStation Blog · 09-16",
-      "url": "https://blog.playstation.com/2026/09/16/silent-hill-townfall-creators-break-down-ps5-features-out-september-25/"
     }
   ]
 };
