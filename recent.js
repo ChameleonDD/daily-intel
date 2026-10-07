@@ -2,17 +2,187 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-06 15:26",
+  "updated": "2026-10-07 15:05",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RGA 2.15支持源码到ISA关联",
+      "sum": "AMD Radeon GPU Analyzer 2.15可将预编译GPU代码对象关联回源码行，便于ISA分析优化。",
+      "ta": "做Shader性能调优时，能直接定位到具体源码行对应的ISA指令，省去盲猜汇编的功夫。",
+      "src": "AMD GPUOpen · 10-06",
+      "url": "https://gpuopen.com/learn/rga-source-to-isa-correlation-gpu-code-objects/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "4D手物交互前馈重建框架",
+      "sum": "4D-HOF用前馈流匹配重建4D手物交互，避免逐序列优化和随机噪声生成的不稳定。",
+      "ta": "若做角色手部与道具交互动画，这种前馈重建思路可参考，但离实时管线还有距离。",
+      "src": "arXiv · cs.GR · 10-06",
+      "url": "https://arxiv.org/abs/2610.08782v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "扩散风格化支持局部控制",
+      "sum": "该工作解耦内容与风格两个条件权重，实现区域级的图像风格化控制。",
+      "ta": "做材质贴图风格化时，区域级控制比全局风格迁移更实用，可关注其条件解耦方式。",
+      "src": "arXiv · cs.GR · 10-06",
+      "url": "https://arxiv.org/abs/2610.08704v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "点基变形混合做面部重定向",
+      "sum": "PDB用点基变形混合实现跨网格面部动画重定向，减少表面伪影。",
+      "ta": "面部重定向若走点云混合而非拓扑依赖，可跨不同网格复用表情动画，值得看其抗伪影策略。",
+      "src": "arXiv · cs.GR · 10-06",
+      "url": "https://arxiv.org/abs/2610.08672v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "关键帧引导3D高斯文本编辑",
+      "sum": "该工作区分不同渲染视角的编辑可靠性，用关键帧引导文本驱动的3D高斯编辑。",
+      "ta": "3D高斯编辑若按视角质量加权监督，能减少劣质视角带来的编辑噪声，思路可迁移到场景编辑工具。",
+      "src": "arXiv · cs.GR · 10-06",
+      "url": "https://arxiv.org/abs/2610.08179v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "超声可微渲染做形状优化",
+      "sum": "UltraDiff将可微渲染范式扩展到医学超声，通过匹配渲染图像优化场景参数。",
+      "ta": "与游戏渲染无关，但可微渲染从光传输扩展到其他成像模态的思路可作方法论参考。",
+      "src": "arXiv · cs.GR · 10-06",
+      "url": "https://arxiv.org/abs/2610.07941v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "潜扩散做高保真形变仿真",
+      "sum": "PhysLDM用潜扩散模型做高分辨率体积网格的长时程形变仿真，缓解误差累积。",
+      "ta": "若做布料/软体离线仿真或ML变形器，其长时程预测的误差控制策略值得关注。",
+      "src": "arXiv · cs.GR · 10-06",
+      "url": "https://arxiv.org/abs/2610.07609v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "仿真中递归自改进扩具身数据",
+      "sum": "EmbodiedSmith在仿真中通过递归自改进飞轮扩展具身智能训练数据。",
+      "ta": "与游戏TA无直接关联，仅作具身数据生成范式的速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.07969"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Web世界模型抗提示注入训练",
+      "sum": "AdvSim2Real在Web世界模型中用自适应提示注入训练Web智能体。",
+      "ta": "与游戏/渲染无关，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.08773"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型自适应潜容量",
+      "sum": "该工作为世界模型引入自适应潜容量机制。",
+      "ta": "若关注世界模型架构，可速览其潜容量调度思路，但与当前TA工作无直接交集。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2609.32921"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型物理能力终考",
+      "sum": "该工作提出针对世界模型物理理解能力的评测基准。",
+      "ta": "可作世界模型物理常识的评测参考，与实时渲染管线无直接关系。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.08791"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "世界规模由移动速度与密度决定",
+      "sum": "资深世界设计师Nathan Cheever指出，移动速度、遭遇密度、可复用空间与产能决定世界该多大。",
+      "ta": "做程序化植被/地形工具时，世界尺度应服从玩法节奏与产能，而非盲目求大。",
+      "src": "80 Level · 10-06",
+      "url": "https://80.lv/articles/veteran-game-world-designer-explains-why-bigger-game-worlds-aren-t-always-better/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "恐龙腿部肌肉仿真获导演认可",
+      "sum": "一段恐龙腿部肌肉仿真作品获得Guillermo del Toro的公开认可。",
+      "ta": "可速览其肌肉形变表现，作为生物动画参考。",
+      "src": "80 Level · 10-06",
+      "url": "https://80.lv/articles/dinosaur-leg-muscle-simulation-gets-guillermo-del-toro-s-approval/"
+    },
     {
       "cat": "flow",
       "imp": "hi",
-      "rank": 1,
-      "title": "Blender几何节点研讨会纪要",
-      "sum": "Blender发布几何节点研讨会总结，涉及程序化建模与工具链更新方向。",
-      "ta": "植被工具与程序化生成直接相关，值得精读节点系统演进方向。",
-      "src": "Blender 开发博客 · 10-05",
-      "url": "https://code.blender.org/2026/10/geometry-nodes-workshop-september-2026/"
+      "title": "白水求解器基于Wētā研究开源",
+      "sum": "VFX艺术家Alexander Vasilenko发布Guided Bubbles & Wet Foam Solver，基于Wētā研究改善气泡与泡沫运动。",
+      "ta": "做Niagara流体/白水特效时，这套气泡引导与湿泡沫求解思路可直接借鉴，是难得的公开实现。",
+      "src": "80 Level · 10-06",
+      "url": "https://80.lv/articles/vfx-artist-shared-advanced-whitewater-solver-based-on-w-t-s-research/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Fate角色3D化流程分享",
+      "sum": "Sarah Paiva分享BJD娃娃风格Saber的3D制作，含基础形塑与金色材质处理。",
+      "ta": "可速览其金属材质处理手法，作为角色材质参考。",
+      "src": "80 Level · 10-06",
+      "url": "https://80.lv/articles/how-to-recreate-saber-from-type-moon-s-fate-stay-night-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender程序化飞虫群教程",
+      "sum": "教程演示如何在Blender中制作程序化飞虫群。",
+      "ta": "程序化群集思路可迁移到UE植被/昆虫工具，作为散布与动画逻辑参考。",
+      "src": "80 Level · 10-06",
+      "url": "https://80.lv/articles/3d-artist-shows-how-to-make-procedural-fly-swarm-in-blender/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "title": "UE插件实现实时光影绘制",
+      "sum": "高级灯光师Karim Yasser开发了Unreal Engine实时光影绘制插件（WIP）。",
+      "ta": "若做场景灯光工具，这种在引擎内直接绘制光影的交互方式值得关注其实现路径。",
+      "src": "80 Level · 10-06",
+      "url": "https://80.lv/articles/artist-develops-unreal-engine-plug-in-for-real-time-light-shadow-painting/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "二手PS5 Pro溢价66%出售",
+      "sum": "GameStop等零售商以高于MSRP 66%的价格出售二手PS5 Pro。",
+      "ta": "硬件市场行情，与TA工作无直接关系。",
+      "src": "Game Developer · 10-06",
+      "url": "https://www.gamedeveloper.com/console/gamestop-other-retailers-to-sell-used-playstation-5-pro-units-for-66-percent-over-msrp"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "工作室称裁员沟通过于透明",
+      "sum": "Unlead Labs工作室负责人称在裁员准备中对员工'不负责任地透明'。",
+      "ta": "行业管理八卦，速览即可。",
+      "src": "Game Developer · 10-06",
+      "url": "https://www.gamedeveloper.com/business/unlead-labs-studio-head-says-they-were-irresponsibly-transparent-in-preparing-staff-for-layoffs"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "合作开发助Backrooms破400万",
+      "sum": "Blackbird Interactive与Secret Mode通过合作开发帮助Escape the Backrooms达到超400万玩家。",
+      "ta": "合作开发案例，可速览其分工模式。",
+      "src": "Game Developer · 10-06",
+      "url": "https://www.gamedeveloper.com/production/co-dev-case-study-how-blackbird-interactive-and-secret-mode-helped-escape-the-backrooms-ride-the-backrooms-hype-wave"
     },
     {
       "cat": "gfx",
@@ -78,15 +248,6 @@ window.INTEL_RECENT = {
       "ta": "CAD级几何生成对硬表面资产程序化有潜在启发。",
       "src": "arXiv · cs.GR · 10-02",
       "url": "https://arxiv.org/abs/2610.04092v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "类比关系迁移3D资产生成",
-      "sum": "CreativeFlow用类比发散思维缓解文本到3D的创意同质化。",
-      "ta": "3D资产生成的多样性方法，对程序化资产生成有思路借鉴。",
-      "src": "arXiv · cs.GR · 10-04",
-      "url": "https://arxiv.org/abs/2610.05167v1"
     },
     {
       "cat": "ai",
@@ -1234,15 +1395,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "UE 环境资产包含风格化植被",
-      "sum": "Meshingun Studio 发布 UE 环境资产包，含哥特家具、亚洲寺庙场景与风格化植被等 20 余个包。",
-      "ta": "风格化植被资产可直接用于搭建测试场景，验证植被工具与材质性能。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/get-hundreds-of-striking-production-ready-assets-with-this-unreal-engine-environment-bundle/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "锈蚀材质先研究物理再动手",
       "sum": "Loic Anquetil 讲解用 Substance 3D Designer 制作写实锈蚀材质，强调先理解材料物理复杂性。",
       "ta": "程序化锈蚀的探索式工作流，对材质函数分层与噪声组合思路有直接参考。",
@@ -1666,159 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "游戏玩法评测基准，可用于衡量 AI 在实时交互场景中的表现。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2609.25001"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "GPU 内核基准测试变异分析",
-      "sum": "论文用变异分析方法检验 GPU 内核基准测试判定器的有效性。",
-      "ta": "做 GPU 性能基准与优化验证时，可参考其测试判定可靠性的评估思路。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.22220"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "世界模型表征蒸馏进机器人策略",
-      "sum": "论文将世界模型表征蒸馏进紧凑的 VLA 机器人策略。",
-      "ta": "世界模型到轻量策略的蒸馏路线，对实时 AI 决策的算力压缩有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.24682"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini 拉格朗日波浪流体模拟",
-      "sum": "初级特效师 Fred Bello 分享基于 Wētā 拉格朗日波浪研究的 Houdini 水体模拟搭建细节。",
-      "ta": "流体特效的实战拆解，对做水体与波浪类 Niagara/Houdini 效果有直接参考。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/hypnotizing-fluid-simulation-based-on-w-t-s-research-on-lagrangian-waves/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 几何节点做风格化 VFX",
-      "sum": "3D 艺术家 Good Good 逐步讲解用 Blender 几何节点制作风格化 VFX 的流程。",
-      "ta": "几何节点做风格化特效的思路，可迁移到程序化特效与植被工具的节点设计。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/artist-shows-process-of-creating-stylized-vfx-with-blender-s-geometry-nodes/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "闪光紧身裤 Shader 制作揭秘",
-      "sum": "作者 Bleeding_Hart 分享闪光紧身裤从各角度闪烁的 Shader 制作方法。",
-      "ta": "各向异性闪光类 Shader 的实现细节，对布料与亮片材质有参考。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/see-these-glitter-tights-sparkle-from-every-angle/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "绘画风格格斗动画展示",
-      "sum": "Ave Espelita 发布一支绘画风格强烈的格斗动画作品。",
-      "ta": "动画表现力参考，可看节奏与打击感的处理。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/check-out-this-impressive-painterly-style-fighting-animation/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "寂静岭 Townfall 改第一人称",
-      "sum": "寂静岭 Townfall 从第三人称转为第一人称，官方列出九点设计变化。",
-      "ta": "视角切换对关卡尺度、恐怖氛围与镜头语言的影响，可作设计参考。",
-      "src": "PlayStation Blog · 09-21",
-      "url": "https://blog.playstation.com/2026/09/21/silent-hill-townfall-9-ways-first-person-changes-the-iconic-horror-formula/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "潜空间物理渲染新范式",
-      "sum": "研究将光传输现象与扩散模型潜空间建立联系，实现可控的物理渲染式生成。",
-      "ta": "值得关注潜空间与PBR的桥接思路，或可启发材质/光照的可控生成管线。",
-      "src": "arXiv · cs.GR · 09-17",
-      "url": "https://arxiv.org/abs/2609.21054v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "流式语音手势生成",
-      "sum": "GestureFAR用流自回归在用户说话时实时生成共语手势，面向具身对话代理。",
-      "ta": "实时流式动作生成思路可参考，但与游戏植被/渲染管线关联较弱，速览即可。",
-      "src": "arXiv · cs.GR · 09-18",
-      "url": "https://arxiv.org/abs/2609.21576v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "可形变资产分层生成",
-      "sum": "DeformSmith用物理约束引导分层生成机器人操作所需的可形变资产。",
-      "ta": "物理引导的形变资产生成思路，对程序化生成有间接参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.18620"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender+Maya风格化角色",
-      "sum": "Fabien Metais分享Water Woman项目，Maya建模不重拓扑，黑白绘制后整体换色。",
-      "ta": "黑白绘制再换调色板的贴图流程，对风格化角色材质制作有借鉴意义。",
-      "src": "80 Level · 09-21",
-      "url": "https://80.lv/articles/creating-a-stylized-3d-character-of-a-water-woman-with-blender-maya/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "模拟游戏玩转游戏UI",
-      "sum": "一款模拟游戏以点击操作游戏界面按钮为核心玩法。",
-      "ta": "与渲染和工具链无关，仅作行业趣味速览。",
-      "src": "80 Level · 09-19",
-      "url": "https://80.lv/articles/this-simulation-game-lets-you-play-with-video-game-interfaces/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "赛博朋克夜之城几乎全手工搭建",
-      "sum": "CDPR美术总监讲述夜之城手工制作流程，第一人称视角如何影响尺度与细节，路径追踪为何契合其光照管线。",
-      "ta": "值得看路径追踪与手工场景搭建的配合逻辑，对植被/环境美术的管线设计有参考价值。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/interview-how-cyberpunk-2077-s-night-city-was-built-almost-entirely-by-hand/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 5.3 原生支持 3D 高斯泼溅",
-      "sum": "Blender 5.3 将获得原生 3D Gaussian Splatting 支持。",
-      "ta": "高斯泼溅进主流DCC，未来植被/环境扫描资产的导入与实时预览流程可能被改写。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/blender-5-3-is-getting-native-3d-gaussian-splat-support/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Pass式工作流搭建中东庭院",
-      "sum": "作者讲述用pass-based流程加速制作废弃中东庭院，并搭建高效易用的材质系统。",
-      "ta": "pass-based流程与快速材质系统的思路，对TA优化美术迭代效率有参考。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/assembling-abandoned-middle-eastern-courtyard-in-3d-using-pass-based-workflow/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "85%日本开发者已用生成式AI",
-      "sum": "CESA报告称超85%日本游戏开发者至少偶尔使用生成式AI，工作室强调人工审核与限制工具。",
-      "ta": "了解行业AI采用现状与审核策略，对TA评估AI工具在管线中的落地边界有帮助。",
-      "src": "80 Level · 09-18",
-      "url": "https://80.lv/articles/over-85-of-japanese-game-developers-now-use-generative-ai-according-to-tgs-report/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "米哈游AI配音侵权获赔11.2万",
-      "sum": "上海法院判决AI语音服务模仿原神角色，米哈游获赔11.2万美元，或成中国法院对生成式AI的判例信号。",
-      "ta": "AI生成内容版权边界收紧，TA在引入AI资产/语音工具时需关注合规风险。",
-      "src": "Game Developer · 09-18",
-      "url": "https://www.gamedeveloper.com/business/mihoyo-awarded-112-000-by-chinese-court-after-ai-voice-service-dupes-genshin-impact-characters"
     }
   ]
 };
