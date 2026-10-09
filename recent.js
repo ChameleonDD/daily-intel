@@ -2,8 +2,236 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-08 15:13",
+  "updated": "2026-10-09 15:17",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "任意3DGS场景变循环动态影像",
+      "sum": "OuroWorld无掩码框架将静态3DGS场景转为多视角无缝循环的3D动态影像。",
+      "ta": "植被/环境动态化可参考其无掩码循环运动生成思路，值得精读。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.12461v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "镜面光照神经缓存新方案",
+      "sum": "提出面向镜面光照的NRC变体，用反射方向参数化与粗糙度相关辐射目标。",
+      "ta": "实时路径追踪镜面反射降噪直接相关，UE5光追管线值得关注。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.11702v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "可微渲染引入敏感度AOV",
+      "sum": "将敏感度作为可微渲染的任意输出变量，为导数提供可分解检查的表示。",
+      "ta": "为渲染管线调试与参数分析提供新维度，Shader/材质优化可借鉴。",
+      "src": "arXiv · cs.GR · 10-07",
+      "url": "https://arxiv.org/abs/2610.10852v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "局部可控3D生成免训练管线",
+      "sum": "SpaceFlow用文本与引导实现局部可控3D生成，无需训练。",
+      "ta": "程序化资产生成的局部控制思路，可关注其对几何与外观的分离控制。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.12399v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "刚体交互局部接触神经模拟",
+      "sum": "RiCo通过局部接触推理实现刚体交互的神经模拟。",
+      "ta": "物理模拟精度提升方向，对破坏/交互特效有潜在参考。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.12333v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "复用前帧的局部视图合成",
+      "sum": "LVS利用相机小位移时图像重叠，复用已渲染视图加速新视角合成。",
+      "ta": "3DGS渲染加速思路，对实时场景探索性能优化有启发。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.12127v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "网格转SubD的建模代理工作流",
+      "sum": "SubDGuide用建模师启发的代理工作流从密集网格重建细分曲面控制笼。",
+      "ta": "程序化建模与拓扑重建工具链可参考其控制笼推断逻辑。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.11721v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "局部PCA正则的高斯泼溅",
+      "sum": "PCAsplat用局部PCA正则优化3DGS，改善被遮挡高斯的学习。",
+      "ta": "3DGS重建质量提升，对场景扫描与植被重建有参考价值。",
+      "src": "arXiv · cs.GR · 10-07",
+      "url": "https://arxiv.org/abs/2610.11011v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "免训练物理感知流体视频生成",
+      "sum": "Fluid-Gen-Zero将运动交给物理模拟器，外观交给预训练视频生成器。",
+      "ta": "流体特效生成思路，物理与外观解耦对Niagara流体有启发。",
+      "src": "arXiv · cs.GR · 10-07",
+      "url": "https://arxiv.org/abs/2610.10984v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "常数内存可微光追反向传播",
+      "sum": "ResLRB实现内存与路径长度无关的反向模式可微光追。",
+      "ta": "可微渲染内存瓶颈突破，对渲染管线研究有参考意义。",
+      "src": "arXiv · cs.GR · 10-07",
+      "url": "https://arxiv.org/abs/2610.10847v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "特征保持压缩通用框架",
+      "sum": "FeatureZ通过逐点边界与星形分类实现几何拓扑特征保持的有损压缩。",
+      "ta": "科学可视化数据压缩，与游戏资产管线关联较弱，速览即可。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.12371v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "扩散模型反事实响应轨迹归因",
+      "sum": "提出反事实响应轨迹方法，追踪扩散模型输出到训练样本的归因。",
+      "ta": "AI生成内容溯源，对生成资产版权与调试有潜在价值。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.11238v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "多智能体自我中心世界模型",
+      "sum": "提出多智能体自我中心世界模型，支持细粒度具身交互。",
+      "ta": "交互式环境模拟方向，对游戏AI与仿真环境构建有启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12299"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "动作忠实机器人世界模型",
+      "sum": "DreamTrue用反事实后训练构建动作忠实的机器人世界模型。",
+      "ta": "世界模型动作忠实度提升，对交互仿真有潜在参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12468"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散Transformer稀疏注意力",
+      "sum": "MC-Sparse解构并缩小扩散Transformer中稠密与稀疏注意力的差距。",
+      "ta": "AI推理加速，与游戏渲染管线关联间接，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.06801"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "流式全景世界模型导航",
+      "sum": "SPW-Nav提出语言引导导航的流式全景世界模型。",
+      "ta": "导航与全景生成，与游戏TA工作流关联较弱。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.08941"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "智能体语言世界模型",
+      "sum": "从轨迹到智能体世界：面向交互环境模拟的智能体语言世界模型。",
+      "ta": "交互环境模拟方向，与实时渲染关联间接。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.06100"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "RizomUV 2027大幅升级",
+      "sum": "RizomUV 2027带来更快展开、实时更新、完整UI定制与无头操作。",
+      "ta": "UV工具链重大更新，场景级UV管理与管线支持值得关注。",
+      "src": "80 Level · 10-08",
+      "url": "https://80.lv/articles/rizomuv-2027-introduces-faster-unfolding-live-updates-full-ui-customization/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender一键布尔切割保四边面",
+      "sum": "Boolean Master插件一键实现布尔式切割并保持干净四边面拓扑。",
+      "ta": "建模拓扑工具，对硬表面与程序化资产工作流有实用价值。",
+      "src": "80 Level · 10-08",
+      "url": "https://80.lv/articles/blender-tool-for-boolean-style-cuts-with-clean-quad-topology/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "手绘风格矿车道具制作教程",
+      "sum": "Raphael Fabris分享手绘纹理风格化矿车道具的制作技巧与拓扑经验。",
+      "ta": "手绘纹理与跨软件工作流技巧，可速览借鉴。",
+      "src": "80 Level · 10-08",
+      "url": "https://80.lv/articles/how-to-make-a-stylized-game-ready-minecart-prop-using-hand-painted-textures/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "实时WebGL着色器触感UI",
+      "sum": "展示由实时WebGL着色器驱动的触感UI效果。",
+      "ta": "着色器交互效果参考，速览即可。",
+      "src": "80 Level · 10-08",
+      "url": "https://80.lv/articles/explore-this-tactile-ui-powered-by-real-time-webgl-shader/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "转描技术打造恐怖美术",
+      "sum": "Wych Elm拆解Silver Pines的手工美术管线，含1800帧角色与转描怪物。",
+      "ta": "非主流美术管线案例，对风格化表现有参考。",
+      "src": "80 Level · 10-08",
+      "url": "https://80.lv/articles/how-silver-pines-used-rotoscoping-to-create-its-unsettling-horror/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "谷歌发布AI游戏创作平台",
+      "sum": "Google推出Playground平台，让用户用AI制作游戏。",
+      "ta": "AI游戏创作工具动向，关注其对原型制作流程的潜在影响。",
+      "src": "80 Level · 10-08",
+      "url": "https://80.lv/articles/google-released-its-own-game-creation-platform/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox成立XP新部门",
+      "sum": "Xbox CEO宣布成立XP部门，专注游戏周边IP拓展业务。",
+      "ta": "行业商业动向，与TA工作关联较弱。",
+      "src": "Game Developer · 10-08",
+      "url": "https://www.gamedeveloper.com/console/xbox-ceo-unveils-new-xbox-division-for-game-adjacent-ventures-named-xp-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "招魂改编恐怖游戏将发售",
+      "sum": "Netflix与Until Dawn开发商合作的《招魂》改编游戏即将推出。",
+      "ta": "行业产品新闻，速览即可。",
+      "src": "80 Level · 10-08",
+      "url": "https://80.lv/articles/horror-game-from-netflix-until-dawn-s-developers-based-on-the-conjuring-is-coming-soon/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -140,15 +368,6 @@ window.INTEL_RECENT = {
       "url": "https://www.gamedeveloper.com/programming/unity-unveils-unity-spark-an-prompt-based-tool-for-google-s-ai-games-platform"
     },
     {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "谷歌推出实验性 AI 游戏平台",
-      "sum": "Google 发布名为 Google Playground 的实验性 AI 游戏平台。",
-      "ta": "平台级 AI 游戏动向，关注其运行时能力与对传统引擎管线的潜在冲击。",
-      "src": "Game Developer · 10-06",
-      "url": "https://www.gamedeveloper.com/business/google-debuts-new-ai-game-platform-named-google-playground"
-    },
-    {
       "cat": "flow",
       "imp": "mid",
       "title": "Godot 伪 3D 视觉实现解析",
@@ -228,15 +447,6 @@ window.INTEL_RECENT = {
       "ta": "面部重定向若走点云混合而非拓扑依赖，可跨不同网格复用表情动画，值得看其抗伪影策略。",
       "src": "arXiv · cs.GR · 10-06",
       "url": "https://arxiv.org/abs/2610.08672v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "关键帧引导3D高斯文本编辑",
-      "sum": "该工作区分不同渲染视角的编辑可靠性，用关键帧引导文本驱动的3D高斯编辑。",
-      "ta": "3D高斯编辑若按视角质量加权监督，能减少劣质视角带来的编辑噪声，思路可迁移到场景编辑工具。",
-      "src": "arXiv · cs.GR · 10-06",
-      "url": "https://arxiv.org/abs/2610.08179v1"
     },
     {
       "cat": "gfx",
@@ -330,15 +540,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "Blender程序化飞虫群教程",
-      "sum": "教程演示如何在Blender中制作程序化飞虫群。",
-      "ta": "程序化群集思路可迁移到UE植被/昆虫工具，作为散布与动画逻辑参考。",
-      "src": "80 Level · 10-06",
-      "url": "https://80.lv/articles/3d-artist-shows-how-to-make-procedural-fly-swarm-in-blender/"
-    },
-    {
-      "cat": "flow",
       "imp": "hi",
       "title": "UE插件实现实时光影绘制",
       "sum": "高级灯光师Karim Yasser开发了Unreal Engine实时光影绘制插件（WIP）。",
@@ -405,15 +606,6 @@ window.INTEL_RECENT = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "前馈3DGS实时重建",
-      "sum": "LoCoSplat以最小3D推理实现实时前馈3D高斯泼溅。",
-      "ta": "轻量前馈3DGS对场景快速重建与工具链集成有参考。",
-      "src": "arXiv · cs.GR · 10-03",
-      "url": "https://arxiv.org/abs/2610.04351v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
       "title": "八叉树无损网格压缩",
       "sum": "OctMesh提出统一八叉树层级框架，实现无损三角网格压缩。",
       "ta": "网格压缩对资产管线与运行时内存优化有潜在价值。",
@@ -437,15 +629,6 @@ window.INTEL_RECENT = {
       "ta": "CAD级几何生成对硬表面资产程序化有潜在启发。",
       "src": "arXiv · cs.GR · 10-02",
       "url": "https://arxiv.org/abs/2610.04092v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "扩散Transformer上下文令牌",
-      "sum": "研究多模态扩散Transformer中动态上下文令牌的功能机制。",
-      "ta": "理解MM-DiT内部机制，对AI生成管线调优有理论参考。",
-      "src": "arXiv · cs.GR · 10-05",
-      "url": "https://arxiv.org/abs/2610.06844v1"
     },
     {
       "cat": "ai",
@@ -1634,188 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "surfel+可学习环境光遮蔽，对角色材质与光照解耦有参考价值。",
       "src": "arXiv · cs.GR · 09-23",
       "url": "https://arxiv.org/abs/2609.27600v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实时机器人切割仿真新法",
-      "sum": "BladeMaster在线生成持久断裂面，实现实时可形变物体切割仿真。",
-      "ta": "拓扑变化+持久断裂的实时方案，可借鉴到破坏/切割类特效系统。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.27342v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "灵巧抓取解耦对齐表示",
-      "sum": "DEAL-Grasp解耦全局刚体运动与局部姿态，生成几何感知的灵巧抓取。",
-      "ta": "VR/数字人抓取动画生成，关注其解耦表示思路。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.28131v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "物理世界模型InternW0",
-      "sum": "InternW0提出面向高效真实世界交互的基础物理世界模型。",
-      "ta": "物理世界模型方向，与实时交互仿真潜在相关，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.27656"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "ZBrush+Substance做收音机",
-      "sum": "Ravikanth Gupta用ZBrush建模有机磨损细节，六张UV加UDIM准备贴图。",
-      "ta": "UDIM多象限与老化磨损处理，硬表面道具贴图流程示范。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/breakdown-how-to-create-a-hard-surface-philips-radio-with-zbrush-substance-3d/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Undead Labs脱离Xbox后大裁员",
-      "sum": "微软今年早前释放剥离信号后，Undead Labs进行重大裁员。",
-      "ta": "工作室动荡，关注其对项目与团队稳定性的影响。",
-      "src": "Game Developer · 09-23",
-      "url": "https://www.gamedeveloper.com/business/undead-labs-makes-significant-layoffs-after-splitting-from-xbox"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "微软拟在加载屏插广告",
-      "sum": "微软申请专利，在游戏自然停顿处展示广告。",
-      "ta": "加载屏广告若落地，或影响加载流程与UI设计。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/microsoft-may-bring-ads-to-game-loading-screens/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "手绘银河城Well Dweller发售",
-      "sum": "手绘风格银河恶魔城游戏Well Dweller已正式发售。",
-      "ta": "2D手绘美术风格参考，速览。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/the-hand-drawn-metroidvania-well-dweller-has-been-released/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "像素卡牌游戏以投喂代杀敌",
-      "sum": "Hungry Horrors以英爱民俗为背景，用烹饪击败怪物。",
-      "ta": "像素美术与题材创意，速览。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/you-feed-your-enemies-instead-of-killing-them-in-this-deckbuilding-pixel-art-adventure/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "浏览器寻物游戏十年未完",
-      "sum": "Where's Waldo风格浏览器游戏Floor796近十年仍在更新，完成度62%。",
-      "ta": "长线个人项目，速览。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/nearly-ten-years-later-this-where-s-waldo-style-browser-game-keeps-growing/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "时装裁剪缝纫模拟游戏",
-      "sum": "一款模拟游戏让玩家裁剪并缝制自己的连衣裙。",
-      "ta": "布料模拟题材，速览。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/this-simulation-game-lets-you-cut-and-sew-your-own-dresses/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "搏击俱乐部结局赛博朋克重制",
-      "sum": "Wonki Choi分享搏击俱乐部结尾场景的赛博朋克风3D动画。",
-      "ta": "风格化3D动画参考，速览。",
-      "src": "80 Level · 09-23",
-      "url": "https://80.lv/articles/fight-club-s-final-scene-reimagined-as-a-cyberpunk-style-3d-animation/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "DLSS 5 引入 3D 引导神经渲染",
-      "sum": "NVIDIA 发布 DLSS 5，新增 3D-Guided Neural Rendering 与细粒度控制，并更新 ACE 与 RTX Kit。",
-      "ta": "3D 引导神经渲染直接关系光照与材质细节的实时重建方式，是渲染管线层面需要评估的新选项。",
-      "src": "NVIDIA · 09-22",
-      "url": "https://developer.nvidia.com/blog/whats-new-for-game-developers-dlss-5-with-3d-guided-neural-rendering-nvidia-ace-updates-and-new-rtx-kit-capabilities/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "随机高斯泼溅去噪神经推理",
-      "sum": "针对随机高斯泼溅渲染产生的空间噪声，提出像素流上的时序神经去噪器，实现超快推理。",
-      "ta": "随机泼溅省去排序与 alpha 混合，去噪质量与推理开销是能否进实时管线的关键。",
-      "src": "arXiv · cs.GR · 09-22",
-      "url": "https://arxiv.org/abs/2609.25604v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "PartLLM 统一 3D 部件分割基础模型",
-      "sum": "PartLLM 提出统一多模态基础，同时支持文本引导与点交互的 3D 部件分割。",
-      "ta": "部件级分割是资产拆分与程序化重组的输入，统一多模态接口值得关注。",
-      "src": "arXiv · cs.GR · 09-22",
-      "url": "https://arxiv.org/abs/2609.25832v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "农业机器人仿真大规模场景生成",
-      "sum": "AgriGen 提出大规模场景生成框架，用于生成逼真的农业机器人仿真环境。",
-      "ta": "面向仿真的程序化场景生成思路，可借鉴其规模化与真实感兼顾的做法。",
-      "src": "arXiv · cs.GR · 09-22",
-      "url": "https://arxiv.org/abs/2609.25725v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "指令式视频编辑的数据中心方案",
-      "sum": "VideoX-Qwen 通过构建大规模配对监督并适配视频生成骨干，实现指令驱动视频编辑。",
-      "ta": "编辑需保留无关主体与场景，其数据构造与骨干适配策略对特效迭代有参考价值。",
-      "src": "arXiv · cs.GR · 09-22",
-      "url": "https://arxiv.org/abs/2609.26015v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散 LLM 的 IO 感知 KV 缓存",
-      "sum": "Flash-dLLM 提出 IO 感知 KV 缓存与并行解码，提升扩散语言模型速度并降低显存。",
-      "ta": "与图形无直接关联，仅作推理效率技术储备速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.26796"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "量子增强扩散语言模型超网络",
-      "sum": "提出 Circuit Hypernetworks，用于量子增强的扩散语言模型。",
-      "ta": "与实时渲染无直接关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.24657"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "NVIDIA 机密计算支持生产级推理",
-      "sum": "NVIDIA 介绍机密计算如何为生产环境的 LLM 推理提供私有高性能支持。",
-      "ta": "偏企业部署安全，与游戏渲染管线无关，速览。",
-      "src": "NVIDIA · 09-22",
-      "url": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Topograph 拓扑感知负载调度",
-      "sum": "NVIDIA Topograph 针对 AI 工厂做拓扑感知的 GPU 工作负载调度优化。",
-      "ta": "面向集群调度而非单机渲染，速览即可。",
-      "src": "NVIDIA · 09-22",
-      "url": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/"
     }
   ]
 };
