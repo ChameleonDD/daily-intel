@@ -2,8 +2,107 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-09 15:17",
+  "updated": "2026-10-10 14:53",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "模块化灯塔场景制作解析",
+      "sum": "作者分享可平铺材质、材质平滑过渡技巧，及手工雕刻植物图集做风格化植被。",
+      "ta": "植被图集+可平铺材质混合方案，对程序化植被工具与风格化场景搭建有直接参考价值。",
+      "src": "80 Level · 10-09",
+      "url": "https://80.lv/articles/how-to-build-an-atmospheric-stylized-lighthouse-scene-with-a-custom-modular-set/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "PS1与N64模型资产免费归档",
+      "sum": "Pardall Games 建立 PS1、N64 时代 3D 模型与游戏资产的免费在线存档库。",
+      "ta": "低模资产可作风格化参考或复古项目素材来源，注意版权与授权范围。",
+      "src": "80 Level · 10-09",
+      "url": "https://80.lv/articles/free-online-archive-of-ps1-n64-3d-models-game-assets/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "节奏RPG十年三次重做",
+      "sum": "Nocturne 开发者讲述十年开发中三次重做，及战斗、工具、像素美术与现场管弦乐制作。",
+      "ta": "长周期小团队的工具与美术迭代复盘，可速览其战斗与工具链取舍。",
+      "src": "80 Level · 10-09",
+      "url": "https://80.lv/articles/this-rhythm-rpg-was-rebuilt-three-times-during-its-10-year-development/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "游戏长线运营靠主动运维",
+      "sum": "文章称平稳的游戏上线并非运气，而是发布前长期准备工作的结果。",
+      "ta": "偏运维与发布流程，与TA日常关联弱，速览即可。",
+      "src": "80 Level · 10-09",
+      "url": "https://80.lv/articles/proactive-not-reactive-24-years-of-keeping-games-online/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "目标导向视频世界模型",
+      "sum": "WorldGuide 提出面向程序化任务执行的目标导向视频世界模型。",
+      "ta": "世界模型若用于任务序列生成，或可启发程序化生成与工具自动化，但需确认实时性。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12459"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型推测解码加速",
+      "sum": "SpecFold 通过折叠多分支冗余，加速扩散语言模型的推测解码。",
+      "ta": "推理加速方向，与实时渲染管线无直接关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.04875"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多任务强化学习GPU并行框架",
+      "sum": "提出面向异构多任务强化学习的 GPU 并行框架。",
+      "ta": "训练框架类论文，未提及游戏或实时渲染，关联度低。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2606.03335"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "仿真合成企业数据",
+      "sum": "通过可扩展的智能体-系统交互仿真，生成连贯的企业数据。",
+      "ta": "纯数据合成方向，与游戏/实时渲染无关，建议丢弃。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.10549"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS官方播客第550期",
+      "sum": "PlayStation 官方播客回归，聊近期通关游戏、新冒险与听众来信。",
+      "ta": "纯播客内容，无技术信息，速览即可。",
+      "src": "PlayStation Blog · 10-09",
+      "url": "https://blog.playstation.com/2026/10/09/official-playstation-podcast-episode-550-now-this-is-podcasting/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "雅达利800XL复刻开售",
+      "sum": "雅达利 1980 年代经典电脑 800XL 回归，支持现代显示并内置 25 款游戏。",
+      "ta": "怀旧硬件新闻，与TA工作无关，速览即可。",
+      "src": "80 Level · 10-09",
+      "url": "https://80.lv/articles/atari-s-iconic-1980s-computer-is-back-available-for-purchase/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "低多边形实体家居装饰",
+      "sum": "荷兰法波设计师 Jonas Hejduk 为现实世界制作低多边形实体装饰资产。",
+      "ta": "低模美术的跨界应用，趣味参考，与生产管线无关。",
+      "src": "80 Level · 10-09",
+      "url": "https://80.lv/articles/this-real-life-low-resolution-interior-design-decor-turns-any-space-into-a-retro-game-scene/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -1718,105 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "碰撞体生成是植被/道具批处理管线常客，全 GPU 化有望大幅压缩离线预处理耗时。",
       "src": "arXiv · cs.GR · 09-23",
       "url": "https://arxiv.org/abs/2609.28731v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "M-plicits 嵌套多尺度隐式曲面",
-      "sum": "用嵌套多尺度残差改进正弦编码 MLP，兼顾训练效率、渲染速度与抗噪。",
-      "ta": "隐式表示若能在速度与鲁棒性上同时改善，对程序化植被/地形 SDF 建模有直接参考价值。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.28684v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "Heartian 生理感知可重光照头像",
-      "sum": "为高斯头部头像加入心跳周期驱动的逐帧反照率调制，补足皮肤颜色细微变化。",
-      "ta": "可重光照高斯头像的时序细节建模思路，可迁移到角色皮肤材质的动态微变化处理。",
-      "src": "arXiv · cs.GR · 09-22",
-      "url": "https://arxiv.org/abs/2609.28539v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "胶带贴附仿真 TAPESIM",
-      "sum": "面向机器人操作的胶带剥离与贴附高效仿真，避免逐层解算粘合层。",
-      "ta": "柔性条带与粘附/脱附的简化求解思路，对布料与藤蔓类植被的接触仿真有借鉴意义。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.28766v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "世界模型中的客体永久性训练",
-      "sum": "论文探讨在世界模型中训练客体永久性，让模型维持被遮挡物体的持续表征。",
-      "ta": "若世界模型能稳定维持遮挡物表征，对场景流式加载与遮挡剔除的预测式方案有潜在启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.28654"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "锈蚀材质先研究物理再动手",
-      "sum": "Loic Anquetil 讲解用 Substance 3D Designer 制作写实锈蚀材质，强调先理解材料物理复杂性。",
-      "ta": "程序化锈蚀的探索式工作流，对材质函数分层与噪声组合思路有直接参考。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/desirable-patina-how-to-make-realistic-rust-in-3d/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Meta 发布百克重 VR 眼镜",
-      "sum": "Meta 公布约 100 克、售价 1300 美元的 VR 眼镜，并有多款游戏将登陆该平台。",
-      "ta": "新 VR 硬件规格影响未来移动端渲染预算与注视点渲染策略，可留意其性能定位。",
-      "src": "Game Developer · 09-24",
-      "url": "https://www.gamedeveloper.com/business/meta-announces-new-vr-glasses-that-weigh-about-100-grams-and-cost-1-300"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "黑曜石将保留创作独立性",
-      "sum": "Bethesda 总裁称黑曜石加入后领导层与创作优势将保持完整。",
-      "ta": "工作室整合动向，与日常 TA 工作无直接关联，速览即可。",
-      "src": "80 Level · 09-25",
-      "url": "https://80.lv/articles/obsidian-will-preserve-its-creative-identity-bethesda-president-says/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "爱尔兰游戏基金增设资助通道",
-      "sum": "爱尔兰游戏基金扩展为开发基金、原型基金与发行基金三条路径。",
-      "ta": "区域性资金政策，与 TA 技术工作无关，仅作行业动态速览。",
-      "src": "Game Developer · 09-24",
-      "url": "https://www.gamedeveloper.com/business/irish-game-fund-expands-with-additional-funding-pathways"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Massive 任命新任总经理",
-      "sum": "前 Avalanche Studios 负责人 Natalie Francis 将于 10 月 1 日加入 Massive Entertainment 任总经理。",
-      "ta": "人事变动类行业新闻，与渲染技术无直接关联。",
-      "src": "Game Developer · 09-24",
-      "url": "https://www.gamedeveloper.com/business/former-avalanche-studios-chief-natalie-francis-joins-massive-entertainment-as-managing-director"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "凭记忆画国界线的免费游戏",
-      "sum": "一款要求玩家凭记忆在地图上绘制国界线的免费游戏上线。",
-      "ta": "独立小游戏，与 TA 技术栈无关，可忽略。",
-      "src": "80 Level · 09-24",
-      "url": "https://80.lv/articles/in-this-game-you-have-to-draw-border-lines-from-memory-on-a-map/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可动可重打光Surfel化身",
-      "sum": "ARS-Avatar用surfel表示从多视角图像生成可动画、可重打光的人体化身。",
-      "ta": "surfel+可学习环境光遮蔽，对角色材质与光照解耦有参考价值。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.27600v1"
     }
   ]
 };
