@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月10日 · 周六",
+  "date": "2026年10月11日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>模块化灯塔场景制作解析</em> / <em>PS1与N64模型资产免费归档</em> / <em>节奏RPG十年三次重做</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>第一人称恐怖新作Farsight公布</em> / <em>3D建模软件横向对比指南</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,103 +127,22 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "模块化灯塔场景制作解析",
-      "sum": "作者分享可平铺材质、材质平滑过渡技巧，及手工雕刻植物图集做风格化植被。",
-      "ta": "植被图集+可平铺材质混合方案，对程序化植被工具与风格化场景搭建有直接参考价值。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/how-to-build-an-atmospheric-stylized-lighthouse-scene-with-a-custom-modular-set/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "PS1与N64模型资产免费归档",
-      "sum": "Pardall Games 建立 PS1、N64 时代 3D 模型与游戏资产的免费在线存档库。",
-      "ta": "低模资产可作风格化参考或复古项目素材来源，注意版权与授权范围。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/free-online-archive-of-ps1-n64-3d-models-game-assets/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
-      "title": "节奏RPG十年三次重做",
-      "sum": "Nocturne 开发者讲述十年开发中三次重做，及战斗、工具、像素美术与现场管弦乐制作。",
-      "ta": "长周期小团队的工具与美术迭代复盘，可速览其战斗与工具链取舍。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/this-rhythm-rpg-was-rebuilt-three-times-during-its-10-year-development/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "游戏长线运营靠主动运维",
-      "sum": "文章称平稳的游戏上线并非运气，而是发布前长期准备工作的结果。",
-      "ta": "偏运维与发布流程，与TA日常关联弱，速览即可。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/proactive-not-reactive-24-years-of-keeping-games-online/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "目标导向视频世界模型",
-      "sum": "WorldGuide 提出面向程序化任务执行的目标导向视频世界模型。",
-      "ta": "世界模型若用于任务序列生成，或可启发程序化生成与工具自动化，但需确认实时性。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.12459"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型推测解码加速",
-      "sum": "SpecFold 通过折叠多分支冗余，加速扩散语言模型的推测解码。",
-      "ta": "推理加速方向，与实时渲染管线无直接关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.04875"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多任务强化学习GPU并行框架",
-      "sum": "提出面向异构多任务强化学习的 GPU 并行框架。",
-      "ta": "训练框架类论文，未提及游戏或实时渲染，关联度低。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.03335"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "仿真合成企业数据",
-      "sum": "通过可扩展的智能体-系统交互仿真，生成连贯的企业数据。",
-      "ta": "纯数据合成方向，与游戏/实时渲染无关，建议丢弃。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.10549"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS官方播客第550期",
-      "sum": "PlayStation 官方播客回归，聊近期通关游戏、新冒险与听众来信。",
-      "ta": "纯播客内容，无技术信息，速览即可。",
-      "src": "PlayStation Blog · 10-09",
-      "url": "https://blog.playstation.com/2026/10/09/official-playstation-podcast-episode-550-now-this-is-podcasting/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "雅达利800XL复刻开售",
-      "sum": "雅达利 1980 年代经典电脑 800XL 回归，支持现代显示并内置 25 款游戏。",
-      "ta": "怀旧硬件新闻，与TA工作无关，速览即可。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/atari-s-iconic-1980s-computer-is-back-available-for-purchase/"
+      "title": "第一人称恐怖新作Farsight公布",
+      "sum": "Studio Noori新作让玩家用望远镜、对讲机和90年代手持摄像机探索后室风格房屋。",
+      "ta": "可关注其90年代手持摄像机UI与后室氛围的视觉呈现手法，作为恐怖游戏氛围参考。",
+      "src": "80 Level · 10-10",
+      "url": "https://80.lv/articles/in-this-first-person-horror-eye-exam-pulls-you-into-backrooms-style-house/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "低多边形实体家居装饰",
-      "sum": "荷兰法波设计师 Jonas Hejduk 为现实世界制作低多边形实体装饰资产。",
-      "ta": "低模美术的跨界应用，趣味参考，与生产管线无关。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/this-real-life-low-resolution-interior-design-decor-turns-any-space-into-a-retro-game-scene/"
+      "title": "3D建模软件横向对比指南",
+      "sum": "对比Blender、Maya、ZBrush等建模软件的价格、免费选项及优缺点。",
+      "ta": "可作为团队工具选型或新人入门参考，但内容偏泛，无技术深度。",
+      "src": "80 Level · 10-10",
+      "url": "https://80.lv/articles/best-3d-modeling-software-blender-maya-zbrush-more/"
     }
   ],
   "flashbackTitle": "",

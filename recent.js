@@ -2,8 +2,26 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-10 14:53",
+  "updated": "2026-10-11 14:58",
   "cards": [
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "第一人称恐怖新作Farsight公布",
+      "sum": "Studio Noori新作让玩家用望远镜、对讲机和90年代手持摄像机探索后室风格房屋。",
+      "ta": "可关注其90年代手持摄像机UI与后室氛围的视觉呈现手法，作为恐怖游戏氛围参考。",
+      "src": "80 Level · 10-10",
+      "url": "https://80.lv/articles/in-this-first-person-horror-eye-exam-pulls-you-into-backrooms-style-house/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "3D建模软件横向对比指南",
+      "sum": "对比Blender、Maya、ZBrush等建模软件的价格、免费选项及优缺点。",
+      "ta": "可作为团队工具选型或新人入门参考，但内容偏泛，无技术深度。",
+      "src": "80 Level · 10-10",
+      "url": "https://80.lv/articles/best-3d-modeling-software-blender-maya-zbrush-more/"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -132,15 +150,6 @@ window.INTEL_RECENT = {
       "ta": "为渲染管线调试与参数分析提供新维度，Shader/材质优化可借鉴。",
       "src": "arXiv · cs.GR · 10-07",
       "url": "https://arxiv.org/abs/2610.10852v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "局部可控3D生成免训练管线",
-      "sum": "SpaceFlow用文本与引导实现局部可控3D生成，无需训练。",
-      "ta": "程序化资产生成的局部控制思路，可关注其对几何与外观的分离控制。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.12399v1"
     },
     {
       "cat": "gfx",
@@ -1808,15 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "程序化资产生成若接入这种在线渲染-编辑回路，可减少后期手工修形，值得关注其对齐策略。",
       "src": "arXiv · cs.GR · 09-24",
       "url": "https://arxiv.org/abs/2609.29788v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CuACD 实现全 GPU 凸分解",
-      "sum": "近似凸分解全程驻留 GPU，为物理模拟、碰撞检测与机器人学习做预处理。",
-      "ta": "碰撞体生成是植被/道具批处理管线常客，全 GPU 化有望大幅压缩离线预处理耗时。",
-      "src": "arXiv · cs.GR · 09-23",
-      "url": "https://arxiv.org/abs/2609.28731v1"
     }
   ]
 };
