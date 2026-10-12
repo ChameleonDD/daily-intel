@@ -2,8 +2,117 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-11 14:58",
+  "updated": "2026-10-12 15:11",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "3DGS场景可动水面动画",
+      "sum": "新方法让3D高斯泼溅静态场景支持动态水面流动动画。",
+      "ta": "3DGS动态化是实时渲染热点，植被/流体TA可关注其运动合成思路。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13860v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "空间音频流式动作生成",
+      "sum": "Sonic-AMG从空间音频流式生成人体动作，模拟实时反应。",
+      "ta": "音频驱动动作生成，可关注其在游戏角色实时动画中的潜力。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13300v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D原生拖拽编辑物体",
+      "sum": "3DRAG实现3D原生点拖拽编辑，摆脱慢速2D扩散先验。",
+      "ta": "3D资产交互编辑提速，对程序化生成与关卡编辑工具有启发。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13216v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "优先化人形动作重定向",
+      "sum": "PriMoRetarget用优先化重定向处理多角色多物体交互动作迁移。",
+      "ta": "多接触动作重定向，对角色动画管线与物理交互有参考。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.12642v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型强化学习框架",
+      "sum": "DiffusionART提出高效稳定的扩散模型强化方法。",
+      "ta": "扩散模型训练优化，与3D生成/材质生成间接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12572"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散语言模型免校准量化",
+      "sum": "SoloQ为扩散语言模型提供免校准量化方案。",
+      "ta": "量化技术偏LLM，与实时渲染关联弱，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.07121"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "游戏智能体启发式学习评测",
+      "sum": "在长时游戏智能体竞赛中评测启发式学习效果。",
+      "ta": "游戏AI智能体研究，与TA工具链关联有限。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12341"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型递归自改进",
+      "sum": "RSI-Anything用世界模型实现递归自我改进。",
+      "ta": "世界模型自改进，与游戏AI/生成间接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.13912"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "表征引导像素扩散Transformer",
+      "sum": "学习表征以引导像素扩散Transformer生成。",
+      "ta": "扩散生成质量优化，与材质/贴图生成间接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12978"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "激活波分析加速推测解码",
+      "sum": "分析LLM隐状态信息与几何以优化推测解码。",
+      "ta": "LLM推理加速，与实时渲染无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12939"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "潜空间语义压缩奖励建模",
+      "sum": "在潜空间用语义保持压缩做高效生成式奖励建模。",
+      "ta": "奖励建模偏LLM训练，与TA工作流关联弱。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.09788"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender泳池VFX病毒短片",
+      "sum": "BrutalDuck用Blender、Omniscient App与AE制作病毒泳池VFX。",
+      "ta": "VFX拆解可看Blender+AE合成流程，对特效制作有参考。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/this-viral-pool-clip-was-made-using-blender-omniscient-app-after-effects/"
+    },
     {
       "cat": "biz",
       "imp": "lo",
@@ -12,15 +121,6 @@ window.INTEL_RECENT = {
       "ta": "可关注其90年代手持摄像机UI与后室氛围的视觉呈现手法，作为恐怖游戏氛围参考。",
       "src": "80 Level · 10-10",
       "url": "https://80.lv/articles/in-this-first-person-horror-eye-exam-pulls-you-into-backrooms-style-house/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "3D建模软件横向对比指南",
-      "sum": "对比Blender、Maya、ZBrush等建模软件的价格、免费选项及优缺点。",
-      "ta": "可作为团队工具选型或新人入门参考，但内容偏泛，无技术深度。",
-      "src": "80 Level · 10-10",
-      "url": "https://80.lv/articles/best-3d-modeling-software-blender-maya-zbrush-more/"
     },
     {
       "cat": "flow",
@@ -120,16 +220,6 @@ window.INTEL_RECENT = {
       "ta": "低模美术的跨界应用，趣味参考，与生产管线无关。",
       "src": "80 Level · 10-09",
       "url": "https://80.lv/articles/this-real-life-low-resolution-interior-design-decor-turns-any-space-into-a-retro-game-scene/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "任意3DGS场景变循环动态影像",
-      "sum": "OuroWorld无掩码框架将静态3DGS场景转为多视角无缝循环的3D动态影像。",
-      "ta": "植被/环境动态化可参考其无掩码循环运动生成思路，值得精读。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.12461v1"
     },
     {
       "cat": "gfx",
@@ -240,15 +330,6 @@ window.INTEL_RECENT = {
       "ta": "世界模型动作忠实度提升，对交互仿真有潜在参考。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.12468"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散Transformer稀疏注意力",
-      "sum": "MC-Sparse解构并缩小扩散Transformer中稠密与稀疏注意力的差距。",
-      "ta": "AI推理加速，与游戏渲染管线关联间接，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.06801"
     },
     {
       "cat": "ai",
@@ -1736,87 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "对材质/Shader TA有直接参考：位移与光照配合的写实皮肤lookdev思路。",
       "src": "80 Level · 09-25",
       "url": "https://80.lv/articles/exploring-thin-pale-slimy-skin-texture-by-recreating-the-demogorgon-from-stranger-things/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "小体型角色巨武器动画拆解",
-      "sum": "以《Moss: Book 2》为例讲解小角色持巨型双手武器时如何保持清晰剪影。",
-      "ta": "动画剪影可读性思路对角色/特效表现有借鉴，非核心TA方向。",
-      "src": "80 Level · 09-25",
-      "url": "https://80.lv/articles/breakdown-animating-tiny-character-with-massive-two-handed-weapon/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "狐娘巨剑连招动画展示",
-      "sum": "展示狐娘角色巨剑连招动画，强调重量感与运动节奏。",
-      "ta": "速览级动画参考，重量感表现可借鉴到特效节奏设计。",
-      "src": "80 Level · 09-25",
-      "url": "https://80.lv/articles/fox-girl-s-powerful-giant-sword-combo-attack-animation/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "1940年杂志广告实为2D矢量动画",
-      "sum": "一则1940年《Life》杂志广告实为2D矢量动画制作。",
-      "ta": "与游戏TA工作流关联弱，速览即可。",
-      "src": "80 Level · 09-25",
-      "url": "https://80.lv/articles/this-1940-life-magazine-ad-is-actually-2d-vector-animation/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "留存玩家才是增长关键",
-      "sum": "Adikteev观点：游戏增长最大杠杆不是新增安装，而是早期识别流失并召回玩家。",
-      "ta": "偏运营增长，与TA本职关联弱，速览。",
-      "src": "80 Level · 09-25",
-      "url": "https://80.lv/articles/the-players-you-already-have-are-your-biggest-growth-opportunity/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "《皇牌空战8》改用第一人称叙事",
-      "sum": "Project Aces在《皇牌空战8》中改变叙事方式，以第一人称讲述更私人的故事。",
-      "ta": "偏叙事设计，与TA技术方向关联弱。",
-      "src": "PlayStation Blog · 09-25",
-      "url": "https://blog.playstation.com/2026/09/25/how-ace-combat-8-wings-of-theve-uses-first-person-to-tell-a-more-personal-story/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS博客本周精选与播客",
-      "sum": "PlayStation官方播客第548期回顾九月发售游戏，另有《金刚狼》截图精选。",
-      "ta": "纯社区/营销内容，无技术信息。",
-      "src": "PlayStation Blog · 09-25",
-      "url": "https://blog.playstation.com/2026/09/25/official-playstation-podcast-episode-548-september-selects/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "编码智能体用于任务与运动规划",
-      "sum": "论文提出用编码智能体解决广义任务与运动规划问题。",
-      "ta": "原文未提及游戏/实时/3D引擎关联，仅作AI方向速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.30233"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "音视频联合生成的扩散强化学习",
-      "sum": "AV-GRPO提出模态锚定解耦的扩散强化学习方法，用于音视频联合生成。",
-      "ta": "原文未提及游戏/实时引擎关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.29816"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "OREO 用渲染编辑对齐 3D 生成",
-      "sum": "借 2D 扩散先验在生成过程中实时渲染并编辑，提升 3D 资产视觉保真度。",
-      "ta": "程序化资产生成若接入这种在线渲染-编辑回路，可减少后期手工修形，值得关注其对齐策略。",
-      "src": "arXiv · cs.GR · 09-24",
-      "url": "https://arxiv.org/abs/2609.29788v1"
     }
   ]
 };

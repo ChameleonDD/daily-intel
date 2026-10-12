@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月11日 · 周日",
+  "date": "2026年10月12日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>第一人称恐怖新作Farsight公布</em> / <em>3D建模软件横向对比指南</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>3DGS场景可动水面动画</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,22 +127,149 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "biz",
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "3DGS场景可动水面动画",
+      "sum": "新方法让3D高斯泼溅静态场景支持动态水面流动动画。",
+      "ta": "3DGS动态化是实时渲染热点，植被/流体TA可关注其运动合成思路。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13860v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS置信度感知致密化",
+      "sum": "提出置信度感知的致密化策略，改进3DGS-MCMC固定预算下的重建。",
+      "ta": "致密化控制直接影响高斯数量与性能，值得关注其预算分配逻辑。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13541v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS二次型交互剪枝",
+      "sum": "SplatQ用二次选择实现交互感知剪枝，兼顾区域预算与联合删除。",
+      "ta": "剪枝是3DGS性能优化关键，区域预算控制思路可借鉴到资产优化。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13503v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS混合分层光线追踪",
+      "sum": "提出混合分层光追方法，为3DGS实现二次光照与景深效果。",
+      "ta": "光追3DGS可支持二次光照，对实时渲染管线集成有参考价值。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13498v1"
+    },
+    {
+      "cat": "ai",
       "imp": "lo",
-      "title": "第一人称恐怖新作Farsight公布",
-      "sum": "Studio Noori新作让玩家用望远镜、对讲机和90年代手持摄像机探索后室风格房屋。",
-      "ta": "可关注其90年代手持摄像机UI与后室氛围的视觉呈现手法，作为恐怖游戏氛围参考。",
-      "src": "80 Level · 10-10",
-      "url": "https://80.lv/articles/in-this-first-person-horror-eye-exam-pulls-you-into-backrooms-style-house/"
+      "title": "空间音频流式动作生成",
+      "sum": "Sonic-AMG从空间音频流式生成人体动作，模拟实时反应。",
+      "ta": "音频驱动动作生成，可关注其在游戏角色实时动画中的潜力。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13300v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D原生拖拽编辑物体",
+      "sum": "3DRAG实现3D原生点拖拽编辑，摆脱慢速2D扩散先验。",
+      "ta": "3D资产交互编辑提速，对程序化生成与关卡编辑工具有启发。",
+      "src": "arXiv · cs.GR · 10-09",
+      "url": "https://arxiv.org/abs/2610.13216v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "优先化人形动作重定向",
+      "sum": "PriMoRetarget用优先化重定向处理多角色多物体交互动作迁移。",
+      "ta": "多接触动作重定向，对角色动画管线与物理交互有参考。",
+      "src": "arXiv · cs.GR · 10-08",
+      "url": "https://arxiv.org/abs/2610.12642v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型强化学习框架",
+      "sum": "DiffusionART提出高效稳定的扩散模型强化方法。",
+      "ta": "扩散模型训练优化，与3D生成/材质生成间接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12572"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散语言模型免校准量化",
+      "sum": "SoloQ为扩散语言模型提供免校准量化方案。",
+      "ta": "量化技术偏LLM，与实时渲染关联弱，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.07121"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "游戏智能体启发式学习评测",
+      "sum": "在长时游戏智能体竞赛中评测启发式学习效果。",
+      "ta": "游戏AI智能体研究，与TA工具链关联有限。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12341"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型递归自改进",
+      "sum": "RSI-Anything用世界模型实现递归自我改进。",
+      "ta": "世界模型自改进，与游戏AI/生成间接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.13912"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "表征引导像素扩散Transformer",
+      "sum": "学习表征以引导像素扩散Transformer生成。",
+      "ta": "扩散生成质量优化，与材质/贴图生成间接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12978"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "物理合理铰接3D资产管线",
+      "sum": "提出多智能体管线与基准，生成物理合理的铰接3D资产。",
+      "ta": "铰接资产生成对道具/机械类3D资产制作流程有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.13947"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "激活波分析加速推测解码",
+      "sum": "分析LLM隐状态信息与几何以优化推测解码。",
+      "ta": "LLM推理加速，与实时渲染无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.12939"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "潜空间语义压缩奖励建模",
+      "sum": "在潜空间用语义保持压缩做高效生成式奖励建模。",
+      "ta": "奖励建模偏LLM训练，与TA工作流关联弱。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.09788"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "3D建模软件横向对比指南",
-      "sum": "对比Blender、Maya、ZBrush等建模软件的价格、免费选项及优缺点。",
-      "ta": "可作为团队工具选型或新人入门参考，但内容偏泛，无技术深度。",
-      "src": "80 Level · 10-10",
-      "url": "https://80.lv/articles/best-3d-modeling-software-blender-maya-zbrush-more/"
+      "title": "Blender泳池VFX病毒短片",
+      "sum": "BrutalDuck用Blender、Omniscient App与AE制作病毒泳池VFX。",
+      "ta": "VFX拆解可看Blender+AE合成流程，对特效制作有参考。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/this-viral-pool-clip-was-made-using-blender-omniscient-app-after-effects/"
     }
   ],
   "flashbackTitle": "",
