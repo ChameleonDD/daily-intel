@@ -2,8 +2,100 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-12 15:11",
+  "updated": "2026-10-13 15:35",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "混合模型解码状态存储优化",
+      "sum": "NVIDIA 提出 ReplaySSM，重构 SSM 与注意力混合模型的 state 存储以加速解码。",
+      "ta": "若团队在本地跑 Nemotron/Qwen 类混合模型做工具链推理，可关注其显存与吞吐权衡。",
+      "src": "NVIDIA · 10-12",
+      "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "任意分辨率曲面重建新法",
+      "sum": "T3lescope 从图像做任意分辨率高保真生成式曲面重建。",
+      "ta": "曲面重建若成熟，可接入扫描资产到引擎的自动化管线，值得跟踪精度与拓扑质量。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.03308"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Epic 推行 AI 优先制作模式",
+      "sum": "Epic 据报推迟一款未公布漫威与星战射击游戏，并要求开发者转向覆盖代码与美术的 AI 优先模式。",
+      "ta": "引擎方亲自定调 AI 优先，TA 的脚本与工具链产出方式可能被重定义，需关注后续官方口径。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/epic-games-tells-devs-no-more-hand-written-code-to-adopt-an-ai-first-production-model/"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 2,
+      "title": "实时软体切割剥离仿真",
+      "sum": "KAIST 的 OmniBody 用椭球粒子、局部 XPBD 约束与 GPU 并行实现可形变可破坏物体实时仿真。",
+      "ta": "无需全局求解器与重网格化，对破坏类特效与程序化碎裂的实时方案有直接参考价值。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/this-soft-body-simulation-can-cut-peel-break-objects-in-real-time/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 手绘质感动画剧集",
+      "sum": "BONI IS SCARED 用 Substance 3D Painter、Blender 与 Marvelous Designer 制作反乌托邦惊悚动画，含自定义 Geometry Nodes 做线缆与雪。",
+      "ta": "Geometry Nodes 做线缆/雪的程序化思路可迁移到植被与场景散布工具。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/creating-a-thriller-animated-series-with-hand-drawn-textures-in-blender/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "真实物体影子玩平台跳跃",
+      "sum": "导演 Tee Ken Ng 展示混合现实游戏 Plato，用现实物体投影作为玩法元素。",
+      "ta": "影子识别与投影对齐的交互思路，对 AR 类玩法原型有启发。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/this-platformer-lets-you-use-shadows-of-real-life-objects-to-play/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini 写实瀑布特效教程",
+      "sum": "Arbaz Malik 分享 Houdini 写实瀑布 VFX 的完整搭建讲解与工程文件。",
+      "ta": "流体与粒子分层思路可对照 Niagara 流体实现做迁移参考。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/how-to-create-realistic-waterfall-vfx-in-houdini/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "拆城建停车场游戏抢先体验",
+      "sum": "Car Park Capital 上线抢先体验，玩法是拆房毁绿建停车场。",
+      "ta": "与 TA 工作无直接关联，行业速览。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/this-game-where-you-replace-an-entire-city-with-shiny-parking-lots-is-out-in-early-access/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "毛线等距城市建造游戏",
+      "sum": "Cotton City 让玩家用毛线质感搭建等距城市，含桥梁道路房屋与树木。",
+      "ta": "等距植被与场景摆放的视觉风格参考，速览即可。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/srochet-your-own-cozy-isometric-city-with-cotton-in-this-cute-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "寂静岭将推二三波作品",
+      "sum": "系列制作人称 Konami 正规划第二、第三波寂静岭游戏项目。",
+      "ta": "纯行业动向，与 TA 技术工作无关。",
+      "src": "80 Level · 10-12",
+      "url": "https://80.lv/articles/silent-hill-producer-says-konami-plans-second-and-third-waves-of-games/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -357,15 +449,6 @@ window.INTEL_RECENT = {
       "ta": "UV工具链重大更新，场景级UV管理与管线支持值得关注。",
       "src": "80 Level · 10-08",
       "url": "https://80.lv/articles/rizomuv-2027-introduces-faster-unfolding-live-updates-full-ui-customization/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender一键布尔切割保四边面",
-      "sum": "Boolean Master插件一键实现布尔式切割并保持干净四边面拓扑。",
-      "ta": "建模拓扑工具，对硬表面与程序化资产工作流有实用价值。",
-      "src": "80 Level · 10-08",
-      "url": "https://80.lv/articles/blender-tool-for-boolean-style-cuts-with-clean-quad-topology/"
     },
     {
       "cat": "flow",
@@ -1736,87 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "粒子特效风格化参考，速览即可。",
       "src": "80 Level · 09-28",
       "url": "https://80.lv/articles/take-a-look-at-this-trippy-graphite-pencil-particle-fx/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "免费日常动作动捕包",
-      "sum": "免费动捕动画包，包含遛狗、刷牙、开车、喝咖啡等日常动作。",
-      "ta": "可直接用于角色动画原型，速览下载。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/download-this-free-pack-of-mocap-animations-with-everyday-actions/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "面部动画拓扑大师课",
-      "sum": "Nur Diker Köksal 展示情绪化老妇面部动画测试，聚焦拓扑。",
-      "ta": "面部拓扑与表情动画参考，速览。",
-      "src": "80 Level · 09-28",
-      "url": "https://80.lv/articles/facial-animation-test-with-very-emotional-old-lady/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "微软三年裁撤逾五千岗",
-      "sum": "微软 CEO 称 Xbox 在「精简」，三年裁员超 5750 人并关闭多家工作室。",
-      "ta": "行业收缩信号，关注对引擎与工具团队预算的潜在影响。",
-      "src": "Game Developer · 09-28",
-      "url": "https://www.gamedeveloper.com/production/microsoft-ceo-says-xbox-is-streamlining-after-laying-off-5-750-workers-in-three-years"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Suri 第七音符定档",
-      "sum": "Suri: The Seventh Note 将于 10 月 30 日登陆 PS5，历时四年开发。",
-      "ta": "独立游戏视觉风格参考，速览。",
-      "src": "PlayStation Blog · 09-28",
-      "url": "https://blog.playstation.com/2026/09/28/suri-the-seventh-note-launches-oct-30-on-ps5/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多时相高斯泼溅融合方案",
-      "sum": "ChronoFuseGS 融合多个独立训练的高斯泼溅模型，处理场景随时间变化的重建。",
-      "ta": "植被季节变化、场景迭代重建可参考此多时相融合思路，值得关注其 per-splat 持久化机制。",
-      "src": "arXiv · cs.GR · 09-25",
-      "url": "https://arxiv.org/abs/2609.31339v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "扩散模型缓存体积阴影",
-      "sum": "DiffusionShadow 用扩散模型缓存阴影，加速隐式神经表示的高级光照体积渲染。",
-      "ta": "体积渲染实时化是 Niagara 流体/云雾特效的痛点，此缓存思路对实时体积光照有参考价值。",
-      "src": "arXiv · cs.GR · 09-25",
-      "url": "https://arxiv.org/abs/2609.30658v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "生成轨迹的感知距离度量",
-      "sum": "FoMo 提出将生成轨迹的分叉时刻作为感知距离度量。",
-      "ta": "纯生成模型评估方法，原文未涉及游戏/实时/3D，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.25716"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "竞技环境下的LLM评测",
-      "sum": "Game Arena 提出在竞争性游戏环境中评测大语言模型的策略能力。",
-      "ta": "属 LLM 评测基准，与 TA 渲染/工具管线无直接关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.31473"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Demogorgon皮肤材质Lookdev复盘",
-      "sum": "作者复盘《怪奇物语》Demogorgon的薄苍白黏液皮肤材质，强调位移不等于真实感。",
-      "ta": "对材质/Shader TA有直接参考：位移与光照配合的写实皮肤lookdev思路。",
-      "src": "80 Level · 09-25",
-      "url": "https://80.lv/articles/exploring-thin-pale-slimy-skin-texture-by-recreating-the-demogorgon-from-stranger-things/"
     }
   ]
 };
