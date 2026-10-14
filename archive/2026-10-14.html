@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TA 技术情报 · 为留存而读</title>
+<style>
+  :root{
+    --paper:#f7f5f0;
+    --card:#fffefb;
+    --ink:#23211c;
+    --sub:#6f6a5e;
+    --hint:#a8a294;
+    --line:#e7e2d6;
+    --line2:#d8d2c4;
+    --hi:#c2452f;
+    --mid:#c98a1e;
+    --lo:#5f8a3a;
+    --save:#9a6cff;
+    --saveink:#5b3ec9;
+    --c-x:#8a4fb0;
+    --font:"Songti SC","Source Han Serif SC",Georgia,"PingFang SC","Microsoft YaHei",serif;
+    --sans:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+
+  .top{position:sticky;top:0;z-index:20;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top-in{max-width:760px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px}
+  .mark{width:30px;height:30px;border-radius:8px;background:var(--ink);color:var(--paper);font-family:var(--font);display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+  .top h1{font-family:var(--font);font-size:18px;font-weight:600;letter-spacing:.5px}
+  .top .meta{font-size:12px;color:var(--hint);margin-top:1px}
+  .savebtn{margin-left:auto;font-size:12.5px;color:var(--saveink);background:#f1ecff;border:1px solid #e2d8ff;padding:6px 13px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:5px}
+  .savebtn b{font-weight:600}
+
+  .stalebar{max-width:760px;margin:14px auto 0;padding:0 22px}
+  .stalebox{background:#fbe7e3;border:1px solid #eebcb0;border-radius:6px;padding:11px 15px;font-family:var(--sans);font-size:12.5px;color:#9a3c25;line-height:1.6}
+  .stalebox b{font-weight:600}
+
+  .filters{max-width:760px;margin:0 auto;padding:16px 22px 4px;display:flex;gap:8px;flex-wrap:wrap}
+  .f{font-size:13px;color:var(--sub);background:transparent;border:1px solid var(--line2);padding:6px 14px;border-radius:18px;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:6px}
+  .f:hover{border-color:var(--ink);color:var(--ink)}
+  .f.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .f .dotmini{width:7px;height:7px;border-radius:50%}
+  .f .num{font-size:11px;opacity:.6}
+
+  .stream{max-width:760px;margin:0 auto;padding:18px 22px 80px}
+
+  .daysum{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--ink);border-radius:4px;padding:18px 20px;margin-bottom:26px}
+  .daysum .k{font-family:var(--sans);font-size:11px;letter-spacing:1.5px;color:var(--hint);text-transform:uppercase;margin-bottom:8px}
+  .daysum p{font-family:var(--font);font-size:16px;line-height:1.85;color:var(--ink)}
+  .daysum em{font-style:normal;background:linear-gradient(transparent 62%,#fff0a6 62%);padding:0 2px}
+
+  .secline{display:flex;align-items:center;gap:10px;margin:32px 0 14px}
+  .secline .dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+  .secline .lbl{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.5px;color:var(--ink)}
+  .secline .cnt{font-family:var(--sans);font-size:11px;color:var(--hint)}
+  .secline .ln{flex:1;height:1px;background:var(--line)}
+
+  .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px 16px 22px;margin-bottom:14px;transition:.18s;overflow:hidden}
+  .card:hover{border-color:var(--line2);transform:translateY(-1px)}
+  .card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+  .card.hi::before{background:var(--hi)} .card.mid::before{background:var(--mid)} .card.lo::before{background:var(--lo)}
+
+  .c-row1{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  .imp{font-family:var(--sans);font-size:10.5px;font-weight:600;padding:2px 7px;border-radius:4px;letter-spacing:.5px;display:inline-flex;align-items:center;gap:4px}
+  .imp::before{content:"";width:6px;height:6px;border-radius:50%}
+  .imp.hi{color:var(--hi);background:#f7e7e3}.imp.hi::before{background:var(--hi)}
+  .imp.mid{color:var(--mid);background:#f7eed8}.imp.mid::before{background:var(--mid)}
+  .imp.lo{color:var(--lo);background:#e9f1df}.imp.lo::before{background:var(--lo)}
+  .chtag{font-family:var(--sans);font-size:11px;color:var(--sub);display:inline-flex;align-items:center;gap:5px}
+  .chtag .cdot{width:7px;height:7px;border-radius:50%;flex:0 0 auto}
+  .src{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+  .xhandle{font-family:var(--sans);font-size:11.5px;font-weight:600;color:var(--c-x);display:inline-flex;align-items:center;gap:5px}
+  .xhandle::before{content:"𝕏";font-size:12px;color:var(--c-x);font-weight:700}
+  .xwho{font-family:var(--sans);font-size:11px;color:var(--hint);margin-left:auto}
+
+  .c-title{font-family:var(--font);font-size:20px;font-weight:600;line-height:1.4;letter-spacing:.3px}
+  .c-sum{font-family:var(--font);font-size:15px;line-height:1.8;color:#403c33;margin-top:8px}
+
+  .c-ta{margin-top:12px;background:#f3f0e8;border-radius:5px;padding:10px 13px;display:flex;gap:9px}
+  .c-ta .lab{font-family:var(--sans);font-size:11px;font-weight:600;color:#7a5a14;background:#f0e2bf;border-radius:4px;padding:2px 7px;height:fit-content;flex:0 0 auto;letter-spacing:.5px}
+  .c-ta .txt{font-family:var(--sans);font-size:13px;line-height:1.65;color:#5a5142}
+
+  .c-foot{display:flex;align-items:center;margin-top:13px;padding-top:11px;border-top:1px dashed var(--line2)}
+  .keep{font-family:var(--sans);font-size:12.5px;color:var(--sub);background:transparent;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:3px 0}
+  .keep .ic{width:15px;height:15px;border:1.5px solid var(--hint);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:.15s}
+  .keep:hover .ic{border-color:var(--saveink)}
+  .keep.kept .ic{background:var(--save);border-color:var(--save)}
+  .keep.kept .ic::after{content:"✓";color:#fff;font-size:11px}
+  .keep.kept{color:var(--saveink)}
+  .link{margin-left:auto;font-family:var(--sans);font-size:12px;color:var(--hint);text-decoration:none}
+  .link:hover{color:var(--ink)}
+
+  .review{position:fixed;right:0;top:0;bottom:0;width:340px;max-width:88vw;background:var(--card);border-left:1px solid var(--line2);transform:translateX(100%);transition:.28s;z-index:30;display:flex;flex-direction:column}
+  .review.open{transform:none;box-shadow:-12px 0 40px rgba(0,0,0,.08)}
+  .rv-h{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center}
+  .rv-h h3{font-family:var(--font);font-size:16px;font-weight:600}
+  .rv-h .x{margin-left:auto;cursor:pointer;color:var(--hint);font-size:20px;line-height:1;background:none;border:none}
+  .rv-note{font-family:var(--sans);font-size:11.5px;color:var(--hint);padding:10px 20px;line-height:1.6;border-bottom:1px solid var(--line)}
+  .rv-list{flex:1;overflow-y:auto;padding:8px 14px}
+  .rv-item{border:1px solid var(--line);border-radius:5px;padding:11px 12px;margin-bottom:9px}
+  .rv-item .t{font-family:var(--font);font-size:14px;font-weight:600;line-height:1.4}
+  .rv-item .when{font-family:var(--sans);font-size:11px;color:var(--lo);margin-top:5px;display:flex;align-items:center;gap:5px}
+  .rv-empty{font-family:var(--sans);font-size:13px;color:var(--hint);text-align:center;padding:40px 20px;line-height:1.7}
+  .mask{position:fixed;inset:0;background:rgba(35,33,28,.18);z-index:25;opacity:0;pointer-events:none;transition:.2s}
+  .mask.on{opacity:1;pointer-events:auto}
+
+  .srcbar{max-width:760px;margin:0 auto;padding:0 22px}
+  .srcbox{background:#f1ede4;border:1px solid var(--line);border-radius:6px;padding:13px 16px;font-family:var(--sans);font-size:11.5px;color:var(--sub);line-height:1.7}
+  .srcbox b{color:var(--ink);font-weight:600}
+  .srcbox .miss{color:#b5502f}
+
+  .end{text-align:center;font-family:var(--sans);font-size:11.5px;color:var(--hint);margin-top:24px;line-height:1.7}
+  @media(max-width:560px){.c-title{font-size:18px}.daysum p{font-size:15px}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <div class="mark">識</div>
+    <div>
+      <h1>TA 技术情报</h1>
+      <div class="meta" id="metaLine">为留存而读，不为刷新而读</div>
+    </div>
+    <button class="savebtn" id="openRv">复习清单 <b id="rvCount">0</b></button>
+  </div>
+</div>
+
+<div class="stalebar" id="staleBar" style="display:none">
+  <div class="stalebox"><b>X 登录态已过期</b> —— 本期 X 动态沿用上次抓取的数据。需运行 <b>x_login.py</b> 重新登录一次，下次即可自动更新。</div>
+</div>
+
+<div class="filters" id="filters"></div>
+
+<main class="stream" id="stream"></main>
+
+<div class="mask" id="mask"></div>
+<aside class="review" id="review">
+  <div class="rv-h"><h3>复习清单</h3><button class="x" id="closeRv">×</button></div>
+  <div class="rv-note">收藏的卡片会进入间隔重复队列：1天 → 7天 → 14天 → 30天。这是和普通日报最大的区别——读过不等于记住。</div>
+  <div class="rv-list" id="rvList"><div class="rv-empty" id="rvEmpty">还没有收藏。<br>读到"该停下精读"的卡片时，点一下"收藏入复习"。</div></div>
+</aside>
+
+<!-- 数据层：自动化每天只重写这一个文件 -->
+<script>
+// daily-intel 数据层 —— 由 run.py 自动生成，请勿手改。
+// 骨架 index.html 永不动；此文件每天重写。
+// 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
+
+window.INTEL_DATA = {
+  "date": "2026年10月14日 · 周三",
+  "tagline": "为留存而读，不为刷新而读",
+  "todayHtml": "今天值得停下精读的有：<em>全UE流程做手绘风动画</em>。其余按重要性自动排序，红色优先。",
+  "channels": [
+    {
+      "key": "x",
+      "name": "X 动态",
+      "color": "#8a4fb0",
+      "desc": "你关注的大佬 · 近期本人发布"
+    },
+    {
+      "key": "tech",
+      "name": "游戏技术",
+      "color": "#6a52a3",
+      "desc": "虚幻 / 实时渲染 / 美术工作流"
+    },
+    {
+      "key": "flow",
+      "name": "TA 工作流",
+      "color": "#b06a2e",
+      "desc": "Tech-Artists 论坛 · 工具/管线实操"
+    },
+    {
+      "key": "biz",
+      "name": "游戏行业",
+      "color": "#3f8a6e",
+      "desc": "工作室 / 商业 / 发行"
+    },
+    {
+      "key": "gfx",
+      "name": "图形学前沿",
+      "color": "#2f7d8a",
+      "desc": "arXiv / SIGGRAPH 论文"
+    },
+    {
+      "key": "ai",
+      "name": "AI 技术",
+      "color": "#3b6fb0",
+      "desc": "仅保留与游戏/实时/3D 相关"
+    }
+  ],
+  "cards": [
+    {
+      "cat": "x",
+      "imp": "hi",
+      "rank": 2,
+      "title": "Looman加Nanite优化课",
+      "sum": "Tom Looman 给优化课新增两节 Nanite 课：拆解 kitbash 网格 overdraw 与 500 个空 Shading Bin 修复。",
+      "ta": "原文是 Nanite VisBuffer/overdraw 与 Shading Bin 优化实战，与你正在做的 Nanite A/B 性能对比直接相关。",
+      "handle": "@t_looman",
+      "who": "Tom Looman · 06-25",
+      "url": "https://x.com/t_looman/status/2070126139482247654"
+    },
+    {
+      "cat": "x",
+      "imp": "hi",
+      "title": "UE5.8正式发布带AI集成",
+      "sum": "UE5.8 上线，终端内 Claude/Codex 经 MCP 全控编辑器，可摆放道具、程序化生成城市、调灯光。",
+      "ta": "原文是 UE5.8 发布及 AI 接入编辑器，含程序化生成与 MCP 控制，与你用 MCP 跑 UE 工作流直接相关。",
+      "handle": "@SebAaltonen",
+      "who": "转发 · 06-17",
+      "url": "https://x.com/Grummz/status/2067322819814527179"
+    },
+    {
+      "cat": "x",
+      "imp": "hi",
+      "title": "UE5.8实验性网格地形",
+      "sum": "UE5.8 新增实验性 Mesh Terrain，不再受限高度图，支持世界分区流送与协作分块。",
+      "ta": "原文是 UE5.8 Mesh Terrain 实验特性，摆脱 heightfield 限制，与你的地形导入/植被填充管线直接相关。",
+      "handle": "@SebAaltonen",
+      "who": "转发 · 06-17",
+      "url": "https://x.com/UnrealEngine/status/2067249231887225179"
+    },
+    {
+      "cat": "x",
+      "imp": "hi",
+      "title": "单图生成完整3D几何",
+      "sum": "World Tracing：输入一张图，物体/场景/动态世界以完整几何浮现，每点追溯回像素。",
+      "ta": "原文是单图到完整3D几何的生成，若稳定，对快速搭场景白模和资产原型有直接价值。",
+      "handle": "@BenMildenhall",
+      "who": "Ben Mildenhall · 06-12",
+      "url": "https://x.com/HaoZhang623/status/2065455226791002472"
+    },
+    {
+      "cat": "x",
+      "imp": "mid",
+      "title": "World Labs放三篇3D生成",
+      "sum": "Ben Mildenhall 团队一次分享三篇新论文，借大规模生成模型与 2D 先验生成 3D 内容。",
+      "ta": "原文是借 2D 先验做 3D 内容生成的三篇研究，与你关注的程序化/AI 辅助资产生成方向相关。",
+      "handle": "@BenMildenhall",
+      "who": "Ben Mildenhall · 06-12",
+      "url": "https://x.com/theworldlabs/status/2065466830052098058"
+    },
+    {
+      "cat": "x",
+      "imp": "mid",
+      "title": "Epic布道师呼吁设性能岗",
+      "sum": "Ari Arnbjörnsson 在 Unreal Fest 见到职衔含 Performance 的人，呼吁工作室专设性能优化岗。",
+      "ta": "原文是 Epic 布道师主张把性能优化制度化、贯穿研发全程，做引擎性能调优时值得参考其团队配置观点。",
+      "handle": "@flassari",
+      "who": "Ari Arnbjörnsson · 06-24",
+      "url": "https://x.com/flassari/status/2069690018059211176"
+    },
+    {
+      "cat": "x",
+      "imp": "mid",
+      "title": "Codex群驱动机器人研究",
+      "sum": "Jim Fan 发布 ENPIRE：给 8 个 Codex agent 一队机器人加 GPU 和 token 预算自主解任务。",
+      "ta": "原文是 AI agent 集群自主驱动真实机器人的实验，关注 AI 进开发/生产管线的可看其调度思路。",
+      "handle": "@DrJimFan",
+      "who": "Jim Fan · 06-16",
+      "url": "https://x.com/DrJimFan/status/2066921736369766762"
+    },
+    {
+      "cat": "x",
+      "imp": "lo",
+      "title": "Gemini视频模型登顶Arena",
+      "sum": "Gemini Omni Flash 在 Video Arena 文生/图生视频双榜登顶，文生视频大幅领先 Veo 3.1。",
+      "ta": "原文是视频生成模型榜单更新，视频生成迭代速度可作为 AI 生成素材能力上限的参照。",
+      "handle": "@poolio",
+      "who": "Ben Poole · 06-11",
+      "url": "https://x.com/arena/status/2065112147093545333"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "全UE流程做手绘风动画",
+      "sum": "Dardo Studios用Control Rig、Sequencer、Lumen在UE内完成整部动画，无Maya到引擎管线。",
+      "ta": "值得看小团队如何用Control Rig+Sequencer替代传统动画管线，Lumen与投影手绘叠加的合成思路可复用。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/how-this-painterly-animated-short-was-rigged-animated-entirely-in-unreal-engine/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini曲线生成服装工具",
+      "sum": "新工具Fibric基于曲线在Houdini中创建服装与布料。",
+      "ta": "程序化布料生成思路可借鉴到植被/装饰物的曲线驱动建模流程。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/new-curve-based-clothing-garment-creation-houdini-tool-released/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender自动UV展开插件",
+      "sum": "免费插件UVgami可快速自动展开UV，支持浏览器试用。",
+      "ta": "批量资产UV自动化对植被/道具流水线有直接提效价值。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/this-free-blender-add-on-quickly-automates-uv-unwrapping/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender单对象万级撤销",
+      "sum": "Sculpt Rewind插件把ZBrush的History Recall Brush带入Blender，每对象可撤销万次。",
+      "ta": "雕刻阶段的历史回溯能力，对高模细节迭代有用。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/undo-history-for-each-blender-object-10-000-times-with-this-add-on/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "19个免费万圣节动捕",
+      "sum": "Anderson Rohr发布僵尸、怪物、吸血鬼等19个免费动捕动画包。",
+      "ta": "免费动捕资源可作原型或NPC动画填充。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/get-ready-for-halloween-with-these-19-free-mocap-animations/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Mystery House经典重制",
+      "sum": "Guillotine Games谈用现代工具重制1980年Apple II经典Mystery House 3D的挑战。",
+      "ta": "老游戏视觉语言现代化重制的案例参考。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/reviving-mystery-house-roberta-and-ken-williams-1980-apple-ii-classic/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "权游S3视效解析",
+      "sum": "Rodeo FX分享《龙之家族》第三季视效拆解，共制作超45000帧。",
+      "ta": "大规模影视VFX流程与帧量级参考。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/rodeo-fx-shared-their-house-of-the-dragon-season-3-vfx-breakdown/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender低多边形秋景",
+      "sum": "Vossadova分享Blender制作的风格化低多边形秋季场景与变色龙。",
+      "ta": "风格化场景配色与低模造型参考。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/stylized-low-poly-fall-scene-with-a-chameleon-made-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "实时瀑布建造游戏",
+      "sum": "Mogmek的Waterfalls Dream让玩家实时创建和编辑风格化瀑布。",
+      "ta": "实时流体/瀑布编辑交互设计可作参考。",
+      "src": "80 Level · 10-13",
+      "url": "https://80.lv/articles/this-game-allows-you-to-create-your-own-stylized-waterfalls-with-realistic-behavior/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "精灵动画关键帧插值",
+      "sum": "低成本深度学习方案为精灵动画自动生成中间帧，避免写实插值的平滑伪影。",
+      "ta": "针对像素/精灵内容的插值方法，对2D游戏动画工具链有参考价值。",
+      "src": "arXiv · cs.GR · 10-12",
+      "url": "https://arxiv.org/abs/2610.16423v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "相机可控图生视频框架",
+      "sum": "Gen Through the Lens通过跨坐标条件融合实现物理一致的相机运镜图生视频。",
+      "ta": "相机可控生成对预演/虚拟拍摄的镜头设计有潜在价值。",
+      "src": "arXiv · cs.GR · 10-11",
+      "url": "https://arxiv.org/abs/2610.15900v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "跨族运动补全解耦尺度",
+      "sum": "Cepheid解耦尺度与结构，解决稀疏到稠密运动补全的跨几何族泛化问题。",
+      "ta": "网格运动补全的泛化思路，对角色/形变动画工具有启发。",
+      "src": "arXiv · cs.GR · 10-13",
+      "url": "https://arxiv.org/abs/2610.18871v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态抓取序列合成",
+      "sum": "Learning Dynamic Grasping合成可信的4D手-物抓取序列，用于角色动画与XR。",
+      "ta": "手物交互合成对角色动画与VR交互有直接参考。",
+      "src": "arXiv · cs.GR · 10-10",
+      "url": "https://arxiv.org/abs/2610.14848v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "骨骼关节球面四边形化",
+      "sum": "从无序方向向量集构造球面简单四边形化，用于骨骼关节参数化体积模型。",
+      "ta": "参数化体积建模的拓扑构造方法，对程序化角色/关节建模有参考。",
+      "src": "arXiv · cs.GR · 10-13",
+      "url": "https://arxiv.org/abs/2610.17803v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "CAD图纸全景符号识别",
+      "sum": "TempFit用模板拟合方法解决CAD图纸的全景符号识别问题。",
+      "ta": "图纸符号识别思路可迁移到场景资产/图元的自动解析。",
+      "src": "arXiv · cs.GR · 10-13",
+      "url": "https://arxiv.org/abs/2610.17776v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "投影球面行走等距嵌入",
+      "sum": "WoAP将嵌入视为求解变量，改进Projected Walk on Spheres的表面PDE求解。",
+      "ta": "几何PDE求解器改进，对程序化纹理/距离场有潜在价值。",
+      "src": "arXiv · cs.GR · 10-11",
+      "url": "https://arxiv.org/abs/2610.15573v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "可加工性拓扑优化",
+      "sum": "用裁剪神经场做面向减材加工的拓扑优化，减少点铣加工。",
+      "ta": "制造约束下的几何优化思路，与游戏资产关联较弱。",
+      "src": "arXiv · cs.GR · 10-11",
+      "url": "https://arxiv.org/abs/2610.15301v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "全息感知目标函数",
+      "sum": "HoOPOE提出全息优化的感知目标函数，缓解计算机生成全息的散斑伪影。",
+      "ta": "全息显示方向，与实时渲染管线关联有限。",
+      "src": "arXiv · cs.GR · 10-12",
+      "url": "https://arxiv.org/abs/2610.17474v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "内容编辑式版式生成",
+      "sum": "CELG提出内容编辑式条件版式生成，扩展内容感知版式生成。",
+      "ta": "图形设计版式生成，与游戏UI自动化有弱关联。",
+      "src": "arXiv · cs.GR · 10-13",
+      "url": "https://arxiv.org/abs/2610.17905v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "LLM协同设计空间概念",
+      "sum": "Co-DSL让用户与LLM协同设计可复用的空间概念用于版式生成。",
+      "ta": "人机协同的布局生成框架，可参考到关卡/场景布局工具。",
+      "src": "arXiv · cs.GR · 10-11",
+      "url": "https://arxiv.org/abs/2610.15290v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "机器人Real2Sim交互工具",
+      "sum": "RoboSimStudio提供交互式工具包，快速实现机器人操作任务的Real2Sim。",
+      "ta": "物理仿真求解器选择与接触建模，与游戏物理有间接参考。",
+      "src": "arXiv · cs.GR · 10-13",
+      "url": "https://arxiv.org/abs/2610.18835v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "可执行3D世界建模基准",
+      "sum": "ExeWorldBench基准评测基于代码的可执行3D世界建模。",
+      "ta": "可执行3D世界生成评测，对程序化世界生成方向有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.15166"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "多人世界模型分层通信",
+      "sum": "Multics提出带分层通信的生成式多人世界模型。",
+      "ta": "多人世界模型对多人游戏状态预测有潜在启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.17201"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "4D一致生成几何修复",
+      "sum": "GeoFix通过几何修复实现4D一致生成。",
+      "ta": "4D一致性生成对动态资产/序列生成有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.14293"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "高分辨率扩散注意力优化",
+      "sum": "AReA提出自适应感受野注意力，提升高分辨率扩散Transformer效率。",
+      "ta": "注意力效率优化思路对高分辨率生成/渲染有借鉴意义。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.17227"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型自参考优势学习",
+      "sum": "SALD提出自参考优势学习用于扩散模型。",
+      "ta": "扩散训练方法，与游戏资产生成间接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.01496"
+    }
+  ],
+  "flashbackTitle": "",
+  "sources": {
+    "ok": [
+      "Unreal Engine",
+      "NVIDIA",
+      "Blender 开发博客",
+      "PlayStation Blog",
+      "AMD GPUOpen",
+      "arXiv · cs.GR",
+      "HuggingFace",
+      "80 Level",
+      "Game Developer",
+      "X（沿用上次本机抓取）"
+    ],
+    "missed": "未覆盖：Tech-Artists。"
+  },
+  "xStale": false
+};
+
+</script>
+
+<script>
+// ============ 渲染引擎：读 INTEL_DATA 动态生成页面 ============
+(function(){
+  const D = window.INTEL_DATA || {cards:[],channels:[],sources:{ok:[],missed:""}};
+  const esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const impLabel = {hi:"停下精读", mid:"值得关注", lo:"速览"};
+
+  // 顶部日期
+  document.getElementById('metaLine').textContent = (D.date? D.date+" · " : "") + (D.tagline||"为留存而读，不为刷新而读");
+
+  // X 过期提示
+  if(D.xStale) document.getElementById('staleBar').style.display = 'block';
+
+  // 频道定义查表（用于卡片上的领域小标签）
+  const chMap = {};
+  D.channels.forEach(ch=>{ chMap[ch.key]=ch; });
+
+  // ---- 主排序：重要性优先（hi>mid>lo），同档内按日期新→旧 ----
+  // total / 频道计数都只统计「今日」卡片，回顾(flashback)卡不计入。
+  const total = D.cards.filter(c=>!c.flashback).length;
+  const impRank = {hi:0, mid:1, lo:2};
+  // 从 src / who 里提取 "MM-DD" 做日期排序键；无日期的排在同档末尾
+  function dateKey(c){
+    const s = (c.who||c.src||"");
+    const m = s.match(/(\d{1,2})-(\d{1,2})/);
+    if(!m) return -1;                       // 无日期：最旧
+    return parseInt(m[1],10)*100 + parseInt(m[2],10);
+  }
+  const ordered = D.cards.map((c,i)=>({c,i})).sort((a,b)=>{
+    const ra=impRank[a.c.imp]??1, rb=impRank[b.c.imp]??1;
+    if(ra!==rb) return ra-rb;               // 1) 重要性档：hi>mid>lo
+    // 2) 「今日头条」手动置顶：rank 越小越靠前（没填 rank 的视为很大）
+    const ka = (a.c.rank==null?9999:a.c.rank), kb=(b.c.rank==null?9999:b.c.rank);
+    if(ka!==kb) return ka-kb;
+    const da=dateKey(a.c), db=dateKey(b.c);
+    if(da!==db) return db-da;               // 3) 日期新→旧
+    return a.i-b.i;                          // 4) 原始顺序兜底（稳定）
+  }).map(x=>x.c);
+
+  // 频道计数（过滤条仍按频道，保留领域检索入口）
+  const byCat = {};
+  D.cards.forEach(c=>{ if(!c.flashback) (byCat[c.cat] = byCat[c.cat]||[]).push(c); });
+  const activeChannels = D.channels.filter(ch => (byCat[ch.key]||[]).length>0);
+
+  // 重要性分档计数（用于分档分隔线）
+  const impLabelMap = {hi:"停下精读", mid:"值得关注", lo:"速览快讯"};
+  const impDescMap  = {hi:"今天最该花时间的几条", mid:"扫到再决定要不要展开", lo:"知道有这回事即可"};
+  const impColorMap = {hi:"#c2452f", mid:"#c98a1e", lo:"#5f8a3a"};
+
+  // ---- 过滤条 ----
+  const filters = document.getElementById('filters');
+  let fhtml = `<button class="f on" data-f="all">全部 <span class="num">${total}</span></button>`;
+  activeChannels.forEach(ch=>{
+    fhtml += `<button class="f" data-f="${ch.key}"><span class="dotmini" style="background:${ch.color}"></span>${esc(ch.name)} <span class="num">${byCat[ch.key].length}</span></button>`;
+  });
+  fhtml += `<button class="f" data-f="kept">★ 已收藏</button>`;
+  filters.innerHTML = fhtml;
+
+  // ---- 卡片渲染 ----
+  function cardHtml(c){
+    const imp = c.imp||"mid";
+    const ch = chMap[c.cat] || {name:"", color:"#a8a294"};
+    // 领域小标签：色点 + 频道名，放在重要性徽标右边，让一眼知道这条属于哪个领域
+    const chTag = `<span class="chtag"><span class="cdot" style="background:${ch.color}"></span>${esc(ch.name)}</span>`;
+    // 来源行：X 卡片用 handle 样式，网页源用 .src
+    let metaRow;
+    if(c.handle){
+      metaRow = `<span class="xhandle">${esc(c.handle)}</span><span class="xwho">${esc(c.who||"")}</span>`;
+    }else{
+      metaRow = `<span class="src">${esc(c.src||"")}</span>`;
+    }
+    return `<article class="card ${imp}${c.flashback?' isFlashback':''}" data-cat="${c.cat}" data-flashback="${c.flashback?1:0}">
+      <div class="c-row1"><span class="imp ${imp}">${impLabel[imp]||"值得关注"}</span>${chTag}${metaRow}</div>
+      <div class="c-title">${esc(c.title)}</div>
+      <div class="c-sum">${esc(c.sum)}</div>
+      <div class="c-ta"><span class="lab">TA 视角</span><span class="txt">${esc(c.ta)}</span></div>
+      <div class="c-foot"><button class="keep"><span class="ic"></span>收藏入复习</button><a class="link" href="${esc(c.url||'#')}" target="_blank">原文 ↗</a></div>
+    </article>`;
+  }
+
+  const stream = document.getElementById('stream');
+  let html = "";
+
+  // 今日一句
+  if(D.todayHtml){
+    html += `<div class="daysum" data-cat="sum"><div class="k">今日一句</div><p>${D.todayHtml}</p></div>`;
+  }
+
+  // 按重要性分档渲染（默认视图）：hi → mid → lo，每档一条分隔线，档内已按日期新→旧
+  // 回顾卡片(flashback)不参与三档，单独成栏放最后。
+  ["hi","mid","lo"].forEach(level=>{
+    const list = ordered.filter(c=>!c.flashback && (c.imp||"mid")===level);
+    if(!list.length) return;
+    html += `<div class="secline" data-imp="${level}"><span class="dot" style="background:${impColorMap[level]}"></span><span class="lbl">${impLabelMap[level]}</span><span class="cnt">${list.length} 条 · ${impDescMap[level]}</span><span class="ln"></span></div>`;
+    list.forEach(c=> html += cardHtml(c));
+  });
+
+  // 回顾栏：今日新增少时，run.py 会补几条「前几天最爆的」并打 flashback 标记
+  const fbList = ordered.filter(c=>c.flashback);
+  if(fbList.length){
+    const fbTitle = D.flashbackTitle || "来回顾下前几天的";
+    html += `<div class="secline flashback" data-imp="flashback"><span class="dot" style="background:#9a6cff"></span><span class="lbl">${esc(fbTitle)}</span><span class="cnt">${fbList.length} 条 · 趁手感还在，复习一遍</span><span class="ln"></span></div>`;
+    fbList.forEach(c=> html += cardHtml(c));
+  }
+
+  // 信息源说明
+  if(D.sources){
+    const ok = (D.sources.ok||[]).map(esc).join(" · ");
+    html += `<div class="srcbar"><div class="srcbox"><b>本期信息源（${(D.sources.ok||[]).length} 个抓取成功）：</b>${ok}`;
+    if(D.sources.missed) html += `<br><span class="miss">未覆盖：${esc(D.sources.missed)}</span>`;
+    html += `</div></div>`;
+  }
+
+  html += `<div class="end">今日 ${total} 条 · 按重要性排序，最该停下的在最前；卡片上的色点标注所属领域<br>内容均来自原媒体，本站仅作摘要整理与回链</div>`;
+  stream.innerHTML = html;
+
+  // ============ 交互：过滤 / 收藏 / 复习抽屉（与原版逻辑一致） ============
+  const cards = ()=>[...document.querySelectorAll('.card')];
+  const seclines = ()=>[...document.querySelectorAll('.secline')];
+  const srcbar = document.querySelector('.srcbar');
+  const daysum = document.querySelector('.daysum');
+
+  filters.addEventListener('click',e=>{
+    const b=e.target.closest('.f'); if(!b)return;
+    [...filters.children].forEach(x=>x.classList.toggle('on',x===b));
+    const f=b.dataset.f;
+    cards().forEach(c=>{
+      const isFb = c.dataset.flashback==='1';
+      let show;
+      if(isFb){
+        // 回顾卡只在「全部」和「已收藏(且已收藏)」视图露出，不混进具体频道筛选
+        show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : false;
+      }else{
+        show = f==='all' ? true : f==='kept' ? c.classList.contains('isKept') : c.dataset.cat===f;
+      }
+      c.style.display = show ? '' : 'none';
+    });
+    // 分隔线是「重要性分档」：只在「全部」视图显示；点频道/已收藏时隐藏，卡片连续平铺
+    seclines().forEach(s=>{ s.style.display = (f==='all') ? 'flex' : 'none'; });
+    if(daysum) daysum.style.display = (f==='all')?'block':'none';
+    if(srcbar) srcbar.style.display = (f==='all')?'block':'none';
+  });
+
+  const rvList=document.getElementById('rvList'), rvEmpty=document.getElementById('rvEmpty'), rvCount=document.getElementById('rvCount');
+  let kept=0;
+  document.querySelectorAll('.keep').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const card=btn.closest('.card');
+      const on=btn.classList.toggle('kept');
+      card.classList.toggle('isKept',on);
+      btn.lastChild.textContent = on? ' 已在复习队列' : '收藏入复习';
+      if(on){
+        kept++;
+        const t=card.querySelector('.c-title').textContent;
+        const div=document.createElement('div');
+        div.className='rv-item'; div.dataset.title=t;
+        div.innerHTML='<div class="t">'+t+'</div><div class="when">● 下次回看：明天</div>';
+        rvList.appendChild(div);
+      }else{
+        kept--;
+        const t=card.querySelector('.c-title').textContent;
+        const it=[...rvList.querySelectorAll('.rv-item')].find(x=>x.dataset.title===t);
+        if(it) it.remove();
+      }
+      rvCount.textContent=kept;
+      rvEmpty.style.display = kept? 'none':'block';
+    });
+  });
+
+  const review=document.getElementById('review'), mask=document.getElementById('mask');
+  const open=()=>{review.classList.add('open');mask.classList.add('on')};
+  const close=()=>{review.classList.remove('open');mask.classList.remove('on')};
+  document.getElementById('openRv').onclick=open;
+  document.getElementById('closeRv').onclick=close;
+  mask.onclick=close;
+})();
+</script>
+</body>
+</html>
