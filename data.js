@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月14日 · 周三",
+  "date": "2026年10月15日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>全UE流程做手绘风动画</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>UE6将整合UEFN与虚幻引擎</em> / <em>GTA6因海量智能NPC延期</em> / <em>Epic迪士尼项目转向AI优先</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,239 +127,196 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
+      "cat": "tech",
       "imp": "hi",
       "rank": 1,
-      "title": "全UE流程做手绘风动画",
-      "sum": "Dardo Studios用Control Rig、Sequencer、Lumen在UE内完成整部动画，无Maya到引擎管线。",
-      "ta": "值得看小团队如何用Control Rig+Sequencer替代传统动画管线，Lumen与投影手绘叠加的合成思路可复用。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/how-this-painterly-animated-short-was-rigged-animated-entirely-in-unreal-engine/"
+      "title": "UE6将整合UEFN与虚幻引擎",
+      "sum": "Epic路线图显示UE6将把虚幻引擎与UEFN合并，官方推出免费UEFN训练营。",
+      "ta": "UE6整合UEFN意味着编辑器与运行时工具链可能统一，植被/程序化工具需提前关注UEFN侧能力边界。",
+      "src": "Unreal Engine · 10-14",
+      "url": "https://www.unrealengine.com/news/uefn-professional-bootcamp-prepare-for-unreal-engine-6"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 2,
+      "title": "GTA6因海量智能NPC延期",
+      "sum": "彭博社披露Rockstar打造最雄心作品，海量智能NPC是GTA6延期原因之一。",
+      "ta": "海量智能NPC对CPU预算、群体AI调度与LOD策略提出极高要求，值得关注其实现取舍。",
+      "src": "80 Level · 10-14",
+      "url": "https://80.lv/articles/enormous-number-of-smart-npcs-was-one-of-reasons-for-gta-6-delay/"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 3,
+      "title": "Epic迪士尼项目转向AI优先",
+      "sum": "报道称Epic旗下星战与漫威射击项目要求大量依赖AI，尤其用于代码与美术创作。",
+      "ta": "若美术生产转向AI优先，TA需重新评估资产管线、材质规范与AI产出的可维护性。",
+      "src": "Game Developer · 10-14",
+      "url": "https://www.gamedeveloper.com/programming/no-more-hand-written-code-epic-s-disney-project-reportedly-shifts-to-ai-first-development"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "GLoD-LVSM连续LOD场景表示",
+      "sum": "提出几何锚定的紧凑场景表示，为大规模视图合成模型提供连续LOD以降低存储与渲染开销。",
+      "ta": "连续LOD与token冗余削减思路，对程序化植被的层级细节与实例化策略有参考价值。",
+      "src": "arXiv · cs.GR · 10-14",
+      "url": "https://arxiv.org/abs/2610.20254v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "VisibilitySplat光线追踪遮挡重光照",
+      "sum": "为3DGS引入显式可见性建模，用稀疏可见性预言机估计透射率加权遮挡以支持重光照与材质光照分解。",
+      "ta": "3DGS重光照与材质分解若成熟，可用于扫描植被资产的光照一致化与材质复用。",
+      "src": "arXiv · cs.GR · 10-14",
+      "url": "https://arxiv.org/abs/2610.19847v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Q-MAGIC生成纯四边形网格",
+      "sum": "提出奇点感知的循环相对偏移token化，实现自回归生成纯四边形网格。",
+      "ta": "纯四边形拓扑生成对建模与重拓扑流程有潜在价值，可关注其拓扑质量与可控性。",
+      "src": "arXiv · cs.GR · 10-14",
+      "url": "https://arxiv.org/abs/2610.19777v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "光谱世界渲染器统一高光谱解混",
+      "sum": "提出统一3D高光谱解混方法，将每个光谱解释为材质特征混合而非仅对渲染图像后处理。",
+      "ta": "材质识别与解混思路或可用于程序化材质分层与扫描资产的材质分类。",
+      "src": "arXiv · cs.GR · 10-14",
+      "url": "https://arxiv.org/abs/2610.19520v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "DiffGIPC可微混合坐标接触动力学",
+      "sum": "提出GPU上的可微混合坐标接触动力学，兼顾高效梯度与非穿透约束。",
+      "ta": "可微接触仿真对布料、植被碰撞与破坏效果的可微调参有潜在借鉴意义。",
+      "src": "arXiv · cs.GR · 10-13",
+      "url": "https://arxiv.org/abs/2610.19091v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "RoboSimStudio交互式Real2Sim工具",
+      "sum": "推出交互式工具包，支持机器人操作任务的快速真实到仿真，涵盖求解器与接触参数选择。",
+      "ta": "接触力学与求解器选择思路对物理交互效果调参有间接参考，非直接游戏向。",
+      "src": "arXiv · cs.GR · 10-13",
+      "url": "https://arxiv.org/abs/2610.18835v2"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "RAR自适应rollout交互世界模型",
+      "sum": "提出速率自适应rollout方法，用于时间一致的交互式世界模型。",
+      "ta": "交互式世界模型的时间一致性若落地，可用于实时预览与程序化生成的动态验证。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.16302"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "VITAL从视觉运动到精确动作",
+      "sum": "提出从视觉运动信息到精确动作的映射方法。",
+      "ta": "视觉到动作的映射思路对动画驱动与动作捕捉后处理有间接参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.20604"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "TextVerifier验证中文文本渲染",
+      "sum": "提出超越识别的验证方法，用于校验中文文本渲染质量。",
+      "ta": "文本渲染验证对UI与贴图文字自动化质检有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.19551"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "MimicX视频驱动人形动作跟踪",
+      "sum": "提出策略在环的监督精炼方法，用于视频驱动的人形动作跟踪。",
+      "ta": "视频驱动动作跟踪若成熟，可降低动画捕捉与重定向成本。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.09055"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Houdini曲线生成服装工具",
-      "sum": "新工具Fibric基于曲线在Houdini中创建服装与布料。",
-      "ta": "程序化布料生成思路可借鉴到植被/装饰物的曲线驱动建模流程。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/new-curve-based-clothing-garment-creation-houdini-tool-released/"
+      "title": "MetaHuman动画工具免费更新",
+      "sum": "Anthony Koithra的Locodrome角色动画工具更新，让虚幻引擎动画制作更简单快速。",
+      "ta": "免费MetaHuman动画工具可直接用于角色动画原型与快速迭代，值得试用。",
+      "src": "80 Level · 10-14",
+      "url": "https://80.lv/articles/grab-this-updated-metahuman-animation-tool-for-free/"
     },
     {
       "cat": "flow",
+      "imp": "lo",
+      "title": "Photoshop 3D取色器预览色相",
+      "sum": "ColgArt推出Chroma Space面板，带实时3D视口，可在上色前于3D元素上预览颜色。",
+      "ta": "3D取色预览可减少贴图绘制反复试错，对材质配色流程有提效价值。",
+      "src": "80 Level · 10-14",
+      "url": "https://80.lv/articles/color-picker-for-photoshop-that-lets-you-see-hues-on-3d-shapes-before-painting-them/"
+    },
+    {
+      "cat": "biz",
       "imp": "mid",
-      "title": "Blender自动UV展开插件",
-      "sum": "免费插件UVgami可快速自动展开UV，支持浏览器试用。",
-      "ta": "批量资产UV自动化对植被/道具流水线有直接提效价值。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/this-free-blender-add-on-quickly-automates-uv-unwrapping/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender单对象万级撤销",
-      "sum": "Sculpt Rewind插件把ZBrush的History Recall Brush带入Blender，每对象可撤销万次。",
-      "ta": "雕刻阶段的历史回溯能力，对高模细节迭代有用。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/undo-history-for-each-blender-object-10-000-times-with-this-add-on/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "19个免费万圣节动捕",
-      "sum": "Anderson Rohr发布僵尸、怪物、吸血鬼等19个免费动捕动画包。",
-      "ta": "免费动捕资源可作原型或NPC动画填充。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/get-ready-for-halloween-with-these-19-free-mocap-animations/"
+      "title": "育碧关闭RedLynx并缩减新加坡",
+      "sum": "育碧将关闭Trials工作室RedLynx并缩减育碧新加坡，影响超120个岗位。",
+      "ta": "行业持续重组，关注其对引擎与工具团队规模及外包协作模式的连带影响。",
+      "src": "Game Developer · 10-14",
+      "url": "https://www.gamedeveloper.com/business/ubisoft-to-close-trials-studio-redlynx-downsize-ubisoft-singapore"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Mystery House经典重制",
-      "sum": "Guillotine Games谈用现代工具重制1980年Apple II经典Mystery House 3D的挑战。",
-      "ta": "老游戏视觉语言现代化重制的案例参考。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/reviving-mystery-house-roberta-and-ken-williams-1980-apple-ii-classic/"
+      "title": "Xbox Labs复活经典并移植",
+      "sum": "Xbox推出Project Xbox Labs，聚焦经典游戏复活、移植到苹果电脑与网页，并支持模组作者。",
+      "ta": "跨平台移植与模组支持可能带来新的资产兼容与工具链需求。",
+      "src": "80 Level · 10-14",
+      "url": "https://80.lv/articles/xbox-launches-new-project-xbox-labs-to-revive-classics-port-games-explore-new-features/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "权游S3视效解析",
-      "sum": "Rodeo FX分享《龙之家族》第三季视效拆解，共制作超45000帧。",
-      "ta": "大规模影视VFX流程与帧量级参考。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/rodeo-fx-shared-their-house-of-the-dragon-season-3-vfx-breakdown/"
+      "title": "Rockstar联合创始人回顾经典",
+      "sum": "Dan Houser分享GTA3、Bully等经典制作回忆，包括GTA3盒图最后一刻改动。",
+      "ta": "经典项目复盘对理解开放世界设计取舍有参考，非技术直接相关。",
+      "src": "80 Level · 10-14",
+      "url": "https://80.lv/articles/rockstar-co-founder-looks-back-at-making-gta-3-bully-other-classics/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "War Robots谈中国手游发行",
+      "sum": "War Robots高管分享自2014年以来的留存经验，谈过度本地化风险与中国玩家差异。",
+      "ta": "面向中国市场的发行经验对国内项目运营有参考，与技术管线无关。",
+      "src": "80 Level · 10-14",
+      "url": "https://80.lv/articles/war-robots-exec-on-the-nuances-of-launching-mobile-games-for-chinese-players/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Annapurna发行老人公路冒险",
+      "sum": "Third Shift开发的Forever Ago由Annapurna发行，是一款第三人称情感冒险游戏。",
+      "ta": "叙事向独立作品，与TA技术方向无直接关联，速览即可。",
+      "src": "80 Level · 10-14",
+      "url": "https://80.lv/articles/annapurna-releases-a-heartbreaking-third-person-adventure-about-an-old-man-on-a-road-trip/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender低多边形秋景",
-      "sum": "Vossadova分享Blender制作的风格化低多边形秋季场景与变色龙。",
-      "ta": "风格化场景配色与低模造型参考。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/stylized-low-poly-fall-scene-with-a-chameleon-made-in-blender/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "实时瀑布建造游戏",
-      "sum": "Mogmek的Waterfalls Dream让玩家实时创建和编辑风格化瀑布。",
-      "ta": "实时流体/瀑布编辑交互设计可作参考。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/this-game-allows-you-to-create-your-own-stylized-waterfalls-with-realistic-behavior/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "精灵动画关键帧插值",
-      "sum": "低成本深度学习方案为精灵动画自动生成中间帧，避免写实插值的平滑伪影。",
-      "ta": "针对像素/精灵内容的插值方法，对2D游戏动画工具链有参考价值。",
-      "src": "arXiv · cs.GR · 10-12",
-      "url": "https://arxiv.org/abs/2610.16423v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "相机可控图生视频框架",
-      "sum": "Gen Through the Lens通过跨坐标条件融合实现物理一致的相机运镜图生视频。",
-      "ta": "相机可控生成对预演/虚拟拍摄的镜头设计有潜在价值。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15900v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "跨族运动补全解耦尺度",
-      "sum": "Cepheid解耦尺度与结构，解决稀疏到稠密运动补全的跨几何族泛化问题。",
-      "ta": "网格运动补全的泛化思路，对角色/形变动画工具有启发。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.18871v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态抓取序列合成",
-      "sum": "Learning Dynamic Grasping合成可信的4D手-物抓取序列，用于角色动画与XR。",
-      "ta": "手物交互合成对角色动画与VR交互有直接参考。",
-      "src": "arXiv · cs.GR · 10-10",
-      "url": "https://arxiv.org/abs/2610.14848v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "骨骼关节球面四边形化",
-      "sum": "从无序方向向量集构造球面简单四边形化，用于骨骼关节参数化体积模型。",
-      "ta": "参数化体积建模的拓扑构造方法，对程序化角色/关节建模有参考。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.17803v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CAD图纸全景符号识别",
-      "sum": "TempFit用模板拟合方法解决CAD图纸的全景符号识别问题。",
-      "ta": "图纸符号识别思路可迁移到场景资产/图元的自动解析。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.17776v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "投影球面行走等距嵌入",
-      "sum": "WoAP将嵌入视为求解变量，改进Projected Walk on Spheres的表面PDE求解。",
-      "ta": "几何PDE求解器改进，对程序化纹理/距离场有潜在价值。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15573v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "可加工性拓扑优化",
-      "sum": "用裁剪神经场做面向减材加工的拓扑优化，减少点铣加工。",
-      "ta": "制造约束下的几何优化思路，与游戏资产关联较弱。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15301v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "全息感知目标函数",
-      "sum": "HoOPOE提出全息优化的感知目标函数，缓解计算机生成全息的散斑伪影。",
-      "ta": "全息显示方向，与实时渲染管线关联有限。",
-      "src": "arXiv · cs.GR · 10-12",
-      "url": "https://arxiv.org/abs/2610.17474v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "内容编辑式版式生成",
-      "sum": "CELG提出内容编辑式条件版式生成，扩展内容感知版式生成。",
-      "ta": "图形设计版式生成，与游戏UI自动化有弱关联。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.17905v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "LLM协同设计空间概念",
-      "sum": "Co-DSL让用户与LLM协同设计可复用的空间概念用于版式生成。",
-      "ta": "人机协同的布局生成框架，可参考到关卡/场景布局工具。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15290v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "机器人Real2Sim交互工具",
-      "sum": "RoboSimStudio提供交互式工具包，快速实现机器人操作任务的Real2Sim。",
-      "ta": "物理仿真求解器选择与接触建模，与游戏物理有间接参考。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.18835v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "可执行3D世界建模基准",
-      "sum": "ExeWorldBench基准评测基于代码的可执行3D世界建模。",
-      "ta": "可执行3D世界生成评测，对程序化世界生成方向有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.15166"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "多人世界模型分层通信",
-      "sum": "Multics提出带分层通信的生成式多人世界模型。",
-      "ta": "多人世界模型对多人游戏状态预测有潜在启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.17201"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "4D一致生成几何修复",
-      "sum": "GeoFix通过几何修复实现4D一致生成。",
-      "ta": "4D一致性生成对动态资产/序列生成有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.14293"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "高分辨率扩散注意力优化",
-      "sum": "AReA提出自适应感受野注意力，提升高分辨率扩散Transformer效率。",
-      "ta": "注意力效率优化思路对高分辨率生成/渲染有借鉴意义。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.17227"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型自参考优势学习",
-      "sum": "SALD提出自参考优势学习用于扩散模型。",
-      "ta": "扩散训练方法，与游戏资产生成间接相关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.01496"
+      "title": "Blender开发者BCON26演讲",
+      "sum": "Blender年度主活动结束后，开发者演讲内容现已可回看。",
+      "ta": "Blender开发者演讲可能涉及几何节点与渲染管线更新，值得按需回看。",
+      "src": "Blender 开发博客 · 10-14",
+      "url": "https://code.blender.org/2026/10/bcon26-talks-by-blender-developers/"
     }
   ],
   "flashbackTitle": "",
