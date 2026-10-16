@@ -2,8 +2,215 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-15 13:45",
+  "updated": "2026-10-16 13:42",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "单图生成可重打光3D材质",
+      "sum": "SUPRA-TEX 用超对齐纹理从单张参考图生成可重打光材质，减少多视图融合伪影。",
+      "ta": "关注其纹理对齐策略，或可用于资产材质自动化流程。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.22352v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "单位四元数压缩新方法",
+      "sum": "提出均匀分布单位四元数编码方法，降低内存与带宽占用。",
+      "ta": "动画/骨骼数据压缩可参考，对大规模角色系统有潜在收益。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.22052v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "草图重建可重打光服装",
+      "sum": "从带标注草图重建可重打光服装，草图直接表达高光与阴影意图。",
+      "ta": "服装资产快速原型方向，关注其光照意图到材质的映射方式。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.21865v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "整体先验驱动部件化生成",
+      "sum": "复用整体3D先验实现部件分解生成，兼顾部件细节与整体结构一致性。",
+      "ta": "程序化资产拆分思路，对模块化场景生成有参考价值。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.21850v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "无细分置换面几何查询",
+      "sum": "无需预细分网格即可在置换贴图表面做几何查询，省去密集三角网格内存开销。",
+      "ta": "置换贴图直接求交，对地形/植被高细节表面渲染管线有直接启发。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.21584v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "移动体积视频双流高斯方案",
+      "sum": "ResStreamGS 用残差敏感双流3DGS，在受限带宽下实现移动端体积视频流。",
+      "ta": "关注其残差分层编码，对移动端3DGS流式传输有借鉴意义。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.21121v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "机器人采集真实布料数据集",
+      "sum": "RoboCloth 用机器人控制相机与光照，采集500种真实布料约580帧HDR数据。",
+      "ta": "高质量布料反射重建数据集，可作材质扫描与神经渲染训练参考。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.21090v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多码本扩散语言模型",
+      "sum": "Intern Lumina U2 提出多码本扩散LLM，统一视觉理解与图像生成。",
+      "ta": "与实时渲染无直接关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.20818"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散强化学习路由优化",
+      "sum": "提出面向在线扩散强化学习的路由策略优化方法。",
+      "ta": "纯训练方法，与TA工作流无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.22282"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "商用主图生成框架",
+      "sum": "CommerceGen-Studio 提供端到端商用级主图生成框架。",
+      "ta": "电商图像方向，与游戏渲染无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.20603"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "空间记忆提升世界模型效率",
+      "sum": "Velox 通过空间记忆机制让世界模型更高效。",
+      "ta": "世界模型效率方向，对实时仿真与生成式场景有潜在参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.22311"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "驾驶世界动作模型对齐",
+      "sum": "SimVTA 用仿真对齐视频与轨迹，服务驾驶世界动作模型。",
+      "ta": "自动驾驶方向，与游戏TA无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.13781"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "CT超分辨率扩散方法",
+      "sum": "VascuSR 提出迭代式解剖感知扩散用于CT超分辨率。",
+      "ta": "医学影像方向，与实时渲染无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.20509"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "视频世界模型记忆基准",
+      "sum": "WorldMemBench 提出视频世界模型记忆能力的综合评测基准。",
+      "ta": "若关注生成式世界模型的长时一致性，可作评测参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.19063"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "编码智能体内部世界模型",
+      "sum": "ANTE 让编码智能体从验证信念中学习内部世界模型。",
+      "ta": "代码智能体方向，与TA工作流无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.15368"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "CDPR原创IP用UE原型",
+      "sum": "CDPR完成首个原创IP Project Hadar 世界观，正用虚幻引擎原型化玩法机制。",
+      "ta": "又一大厂押注UE，关注其后续技术管线与工具链动向。",
+      "src": "80 Level · 10-15",
+      "url": "https://80.lv/articles/cdpr-says-its-first-original-ip-has-been-its-biggest-undertaking-yet/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "建筑坍塌融入战术玩法",
+      "sum": "Brigador Killers 结合子弹穿透、系统性建筑坍塌、反应物理与可读VFX，配Blender精灵管线。",
+      "ta": "系统性破坏与VFX可读性设计，对特效与物理联动有参考。",
+      "src": "80 Level · 10-15",
+      "url": "https://80.lv/articles/how-brigador-killers-makes-blowing-up-buildings-part-of-the-strategy/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Epic启动器性能争议",
+      "sum": "Epic称新启动器快于Steam，Valve更新数据反驳。",
+      "ta": "行业八卦，速览即可。",
+      "src": "80 Level · 10-15",
+      "url": "https://80.lv/articles/we-vibe-coded-a-new-epic-games-launcher-apparently-programming-is-hard/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前极乐迪斯科成员新RPG",
+      "sum": "前ZA/UM开发者组建Red Rooster，公布物理驱动魔幻现实主义RPG。",
+      "ta": "新作动向，无技术细节。",
+      "src": "80 Level · 10-15",
+      "url": "https://80.lv/articles/former-disco-elysium-devs-announce-new-incendiary-rpg/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前FS开发者公布ARPG",
+      "sum": "前FromSoftware开发者Hytacka公布其ARPG新作Overseeker预告。",
+      "ta": "独立新作，速览即可。",
+      "src": "80 Level · 10-15",
+      "url": "https://80.lv/articles/fromsoftware-s-ex-developer-released-trailer-for-his-upcoming-arpg-overseeker/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "寂静岭风独立冒险发售",
+      "sum": "单人开发者arch1t3ct的2000年代风格梦境冒险游戏已发售。",
+      "ta": "独立作品，速览即可。",
+      "src": "80 Level · 10-15",
+      "url": "https://80.lv/articles/this-melancholic-silent-hill-inspired-adventure-set-in-a-half-dead-place-is-out/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "B社40周年Discord问答",
+      "sum": "Bethesda开设Discord问答频道庆祝40周年，玩家可向开发者提问。",
+      "ta": "社区活动，无技术内容。",
+      "src": "80 Level · 10-15",
+      "url": "https://80.lv/articles/ask-bethesda-almost-anything-in-q-a-discord-channel-to-celebrate-its-40th-anniversary/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "开源2D骨骼动画编辑器",
+      "sum": "Rigby2D 是一款免费开源的2D骨骼动画编辑器。",
+      "ta": "2D动画工具链补充，可评估是否纳入小型项目工作流。",
+      "src": "Tech-Artists · 10-15",
+      "url": "https://www.tech-artists.org/t/rigby2d-free-open-source-2d-skeletal-animation-editor/18580"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -380,15 +587,6 @@ window.INTEL_RECENT = {
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "可执行3D世界建模基准",
-      "sum": "ExeWorldBench基准评测基于代码的可执行3D世界建模。",
-      "ta": "可执行3D世界生成评测，对程序化世界生成方向有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.15166"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
       "title": "多人世界模型分层通信",
       "sum": "Multics提出带分层通信的生成式多人世界模型。",
       "ta": "多人世界模型对多人游戏状态预测有潜在启发。",
@@ -612,15 +810,6 @@ window.INTEL_RECENT = {
       "ta": "低模资产可作风格化参考或复古项目素材来源，注意版权与授权范围。",
       "src": "80 Level · 10-09",
       "url": "https://80.lv/articles/free-online-archive-of-ps1-n64-3d-models-game-assets/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "节奏RPG十年三次重做",
-      "sum": "Nocturne 开发者讲述十年开发中三次重做，及战斗、工具、像素美术与现场管弦乐制作。",
-      "ta": "长周期小团队的工具与美术迭代复盘，可速览其战斗与工具链取舍。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/this-rhythm-rpg-was-rebuilt-three-times-during-its-10-year-development/"
     },
     {
       "cat": "biz",
@@ -1627,198 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "持久世界建模方向，可留意其对长时序场景一致性的处理。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.02162"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Memorizon让世界模型超上下文训练",
-      "sum": "Memorizon提出让世界模型在超出上下文窗口的情况下继续训练。",
-      "ta": "长时程世界模型训练技巧，对长序列场景模拟有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.00544"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "像素扩散用稠密预测做表征对齐",
-      "sum": "PixelDense把稠密预测作为像素扩散的表征对齐手段。",
-      "ta": "像素级扩散的表征对齐思路，可关注其对生成细节的影响。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.00483"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自适应奖励路由优化音视频扩散",
-      "sum": "论文提出动态多奖励优化，用前向过程RL联合音视频扩散。",
-      "ta": "多奖励联合优化思路，对音视频同步生成方向有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.37200"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "分层连续扩散语言模型",
-      "sum": "论文提出分层连续扩散的语言模型方法。",
-      "ta": "与图形工作流关联较弱，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.02193"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender与Substance做外星角色",
-      "sum": "Artur Ledur分享一周内用Blender与Substance 3D完成科幻短片角色。",
-      "ta": "短周期角色设计与贴图流程，可看其设计与场景匹配的做法。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/creating-an-alien-character-for-a-sci-fi-short-film-with-blender-substance-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Godot与Unity矢量图形资源集",
-      "sum": "DK Liao用极简风格矢量图形库制作游戏，资源可供Godot与Unity使用。",
-      "ta": "轻量2D矢量资源，适合快速原型或小体量项目取用。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/check-out-this-free-collection-of-vector-graphics-for-godot-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "布料撕裂自缝合特效演示",
-      "sum": "一段布料撕裂后自行缝合的惊悚特效演示，含密集恐惧提示。",
-      "ta": "可看其布料撕裂与缝合的形变与材质表现手法。",
-      "src": "80 Level · 10-01",
-      "url": "https://80.lv/articles/watch-this-creepy-fabric-rip-apart-stitch-itself-back-together/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "UE5.8 MCP服务器与AnimGen实验",
-      "sum": "Epic九月学习内容涵盖UE 5.8的MCP服务器与全新实验性AnimGen工作流。",
-      "ta": "MCP服务器可能改变TA与引擎交互方式，AnimGen实验流程值得提前评估。",
-      "src": "Unreal Engine · 09-30",
-      "url": "https://www.unrealengine.com/learning/septembers-epic-learning-content-metahumans-physics-animation-and-more"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "RSIGame递归自改进做游戏",
-      "sum": "提出用递归自我改进的自主智能体完成游戏开发流程。",
-      "ta": "可关注其自动化管线思路，是否可用于TA工具链的脚本生成。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.39045"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "A2Z基准测编码智能体做游戏",
-      "sum": "新基准评估编码智能体从游戏设计规格生成游戏的忠实度。",
-      "ta": "可了解AI生成游戏原型的当前上限，评估对工具链的参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.39564"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自博弈游戏引导技能发现",
-      "sum": "通过自博弈实现可玩智能体控制的游戏引导技能发现方法。",
-      "ta": "偏AI研究，与TA日常工作关联弱，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.40137"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Physis-Lang自演化物理表征",
-      "sum": "提出自演化语言作为视频世界模型的物理表征方法。",
-      "ta": "与实时渲染管线暂无直接关联，可略过。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.40358"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "中文文本渲染部首分解奖励",
-      "sum": "通过分解部首再奖励的细粒度检查提升中文文本渲染准确度。",
-      "ta": "若涉及游戏内UI文字生成可留意，否则关联有限。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.37569"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "DC-SAE加速扩散收敛",
-      "sum": "提出深度压缩语义自编码器以加速扩散模型收敛。",
-      "ta": "纯AI方法，与实时渲染无直接关系，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.39222"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "古森林石墙浮雕制作解析",
-      "sum": "Ilya Oskanyan分享Heart of the Forest项目中自然浮雕资产的省时制作流程。",
-      "ta": "可参考其焦距选择与浮雕雕刻流程，对植被环境资产制作有借鉴。",
-      "src": "80 Level · 09-30",
-      "url": "https://80.lv/articles/sculpting-nature-inspired-bas-reliefs-on-a-stone-wall-in-a-moody-ancient-forest-environment/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "007 First Light的VFX与世界观",
-      "sum": "IO Interactive开发者分享007 First Light的世界、角色、场景与VFX制作。",
-      "ta": "可参考其VFX与场景美术实现，了解3A级项目的美术管线。",
-      "src": "80 Level · 09-30",
-      "url": "https://80.lv/articles/insighful-look-at-007-first-light-s-world-characters-concent-vfx/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS Plus十月会免公布",
-      "sum": "十月PS Plus月度游戏为F1 25、Hunt: Showdown 1896与地球防卫军World Brothers 2。",
-      "ta": "行业动态速览，与TA工作无直接关联。",
-      "src": "PlayStation Blog · 09-30",
-      "url": "https://blog.playstation.com/2026/09/30/playstation-plus-monthly-games-for-october-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "纹理空间材质扩散生成",
-      "sum": "微调视频扩散Transformer，在纹理空间做文本引导材质生成与超分。",
-      "ta": "直接在UV纹理空间生成PBR材质，比多视图烘焙更贴合现有材质管线，值得看投影映射思路。",
-      "src": "arXiv · cs.GR · 09-29",
-      "url": "https://arxiv.org/abs/2609.37654v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "高斯泼溅残差场提表达",
-      "sum": "用神经残差场替代低阶球谐，缓解3DGS视角相关反射的表达冗余。",
-      "ta": "低阶SH是3DGS高光发糊的根因，这套残差建模对植被/材质高光重建有直接参考价值。",
-      "src": "arXiv · cs.GR · 09-29",
-      "url": "https://arxiv.org/abs/2609.37115v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "文本生成物理仿真管线",
-      "sum": "Text2Sim用智能体管线把纯文本请求转成可执行可编辑的物理仿真。",
-      "ta": "资产、布局、物理参数、运动、渲染联合生成，可关注其对特效预演自动化的启发。",
-      "src": "arXiv · cs.GR · 09-29",
-      "url": "https://arxiv.org/abs/2609.36593v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "域是残差的自监督迁移",
-      "sum": "不换生成器，只适配DINO自监督特征，实现去雾去雨与渲染转照片。",
-      "ta": "渲染转照片的思路对风格化后处理与去噪有参考，特征层迁移比像素层更稳。",
-      "src": "arXiv · cs.GR · 09-29",
-      "url": "https://arxiv.org/abs/2609.37330v1"
     }
   ]
 };
