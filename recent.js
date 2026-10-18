@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-17 13:28",
+  "updated": "2026-10-18 13:39",
   "cards": [
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "水彩手绘解谜游戏亮相",
+      "sum": "《The Land Forgotten》以水彩手绘风格呈现语言解谜玩法。",
+      "ta": "可速览其手绘美术风格与场景氛围，作为风格化美术参考。",
+      "src": "80 Level · 10-17",
+      "url": "https://80.lv/articles/this-language-based-puzzle-game-is-hand-painted-in-watercolor/"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -1805,15 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "无技术细节，仅作行业大事件速览。",
       "src": "80 Level · 10-02",
       "url": "https://80.lv/articles/grand-theft-auto-6-what-we-know-about-rockstar-s-anticipated-game/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "流式世界模型线性记忆方案",
-      "sum": "LOCI 提出面向流式世界模型的空间线性记忆机制。",
-      "ta": "世界模型的长时序空间一致性是程序化生成与实时场景推演的关键，可关注其记忆结构设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.40222"
     }
   ]
 };
