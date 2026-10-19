@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月18日 · 周日",
+  "date": "2026年10月19日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>水彩手绘解谜游戏亮相</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>RGB与X光联合高斯重建</em> / <em>笼形变形新增结构亲和算法</em> / <em>3D打印网格防篡改框架</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,13 +127,76 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "biz",
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RGB与X光联合高斯重建",
+      "sum": "X-Splat用统一高斯泼溅同时重建RGB外观与X光内部结构，免去分模态重复几何。",
+      "ta": "多模态高斯泼溅的统一几何表达，可关注其冗余几何与对齐问题的处理思路。",
+      "src": "arXiv · cs.GR · 10-16",
+      "url": "https://arxiv.org/abs/2610.23237v1"
+    },
+    {
+      "cat": "gfx",
       "imp": "lo",
-      "title": "水彩手绘解谜游戏亮相",
-      "sum": "《The Land Forgotten》以水彩手绘风格呈现语言解谜玩法。",
-      "ta": "可速览其手绘美术风格与场景氛围，作为风格化美术参考。",
-      "src": "80 Level · 10-17",
-      "url": "https://80.lv/articles/this-language-based-puzzle-game-is-hand-painted-in-watercolor/"
+      "title": "笼形变形新增结构亲和算法",
+      "sum": "提出Structural Affinity算法，改善笼形变形参数化的连贯性，服务动画与交互建模。",
+      "ta": "程序化建模与形变工具可参考其控制柄优化思路，非实时渲染直接相关。",
+      "src": "arXiv · cs.GR · 10-16",
+      "url": "https://arxiv.org/abs/2610.23173v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "3D打印网格防篡改框架",
+      "sum": "SAMS用结构化图框架检测增材制造网格文件的几何缺陷与恶意篡改。",
+      "ta": "网格几何完整性校验思路，与游戏资产管线关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.22741v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频世界模型记忆失效诊断",
+      "sum": "论文诊断视频世界模型在记忆机制上的失败模式，提出执行先于记忆的分析框架。",
+      "ta": "若关注世界模型做场景生成，可看其长时序一致性失效的归因方式。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.23542"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "生成式组织训练智能体",
+      "sum": "OfficeTown构建生成式组织环境，用于演化多智能体协作能力。",
+      "ta": "纯智能体仿真研究，与TA工作流无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.23194"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频世界模型持久平面记忆",
+      "sum": "提出持久平面记忆机制，缓解视频世界模型长序列中的场景遗忘。",
+      "ta": "长时序场景一致性方案，对程序化场景生成的记忆保持有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.23795"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "玩具游戏能否迁移真实推理",
+      "sum": "Game2Real-Bench评测玩具游戏训练所得视觉推理能力能否迁移到真实场景。",
+      "ta": "评测类工作，与渲染或工具链无直接关系。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.18834"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "视角解耦几何状态建模",
+      "sum": "GeoState学习视角解耦的几何状态表示，用于3D世界建模。",
+      "ta": "解耦视角的几何表示对3D生成与场景重建有潜在借鉴，值得速读。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.22343"
     }
   ],
   "flashbackTitle": "",

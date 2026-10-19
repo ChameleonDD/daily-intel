@@ -2,8 +2,80 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-18 13:39",
+  "updated": "2026-10-19 13:56",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RGB与X光联合高斯重建",
+      "sum": "X-Splat用统一高斯泼溅同时重建RGB外观与X光内部结构，免去分模态重复几何。",
+      "ta": "多模态高斯泼溅的统一几何表达，可关注其冗余几何与对齐问题的处理思路。",
+      "src": "arXiv · cs.GR · 10-16",
+      "url": "https://arxiv.org/abs/2610.23237v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "笼形变形新增结构亲和算法",
+      "sum": "提出Structural Affinity算法，改善笼形变形参数化的连贯性，服务动画与交互建模。",
+      "ta": "程序化建模与形变工具可参考其控制柄优化思路，非实时渲染直接相关。",
+      "src": "arXiv · cs.GR · 10-16",
+      "url": "https://arxiv.org/abs/2610.23173v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "3D打印网格防篡改框架",
+      "sum": "SAMS用结构化图框架检测增材制造网格文件的几何缺陷与恶意篡改。",
+      "ta": "网格几何完整性校验思路，与游戏资产管线关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 10-15",
+      "url": "https://arxiv.org/abs/2610.22741v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频世界模型记忆失效诊断",
+      "sum": "论文诊断视频世界模型在记忆机制上的失败模式，提出执行先于记忆的分析框架。",
+      "ta": "若关注世界模型做场景生成，可看其长时序一致性失效的归因方式。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.23542"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "生成式组织训练智能体",
+      "sum": "OfficeTown构建生成式组织环境，用于演化多智能体协作能力。",
+      "ta": "纯智能体仿真研究，与TA工作流无直接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.23194"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频世界模型持久平面记忆",
+      "sum": "提出持久平面记忆机制，缓解视频世界模型长序列中的场景遗忘。",
+      "ta": "长时序场景一致性方案，对程序化场景生成的记忆保持有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.23795"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "玩具游戏能否迁移真实推理",
+      "sum": "Game2Real-Bench评测玩具游戏训练所得视觉推理能力能否迁移到真实场景。",
+      "ta": "评测类工作，与渲染或工具链无直接关系。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.18834"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "视角解耦几何状态建模",
+      "sum": "GeoState学习视角解耦的几何状态表示，用于3D世界建模。",
+      "ta": "解耦视角的几何表示对3D生成与场景重建有潜在借鉴，值得速读。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.22343"
+    },
     {
       "cat": "biz",
       "imp": "lo",
@@ -138,15 +210,6 @@ window.INTEL_RECENT = {
       "ta": "OCR 评测指标研究，与 TA 工作无直接关联，速览即可。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.20461"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单图生成可重打光3D材质",
-      "sum": "SUPRA-TEX 用超对齐纹理从单张参考图生成可重打光材质，减少多视图融合伪影。",
-      "ta": "关注其纹理对齐策略，或可用于资产材质自动化流程。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.22352v1"
     },
     {
       "cat": "gfx",
@@ -1751,69 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "可关注其程序化表示思路，对场景重建与程序化生成的自动化流程有启发。",
       "src": "arXiv · cs.GR · 10-02",
       "url": "https://arxiv.org/abs/2610.03715v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "语音驱动面部协同发音度量",
-      "sum": "提出唇部路径长度等几何度量，量化语音驱动 3D 面部动画中的协同发音轨迹。",
-      "ta": "面部动画质量度量思路可借鉴到口型驱动的效果评估。",
-      "src": "arXiv · cs.GR · 10-02",
-      "url": "https://arxiv.org/abs/2610.03436v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "空间锚定手势生成基准",
-      "sum": "提出评测生成手势是否指向环境中正确指称物的基准框架。",
-      "ta": "与游戏内 NPC 手势/指向动画的自动生成评测相关。",
-      "src": "arXiv · cs.GR · 10-02",
-      "url": "https://arxiv.org/abs/2610.03105v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时交互视听世界模型",
-      "sum": "HelixWorld 提出实时交互的音频-视觉世界模型。",
-      "ta": "世界模型方向可关注，但与当前渲染管线落地距离较远。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.38123"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Marvel Rivals 角色管线揭秘",
-      "sum": "漫威争锋美术团队详解自定义 NPR/PBR 渲染、英雄专属 VFX 与可扩展破坏系统。",
-      "ta": "NPR/PBR 混合渲染与英雄级 VFX 的工程化落地，值得对照自家角色管线看材质分层与破坏性能取舍。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/inside-marvel-rivals-character-art-vfx-destruction-pipeline/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Reigns 开发商停摆裁员",
-      "sum": "Reigns 开发商 Nerial 进入「休眠模式」并裁撤员工。",
-      "ta": "小型工作室收缩的又一案例，可作为行业环境冷热的速览信号。",
-      "src": "Game Developer · 10-02",
-      "url": "https://www.gamedeveloper.com/business/nerial-to-enter-hibernation-mode-and-lay-off-developers"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "星战新作口碑创二十年最佳",
-      "sum": "Star Wars: Galactic Racer 融合 Burnout 式撞击与 podracing，成二十年来评分最高星战游戏。",
-      "ta": "与 TA 本职关联弱，仅作行业口碑速览。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/star-wars-galactic-racer-is-the-best-reviewed-star-wars-game-in-20-years/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "GTA6 发售前情报汇总",
-      "sum": "随 11 月发售临近，媒体汇总目前已知的 GTA6 全部信息。",
-      "ta": "无技术细节，仅作行业大事件速览。",
-      "src": "80 Level · 10-02",
-      "url": "https://80.lv/articles/grand-theft-auto-6-what-we-know-about-rockstar-s-anticipated-game/"
     }
   ]
 };
