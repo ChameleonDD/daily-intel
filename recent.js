@@ -2,8 +2,233 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-19 13:56",
+  "updated": "2026-10-20 13:50",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "CUDA Tile 加速 Mamba-2 前向",
+      "sum": "NVIDIA 用 Python DSL cuTile 编写 Mamba-2 前向核，自动调用 GPU 高级硬件能力。",
+      "ta": "关注 cuTile 这种 Python 级并行编程模型，未来写自定义 GPU 算子可少碰底层 CUDA。",
+      "src": "NVIDIA · 10-19",
+      "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "LLM 生成 CAD 机构难达功能",
+      "sum": "论文研究功能性 CAD 设计，指出 LLM 生成的装配体视觉合理但常无法满足物理功能。",
+      "ta": "程序化生成若涉及机械结构，需警惕「看起来对」与「功能对」的差距。",
+      "src": "arXiv · cs.GR · 10-19",
+      "url": "https://arxiv.org/abs/2610.26861v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "开放形态几何风格迁移",
+      "sum": "从一种字形族学几何设计语言，迁移到希腊字形乃至完全不同的结构上。",
+      "ta": "几何风格迁移思路可参考用于程序化装饰/纹样跨形态复用。",
+      "src": "arXiv · cs.GR · 10-19",
+      "url": "https://arxiv.org/abs/2610.26820v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "PhysSkin++ 实时神经蒙皮",
+      "sum": "自监督学习连续神经蒙皮场，从静态几何构建形变子空间，实现可泛化实时物理动画。",
+      "ta": "实时物理形变泛化到多样 3D 形状，对角色/布料实时动画管线有参考价值。",
+      "src": "arXiv · cs.GR · 10-19",
+      "url": "https://arxiv.org/abs/2610.26067v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "矢量瓦片粒度影响压缩",
+      "sum": "实证研究 MLT 列式矢量瓦片的空间粒度如何影响地图渲染压缩率。",
+      "ta": "做大地图/地形分块数据时，瓦片粒度对压缩与流送的影响可借鉴。",
+      "src": "arXiv · cs.GR · 10-19",
+      "url": "https://arxiv.org/abs/2610.25755v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "FluidGen 物理感知流体视频",
+      "sum": "针对视频生成模型在烟、火、爆炸碎片上涡旋结构缺失的问题，用运动引导后训练修正。",
+      "ta": "Niagara 流体参考素材生成方向，注意其仍缺真实涡旋，不能直接当解算替代。",
+      "src": "arXiv · cs.GR · 10-19",
+      "url": "https://arxiv.org/abs/2610.25660v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "包络行走加速 WoS 求解",
+      "sum": "Walk in Envelopes 用可验证解界变换分支扩散，缓解临界分支率附近计算爆炸。",
+      "ta": "无网格 PDE 求解加速，离屏 GI/体积散射类研究可留意。",
+      "src": "arXiv · cs.GR · 10-18",
+      "url": "https://arxiv.org/abs/2610.25297v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "4D 可形变图元泼溅手语化身",
+      "sum": "Stable Signer V3 基于 4D Deformable Primitive Splatting 构建高分辨率交互手语化身。",
+      "ta": "图元泼溅做面部表情与身体形变，对虚拟人/表情驱动方案有借鉴。",
+      "src": "arXiv · cs.GR · 10-18",
+      "url": "https://arxiv.org/abs/2610.24926v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "SwitchSplat 学离散物体状态",
+      "sum": "针对随手拍摄中开门、拨开关等交互，从 3DGS 场景学习离散物体状态表示。",
+      "ta": "3DGS 从静态假设走向可交互状态，对扫描资产转可交互场景有启发。",
+      "src": "arXiv · cs.GR · 10-17",
+      "url": "https://arxiv.org/abs/2610.24812v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "MOMO 从移动声源生成人体动作",
+      "sum": "建模人对动态空间音频的反应，生成随声源与听者空间关系变化的人体运动。",
+      "ta": "角色动画可参考声源空间关系驱动的反应动作生成。",
+      "src": "arXiv · cs.GR · 10-17",
+      "url": "https://arxiv.org/abs/2610.24522v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "SLIM 学算子精简 3D 点阵",
+      "sum": "学习一个算子，在保持均匀化弹性的前提下移除点阵冗余材料。",
+      "ta": "点阵轻量化思路，对程序化结构件/支撑结构生成有参考。",
+      "src": "arXiv · cs.GR · 10-17",
+      "url": "https://arxiv.org/abs/2610.24459v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "GPT-6 Astra 的 CAD 能力评估",
+      "sum": "对通用 AI 模型 GPT-6 Astra 做系统性 CAD 任务实证评估，看输出是否满足工程要求。",
+      "ta": "了解通用模型在工程几何任务上的真实边界，避免高估其产出。",
+      "src": "arXiv · cs.GR · 10-17",
+      "url": "https://arxiv.org/abs/2610.24451v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多轮图像编辑稳定化 MT Forcing",
+      "sum": "自回归扩散做多轮图像编辑，MT Forcing 提升稳定性与一致性。",
+      "ta": "多轮一致性编辑可用于贴图/概念稿迭代，但非实时渲染直接相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.25404"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "InfiniDream 程序化生成 3D 世界",
+      "sum": "通过程序化生成构建开放式照片级真实 3D 世界。",
+      "ta": "程序化 3D 世界生成与植被/场景工具方向直接相关，值得看其生成管线。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.26853"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长时流式世界模型短片段训练",
+      "sum": "Frechet Forcing 用短片段训练长时程流式世界模型。",
+      "ta": "流式世界模型训练策略，对实时仿真/生成式场景演进有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.25666"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "状态世界模型：规则执行生成像素",
+      "sum": "State World Models 先执行规则再生成像素，分离状态演化与画面合成。",
+      "ta": "规则与像素解耦的思路，对可交互场景生成架构有启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.26811"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型可解释性综述",
+      "sum": "从解码表征到理解潜在世界，探讨世界模型的可解释性。",
+      "ta": "理解世界模型内部表征，有助于判断其生成结果可信度。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.25296"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance Designer 做森林地表材质",
+      "sum": "Zeqi Mu 用 SD 节点做可平铺森林地表，讲根系生长纹理与 UE 场景灯光渲染设置。",
+      "ta": "植被地表材质与 UE 渲染设置的完整案例，可直接对照自己的地表工作流。",
+      "src": "80 Level · 10-19",
+      "url": "https://80.lv/articles/making-realistic-tileable-forest-floor-material-using-substance-3d-designer-s-nodes/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush+Blender 做手绘风 3D 枪械",
+      "sum": "Max Osta 用 ZBrush 雕木板玉石、Blender 修改器做绳索与程序纹理，Eevee 渲染。",
+      "ta": "程序纹理+修改器做绳索的流程，可迁移到道具/植被藤蔓类资产。",
+      "src": "80 Level · 10-19",
+      "url": "https://80.lv/articles/gunfire-reborn-s-dragonchaser-reimagined-as-painterly-3d-asset-in-wayfinder-s-style/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Valorant 过场动画制作拆解",
+      "sum": "Brunch Studio 拆解新地图 Summit 的 Valorant 过场预告制作过程。",
+      "ta": "看影视级过场与实时资产的衔接方式。",
+      "src": "80 Level · 10-19",
+      "url": "https://80.lv/articles/brunch-studio-reveals-how-they-made-the-valorant-through-the-cracks-cinematic-trailer/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "2D 动画风格转 3D 的技巧",
+      "sum": "动画导演拆解千与千寻场景，讲时序与肌肉运动表现阻力，及 2D 风格转 3D。",
+      "ta": "手 K 动画的时序与阻力表现，对角色/植被摆动节奏有借鉴。",
+      "src": "80 Level · 10-19",
+      "url": "https://80.lv/articles/animation-director-breaks-down-the-tricks-behind-a-spirited-away-scene/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Moko 绘画编辑工作区",
+      "sum": "Cubebrush 推出 Moko，主打实时笔触预览的绘画与图像编辑工作区。",
+      "ta": "概念/贴图绘制工具选项，关注实时笔触预览体验。",
+      "src": "80 Level · 10-19",
+      "url": "https://80.lv/articles/painting-image-editing-workspace-with-live-brush-stroke-previews-meet-moko/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS6 内存成本或超 680 美元",
+      "sum": "Kepler_L2 称 PS6 物料成本或达 1000 美元，内存短缺恐推迟至 2028-2029 年。",
+      "ta": "次世代硬件规格与内存容量预期，影响未来资产预算规划。",
+      "src": "80 Level · 10-19",
+      "url": "https://80.lv/articles/ps6-ram-nand-reportedly-cost-over-usd680/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "RocketWerkz 开源 C# 框架 BRUTAL",
+      "sum": "RocketWerkz 的 C# 框架 BRUTAL 向所有开发者开放，强调对游戏代码的完全控制。",
+      "ta": "自研框架选型参考，与引擎内工具链集成时留意。",
+      "src": "Game Developer · 10-19",
+      "url": "https://www.gamedeveloper.com/programming/rocketwerkz-c-framework-brutal-is-now-available-for-all-developers"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Moonlighter 团队因 AI 克隆担忧推迟测试",
+      "sum": "Digital Sun 因担心生成式 AI 克隆，将新作 ReVamp 公开测试缩至 Discord 社区。",
+      "ta": "AI 克隆风险正影响测试策略，涉及资产外发时需评估。",
+      "src": "Game Developer · 10-19",
+      "url": "https://www.gamedeveloper.com/programming/moonlighter-developer-delays-public-playtest-of-next-game-over-concerns-of-ai-cloning"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -781,15 +1006,6 @@ window.INTEL_RECENT = {
       "ta": "多人世界模型对多人游戏状态预测有潜在启发。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.17201"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "4D一致生成几何修复",
-      "sum": "GeoFix通过几何修复实现4D一致生成。",
-      "ta": "4D一致性生成对动态资产/序列生成有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.14293"
     },
     {
       "cat": "ai",
@@ -1597,223 +1813,6 @@ window.INTEL_RECENT = {
       "ta": "3DGS渲染噪声抑制方案，对半透明植被/粒子渲染有借鉴意义。",
       "src": "arXiv · cs.GR · 10-04",
       "url": "https://arxiv.org/abs/2610.05576v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实时神经发丝仿真",
-      "sum": "Neuroll用模拟器在环展开实现实时神经发丝仿真。",
-      "ta": "发丝实时仿真思路可迁移到植被/毛发类程序化动画。",
-      "src": "arXiv · cs.GR · 10-03",
-      "url": "https://arxiv.org/abs/2610.04689v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "八叉树无损网格压缩",
-      "sum": "OctMesh提出统一八叉树层级框架，实现无损三角网格压缩。",
-      "ta": "网格压缩对资产管线与运行时内存优化有潜在价值。",
-      "src": "arXiv · cs.GR · 10-03",
-      "url": "https://arxiv.org/abs/2610.04281v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "骨骼无关动画压缩",
-      "sum": "CurveCodec 2用学习熵模型实现骨骼无关的动画压缩。",
-      "ta": "动画压缩方案对大规模角色/植被动画数据管理有参考。",
-      "src": "arXiv · cs.GR · 10-03",
-      "url": "https://arxiv.org/abs/2610.04211v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "图像条件B-Rep生成",
-      "sum": "UniBRep以几何优先框架从单图生成统一几何与拓扑的B-Rep。",
-      "ta": "CAD级几何生成对硬表面资产程序化有潜在启发。",
-      "src": "arXiv · cs.GR · 10-02",
-      "url": "https://arxiv.org/abs/2610.04092v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "感知均匀图像编辑滑块",
-      "sum": "UniSlider提出感知均匀的滑块实现连续图像编辑。",
-      "ta": "对AI辅助纹理/材质编辑的交互设计有参考。",
-      "src": "arXiv · cs.GR · 10-05",
-      "url": "https://arxiv.org/abs/2610.06831v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "人形运动模仿自演化框架",
-      "sum": "InterMimicGen通过自演化运动模仿扩展人形机器人运动操作。",
-      "ta": "与游戏TA关联较弱，仅作运动生成技术速览。",
-      "src": "arXiv · cs.GR · 10-05",
-      "url": "https://arxiv.org/abs/2610.06850v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自由曲面灯罩计算设计",
-      "sum": "提出可3D打印的自由曲面灯罩计算设计方法以控制光照。",
-      "ta": "光学设计思路，与实时渲染关联有限，速览即可。",
-      "src": "arXiv · cs.GR · 10-05",
-      "url": "https://arxiv.org/abs/2610.05770v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "编码智能体生成游戏世界",
-      "sum": "Code2Games让编码智能体面向游戏世界生成。",
-      "ta": "AI生成游戏世界的探索，对程序化关卡/世界工具有潜在启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.05033"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "实时世界动作模型",
-      "sum": "RealtimeWAM提出单步异步世界动作模型。",
-      "ta": "实时世界模型方向，与游戏TA关联间接，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.06617"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散语言模型自适应循环",
-      "sum": "ALoDLM提出自适应循环的扩散语言模型。",
-      "ta": "纯语言模型方向，与游戏渲染无关，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.04198"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型定向偏置注入",
-      "sum": "通过闭环激活引导在扩散语言模型中定向注入偏置。",
-      "ta": "语言模型安全方向，与游戏TA无关，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.05894"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散语言模型表示空间MMD",
-      "sum": "为扩散语言模型提出表示空间MMD方法。",
-      "ta": "纯语言模型理论，与游戏渲染无关，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.06648"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "皇牌空战8用UE5获系列最高分",
-      "sum": "Project Aces结合UE5、自研云技术与高细节战机，获系列自2001年来最高评价。",
-      "ta": "UE5在3A空战游戏中的落地案例，值得关注其技术组合。",
-      "src": "80 Level · 10-05",
-      "url": "https://80.lv/articles/ace-combat-8-is-the-highest-reviewed-game-in-the-series-since-the-ps2/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Capcom计划用AI进化RE引擎",
-      "sum": "Capcom公布REX项目，目标是以AI共同创造游戏来进化RE引擎。",
-      "ta": "主流引擎引入AI功能的动向，值得关注对TA工作流的影响。",
-      "src": "80 Level · 10-05",
-      "url": "https://80.lv/articles/capcom-reveals-plans-to-evolve-re-engine-with-ai-features/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini空间殖民+Pyro烟雾",
-      "sum": "Karlis Stigis用Houdini几何节点结合空间殖民求解器与Pyro模拟制作循环烟雾爆发。",
-      "ta": "程序化+流体特效的实战案例，对Niagara流体思路有借鉴。",
-      "src": "80 Level · 10-05",
-      "url": "https://80.lv/articles/merging-space-colonization-solver-with-pyro-simulation-to-create-looping-smoke-bursts/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini角色水附着R&D",
-      "sum": "Milad Sãvar分享在动画角色上控制水附着、滴落与飞溅的程序化工作流R&D。",
-      "ta": "程序化流体交互R&D，对特效与材质工作流有参考。",
-      "src": "80 Level · 10-05",
-      "url": "https://80.lv/articles/artist-explores-realistic-water-adhesion-on-animated-characters-in-houdini/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender绑定引入RBF求解器",
-      "sum": "RBF Nodes插件为Blender绑定带来RBF求解器，用多输入驱动多属性。",
-      "ta": "绑定工具链增强，对角色/植被骨骼驱动有实用价值。",
-      "src": "80 Level · 10-05",
-      "url": "https://80.lv/articles/bring-rbf-solver-to-your-blender-rigs/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Ninja Theory据报裁员",
-      "sum": "Hellblade开发商Ninja Theory在脱离Xbox失败后据报裁员。",
-      "ta": "行业动态，反映3A工作室整合压力，速览。",
-      "src": "Game Developer · 10-05",
-      "url": "https://www.gamedeveloper.com/business/report-ninja-theory-lays-off-workers-after-failing-to-spin-off-from-xbox"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "ARC Raiders等将影视化",
-      "sum": "Embark Studios的The Finals与ARC Raiders获影视改编。",
-      "ta": "商业动态，与TA工作无直接关联，速览。",
-      "src": "Game Developer · 10-05",
-      "url": "https://www.gamedeveloper.com/business/arc-raiders-and-the-finals-set-for-tv-and-film-adaptations-from-backrooms-co-producer"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "沉浸式模拟仍值得做",
-      "sum": "Harvey Smith与Ben Horne阐述Black Pony Immersive的设计愿景。",
-      "ta": "设计理念访谈，与TA技术关联弱，速览。",
-      "src": "Game Developer · 10-05",
-      "url": "https://www.gamedeveloper.com/design/why-it-s-still-worth-making-immersive-sims-ft-harvey-smith-ben-horne"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "城市级高斯泼溅实时化",
-      "sum": "Budgeted-GS 通过分解 LOD 实现大规模高斯泼溅的实时渲染，解决百万级图元显存瓶颈。",
-      "ta": "关注其 LOD 分解策略，可迁移到植被海量实例的实时渲染与显存预算控制。",
-      "src": "arXiv · cs.GR · 10-02",
-      "url": "https://arxiv.org/abs/2610.03162v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "矢量图形可微渲染闭式解",
-      "sum": "Windfoil 用闭式求解二次贝塞尔轮廓的盒滤波环绕数，在 WebGPU 上统一光栅化与可微矢量图形。",
-      "ta": "闭式环绕数算法对 UI/图标类矢量渲染与可微管线有参考价值。",
-      "src": "arXiv · cs.GR · 10-01",
-      "url": "https://arxiv.org/abs/2610.02468v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "冻结DiT的外观几何解耦",
-      "sum": "DAGS 对冻结的图像 DiT 做无注意力解耦式外观与几何引导，实现时序稳定的生成式渲染。",
-      "ta": "时序稳定性方案可参考用于生成式贴图或程序化材质的帧间一致控制。",
-      "src": "arXiv · cs.GR · 10-01",
-      "url": "https://arxiv.org/abs/2610.02567v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "动态场景逆图形基准",
-      "sum": "4DCodeBench 让智能体从视频重建动态场景为可执行图形程序，评测逆图形能力。",
-      "ta": "可关注其程序化表示思路，对场景重建与程序化生成的自动化流程有启发。",
-      "src": "arXiv · cs.GR · 10-02",
-      "url": "https://arxiv.org/abs/2610.03715v1"
     }
   ]
 };
