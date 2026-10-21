@@ -2,8 +2,164 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-20 13:50",
+  "updated": "2026-10-21 13:52",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "视频模型驱动可玩世界",
+      "sum": "Matrix-Game 4.0 提出将游戏执行与视觉生成分离的可执行游戏框架路线图。",
+      "ta": "关注其「执行与渲染解耦」思路，对实时生成式场景与低延迟交互架构有参考价值。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.27999v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "3DGS 遮挡感知致密化",
+      "sum": "指出 3DGS 自适应密度控制的视锥可见性过滤无视遮挡，提出按贡献而非视角计数致密化。",
+      "ta": "3DGS 重建质量与冗余高斯问题的直接改进点，做扫描/资产重建流程值得读。",
+      "src": "arXiv · cs.GR · 10-19",
+      "url": "https://arxiv.org/abs/2610.27108v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "视频动作迁移到任意骨架",
+      "sum": "提出联合生成 3D 运动与视频的方法，可把视频中的动作重定向到任意 3D 骨架资产。",
+      "ta": "若落地可打通视频参考到骨骼动画的管线，对程序化动画与动捕替代有想象空间。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.28632v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "精灵动画神经方向帧生成",
+      "sum": "面向游戏精灵动画，提出可控方向帧生成，支持中间帧插值与向前外推。",
+      "ta": "2D 序列帧工作流的自动化补帧方向，可关注其外推能力对循环动画的适用性。",
+      "src": "arXiv · cs.GR · 10-19",
+      "url": "https://arxiv.org/abs/2610.27253v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "几何感知模型排布物体",
+      "sum": "GALA 用几何感知语言模型推理支撑、包含等细粒度约束，实现可控 3D 场景物体摆放。",
+      "ta": "程序化场景布置的语义约束求解思路，对植被/道具散布规则设计有借鉴。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.28280v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D 表示影响语义特征抬升",
+      "sum": "OV-Foam 分析 3DGS 图元重叠导致反投影特征抬升次优，改进开放词汇分割。",
+      "ta": "做 3DGS 场景语义标注或分割时，可参考其对图元重叠问题的处理。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.28131v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "NeRF 自监督几何正则",
+      "sum": "提出跨射线自监督一致性正则，缓解 vanilla NeRF 密度场几何噪声与不准。",
+      "ta": "NeRF 几何质量基础改进，做体积重建或深度提取时可留意。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.27776v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "LiDAR 神经隐式能量优化",
+      "sum": "针对稀疏噪声 LiDAR 输入，用神经隐式能量优化抑制 SDF 抖动与伪影。",
+      "ta": "偏测绘/大场景重建，与游戏管线关联较弱，速览即可。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.28598v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "少步生成式参考渲染",
+      "sum": "SolarRenderer 提出少步数的生成式参考渲染方法。",
+      "ta": "少步扩散用于渲染出图，关注其是否能进入概念/参考图快速迭代流程。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.28630"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "可动画高斯化身查询",
+      "sum": "HumanSkill-4D 实现免训练的语言查询时空可动画高斯化身。",
+      "ta": "数字人/化身方向，与植被和特效本职距离较远，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.24452"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型校正训练",
+      "sum": "提出面向扩散模型的校正训练方法。",
+      "ta": "通用扩散训练技巧，暂无明确引擎/实时关联，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.14136"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "新维加斯模组加路径追踪",
+      "sum": "WIP 模组为《辐射：新维加斯》加入路径追踪、物理天空体积云与真实光源改造。",
+      "ta": "老引擎改造案例，可看其光源与天空系统替换手法对自研管线的启发。",
+      "src": "80 Level · 10-20",
+      "url": "https://80.lv/articles/this-wip-mod-adds-path-tracing-to-fallout-new-vegas/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini 水体特效拆解",
+      "sum": "Yuki Ito 发布其 Houdini 水体 FX 展示卷的拆解版本。",
+      "ta": "流体特效参考，可看其水体解算与渲染组织方式。",
+      "src": "80 Level · 10-20",
+      "url": "https://80.lv/articles/yuki-ito-released-a-breakdown-version-of-their-houdini-water-fx-showreel/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Plasticity 2026.2 发布",
+      "sum": "Plasticity 2026.2 新增曲率分析着色器、边对齐选项与 PolySplines 控制点编辑。",
+      "ta": "CAD 建模工具更新，曲率分析着色器对硬表面建模检查有用。",
+      "src": "80 Level · 10-20",
+      "url": "https://80.lv/articles/3d-modeling-cad-software-plasticity-2026-2-has-been-released/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "UE5 开发课程合集上线",
+      "sum": "24 门以上 UE5 课程合集，覆盖蓝图、玩法编程、物理与 MetaSounds。",
+      "ta": "偏入门培训内容，对资深 TA 价值有限，速览。",
+      "src": "80 Level · 10-20",
+      "url": "https://80.lv/articles/learn-unreal-engine-5-game-development-with-over-24-courses-from-this-bundle/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Fuse Games 谈联合开发框架",
+      "sum": "Fuse Games CEO 拆解《星球大战：银河赛车》的分布式联合开发框架。",
+      "ta": "制作管理向内容，关注跨团队协作分工方式即可。",
+      "src": "Game Developer · 10-20",
+      "url": "https://www.gamedeveloper.com/production/fuse-games-ceo-breaks-down-codev-framework-for-star-wars-galactic-racer"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "开发者警告发行合同陷阱",
+      "sum": "Innersloth 联合创始人提醒开发者市面上存在大量糟糕的发行交易。",
+      "ta": "商务向提醒，与 TA 技术工作无直接关联，速览。",
+      "src": "Game Developer · 10-20",
+      "url": "https://www.gamedeveloper.com/business/outersloth-co-founder-warns-devs-there-are-some-very-bad-deals-out-there-"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -246,15 +402,6 @@ window.INTEL_RECENT = {
       "ta": "程序化建模与形变工具可参考其控制柄优化思路，非实时渲染直接相关。",
       "src": "arXiv · cs.GR · 10-16",
       "url": "https://arxiv.org/abs/2610.23173v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "3D打印网格防篡改框架",
-      "sum": "SAMS用结构化图框架检测增材制造网格文件的几何缺陷与恶意篡改。",
-      "ta": "网格几何完整性校验思路，与游戏资产管线关联弱，速览即可。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.22741v1"
     },
     {
       "cat": "ai",
@@ -839,15 +986,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Houdini曲线生成服装工具",
-      "sum": "新工具Fibric基于曲线在Houdini中创建服装与布料。",
-      "ta": "程序化布料生成思路可借鉴到植被/装饰物的曲线驱动建模流程。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/new-curve-based-clothing-garment-creation-houdini-tool-released/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "Blender自动UV展开插件",
       "sum": "免费插件UVgami可快速自动展开UV，支持浏览器试用。",
       "ta": "批量资产UV自动化对植被/道具流水线有直接提效价值。",
@@ -1088,16 +1226,6 @@ window.INTEL_RECENT = {
       "ta": "纯行业动向，与 TA 技术工作无关。",
       "src": "80 Level · 10-12",
       "url": "https://80.lv/articles/silent-hill-producer-says-konami-plans-second-and-third-waves-of-games/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "3DGS场景可动水面动画",
-      "sum": "新方法让3D高斯泼溅静态场景支持动态水面流动动画。",
-      "ta": "3DGS动态化是实时渲染热点，植被/流体TA可关注其运动合成思路。",
-      "src": "arXiv · cs.GR · 10-09",
-      "url": "https://arxiv.org/abs/2610.13860v1"
     },
     {
       "cat": "ai",
@@ -1685,134 +1813,6 @@ window.INTEL_RECENT = {
       "ta": "与游戏渲染无关，但可微渲染从光传输扩展到其他成像模态的思路可作方法论参考。",
       "src": "arXiv · cs.GR · 10-06",
       "url": "https://arxiv.org/abs/2610.07941v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "潜扩散做高保真形变仿真",
-      "sum": "PhysLDM用潜扩散模型做高分辨率体积网格的长时程形变仿真，缓解误差累积。",
-      "ta": "若做布料/软体离线仿真或ML变形器，其长时程预测的误差控制策略值得关注。",
-      "src": "arXiv · cs.GR · 10-06",
-      "url": "https://arxiv.org/abs/2610.07609v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "仿真中递归自改进扩具身数据",
-      "sum": "EmbodiedSmith在仿真中通过递归自改进飞轮扩展具身智能训练数据。",
-      "ta": "与游戏TA无直接关联，仅作具身数据生成范式的速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.07969"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Web世界模型抗提示注入训练",
-      "sum": "AdvSim2Real在Web世界模型中用自适应提示注入训练Web智能体。",
-      "ta": "与游戏/渲染无关，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.08773"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "世界模型自适应潜容量",
-      "sum": "该工作为世界模型引入自适应潜容量机制。",
-      "ta": "若关注世界模型架构，可速览其潜容量调度思路，但与当前TA工作无直接交集。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.32921"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "世界模型物理能力终考",
-      "sum": "该工作提出针对世界模型物理理解能力的评测基准。",
-      "ta": "可作世界模型物理常识的评测参考，与实时渲染管线无直接关系。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.08791"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "世界规模由移动速度与密度决定",
-      "sum": "资深世界设计师Nathan Cheever指出，移动速度、遭遇密度、可复用空间与产能决定世界该多大。",
-      "ta": "做程序化植被/地形工具时，世界尺度应服从玩法节奏与产能，而非盲目求大。",
-      "src": "80 Level · 10-06",
-      "url": "https://80.lv/articles/veteran-game-world-designer-explains-why-bigger-game-worlds-aren-t-always-better/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "恐龙腿部肌肉仿真获导演认可",
-      "sum": "一段恐龙腿部肌肉仿真作品获得Guillermo del Toro的公开认可。",
-      "ta": "可速览其肌肉形变表现，作为生物动画参考。",
-      "src": "80 Level · 10-06",
-      "url": "https://80.lv/articles/dinosaur-leg-muscle-simulation-gets-guillermo-del-toro-s-approval/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "title": "白水求解器基于Wētā研究开源",
-      "sum": "VFX艺术家Alexander Vasilenko发布Guided Bubbles & Wet Foam Solver，基于Wētā研究改善气泡与泡沫运动。",
-      "ta": "做Niagara流体/白水特效时，这套气泡引导与湿泡沫求解思路可直接借鉴，是难得的公开实现。",
-      "src": "80 Level · 10-06",
-      "url": "https://80.lv/articles/vfx-artist-shared-advanced-whitewater-solver-based-on-w-t-s-research/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Fate角色3D化流程分享",
-      "sum": "Sarah Paiva分享BJD娃娃风格Saber的3D制作，含基础形塑与金色材质处理。",
-      "ta": "可速览其金属材质处理手法，作为角色材质参考。",
-      "src": "80 Level · 10-06",
-      "url": "https://80.lv/articles/how-to-recreate-saber-from-type-moon-s-fate-stay-night-in-3d/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "二手PS5 Pro溢价66%出售",
-      "sum": "GameStop等零售商以高于MSRP 66%的价格出售二手PS5 Pro。",
-      "ta": "硬件市场行情，与TA工作无直接关系。",
-      "src": "Game Developer · 10-06",
-      "url": "https://www.gamedeveloper.com/console/gamestop-other-retailers-to-sell-used-playstation-5-pro-units-for-66-percent-over-msrp"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "工作室称裁员沟通过于透明",
-      "sum": "Unlead Labs工作室负责人称在裁员准备中对员工'不负责任地透明'。",
-      "ta": "行业管理八卦，速览即可。",
-      "src": "Game Developer · 10-06",
-      "url": "https://www.gamedeveloper.com/business/unlead-labs-studio-head-says-they-were-irresponsibly-transparent-in-preparing-staff-for-layoffs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "合作开发助Backrooms破400万",
-      "sum": "Blackbird Interactive与Secret Mode通过合作开发帮助Escape the Backrooms达到超400万玩家。",
-      "ta": "合作开发案例，可速览其分工模式。",
-      "src": "Game Developer · 10-06",
-      "url": "https://www.gamedeveloper.com/production/co-dev-case-study-how-blackbird-interactive-and-secret-mode-helped-escape-the-backrooms-ride-the-backrooms-hype-wave"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "预积分神经发光体实时渲染",
-      "sum": "提出预积分神经发光体方案，解决带遮挡外壳的高面数发光网格直接光照瓶颈。",
-      "ta": "实时直接光照的硬核突破，对材质/Shader性能优化有直接参考价值。",
-      "src": "arXiv · cs.GR · 10-05",
-      "url": "https://arxiv.org/abs/2610.06762v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "低方差高斯重采样抗噪",
-      "sum": "SteadySplats对低方差高斯重采样，降低随机顺序无关透明渲染的高频噪声。",
-      "ta": "3DGS渲染噪声抑制方案，对半透明植被/粒子渲染有借鉴意义。",
-      "src": "arXiv · cs.GR · 10-04",
-      "url": "https://arxiv.org/abs/2610.05576v1"
     }
   ]
 };
