@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月21日 · 周三",
+  "date": "2026年10月22日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>视频模型驱动可玩世界</em> / <em>3DGS 遮挡感知致密化</em> / <em>视频动作迁移到任意骨架</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Substance Painter 12.2 可直接绘制烘焙笼</em> / <em>EA 关闭 BioWare</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -275,168 +275,131 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
+      "imp": "mid",
+      "title": "强化学习驱动肌肉角色动画",
+      "sum": "RLMuscle 用强化学习自动生成肌肉激活，替代手工指定，提升形变物理真实感。",
+      "ta": "角色形变管线可参考其自动肌肉激活思路，减少手工调参。",
+      "src": "arXiv · cs.GR · 10-21",
+      "url": "https://arxiv.org/abs/2610.30033v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "文本自动生成物理参数",
+      "sum": "AutoPhyX 从文本条件自动生成物理属性参数，服务高保真 4D 物理仿真。",
+      "ta": "程序化生成物理材质参数时可借鉴，免去逐场景优化。",
+      "src": "arXiv · cs.GR · 10-21",
+      "url": "https://arxiv.org/abs/2610.29517v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "XR 开发编码智能体基准",
+      "sum": "GenXR-Bench 提出评估编码智能体构建交互式 XR 应用的基准。",
+      "ta": "关注智能体在 XR 动态场景下的工程能力评测维度。",
+      "src": "arXiv · cs.GR · 10-21",
+      "url": "https://arxiv.org/abs/2610.29014v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "流式生成可交互3D世界",
+      "sum": "WorldStream 用分层规划与持久状态，流式扩展可玩地形并恢复编辑过的场景。",
+      "ta": "程序化世界生成可参考其持久状态与分层规划架构。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.28827v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "虚拟世界规模化训练具身智能",
+      "sum": "研究在多样虚拟世界中持续预训练具身智能体，探索游戏环境规模化训练。",
+      "ta": "游戏虚拟世界作为具身智能训练场的思路值得留意。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.28698"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频扩散块稀疏注意力分配",
+      "sum": "提出免训练的输出导向块稀疏注意力分配，用于视频扩散 Transformer。",
+      "ta": "视频扩散推理加速思路，可类比实时渲染中的稀疏计算。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.29441"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型视觉状态编码器",
+      "sum": "ALPS 提出面向世界模型的视觉状态编码器。",
+      "ta": "世界模型状态表征方法，与程序化生成潜在相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.30120"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "赛博朋克2077再推免费更新",
+      "sum": "2.5 更新加入双持、义体定制、跨平台模组与重大渲染升级。",
+      "ta": "关注其渲染升级具体改了什么，可作管线参考。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/cdpr-somehow-found-another-reason-to-update-cyberpunk-2077-again-for-free/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "古墓丽影谈30年关卡设计",
+      "sum": "游戏总监回顾 30 年 3D 关卡设计演变，涉及相机技术与可选引导系统。",
+      "ta": "关卡与相机设计演进视角，对场景搭建有启发。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/tomb-raider-director-explains-how-3d-level-design-has-evolved-over-30-years/"
+    },
+    {
+      "cat": "flow",
       "imp": "hi",
       "rank": 1,
-      "title": "视频模型驱动可玩世界",
-      "sum": "Matrix-Game 4.0 提出将游戏执行与视觉生成分离的可执行游戏框架路线图。",
-      "ta": "关注其「执行与渲染解耦」思路，对实时生成式场景与低延迟交互架构有参考价值。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.27999v1"
+      "title": "Substance Painter 12.2 可直接绘制烘焙笼",
+      "sum": "12.2 引入笼体绘制、更智能多边形填充、纹理集高亮与重叠透明材质实时渲染改进。",
+      "ta": "烘焙笼绘制与透明材质实时渲染改进直接影响贴图烘焙与材质工作流。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/substance-3d-painter-12-2-lets-artists-paint-baking-cages-directly-on-models/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 重拓扑插件打折",
+      "sum": "NKZ Retopia 可在雕刻上直接绘制重拓扑，自动处理顶点与四边面网格。",
+      "ta": "重拓扑自动化工具，可评估是否纳入建模流程。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/get-a-20-discount-on-this-blender-add-on-for-drawing-retopology-right-on-the-sculpt/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "RPG Maker U2U 免3D做HD-2D",
+      "sum": "U2U 用 P2D 地图、氛围特效与 Lua 插件，让开发者无需学 3D 构建 HD-2D 世界。",
+      "ta": "HD-2D 风格化管线思路，可参考其氛围特效做法。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/interview-rpg-maker-u2u-lets-you-build-hd-2d-worlds-without-learning-3d/"
     },
     {
       "cat": "gfx",
+      "imp": "mid",
+      "title": "Houdini/C4D 风格化绘画着色器",
+      "sum": "YMA Painterly 提供 12 个着色器，在 C4D 与 Houdini 中实现绘画风格化外观。",
+      "ta": "风格化着色器实现思路，可借鉴到材质与 NPR 效果。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/how-to-make-3d-look-like-a-stylized-painting-with-shaders-in-houdini-c4d/"
+    },
+    {
+      "cat": "biz",
       "imp": "hi",
       "rank": 2,
-      "title": "3DGS 遮挡感知致密化",
-      "sum": "指出 3DGS 自适应密度控制的视锥可见性过滤无视遮挡，提出按贡献而非视角计数致密化。",
-      "ta": "3DGS 重建质量与冗余高斯问题的直接改进点，做扫描/资产重建流程值得读。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.27108v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "视频动作迁移到任意骨架",
-      "sum": "提出联合生成 3D 运动与视频的方法，可把视频中的动作重定向到任意 3D 骨架资产。",
-      "ta": "若落地可打通视频参考到骨骼动画的管线，对程序化动画与动捕替代有想象空间。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28632v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "精灵动画神经方向帧生成",
-      "sum": "面向游戏精灵动画，提出可控方向帧生成，支持中间帧插值与向前外推。",
-      "ta": "2D 序列帧工作流的自动化补帧方向，可关注其外推能力对循环动画的适用性。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.27253v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "几何感知模型排布物体",
-      "sum": "GALA 用几何感知语言模型推理支撑、包含等细粒度约束，实现可控 3D 场景物体摆放。",
-      "ta": "程序化场景布置的语义约束求解思路，对植被/道具散布规则设计有借鉴。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28280v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D 表示影响语义特征抬升",
-      "sum": "OV-Foam 分析 3DGS 图元重叠导致反投影特征抬升次优，改进开放词汇分割。",
-      "ta": "做 3DGS 场景语义标注或分割时，可参考其对图元重叠问题的处理。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28131v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3DGS 编辑用于变化检测",
-      "sum": "利用自动 3DGS 编辑与贝叶斯证据融合，实现在线场景变化检测。",
-      "ta": "数字孪生/场景更新方向，关注其变化信念更新机制是否可用于运行时场景维护。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28490v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "NeRF 自监督几何正则",
-      "sum": "提出跨射线自监督一致性正则，缓解 vanilla NeRF 密度场几何噪声与不准。",
-      "ta": "NeRF 几何质量基础改进，做体积重建或深度提取时可留意。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.27776v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "LiDAR 神经隐式能量优化",
-      "sum": "针对稀疏噪声 LiDAR 输入，用神经隐式能量优化抑制 SDF 抖动与伪影。",
-      "ta": "偏测绘/大场景重建，与游戏管线关联较弱，速览即可。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28598v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "少步生成式参考渲染",
-      "sum": "SolarRenderer 提出少步数的生成式参考渲染方法。",
-      "ta": "少步扩散用于渲染出图，关注其是否能进入概念/参考图快速迭代流程。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.28630"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "可动画高斯化身查询",
-      "sum": "HumanSkill-4D 实现免训练的语言查询时空可动画高斯化身。",
-      "ta": "数字人/化身方向，与植被和特效本职距离较远，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.24452"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型校正训练",
-      "sum": "提出面向扩散模型的校正训练方法。",
-      "ta": "通用扩散训练技巧，暂无明确引擎/实时关联，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.14136"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "新维加斯模组加路径追踪",
-      "sum": "WIP 模组为《辐射：新维加斯》加入路径追踪、物理天空体积云与真实光源改造。",
-      "ta": "老引擎改造案例，可看其光源与天空系统替换手法对自研管线的启发。",
-      "src": "80 Level · 10-20",
-      "url": "https://80.lv/articles/this-wip-mod-adds-path-tracing-to-fallout-new-vegas/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini 水体特效拆解",
-      "sum": "Yuki Ito 发布其 Houdini 水体 FX 展示卷的拆解版本。",
-      "ta": "流体特效参考，可看其水体解算与渲染组织方式。",
-      "src": "80 Level · 10-20",
-      "url": "https://80.lv/articles/yuki-ito-released-a-breakdown-version-of-their-houdini-water-fx-showreel/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Plasticity 2026.2 发布",
-      "sum": "Plasticity 2026.2 新增曲率分析着色器、边对齐选项与 PolySplines 控制点编辑。",
-      "ta": "CAD 建模工具更新，曲率分析着色器对硬表面建模检查有用。",
-      "src": "80 Level · 10-20",
-      "url": "https://80.lv/articles/3d-modeling-cad-software-plasticity-2026-2-has-been-released/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "UE5 开发课程合集上线",
-      "sum": "24 门以上 UE5 课程合集，覆盖蓝图、玩法编程、物理与 MetaSounds。",
-      "ta": "偏入门培训内容，对资深 TA 价值有限，速览。",
-      "src": "80 Level · 10-20",
-      "url": "https://80.lv/articles/learn-unreal-engine-5-game-development-with-over-24-courses-from-this-bundle/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Fuse Games 谈联合开发框架",
-      "sum": "Fuse Games CEO 拆解《星球大战：银河赛车》的分布式联合开发框架。",
-      "ta": "制作管理向内容，关注跨团队协作分工方式即可。",
-      "src": "Game Developer · 10-20",
-      "url": "https://www.gamedeveloper.com/production/fuse-games-ceo-breaks-down-codev-framework-for-star-wars-galactic-racer"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "开发者警告发行合同陷阱",
-      "sum": "Innersloth 联合创始人提醒开发者市面上存在大量糟糕的发行交易。",
-      "ta": "商务向提醒，与 TA 技术工作无直接关联，速览。",
-      "src": "Game Developer · 10-20",
-      "url": "https://www.gamedeveloper.com/business/outersloth-co-founder-warns-devs-there-are-some-very-bad-deals-out-there-"
+      "title": "EA 关闭 BioWare",
+      "sum": "EA 关闭成立 30 年的 BioWare，裁员约 400 人，其中 50 人为其剩余员工。",
+      "ta": "行业地震级工作室关闭，关注其对 3A 团队与人才流动的影响。",
+      "src": "Game Developer · 10-21",
+      "url": "https://www.gamedeveloper.com/business/ea-closes-mass-effect-dragon-age-creator-bioware-after-30-years-of-game-development"
     }
   ],
   "flashbackTitle": "",

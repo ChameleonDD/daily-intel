@@ -2,8 +2,136 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-21 13:52",
+  "updated": "2026-10-22 13:56",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "强化学习驱动肌肉角色动画",
+      "sum": "RLMuscle 用强化学习自动生成肌肉激活，替代手工指定，提升形变物理真实感。",
+      "ta": "角色形变管线可参考其自动肌肉激活思路，减少手工调参。",
+      "src": "arXiv · cs.GR · 10-21",
+      "url": "https://arxiv.org/abs/2610.30033v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "文本自动生成物理参数",
+      "sum": "AutoPhyX 从文本条件自动生成物理属性参数，服务高保真 4D 物理仿真。",
+      "ta": "程序化生成物理材质参数时可借鉴，免去逐场景优化。",
+      "src": "arXiv · cs.GR · 10-21",
+      "url": "https://arxiv.org/abs/2610.29517v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "XR 开发编码智能体基准",
+      "sum": "GenXR-Bench 提出评估编码智能体构建交互式 XR 应用的基准。",
+      "ta": "关注智能体在 XR 动态场景下的工程能力评测维度。",
+      "src": "arXiv · cs.GR · 10-21",
+      "url": "https://arxiv.org/abs/2610.29014v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "流式生成可交互3D世界",
+      "sum": "WorldStream 用分层规划与持久状态，流式扩展可玩地形并恢复编辑过的场景。",
+      "ta": "程序化世界生成可参考其持久状态与分层规划架构。",
+      "src": "arXiv · cs.GR · 10-20",
+      "url": "https://arxiv.org/abs/2610.28827v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "虚拟世界规模化训练具身智能",
+      "sum": "研究在多样虚拟世界中持续预训练具身智能体，探索游戏环境规模化训练。",
+      "ta": "游戏虚拟世界作为具身智能训练场的思路值得留意。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.28698"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频扩散块稀疏注意力分配",
+      "sum": "提出免训练的输出导向块稀疏注意力分配，用于视频扩散 Transformer。",
+      "ta": "视频扩散推理加速思路，可类比实时渲染中的稀疏计算。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.29441"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "世界模型视觉状态编码器",
+      "sum": "ALPS 提出面向世界模型的视觉状态编码器。",
+      "ta": "世界模型状态表征方法，与程序化生成潜在相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.30120"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "赛博朋克2077再推免费更新",
+      "sum": "2.5 更新加入双持、义体定制、跨平台模组与重大渲染升级。",
+      "ta": "关注其渲染升级具体改了什么，可作管线参考。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/cdpr-somehow-found-another-reason-to-update-cyberpunk-2077-again-for-free/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "古墓丽影谈30年关卡设计",
+      "sum": "游戏总监回顾 30 年 3D 关卡设计演变，涉及相机技术与可选引导系统。",
+      "ta": "关卡与相机设计演进视角，对场景搭建有启发。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/tomb-raider-director-explains-how-3d-level-design-has-evolved-over-30-years/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Substance Painter 12.2 可直接绘制烘焙笼",
+      "sum": "12.2 引入笼体绘制、更智能多边形填充、纹理集高亮与重叠透明材质实时渲染改进。",
+      "ta": "烘焙笼绘制与透明材质实时渲染改进直接影响贴图烘焙与材质工作流。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/substance-3d-painter-12-2-lets-artists-paint-baking-cages-directly-on-models/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 重拓扑插件打折",
+      "sum": "NKZ Retopia 可在雕刻上直接绘制重拓扑，自动处理顶点与四边面网格。",
+      "ta": "重拓扑自动化工具，可评估是否纳入建模流程。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/get-a-20-discount-on-this-blender-add-on-for-drawing-retopology-right-on-the-sculpt/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "RPG Maker U2U 免3D做HD-2D",
+      "sum": "U2U 用 P2D 地图、氛围特效与 Lua 插件，让开发者无需学 3D 构建 HD-2D 世界。",
+      "ta": "HD-2D 风格化管线思路，可参考其氛围特效做法。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/interview-rpg-maker-u2u-lets-you-build-hd-2d-worlds-without-learning-3d/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Houdini/C4D 风格化绘画着色器",
+      "sum": "YMA Painterly 提供 12 个着色器，在 C4D 与 Houdini 中实现绘画风格化外观。",
+      "ta": "风格化着色器实现思路，可借鉴到材质与 NPR 效果。",
+      "src": "80 Level · 10-21",
+      "url": "https://80.lv/articles/how-to-make-3d-look-like-a-stylized-painting-with-shaders-in-houdini-c4d/"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 2,
+      "title": "EA 关闭 BioWare",
+      "sum": "EA 关闭成立 30 年的 BioWare，裁员约 400 人，其中 50 人为其剩余员工。",
+      "ta": "行业地震级工作室关闭，关注其对 3A 团队与人才流动的影响。",
+      "src": "Game Developer · 10-21",
+      "url": "https://www.gamedeveloper.com/business/ea-closes-mass-effect-dragon-age-creator-bioware-after-30-years-of-game-development"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -51,15 +179,6 @@ window.INTEL_RECENT = {
       "ta": "程序化场景布置的语义约束求解思路，对植被/道具散布规则设计有借鉴。",
       "src": "arXiv · cs.GR · 10-20",
       "url": "https://arxiv.org/abs/2610.28280v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D 表示影响语义特征抬升",
-      "sum": "OV-Foam 分析 3DGS 图元重叠导致反投影特征抬升次优，改进开放词汇分割。",
-      "ta": "做 3DGS 场景语义标注或分割时，可参考其对图元重叠问题的处理。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28131v1"
     },
     {
       "cat": "gfx",
@@ -483,15 +602,6 @@ window.INTEL_RECENT = {
       "ta": "涉及脚本版本管理与共享存储的工程实践，可看同行如何拆分 dev/published 副本。",
       "src": "Tech-Artists · 10-16",
       "url": "https://www.tech-artists.org/t/how-do-you-structure-git-projects-when-your-files-live-on-a-nas-maya-scripts-dev-vs-published-copies/18581"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 玻璃质感苹果制作",
-      "sum": "Moop-A-Doop 展示了一个风格化玻璃质感苹果的渲染制作过程。",
-      "ta": "可速览其玻璃/折射材质与打光思路，对风格化材质有参考价值。",
-      "src": "80 Level · 10-16",
-      "url": "https://80.lv/articles/see-how-this-sparkly-glass-like-apple-was-made-in-blender/"
     },
     {
       "cat": "flow",
@@ -1705,114 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "贴图/UI 中文字渲染质量评测，对生成式贴图工具选型有参考。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.09823"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "分层过程理解提升主动助手",
-      "sum": "用分层过程理解改进 AI 主动协助的时机与内容。",
-      "ta": "过程理解思路或可迁移到编辑器内主动式辅助工具的交互设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.06505"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "策略内蒸馏将经验写入扩散权重",
-      "sum": "通过策略内上下文蒸馏把智能体经验内化进扩散模型权重。",
-      "ta": "模型经验内化方法，关注其对生成式资产工具持续学习能力的启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.07250"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Unity 发布提示式游戏工具 Spark",
-      "sum": "Unity 联合 Google AI 推出基于提示的游戏开发工具 Unity Spark。",
-      "ta": "关注其如何把 Asset Store 美术资产接入 AI 辅助编辑器，影响未来工作流。",
-      "src": "Game Developer · 10-07",
-      "url": "https://www.gamedeveloper.com/programming/unity-unveils-unity-spark-an-prompt-based-tool-for-google-s-ai-games-platform"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Godot 伪 3D 视觉实现解析",
-      "sum": "开发者分享在 Godot 中为恐怖合作游戏伪造 3D 观感的具体做法。",
-      "ta": "低成本伪 3D 渲染技巧，对风格化项目与性能受限平台有借鉴价值。",
-      "src": "80 Level · 10-07",
-      "url": "https://80.lv/articles/see-how-developers-faked-3d-look-in-godot-for-their-darkwood-inspired-co-op-horror/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "潜行者 2 风化工具箱制作流程",
-      "sum": "美术师讲解潜行者 2 DLC 中可交互工具箱的建模、布料模拟与做旧贴图。",
-      "ta": "布料仿真与风化材质流程细节，可参考其做旧贴图思路。",
-      "src": "80 Level · 10-07",
-      "url": "https://80.lv/articles/creating-a-weathered-toolbox-for-s-t-a-l-k-e-r-2-cost-of-hope/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "南极克苏鲁合作恐怖视觉解析",
-      "sum": "UNFROST 团队谈南极克苏鲁合作恐怖的视觉机制灵感与 Unity 工作流。",
-      "ta": "小团队 Unity 工作流与敌人运动迭代经验，对原型验证节奏有参考。",
-      "src": "80 Level · 10-07",
-      "url": "https://80.lv/articles/making-a-co-op-survival-horror-with-lovecraftian-creatures-set-in-antarctica/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Bit Reactor 召回过半停职员工",
-      "sum": "星战 Zero Company 开发商 Bit Reactor 召回超半数此前停职的员工。",
-      "ta": "工作室人事波动，关注其对项目排期与外包协作的间接影响。",
-      "src": "Game Developer · 10-07",
-      "url": "https://www.gamedeveloper.com/business/star-wars-zero-company-developer-bit-reactor-brings-back-over-half-of-furloughed-staff"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Undead Labs 反思裁员沟通方式",
-      "sum": "Undead Labs 负责人称在裁员准备中对员工过度坦诚。",
-      "ta": "行业管理侧反思，与 TA 日常工作关联有限，速览即可。",
-      "src": "Game Developer · 10-06",
-      "url": "https://www.gamedeveloper.com/business/unlead-labs-studio-head-says-they-were-irresponsibly-transparent-in-preparing-staff-for-layoffs"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RGA 2.15支持源码到ISA关联",
-      "sum": "AMD Radeon GPU Analyzer 2.15可将预编译GPU代码对象关联回源码行，便于ISA分析优化。",
-      "ta": "做Shader性能调优时，能直接定位到具体源码行对应的ISA指令，省去盲猜汇编的功夫。",
-      "src": "AMD GPUOpen · 10-06",
-      "url": "https://gpuopen.com/learn/rga-source-to-isa-correlation-gpu-code-objects/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "扩散风格化支持局部控制",
-      "sum": "该工作解耦内容与风格两个条件权重，实现区域级的图像风格化控制。",
-      "ta": "做材质贴图风格化时，区域级控制比全局风格迁移更实用，可关注其条件解耦方式。",
-      "src": "arXiv · cs.GR · 10-06",
-      "url": "https://arxiv.org/abs/2610.08704v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "点基变形混合做面部重定向",
-      "sum": "PDB用点基变形混合实现跨网格面部动画重定向，减少表面伪影。",
-      "ta": "面部重定向若走点云混合而非拓扑依赖，可跨不同网格复用表情动画，值得看其抗伪影策略。",
-      "src": "arXiv · cs.GR · 10-06",
-      "url": "https://arxiv.org/abs/2610.08672v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "超声可微渲染做形状优化",
-      "sum": "UltraDiff将可微渲染范式扩展到医学超声，通过匹配渲染图像优化场景参数。",
-      "ta": "与游戏渲染无关，但可微渲染从光传输扩展到其他成像模态的思路可作方法论参考。",
-      "src": "arXiv · cs.GR · 10-06",
-      "url": "https://arxiv.org/abs/2610.07941v1"
     }
   ]
 };
