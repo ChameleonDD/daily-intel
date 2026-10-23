@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月22日 · 周四",
+  "date": "2026年10月23日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Substance Painter 12.2 可直接绘制烘焙笼</em> / <em>EA 关闭 BioWare</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Epic办AI游戏Jam赛</em> / <em>高度场高斯泼溅重建曲面</em> / <em>跨游戏实体一致生成渲染</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -274,132 +274,112 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "强化学习驱动肌肉角色动画",
-      "sum": "RLMuscle 用强化学习自动生成肌肉激活，替代手工指定，提升形变物理真实感。",
-      "ta": "角色形变管线可参考其自动肌肉激活思路，减少手工调参。",
-      "src": "arXiv · cs.GR · 10-21",
-      "url": "https://arxiv.org/abs/2610.30033v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "文本自动生成物理参数",
-      "sum": "AutoPhyX 从文本条件自动生成物理属性参数，服务高保真 4D 物理仿真。",
-      "ta": "程序化生成物理材质参数时可借鉴，免去逐场景优化。",
-      "src": "arXiv · cs.GR · 10-21",
-      "url": "https://arxiv.org/abs/2610.29517v1"
-    },
-    {
       "cat": "ai",
-      "imp": "lo",
-      "title": "XR 开发编码智能体基准",
-      "sum": "GenXR-Bench 提出评估编码智能体构建交互式 XR 应用的基准。",
-      "ta": "关注智能体在 XR 动态场景下的工程能力评测维度。",
-      "src": "arXiv · cs.GR · 10-21",
-      "url": "https://arxiv.org/abs/2610.29014v1"
+      "imp": "mid",
+      "title": "Epic办AI游戏Jam赛",
+      "sum": "2026 Epic AI MegaJam于11月12-15日举行，用UE或UEFN组队做可玩游戏赢奖金。",
+      "ta": "看参赛作品能了解AI agent在UE工作流里的实际落地方式。",
+      "src": "Unreal Engine · 10-22",
+      "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "流式生成可交互3D世界",
-      "sum": "WorldStream 用分层规划与持久状态，流式扩展可玩地形并恢复编辑过的场景。",
-      "ta": "程序化世界生成可参考其持久状态与分层规划架构。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28827v1"
+      "title": "高度场高斯泼溅重建曲面",
+      "sum": "H-2DGS用高度场高斯泼溅做神经外科手术表面的锐利可变形重建。",
+      "ta": "高度场约束2DGS的思路可借鉴到地形/植被表面的高质量重建。",
+      "src": "arXiv · cs.GR · 10-22",
+      "url": "https://arxiv.org/abs/2610.30910v1"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "虚拟世界规模化训练具身智能",
-      "sum": "研究在多样虚拟世界中持续预训练具身智能体，探索游戏环境规模化训练。",
-      "ta": "游戏虚拟世界作为具身智能训练场的思路值得留意。",
+      "imp": "mid",
+      "title": "跨游戏实体一致生成渲染",
+      "sum": "AnyGameRenderer实现跨游戏的实体一致生成式渲染，并给出实体级基准。",
+      "ta": "实体一致性是生成式渲染进游戏管线的关键卡点，值得看其评测口径。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.28698"
+      "url": "https://huggingface.co/papers/2610.31466"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频扩散块稀疏注意力分配",
-      "sum": "提出免训练的输出导向块稀疏注意力分配，用于视频扩散 Transformer。",
-      "ta": "视频扩散推理加速思路，可类比实时渲染中的稀疏计算。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.29441"
+      "cat": "flow",
+      "imp": "mid",
+      "title": "HD-2D像素艺术电影化管线",
+      "sum": "FF Resonance制作人谈HD-2D管线、动态镜头、精灵调整、光照与VFX。",
+      "ta": "像素风下的光照与VFX处理手法，对风格化渲染有直接参考价值。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/interview-how-final-fantasy-resonance-turns-hd-2d-pixel-art-into-a-cinematic-experience/"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
+      "imp": "mid",
+      "title": "废弃场景自定义材质流程",
+      "sum": "作者分享地中海废弃房屋场景，讲多边形分配技巧与Substance Designer自定义材质。",
+      "ta": "多边形预算分配与程序化材质搭建，是环境TA的日常可复用经验。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/building-an-abandoned-the-last-of-us-inspired-mediterranean-house-with-custom-materials/"
+    },
+    {
+      "cat": "flow",
       "imp": "lo",
-      "title": "世界模型视觉状态编码器",
-      "sum": "ALPS 提出面向世界模型的视觉状态编码器。",
-      "ta": "世界模型状态表征方法，与程序化生成潜在相关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.30120"
+      "title": "Blender海报散布插件",
+      "sum": "G_ni发布Poster Pin与Poster Print插件，快速生成并散布墙面复古海报。",
+      "ta": "散布类小工具思路可参考到植被/贴花批量布置的场景搭建流程。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/blender-add-ons-for-creating-realistic-vintage-posters-scattering-them-on-the-wall/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender做2D漫画角色",
+      "sum": "Chloe Worthy用Blender将热门漫画封面角色做成3D版本。",
+      "ta": "2D转3D的角色还原流程，可看其造型与材质简化取舍。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/these-2d-characters-from-popular-manga-are-made-in-3d-with-blender/"
     },
     {
       "cat": "biz",
-      "imp": "mid",
-      "title": "赛博朋克2077再推免费更新",
-      "sum": "2.5 更新加入双持、义体定制、跨平台模组与重大渲染升级。",
-      "ta": "关注其渲染升级具体改了什么，可作管线参考。",
-      "src": "80 Level · 10-21",
-      "url": "https://80.lv/articles/cdpr-somehow-found-another-reason-to-update-cyberpunk-2077-again-for-free/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "古墓丽影谈30年关卡设计",
-      "sum": "游戏总监回顾 30 年 3D 关卡设计演变，涉及相机技术与可选引导系统。",
-      "ta": "关卡与相机设计演进视角，对场景搭建有启发。",
-      "src": "80 Level · 10-21",
-      "url": "https://80.lv/articles/tomb-raider-director-explains-how-3d-level-design-has-evolved-over-30-years/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Substance Painter 12.2 可直接绘制烘焙笼",
-      "sum": "12.2 引入笼体绘制、更智能多边形填充、纹理集高亮与重叠透明材质实时渲染改进。",
-      "ta": "烘焙笼绘制与透明材质实时渲染改进直接影响贴图烘焙与材质工作流。",
-      "src": "80 Level · 10-21",
-      "url": "https://80.lv/articles/substance-3d-painter-12-2-lets-artists-paint-baking-cages-directly-on-models/"
-    },
-    {
-      "cat": "flow",
       "imp": "lo",
-      "title": "Blender 重拓扑插件打折",
-      "sum": "NKZ Retopia 可在雕刻上直接绘制重拓扑，自动处理顶点与四边面网格。",
-      "ta": "重拓扑自动化工具，可评估是否纳入建模流程。",
-      "src": "80 Level · 10-21",
-      "url": "https://80.lv/articles/get-a-20-discount-on-this-blender-add-on-for-drawing-retopology-right-on-the-sculpt/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "RPG Maker U2U 免3D做HD-2D",
-      "sum": "U2U 用 P2D 地图、氛围特效与 Lua 插件，让开发者无需学 3D 构建 HD-2D 世界。",
-      "ta": "HD-2D 风格化管线思路，可参考其氛围特效做法。",
-      "src": "80 Level · 10-21",
-      "url": "https://80.lv/articles/interview-rpg-maker-u2u-lets-you-build-hd-2d-worlds-without-learning-3d/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Houdini/C4D 风格化绘画着色器",
-      "sum": "YMA Painterly 提供 12 个着色器，在 C4D 与 Houdini 中实现绘画风格化外观。",
-      "ta": "风格化着色器实现思路，可借鉴到材质与 NPR 效果。",
-      "src": "80 Level · 10-21",
-      "url": "https://80.lv/articles/how-to-make-3d-look-like-a-stylized-painting-with-shaders-in-houdini-c4d/"
+      "title": "Xbox新主机与掌机传闻",
+      "sum": "报道称Xbox Helix主机价格已有估算，掌机计划2027年，另有Game Pass调整与裁员。",
+      "ta": "平台周期与订阅策略变化，间接影响项目排期与目标硬件规格。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/xbox-helix-console-price-reportedly-estimated-handheld-planned-for-2027/"
     },
     {
       "cat": "biz",
-      "imp": "hi",
-      "rank": 2,
-      "title": "EA 关闭 BioWare",
-      "sum": "EA 关闭成立 30 年的 BioWare，裁员约 400 人，其中 50 人为其剩余员工。",
-      "ta": "行业地震级工作室关闭，关注其对 3A 团队与人才流动的影响。",
-      "src": "Game Developer · 10-21",
-      "url": "https://www.gamedeveloper.com/business/ea-closes-mass-effect-dragon-age-creator-bioware-after-30-years-of-game-development"
+      "imp": "lo",
+      "title": "被取消质量效应预告泄露",
+      "sum": "BioWare已取消的质量效应项目预告片疑似泄露，曝光标题与剧情设定。",
+      "ta": "纯行业八卦，对技术工作无直接参考。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/trailer-for-bioware-s-canceled-mass-effect-game-apparently-leaks-online/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "狼人内部重制思路披露",
+      "sum": "Telltale创意副总裁谈《我们之中的狼》重制版如何在保留原作内核前提下提升表现。",
+      "ta": "重制项目的取舍思路，可参考美术升级与保真之间的平衡。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/telltale-aims-to-make-the-wolf-among-us-remaster-shine-without-changing-the-heart-of-the-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "VR工作室转向XR新作",
+      "sum": "Owlchemy Labs新作Hyper Visor将作为HTC XREAL Aura头显首发游戏。",
+      "ta": "XR平台动向，关注其对渲染性能预算的额外约束。",
+      "src": "Game Developer · 10-22",
+      "url": "https://www.gamedeveloper.com/extended-reality/vr-pioneer-owlchemy-labs-pivots-to-xr-for-its-next-release"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "核心团队话语的代价",
+      "sum": "评论文章讨论游戏开发中过度强调核心团队会如何影响流程与其他开发者。",
+      "ta": "团队协作语境，与具体技术无关，速览即可。",
+      "src": "Game Developer · 10-22",
+      "url": "https://www.gamedeveloper.com/production/opinion-why-prioritizing-success-of-core-teams-risks-devaluing-other-devs"
     }
   ],
   "flashbackTitle": "",

@@ -2,8 +2,116 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-22 13:56",
+  "updated": "2026-10-23 13:53",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Epic办AI游戏Jam赛",
+      "sum": "2026 Epic AI MegaJam于11月12-15日举行，用UE或UEFN组队做可玩游戏赢奖金。",
+      "ta": "看参赛作品能了解AI agent在UE工作流里的实际落地方式。",
+      "src": "Unreal Engine · 10-22",
+      "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高度场高斯泼溅重建曲面",
+      "sum": "H-2DGS用高度场高斯泼溅做神经外科手术表面的锐利可变形重建。",
+      "ta": "高度场约束2DGS的思路可借鉴到地形/植被表面的高质量重建。",
+      "src": "arXiv · cs.GR · 10-22",
+      "url": "https://arxiv.org/abs/2610.30910v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "跨游戏实体一致生成渲染",
+      "sum": "AnyGameRenderer实现跨游戏的实体一致生成式渲染，并给出实体级基准。",
+      "ta": "实体一致性是生成式渲染进游戏管线的关键卡点，值得看其评测口径。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.31466"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "HD-2D像素艺术电影化管线",
+      "sum": "FF Resonance制作人谈HD-2D管线、动态镜头、精灵调整、光照与VFX。",
+      "ta": "像素风下的光照与VFX处理手法，对风格化渲染有直接参考价值。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/interview-how-final-fantasy-resonance-turns-hd-2d-pixel-art-into-a-cinematic-experience/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "废弃场景自定义材质流程",
+      "sum": "作者分享地中海废弃房屋场景，讲多边形分配技巧与Substance Designer自定义材质。",
+      "ta": "多边形预算分配与程序化材质搭建，是环境TA的日常可复用经验。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/building-an-abandoned-the-last-of-us-inspired-mediterranean-house-with-custom-materials/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender海报散布插件",
+      "sum": "G_ni发布Poster Pin与Poster Print插件，快速生成并散布墙面复古海报。",
+      "ta": "散布类小工具思路可参考到植被/贴花批量布置的场景搭建流程。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/blender-add-ons-for-creating-realistic-vintage-posters-scattering-them-on-the-wall/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender做2D漫画角色",
+      "sum": "Chloe Worthy用Blender将热门漫画封面角色做成3D版本。",
+      "ta": "2D转3D的角色还原流程，可看其造型与材质简化取舍。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/these-2d-characters-from-popular-manga-are-made-in-3d-with-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox新主机与掌机传闻",
+      "sum": "报道称Xbox Helix主机价格已有估算，掌机计划2027年，另有Game Pass调整与裁员。",
+      "ta": "平台周期与订阅策略变化，间接影响项目排期与目标硬件规格。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/xbox-helix-console-price-reportedly-estimated-handheld-planned-for-2027/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "被取消质量效应预告泄露",
+      "sum": "BioWare已取消的质量效应项目预告片疑似泄露，曝光标题与剧情设定。",
+      "ta": "纯行业八卦，对技术工作无直接参考。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/trailer-for-bioware-s-canceled-mass-effect-game-apparently-leaks-online/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "狼人内部重制思路披露",
+      "sum": "Telltale创意副总裁谈《我们之中的狼》重制版如何在保留原作内核前提下提升表现。",
+      "ta": "重制项目的取舍思路，可参考美术升级与保真之间的平衡。",
+      "src": "80 Level · 10-22",
+      "url": "https://80.lv/articles/telltale-aims-to-make-the-wolf-among-us-remaster-shine-without-changing-the-heart-of-the-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "VR工作室转向XR新作",
+      "sum": "Owlchemy Labs新作Hyper Visor将作为HTC XREAL Aura头显首发游戏。",
+      "ta": "XR平台动向，关注其对渲染性能预算的额外约束。",
+      "src": "Game Developer · 10-22",
+      "url": "https://www.gamedeveloper.com/extended-reality/vr-pioneer-owlchemy-labs-pivots-to-xr-for-its-next-release"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "核心团队话语的代价",
+      "sum": "评论文章讨论游戏开发中过度强调核心团队会如何影响流程与其他开发者。",
+      "ta": "团队协作语境，与具体技术无关，速览即可。",
+      "src": "Game Developer · 10-22",
+      "url": "https://www.gamedeveloper.com/production/opinion-why-prioritizing-success-of-core-teams-risks-devaluing-other-devs"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -94,15 +202,6 @@ window.INTEL_RECENT = {
       "ta": "烘焙笼绘制与透明材质实时渲染改进直接影响贴图烘焙与材质工作流。",
       "src": "80 Level · 10-21",
       "url": "https://80.lv/articles/substance-3d-painter-12-2-lets-artists-paint-baking-cages-directly-on-models/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 重拓扑插件打折",
-      "sum": "NKZ Retopia 可在雕刻上直接绘制重拓扑，自动处理顶点与四边面网格。",
-      "ta": "重拓扑自动化工具，可评估是否纳入建模流程。",
-      "src": "80 Level · 10-21",
-      "url": "https://80.lv/articles/get-a-20-discount-on-this-blender-add-on-for-drawing-retopology-right-on-the-sculpt/"
     },
     {
       "cat": "flow",
@@ -1716,105 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "行业产品新闻，速览即可。",
       "src": "80 Level · 10-08",
       "url": "https://80.lv/articles/horror-game-from-netflix-until-dawn-s-developers-based-on-the-conjuring-is-coming-soon/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多物理场仿真综述出炉",
-      "sum": "arXiv 综述系统梳理视觉计算中多物理场仿真的各类技术。",
-      "ta": "做流体/破碎/布料特效可当工具书索引，找可复用的物理建模方法。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.09822v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "小波约束扩散生成全身语音动作",
-      "sum": "DynaConTalk 用小波约束扩散解决长时语音动作过平滑问题。",
-      "ta": "长时程角色动画生成思路，可参考其分频解耦策略处理手势与表情。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.09846v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单图重建物理稳定抓握手势",
-      "sum": "StableGrasp 从单张 RGB 图重建物理稳定的手部抓取姿态。",
-      "ta": "涉及物理约束下的姿态估计，对角色手部交互与道具抓取动画有参考价值。",
-      "src": "arXiv · cs.GR · 10-06",
-      "url": "https://arxiv.org/abs/2610.09195v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "肌电驱动高表现力面部动画",
-      "sum": "emg2face 用高密度表面肌电实现面部动画，解决 HMD 遮挡下的捕捉难题。",
-      "ta": "VR 头显遮挡面部时的表情捕捉替代方案，关注其信号到动画的映射管线。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.09304v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "技能组合实现长时程全身控制",
-      "sum": "Co²Skill 通过技能组合实现长时程人-环境交互的全身控制。",
-      "ta": "物理角色控制的分层组合思路，可借鉴到 NPC 全身交互行为生成。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.09291v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "涂鸦编辑图像基准发布",
-      "sum": "ScribbleEdit 提出仅凭涂鸦输入的图像编辑基准，评估现有模型能力。",
-      "ta": "交互式编辑意图理解评测，对材质/贴图快速迭代工具有潜在启发。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.09382v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "赛车遥测分析教练框架",
-      "sum": "TRACK 框架分析模拟赛车驾驶表现并对车手行为聚类画像。",
-      "ta": "遥测数据分析方法，可迁移到游戏内玩家行为分析与自适应难度设计。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.10061v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "移动端实时高斯泼溅统一动静",
-      "sum": "Mobile-4DGS 在移动端统一静态与动态场景的实时高斯泼溅渲染。",
-      "ta": "移动端 4DGS 实时方案，关注其动静统一表示与性能优化手段。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.05289"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "编码智能体能否造出想要的游戏",
-      "sum": "SWE-Game 评测编码智能体构建游戏的能力边界。",
-      "ta": "了解 AI 编码代理在游戏开发任务上的真实水平，评估其可辅助的环节。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2609.33678"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "递归游戏生成器代理框架",
-      "sum": "Recursive Game Creator 提出面向产品级体验的智能体游戏生成框架。",
-      "ta": "关注其代理编排与体验导向的生成流程，思考对工具链自动化的启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.08621"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "图像生成视觉文本双语基准",
-      "sum": "UltraText Bench 提出评估图像生成中视觉文本渲染的双语基准。",
-      "ta": "贴图/UI 中文字渲染质量评测，对生成式贴图工具选型有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.09823"
     }
   ]
 };
