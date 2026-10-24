@@ -2,8 +2,116 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-23 13:53",
+  "updated": "2026-10-24 13:37",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Bluey 2D 风格靠自定义 Shader",
+      "sum": "Gameloft 用 SDF 贴图、2D 平面、自定义 Shader 与 UE Control Rig 复刻手绘风。",
+      "ta": "看 SDF 贴图与自定义 Shader 如何在 UE 里稳定还原 2D 手绘轮廓，Control Rig 部分可参考绑定流程。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/bluey-s-simple-2d-look-required-gameloft-s-most-technically-challenging-art-pipeline/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Tripo P2.0 打通 Blender 与 Unity",
+      "sum": "Tripo 介绍 P2.0 与 Astra 在 Blender、Unity 中完成生成、绑定到动画的流程。",
+      "ta": "关注 3D 原生基础模型输出资产进引擎后的质量控制与人工美术指导环节。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/how-tripo-p2-0-astra-work-together-in-blender-and-unity/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Houdini 水体特效转 Solaris 复活",
+      "sum": "Mario Sánchez Aguado 分享由 Maya 项目转为 Houdini 水模拟、经 Solaris 完成的作品。",
+      "ta": "可看 Solaris 流程下发光水体 FX 的搭建思路，对流体特效与灯光合成衔接有参考。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/this-dreamy-wooden-cabin-scene-with-glowing-water-fx-was-made-with-houdini/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "GameMaker 新运行时将免费商用",
+      "sum": "GMRT 运行时自 2027 年起对所有开发者免费商用，各档位均开放源码。",
+      "ta": "2D 引擎运行时开源免费，对轻量工具链选型有影响，与 UE 主线工作关联有限。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/gamemaker-s-new-runtime-will-become-free-for-commercial-use/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "GMRT 运行时 2027 全面免费",
+      "sum": "GameMaker 的 GMRT 运行时将从 2027 年起对所有开发者免费使用。",
+      "ta": "同一事件另一来源，仅作速览，无需重复精读。",
+      "src": "Game Developer · 10-23",
+      "url": "https://www.gamedeveloper.com/programming/gamemaker-s-gmrt-runtime-will-soon-be-free-for-all-commercial-devs"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "3ds Max/Maya 肌肉模拟插件测试",
+      "sum": "Shirzad Bahrami 展示受 Ziva VFX 启发的肌肉模拟插件，正式发布前开放测试。",
+      "ta": "角色肌肉解算工具，偏离线建模流程，与实时管线关联较弱。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/artist-shows-ziva-vfx-inspired-muscle-simulation-plug-in-for-3ds-max-maya/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RLSplat 给 3DGS 加预算控制",
+      "sum": "RLSplat 为前馈 3D Gaussian Splatting 提供资源线性预算控制。",
+      "ta": "关注 3DGS 在固定显存/算力预算下的可控性，对程序化场景与实时渲染有潜在价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.27712"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "HyperDrone 实现百万帧仿真迁移",
+      "sum": "HyperDrone 以每秒百万帧级仿真实现从仿真到现实的迁移。",
+      "ta": "大规模仿真吞吐思路可借鉴，但与游戏实时渲染管线距离较远。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.28950"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Raw Fury CEO 谈独立游戏发行",
+      "sum": "Pim Holfve 谈发行变迁、独立发行现状及选品标准。",
+      "ta": "纯行业访谈，与 TA 技术工作无关，速览即可。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/on-the-lookout-for-games-that-make-you-feel-something-raw-fury-ceo-on-game-publishing/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "半条命 3 代号 HLX 再被提及",
+      "sum": "Valve 员工在 GameSoundCon 上提到粉丝讨论两年的代号 HLX。",
+      "ta": "传闻性质，无技术信息，速览即可。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/rumored-half-life-3-title-hlx-gets-mentioned-by-valve-employee/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "赛博朋克 2 任务团队半数出身 Mod",
+      "sum": "CDPR 副总监称续作任务团队约一半成员曾是 Mod 作者。",
+      "ta": "人才来源话题，与渲染/工具技术无关。",
+      "src": "80 Level · 10-23",
+      "url": "https://80.lv/articles/half-of-cyberpunk-2-s-quest-team-are-former-modders-says-associate-game-director/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Saros 打造 Carcosa 首领战",
+      "sum": "Housemarque 与 Nixxes 合作完成 Saros 的 Boss 遭遇设计与动画。",
+      "ta": "偏关卡与动画协作流程，技术细节有限。",
+      "src": "PlayStation Blog · 10-23",
+      "url": "https://blog.playstation.com/2026/10/23/saros-creating-the-epic-overlords-of-carcosa/"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -1707,114 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "科学可视化数据压缩，与游戏资产管线关联较弱，速览即可。",
       "src": "arXiv · cs.GR · 10-08",
       "url": "https://arxiv.org/abs/2610.12371v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "扩散模型反事实响应轨迹归因",
-      "sum": "提出反事实响应轨迹方法，追踪扩散模型输出到训练样本的归因。",
-      "ta": "AI生成内容溯源，对生成资产版权与调试有潜在价值。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.11238v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "多智能体自我中心世界模型",
-      "sum": "提出多智能体自我中心世界模型，支持细粒度具身交互。",
-      "ta": "交互式环境模拟方向，对游戏AI与仿真环境构建有启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.12299"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "动作忠实机器人世界模型",
-      "sum": "DreamTrue用反事实后训练构建动作忠实的机器人世界模型。",
-      "ta": "世界模型动作忠实度提升，对交互仿真有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.12468"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "流式全景世界模型导航",
-      "sum": "SPW-Nav提出语言引导导航的流式全景世界模型。",
-      "ta": "导航与全景生成，与游戏TA工作流关联较弱。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.08941"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "智能体语言世界模型",
-      "sum": "从轨迹到智能体世界：面向交互环境模拟的智能体语言世界模型。",
-      "ta": "交互环境模拟方向，与实时渲染关联间接。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.06100"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "RizomUV 2027大幅升级",
-      "sum": "RizomUV 2027带来更快展开、实时更新、完整UI定制与无头操作。",
-      "ta": "UV工具链重大更新，场景级UV管理与管线支持值得关注。",
-      "src": "80 Level · 10-08",
-      "url": "https://80.lv/articles/rizomuv-2027-introduces-faster-unfolding-live-updates-full-ui-customization/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "手绘风格矿车道具制作教程",
-      "sum": "Raphael Fabris分享手绘纹理风格化矿车道具的制作技巧与拓扑经验。",
-      "ta": "手绘纹理与跨软件工作流技巧，可速览借鉴。",
-      "src": "80 Level · 10-08",
-      "url": "https://80.lv/articles/how-to-make-a-stylized-game-ready-minecart-prop-using-hand-painted-textures/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "实时WebGL着色器触感UI",
-      "sum": "展示由实时WebGL着色器驱动的触感UI效果。",
-      "ta": "着色器交互效果参考，速览即可。",
-      "src": "80 Level · 10-08",
-      "url": "https://80.lv/articles/explore-this-tactile-ui-powered-by-real-time-webgl-shader/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "转描技术打造恐怖美术",
-      "sum": "Wych Elm拆解Silver Pines的手工美术管线，含1800帧角色与转描怪物。",
-      "ta": "非主流美术管线案例，对风格化表现有参考。",
-      "src": "80 Level · 10-08",
-      "url": "https://80.lv/articles/how-silver-pines-used-rotoscoping-to-create-its-unsettling-horror/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "谷歌发布AI游戏创作平台",
-      "sum": "Google推出Playground平台，让用户用AI制作游戏。",
-      "ta": "AI游戏创作工具动向，关注其对原型制作流程的潜在影响。",
-      "src": "80 Level · 10-08",
-      "url": "https://80.lv/articles/google-released-its-own-game-creation-platform/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox成立XP新部门",
-      "sum": "Xbox CEO宣布成立XP部门，专注游戏周边IP拓展业务。",
-      "ta": "行业商业动向，与TA工作关联较弱。",
-      "src": "Game Developer · 10-08",
-      "url": "https://www.gamedeveloper.com/console/xbox-ceo-unveils-new-xbox-division-for-game-adjacent-ventures-named-xp-"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "招魂改编恐怖游戏将发售",
-      "sum": "Netflix与Until Dawn开发商合作的《招魂》改编游戏即将推出。",
-      "ta": "行业产品新闻，速览即可。",
-      "src": "80 Level · 10-08",
-      "url": "https://80.lv/articles/horror-game-from-netflix-until-dawn-s-developers-based-on-the-conjuring-is-coming-soon/"
     }
   ]
 };
