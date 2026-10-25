@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月24日 · 周六",
+  "date": "2026年10月25日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Bluey 2D 风格靠自定义 Shader</em> / <em>Tripo P2.0 打通 Blender 与 Unity</em> / <em>Houdini 水体特效转 Solaris 复活</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Blender 免费毛发渐细插件</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,111 +128,12 @@ window.INTEL_DATA = {
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "Bluey 2D 风格靠自定义 Shader",
-      "sum": "Gameloft 用 SDF 贴图、2D 平面、自定义 Shader 与 UE Control Rig 复刻手绘风。",
-      "ta": "看 SDF 贴图与自定义 Shader 如何在 UE 里稳定还原 2D 手绘轮廓，Control Rig 部分可参考绑定流程。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/bluey-s-simple-2d-look-required-gameloft-s-most-technically-challenging-art-pipeline/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Tripo P2.0 打通 Blender 与 Unity",
-      "sum": "Tripo 介绍 P2.0 与 Astra 在 Blender、Unity 中完成生成、绑定到动画的流程。",
-      "ta": "关注 3D 原生基础模型输出资产进引擎后的质量控制与人工美术指导环节。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/how-tripo-p2-0-astra-work-together-in-blender-and-unity/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Houdini 水体特效转 Solaris 复活",
-      "sum": "Mario Sánchez Aguado 分享由 Maya 项目转为 Houdini 水模拟、经 Solaris 完成的作品。",
-      "ta": "可看 Solaris 流程下发光水体 FX 的搭建思路，对流体特效与灯光合成衔接有参考。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/this-dreamy-wooden-cabin-scene-with-glowing-water-fx-was-made-with-houdini/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "GameMaker 新运行时将免费商用",
-      "sum": "GMRT 运行时自 2027 年起对所有开发者免费商用，各档位均开放源码。",
-      "ta": "2D 引擎运行时开源免费，对轻量工具链选型有影响，与 UE 主线工作关联有限。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/gamemaker-s-new-runtime-will-become-free-for-commercial-use/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "GMRT 运行时 2027 全面免费",
-      "sum": "GameMaker 的 GMRT 运行时将从 2027 年起对所有开发者免费使用。",
-      "ta": "同一事件另一来源，仅作速览，无需重复精读。",
-      "src": "Game Developer · 10-23",
-      "url": "https://www.gamedeveloper.com/programming/gamemaker-s-gmrt-runtime-will-soon-be-free-for-all-commercial-devs"
-    },
-    {
-      "cat": "flow",
       "imp": "lo",
-      "title": "3ds Max/Maya 肌肉模拟插件测试",
-      "sum": "Shirzad Bahrami 展示受 Ziva VFX 启发的肌肉模拟插件，正式发布前开放测试。",
-      "ta": "角色肌肉解算工具，偏离线建模流程，与实时管线关联较弱。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/artist-shows-ziva-vfx-inspired-muscle-simulation-plug-in-for-3ds-max-maya/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RLSplat 给 3DGS 加预算控制",
-      "sum": "RLSplat 为前馈 3D Gaussian Splatting 提供资源线性预算控制。",
-      "ta": "关注 3DGS 在固定显存/算力预算下的可控性，对程序化场景与实时渲染有潜在价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.27712"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "HyperDrone 实现百万帧仿真迁移",
-      "sum": "HyperDrone 以每秒百万帧级仿真实现从仿真到现实的迁移。",
-      "ta": "大规模仿真吞吐思路可借鉴，但与游戏实时渲染管线距离较远。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.28950"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Raw Fury CEO 谈独立游戏发行",
-      "sum": "Pim Holfve 谈发行变迁、独立发行现状及选品标准。",
-      "ta": "纯行业访谈，与 TA 技术工作无关，速览即可。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/on-the-lookout-for-games-that-make-you-feel-something-raw-fury-ceo-on-game-publishing/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "半条命 3 代号 HLX 再被提及",
-      "sum": "Valve 员工在 GameSoundCon 上提到粉丝讨论两年的代号 HLX。",
-      "ta": "传闻性质，无技术信息，速览即可。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/rumored-half-life-3-title-hlx-gets-mentioned-by-valve-employee/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "赛博朋克 2 任务团队半数出身 Mod",
-      "sum": "CDPR 副总监称续作任务团队约一半成员曾是 Mod 作者。",
-      "ta": "人才来源话题，与渲染/工具技术无关。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/half-of-cyberpunk-2-s-quest-team-are-former-modders-says-associate-game-director/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Saros 打造 Carcosa 首领战",
-      "sum": "Housemarque 与 Nixxes 合作完成 Saros 的 Boss 遭遇设计与动画。",
-      "ta": "偏关卡与动画协作流程，技术细节有限。",
-      "src": "PlayStation Blog · 10-23",
-      "url": "https://blog.playstation.com/2026/10/23/saros-creating-the-epic-overlords-of-carcosa/"
+      "title": "Blender 免费毛发渐细插件",
+      "sum": "MT Hair Taper 插件让毛发网格末端变细，造型更自然。",
+      "ta": "做毛发/植被卡片时可参考其末端渐细思路，但仅限 Blender 离线流程。",
+      "src": "80 Level · 10-24",
+      "url": "https://80.lv/articles/get-this-free-blender-add-on-that-makes-hair-meshes-thinner-at-the-ends/"
     }
   ],
   "flashbackTitle": "",

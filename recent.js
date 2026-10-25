@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-24 13:37",
+  "updated": "2026-10-25 13:51",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 免费毛发渐细插件",
+      "sum": "MT Hair Taper 插件让毛发网格末端变细，造型更自然。",
+      "ta": "做毛发/植被卡片时可参考其末端渐细思路，但仅限 Blender 离线流程。",
+      "src": "80 Level · 10-24",
+      "url": "https://80.lv/articles/get-this-free-blender-add-on-that-makes-hair-meshes-thinner-at-the-ends/"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -156,15 +165,6 @@ window.INTEL_RECENT = {
       "ta": "多边形预算分配与程序化材质搭建，是环境TA的日常可复用经验。",
       "src": "80 Level · 10-22",
       "url": "https://80.lv/articles/building-an-abandoned-the-last-of-us-inspired-mediterranean-house-with-custom-materials/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender海报散布插件",
-      "sum": "G_ni发布Poster Pin与Poster Print插件，快速生成并散布墙面复古海报。",
-      "ta": "散布类小工具思路可参考到植被/贴花批量布置的场景搭建流程。",
-      "src": "80 Level · 10-22",
-      "url": "https://80.lv/articles/blender-add-ons-for-creating-realistic-vintage-posters-scattering-them-on-the-wall/"
     },
     {
       "cat": "flow",
