@@ -2,8 +2,54 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-25 13:51",
+  "updated": "2026-10-26 13:56",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "前馈神经渲染做全局光照",
+      "sum": "RADIANT 用物体为中心的前馈神经渲染器，无需逐场景优化或运行时光线追踪即可合成全局光照。",
+      "ta": "关注其 token 化方式：按物体而非三角形切分，规避自注意力随网格分辨率平方增长，对实时 GI 方案有参考价值。",
+      "src": "arXiv · cs.GR · 10-23",
+      "url": "https://arxiv.org/abs/2610.32075v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长时语音动作生成抗漂移",
+      "sum": "提出持久状态分块流匹配方法，用状态记忆与注意力缓解长时共语动作生成的风格漂移。",
+      "ta": "分块生成+持久状态的长序列一致性思路，可借鉴到程序化动作/动画长片段生成流程。",
+      "src": "arXiv · cs.GR · 10-23",
+      "url": "https://arxiv.org/abs/2610.32373v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "VLA 智能体玩开放世界游戏",
+      "sum": "HiSTEVE 1.0 利用人机界面视觉语言动作智能体，在开放世界游戏中执行操作。",
+      "ta": "关注其如何把游戏画面接口转成动作空间，对自动化测试与游戏内 AI 行为有潜在参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.31162"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多模态智能体与世界模型评测",
+      "sum": "Dual Exam 提出受控评测框架，用于评估多模态智能体与世界模型。",
+      "ta": "若涉及世界模型评测维度，可留意其指标设计，但原文未提引擎或渲染关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.31066"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "浏览器版 2D 动画编辑器",
+      "sum": "Rigby2D v0.2.6 发布，可在浏览器中直接试用完整 2D 动画编辑器。",
+      "ta": "轻量 2D 绑定/动画工具，可速览其交互设计，与植被/3D 管线关联有限。",
+      "src": "Tech-Artists · 10-25",
+      "url": "https://www.tech-artists.org/t/rigby2d-v0-2-6-is-out-you-can-now-try-the-full-2d-animation-editor-directly-in-your-browser/18591"
+    },
     {
       "cat": "flow",
       "imp": "lo",
@@ -1090,15 +1136,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/ask-bethesda-almost-anything-in-q-a-discord-channel-to-celebrate-its-40th-anniversary/"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "开源2D骨骼动画编辑器",
-      "sum": "Rigby2D 是一款免费开源的2D骨骼动画编辑器。",
-      "ta": "2D动画工具链补充，可评估是否纳入小型项目工作流。",
-      "src": "Tech-Artists · 10-15",
-      "url": "https://www.tech-artists.org/t/rigby2d-free-open-source-2d-skeletal-animation-editor/18580"
-    },
-    {
       "cat": "tech",
       "imp": "hi",
       "rank": 1,
@@ -1779,42 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "程序化建模与拓扑重建工具链可参考其控制笼推断逻辑。",
       "src": "arXiv · cs.GR · 10-08",
       "url": "https://arxiv.org/abs/2610.11721v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "局部PCA正则的高斯泼溅",
-      "sum": "PCAsplat用局部PCA正则优化3DGS，改善被遮挡高斯的学习。",
-      "ta": "3DGS重建质量提升，对场景扫描与植被重建有参考价值。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.11011v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "免训练物理感知流体视频生成",
-      "sum": "Fluid-Gen-Zero将运动交给物理模拟器，外观交给预训练视频生成器。",
-      "ta": "流体特效生成思路，物理与外观解耦对Niagara流体有启发。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.10984v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "常数内存可微光追反向传播",
-      "sum": "ResLRB实现内存与路径长度无关的反向模式可微光追。",
-      "ta": "可微渲染内存瓶颈突破，对渲染管线研究有参考意义。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.10847v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "特征保持压缩通用框架",
-      "sum": "FeatureZ通过逐点边界与星形分类实现几何拓扑特征保持的有损压缩。",
-      "ta": "科学可视化数据压缩，与游戏资产管线关联较弱，速览即可。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.12371v1"
     }
   ]
 };

@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月25日 · 周日",
+  "date": "2026年10月26日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Blender 免费毛发渐细插件</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>前馈神经渲染做全局光照</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,13 +127,50 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "前馈神经渲染做全局光照",
+      "sum": "RADIANT 用物体为中心的前馈神经渲染器，无需逐场景优化或运行时光线追踪即可合成全局光照。",
+      "ta": "关注其 token 化方式：按物体而非三角形切分，规避自注意力随网格分辨率平方增长，对实时 GI 方案有参考价值。",
+      "src": "arXiv · cs.GR · 10-23",
+      "url": "https://arxiv.org/abs/2610.32075v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长时语音动作生成抗漂移",
+      "sum": "提出持久状态分块流匹配方法，用状态记忆与注意力缓解长时共语动作生成的风格漂移。",
+      "ta": "分块生成+持久状态的长序列一致性思路，可借鉴到程序化动作/动画长片段生成流程。",
+      "src": "arXiv · cs.GR · 10-23",
+      "url": "https://arxiv.org/abs/2610.32373v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "VLA 智能体玩开放世界游戏",
+      "sum": "HiSTEVE 1.0 利用人机界面视觉语言动作智能体，在开放世界游戏中执行操作。",
+      "ta": "关注其如何把游戏画面接口转成动作空间，对自动化测试与游戏内 AI 行为有潜在参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.31162"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "多模态智能体与世界模型评测",
+      "sum": "Dual Exam 提出受控评测框架，用于评估多模态智能体与世界模型。",
+      "ta": "若涉及世界模型评测维度，可留意其指标设计，但原文未提引擎或渲染关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.31066"
+    },
+    {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender 免费毛发渐细插件",
-      "sum": "MT Hair Taper 插件让毛发网格末端变细，造型更自然。",
-      "ta": "做毛发/植被卡片时可参考其末端渐细思路，但仅限 Blender 离线流程。",
-      "src": "80 Level · 10-24",
-      "url": "https://80.lv/articles/get-this-free-blender-add-on-that-makes-hair-meshes-thinner-at-the-ends/"
+      "title": "浏览器版 2D 动画编辑器",
+      "sum": "Rigby2D v0.2.6 发布，可在浏览器中直接试用完整 2D 动画编辑器。",
+      "ta": "轻量 2D 绑定/动画工具，可速览其交互设计，与植被/3D 管线关联有限。",
+      "src": "Tech-Artists · 10-25",
+      "url": "https://www.tech-artists.org/t/rigby2d-v0-2-6-is-out-you-can-now-try-the-full-2d-animation-editor-directly-in-your-browser/18591"
     }
   ],
   "flashbackTitle": "",
