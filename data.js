@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月26日 · 周一",
+  "date": "2026年10月27日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>前馈神经渲染做全局光照</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>CVTSplat 用Voronoi重建多视图</em> / <em>GaussianSpline 动态4D高斯</em> / <em>断件模型生成Blendshape</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -128,49 +128,120 @@ window.INTEL_DATA = {
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "前馈神经渲染做全局光照",
-      "sum": "RADIANT 用物体为中心的前馈神经渲染器，无需逐场景优化或运行时光线追踪即可合成全局光照。",
-      "ta": "关注其 token 化方式：按物体而非三角形切分，规避自注意力随网格分辨率平方增长，对实时 GI 方案有参考价值。",
-      "src": "arXiv · cs.GR · 10-23",
-      "url": "https://arxiv.org/abs/2610.32075v1"
-    },
-    {
-      "cat": "ai",
       "imp": "mid",
-      "title": "长时语音动作生成抗漂移",
-      "sum": "提出持久状态分块流匹配方法，用状态记忆与注意力缓解长时共语动作生成的风格漂移。",
-      "ta": "分块生成+持久状态的长序列一致性思路，可借鉴到程序化动作/动画长片段生成流程。",
-      "src": "arXiv · cs.GR · 10-23",
-      "url": "https://arxiv.org/abs/2610.32373v1"
+      "title": "CVTSplat 用Voronoi重建多视图",
+      "sum": "以自适应质心Voronoi划分做多视图形状与外观重建，降低优化中重复重建开销。",
+      "ta": "关注其自适应空间划分思路，或可借鉴到程序化植被分布与LOD划分。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.35347v1"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "VLA 智能体玩开放世界游戏",
-      "sum": "HiSTEVE 1.0 利用人机界面视觉语言动作智能体，在开放世界游戏中执行操作。",
-      "ta": "关注其如何把游戏画面接口转成动作空间，对自动化测试与游戏内 AI 行为有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.31162"
+      "title": "GaussianSpline 动态4D高斯",
+      "sum": "用自适应非均匀分段三次贝塞尔样条建模每个高斯运动，实现动态4D高斯泼溅。",
+      "ta": "动态场景重建的运动参数化方案，对植被风动等非刚体动画重建有参考价值。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.35224v1"
     },
     {
-      "cat": "ai",
+      "cat": "gfx",
       "imp": "lo",
-      "title": "多模态智能体与世界模型评测",
-      "sum": "Dual Exam 提出受控评测框架，用于评估多模态智能体与世界模型。",
-      "ta": "若涉及世界模型评测维度，可留意其指标设计，但原文未提引擎或渲染关联。",
+      "title": "断件模型生成Blendshape",
+      "sum": "针对含多个不连通部件的动漫风角色模型，生成ARKit/MediaPipe固定表情Blendshape。",
+      "ta": "角色面部管线中处理断件网格的实用案例，可参考其部件拆分策略。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.35076v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "仿昆虫逆折纸曲面成形",
+      "sum": "受昆虫变态发育褶皱展开启发，提出逆折纸方法设计曲面成形的褶皱结构。",
+      "ta": "几何设计思路偏学术，暂与实时管线距离较远，速览即可。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.34903v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RacerGS 压缩3D高斯泼溅",
+      "sum": "用残差自回归上下文构建紧凑3DGS压缩框架，显著降低参数存储与传输量。",
+      "ta": "3DGS资产体积是落地瓶颈，压缩方案直接影响扫描植被/场景的运行时内存预算。",
+      "src": "arXiv · cs.GR · 10-25",
+      "url": "https://arxiv.org/abs/2610.34263v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "单相机可试穿虚拟人建模",
+      "sum": "仅用单目视频或单图重建高保真、可动画、可试穿的虚拟人化身。",
+      "ta": "单相机重建降低数字人采集门槛，与植被/特效本职关联较弱。",
+      "src": "arXiv · cs.GR · 10-25",
+      "url": "https://arxiv.org/abs/2610.34223v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经服装仿真显式摩擦建模",
+      "sum": "为GNN服装仿真引入显式摩擦项与可设摩擦系数μ，替代隐式训练能量中的摩擦。",
+      "ta": "布料/软体仿真中摩擦参数可控化，对角色与植被交互的物理表现有借鉴意义。",
+      "src": "arXiv · cs.GR · 10-24",
+      "url": "https://arxiv.org/abs/2610.33492v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "WorldCast 大角度相机可控角色视频",
+      "sum": "提出世界一致的角色视频生成方法，支持大角度相机控制。",
+      "ta": "相机可控的角色视频生成，可关注其在镜头运动一致性上的处理方式。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.31066"
+      "url": "https://huggingface.co/papers/2610.33135"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "World-in-Context 交互式视频世界模型",
+      "sum": "以in-context条件实现可交互的视频世界建模。",
+      "ta": "交互式世界模型方向，与实时引擎结合尚早，关注其条件控制接口设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.33169"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "浏览器版 2D 动画编辑器",
-      "sum": "Rigby2D v0.2.6 发布，可在浏览器中直接试用完整 2D 动画编辑器。",
-      "ta": "轻量 2D 绑定/动画工具，可速览其交互设计，与植被/3D 管线关联有限。",
-      "src": "Tech-Artists · 10-25",
-      "url": "https://www.tech-artists.org/t/rigby2d-v0-2-6-is-out-you-can-now-try-the-full-2d-animation-editor-directly-in-your-browser/18591"
+      "title": "Blender 推拉变焦单滑块工具",
+      "sum": "免费Blender工具，用单个滑块同步控制相机移动与焦距实现Dolly Zoom。",
+      "ta": "镜头预演的快捷工具，可省去手动同步焦距与位移的调参时间。",
+      "src": "80 Level · 10-26",
+      "url": "https://80.lv/articles/free-blender-tool-for-dolly-zoom-camera-effect/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 做概念图背景流程",
+      "sum": "作者Ullaiin讲解Blender基础，并演示如何把3D融入概念美术工作流。",
+      "ta": "3D辅助2D概念图的常规流程，适合团队新人快速上手参考。",
+      "src": "80 Level · 10-26",
+      "url": "https://80.lv/articles/how-to-use-blender-for-backgrounds-in-concept-art/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox 拒Netflix五亿改编约",
+      "sum": "报道称Netflix拟以5亿美元改编Xbox多个游戏IP，Xbox为抬价拒绝。",
+      "ta": "IP影视化商业动向，与TA日常无直接关系，速览即可。",
+      "src": "Game Developer · 10-26",
+      "url": "https://www.gamedeveloper.com/business/xbox-reportedly-turned-down-a-500-million-deal-from-netflix-for-adapting-gaming-properties"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "两人两月做出百万销量UE5独立游戏",
+      "sum": "两名日本开发者用UE5两个月做出Prop Hunt风格游戏，四天售出百万份。",
+      "ta": "小团队UE5快速原型到爆款的案例，可看其玩法原型与迭代节奏。",
+      "src": "Unreal Engine · 10-26",
+      "url": "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer"
     }
   ],
   "flashbackTitle": "",

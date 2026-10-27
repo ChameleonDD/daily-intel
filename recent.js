@@ -2,8 +2,116 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-26 13:56",
+  "updated": "2026-10-27 14:07",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "CVTSplat 用Voronoi重建多视图",
+      "sum": "以自适应质心Voronoi划分做多视图形状与外观重建，降低优化中重复重建开销。",
+      "ta": "关注其自适应空间划分思路，或可借鉴到程序化植被分布与LOD划分。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.35347v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "GaussianSpline 动态4D高斯",
+      "sum": "用自适应非均匀分段三次贝塞尔样条建模每个高斯运动，实现动态4D高斯泼溅。",
+      "ta": "动态场景重建的运动参数化方案，对植被风动等非刚体动画重建有参考价值。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.35224v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "断件模型生成Blendshape",
+      "sum": "针对含多个不连通部件的动漫风角色模型，生成ARKit/MediaPipe固定表情Blendshape。",
+      "ta": "角色面部管线中处理断件网格的实用案例，可参考其部件拆分策略。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.35076v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "仿昆虫逆折纸曲面成形",
+      "sum": "受昆虫变态发育褶皱展开启发，提出逆折纸方法设计曲面成形的褶皱结构。",
+      "ta": "几何设计思路偏学术，暂与实时管线距离较远，速览即可。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.34903v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RacerGS 压缩3D高斯泼溅",
+      "sum": "用残差自回归上下文构建紧凑3DGS压缩框架，显著降低参数存储与传输量。",
+      "ta": "3DGS资产体积是落地瓶颈，压缩方案直接影响扫描植被/场景的运行时内存预算。",
+      "src": "arXiv · cs.GR · 10-25",
+      "url": "https://arxiv.org/abs/2610.34263v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "单相机可试穿虚拟人建模",
+      "sum": "仅用单目视频或单图重建高保真、可动画、可试穿的虚拟人化身。",
+      "ta": "单相机重建降低数字人采集门槛，与植被/特效本职关联较弱。",
+      "src": "arXiv · cs.GR · 10-25",
+      "url": "https://arxiv.org/abs/2610.34223v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经服装仿真显式摩擦建模",
+      "sum": "为GNN服装仿真引入显式摩擦项与可设摩擦系数μ，替代隐式训练能量中的摩擦。",
+      "ta": "布料/软体仿真中摩擦参数可控化，对角色与植被交互的物理表现有借鉴意义。",
+      "src": "arXiv · cs.GR · 10-24",
+      "url": "https://arxiv.org/abs/2610.33492v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "WorldCast 大角度相机可控角色视频",
+      "sum": "提出世界一致的角色视频生成方法，支持大角度相机控制。",
+      "ta": "相机可控的角色视频生成，可关注其在镜头运动一致性上的处理方式。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.33135"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "World-in-Context 交互式视频世界模型",
+      "sum": "以in-context条件实现可交互的视频世界建模。",
+      "ta": "交互式世界模型方向，与实时引擎结合尚早，关注其条件控制接口设计。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.33169"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 推拉变焦单滑块工具",
+      "sum": "免费Blender工具，用单个滑块同步控制相机移动与焦距实现Dolly Zoom。",
+      "ta": "镜头预演的快捷工具，可省去手动同步焦距与位移的调参时间。",
+      "src": "80 Level · 10-26",
+      "url": "https://80.lv/articles/free-blender-tool-for-dolly-zoom-camera-effect/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Xbox 拒Netflix五亿改编约",
+      "sum": "报道称Netflix拟以5亿美元改编Xbox多个游戏IP，Xbox为抬价拒绝。",
+      "ta": "IP影视化商业动向，与TA日常无直接关系，速览即可。",
+      "src": "Game Developer · 10-26",
+      "url": "https://www.gamedeveloper.com/business/xbox-reportedly-turned-down-a-500-million-deal-from-netflix-for-adapting-gaming-properties"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "两人两月做出百万销量UE5独立游戏",
+      "sum": "两名日本开发者用UE5两个月做出Prop Hunt风格游戏，四天售出百万份。",
+      "ta": "小团队UE5快速原型到爆款的案例，可看其玩法原型与迭代节奏。",
+      "src": "Unreal Engine · 10-26",
+      "url": "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -49,15 +157,6 @@ window.INTEL_RECENT = {
       "ta": "轻量 2D 绑定/动画工具，可速览其交互设计，与植被/3D 管线关联有限。",
       "src": "Tech-Artists · 10-25",
       "url": "https://www.tech-artists.org/t/rigby2d-v0-2-6-is-out-you-can-now-try-the-full-2d-animation-editor-directly-in-your-browser/18591"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 免费毛发渐细插件",
-      "sum": "MT Hair Taper 插件让毛发网格末端变细，造型更自然。",
-      "ta": "做毛发/植被卡片时可参考其末端渐细思路，但仅限 Blender 离线流程。",
-      "src": "80 Level · 10-24",
-      "url": "https://80.lv/articles/get-this-free-blender-add-on-that-makes-hair-meshes-thinner-at-the-ends/"
     },
     {
       "cat": "flow",
@@ -504,15 +603,6 @@ window.INTEL_RECENT = {
       "ta": "CAD 建模工具更新，曲率分析着色器对硬表面建模检查有用。",
       "src": "80 Level · 10-20",
       "url": "https://80.lv/articles/3d-modeling-cad-software-plasticity-2026-2-has-been-released/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "UE5 开发课程合集上线",
-      "sum": "24 门以上 UE5 课程合集，覆盖蓝图、玩法编程、物理与 MetaSounds。",
-      "ta": "偏入门培训内容，对资深 TA 价值有限，速览。",
-      "src": "80 Level · 10-20",
-      "url": "https://80.lv/articles/learn-unreal-engine-5-game-development-with-over-24-courses-from-this-bundle/"
     },
     {
       "cat": "biz",
@@ -1724,98 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "推理加速方向，与实时渲染管线无直接关联，速览即可。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.04875"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多任务强化学习GPU并行框架",
-      "sum": "提出面向异构多任务强化学习的 GPU 并行框架。",
-      "ta": "训练框架类论文，未提及游戏或实时渲染，关联度低。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2606.03335"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "仿真合成企业数据",
-      "sum": "通过可扩展的智能体-系统交互仿真，生成连贯的企业数据。",
-      "ta": "纯数据合成方向，与游戏/实时渲染无关，建议丢弃。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.10549"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS官方播客第550期",
-      "sum": "PlayStation 官方播客回归，聊近期通关游戏、新冒险与听众来信。",
-      "ta": "纯播客内容，无技术信息，速览即可。",
-      "src": "PlayStation Blog · 10-09",
-      "url": "https://blog.playstation.com/2026/10/09/official-playstation-podcast-episode-550-now-this-is-podcasting/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "雅达利800XL复刻开售",
-      "sum": "雅达利 1980 年代经典电脑 800XL 回归，支持现代显示并内置 25 款游戏。",
-      "ta": "怀旧硬件新闻，与TA工作无关，速览即可。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/atari-s-iconic-1980s-computer-is-back-available-for-purchase/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "低多边形实体家居装饰",
-      "sum": "荷兰法波设计师 Jonas Hejduk 为现实世界制作低多边形实体装饰资产。",
-      "ta": "低模美术的跨界应用，趣味参考，与生产管线无关。",
-      "src": "80 Level · 10-09",
-      "url": "https://80.lv/articles/this-real-life-low-resolution-interior-design-decor-turns-any-space-into-a-retro-game-scene/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "镜面光照神经缓存新方案",
-      "sum": "提出面向镜面光照的NRC变体，用反射方向参数化与粗糙度相关辐射目标。",
-      "ta": "实时路径追踪镜面反射降噪直接相关，UE5光追管线值得关注。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.11702v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "可微渲染引入敏感度AOV",
-      "sum": "将敏感度作为可微渲染的任意输出变量，为导数提供可分解检查的表示。",
-      "ta": "为渲染管线调试与参数分析提供新维度，Shader/材质优化可借鉴。",
-      "src": "arXiv · cs.GR · 10-07",
-      "url": "https://arxiv.org/abs/2610.10852v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "刚体交互局部接触神经模拟",
-      "sum": "RiCo通过局部接触推理实现刚体交互的神经模拟。",
-      "ta": "物理模拟精度提升方向，对破坏/交互特效有潜在参考。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.12333v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "复用前帧的局部视图合成",
-      "sum": "LVS利用相机小位移时图像重叠，复用已渲染视图加速新视角合成。",
-      "ta": "3DGS渲染加速思路，对实时场景探索性能优化有启发。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.12127v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "网格转SubD的建模代理工作流",
-      "sum": "SubDGuide用建模师启发的代理工作流从密集网格重建细分曲面控制笼。",
-      "ta": "程序化建模与拓扑重建工具链可参考其控制笼推断逻辑。",
-      "src": "arXiv · cs.GR · 10-08",
-      "url": "https://arxiv.org/abs/2610.11721v1"
     }
   ]
 };
