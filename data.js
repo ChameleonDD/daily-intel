@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月27日 · 周二",
+  "date": "2026年10月28日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>CVTSplat 用Voronoi重建多视图</em> / <em>GaussianSpline 动态4D高斯</em> / <em>断件模型生成Blendshape</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>UE 5.8 Mutable 正式生产可用</em> / <em>Epic 改 EULA 允许 AI 训练</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,121 +127,186 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE 5.8 Mutable 正式生产可用",
+      "sum": "Mutable 工具集在 UE 5.8 转为 Production-Ready，并同步更新示例工程。",
+      "ta": "运行时角色定制管线可正式上项目，值得评估其骨骼/材质变体对性能与包体的影响。",
+      "src": "Unreal Engine · 10-27",
+      "url": "https://www.unrealengine.com/news/mutable-sample-for-runtime-character-customization-now-updated-for-ue-5-8"
+    },
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 2,
+      "title": "Epic 改 EULA 允许 AI 训练",
+      "sum": "Epic 更新 EULA，允许用 UE 与 MetaHuman 输出训练 AI，开发者可按项目限制。",
+      "ta": "自研资产与 MetaHuman 产出可能被纳入训练语料，需确认项目合同与资产授权边界。",
+      "src": "Game Developer · 10-27",
+      "url": "https://www.gamedeveloper.com/programming/epic-is-updating-its-eula-to-allow-ai-training-on-outputs-from-unreal-engine-and-metahuman"
+    },
+    {
+      "cat": "tech",
       "imp": "mid",
-      "title": "CVTSplat 用Voronoi重建多视图",
-      "sum": "以自适应质心Voronoi划分做多视图形状与外观重建，降低优化中重复重建开销。",
-      "ta": "关注其自适应空间划分思路，或可借鉴到程序化植被分布与LOD划分。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.35347v1"
+      "title": "RTX Spark 平台主打神经渲染",
+      "sum": "NVIDIA 推出面向 AI 开发与游戏的 Windows PC 平台 RTX Spark，基于 Blackwell RTX。",
+      "ta": "关注其神经渲染与 AI 角色在游戏端的落地形态，判断对渲染管线的新要求。",
+      "src": "NVIDIA · 10-27",
+      "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "GaussianSpline 动态4D高斯",
-      "sum": "用自适应非均匀分段三次贝塞尔样条建模每个高斯运动，实现动态4D高斯泼溅。",
-      "ta": "动态场景重建的运动参数化方案，对植被风动等非刚体动画重建有参考价值。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.35224v1"
+      "title": "六边形面元替代高斯泼溅",
+      "sum": "提出 Hexels 平面六边形面元与一阶空间颜色场，降低渲染与重建开销。",
+      "ta": "紧凑图元思路可参考到植被/地表点云表达，关注显存与重建质量权衡。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37668v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "CT 体渲染烘焙为 3DGS",
+      "sum": "CTBakeGS 无需训练即可把 CT 体渲染结果烘焙成 3D 高斯泼溅。",
+      "ta": "体渲染转实时图元的烘焙思路，可类比体积雾/流体特效的离线转实时方案。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37406v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "VR 无界 3DGS 背景补全",
+      "sum": "DomeGS 针对 VR 中无界 3DGS 场景做感知一致的背景补全。",
+      "ta": "关注其补全策略对 VR 大场景空洞问题的处理，可迁移到环境搭建流程。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37172v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "路径追踪网格插入高斯场景",
+      "sum": "GraftRay 通过路径追踪把网格物体插入 2DGS/3DGS 场景并保证光照一致。",
+      "ta": "虚拟物体与扫描场景的光照/阴影一致性，是混合渲染管线的关键参考。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37036v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "MPM 强形变弹性体求解器",
+      "sum": "提出基于总形变的 MPM 求解器，可在强形变下恢复且自然处理接触。",
+      "ta": "对布料/软体与流体耦合特效的数值稳定性有参考价值。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.36945v1"
     },
     {
       "cat": "gfx",
       "imp": "lo",
-      "title": "断件模型生成Blendshape",
-      "sum": "针对含多个不连通部件的动漫风角色模型，生成ARKit/MediaPipe固定表情Blendshape。",
-      "ta": "角色面部管线中处理断件网格的实用案例，可参考其部件拆分策略。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.35076v1"
+      "title": "可复用传输骨架加速 PDE",
+      "sum": "用持久化传输骨架复用随机游走轨迹，加速交互式蒙特卡洛 PDE 求解。",
+      "ta": "路径复用思路与实时路径追踪降噪有相通之处，可速览。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.36931v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯 SLAM 解耦几何与跟踪",
+      "sum": "LingGS 将前馈几何预测与相机跟踪解耦，提升单目高斯 SLAM 重建质量。",
+      "ta": "扫描/实景重建流程的实时化参考，关注有限优化预算下的质量表现。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.36853v1"
     },
     {
       "cat": "gfx",
       "imp": "lo",
-      "title": "仿昆虫逆折纸曲面成形",
-      "sum": "受昆虫变态发育褶皱展开启发，提出逆折纸方法设计曲面成形的褶皱结构。",
-      "ta": "几何设计思路偏学术，暂与实时管线距离较远，速览即可。",
+      "title": "长时序任务可视化视角规划",
+      "sum": "VISTA 提出可微的视角规划方法，用于长时序任务的 3D 过程可视化。",
+      "ta": "与工具链中的自动取景/演示镜头生成有潜在关联，速览即可。",
       "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.34903v1"
+      "url": "https://arxiv.org/abs/2610.36111v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "RacerGS 压缩3D高斯泼溅",
-      "sum": "用残差自回归上下文构建紧凑3DGS压缩框架，显著降低参数存储与传输量。",
-      "ta": "3DGS资产体积是落地瓶颈，压缩方案直接影响扫描植被/场景的运行时内存预算。",
-      "src": "arXiv · cs.GR · 10-25",
-      "url": "https://arxiv.org/abs/2610.34263v1"
+      "title": "多视图渲染合并为单张纹理",
+      "sum": "提出把稀疏多视图渲染整合为单张一致纹理的系统，可接入生成模型。",
+      "ta": "与程序化贴图/资产纹理烘焙流程相关，值得看其图集合并策略。",
+      "src": "arXiv · cs.GR · 10-26",
+      "url": "https://arxiv.org/abs/2610.36098v1"
     },
     {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "单相机可试穿虚拟人建模",
-      "sum": "仅用单目视频或单图重建高保真、可动画、可试穿的虚拟人化身。",
-      "ta": "单相机重建降低数字人采集门槛，与植被/特效本职关联较弱。",
-      "src": "arXiv · cs.GR · 10-25",
-      "url": "https://arxiv.org/abs/2610.34223v1"
-    },
-    {
-      "cat": "gfx",
+      "cat": "flow",
       "imp": "mid",
-      "title": "神经服装仿真显式摩擦建模",
-      "sum": "为GNN服装仿真引入显式摩擦项与可设摩擦系数μ，替代隐式训练能量中的摩擦。",
-      "ta": "布料/软体仿真中摩擦参数可控化，对角色与植被交互的物理表现有借鉴意义。",
-      "src": "arXiv · cs.GR · 10-24",
-      "url": "https://arxiv.org/abs/2610.33492v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "WorldCast 大角度相机可控角色视频",
-      "sum": "提出世界一致的角色视频生成方法，支持大角度相机控制。",
-      "ta": "相机可控的角色视频生成，可关注其在镜头运动一致性上的处理方式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.33135"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "World-in-Context 交互式视频世界模型",
-      "sum": "以in-context条件实现可交互的视频世界建模。",
-      "ta": "交互式世界模型方向，与实时引擎结合尚早，关注其条件控制接口设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.33169"
+      "title": "UE5 主材质做风格化小屋",
+      "sum": "作者分享模块化资产搭建、UE5 复杂主材质与手工雕刻风格化植被的流程。",
+      "ta": "主材质组织与风格化植被手工雕刻，直接对口植被工具与材质性能。",
+      "src": "80 Level · 10-27",
+      "url": "https://80.lv/articles/building-a-stylized-mountain-cabin-with-modular-assets-and-custom-shaders/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender 推拉变焦单滑块工具",
-      "sum": "免费Blender工具，用单个滑块同步控制相机移动与焦距实现Dolly Zoom。",
-      "ta": "镜头预演的快捷工具，可省去手动同步焦距与位移的调参时间。",
-      "src": "80 Level · 10-26",
-      "url": "https://80.lv/articles/free-blender-tool-for-dolly-zoom-camera-effect/"
+      "title": "Blender 替代 AE 做 MV",
+      "sum": "展示如何在 Blender 而非 After Effects 中完成音乐视频的动态设计。",
+      "ta": "Blender 动效工作流可作工具链替代方案参考，速览。",
+      "src": "80 Level · 10-27",
+      "url": "https://80.lv/articles/see-how-this-music-video-was-made-in-blender-instead-of-after-effects/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender 做概念图背景流程",
-      "sum": "作者Ullaiin讲解Blender基础，并演示如何把3D融入概念美术工作流。",
-      "ta": "3D辅助2D概念图的常规流程，适合团队新人快速上手参考。",
-      "src": "80 Level · 10-26",
-      "url": "https://80.lv/articles/how-to-use-blender-for-backgrounds-in-concept-art/"
+      "title": "Blender 实时运动路径插件更新",
+      "sum": "Motion Path Pro 插件新增功能，支持实时运动路径显示。",
+      "ta": "动画调试辅助工具，速览即可。",
+      "src": "80 Level · 10-27",
+      "url": "https://80.lv/articles/real-time-motion-paths-add-on-for-blender-gets-updated/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "几何生成助力空间理解",
+      "sum": "论文探讨几何生成任务如何帮助模型进行空间理解与推理。",
+      "ta": "与 3D 生成模型能力边界相关，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.36022"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Rockstar 员工投票组建工会",
+      "sum": "Rockstar 员工将在 GTA6 发售前两周内投票决定是否承认工会。",
+      "ta": "行业劳资动向，关注对 3A 制作节奏的潜在影响。",
+      "src": "Game Developer · 10-27",
+      "url": "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Xbox 拒Netflix五亿改编约",
-      "sum": "报道称Netflix拟以5亿美元改编Xbox多个游戏IP，Xbox为抬价拒绝。",
-      "ta": "IP影视化商业动向，与TA日常无直接关系，速览即可。",
-      "src": "Game Developer · 10-26",
-      "url": "https://www.gamedeveloper.com/business/xbox-reportedly-turned-down-a-500-million-deal-from-netflix-for-adapting-gaming-properties"
+      "title": "Warhorse 遭网络安全事件",
+      "sum": "《天国拯救》开发商披露遭遇严重网络安全攻击，正在评估影响。",
+      "ta": "提醒项目资产与源码的访问安全，速览。",
+      "src": "Game Developer · 10-27",
+      "url": "https://www.gamedeveloper.com/programming/warhorse-studios-hit-by-an-undetailed-cybersecurity-incident"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "两人两月做出百万销量UE5独立游戏",
-      "sum": "两名日本开发者用UE5两个月做出Prop Hunt风格游戏，四天售出百万份。",
-      "ta": "小团队UE5快速原型到爆款的案例，可看其玩法原型与迭代节奏。",
-      "src": "Unreal Engine · 10-26",
-      "url": "https://www.unrealengine.com/developer-interviews/meccha-chameleon-how-two-devs-built-the-indie-smash-hit-of-the-summer"
+      "title": "Sucker Punch 裁员 24 人",
+      "sum": "Sucker Punch 裁减 24 人，约占团队 10%，称与市场及下个项目需求对齐。",
+      "ta": "行业收缩信号，速览。",
+      "src": "Game Developer · 10-27",
+      "url": "https://www.gamedeveloper.com/business/sucker-punch-lays-off-24-to-align-with-current-market-next-project-needs"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Konami 谈寂静岭多形态布局",
+      "sum": "制作人谈寂静岭的创作自由、第一人称恐怖与苏格兰环境还原及系列未来。",
+      "ta": "环境还原与美术方向参考，速览。",
+      "src": "80 Level · 10-27",
+      "url": "https://80.lv/articles/interview-konami-envisions-silent-hill-like-a-premium-tv-series-with-various-game-formats/"
     }
   ],
   "flashbackTitle": "",
