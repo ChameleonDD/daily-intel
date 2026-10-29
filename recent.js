@@ -2,17 +2,108 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-28 14:45",
+  "updated": "2026-10-29 14:54",
   "cards": [
     {
       "cat": "tech",
       "imp": "hi",
       "rank": 1,
-      "title": "UE 5.8 Mutable 正式生产可用",
-      "sum": "Mutable 工具集在 UE 5.8 转为 Production-Ready，并同步更新示例工程。",
-      "ta": "运行时角色定制管线可正式上项目，值得评估其骨骼/材质变体对性能与包体的影响。",
-      "src": "Unreal Engine · 10-27",
-      "url": "https://www.unrealengine.com/news/mutable-sample-for-runtime-character-customization-now-updated-for-ue-5-8"
+      "title": "Epic确认AI参与UE开发",
+      "sum": "Epic副总裁称AI代码工具已修复UE存在十年的非确定性烘焙Bug，AI将塑造引擎未来。",
+      "ta": "关注AI辅助引擎开发对烘焙/构建稳定性的实际影响，以及后续版本迭代节奏变化。",
+      "src": "Game Developer · 10-28",
+      "url": "https://www.gamedeveloper.com/programming/unreal-engine-will-be-developed-with-ai-code-confirms-epic"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "FSR 2.4下放RX 6000",
+      "sum": "AMD FSR Redstone SDK 2.4将ML超分4.1.2带入RX 6000系与部分Ryzen，新增Vulkan支持。",
+      "ta": "老卡与APU也能跑ML超分，评估项目最低配置与Vulkan路径下的画质/性能取舍。",
+      "src": "AMD GPUOpen · 10-28",
+      "url": "https://gpuopen.com/learn/amd-fsr-sdk-2-4-rx-6000-ryzen-apus/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE移动开发免费课程上线",
+      "sum": "Epic十月免费学习内容聚焦UE移动开发，涵盖入门、性能优化与发布流程。",
+      "ta": "移动端性能优化章节可作植被/材质在低端设备上的预算参考。",
+      "src": "Unreal Engine · 10-28",
+      "url": "https://www.unrealengine.com/learning/octobers-epic-learning-content-mobile-development-in-unreal-engine"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5.8程序化角色绑定框架",
+      "sum": "社区开发者发布面向UE5.8的程序化模块化角色绑定框架。",
+      "ta": "程序化绑定思路可借鉴到植被/道具的批量骨骼与模块化装配流程。",
+      "src": "Tech-Artists · 10-28",
+      "url": "https://www.tech-artists.org/t/developed-procedural-modular-character-rigging-framework-unreal-engine-5-8/18593"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance Designer内物理模拟",
+      "sum": "新工具可在Substance 3D Designer中直接物理模拟堆叠3D模型并生成无缝平铺贴图。",
+      "ta": "程序化堆叠生成贴图，适合做碎石/落叶类地表细节的可平铺材质。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/simulate-physics-right-in-substance-3d-designer-with-this-tool/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender漫画风描边Shader教程",
+      "sum": "XippoArt发布Blender教程，讲解如何制作带描边的鲜艳漫画风格Shader。",
+      "ta": "描边与色阶处理思路可迁移到UE后处理或卡通材质实验。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/blender-tutorial-create-vibrant-comic-style-shader-with-outlines/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "BioWare创始人谈工作室关闭",
+      "sum": "Greg Zeschuk首次受访，称EA收购与杠杆收购是致命一击，好工作室无法靠随机人员和AI重建。",
+      "ta": "行业组织与人才结构视角，与TA团队建设无直接技术关联，速览即可。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/bioware-co-founder-greg-zeschuk-says-studio-was-killed-by-executives-who-have-never-made-a-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Valve回应Steam AI克隆现象",
+      "sum": "Valve承认Steam上快速AI克隆游戏的问题，但将防范责任推给开发者自身。",
+      "ta": "了解平台对AI素材的合规态度，涉及资产来源时留意风险。",
+      "src": "Game Developer · 10-28",
+      "url": "https://www.gamedeveloper.com/pc/valve-addresses-steam-ai-cloning-problem"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Kenshi团队招募地形美术",
+      "sum": "Lo-Fi Games正在招聘一名地形美术，参与下一款沙盒RPG开发。",
+      "ta": "地形岗位需求侧信息，可侧面了解程序化地形技能的市场价值。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/join-kenshi-developers-to-create-next-great-sandbox-rpg/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "影之刃零谈Boss武器设计",
+      "sum": "Phantom Blade Zero介绍Boss武器如何改变战斗与探索，融合魂类与砍杀玩法。",
+      "ta": "玩法设计向内容，与渲染/工具链无直接关联。",
+      "src": "PlayStation Blog · 10-29",
+      "url": "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散语言模型RL信用分配",
+      "sum": "提出DTCA方法，为扩散语言模型强化学习做去噪Token信用分配。",
+      "ta": "纯LLM训练方法，原文未涉及游戏或实时渲染，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.35201"
     },
     {
       "cat": "tech",
@@ -941,15 +1032,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "flow",
-      "imp": "mid",
-      "title": "Substance Designer 做森林地表材质",
-      "sum": "Zeqi Mu 用 SD 节点做可平铺森林地表，讲根系生长纹理与 UE 场景灯光渲染设置。",
-      "ta": "植被地表材质与 UE 渲染设置的完整案例，可直接对照自己的地表工作流。",
-      "src": "80 Level · 10-19",
-      "url": "https://80.lv/articles/making-realistic-tileable-forest-floor-material-using-substance-3d-designer-s-nodes/"
-    },
-    {
-      "cat": "flow",
       "imp": "lo",
       "title": "ZBrush+Blender 做手绘风 3D 枪械",
       "sum": "Max Osta 用 ZBrush 雕木板玉石、Blender 修改器做绳索与程序纹理，Eevee 渲染。",
@@ -1565,16 +1647,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "全UE流程做手绘风动画",
-      "sum": "Dardo Studios用Control Rig、Sequencer、Lumen在UE内完成整部动画，无Maya到引擎管线。",
-      "ta": "值得看小团队如何用Control Rig+Sequencer替代传统动画管线，Lumen与投影手绘叠加的合成思路可复用。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/how-this-painterly-animated-short-was-rigged-animated-entirely-in-unreal-engine/"
-    },
-    {
-      "cat": "flow",
       "imp": "mid",
       "title": "Blender自动UV展开插件",
       "sum": "免费插件UVgami可快速自动展开UV，支持浏览器试用。",
@@ -1743,79 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "注意力效率优化思路对高分辨率生成/渲染有借鉴意义。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.17227"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型自参考优势学习",
-      "sum": "SALD提出自参考优势学习用于扩散模型。",
-      "ta": "扩散训练方法，与游戏资产生成间接相关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.01496"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "混合模型解码状态存储优化",
-      "sum": "NVIDIA 提出 ReplaySSM，重构 SSM 与注意力混合模型的 state 存储以加速解码。",
-      "ta": "若团队在本地跑 Nemotron/Qwen 类混合模型做工具链推理，可关注其显存与吞吐权衡。",
-      "src": "NVIDIA · 10-12",
-      "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "任意分辨率曲面重建新法",
-      "sum": "T3lescope 从图像做任意分辨率高保真生成式曲面重建。",
-      "ta": "曲面重建若成熟，可接入扫描资产到引擎的自动化管线，值得跟踪精度与拓扑质量。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.03308"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 2,
-      "title": "实时软体切割剥离仿真",
-      "sum": "KAIST 的 OmniBody 用椭球粒子、局部 XPBD 约束与 GPU 并行实现可形变可破坏物体实时仿真。",
-      "ta": "无需全局求解器与重网格化，对破坏类特效与程序化碎裂的实时方案有直接参考价值。",
-      "src": "80 Level · 10-12",
-      "url": "https://80.lv/articles/this-soft-body-simulation-can-cut-peel-break-objects-in-real-time/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "真实物体影子玩平台跳跃",
-      "sum": "导演 Tee Ken Ng 展示混合现实游戏 Plato，用现实物体投影作为玩法元素。",
-      "ta": "影子识别与投影对齐的交互思路，对 AR 类玩法原型有启发。",
-      "src": "80 Level · 10-12",
-      "url": "https://80.lv/articles/this-platformer-lets-you-use-shadows-of-real-life-objects-to-play/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "拆城建停车场游戏抢先体验",
-      "sum": "Car Park Capital 上线抢先体验，玩法是拆房毁绿建停车场。",
-      "ta": "与 TA 工作无直接关联，行业速览。",
-      "src": "80 Level · 10-12",
-      "url": "https://80.lv/articles/this-game-where-you-replace-an-entire-city-with-shiny-parking-lots-is-out-in-early-access/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "毛线等距城市建造游戏",
-      "sum": "Cotton City 让玩家用毛线质感搭建等距城市，含桥梁道路房屋与树木。",
-      "ta": "等距植被与场景摆放的视觉风格参考，速览即可。",
-      "src": "80 Level · 10-12",
-      "url": "https://80.lv/articles/srochet-your-own-cozy-isometric-city-with-cotton-in-this-cute-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "寂静岭将推二三波作品",
-      "sum": "系列制作人称 Konami 正规划第二、第三波寂静岭游戏项目。",
-      "ta": "纯行业动向，与 TA 技术工作无关。",
-      "src": "80 Level · 10-12",
-      "url": "https://80.lv/articles/silent-hill-producer-says-konami-plans-second-and-third-waves-of-games/"
     }
   ]
 };

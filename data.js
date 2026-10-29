@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月28日 · 周三",
+  "date": "2026年10月29日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>UE 5.8 Mutable 正式生产可用</em> / <em>Epic 改 EULA 允许 AI 训练</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Epic确认AI参与UE开发</em> / <em>FSR 2.4下放RX 6000</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -130,183 +130,102 @@ window.INTEL_DATA = {
       "cat": "tech",
       "imp": "hi",
       "rank": 1,
-      "title": "UE 5.8 Mutable 正式生产可用",
-      "sum": "Mutable 工具集在 UE 5.8 转为 Production-Ready，并同步更新示例工程。",
-      "ta": "运行时角色定制管线可正式上项目，值得评估其骨骼/材质变体对性能与包体的影响。",
-      "src": "Unreal Engine · 10-27",
-      "url": "https://www.unrealengine.com/news/mutable-sample-for-runtime-character-customization-now-updated-for-ue-5-8"
+      "title": "Epic确认AI参与UE开发",
+      "sum": "Epic副总裁称AI代码工具已修复UE存在十年的非确定性烘焙Bug，AI将塑造引擎未来。",
+      "ta": "关注AI辅助引擎开发对烘焙/构建稳定性的实际影响，以及后续版本迭代节奏变化。",
+      "src": "Game Developer · 10-28",
+      "url": "https://www.gamedeveloper.com/programming/unreal-engine-will-be-developed-with-ai-code-confirms-epic"
     },
     {
-      "cat": "tech",
+      "cat": "gfx",
       "imp": "hi",
       "rank": 2,
-      "title": "Epic 改 EULA 允许 AI 训练",
-      "sum": "Epic 更新 EULA，允许用 UE 与 MetaHuman 输出训练 AI，开发者可按项目限制。",
-      "ta": "自研资产与 MetaHuman 产出可能被纳入训练语料，需确认项目合同与资产授权边界。",
-      "src": "Game Developer · 10-27",
-      "url": "https://www.gamedeveloper.com/programming/epic-is-updating-its-eula-to-allow-ai-training-on-outputs-from-unreal-engine-and-metahuman"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "RTX Spark 平台主打神经渲染",
-      "sum": "NVIDIA 推出面向 AI 开发与游戏的 Windows PC 平台 RTX Spark，基于 Blackwell RTX。",
-      "ta": "关注其神经渲染与 AI 角色在游戏端的落地形态，判断对渲染管线的新要求。",
-      "src": "NVIDIA · 10-27",
-      "url": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "六边形面元替代高斯泼溅",
-      "sum": "提出 Hexels 平面六边形面元与一阶空间颜色场，降低渲染与重建开销。",
-      "ta": "紧凑图元思路可参考到植被/地表点云表达，关注显存与重建质量权衡。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.37668v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CT 体渲染烘焙为 3DGS",
-      "sum": "CTBakeGS 无需训练即可把 CT 体渲染结果烘焙成 3D 高斯泼溅。",
-      "ta": "体渲染转实时图元的烘焙思路，可类比体积雾/流体特效的离线转实时方案。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.37406v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "VR 无界 3DGS 背景补全",
-      "sum": "DomeGS 针对 VR 中无界 3DGS 场景做感知一致的背景补全。",
-      "ta": "关注其补全策略对 VR 大场景空洞问题的处理，可迁移到环境搭建流程。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.37172v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "路径追踪网格插入高斯场景",
-      "sum": "GraftRay 通过路径追踪把网格物体插入 2DGS/3DGS 场景并保证光照一致。",
-      "ta": "虚拟物体与扫描场景的光照/阴影一致性，是混合渲染管线的关键参考。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.37036v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "MPM 强形变弹性体求解器",
-      "sum": "提出基于总形变的 MPM 求解器，可在强形变下恢复且自然处理接触。",
-      "ta": "对布料/软体与流体耦合特效的数值稳定性有参考价值。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.36945v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "可复用传输骨架加速 PDE",
-      "sum": "用持久化传输骨架复用随机游走轨迹，加速交互式蒙特卡洛 PDE 求解。",
-      "ta": "路径复用思路与实时路径追踪降噪有相通之处，可速览。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.36931v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯 SLAM 解耦几何与跟踪",
-      "sum": "LingGS 将前馈几何预测与相机跟踪解耦，提升单目高斯 SLAM 重建质量。",
-      "ta": "扫描/实景重建流程的实时化参考，关注有限优化预算下的质量表现。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.36853v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "长时序任务可视化视角规划",
-      "sum": "VISTA 提出可微的视角规划方法，用于长时序任务的 3D 过程可视化。",
-      "ta": "与工具链中的自动取景/演示镜头生成有潜在关联，速览即可。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.36111v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多视图渲染合并为单张纹理",
-      "sum": "提出把稀疏多视图渲染整合为单张一致纹理的系统，可接入生成模型。",
-      "ta": "与程序化贴图/资产纹理烘焙流程相关，值得看其图集合并策略。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.36098v1"
+      "title": "FSR 2.4下放RX 6000",
+      "sum": "AMD FSR Redstone SDK 2.4将ML超分4.1.2带入RX 6000系与部分Ryzen，新增Vulkan支持。",
+      "ta": "老卡与APU也能跑ML超分，评估项目最低配置与Vulkan路径下的画质/性能取舍。",
+      "src": "AMD GPUOpen · 10-28",
+      "url": "https://gpuopen.com/learn/amd-fsr-sdk-2-4-rx-6000-ryzen-apus/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "UE5 主材质做风格化小屋",
-      "sum": "作者分享模块化资产搭建、UE5 复杂主材质与手工雕刻风格化植被的流程。",
-      "ta": "主材质组织与风格化植被手工雕刻，直接对口植被工具与材质性能。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/building-a-stylized-mountain-cabin-with-modular-assets-and-custom-shaders/"
+      "title": "UE移动开发免费课程上线",
+      "sum": "Epic十月免费学习内容聚焦UE移动开发，涵盖入门、性能优化与发布流程。",
+      "ta": "移动端性能优化章节可作植被/材质在低端设备上的预算参考。",
+      "src": "Unreal Engine · 10-28",
+      "url": "https://www.unrealengine.com/learning/octobers-epic-learning-content-mobile-development-in-unreal-engine"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5.8程序化角色绑定框架",
+      "sum": "社区开发者发布面向UE5.8的程序化模块化角色绑定框架。",
+      "ta": "程序化绑定思路可借鉴到植被/道具的批量骨骼与模块化装配流程。",
+      "src": "Tech-Artists · 10-28",
+      "url": "https://www.tech-artists.org/t/developed-procedural-modular-character-rigging-framework-unreal-engine-5-8/18593"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance Designer内物理模拟",
+      "sum": "新工具可在Substance 3D Designer中直接物理模拟堆叠3D模型并生成无缝平铺贴图。",
+      "ta": "程序化堆叠生成贴图，适合做碎石/落叶类地表细节的可平铺材质。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/simulate-physics-right-in-substance-3d-designer-with-this-tool/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender 替代 AE 做 MV",
-      "sum": "展示如何在 Blender 而非 After Effects 中完成音乐视频的动态设计。",
-      "ta": "Blender 动效工作流可作工具链替代方案参考，速览。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/see-how-this-music-video-was-made-in-blender-instead-of-after-effects/"
+      "title": "Blender漫画风描边Shader教程",
+      "sum": "XippoArt发布Blender教程，讲解如何制作带描边的鲜艳漫画风格Shader。",
+      "ta": "描边与色阶处理思路可迁移到UE后处理或卡通材质实验。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/blender-tutorial-create-vibrant-comic-style-shader-with-outlines/"
     },
     {
-      "cat": "flow",
+      "cat": "biz",
+      "imp": "mid",
+      "title": "BioWare创始人谈工作室关闭",
+      "sum": "Greg Zeschuk首次受访，称EA收购与杠杆收购是致命一击，好工作室无法靠随机人员和AI重建。",
+      "ta": "行业组织与人才结构视角，与TA团队建设无直接技术关联，速览即可。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/bioware-co-founder-greg-zeschuk-says-studio-was-killed-by-executives-who-have-never-made-a-game/"
+    },
+    {
+      "cat": "biz",
       "imp": "lo",
-      "title": "Blender 实时运动路径插件更新",
-      "sum": "Motion Path Pro 插件新增功能，支持实时运动路径显示。",
-      "ta": "动画调试辅助工具，速览即可。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/real-time-motion-paths-add-on-for-blender-gets-updated/"
+      "title": "Valve回应Steam AI克隆现象",
+      "sum": "Valve承认Steam上快速AI克隆游戏的问题，但将防范责任推给开发者自身。",
+      "ta": "了解平台对AI素材的合规态度，涉及资产来源时留意风险。",
+      "src": "Game Developer · 10-28",
+      "url": "https://www.gamedeveloper.com/pc/valve-addresses-steam-ai-cloning-problem"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Kenshi团队招募地形美术",
+      "sum": "Lo-Fi Games正在招聘一名地形美术，参与下一款沙盒RPG开发。",
+      "ta": "地形岗位需求侧信息，可侧面了解程序化地形技能的市场价值。",
+      "src": "80 Level · 10-28",
+      "url": "https://80.lv/articles/join-kenshi-developers-to-create-next-great-sandbox-rpg/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "影之刃零谈Boss武器设计",
+      "sum": "Phantom Blade Zero介绍Boss武器如何改变战斗与探索，融合魂类与砍杀玩法。",
+      "ta": "玩法设计向内容，与渲染/工具链无直接关联。",
+      "src": "PlayStation Blog · 10-29",
+      "url": "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "几何生成助力空间理解",
-      "sum": "论文探讨几何生成任务如何帮助模型进行空间理解与推理。",
-      "ta": "与 3D 生成模型能力边界相关，速览。",
+      "title": "扩散语言模型RL信用分配",
+      "sum": "提出DTCA方法，为扩散语言模型强化学习做去噪Token信用分配。",
+      "ta": "纯LLM训练方法，原文未涉及游戏或实时渲染，速览。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.36022"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Rockstar 员工投票组建工会",
-      "sum": "Rockstar 员工将在 GTA6 发售前两周内投票决定是否承认工会。",
-      "ta": "行业劳资动向，关注对 3A 制作节奏的潜在影响。",
-      "src": "Game Developer · 10-27",
-      "url": "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Warhorse 遭网络安全事件",
-      "sum": "《天国拯救》开发商披露遭遇严重网络安全攻击，正在评估影响。",
-      "ta": "提醒项目资产与源码的访问安全，速览。",
-      "src": "Game Developer · 10-27",
-      "url": "https://www.gamedeveloper.com/programming/warhorse-studios-hit-by-an-undetailed-cybersecurity-incident"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Sucker Punch 裁员 24 人",
-      "sum": "Sucker Punch 裁减 24 人，约占团队 10%，称与市场及下个项目需求对齐。",
-      "ta": "行业收缩信号，速览。",
-      "src": "Game Developer · 10-27",
-      "url": "https://www.gamedeveloper.com/business/sucker-punch-lays-off-24-to-align-with-current-market-next-project-needs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Konami 谈寂静岭多形态布局",
-      "sum": "制作人谈寂静岭的创作自由、第一人称恐怖与苏格兰环境还原及系列未来。",
-      "ta": "环境还原与美术方向参考，速览。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/interview-konami-envisions-silent-hill-like-a-premium-tv-series-with-various-game-formats/"
+      "url": "https://huggingface.co/papers/2610.35201"
     }
   ],
   "flashbackTitle": "",
@@ -314,8 +233,8 @@ window.INTEL_DATA = {
     "ok": [
       "Unreal Engine",
       "NVIDIA",
-      "Blender 开发博客",
       "PlayStation Blog",
+      "AMD GPUOpen",
       "arXiv · cs.GR",
       "HuggingFace",
       "80 Level",
@@ -323,7 +242,7 @@ window.INTEL_DATA = {
       "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": "未覆盖：AMD GPUOpen。"
+    "missed": "未覆盖：Blender 开发博客。"
   },
   "xStale": false
 };
