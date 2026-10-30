@@ -2,8 +2,172 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-29 14:54",
+  "updated": "2026-10-30 14:57",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "单图生成可动画发卡",
+      "sum": "HairDeck 从单张图像生成风格化 hair cards，可直接用 spring bone 驱动动画。",
+      "ta": "植被/卡片类几何的程序化生成思路可迁移，关注其 ribbon 布局与骨骼绑定方式。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.40599v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 2,
+      "title": "Substance 烘焙流程重做",
+      "sum": "Adobe 重构 Painter 烘焙工作流，新增 cage painting 交互与技术实现。",
+      "ta": "烘焙是材质管线瓶颈，cage 手绘方式直接影响高模到低模的法线质量与迭代速度。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/adobe-explains-how-it-rebuilt-substance-3d-painter-s-baking-workflow/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "鱼眼全视场高斯泼溅",
+      "sum": "GOFish 实现鱼眼镜头全视场高斯泼溅渲染并提取对齐碰撞网格。",
+      "ta": "数字孪生场景重建可参考，网格与渲染对齐对碰撞/物理资产制作有借鉴。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37818v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经显式形状表示",
+      "sum": "提出兼顾连续曲面建模、高效渲染与对象压缩的神经显式形状表示。",
+      "ta": "显式曲面查询对光追友好，值得关注其结构化输出空间如何服务实时渲染。",
+      "src": "arXiv · cs.GR · 10-28",
+      "url": "https://arxiv.org/abs/2610.38441v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "频率自适应高斯网格",
+      "sum": "融合特征网格与 2D 高斯，提出频率自适应的高效图像表示。",
+      "ta": "结构化与非结构化表示的权衡思路，可类比到植被分布与 LOD 表示策略。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.38007v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "多视图一致几何注入",
+      "sum": "将几何推断与纹理合成解耦，提升单图到多视图生成的一致性。",
+      "ta": "几何与纹理解耦的思路对程序化资产与贴图生成管线有参考价值。",
+      "src": "arXiv · cs.GR · 10-28",
+      "url": "https://arxiv.org/abs/2610.38518v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "城市植被配置优化",
+      "sum": "Greenscapes 优化城市植被配置，平衡遮荫、微气候与景观风格。",
+      "ta": "植被布局优化的目标函数设计，可借鉴到开放世界植被程序化分布规则。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.40007v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "文本生成可编辑 CAD",
+      "sum": "CAD-WAM 通过预判几何来选择操作序列，提升多步文本到 CAD 生成可靠性。",
+      "ta": "操作序列式生成思路与程序化建模节点图有相通之处，关注其几何预判机制。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.39306v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D 程序编辑基准发布",
+      "sum": "3DCodeEdit 提出指令引导的 3D 程序编辑基准，考察改动的几何后果预判。",
+      "ta": "程序化生成资产的可编辑性评估，对 HDA/蓝图式工作流自动化有参考。",
+      "src": "arXiv · cs.GR · 10-28",
+      "url": "https://arxiv.org/abs/2610.38231v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "AI 原生引擎做游戏",
+      "sum": "VibeGame 提出提示词到游戏的开发框架，含自演化对抗智能体团队。",
+      "ta": "关注其引擎侧接口设计，判断对 TA 工具链与自动化流程的潜在影响。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.33106"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "MPM 驱动灵巧操作",
+      "sum": "MG-CD-MPM 用连续损伤与粘塑性 MPM 支撑强化学习灵巧操作仿真。",
+      "ta": "大变形与拓扑变化的仿真方案，与流体/软体特效求解器思路可对照。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.39975v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "人群数据嵌入仿真",
+      "sum": "Trajeform 将人群轨迹数据嵌入，学习更自然的环境适配行为。",
+      "ta": "群体行为数据驱动思路，可类比到场景中 NPC 与植被交互的分布逻辑。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.39563v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "网页版介观程序化建模",
+      "sum": "MesoCraft 提供浏览器内交互式介观生物结构程序化建模工具。",
+      "ta": "交互式程序化建模的 Web 实现，对工具 UX 设计有轻量参考。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37954v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 雕刻助手插件",
+      "sum": "CL Sculpt Assistant 为 Blender 雕刻加入 UI 改进与若干新功能。",
+      "ta": "雕刻辅助工具可提升高模制作效率，速览功能列表即可。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/blender-gets-handy-new-assistant-tool-for-sculpting/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "极端角度动漫脸工具",
+      "sum": "DillonGoo Studios 发布 Blender 工具，处理极端角度下的动漫脸部。",
+      "ta": "风格化角色制作辅助，关注其形变与透视处理方式。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/create-perfect-anime-faces-at-extreme-angles-with-this-blender-tool/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "上古卷轴6副标题传闻",
+      "sum": "报道称《上古卷轴6》官方副标题与 Hammerfell 相关。",
+      "ta": "行业动态速览，与 TA 工作无直接关联。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/the-elder-scrolls-6-may-finally-have-a-name-confirmation-and-it-makes-perfect-sense/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "第二人生转型现代平台",
+      "sum": "Linden Lab 介绍 Luau、VS Code 集成与实时迭代等平台现代化举措。",
+      "ta": "脚本语言与编辑器集成方案，对工具链设计有轻度参考。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/second-life-wants-its-23-year-old-world-to-be-a-modern-game-platform/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "堕落之主2动画预览",
+      "sum": "《堕落之主 II》公开动画及其 WIP 片段，游戏明年发售。",
+      "ta": "动画表现速览，无技术细节可挖。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/take-a-look-at-this-fantastic-animation-its-wip-from-lords-of-the-fallen-ii/"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -162,15 +326,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "gfx",
-      "imp": "mid",
-      "title": "MPM 强形变弹性体求解器",
-      "sum": "提出基于总形变的 MPM 求解器，可在强形变下恢复且自然处理接触。",
-      "ta": "对布料/软体与流体耦合特效的数值稳定性有参考价值。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.36945v1"
-    },
-    {
-      "cat": "gfx",
       "imp": "lo",
       "title": "可复用传输骨架加速 PDE",
       "sum": "用持久化传输骨架复用随机游走轨迹，加速交互式蒙特卡洛 PDE 求解。",
@@ -222,15 +377,6 @@ window.INTEL_RECENT = {
       "ta": "Blender 动效工作流可作工具链替代方案参考，速览。",
       "src": "80 Level · 10-27",
       "url": "https://80.lv/articles/see-how-this-music-video-was-made-in-blender-instead-of-after-effects/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 实时运动路径插件更新",
-      "sum": "Motion Path Pro 插件新增功能，支持实时运动路径显示。",
-      "ta": "动画调试辅助工具，速览即可。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/real-time-motion-paths-add-on-for-blender-gets-updated/"
     },
     {
       "cat": "ai",
@@ -646,15 +792,6 @@ window.INTEL_RECENT = {
       "ta": "关注智能体在 XR 动态场景下的工程能力评测维度。",
       "src": "arXiv · cs.GR · 10-21",
       "url": "https://arxiv.org/abs/2610.29014v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "流式生成可交互3D世界",
-      "sum": "WorldStream 用分层规划与持久状态，流式扩展可玩地形并恢复编辑过的场景。",
-      "ta": "程序化世界生成可参考其持久状态与分层规划架构。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28827v1"
     },
     {
       "cat": "ai",
@@ -1680,141 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "大规模影视VFX流程与帧量级参考。",
       "src": "80 Level · 10-13",
       "url": "https://80.lv/articles/rodeo-fx-shared-their-house-of-the-dragon-season-3-vfx-breakdown/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "实时瀑布建造游戏",
-      "sum": "Mogmek的Waterfalls Dream让玩家实时创建和编辑风格化瀑布。",
-      "ta": "实时流体/瀑布编辑交互设计可作参考。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/this-game-allows-you-to-create-your-own-stylized-waterfalls-with-realistic-behavior/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "精灵动画关键帧插值",
-      "sum": "低成本深度学习方案为精灵动画自动生成中间帧，避免写实插值的平滑伪影。",
-      "ta": "针对像素/精灵内容的插值方法，对2D游戏动画工具链有参考价值。",
-      "src": "arXiv · cs.GR · 10-12",
-      "url": "https://arxiv.org/abs/2610.16423v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "相机可控图生视频框架",
-      "sum": "Gen Through the Lens通过跨坐标条件融合实现物理一致的相机运镜图生视频。",
-      "ta": "相机可控生成对预演/虚拟拍摄的镜头设计有潜在价值。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15900v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "跨族运动补全解耦尺度",
-      "sum": "Cepheid解耦尺度与结构，解决稀疏到稠密运动补全的跨几何族泛化问题。",
-      "ta": "网格运动补全的泛化思路，对角色/形变动画工具有启发。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.18871v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态抓取序列合成",
-      "sum": "Learning Dynamic Grasping合成可信的4D手-物抓取序列，用于角色动画与XR。",
-      "ta": "手物交互合成对角色动画与VR交互有直接参考。",
-      "src": "arXiv · cs.GR · 10-10",
-      "url": "https://arxiv.org/abs/2610.14848v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "骨骼关节球面四边形化",
-      "sum": "从无序方向向量集构造球面简单四边形化，用于骨骼关节参数化体积模型。",
-      "ta": "参数化体积建模的拓扑构造方法，对程序化角色/关节建模有参考。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.17803v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CAD图纸全景符号识别",
-      "sum": "TempFit用模板拟合方法解决CAD图纸的全景符号识别问题。",
-      "ta": "图纸符号识别思路可迁移到场景资产/图元的自动解析。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.17776v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "投影球面行走等距嵌入",
-      "sum": "WoAP将嵌入视为求解变量，改进Projected Walk on Spheres的表面PDE求解。",
-      "ta": "几何PDE求解器改进，对程序化纹理/距离场有潜在价值。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15573v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "可加工性拓扑优化",
-      "sum": "用裁剪神经场做面向减材加工的拓扑优化，减少点铣加工。",
-      "ta": "制造约束下的几何优化思路，与游戏资产关联较弱。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15301v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "全息感知目标函数",
-      "sum": "HoOPOE提出全息优化的感知目标函数，缓解计算机生成全息的散斑伪影。",
-      "ta": "全息显示方向，与实时渲染管线关联有限。",
-      "src": "arXiv · cs.GR · 10-12",
-      "url": "https://arxiv.org/abs/2610.17474v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "内容编辑式版式生成",
-      "sum": "CELG提出内容编辑式条件版式生成，扩展内容感知版式生成。",
-      "ta": "图形设计版式生成，与游戏UI自动化有弱关联。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.17905v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "LLM协同设计空间概念",
-      "sum": "Co-DSL让用户与LLM协同设计可复用的空间概念用于版式生成。",
-      "ta": "人机协同的布局生成框架，可参考到关卡/场景布局工具。",
-      "src": "arXiv · cs.GR · 10-11",
-      "url": "https://arxiv.org/abs/2610.15290v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "机器人Real2Sim交互工具",
-      "sum": "RoboSimStudio提供交互式工具包，快速实现机器人操作任务的Real2Sim。",
-      "ta": "物理仿真求解器选择与接触建模，与游戏物理有间接参考。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.18835v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "多人世界模型分层通信",
-      "sum": "Multics提出带分层通信的生成式多人世界模型。",
-      "ta": "多人世界模型对多人游戏状态预测有潜在启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.17201"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "高分辨率扩散注意力优化",
-      "sum": "AReA提出自适应感受野注意力，提升高分辨率扩散Transformer效率。",
-      "ta": "注意力效率优化思路对高分辨率生成/渲染有借鉴意义。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.17227"
     }
   ]
 };

@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年10月29日 · 周四",
+  "date": "2026年10月30日 · 周五",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Epic确认AI参与UE开发</em> / <em>FSR 2.4下放RX 6000</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>单图生成可动画发卡</em> / <em>Substance 烘焙流程重做</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,105 +127,186 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
+      "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "Epic确认AI参与UE开发",
-      "sum": "Epic副总裁称AI代码工具已修复UE存在十年的非确定性烘焙Bug，AI将塑造引擎未来。",
-      "ta": "关注AI辅助引擎开发对烘焙/构建稳定性的实际影响，以及后续版本迭代节奏变化。",
-      "src": "Game Developer · 10-28",
-      "url": "https://www.gamedeveloper.com/programming/unreal-engine-will-be-developed-with-ai-code-confirms-epic"
+      "title": "单图生成可动画发卡",
+      "sum": "HairDeck 从单张图像生成风格化 hair cards，可直接用 spring bone 驱动动画。",
+      "ta": "植被/卡片类几何的程序化生成思路可迁移，关注其 ribbon 布局与骨骼绑定方式。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.40599v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 2,
+      "title": "Substance 烘焙流程重做",
+      "sum": "Adobe 重构 Painter 烘焙工作流，新增 cage painting 交互与技术实现。",
+      "ta": "烘焙是材质管线瓶颈，cage 手绘方式直接影响高模到低模的法线质量与迭代速度。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/adobe-explains-how-it-rebuilt-substance-3d-painter-s-baking-workflow/"
     },
     {
       "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "FSR 2.4下放RX 6000",
-      "sum": "AMD FSR Redstone SDK 2.4将ML超分4.1.2带入RX 6000系与部分Ryzen，新增Vulkan支持。",
-      "ta": "老卡与APU也能跑ML超分，评估项目最低配置与Vulkan路径下的画质/性能取舍。",
-      "src": "AMD GPUOpen · 10-28",
-      "url": "https://gpuopen.com/learn/amd-fsr-sdk-2-4-rx-6000-ryzen-apus/"
-    },
-    {
-      "cat": "flow",
       "imp": "mid",
-      "title": "UE移动开发免费课程上线",
-      "sum": "Epic十月免费学习内容聚焦UE移动开发，涵盖入门、性能优化与发布流程。",
-      "ta": "移动端性能优化章节可作植被/材质在低端设备上的预算参考。",
-      "src": "Unreal Engine · 10-28",
-      "url": "https://www.unrealengine.com/learning/octobers-epic-learning-content-mobile-development-in-unreal-engine"
+      "title": "鱼眼全视场高斯泼溅",
+      "sum": "GOFish 实现鱼眼镜头全视场高斯泼溅渲染并提取对齐碰撞网格。",
+      "ta": "数字孪生场景重建可参考，网格与渲染对齐对碰撞/物理资产制作有借鉴。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37818v1"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "UE5.8程序化角色绑定框架",
-      "sum": "社区开发者发布面向UE5.8的程序化模块化角色绑定框架。",
-      "ta": "程序化绑定思路可借鉴到植被/道具的批量骨骼与模块化装配流程。",
-      "src": "Tech-Artists · 10-28",
-      "url": "https://www.tech-artists.org/t/developed-procedural-modular-character-rigging-framework-unreal-engine-5-8/18593"
+      "title": "神经显式形状表示",
+      "sum": "提出兼顾连续曲面建模、高效渲染与对象压缩的神经显式形状表示。",
+      "ta": "显式曲面查询对光追友好，值得关注其结构化输出空间如何服务实时渲染。",
+      "src": "arXiv · cs.GR · 10-28",
+      "url": "https://arxiv.org/abs/2610.38441v1"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "Substance Designer内物理模拟",
-      "sum": "新工具可在Substance 3D Designer中直接物理模拟堆叠3D模型并生成无缝平铺贴图。",
-      "ta": "程序化堆叠生成贴图，适合做碎石/落叶类地表细节的可平铺材质。",
-      "src": "80 Level · 10-28",
-      "url": "https://80.lv/articles/simulate-physics-right-in-substance-3d-designer-with-this-tool/"
+      "title": "频率自适应高斯网格",
+      "sum": "融合特征网格与 2D 高斯，提出频率自适应的高效图像表示。",
+      "ta": "结构化与非结构化表示的权衡思路，可类比到植被分布与 LOD 表示策略。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.38007v1"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender漫画风描边Shader教程",
-      "sum": "XippoArt发布Blender教程，讲解如何制作带描边的鲜艳漫画风格Shader。",
-      "ta": "描边与色阶处理思路可迁移到UE后处理或卡通材质实验。",
-      "src": "80 Level · 10-28",
-      "url": "https://80.lv/articles/blender-tutorial-create-vibrant-comic-style-shader-with-outlines/"
-    },
-    {
-      "cat": "biz",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "BioWare创始人谈工作室关闭",
-      "sum": "Greg Zeschuk首次受访，称EA收购与杠杆收购是致命一击，好工作室无法靠随机人员和AI重建。",
-      "ta": "行业组织与人才结构视角，与TA团队建设无直接技术关联，速览即可。",
-      "src": "80 Level · 10-28",
-      "url": "https://80.lv/articles/bioware-co-founder-greg-zeschuk-says-studio-was-killed-by-executives-who-have-never-made-a-game/"
+      "title": "多视图一致几何注入",
+      "sum": "将几何推断与纹理合成解耦，提升单图到多视图生成的一致性。",
+      "ta": "几何与纹理解耦的思路对程序化资产与贴图生成管线有参考价值。",
+      "src": "arXiv · cs.GR · 10-28",
+      "url": "https://arxiv.org/abs/2610.38518v1"
     },
     {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Valve回应Steam AI克隆现象",
-      "sum": "Valve承认Steam上快速AI克隆游戏的问题，但将防范责任推给开发者自身。",
-      "ta": "了解平台对AI素材的合规态度，涉及资产来源时留意风险。",
-      "src": "Game Developer · 10-28",
-      "url": "https://www.gamedeveloper.com/pc/valve-addresses-steam-ai-cloning-problem"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Kenshi团队招募地形美术",
-      "sum": "Lo-Fi Games正在招聘一名地形美术，参与下一款沙盒RPG开发。",
-      "ta": "地形岗位需求侧信息，可侧面了解程序化地形技能的市场价值。",
-      "src": "80 Level · 10-28",
-      "url": "https://80.lv/articles/join-kenshi-developers-to-create-next-great-sandbox-rpg/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "影之刃零谈Boss武器设计",
-      "sum": "Phantom Blade Zero介绍Boss武器如何改变战斗与探索，融合魂类与砍杀玩法。",
-      "ta": "玩法设计向内容，与渲染/工具链无直接关联。",
-      "src": "PlayStation Blog · 10-29",
-      "url": "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "城市植被配置优化",
+      "sum": "Greenscapes 优化城市植被配置，平衡遮荫、微气候与景观风格。",
+      "ta": "植被布局优化的目标函数设计，可借鉴到开放世界植被程序化分布规则。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.40007v1"
     },
     {
       "cat": "ai",
-      "imp": "lo",
-      "title": "扩散语言模型RL信用分配",
-      "sum": "提出DTCA方法，为扩散语言模型强化学习做去噪Token信用分配。",
-      "ta": "纯LLM训练方法，原文未涉及游戏或实时渲染，速览。",
+      "imp": "mid",
+      "title": "文本生成可编辑 CAD",
+      "sum": "CAD-WAM 通过预判几何来选择操作序列，提升多步文本到 CAD 生成可靠性。",
+      "ta": "操作序列式生成思路与程序化建模节点图有相通之处，关注其几何预判机制。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.39306v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D 程序编辑基准发布",
+      "sum": "3DCodeEdit 提出指令引导的 3D 程序编辑基准，考察改动的几何后果预判。",
+      "ta": "程序化生成资产的可编辑性评估，对 HDA/蓝图式工作流自动化有参考。",
+      "src": "arXiv · cs.GR · 10-28",
+      "url": "https://arxiv.org/abs/2610.38231v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "AI 原生引擎做游戏",
+      "sum": "VibeGame 提出提示词到游戏的开发框架，含自演化对抗智能体团队。",
+      "ta": "关注其引擎侧接口设计，判断对 TA 工具链与自动化流程的潜在影响。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.35201"
+      "url": "https://huggingface.co/papers/2610.33106"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "MPM 驱动灵巧操作",
+      "sum": "MG-CD-MPM 用连续损伤与粘塑性 MPM 支撑强化学习灵巧操作仿真。",
+      "ta": "大变形与拓扑变化的仿真方案，与流体/软体特效求解器思路可对照。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.39975v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "人群数据嵌入仿真",
+      "sum": "Trajeform 将人群轨迹数据嵌入，学习更自然的环境适配行为。",
+      "ta": "群体行为数据驱动思路，可类比到场景中 NPC 与植被交互的分布逻辑。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.39563v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "网页版介观程序化建模",
+      "sum": "MesoCraft 提供浏览器内交互式介观生物结构程序化建模工具。",
+      "ta": "交互式程序化建模的 Web 实现，对工具 UX 设计有轻量参考。",
+      "src": "arXiv · cs.GR · 10-27",
+      "url": "https://arxiv.org/abs/2610.37954v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 雕刻助手插件",
+      "sum": "CL Sculpt Assistant 为 Blender 雕刻加入 UI 改进与若干新功能。",
+      "ta": "雕刻辅助工具可提升高模制作效率，速览功能列表即可。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/blender-gets-handy-new-assistant-tool-for-sculpting/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "极端角度动漫脸工具",
+      "sum": "DillonGoo Studios 发布 Blender 工具，处理极端角度下的动漫脸部。",
+      "ta": "风格化角色制作辅助，关注其形变与透视处理方式。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/create-perfect-anime-faces-at-extreme-angles-with-this-blender-tool/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 拖拽式摆姿插件",
+      "sum": "Marionette 插件支持拖动手脚或胯部带动全身摆姿。",
+      "ta": "快速摆姿可加速资产检查与截图流程，速览即可。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/new-blender-add-on-makes-character-posing-much-easier/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "废墟机器人 3D 制作解析",
+      "sum": "Jueon Kim 分享《Silent Ruins》制作流程，讲解 UV 与破损结构处理。",
+      "ta": "破损结构的可信度处理手法，对场景资产细节制作有参考。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/breakdown-giant-robot-in-cathedral-ruins-made-in-3d/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "上古卷轴6副标题传闻",
+      "sum": "报道称《上古卷轴6》官方副标题与 Hammerfell 相关。",
+      "ta": "行业动态速览，与 TA 工作无直接关联。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/the-elder-scrolls-6-may-finally-have-a-name-confirmation-and-it-makes-perfect-sense/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "第二人生转型现代平台",
+      "sum": "Linden Lab 介绍 Luau、VS Code 集成与实时迭代等平台现代化举措。",
+      "ta": "脚本语言与编辑器集成方案，对工具链设计有轻度参考。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/second-life-wants-its-23-year-old-world-to-be-a-modern-game-platform/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "堕落之主2动画预览",
+      "sum": "《堕落之主 II》公开动画及其 WIP 片段，游戏明年发售。",
+      "ta": "动画表现速览，无技术细节可挖。",
+      "src": "80 Level · 10-29",
+      "url": "https://80.lv/articles/take-a-look-at-this-fantastic-animation-its-wip-from-lords-of-the-fallen-ii/"
     }
   ],
   "flashbackTitle": "",
