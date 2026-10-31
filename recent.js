@@ -2,8 +2,146 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-10-30 14:57",
+  "updated": "2026-10-31 14:51",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE EULA 开放 AI 训练授权",
+      "sum": "Epic 更新 UE 最终用户协议，开发者可自愿选择用 UE 与 MetaHuman 项目训练 AI 模型。",
+      "ta": "直接关系到项目资产能否喂给模型，需确认团队合规口径与资产授权策略。",
+      "src": "Unreal Engine · 10-29",
+      "url": "https://www.unrealengine.com/ue-devs-can-now-choose-to-train-ai-models-on-their-projects"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "Blender 原生支持高斯泼溅",
+      "sum": "Blender 开发博客介绍 Gaussian splatting 的初步实现与后续开发计划。",
+      "ta": "植被/场景扫描资产进 Blender 流程多了一条路径，值得关注导入与渲染集成方式。",
+      "src": "Blender 开发博客 · 10-30",
+      "url": "https://code.blender.org/2026/10/splatting-the-gaussians-into-blender/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "实时无限世界生成新方案",
+      "sum": "L3G-World 用隐式 3D 高斯记忆实现实时无限世界生成。",
+      "ta": "与程序化场景生成思路直接相关，可看其记忆表示如何支撑实时扩展。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.40614"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "Rivian 用 UE5 做万圣节实时特效",
+      "sum": "Rivian 万圣节模式用 UE5 实时 3D 呈现捉鬼敢死队角色与惊喜效果。",
+      "ta": "车机端实时渲染案例，可留意其轻量化实时视觉的落地方式。",
+      "src": "Unreal Engine · 10-30",
+      "url": "https://www.unrealengine.com/news/rivian-brings-ghostbusters-universe-to-halloween-mode-with-real-time-visuals-in-unreal-engine"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "块注意力加速视频扩散",
+      "sum": "AB-Attention 提出精确块注意力以加速视频扩散 Transformer。",
+      "ta": "视频生成加速思路，对实时序列类生成管线有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.39663"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "4D 重建做视频扩散几何控制",
+      "sum": "Holo4D 将整体 4D 重建作为视频扩散的几何控制条件。",
+      "ta": "几何控制思路可用于可控视频/序列生成，关注其重建精度与开销。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.25276"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "像素空间生成 Transformer 分词",
+      "sum": "论文提出角色耦合的分词方案，用于像素空间生成 Transformer。",
+      "ta": "偏生成模型底层，速览即可，暂无明显引擎侧落点。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.40647"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Claude 被限制复刻游戏",
+      "sum": "Anthropic 更新 Opus 5.5，引导 Claude Code 不再复刻他人具体游戏。",
+      "ta": "用 AI 辅助写玩法/工具代码时需注意其能力边界与合规限制。",
+      "src": "Game Developer · 10-30",
+      "url": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "EA 关停 BioWare 转投星战",
+      "sum": "报道称 EA 关闭 BioWare，将资源从质量效应转向新星战前线作品。",
+      "ta": "行业资源再分配信号，关注大厂项目取舍对人才与外包流向的影响。",
+      "src": "Game Developer · 10-30",
+      "url": "https://www.gamedeveloper.com/business/report-ea-shut-down-bioware-in-favor-of-star-wars-battlefront-sequel-after-previously-decrying-licensed-games"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Romero 取消项目找到新发行",
+      "sum": "John Romero 被 Xbox 取消的项目获新发行商接手，团队部分保留。",
+      "ta": "行业动态速览，与 TA 日常无直接关联。",
+      "src": "Game Developer · 10-30",
+      "url": "https://www.gamedeveloper.com/business/john-romero-canceled-game-finds-a-new-publisher-amidst-an-overall-scope-change"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "暗黑风 PvP 新作将抢先体验",
+      "sum": "前暴雪 CCO 的 Bonfire Studios 首作 Arkheron 十一月进入抢先体验。",
+      "ta": "新项目动态速览，可留意其美术与特效风格走向。",
+      "src": "80 Level · 10-30",
+      "url": "https://80.lv/articles/diablo-style-pvp-by-former-blizzard-cco-is-coming-to-early-access-in-november"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush 半写实胸像流程",
+      "sum": "Eric Liu 分享 ZBrush 雕刻、Substance 3D 贴图与 Marmoset 打光的胸像制作。",
+      "ta": "常规角色资产流程参考，可看贴图与打光的衔接细节。",
+      "src": "80 Level · 10-30",
+      "url": "https://80.lv/articles/sculpting-texturing-a-semi-realistic-lobo-bust-with-zbrush-substance-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "索尼动画片晨间动作参考",
+      "sum": "Daniel Ceballos 发布为索尼 GOAT 电影制作的晨间日常动画参考。",
+      "ta": "动画参考素材，速览即可。",
+      "src": "80 Level · 10-30",
+      "url": "https://80.lv/articles/fun-morning-routine-animation-reference-for-sony-s-goat-movie/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "殡葬师开发商取消作免费玩",
+      "sum": "The Mortuary Assistant 团队被取消的 Paranormal Activity 游戏现可免费游玩。",
+      "ta": "恐怖品类动态速览，与 TA 工作无直接关联。",
+      "src": "80 Level · 10-30",
+      "url": "https://80.lv/articles/you-can-now-play-the-mortuary-assistant-dev-s-canceled-paranormal-activity-game-for-free/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "六款独立游戏共襄善举",
+      "sum": "六支独立团队谈各自游戏的创意与开发决策。",
+      "ta": "独立开发访谈速览，参考价值有限。",
+      "src": "80 Level · 10-30",
+      "url": "https://80.lv/articles/inside-six-very-different-indie-games-supporting-a-shared-cause/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -122,15 +260,6 @@ window.INTEL_RECENT = {
       "ta": "交互式程序化建模的 Web 实现，对工具 UX 设计有轻量参考。",
       "src": "arXiv · cs.GR · 10-27",
       "url": "https://arxiv.org/abs/2610.37954v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 雕刻助手插件",
-      "sum": "CL Sculpt Assistant 为 Blender 雕刻加入 UI 改进与若干新功能。",
-      "ta": "雕刻辅助工具可提升高模制作效率，速览功能列表即可。",
-      "src": "80 Level · 10-29",
-      "url": "https://80.lv/articles/blender-gets-handy-new-assistant-tool-for-sculpting/"
     },
     {
       "cat": "flow",
@@ -359,15 +488,6 @@ window.INTEL_RECENT = {
       "ta": "与程序化贴图/资产纹理烘焙流程相关，值得看其图集合并策略。",
       "src": "arXiv · cs.GR · 10-26",
       "url": "https://arxiv.org/abs/2610.36098v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5 主材质做风格化小屋",
-      "sum": "作者分享模块化资产搭建、UE5 复杂主材质与手工雕刻风格化植被的流程。",
-      "ta": "主材质组织与风格化植被手工雕刻，直接对口植被工具与材质性能。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/building-a-stylized-mountain-cabin-with-modular-assets-and-custom-shaders/"
     },
     {
       "cat": "flow",
@@ -867,16 +987,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/how-to-make-3d-look-like-a-stylized-painting-with-shaders-in-houdini-c4d/"
     },
     {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 2,
-      "title": "EA 关闭 BioWare",
-      "sum": "EA 关闭成立 30 年的 BioWare，裁员约 400 人，其中 50 人为其剩余员工。",
-      "ta": "行业地震级工作室关闭，关注其对 3A 团队与人才流动的影响。",
-      "src": "Game Developer · 10-21",
-      "url": "https://www.gamedeveloper.com/business/ea-closes-mass-effect-dragon-age-creator-bioware-after-30-years-of-game-development"
-    },
-    {
       "cat": "gfx",
       "imp": "hi",
       "rank": 1,
@@ -1076,15 +1186,6 @@ window.INTEL_RECENT = {
       "ta": "无网格 PDE 求解加速，离屏 GI/体积散射类研究可留意。",
       "src": "arXiv · cs.GR · 10-18",
       "url": "https://arxiv.org/abs/2610.25297v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "4D 可形变图元泼溅手语化身",
-      "sum": "Stable Signer V3 基于 4D Deformable Primitive Splatting 构建高分辨率交互手语化身。",
-      "ta": "图元泼溅做面部表情与身体形变，对虚拟人/表情驱动方案有借鉴。",
-      "src": "arXiv · cs.GR · 10-18",
-      "url": "https://arxiv.org/abs/2610.24926v1"
     },
     {
       "cat": "gfx",
@@ -1718,105 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "视频驱动动作跟踪若成熟，可降低动画捕捉与重定向成本。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.09055"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "MetaHuman动画工具免费更新",
-      "sum": "Anthony Koithra的Locodrome角色动画工具更新，让虚幻引擎动画制作更简单快速。",
-      "ta": "免费MetaHuman动画工具可直接用于角色动画原型与快速迭代，值得试用。",
-      "src": "80 Level · 10-14",
-      "url": "https://80.lv/articles/grab-this-updated-metahuman-animation-tool-for-free/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Photoshop 3D取色器预览色相",
-      "sum": "ColgArt推出Chroma Space面板，带实时3D视口，可在上色前于3D元素上预览颜色。",
-      "ta": "3D取色预览可减少贴图绘制反复试错，对材质配色流程有提效价值。",
-      "src": "80 Level · 10-14",
-      "url": "https://80.lv/articles/color-picker-for-photoshop-that-lets-you-see-hues-on-3d-shapes-before-painting-them/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "育碧关闭RedLynx并缩减新加坡",
-      "sum": "育碧将关闭Trials工作室RedLynx并缩减育碧新加坡，影响超120个岗位。",
-      "ta": "行业持续重组，关注其对引擎与工具团队规模及外包协作模式的连带影响。",
-      "src": "Game Developer · 10-14",
-      "url": "https://www.gamedeveloper.com/business/ubisoft-to-close-trials-studio-redlynx-downsize-ubisoft-singapore"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox Labs复活经典并移植",
-      "sum": "Xbox推出Project Xbox Labs，聚焦经典游戏复活、移植到苹果电脑与网页，并支持模组作者。",
-      "ta": "跨平台移植与模组支持可能带来新的资产兼容与工具链需求。",
-      "src": "80 Level · 10-14",
-      "url": "https://80.lv/articles/xbox-launches-new-project-xbox-labs-to-revive-classics-port-games-explore-new-features/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "War Robots谈中国手游发行",
-      "sum": "War Robots高管分享自2014年以来的留存经验，谈过度本地化风险与中国玩家差异。",
-      "ta": "面向中国市场的发行经验对国内项目运营有参考，与技术管线无关。",
-      "src": "80 Level · 10-14",
-      "url": "https://80.lv/articles/war-robots-exec-on-the-nuances-of-launching-mobile-games-for-chinese-players/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Annapurna发行老人公路冒险",
-      "sum": "Third Shift开发的Forever Ago由Annapurna发行，是一款第三人称情感冒险游戏。",
-      "ta": "叙事向独立作品，与TA技术方向无直接关联，速览即可。",
-      "src": "80 Level · 10-14",
-      "url": "https://80.lv/articles/annapurna-releases-a-heartbreaking-third-person-adventure-about-an-old-man-on-a-road-trip/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender开发者BCON26演讲",
-      "sum": "Blender年度主活动结束后，开发者演讲内容现已可回看。",
-      "ta": "Blender开发者演讲可能涉及几何节点与渲染管线更新，值得按需回看。",
-      "src": "Blender 开发博客 · 10-14",
-      "url": "https://code.blender.org/2026/10/bcon26-talks-by-blender-developers/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender自动UV展开插件",
-      "sum": "免费插件UVgami可快速自动展开UV，支持浏览器试用。",
-      "ta": "批量资产UV自动化对植被/道具流水线有直接提效价值。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/this-free-blender-add-on-quickly-automates-uv-unwrapping/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "19个免费万圣节动捕",
-      "sum": "Anderson Rohr发布僵尸、怪物、吸血鬼等19个免费动捕动画包。",
-      "ta": "免费动捕资源可作原型或NPC动画填充。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/get-ready-for-halloween-with-these-19-free-mocap-animations/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Mystery House经典重制",
-      "sum": "Guillotine Games谈用现代工具重制1980年Apple II经典Mystery House 3D的挑战。",
-      "ta": "老游戏视觉语言现代化重制的案例参考。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/reviving-mystery-house-roberta-and-ken-williams-1980-apple-ii-classic/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "权游S3视效解析",
-      "sum": "Rodeo FX分享《龙之家族》第三季视效拆解，共制作超45000帧。",
-      "ta": "大规模影视VFX流程与帧量级参考。",
-      "src": "80 Level · 10-13",
-      "url": "https://80.lv/articles/rodeo-fx-shared-their-house-of-the-dragon-season-3-vfx-breakdown/"
     }
   ]
 };
