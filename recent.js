@@ -2,8 +2,53 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-01 15:17",
+  "updated": "2026-11-02 15:32",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "椭球基元语义形状抽象",
+      "sum": "用椭球基元集合表示3D形状，兼顾紧凑性与计算效率。",
+      "ta": "基元式形状抽象可用于程序化生成与碰撞代理，值得看其语义分组方式。",
+      "src": "arXiv · cs.GR · 10-30",
+      "url": "https://arxiv.org/abs/2610.42145v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "VR手部反馈改变震颤感知",
+      "sum": "探索性研究：VR中改变视觉手部反馈对特发性震颤患者的影响。",
+      "ta": "偏人机交互医学研究，与渲染管线无关，速览即可。",
+      "src": "arXiv · cs.GR · 10-30",
+      "url": "https://arxiv.org/abs/2610.41496v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态蒙皮免模拟次级运动",
+      "sum": "扩展LBS，用一组变形器偏移顶点位置产生类物理次级运动，无需仿真。",
+      "ta": "角色/植被骨骼次级运动可参考此免模拟思路，成本远低于物理解算。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.40976v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "语音驱动全身动作生成",
+      "sum": "结构化潜空间流匹配，从语音同步生成表情、手势与身体动作。",
+      "ta": "若做虚拟角色/过场动画，可关注其分部位建模与长时序一致性处理。",
+      "src": "arXiv · cs.GR · 10-29",
+      "url": "https://arxiv.org/abs/2610.40972v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "代码即策略机器人后训练管线",
+      "sum": "面向机器人智能体的代码即策略后训练流程。",
+      "ta": "与游戏实时渲染无直接关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.40799"
+    },
     {
       "cat": "ai",
       "imp": "hi",
@@ -1774,51 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "可微接触仿真对布料、植被碰撞与破坏效果的可微调参有潜在借鉴意义。",
       "src": "arXiv · cs.GR · 10-13",
       "url": "https://arxiv.org/abs/2610.19091v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "RoboSimStudio交互式Real2Sim工具",
-      "sum": "推出交互式工具包，支持机器人操作任务的快速真实到仿真，涵盖求解器与接触参数选择。",
-      "ta": "接触力学与求解器选择思路对物理交互效果调参有间接参考，非直接游戏向。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.18835v2"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "RAR自适应rollout交互世界模型",
-      "sum": "提出速率自适应rollout方法，用于时间一致的交互式世界模型。",
-      "ta": "交互式世界模型的时间一致性若落地，可用于实时预览与程序化生成的动态验证。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.16302"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "VITAL从视觉运动到精确动作",
-      "sum": "提出从视觉运动信息到精确动作的映射方法。",
-      "ta": "视觉到动作的映射思路对动画驱动与动作捕捉后处理有间接参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.20604"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "TextVerifier验证中文文本渲染",
-      "sum": "提出超越识别的验证方法，用于校验中文文本渲染质量。",
-      "ta": "文本渲染验证对UI与贴图文字自动化质检有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.19551"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "MimicX视频驱动人形动作跟踪",
-      "sum": "提出策略在环的监督精炼方法，用于视频驱动的人形动作跟踪。",
-      "ta": "视频驱动动作跟踪若成熟，可降低动画捕捉与重定向成本。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.09055"
     }
   ]
 };
