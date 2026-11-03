@@ -2,8 +2,217 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-02 15:32",
+  "updated": "2026-11-03 15:46",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "GPU原生实时纹理网格重建",
+      "sum": "提出GPU原生体视频系统，从多RGB-D实时重建带纹理三角网格，含接缝感知辐射校正。",
+      "ta": "关注其把逐帧纹理化网格化从CPU搬到GPU的思路，对实时扫描/数字人管线有参考价值。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.03033v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "单图自监督个性化人体视频",
+      "sum": "用自生成监督在测试时个性化姿态驱动人体视频扩散，缓解身份与服饰失真。",
+      "ta": "若涉及角色动画/数字人，可看其测试时自监督如何避免额外训练数据。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02964v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "参数化CAD智能体评测基准",
+      "sum": "Parametric CAD Bench v3用100个任务评测从文本与工程图生成可执行CAD脚本的智能体。",
+      "ta": "与游戏TA工作流关联弱，仅作程序化建模评测方法速览。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02659v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "跨视角跨域单图3D生成",
+      "sum": "UniCross3D用统一跨视角与跨域扩散，从单张RGB图重建几何与外观。",
+      "ta": "单图3D生成方向，关注其处理遮挡与纹理-几何纠缠的方式，对资产快速起模有潜在价值。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02631v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "无摄像头视线物体识别",
+      "sum": "GazeTags用约2美元电子标签配合头戴设备实现无摄像头的视线物体感知。",
+      "ta": "偏XR交互硬件，与渲染/特效关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02599v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "语音口型动画新评测指标",
+      "sum": "提出Fréchet Oral Distance，为语音驱动口型动画提供无坐标系的客观评测基准。",
+      "ta": "若做面部动画质量评估可参考该指标，非渲染性能方向。",
+      "src": "arXiv · cs.GR · 11-01",
+      "url": "https://arxiv.org/abs/2611.01705v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "高斯泼溅免逐帧排序",
+      "sum": "AbacusGS把3DGS混合顺序预存于场景，省去每帧逐splat深度排序，加速Web/移动端查看器。",
+      "ta": "直击3DGS在Web/移动端CPU排序瓶颈，对实时查看器与植被/场景泼溅渲染性能有直接借鉴。",
+      "src": "arXiv · cs.GR · 11-01",
+      "url": "https://arxiv.org/abs/2611.01534v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "有限元方法可扩展编程规范",
+      "sum": "提出有限元方法的可扩展程序化规范，便于试验不同单元提升求解质量与效率。",
+      "ta": "偏工程仿真，与游戏实时渲染关联弱。",
+      "src": "arXiv · cs.GR · 11-01",
+      "url": "https://arxiv.org/abs/2611.01414v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "游戏化XR训练腹腔镜技能",
+      "sum": "研究用游戏化XR与伪触觉提升腹腔镜器械操作基础技能训练。",
+      "ta": "医疗XR应用，与游戏TA本职关联弱。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.01229v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "4D高斯泼溅球谐水印",
+      "sum": "SHield通过扰动球谐系数为4DGS模型嵌入水印，避免重训练与神经解码器。",
+      "ta": "关注4DGS资产保护与球谐系数层面的改动，对动态场景资产分发有参考。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.01162v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "单例无限世界生成约束",
+      "sum": "研究仅凭一个样例生成无界世界时局部生成器必须共享什么，对应WFC的局部约束难题。",
+      "ta": "直接关系程序化世界/植被生成的理论边界，值得精读其对局部约束与远距一致性的分析。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.01048v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "视频扩散统一相机运动控制",
+      "sum": "UniCaMo用稀疏3D物体轨迹与相机轨迹联合控制视频扩散中的相机与物体运动。",
+      "ta": "若用视频扩散做预演/参考，可看其相机轨迹控制如何构造运动一致输入噪声。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.00810v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "智能体视频生成与世界建模",
+      "sum": "探讨视频生成结合智能体框架，涉及智能体视频生成、世界建模与递归自我改进。",
+      "ta": "世界模型方向，关注其与交互式仿真的关联，暂非直接落地工具。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.40191"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "持久个人智能体增强人类能动性",
+      "sum": "提出Avatar Intelligence概念，用持久个人智能体放大人的能动性。",
+      "ta": "偏通用AI智能体，与游戏/渲染关联弱。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.03092"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自建扩散语言模型转换法",
+      "sum": "BYOD提出高效的自回归到扩散语言模型转换方法。",
+      "ta": "纯语言模型方向，与TA工作流无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.41574"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "像素拼贴营造工业恐惧",
+      "sum": "Medium Rare开发者谈如何用像素艺术与拼贴营造恐惧而非惊吓，并可视化心理创伤。",
+      "ta": "美术风格参考，速览其拼贴与像素表现手法。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/how-medium-rare-uses-pixel-art-collages-to-evoke-dread-of-industrialized-cannibalism/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender复刻Control嘶嘶特效",
+      "sum": "教程演示在Blender中复刻《控制》里的Hiss特效。",
+      "ta": "可看其特效分层与材质做法，作为Niagara/材质思路的对照参考。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/recreating-hiss-effect-from-remedy-s-control-in-blender/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Claude Code拦截游戏克隆",
+      "sum": "新规则阻止模型重建特定现有游戏，开发者称也误伤自家项目与部分逆向工程任务。",
+      "ta": "若在工具链中用AI编码助手做逆向或复刻，需注意此类策略限制。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/claude-code-blocks-video-game-cloning-some-reverse-engineering-tasks/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender软体抖动物理演示",
+      "sum": "展示Blender中带抖动物理的煎饼状蝠鲼模型。",
+      "ta": "软体/抖动效果速览，可作物理表现参考。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/pancake-looking-manta-ray-with-satisfying-jiggle-physics-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "超现实免费游戏探索巨构",
+      "sum": "HELENA: Cloud District为无跳跃键的超现实探索游戏，可拍摄奇异植物。",
+      "ta": "独立游戏资讯，速览即可。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/explore-a-decaying-megastructure-photograph-strange-plants-in-this-free-surreal-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "名越工作室因网易撤资关闭",
+      "sum": "名越稔洋离开世嘉后创立的工作室因网易削减资金而关闭。",
+      "ta": "行业动向，关注大厂投资收缩对项目稳定性的影响。",
+      "src": "Game Developer · 11-02",
+      "url": "https://www.gamedeveloper.com/business/nagoshi-studio-toshihiro-nagoshi-s-game-development-studio-after-leaving-sega-closes-as-netease-cuts-its-funding"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "AI游戏淹没Itch.io",
+      "sum": "Itch.io游戏页面数量翻倍，AI游戏涌入但销量未同比增加。",
+      "ta": "关注AI生成内容对独立发行生态的冲击。",
+      "src": "Game Developer · 11-02",
+      "url": "https://www.gamedeveloper.com/pc/number-of-game-pages-doubles-on-itch-io-as-ai-clones-flood-the-store"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "塞尔达重制助新人学习",
+      "sum": "青沼英二称时之笛重制旨在让年轻员工从经典设计中学习。",
+      "ta": "制作理念速览，与TA技术关联弱。",
+      "src": "Game Developer · 11-02",
+      "url": "https://www.gamedeveloper.com/production/zelda-producer-ocarina-of-time-remake-helps-junior-staff-learn-classic-insights"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -62,16 +271,6 @@ window.INTEL_RECENT = {
     {
       "cat": "gfx",
       "imp": "hi",
-      "rank": 2,
-      "title": "Blender 原生支持高斯泼溅",
-      "sum": "Blender 开发博客介绍 Gaussian splatting 的初步实现与后续开发计划。",
-      "ta": "植被/场景扫描资产进 Blender 流程多了一条路径，值得关注导入与渲染集成方式。",
-      "src": "Blender 开发博客 · 10-30",
-      "url": "https://code.blender.org/2026/10/splatting-the-gaussians-into-blender/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
       "rank": 3,
       "title": "实时无限世界生成新方案",
       "sum": "L3G-World 用隐式 3D 高斯记忆实现实时无限世界生成。",
@@ -96,15 +295,6 @@ window.INTEL_RECENT = {
       "ta": "视频生成加速思路，对实时序列类生成管线有参考价值。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.39663"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "4D 重建做视频扩散几何控制",
-      "sum": "Holo4D 将整体 4D 重建作为视频扩散的几何控制条件。",
-      "ta": "几何控制思路可用于可控视频/序列生成，关注其重建精度与开销。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.25276"
     },
     {
       "cat": "gfx",
@@ -251,24 +441,6 @@ window.INTEL_RECENT = {
       "ta": "植被布局优化的目标函数设计，可借鉴到开放世界植被程序化分布规则。",
       "src": "arXiv · cs.GR · 10-29",
       "url": "https://arxiv.org/abs/2610.40007v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "文本生成可编辑 CAD",
-      "sum": "CAD-WAM 通过预判几何来选择操作序列，提升多步文本到 CAD 生成可靠性。",
-      "ta": "操作序列式生成思路与程序化建模节点图有相通之处，关注其几何预判机制。",
-      "src": "arXiv · cs.GR · 10-29",
-      "url": "https://arxiv.org/abs/2610.39306v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "3D 程序编辑基准发布",
-      "sum": "3DCodeEdit 提出指令引导的 3D 程序编辑基准，考察改动的几何后果预判。",
-      "ta": "程序化生成资产的可编辑性评估，对 HDA/蓝图式工作流自动化有参考。",
-      "src": "arXiv · cs.GR · 10-28",
-      "url": "https://arxiv.org/abs/2610.38231v1"
     },
     {
       "cat": "ai",
@@ -948,15 +1120,6 @@ window.INTEL_RECENT = {
       "ta": "程序化生成物理材质参数时可借鉴，免去逐场景优化。",
       "src": "arXiv · cs.GR · 10-21",
       "url": "https://arxiv.org/abs/2610.29517v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "XR 开发编码智能体基准",
-      "sum": "GenXR-Bench 提出评估编码智能体构建交互式 XR 应用的基准。",
-      "ta": "关注智能体在 XR 动态场景下的工程能力评测维度。",
-      "src": "arXiv · cs.GR · 10-21",
-      "url": "https://arxiv.org/abs/2610.29014v1"
     },
     {
       "cat": "ai",
@@ -1654,171 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "自动驾驶方向，与游戏TA无关。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.13781"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "CT超分辨率扩散方法",
-      "sum": "VascuSR 提出迭代式解剖感知扩散用于CT超分辨率。",
-      "ta": "医学影像方向，与实时渲染无关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.20509"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "视频世界模型记忆基准",
-      "sum": "WorldMemBench 提出视频世界模型记忆能力的综合评测基准。",
-      "ta": "若关注生成式世界模型的长时一致性，可作评测参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.19063"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "编码智能体内部世界模型",
-      "sum": "ANTE 让编码智能体从验证信念中学习内部世界模型。",
-      "ta": "代码智能体方向，与TA工作流无关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.15368"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "CDPR原创IP用UE原型",
-      "sum": "CDPR完成首个原创IP Project Hadar 世界观，正用虚幻引擎原型化玩法机制。",
-      "ta": "又一大厂押注UE，关注其后续技术管线与工具链动向。",
-      "src": "80 Level · 10-15",
-      "url": "https://80.lv/articles/cdpr-says-its-first-original-ip-has-been-its-biggest-undertaking-yet/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "建筑坍塌融入战术玩法",
-      "sum": "Brigador Killers 结合子弹穿透、系统性建筑坍塌、反应物理与可读VFX，配Blender精灵管线。",
-      "ta": "系统性破坏与VFX可读性设计，对特效与物理联动有参考。",
-      "src": "80 Level · 10-15",
-      "url": "https://80.lv/articles/how-brigador-killers-makes-blowing-up-buildings-part-of-the-strategy/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Epic启动器性能争议",
-      "sum": "Epic称新启动器快于Steam，Valve更新数据反驳。",
-      "ta": "行业八卦，速览即可。",
-      "src": "80 Level · 10-15",
-      "url": "https://80.lv/articles/we-vibe-coded-a-new-epic-games-launcher-apparently-programming-is-hard/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前极乐迪斯科成员新RPG",
-      "sum": "前ZA/UM开发者组建Red Rooster，公布物理驱动魔幻现实主义RPG。",
-      "ta": "新作动向，无技术细节。",
-      "src": "80 Level · 10-15",
-      "url": "https://80.lv/articles/former-disco-elysium-devs-announce-new-incendiary-rpg/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前FS开发者公布ARPG",
-      "sum": "前FromSoftware开发者Hytacka公布其ARPG新作Overseeker预告。",
-      "ta": "独立新作，速览即可。",
-      "src": "80 Level · 10-15",
-      "url": "https://80.lv/articles/fromsoftware-s-ex-developer-released-trailer-for-his-upcoming-arpg-overseeker/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "寂静岭风独立冒险发售",
-      "sum": "单人开发者arch1t3ct的2000年代风格梦境冒险游戏已发售。",
-      "ta": "独立作品，速览即可。",
-      "src": "80 Level · 10-15",
-      "url": "https://80.lv/articles/this-melancholic-silent-hill-inspired-adventure-set-in-a-half-dead-place-is-out/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "B社40周年Discord问答",
-      "sum": "Bethesda开设Discord问答频道庆祝40周年，玩家可向开发者提问。",
-      "ta": "社区活动，无技术内容。",
-      "src": "80 Level · 10-15",
-      "url": "https://80.lv/articles/ask-bethesda-almost-anything-in-q-a-discord-channel-to-celebrate-its-40th-anniversary/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "UE6将整合UEFN与虚幻引擎",
-      "sum": "Epic路线图显示UE6将把虚幻引擎与UEFN合并，官方推出免费UEFN训练营。",
-      "ta": "UE6整合UEFN意味着编辑器与运行时工具链可能统一，植被/程序化工具需提前关注UEFN侧能力边界。",
-      "src": "Unreal Engine · 10-14",
-      "url": "https://www.unrealengine.com/news/uefn-professional-bootcamp-prepare-for-unreal-engine-6"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 2,
-      "title": "GTA6因海量智能NPC延期",
-      "sum": "彭博社披露Rockstar打造最雄心作品，海量智能NPC是GTA6延期原因之一。",
-      "ta": "海量智能NPC对CPU预算、群体AI调度与LOD策略提出极高要求，值得关注其实现取舍。",
-      "src": "80 Level · 10-14",
-      "url": "https://80.lv/articles/enormous-number-of-smart-npcs-was-one-of-reasons-for-gta-6-delay/"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 3,
-      "title": "Epic迪士尼项目转向AI优先",
-      "sum": "报道称Epic旗下星战与漫威射击项目要求大量依赖AI，尤其用于代码与美术创作。",
-      "ta": "若美术生产转向AI优先，TA需重新评估资产管线、材质规范与AI产出的可维护性。",
-      "src": "Game Developer · 10-14",
-      "url": "https://www.gamedeveloper.com/programming/no-more-hand-written-code-epic-s-disney-project-reportedly-shifts-to-ai-first-development"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "GLoD-LVSM连续LOD场景表示",
-      "sum": "提出几何锚定的紧凑场景表示，为大规模视图合成模型提供连续LOD以降低存储与渲染开销。",
-      "ta": "连续LOD与token冗余削减思路，对程序化植被的层级细节与实例化策略有参考价值。",
-      "src": "arXiv · cs.GR · 10-14",
-      "url": "https://arxiv.org/abs/2610.20254v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "VisibilitySplat光线追踪遮挡重光照",
-      "sum": "为3DGS引入显式可见性建模，用稀疏可见性预言机估计透射率加权遮挡以支持重光照与材质光照分解。",
-      "ta": "3DGS重光照与材质分解若成熟，可用于扫描植被资产的光照一致化与材质复用。",
-      "src": "arXiv · cs.GR · 10-14",
-      "url": "https://arxiv.org/abs/2610.19847v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Q-MAGIC生成纯四边形网格",
-      "sum": "提出奇点感知的循环相对偏移token化，实现自回归生成纯四边形网格。",
-      "ta": "纯四边形拓扑生成对建模与重拓扑流程有潜在价值，可关注其拓扑质量与可控性。",
-      "src": "arXiv · cs.GR · 10-14",
-      "url": "https://arxiv.org/abs/2610.19777v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "光谱世界渲染器统一高光谱解混",
-      "sum": "提出统一3D高光谱解混方法，将每个光谱解释为材质特征混合而非仅对渲染图像后处理。",
-      "ta": "材质识别与解混思路或可用于程序化材质分层与扫描资产的材质分类。",
-      "src": "arXiv · cs.GR · 10-14",
-      "url": "https://arxiv.org/abs/2610.19520v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "DiffGIPC可微混合坐标接触动力学",
-      "sum": "提出GPU上的可微混合坐标接触动力学，兼顾高效梯度与非穿透约束。",
-      "ta": "可微接触仿真对布料、植被碰撞与破坏效果的可微调参有潜在借鉴意义。",
-      "src": "arXiv · cs.GR · 10-13",
-      "url": "https://arxiv.org/abs/2610.19091v1"
     }
   ]
 };

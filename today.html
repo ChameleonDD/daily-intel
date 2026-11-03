@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月2日 · 周一",
+  "date": "2026年11月3日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>椭球基元语义形状抽象</em> / <em>VR手部反馈改变震颤感知</em> / <em>动态蒙皮免模拟次级运动</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>高斯泼溅免逐帧排序</em> / <em>单例无限世界生成约束</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -276,47 +276,211 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "椭球基元语义形状抽象",
-      "sum": "用椭球基元集合表示3D形状，兼顾紧凑性与计算效率。",
-      "ta": "基元式形状抽象可用于程序化生成与碰撞代理，值得看其语义分组方式。",
-      "src": "arXiv · cs.GR · 10-30",
-      "url": "https://arxiv.org/abs/2610.42145v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "VR手部反馈改变震颤感知",
-      "sum": "探索性研究：VR中改变视觉手部反馈对特发性震颤患者的影响。",
-      "ta": "偏人机交互医学研究，与渲染管线无关，速览即可。",
-      "src": "arXiv · cs.GR · 10-30",
-      "url": "https://arxiv.org/abs/2610.41496v1"
+      "title": "GPU原生实时纹理网格重建",
+      "sum": "提出GPU原生体视频系统，从多RGB-D实时重建带纹理三角网格，含接缝感知辐射校正。",
+      "ta": "关注其把逐帧纹理化网格化从CPU搬到GPU的思路，对实时扫描/数字人管线有参考价值。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.03033v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "动态蒙皮免模拟次级运动",
-      "sum": "扩展LBS，用一组变形器偏移顶点位置产生类物理次级运动，无需仿真。",
-      "ta": "角色/植被骨骼次级运动可参考此免模拟思路，成本远低于物理解算。",
-      "src": "arXiv · cs.GR · 10-29",
-      "url": "https://arxiv.org/abs/2610.40976v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "语音驱动全身动作生成",
-      "sum": "结构化潜空间流匹配，从语音同步生成表情、手势与身体动作。",
-      "ta": "若做虚拟角色/过场动画，可关注其分部位建模与长时序一致性处理。",
-      "src": "arXiv · cs.GR · 10-29",
-      "url": "https://arxiv.org/abs/2610.40972v1"
+      "title": "单图自监督个性化人体视频",
+      "sum": "用自生成监督在测试时个性化姿态驱动人体视频扩散，缓解身份与服饰失真。",
+      "ta": "若涉及角色动画/数字人，可看其测试时自监督如何避免额外训练数据。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02964v1"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "代码即策略机器人后训练管线",
-      "sum": "面向机器人智能体的代码即策略后训练流程。",
-      "ta": "与游戏实时渲染无直接关联，速览即可。",
+      "title": "参数化CAD智能体评测基准",
+      "sum": "Parametric CAD Bench v3用100个任务评测从文本与工程图生成可执行CAD脚本的智能体。",
+      "ta": "与游戏TA工作流关联弱，仅作程序化建模评测方法速览。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02659v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "跨视角跨域单图3D生成",
+      "sum": "UniCross3D用统一跨视角与跨域扩散，从单张RGB图重建几何与外观。",
+      "ta": "单图3D生成方向，关注其处理遮挡与纹理-几何纠缠的方式，对资产快速起模有潜在价值。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02631v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "无摄像头视线物体识别",
+      "sum": "GazeTags用约2美元电子标签配合头戴设备实现无摄像头的视线物体感知。",
+      "ta": "偏XR交互硬件，与渲染/特效关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.02599v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "语音口型动画新评测指标",
+      "sum": "提出Fréchet Oral Distance，为语音驱动口型动画提供无坐标系的客观评测基准。",
+      "ta": "若做面部动画质量评估可参考该指标，非渲染性能方向。",
+      "src": "arXiv · cs.GR · 11-01",
+      "url": "https://arxiv.org/abs/2611.01705v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "高斯泼溅免逐帧排序",
+      "sum": "AbacusGS把3DGS混合顺序预存于场景，省去每帧逐splat深度排序，加速Web/移动端查看器。",
+      "ta": "直击3DGS在Web/移动端CPU排序瓶颈，对实时查看器与植被/场景泼溅渲染性能有直接借鉴。",
+      "src": "arXiv · cs.GR · 11-01",
+      "url": "https://arxiv.org/abs/2611.01534v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "有限元方法可扩展编程规范",
+      "sum": "提出有限元方法的可扩展程序化规范，便于试验不同单元提升求解质量与效率。",
+      "ta": "偏工程仿真，与游戏实时渲染关联弱。",
+      "src": "arXiv · cs.GR · 11-01",
+      "url": "https://arxiv.org/abs/2611.01414v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "游戏化XR训练腹腔镜技能",
+      "sum": "研究用游戏化XR与伪触觉提升腹腔镜器械操作基础技能训练。",
+      "ta": "医疗XR应用，与游戏TA本职关联弱。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.01229v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "4D高斯泼溅球谐水印",
+      "sum": "SHield通过扰动球谐系数为4DGS模型嵌入水印，避免重训练与神经解码器。",
+      "ta": "关注4DGS资产保护与球谐系数层面的改动，对动态场景资产分发有参考。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.01162v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "单例无限世界生成约束",
+      "sum": "研究仅凭一个样例生成无界世界时局部生成器必须共享什么，对应WFC的局部约束难题。",
+      "ta": "直接关系程序化世界/植被生成的理论边界，值得精读其对局部约束与远距一致性的分析。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.01048v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "视频扩散统一相机运动控制",
+      "sum": "UniCaMo用稀疏3D物体轨迹与相机轨迹联合控制视频扩散中的相机与物体运动。",
+      "ta": "若用视频扩散做预演/参考，可看其相机轨迹控制如何构造运动一致输入噪声。",
+      "src": "arXiv · cs.GR · 10-31",
+      "url": "https://arxiv.org/abs/2611.00810v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "智能体视频生成与世界建模",
+      "sum": "探讨视频生成结合智能体框架，涉及智能体视频生成、世界建模与递归自我改进。",
+      "ta": "世界模型方向，关注其与交互式仿真的关联，暂非直接落地工具。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.40799"
+      "url": "https://huggingface.co/papers/2610.40191"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "持久个人智能体增强人类能动性",
+      "sum": "提出Avatar Intelligence概念，用持久个人智能体放大人的能动性。",
+      "ta": "偏通用AI智能体，与游戏/渲染关联弱。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.03092"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自建扩散语言模型转换法",
+      "sum": "BYOD提出高效的自回归到扩散语言模型转换方法。",
+      "ta": "纯语言模型方向，与TA工作流无关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.41574"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "像素拼贴营造工业恐惧",
+      "sum": "Medium Rare开发者谈如何用像素艺术与拼贴营造恐惧而非惊吓，并可视化心理创伤。",
+      "ta": "美术风格参考，速览其拼贴与像素表现手法。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/how-medium-rare-uses-pixel-art-collages-to-evoke-dread-of-industrialized-cannibalism/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender复刻Control嘶嘶特效",
+      "sum": "教程演示在Blender中复刻《控制》里的Hiss特效。",
+      "ta": "可看其特效分层与材质做法，作为Niagara/材质思路的对照参考。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/recreating-hiss-effect-from-remedy-s-control-in-blender/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Claude Code拦截游戏克隆",
+      "sum": "新规则阻止模型重建特定现有游戏，开发者称也误伤自家项目与部分逆向工程任务。",
+      "ta": "若在工具链中用AI编码助手做逆向或复刻，需注意此类策略限制。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/claude-code-blocks-video-game-cloning-some-reverse-engineering-tasks/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender软体抖动物理演示",
+      "sum": "展示Blender中带抖动物理的煎饼状蝠鲼模型。",
+      "ta": "软体/抖动效果速览，可作物理表现参考。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/pancake-looking-manta-ray-with-satisfying-jiggle-physics-in-blender/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "超现实免费游戏探索巨构",
+      "sum": "HELENA: Cloud District为无跳跃键的超现实探索游戏，可拍摄奇异植物。",
+      "ta": "独立游戏资讯，速览即可。",
+      "src": "80 Level · 11-02",
+      "url": "https://80.lv/articles/explore-a-decaying-megastructure-photograph-strange-plants-in-this-free-surreal-game/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "名越工作室因网易撤资关闭",
+      "sum": "名越稔洋离开世嘉后创立的工作室因网易削减资金而关闭。",
+      "ta": "行业动向，关注大厂投资收缩对项目稳定性的影响。",
+      "src": "Game Developer · 11-02",
+      "url": "https://www.gamedeveloper.com/business/nagoshi-studio-toshihiro-nagoshi-s-game-development-studio-after-leaving-sega-closes-as-netease-cuts-its-funding"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "AI游戏淹没Itch.io",
+      "sum": "Itch.io游戏页面数量翻倍，AI游戏涌入但销量未同比增加。",
+      "ta": "关注AI生成内容对独立发行生态的冲击。",
+      "src": "Game Developer · 11-02",
+      "url": "https://www.gamedeveloper.com/pc/number-of-game-pages-doubles-on-itch-io-as-ai-clones-flood-the-store"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "塞尔达重制助新人学习",
+      "sum": "青沼英二称时之笛重制旨在让年轻员工从经典设计中学习。",
+      "ta": "制作理念速览，与TA技术关联弱。",
+      "src": "Game Developer · 11-02",
+      "url": "https://www.gamedeveloper.com/production/zelda-producer-ocarina-of-time-remake-helps-junior-staff-learn-classic-insights"
     }
   ],
   "flashbackTitle": "",
