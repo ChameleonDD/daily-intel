@@ -2,8 +2,134 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-03 15:46",
+  "updated": "2026-11-04 15:24",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "NO LAW用UE5打造赛博黑色世界",
+      "sum": "Neon Giant称小团队靠UE5实现高细节写实赛博黑色射击游戏。",
+      "ta": "可看其如何在有限人力下用UE5管线堆出细节与写实度。",
+      "src": "Unreal Engine · 11-03",
+      "url": "https://www.unrealengine.com/developer-interviews/no-law-crafting-a-living-breathing-cyber-noir-world-with-ue5"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender分层动作工作坊将办",
+      "sum": "Blender动画与绑定模块将在Blender大会前一天举办分层动作工作坊。",
+      "ta": "关注分层动作系统走向，或影响未来角色动画工具链。",
+      "src": "Blender 开发博客 · 11-03",
+      "url": "https://code.blender.org/2026/11/layered-actions-workshop-september-2026/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "AMD支持DX12新Agility SDK",
+      "sum": "DX12 Agility SDK 1.620带来Dump Files与扩展PIX标记，1.722预览版加新DXR特性。",
+      "ta": "新DXR特性与PIX标记对渲染调试和光追管线值得跟进。",
+      "src": "AMD GPUOpen · 11-03",
+      "url": "https://gpuopen.com/learn/amd-directx12-agility-sdk-october-2026/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "相位引导动态高斯泼溅重建",
+      "sum": "Phase-DGS用相位引导从非同步多视角视频做动态高斯泼溅重建。",
+      "ta": "放宽同步假设，对实拍素材转动态3D重建流程有参考价值。",
+      "src": "arXiv · cs.GR · 11-03",
+      "url": "https://arxiv.org/abs/2611.04666v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "FlowRig统一3D与4D骨骼生成",
+      "sum": "FlowRig用流匹配为静态3D与动态4D网格统一生成骨骼。",
+      "ta": "自动绑定统一方案，对角色/植被等资产绑定自动化有启发。",
+      "src": "arXiv · cs.GR · 11-02",
+      "url": "https://arxiv.org/abs/2611.03775v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "DreamX视频扩散学潜在动作",
+      "sum": "DreamX将视频扩散模型用作通用潜在动作学习器。",
+      "ta": "潜在动作表征或与动画/动作生成相关，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.05377"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "PrimeSim通用世界模型模拟器",
+      "sum": "PrimeSim基于大规模跨具身演示构建通用世界模型模拟器。",
+      "ta": "世界模型方向，与实时仿真有潜在交集，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.04870"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "LOLPlay实时视觉智能体基准",
+      "sum": "LOLPlay提出在英雄联盟中评测实时视觉智能体的基准。",
+      "ta": "实时视觉智能体评测，对游戏内AI/自动化测试有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.03685"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "SeMo3D统一3D生成编辑补全",
+      "sum": "SeMo3D用选择性建模统一3D生成、编辑与补全。",
+      "ta": "3D资产生成编辑一体化，对程序化资产流程有潜在价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.02568"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "如龙创作者工作室解散",
+      "sum": "Nagoshi Studio于10月31日经股东决议解散。",
+      "ta": "行业人事变动，速览。",
+      "src": "80 Level · 11-03",
+      "url": "https://80.lv/articles/yakuza-creator-s-studio-has-been-dissolved/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "塞尔达制作人谈时之笛重制",
+      "sum": "青沼英二称Switch 2版时之笛重制与系列40周年相关。",
+      "ta": "行业动态，速览。",
+      "src": "80 Level · 11-03",
+      "url": "https://80.lv/articles/zelda-producer-explains-what-led-to-ocarina-of-time-switch-2-remake/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "前Xbox COO回应离职说法",
+      "sum": "前Xbox COO Helen Chiang否认外界对其离职原因的多种说法。",
+      "ta": "商业八卦，速览。",
+      "src": "Game Developer · 11-03",
+      "url": "https://www.gamedeveloper.com/business/former-xbox-coo-helen-chiang-takes-umbrage-with-the-characterizations-of-her-departure"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rami Ismail谈回归开发",
+      "sum": "独立开发者Rami Ismail时隔六年重返游戏开发并分享心得。",
+      "ta": "行业经验分享，速览。",
+      "src": "Game Developer · 11-03",
+      "url": "https://www.gamedeveloper.com/design/what-rami-ismail-learned-with-his-return-to-game-development"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "South of Midnight总监谈Xbox",
+      "sum": "该作前总监称若由他决定不会资助自己执导的这款游戏。",
+      "ta": "行业观点，速览。",
+      "src": "Game Developer · 11-03",
+      "url": "https://www.gamedeveloper.com/business/south-of-midnight-director-was-always-worried-about-rome-burning-at-xbox"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -169,15 +295,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/claude-code-blocks-video-game-cloning-some-reverse-engineering-tasks/"
     },
     {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender软体抖动物理演示",
-      "sum": "展示Blender中带抖动物理的煎饼状蝠鲼模型。",
-      "ta": "软体/抖动效果速览，可作物理表现参考。",
-      "src": "80 Level · 11-02",
-      "url": "https://80.lv/articles/pancake-looking-manta-ray-with-satisfying-jiggle-physics-in-blender/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "超现实免费游戏探索巨构",
@@ -277,15 +394,6 @@ window.INTEL_RECENT = {
       "ta": "与程序化场景生成思路直接相关，可看其记忆表示如何支撑实时扩展。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.40614"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "Rivian 用 UE5 做万圣节实时特效",
-      "sum": "Rivian 万圣节模式用 UE5 实时 3D 呈现捉鬼敢死队角色与惊喜效果。",
-      "ta": "车机端实时渲染案例，可留意其轻量化实时视觉的落地方式。",
-      "src": "Unreal Engine · 10-30",
-      "url": "https://www.unrealengine.com/news/rivian-brings-ghostbusters-universe-to-halloween-mode-with-real-time-visuals-in-unreal-engine"
     },
     {
       "cat": "gfx",
@@ -1709,114 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "涉及图像/视频压缩，但原文未提实时或引擎关联，速览即可。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2610.18125"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "OCR 严重度加权字符错误率",
-      "sum": "论文提出按严重度加权的字符错误率指标，指出相同 CER 下损害程度并不相等。",
-      "ta": "OCR 评测指标研究，与 TA 工作无直接关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.20461"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单位四元数压缩新方法",
-      "sum": "提出均匀分布单位四元数编码方法，降低内存与带宽占用。",
-      "ta": "动画/骨骼数据压缩可参考，对大规模角色系统有潜在收益。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.22052v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "草图重建可重打光服装",
-      "sum": "从带标注草图重建可重打光服装，草图直接表达高光与阴影意图。",
-      "ta": "服装资产快速原型方向，关注其光照意图到材质的映射方式。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.21865v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "整体先验驱动部件化生成",
-      "sum": "复用整体3D先验实现部件分解生成，兼顾部件细节与整体结构一致性。",
-      "ta": "程序化资产拆分思路，对模块化场景生成有参考价值。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.21850v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "无细分置换面几何查询",
-      "sum": "无需预细分网格即可在置换贴图表面做几何查询，省去密集三角网格内存开销。",
-      "ta": "置换贴图直接求交，对地形/植被高细节表面渲染管线有直接启发。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.21584v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "移动体积视频双流高斯方案",
-      "sum": "ResStreamGS 用残差敏感双流3DGS，在受限带宽下实现移动端体积视频流。",
-      "ta": "关注其残差分层编码，对移动端3DGS流式传输有借鉴意义。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.21121v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "机器人采集真实布料数据集",
-      "sum": "RoboCloth 用机器人控制相机与光照，采集500种真实布料约580帧HDR数据。",
-      "ta": "高质量布料反射重建数据集，可作材质扫描与神经渲染训练参考。",
-      "src": "arXiv · cs.GR · 10-15",
-      "url": "https://arxiv.org/abs/2610.21090v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多码本扩散语言模型",
-      "sum": "Intern Lumina U2 提出多码本扩散LLM，统一视觉理解与图像生成。",
-      "ta": "与实时渲染无直接关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.20818"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散强化学习路由优化",
-      "sum": "提出面向在线扩散强化学习的路由策略优化方法。",
-      "ta": "纯训练方法，与TA工作流无关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.22282"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "商用主图生成框架",
-      "sum": "CommerceGen-Studio 提供端到端商用级主图生成框架。",
-      "ta": "电商图像方向，与游戏渲染无关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.20603"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "空间记忆提升世界模型效率",
-      "sum": "Velox 通过空间记忆机制让世界模型更高效。",
-      "ta": "世界模型效率方向，对实时仿真与生成式场景有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.22311"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "驾驶世界动作模型对齐",
-      "sum": "SimVTA 用仿真对齐视频与轨迹，服务驾驶世界动作模型。",
-      "ta": "自动驾驶方向，与游戏TA无关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.13781"
     }
   ]
 };
