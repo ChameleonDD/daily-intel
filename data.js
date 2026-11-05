@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月4日 · 周三",
+  "date": "2026年11月5日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>NO LAW用UE5打造赛博黑色世界</em> / <em>Blender分层动作工作坊将办</em> / <em>AMD支持DX12新Agility SDK</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Transformer直接渲染3D高斯</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -129,146 +129,182 @@ window.INTEL_DATA = {
     {
       "cat": "tech",
       "imp": "mid",
-      "title": "NO LAW用UE5打造赛博黑色世界",
-      "sum": "Neon Giant称小团队靠UE5实现高细节写实赛博黑色射击游戏。",
-      "ta": "可看其如何在有限人力下用UE5管线堆出细节与写实度。",
-      "src": "Unreal Engine · 11-03",
-      "url": "https://www.unrealengine.com/developer-interviews/no-law-crafting-a-living-breathing-cyber-noir-world-with-ue5"
+      "title": "UE将展示网格地形与MCP集成",
+      "sum": "虚幻引擎将在I/ITSEC 2026展示Mesh Terrain演示及Unreal MCP与LLM集成讨论。",
+      "ta": "Mesh Terrain演示与MCP/LLM集成值得关注，可能影响地形工具与引擎内AI工作流。",
+      "src": "Unreal Engine · 11-04",
+      "url": "https://www.unrealengine.com/news/unreal-engine-innovation-heads-to-i-itsec-2026"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "GPU加速的渐进式UMAP降维",
+      "sum": "GPUMAP将渐进式UMAP降维搬到GPU，降低高维数据交互分析的计算成本。",
+      "ta": "GPU并行降维思路可借鉴到大规模植被/参数空间的实时可视化分析。",
+      "src": "arXiv · cs.GR · 11-04",
+      "url": "https://arxiv.org/abs/2611.06191v1"
+    },
+    {
+      "cat": "gfx",
       "imp": "lo",
-      "title": "Blender分层动作工作坊将办",
-      "sum": "Blender动画与绑定模块将在Blender大会前一天举办分层动作工作坊。",
-      "ta": "关注分层动作系统走向，或影响未来角色动画工具链。",
-      "src": "Blender 开发博客 · 11-03",
-      "url": "https://code.blender.org/2026/11/layered-actions-workshop-september-2026/"
+      "title": "单图去玻璃反射新方法",
+      "sum": "CLEAR用颜色-纹理潜空间对齐，从透过玻璃拍摄的单图恢复透射场景。",
+      "ta": "反射分离技术对屏幕空间反射/玻璃材质后期处理有参考价值。",
+      "src": "arXiv · cs.GR · 11-04",
+      "url": "https://arxiv.org/abs/2611.05969v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "生成房间评估新框架GREP",
+      "sum": "GREP基于原则对LLM生成的家具房间场景做整体质量评估。",
+      "ta": "程序化场景生成的自动评估思路，可迁移到植被布置质量打分。",
+      "src": "arXiv · cs.GR · 11-04",
+      "url": "https://arxiv.org/abs/2611.05802v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "AMD支持DX12新Agility SDK",
-      "sum": "DX12 Agility SDK 1.620带来Dump Files与扩展PIX标记，1.722预览版加新DXR特性。",
-      "ta": "新DXR特性与PIX标记对渲染调试和光追管线值得跟进。",
-      "src": "AMD GPUOpen · 11-03",
-      "url": "https://gpuopen.com/learn/amd-directx12-agility-sdk-october-2026/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "相位引导动态高斯泼溅重建",
-      "sum": "Phase-DGS用相位引导从非同步多视角视频做动态高斯泼溅重建。",
-      "ta": "放宽同步假设，对实拍素材转动态3D重建流程有参考价值。",
+      "title": "扩散模型单次引导蒸馏分解",
+      "sum": "分解蒸馏实现可解释的单次前向引导，替代每步条件/无条件双评估。",
+      "ta": "单次引导降低扩散推理成本，对贴图/材质生成的实时化有潜在意义。",
       "src": "arXiv · cs.GR · 11-03",
-      "url": "https://arxiv.org/abs/2611.04666v1"
+      "url": "https://arxiv.org/abs/2611.05755v1"
     },
     {
       "cat": "gfx",
+      "imp": "hi",
+      "title": "Transformer直接渲染3D高斯",
+      "sum": "GaussianRenderFormer用Transformer将高斯与相机直接输出图像，无需光栅化器。",
+      "ta": "无光栅化的神经高斯渲染，值得关注其对实时渲染管线与GS工作流的潜在冲击。",
+      "src": "arXiv · cs.GR · 11-03",
+      "url": "https://arxiv.org/abs/2611.05593v1"
+    },
+    {
+      "cat": "ai",
       "imp": "mid",
-      "title": "FlowRig统一3D与4D骨骼生成",
-      "sum": "FlowRig用流匹配为静态3D与动态4D网格统一生成骨骼。",
-      "ta": "自动绑定统一方案，对角色/植被等资产绑定自动化有启发。",
-      "src": "arXiv · cs.GR · 11-02",
-      "url": "https://arxiv.org/abs/2611.03775v1"
+      "title": "分钟级游戏交互世界模型数据集",
+      "sum": "GameVerse提供分钟级游戏画面数据集，用于长时程交互式世界建模。",
+      "ta": "长时程世界模型数据对程序化生成与游戏内AI模拟有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.37257"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "DreamX视频扩散学潜在动作",
-      "sum": "DreamX将视频扩散模型用作通用潜在动作学习器。",
-      "ta": "潜在动作表征或与动画/动作生成相关，速览即可。",
+      "title": "未见游戏的解说与研究智能体",
+      "sum": "StreamDuo为未见过的游戏提供实时解说与研究智能体。",
+      "ta": "面向游戏的智能体框架，可留意其对游戏内AI交互的启发。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.05377"
+      "url": "https://huggingface.co/papers/2611.01120"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "PrimeSim通用世界模型模拟器",
-      "sum": "PrimeSim基于大规模跨具身演示构建通用世界模型模拟器。",
-      "ta": "世界模型方向，与实时仿真有潜在交集，速览。",
+      "title": "少步扩散速度对抗蒸馏",
+      "sum": "VA-TDM用速度对抗蒸馏统一改进少步扩散模型。",
+      "ta": "少步扩散加速对实时生成类工具链有潜在价值。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.04870"
+      "url": "https://huggingface.co/papers/2611.06796"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "LOLPlay实时视觉智能体基准",
-      "sum": "LOLPlay提出在英雄联盟中评测实时视觉智能体的基准。",
-      "ta": "实时视觉智能体评测，对游戏内AI/自动化测试有参考。",
+      "title": "从部分点云补全完整场景网格",
+      "sum": "AnchorComplete从部分点云恢复完整场景网格。",
+      "ta": "点云补全对扫描重建、场景资产修复工作流有直接参考价值。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.03685"
+      "url": "https://huggingface.co/papers/2611.03228"
     },
     {
-      "cat": "ai",
+      "cat": "biz",
+      "imp": "lo",
+      "title": "战神新作延期至2027年5月",
+      "sum": "圣莫尼卡工作室宣布战神Laufey延期三个月至2027年5月以打磨。",
+      "ta": "行业排期动态，速览即可。",
+      "src": "80 Level · 11-05",
+      "url": "https://80.lv/articles/god-of-war-laufey-delayed-to-may-2027/"
+    },
+    {
+      "cat": "tech",
       "imp": "mid",
-      "title": "SeMo3D统一3D生成编辑补全",
-      "sum": "SeMo3D用选择性建模统一3D生成、编辑与补全。",
-      "ta": "3D资产生成编辑一体化，对程序化资产流程有潜在价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.02568"
+      "title": "星战竞速动画的混合工作流",
+      "sum": "Fuse Games结合物理驱动动画、动捕、关键帧与快速预演呈现700km/h竞速。",
+      "ta": "物理驱动+动捕+关键帧的混合动画管线，对高速运动表现有借鉴意义。",
+      "src": "80 Level · 11-05",
+      "url": "https://80.lv/articles/behind-the-animation-of-star-wars-galactic-racer-s-high-speed-chaos/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender毛发梳理模拟插件",
-      "sum": "BGEN Hair为Blender提供辫子、卷发等完整3D毛发梳理与模拟。",
-      "ta": "毛发梳理模拟工具，对角色与生物资产制作流程有用。",
-      "src": "80 Level · 11-03",
-      "url": "https://80.lv/articles/complete-3d-hair-grooming-simulation-add-on-for-blender/"
+      "title": "Blender实时程序化天空插件",
+      "sum": "Physical Atmosphere²可在视口即时更新云、大气与光照，并提供高级精确控制模式。",
+      "ta": "实时程序化天空/大气方案，对植被场景光照与氛围搭建有参考价值。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/get-this-blender-add-on-for-realistic-real-time-procedural-sky/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "塞尔达时之笛重制版年度最高分",
+      "sum": "Switch 2版时之笛重制获96 Metascore，为2026年评分最高游戏。",
+      "ta": "行业评分动态，速览即可。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/the-legend-of-zelda-ocarina-of-time-switch-2-remake-is-the-highest-rated-game-of-2026/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "模块化建筑套件搭建巴塞罗那场景",
+      "sum": "作者用模块化建筑套件、可平铺材质与trim sheets在UE5中搭建风格化场景。",
+      "ta": "模块化套件+trim sheet的UE5环境搭建流程，对场景资产复用有直接参考。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/creating-a-stylized-barcelona-environment-using-a-modular-architecture-kit/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender布料模拟跳舞骷髅",
-      "sum": "展示Blender中带真实布料模拟的跳舞骷髅。",
-      "ta": "布料模拟案例，速览制作手法即可。",
-      "src": "80 Level · 11-03",
-      "url": "https://80.lv/articles/dancing-skeleton-with-realistic-fabric-simulation-in-blender/"
+      "title": "Blender绝区零风格Shader更新",
+      "sum": "Kythera的ZZZ风格Shader更新，附带自动连接贴图与光照的插件。",
+      "ta": "风格化卡通Shader的自动应用工具，可留意其材质连接思路。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/have-a-look-at-this-zzz-shader-for-blender-that-comes-with-auto-apply-add-on/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender胶片摄影质感渲染",
+      "sum": "该方案用物理准确数据与真实胶片行为为Blender渲染添加胶片摄影质感。",
+      "ta": "胶片质感后期方案，对渲染出图风格化有轻度参考价值。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/give-your-blender-renders-authentic-film-photography-look/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "如龙创作者工作室解散",
-      "sum": "Nagoshi Studio于10月31日经股东决议解散。",
-      "ta": "行业人事变动，速览。",
-      "src": "80 Level · 11-03",
-      "url": "https://80.lv/articles/yakuza-creator-s-studio-has-been-dissolved/"
+      "title": "Tripwire扩展发行业务",
+      "sum": "Tripwire Interactive扩展发行业务，聚焦更小规模开发者与游戏。",
+      "ta": "发行侧动态，速览即可。",
+      "src": "Game Developer · 11-04",
+      "url": "https://www.gamedeveloper.com/business/tripwire-interactive-expands-publishing-business-to-focus-on-smaller-developers-and-games"
     },
     {
       "cat": "biz",
-      "imp": "lo",
-      "title": "塞尔达制作人谈时之笛重制",
-      "sum": "青沼英二称Switch 2版时之笛重制与系列40周年相关。",
-      "ta": "行业动态，速览。",
-      "src": "80 Level · 11-03",
-      "url": "https://80.lv/articles/zelda-producer-explains-what-led-to-ocarina-of-time-switch-2-remake/"
+      "imp": "mid",
+      "title": "育碧竞购Arkane工作室",
+      "sum": "Xbox拟出售Arkane，育碧等为潜在竞购方，以避免工作室关闭。",
+      "ta": "工作室归属变动可能影响相关团队与技术流向，值得留意。",
+      "src": "Game Developer · 11-04",
+      "url": "https://www.gamedeveloper.com/business/ubisoft-among-the-bidders-for-arkane-as-xbox-looks-to-sell-the-studio"
     },
     {
       "cat": "biz",
-      "imp": "lo",
-      "title": "前Xbox COO回应离职说法",
-      "sum": "前Xbox COO Helen Chiang否认外界对其离职原因的多种说法。",
-      "ta": "商业八卦，速览。",
-      "src": "Game Developer · 11-03",
-      "url": "https://www.gamedeveloper.com/business/former-xbox-coo-helen-chiang-takes-umbrage-with-the-characterizations-of-her-departure"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Rami Ismail谈回归开发",
-      "sum": "独立开发者Rami Ismail时隔六年重返游戏开发并分享心得。",
-      "ta": "行业经验分享，速览。",
-      "src": "Game Developer · 11-03",
-      "url": "https://www.gamedeveloper.com/design/what-rami-ismail-learned-with-his-return-to-game-development"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "South of Midnight总监谈Xbox",
-      "sum": "该作前总监称若由他决定不会资助自己执导的这款游戏。",
-      "ta": "行业观点，速览。",
-      "src": "Game Developer · 11-03",
-      "url": "https://www.gamedeveloper.com/business/south-of-midnight-director-was-always-worried-about-rome-burning-at-xbox"
+      "imp": "mid",
+      "title": "Steam审核放缓或因AI游戏激增",
+      "sum": "Valve警告Steam新游审核变慢，但未直接归因于任何开发趋势。",
+      "ta": "审核积压或与AI生成游戏涌入相关，影响独立团队上线节奏。",
+      "src": "Game Developer · 11-04",
+      "url": "https://www.gamedeveloper.com/business/valve-warns-of-slower-steam-approval-process-due-to-flood-of-new-games"
     }
   ],
   "flashbackTitle": "",

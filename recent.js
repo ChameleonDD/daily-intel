@@ -2,8 +2,179 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-04 15:24",
+  "updated": "2026-11-05 15:50",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "UE将展示网格地形与MCP集成",
+      "sum": "虚幻引擎将在I/ITSEC 2026展示Mesh Terrain演示及Unreal MCP与LLM集成讨论。",
+      "ta": "Mesh Terrain演示与MCP/LLM集成值得关注，可能影响地形工具与引擎内AI工作流。",
+      "src": "Unreal Engine · 11-04",
+      "url": "https://www.unrealengine.com/news/unreal-engine-innovation-heads-to-i-itsec-2026"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "GPU加速的渐进式UMAP降维",
+      "sum": "GPUMAP将渐进式UMAP降维搬到GPU，降低高维数据交互分析的计算成本。",
+      "ta": "GPU并行降维思路可借鉴到大规模植被/参数空间的实时可视化分析。",
+      "src": "arXiv · cs.GR · 11-04",
+      "url": "https://arxiv.org/abs/2611.06191v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "单图去玻璃反射新方法",
+      "sum": "CLEAR用颜色-纹理潜空间对齐，从透过玻璃拍摄的单图恢复透射场景。",
+      "ta": "反射分离技术对屏幕空间反射/玻璃材质后期处理有参考价值。",
+      "src": "arXiv · cs.GR · 11-04",
+      "url": "https://arxiv.org/abs/2611.05969v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "生成房间评估新框架GREP",
+      "sum": "GREP基于原则对LLM生成的家具房间场景做整体质量评估。",
+      "ta": "程序化场景生成的自动评估思路，可迁移到植被布置质量打分。",
+      "src": "arXiv · cs.GR · 11-04",
+      "url": "https://arxiv.org/abs/2611.05802v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "扩散模型单次引导蒸馏分解",
+      "sum": "分解蒸馏实现可解释的单次前向引导，替代每步条件/无条件双评估。",
+      "ta": "单次引导降低扩散推理成本，对贴图/材质生成的实时化有潜在意义。",
+      "src": "arXiv · cs.GR · 11-03",
+      "url": "https://arxiv.org/abs/2611.05755v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "Transformer直接渲染3D高斯",
+      "sum": "GaussianRenderFormer用Transformer将高斯与相机直接输出图像，无需光栅化器。",
+      "ta": "无光栅化的神经高斯渲染，值得关注其对实时渲染管线与GS工作流的潜在冲击。",
+      "src": "arXiv · cs.GR · 11-03",
+      "url": "https://arxiv.org/abs/2611.05593v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "分钟级游戏交互世界模型数据集",
+      "sum": "GameVerse提供分钟级游戏画面数据集，用于长时程交互式世界建模。",
+      "ta": "长时程世界模型数据对程序化生成与游戏内AI模拟有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2610.37257"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "未见游戏的解说与研究智能体",
+      "sum": "StreamDuo为未见过的游戏提供实时解说与研究智能体。",
+      "ta": "面向游戏的智能体框架，可留意其对游戏内AI交互的启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.01120"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "少步扩散速度对抗蒸馏",
+      "sum": "VA-TDM用速度对抗蒸馏统一改进少步扩散模型。",
+      "ta": "少步扩散加速对实时生成类工具链有潜在价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.06796"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "从部分点云补全完整场景网格",
+      "sum": "AnchorComplete从部分点云恢复完整场景网格。",
+      "ta": "点云补全对扫描重建、场景资产修复工作流有直接参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.03228"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "战神新作延期至2027年5月",
+      "sum": "圣莫尼卡工作室宣布战神Laufey延期三个月至2027年5月以打磨。",
+      "ta": "行业排期动态，速览即可。",
+      "src": "80 Level · 11-05",
+      "url": "https://80.lv/articles/god-of-war-laufey-delayed-to-may-2027/"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "星战竞速动画的混合工作流",
+      "sum": "Fuse Games结合物理驱动动画、动捕、关键帧与快速预演呈现700km/h竞速。",
+      "ta": "物理驱动+动捕+关键帧的混合动画管线，对高速运动表现有借鉴意义。",
+      "src": "80 Level · 11-05",
+      "url": "https://80.lv/articles/behind-the-animation-of-star-wars-galactic-racer-s-high-speed-chaos/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender实时程序化天空插件",
+      "sum": "Physical Atmosphere²可在视口即时更新云、大气与光照，并提供高级精确控制模式。",
+      "ta": "实时程序化天空/大气方案，对植被场景光照与氛围搭建有参考价值。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/get-this-blender-add-on-for-realistic-real-time-procedural-sky/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "塞尔达时之笛重制版年度最高分",
+      "sum": "Switch 2版时之笛重制获96 Metascore，为2026年评分最高游戏。",
+      "ta": "行业评分动态，速览即可。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/the-legend-of-zelda-ocarina-of-time-switch-2-remake-is-the-highest-rated-game-of-2026/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "模块化建筑套件搭建巴塞罗那场景",
+      "sum": "作者用模块化建筑套件、可平铺材质与trim sheets在UE5中搭建风格化场景。",
+      "ta": "模块化套件+trim sheet的UE5环境搭建流程，对场景资产复用有直接参考。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/creating-a-stylized-barcelona-environment-using-a-modular-architecture-kit/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender绝区零风格Shader更新",
+      "sum": "Kythera的ZZZ风格Shader更新，附带自动连接贴图与光照的插件。",
+      "ta": "风格化卡通Shader的自动应用工具，可留意其材质连接思路。",
+      "src": "80 Level · 11-04",
+      "url": "https://80.lv/articles/have-a-look-at-this-zzz-shader-for-blender-that-comes-with-auto-apply-add-on/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Tripwire扩展发行业务",
+      "sum": "Tripwire Interactive扩展发行业务，聚焦更小规模开发者与游戏。",
+      "ta": "发行侧动态，速览即可。",
+      "src": "Game Developer · 11-04",
+      "url": "https://www.gamedeveloper.com/business/tripwire-interactive-expands-publishing-business-to-focus-on-smaller-developers-and-games"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "育碧竞购Arkane工作室",
+      "sum": "Xbox拟出售Arkane，育碧等为潜在竞购方，以避免工作室关闭。",
+      "ta": "工作室归属变动可能影响相关团队与技术流向，值得留意。",
+      "src": "Game Developer · 11-04",
+      "url": "https://www.gamedeveloper.com/business/ubisoft-among-the-bidders-for-arkane-as-xbox-looks-to-sell-the-studio"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Steam审核放缓或因AI游戏激增",
+      "sum": "Valve警告Steam新游审核变慢，但未直接归因于任何开发趋势。",
+      "ta": "审核积压或与AI生成游戏涌入相关，影响独立团队上线节奏。",
+      "src": "Game Developer · 11-04",
+      "url": "https://www.gamedeveloper.com/business/valve-warns-of-slower-steam-approval-process-due-to-flood-of-new-games"
+    },
     {
       "cat": "tech",
       "imp": "mid",
@@ -12,15 +183,6 @@ window.INTEL_RECENT = {
       "ta": "可看其如何在有限人力下用UE5管线堆出细节与写实度。",
       "src": "Unreal Engine · 11-03",
       "url": "https://www.unrealengine.com/developer-interviews/no-law-crafting-a-living-breathing-cyber-noir-world-with-ue5"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender分层动作工作坊将办",
-      "sum": "Blender动画与绑定模块将在Blender大会前一天举办分层动作工作坊。",
-      "ta": "关注分层动作系统走向，或影响未来角色动画工具链。",
-      "src": "Blender 开发博客 · 11-03",
-      "url": "https://code.blender.org/2026/11/layered-actions-workshop-september-2026/"
     },
     {
       "cat": "gfx",
@@ -668,15 +830,6 @@ window.INTEL_RECENT = {
       "ta": "程序化堆叠生成贴图，适合做碎石/落叶类地表细节的可平铺材质。",
       "src": "80 Level · 10-28",
       "url": "https://80.lv/articles/simulate-physics-right-in-substance-3d-designer-with-this-tool/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender漫画风描边Shader教程",
-      "sum": "XippoArt发布Blender教程，讲解如何制作带描边的鲜艳漫画风格Shader。",
-      "ta": "描边与色阶处理思路可迁移到UE后处理或卡通材质实验。",
-      "src": "80 Level · 10-28",
-      "url": "https://80.lv/articles/blender-tutorial-create-vibrant-comic-style-shader-with-outlines/"
     },
     {
       "cat": "biz",
@@ -1664,159 +1817,6 @@ window.INTEL_RECENT = {
       "ta": "程序化建模与形变工具可参考其控制柄优化思路，非实时渲染直接相关。",
       "src": "arXiv · cs.GR · 10-16",
       "url": "https://arxiv.org/abs/2610.23173v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频世界模型记忆失效诊断",
-      "sum": "论文诊断视频世界模型在记忆机制上的失败模式，提出执行先于记忆的分析框架。",
-      "ta": "若关注世界模型做场景生成，可看其长时序一致性失效的归因方式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.23542"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "生成式组织训练智能体",
-      "sum": "OfficeTown构建生成式组织环境，用于演化多智能体协作能力。",
-      "ta": "纯智能体仿真研究，与TA工作流无直接关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.23194"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "视频世界模型持久平面记忆",
-      "sum": "提出持久平面记忆机制，缓解视频世界模型长序列中的场景遗忘。",
-      "ta": "长时序场景一致性方案，对程序化场景生成的记忆保持有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.23795"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "玩具游戏能否迁移真实推理",
-      "sum": "Game2Real-Bench评测玩具游戏训练所得视觉推理能力能否迁移到真实场景。",
-      "ta": "评测类工作，与渲染或工具链无直接关系。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.18834"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "视角解耦几何状态建模",
-      "sum": "GeoState学习视角解耦的几何状态表示，用于3D世界建模。",
-      "ta": "解耦视角的几何表示对3D生成与场景重建有潜在借鉴，值得速读。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.22343"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "水彩手绘解谜游戏亮相",
-      "sum": "《The Land Forgotten》以水彩手绘风格呈现语言解谜玩法。",
-      "ta": "可速览其手绘美术风格与场景氛围，作为风格化美术参考。",
-      "src": "80 Level · 10-17",
-      "url": "https://80.lv/articles/this-language-based-puzzle-game-is-hand-painted-in-watercolor/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5.7 生物角色全流程",
-      "sum": "ZBrush 雕鳞片、Marvelous Designer 模拟非人角色服装，最终在 UE5.7 渲染。",
-      "ta": "可参考非人形角色的布料模拟思路，以及 UE5.7 下的角色渲染管线实践。",
-      "src": "80 Level · 10-16",
-      "url": "https://80.lv/articles/sculpting-scales-simulating-clothes-for-creature-chef-in-zbrush-marvelous-designer/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "BRUTAL 开源开发框架发布",
-      "sum": "DayZ 创作者推出免费开源开发框架 BRUTAL，已被其工作室的太空模拟游戏采用。",
-      "ta": "值得关注其工具链组织方式，或可作为自研管线/工具框架的参考。",
-      "src": "80 Level · 10-16",
-      "url": "https://80.lv/articles/dayz-creator-presents-brutal-a-free-open-source-development-framework/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "NAS 上的 Git 项目结构讨论",
-      "sum": "TA 社区讨论文件存放在 NAS 时如何组织 Git 项目，含 Maya 脚本的开发版与发布版。",
-      "ta": "涉及脚本版本管理与共享存储的工程实践，可看同行如何拆分 dev/published 副本。",
-      "src": "Tech-Artists · 10-16",
-      "url": "https://www.tech-artists.org/t/how-do-you-structure-git-projects-when-your-files-live-on-a-nas-maya-scripts-dev-vs-published-copies/18581"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "狗狗动捕效果像外星人",
-      "sum": "一位艺术家对狗做动作捕捉，结果看起来像外星生物，真狗无恙。",
-      "ta": "速览即可，可作为非人形动捕重定向问题的趣味案例。",
-      "src": "80 Level · 10-16",
-      "url": "https://80.lv/articles/artist-motion-captures-a-dog-and-it-looks-like-an-alien/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "UEFN 学生训练营作品展示",
-      "sum": "UEFN 学生训练营结束，300 多名学生完成三周课程，官方放出优秀 Fortnite 岛屿集锦。",
-      "ta": "可速览 UEFN 创作者生态的产出水平，与引擎工具链无直接技术关联。",
-      "src": "Unreal Engine · 10-16",
-      "url": "https://www.unrealengine.com/learning/check-out-the-top-fortnite-islands-from-the-uefn-student-bootcamp"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "HeroQuest 将登陆 PC",
-      "sum": "Nomad Games 与 Balor Games 将经典桌游地城探索游戏 HeroQuest 数字化搬上 PC。",
-      "ta": "行业动态速览，与 TA 技术工作无直接关联。",
-      "src": "80 Level · 10-16",
-      "url": "https://80.lv/articles/classic-tabletop-adventure-heroquest-is-coming-to-pc/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "独立游戏 Flipping Is Hard 上线",
-      "sum": "融合《和班尼特福迪一起攻克难关》与诺基亚怀旧元素的独立游戏登陆 Steam，支持 16 人。",
-      "ta": "行业动态速览，无技术关联。",
-      "src": "80 Level · 10-16",
-      "url": "https://80.lv/articles/getting-over-it-meets-nokia-nostalgia-in-new-indie-game-flipping-is-hard/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "规则驱动生成世界建模验证器",
-      "sum": "OmniVerifier-C1 提出分解式分级验证器，用于规则约束的生成式世界建模。",
-      "ta": "原文未明确游戏/实时关联，仅作生成式世界建模方向速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.22355"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "生成模型测试时多样性对齐",
-      "sum": "论文提出 Mine、Sample、Render 流程，在测试时对生成模型做多样性对齐。",
-      "ta": "通用生成模型方法，原文无游戏/实时渲染关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.21185"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多变量轨迹快速生成预测",
-      "sum": "PathFM 提出多变量轨迹的快速生成式预测方法。",
-      "ta": "通用时序预测研究，原文未提及游戏关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.22358"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "Hadamard 码本加速图像视频压缩",
-      "sum": "H-DDCM 用 Hadamard 码本实现快速的生成式图像与视频压缩。",
-      "ta": "涉及图像/视频压缩，但原文未提实时或引擎关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.18125"
     }
   ]
 };
