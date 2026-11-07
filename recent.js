@@ -2,8 +2,81 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-06 15:50",
+  "updated": "2026-11-07 14:58",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Blackwell 加速 FLUX 图像生成",
+      "sum": "NVIDIA 介绍在 Blackwell GPU 上部署 FLUX 3 Image Klein 的推理延迟优化。",
+      "ta": "关注扩散模型推理优化思路，可迁移到材质贴图/概念图批量生成的工具链。",
+      "src": "NVIDIA · 11-06",
+      "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "RL 权重重载加速新集合通信",
+      "sum": "NVIDIA 提出 Reshard Collective 加速强化学习后训练的权重重载。",
+      "ta": "纯训练侧优化，与实时渲染无直接关系，速览即可。",
+      "src": "NVIDIA · 11-06",
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型多教师蒸馏再思考",
+      "sum": "论文重新审视扩散模型中的多教师 on-policy 蒸馏方法。",
+      "ta": "生成模型训练侧研究，暂不涉及引擎或实时管线。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.04386"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "实时全波形 LiDAR Transformer",
+      "sum": "论文用强度引导 token 削减与物理感知增强实现实时全波形 LiDAR Transformer。",
+      "ta": "实时点云感知加速思路，对扫描资产处理与程序化植被点云有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.07613"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "手游渠道壁垒正在松动",
+      "sum": "80 Level 分析长期把守手游分发的两大平台格局开始变化。",
+      "ta": "发行侧信息，与 TA 日常无直接关联，速览。",
+      "src": "80 Level · 11-07",
+      "url": "https://80.lv/articles/mobile-game-gatekeepers-are-opening-the-gates/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "无源码逆向复活经典 RPG",
+      "sum": "SNEG 在无源码、无工具、无文档下逆向零售版重制 2001 年 D&D RPG。",
+      "ta": "逆向重建资产与数据管线的案例，值得看其资源还原与工具重建思路。",
+      "src": "80 Level · 11-06",
+      "url": "https://80.lv/articles/this-forgotten-classic-d-d-rpg-was-revived-without-source-code-or-tools/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "GTA6 发售前放出 39 张截图",
+      "sum": "Rockstar 在发售两周前公布 39 张 GTA6 新截图，展示罪恶都市与主角。",
+      "ta": "可观察其植被密度、光照与材质表现，作为画面基准参考。",
+      "src": "80 Level · 11-06",
+      "url": "https://80.lv/articles/rockstar-shares-39-new-gta-6-screenshots-two-weeks-before-launch/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Quixel Megascans 全库永久免费",
+      "sum": "整个 Quixel Megascans 素材库现已免费开放，且为永久性。",
+      "ta": "植被与地表扫描资产可直接进 UE 管线，大幅降低环境搭建的素材成本。",
+      "src": "80 Level · 11-06",
+      "url": "https://80.lv/articles/entire-quixel-megascans-library-now-available-for-free/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -994,15 +1067,6 @@ window.INTEL_RECENT = {
       "url": "https://blog.playstation.com/2026/10/28/phantom-blade-zero-how-boss-weapons-transform-combat-and-exploration/"
     },
     {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散语言模型RL信用分配",
-      "sum": "提出DTCA方法，为扩散语言模型强化学习做去噪Token信用分配。",
-      "ta": "纯LLM训练方法，原文未涉及游戏或实时渲染，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.35201"
-    },
-    {
       "cat": "tech",
       "imp": "hi",
       "rank": 2,
@@ -1754,69 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "做大地图/地形分块数据时，瓦片粒度对压缩与流送的影响可借鉴。",
       "src": "arXiv · cs.GR · 10-19",
       "url": "https://arxiv.org/abs/2610.25755v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "FluidGen 物理感知流体视频",
-      "sum": "针对视频生成模型在烟、火、爆炸碎片上涡旋结构缺失的问题，用运动引导后训练修正。",
-      "ta": "Niagara 流体参考素材生成方向，注意其仍缺真实涡旋，不能直接当解算替代。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.25660v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "包络行走加速 WoS 求解",
-      "sum": "Walk in Envelopes 用可验证解界变换分支扩散，缓解临界分支率附近计算爆炸。",
-      "ta": "无网格 PDE 求解加速，离屏 GI/体积散射类研究可留意。",
-      "src": "arXiv · cs.GR · 10-18",
-      "url": "https://arxiv.org/abs/2610.25297v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "SwitchSplat 学离散物体状态",
-      "sum": "针对随手拍摄中开门、拨开关等交互，从 3DGS 场景学习离散物体状态表示。",
-      "ta": "3DGS 从静态假设走向可交互状态，对扫描资产转可交互场景有启发。",
-      "src": "arXiv · cs.GR · 10-17",
-      "url": "https://arxiv.org/abs/2610.24812v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "MOMO 从移动声源生成人体动作",
-      "sum": "建模人对动态空间音频的反应，生成随声源与听者空间关系变化的人体运动。",
-      "ta": "角色动画可参考声源空间关系驱动的反应动作生成。",
-      "src": "arXiv · cs.GR · 10-17",
-      "url": "https://arxiv.org/abs/2610.24522v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "SLIM 学算子精简 3D 点阵",
-      "sum": "学习一个算子，在保持均匀化弹性的前提下移除点阵冗余材料。",
-      "ta": "点阵轻量化思路，对程序化结构件/支撑结构生成有参考。",
-      "src": "arXiv · cs.GR · 10-17",
-      "url": "https://arxiv.org/abs/2610.24459v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "GPT-6 Astra 的 CAD 能力评估",
-      "sum": "对通用 AI 模型 GPT-6 Astra 做系统性 CAD 任务实证评估，看输出是否满足工程要求。",
-      "ta": "了解通用模型在工程几何任务上的真实边界，避免高估其产出。",
-      "src": "arXiv · cs.GR · 10-17",
-      "url": "https://arxiv.org/abs/2610.24451v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多轮图像编辑稳定化 MT Forcing",
-      "sum": "自回归扩散做多轮图像编辑，MT Forcing 提升稳定性与一致性。",
-      "ta": "多轮一致性编辑可用于贴图/概念稿迭代，但非实时渲染直接相关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.25404"
     }
   ]
 };

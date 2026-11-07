@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月6日 · 周五",
+  "date": "2026年11月7日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>神经纹理实时超分采样</em> / <em>网格泼溅解耦拓扑与外观</em> / <em>按感知分配高斯而非几何</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Quixel Megascans 全库永久免费</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -274,148 +274,77 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Blackwell 加速 FLUX 图像生成",
+      "sum": "NVIDIA 介绍在 Blackwell GPU 上部署 FLUX 3 Image Klein 的推理延迟优化。",
+      "ta": "关注扩散模型推理优化思路，可迁移到材质贴图/概念图批量生成的工具链。",
+      "src": "NVIDIA · 11-06",
+      "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "RL 权重重载加速新集合通信",
+      "sum": "NVIDIA 提出 Reshard Collective 加速强化学习后训练的权重重载。",
+      "ta": "纯训练侧优化，与实时渲染无直接关系，速览即可。",
+      "src": "NVIDIA · 11-06",
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散模型多教师蒸馏再思考",
+      "sum": "论文重新审视扩散模型中的多教师 on-policy 蒸馏方法。",
+      "ta": "生成模型训练侧研究，暂不涉及引擎或实时管线。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.04386"
+    },
+    {
       "cat": "gfx",
       "imp": "mid",
-      "title": "神经纹理实时超分采样",
-      "sum": "提出轻量MLP在纹理采样阶段实时放大低分辨率纹理，泛化而非过拟合。",
-      "ta": "纹理采样阶段做神经超分，直接关系到显存与带宽预算，值得评估能否进材质管线。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07289v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "网格泼溅解耦拓扑与外观",
-      "sum": "T²-Splat用自适应拓扑网格加纹理残差，减少为保细节而过密细分。",
-      "ta": "三角泼溅接传统管线，拓扑与外观解耦的思路可参考到程序化植被的LOD与网格化流程。",
-      "src": "arXiv · cs.GR · 11-04",
-      "url": "https://arxiv.org/abs/2611.06974v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "按感知分配高斯而非几何",
-      "sum": "重新审视基于网格的泼溅中每面固定高斯数的分配策略，主张以感知驱动。",
-      "ta": "高斯分配策略直接影响渲染开销与画质平衡，做程序化散布时可借鉴其分配逻辑。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07979v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "分层增量Beta泼溅在线重建",
-      "sum": "针对在线3DGS每关键帧仅数十次迭代、初始化差的问题提出分层增量方案。",
-      "ta": "在线重建的收敛速度问题，与扫描/实景进引擎的流程相关，速览即可。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08288v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "扩散驱动高斯头像精修",
-      "sum": "用合成失败样本引导扩散模型，修复单目视频高斯头像的模糊与拉伸伪影。",
-      "ta": "数字人与面部资产方向，与植被/特效本职关联弱，速览。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07909v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "对偶轮廓提取中轴网格",
-      "sum": "DC-SQEM用球面二次误差度量的对偶轮廓从点云提取保特征中轴网格。",
-      "ta": "几何处理与简化方向，可留意其对点云到网格的保特征能力。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07328v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "四维点泼溅雷达渲染",
-      "sum": "面向毫米波雷达微多普勒的可微渲染，缓解雷达数据集稀缺。",
-      "ta": "传感仿真方向，与实时渲染本职距离较远，速览。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08342v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "骨骼运动信号实时补全",
-      "sum": "REACT针对游戏、XR等交互场景，实时补全质量不佳的追踪骨骼运动信号。",
-      "ta": "涉及游戏动捕数据管线，若做角色/植被交互驱动可关注其补全思路。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08301v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Houdini流体交互教程",
-      "sum": "Gnomon Workshop推出Houdini流体与交互模拟入门课程，限时八折。",
-      "ta": "流体特效学习资源，与Niagara流体方向可互补参考，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/learn-to-simulate-realistic-fluid-interactions-in-houdini/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender程序化冰网格系统",
-      "sum": "Deepak Kushwaha分享基于网格的Blender程序化冰生成系统。",
-      "ta": "程序化生成案例，思路可迁移到程序化材质/植被，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/creating-mesh-based-procedural-ice-in-blender/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Maya多视觉风格制作解析",
-      "sum": "华纳动画新片团队讲解如何用Maya处理影片的多种视觉风格。",
-      "ta": "离线动画流程参考，与实时管线关联有限，速览。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/how-the-cat-in-the-hat-was-made-with-autodesk-maya-flow/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "LAIKA手工羽毛制作揭秘",
-      "sum": "LAIKA分享《Wildwood》中鸟族将领每根羽毛均为手工打造。",
-      "ta": "离线角色资产细节参考，对实时毛发/植被有启发但非直接，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/laika-shares-how-it-made-the-feathers-of-general-in-wildwood/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "K/DA新MV动画幕后",
-      "sum": "Fortiche导演与动画总监谈FIRESTARTER的动画、VFX与镜头及所用3D软件。",
-      "ta": "风格化动画与VFX流程参考，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/take-a-look-behind-animation-in-k-da-s-firestarter-music-video/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "复古爆破机3D全流程",
-      "sum": "Kyryl Zlotnyk完整演示DuPont爆破机的建模、渲染与动画流程。",
-      "ta": "硬表面资产全流程案例，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/recreating-vintage-dynamite-blasting-machine-in-3d/"
+      "title": "实时全波形 LiDAR Transformer",
+      "sum": "论文用强度引导 token 削减与物理感知增强实现实时全波形 LiDAR Transformer。",
+      "ta": "实时点云感知加速思路，对扫描资产处理与程序化植被点云有参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.07613"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "FF7重制制作人暗示新作",
-      "sum": "北濑佳范称SE更倾向投资新IP，但不排除更多重制。",
-      "ta": "行业动向，与TA工作无直接关联，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/final-fantasy-vii-remake-producer-hints-at-more-adaptations-new-games/"
+      "title": "手游渠道壁垒正在松动",
+      "sum": "80 Level 分析长期把守手游分发的两大平台格局开始变化。",
+      "ta": "发行侧信息，与 TA 日常无直接关联，速览。",
+      "src": "80 Level · 11-07",
+      "url": "https://80.lv/articles/mobile-game-gatekeepers-are-opening-the-gates/"
     },
     {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "AC英灵殿升级PSSR支持",
-      "sum": "《刺客信条：英灵殿》免费更新为PS5 Pro带来升级版PSSR支持。",
-      "ta": "主机超分方案落地案例，可留意PSSR升级后的画质表现。",
-      "src": "PlayStation Blog · 11-05",
-      "url": "https://blog.playstation.com/2026/11/05/assassins-creed-valhalla-new-update-brings-new-game-upgraded-pssr-support-for-ps5-pro-today/"
+      "cat": "biz",
+      "imp": "mid",
+      "title": "无源码逆向复活经典 RPG",
+      "sum": "SNEG 在无源码、无工具、无文档下逆向零售版重制 2001 年 D&D RPG。",
+      "ta": "逆向重建资产与数据管线的案例，值得看其资源还原与工具重建思路。",
+      "src": "80 Level · 11-06",
+      "url": "https://80.lv/articles/this-forgotten-classic-d-d-rpg-was-revived-without-source-code-or-tools/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "GTA6 发售前放出 39 张截图",
+      "sum": "Rockstar 在发售两周前公布 39 张 GTA6 新截图，展示罪恶都市与主角。",
+      "ta": "可观察其植被密度、光照与材质表现，作为画面基准参考。",
+      "src": "80 Level · 11-06",
+      "url": "https://80.lv/articles/rockstar-shares-39-new-gta-6-screenshots-two-weeks-before-launch/"
+    },
+    {
+      "cat": "flow",
+      "imp": "hi",
+      "rank": 1,
+      "title": "Quixel Megascans 全库永久免费",
+      "sum": "整个 Quixel Megascans 素材库现已免费开放，且为永久性。",
+      "ta": "植被与地表扫描资产可直接进 UE 管线，大幅降低环境搭建的素材成本。",
+      "src": "80 Level · 11-06",
+      "url": "https://80.lv/articles/entire-quixel-megascans-library-now-available-for-free/"
     }
   ],
   "flashbackTitle": "",
