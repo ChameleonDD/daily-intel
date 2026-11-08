@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月7日 · 周六",
+  "date": "2026年11月8日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Quixel Megascans 全库永久免费</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。",
   "channels": [
     {
       "key": "x",
@@ -125,79 +125,6 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "Ben Poole · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Blackwell 加速 FLUX 图像生成",
-      "sum": "NVIDIA 介绍在 Blackwell GPU 上部署 FLUX 3 Image Klein 的推理延迟优化。",
-      "ta": "关注扩散模型推理优化思路，可迁移到材质贴图/概念图批量生成的工具链。",
-      "src": "NVIDIA · 11-06",
-      "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "RL 权重重载加速新集合通信",
-      "sum": "NVIDIA 提出 Reshard Collective 加速强化学习后训练的权重重载。",
-      "ta": "纯训练侧优化，与实时渲染无直接关系，速览即可。",
-      "src": "NVIDIA · 11-06",
-      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型多教师蒸馏再思考",
-      "sum": "论文重新审视扩散模型中的多教师 on-policy 蒸馏方法。",
-      "ta": "生成模型训练侧研究，暂不涉及引擎或实时管线。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.04386"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实时全波形 LiDAR Transformer",
-      "sum": "论文用强度引导 token 削减与物理感知增强实现实时全波形 LiDAR Transformer。",
-      "ta": "实时点云感知加速思路，对扫描资产处理与程序化植被点云有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.07613"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "手游渠道壁垒正在松动",
-      "sum": "80 Level 分析长期把守手游分发的两大平台格局开始变化。",
-      "ta": "发行侧信息，与 TA 日常无直接关联，速览。",
-      "src": "80 Level · 11-07",
-      "url": "https://80.lv/articles/mobile-game-gatekeepers-are-opening-the-gates/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "无源码逆向复活经典 RPG",
-      "sum": "SNEG 在无源码、无工具、无文档下逆向零售版重制 2001 年 D&D RPG。",
-      "ta": "逆向重建资产与数据管线的案例，值得看其资源还原与工具重建思路。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/this-forgotten-classic-d-d-rpg-was-revived-without-source-code-or-tools/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "GTA6 发售前放出 39 张截图",
-      "sum": "Rockstar 在发售两周前公布 39 张 GTA6 新截图，展示罪恶都市与主角。",
-      "ta": "可观察其植被密度、光照与材质表现，作为画面基准参考。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/rockstar-shares-39-new-gta-6-screenshots-two-weeks-before-launch/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Quixel Megascans 全库永久免费",
-      "sum": "整个 Quixel Megascans 素材库现已免费开放，且为永久性。",
-      "ta": "植被与地表扫描资产可直接进 UE 管线，大幅降低环境搭建的素材成本。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/entire-quixel-megascans-library-now-available-for-free/"
     }
   ],
   "flashbackTitle": "",
