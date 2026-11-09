@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月8日 · 周日",
+  "date": "2026年11月9日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今日暂无新内容（近期热点此前已读过）。X 动态见下方，或点「近期」翻看本周热点。",
+  "todayHtml": "今天值得停下精读的有：<em>NanoVDB 支持动态体素网格</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -272,6 +272,70 @@ window.INTEL_DATA = {
       "handle": "@poolio",
       "who": "Ben Poole · 06-11",
       "url": "https://x.com/arena/status/2065112147093545333"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "NanoVDB 支持动态体素网格",
+      "sum": "NanoVDB 新增 GPU 原生拓扑动态更新与体素顺序访问范式，加速稀疏网格算子。",
+      "ta": "稀疏体素/体积特效的底层数据结构升级，值得评估对流体烟雾与程序化体积生成的性能收益。",
+      "src": "arXiv · cs.GR · 11-05",
+      "url": "https://arxiv.org/abs/2611.08665v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "蒙皮角色自穿插实时修复",
+      "sum": "提出免训练后处理，通过姿态修正与有界蒙皮压缩减少角色自穿插伪影。",
+      "ta": "角色动画后处理思路，可参考其软接触预算约束用于布料/植被与角色交互的穿插处理。",
+      "src": "arXiv · cs.GR · 11-06",
+      "url": "https://arxiv.org/abs/2611.09693v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D 网格几何纹理分割",
+      "sum": "针对 3D 模型中级几何纹理模式的分割方法，弥补语义部件分割的不足。",
+      "ta": "几何纹理识别可用于程序化植被/岩石表面细节的自动分类与材质分配。",
+      "src": "arXiv · cs.GR · 11-06",
+      "url": "https://arxiv.org/abs/2611.08897v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "自然语言实时调度人群仿真",
+      "sum": "CrowdDirector 用自然语言指令在仿真运行时编排人群，兼顾灵活性与低延迟。",
+      "ta": "运行时人群/群集编排思路，可借鉴到植被风场或 Niagara 群集行为的动态指令控制。",
+      "src": "arXiv · cs.GR · 11-05",
+      "url": "https://arxiv.org/abs/2611.08763v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3D 创作编码智能体基准",
+      "sum": "Frontier3DBench 评测编码智能体在物体、场景与交互开放世界中的 3D 创作能力。",
+      "ta": "关注其场景与开放世界生成评测维度，可作为程序化生成工具链自动化能力的参照。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.09017"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "生成视频的视野外世界演化",
+      "sum": "EvoWorld 研究生成视频模型在镜头外区域的世界演化一致性。",
+      "ta": "与实时渲染关联有限，仅作生成式世界建模趋势速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.06748"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "质量效应2早期过场动画曝光",
+      "sum": "动画师公开 BioWare 蒙特利尔内部 pre-alpha 过场动画预告及其制作方式。",
+      "ta": "过场动画分镜与镜头构建的行业参考，速览即可。",
+      "src": "80 Level · 11-09",
+      "url": "https://80.lv/articles/mass-effect-2-animator-shares-pre-alpha-cinematics-trailer/"
     }
   ],
   "flashbackTitle": "",

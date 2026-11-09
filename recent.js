@@ -2,8 +2,63 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-08 15:06",
+  "updated": "2026-11-09 15:49",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "NanoVDB 支持动态体素网格",
+      "sum": "NanoVDB 新增 GPU 原生拓扑动态更新与体素顺序访问范式，加速稀疏网格算子。",
+      "ta": "稀疏体素/体积特效的底层数据结构升级，值得评估对流体烟雾与程序化体积生成的性能收益。",
+      "src": "arXiv · cs.GR · 11-05",
+      "url": "https://arxiv.org/abs/2611.08665v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "蒙皮角色自穿插实时修复",
+      "sum": "提出免训练后处理，通过姿态修正与有界蒙皮压缩减少角色自穿插伪影。",
+      "ta": "角色动画后处理思路，可参考其软接触预算约束用于布料/植被与角色交互的穿插处理。",
+      "src": "arXiv · cs.GR · 11-06",
+      "url": "https://arxiv.org/abs/2611.09693v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3D 网格几何纹理分割",
+      "sum": "针对 3D 模型中级几何纹理模式的分割方法，弥补语义部件分割的不足。",
+      "ta": "几何纹理识别可用于程序化植被/岩石表面细节的自动分类与材质分配。",
+      "src": "arXiv · cs.GR · 11-06",
+      "url": "https://arxiv.org/abs/2611.08897v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "自然语言实时调度人群仿真",
+      "sum": "CrowdDirector 用自然语言指令在仿真运行时编排人群，兼顾灵活性与低延迟。",
+      "ta": "运行时人群/群集编排思路，可借鉴到植被风场或 Niagara 群集行为的动态指令控制。",
+      "src": "arXiv · cs.GR · 11-05",
+      "url": "https://arxiv.org/abs/2611.08763v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "生成视频的视野外世界演化",
+      "sum": "EvoWorld 研究生成视频模型在镜头外区域的世界演化一致性。",
+      "ta": "与实时渲染关联有限，仅作生成式世界建模趋势速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.06748"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "质量效应2早期过场动画曝光",
+      "sum": "动画师公开 BioWare 蒙特利尔内部 pre-alpha 过场动画预告及其制作方式。",
+      "ta": "过场动画分镜与镜头构建的行业参考，速览即可。",
+      "src": "80 Level · 11-09",
+      "url": "https://80.lv/articles/mass-effect-2-animator-shares-pre-alpha-cinematics-trailer/"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -193,15 +248,6 @@ window.INTEL_RECENT = {
       "ta": "风格化动画与VFX流程参考，速览。",
       "src": "80 Level · 11-05",
       "url": "https://80.lv/articles/take-a-look-behind-animation-in-k-da-s-firestarter-music-video/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "复古爆破机3D全流程",
-      "sum": "Kyryl Zlotnyk完整演示DuPont爆破机的建模、渲染与动画流程。",
-      "ta": "硬表面资产全流程案例，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/recreating-vintage-dynamite-blasting-machine-in-3d/"
     },
     {
       "cat": "biz",
@@ -973,15 +1019,6 @@ window.INTEL_RECENT = {
       "ta": "脚本语言与编辑器集成方案，对工具链设计有轻度参考。",
       "src": "80 Level · 10-29",
       "url": "https://80.lv/articles/second-life-wants-its-23-year-old-world-to-be-a-modern-game-platform/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "堕落之主2动画预览",
-      "sum": "《堕落之主 II》公开动画及其 WIP 片段，游戏明年发售。",
-      "ta": "动画表现速览，无技术细节可挖。",
-      "src": "80 Level · 10-29",
-      "url": "https://80.lv/articles/take-a-look-at-this-fantastic-animation-its-wip-from-lords-of-the-fallen-ii/"
     },
     {
       "cat": "tech",
@@ -1782,42 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "关注 cuTile 这种 Python 级并行编程模型，未来写自定义 GPU 算子可少碰底层 CUDA。",
       "src": "NVIDIA · 10-19",
       "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "LLM 生成 CAD 机构难达功能",
-      "sum": "论文研究功能性 CAD 设计，指出 LLM 生成的装配体视觉合理但常无法满足物理功能。",
-      "ta": "程序化生成若涉及机械结构，需警惕「看起来对」与「功能对」的差距。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.26861v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "开放形态几何风格迁移",
-      "sum": "从一种字形族学几何设计语言，迁移到希腊字形乃至完全不同的结构上。",
-      "ta": "几何风格迁移思路可参考用于程序化装饰/纹样跨形态复用。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.26820v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "PhysSkin++ 实时神经蒙皮",
-      "sum": "自监督学习连续神经蒙皮场，从静态几何构建形变子空间，实现可泛化实时物理动画。",
-      "ta": "实时物理形变泛化到多样 3D 形状，对角色/布料实时动画管线有参考价值。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.26067v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "矢量瓦片粒度影响压缩",
-      "sum": "实证研究 MLT 列式矢量瓦片的空间粒度如何影响地图渲染压缩率。",
-      "ta": "做大地图/地形分块数据时，瓦片粒度对压缩与流送的影响可借鉴。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.25755v1"
     }
   ]
 };
