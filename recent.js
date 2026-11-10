@@ -2,8 +2,146 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-09 15:49",
+  "updated": "2026-11-10 16:11",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "神经纹理压缩补上各向异性过滤",
+      "sum": "论文为神经纹理压缩引入显式LOD条件与各向异性过滤，弥补GPU纹理单元缺失的滤波。",
+      "ta": "材质/Shader性能方向值得精读：NTC若接入AF，直接影响贴图内存与采样开销的权衡。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12650v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "3DGS攻克SM级负载不均",
+      "sum": "论文针对3D高斯泼溅在GPU上的SM级负载不均衡提出优化，无需重训练或专用加速器。",
+      "ta": "实时渲染管线相关：3DGS调度优化思路可迁移到大规模植被/场景泼溅的性能调优。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12319v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "体积光传输免路径实时推断",
+      "sum": "提出用低成本场景特征与统计量实时重建体积介质下的像素辐射，替代蒙特卡洛降噪。",
+      "ta": "Niagara流体/体积特效方向必看：无路径的实时体积光照方案可能改变雾效与体积渲染成本结构。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12103v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "曲线狄拉克质量的卷积微分",
+      "sum": "论文提出Spaghetti Splatting，用卷积对点线三角等图元定义的狄拉克质量做可微体渲染。",
+      "ta": "关注图元级可微渲染的数学处理，对程序化几何重建管线有潜在参考。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12716v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "可微物理仿真梯度综述",
+      "sum": "系统梳理可微物理仿真中各引擎所微分的数学对象差异及其对梯度的影响。",
+      "ta": "做程序化/物理驱动动画时，可据此判断不同仿真器的梯度语义与优化适用性。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12162v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "建筑纹理代理模型一体化生成",
+      "sum": "提出将几何抽象与纹理生成合并的建筑纹理代理生成方法，替代串行流水线。",
+      "ta": "程序化场景生成相关：建筑代理的几何+纹理联合生成可启发大场景LOD资产管线。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12077v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "文本生成可仿真形变3D场景",
+      "sum": "SoftPAT3D将布料、玩偶、绳索等形变体生成为物理有效、可直接仿真的3D场景。",
+      "ta": "3D生成与仿真衔接：形变体生成即仿真就绪，对道具/场景资产生成流程有参考价值。",
+      "src": "arXiv · cs.GR · 11-08",
+      "url": "https://arxiv.org/abs/2611.11087v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "贝塞尔泼溅改进笔触渲染",
+      "sum": "提出带结构初始化的二次贝塞尔泼溅，缓解笔触渲染中图元碎片化与缺陷被遮盖问题。",
+      "ta": "非真实感渲染方向可速览，泼溅图元的结构化初始化思路可借鉴。",
+      "src": "arXiv · cs.GR · 11-07",
+      "url": "https://arxiv.org/abs/2611.10713v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "LiDAR骨架约束紧凑高斯泼溅",
+      "sum": "PLS-GS用概率LiDAR骨架引导3DGS，得到更紧凑、贴合表面的高斯表示。",
+      "ta": "若涉及扫描资产重建，LiDAR约束可提升几何贴合度并压缩高斯数量。",
+      "src": "arXiv · cs.GR · 11-07",
+      "url": "https://arxiv.org/abs/2611.10699v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "潜在动作世界模型跨体型迁移",
+      "sum": "实证研究无标签潜在动作世界模型中，动作能否在不同2D角色体型间迁移。",
+      "ta": "角色动画方向可关注：跨体型动作迁移若成立，可简化多角色动画复用。",
+      "src": "arXiv · cs.GR · 11-07",
+      "url": "https://arxiv.org/abs/2611.10523v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "世界模型测试时学新游戏机制",
+      "sum": "研究世界模型需要多少曝光才能在测试时学会未见过的游戏机制。",
+      "ta": "与游戏AI/世界模型相关，可了解其对游戏机制泛化的评估方式。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.12324"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "ArtStation上线AI声明与过滤",
+      "sum": "ArtStation新增生成式AI使用声明与举报机制，用户可自选AI内容可见度。",
+      "ta": "资产参考与作品集平台规则变化，影响素材溯源与AI标注合规习惯。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/artstation-adds-ai-declarations-default-ai-filtering-for-artwork/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance手绘基础生成器教程",
+      "sum": "Theresa Schlag分享用Substance 3D Designer制作手绘基础生成器的流程与难点。",
+      "ta": "程序化材质工作流参考：渐变与图结构处理经验可直接用于植被/地表材质生成。",
+      "src": "80 Level · 11-09",
+      "url": "https://80.lv/articles/how-to-make-hand-painted-base-generator-in-substance-3d-designer/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush与Marmoset角色工作流",
+      "sum": "Jessie Chan分享街霸6 A.K.I.同人流程：对称低模联动高模雕刻，再于Marmoset打光。",
+      "ta": "角色资产速览，低模与高模联动便于贴图制作的做法可借鉴。",
+      "src": "80 Level · 11-09",
+      "url": "https://80.lv/articles/reimagining-street-fighter-6-s-a-k-i-in-zbrush-marmoset-toolbag/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "星战战术新作工作室裁员",
+      "sum": "报道称《Star Wars Zero Company》开发商Bit Reactor裁减数量不明员工。",
+      "ta": "行业动态速览，反映中型工作室项目后的组织波动。",
+      "src": "Game Developer · 11-09",
+      "url": "https://www.gamedeveloper.com/business/report-star-wars-zero-company-developer-bitreactor-lays-off-an-unspecified-number-of-staff"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -22,15 +160,6 @@ window.INTEL_RECENT = {
       "ta": "角色动画后处理思路，可参考其软接触预算约束用于布料/植被与角色交互的穿插处理。",
       "src": "arXiv · cs.GR · 11-06",
       "url": "https://arxiv.org/abs/2611.09693v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3D 网格几何纹理分割",
-      "sum": "针对 3D 模型中级几何纹理模式的分割方法，弥补语义部件分割的不足。",
-      "ta": "几何纹理识别可用于程序化植被/岩石表面细节的自动分类与材质分配。",
-      "src": "arXiv · cs.GR · 11-06",
-      "url": "https://arxiv.org/abs/2611.08897v1"
     },
     {
       "cat": "ai",
@@ -903,16 +1032,6 @@ window.INTEL_RECENT = {
       "url": "https://arxiv.org/abs/2610.40599v1"
     },
     {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 2,
-      "title": "Substance 烘焙流程重做",
-      "sum": "Adobe 重构 Painter 烘焙工作流，新增 cage painting 交互与技术实现。",
-      "ta": "烘焙是材质管线瓶颈，cage 手绘方式直接影响高模到低模的法线质量与迭代速度。",
-      "src": "80 Level · 10-29",
-      "url": "https://80.lv/articles/adobe-explains-how-it-rebuilt-substance-3d-painter-s-baking-workflow/"
-    },
-    {
       "cat": "gfx",
       "imp": "mid",
       "title": "鱼眼全视场高斯泼溅",
@@ -1701,124 +1820,6 @@ window.INTEL_RECENT = {
       "ta": "3DGS 重建质量与冗余高斯问题的直接改进点，做扫描/资产重建流程值得读。",
       "src": "arXiv · cs.GR · 10-19",
       "url": "https://arxiv.org/abs/2610.27108v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "视频动作迁移到任意骨架",
-      "sum": "提出联合生成 3D 运动与视频的方法，可把视频中的动作重定向到任意 3D 骨架资产。",
-      "ta": "若落地可打通视频参考到骨骼动画的管线，对程序化动画与动捕替代有想象空间。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28632v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "精灵动画神经方向帧生成",
-      "sum": "面向游戏精灵动画，提出可控方向帧生成，支持中间帧插值与向前外推。",
-      "ta": "2D 序列帧工作流的自动化补帧方向，可关注其外推能力对循环动画的适用性。",
-      "src": "arXiv · cs.GR · 10-19",
-      "url": "https://arxiv.org/abs/2610.27253v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "几何感知模型排布物体",
-      "sum": "GALA 用几何感知语言模型推理支撑、包含等细粒度约束，实现可控 3D 场景物体摆放。",
-      "ta": "程序化场景布置的语义约束求解思路，对植被/道具散布规则设计有借鉴。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28280v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "NeRF 自监督几何正则",
-      "sum": "提出跨射线自监督一致性正则，缓解 vanilla NeRF 密度场几何噪声与不准。",
-      "ta": "NeRF 几何质量基础改进，做体积重建或深度提取时可留意。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.27776v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "LiDAR 神经隐式能量优化",
-      "sum": "针对稀疏噪声 LiDAR 输入，用神经隐式能量优化抑制 SDF 抖动与伪影。",
-      "ta": "偏测绘/大场景重建，与游戏管线关联较弱，速览即可。",
-      "src": "arXiv · cs.GR · 10-20",
-      "url": "https://arxiv.org/abs/2610.28598v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "少步生成式参考渲染",
-      "sum": "SolarRenderer 提出少步数的生成式参考渲染方法。",
-      "ta": "少步扩散用于渲染出图，关注其是否能进入概念/参考图快速迭代流程。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.28630"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "可动画高斯化身查询",
-      "sum": "HumanSkill-4D 实现免训练的语言查询时空可动画高斯化身。",
-      "ta": "数字人/化身方向，与植被和特效本职距离较远，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.24452"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型校正训练",
-      "sum": "提出面向扩散模型的校正训练方法。",
-      "ta": "通用扩散训练技巧，暂无明确引擎/实时关联，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.14136"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "新维加斯模组加路径追踪",
-      "sum": "WIP 模组为《辐射：新维加斯》加入路径追踪、物理天空体积云与真实光源改造。",
-      "ta": "老引擎改造案例，可看其光源与天空系统替换手法对自研管线的启发。",
-      "src": "80 Level · 10-20",
-      "url": "https://80.lv/articles/this-wip-mod-adds-path-tracing-to-fallout-new-vegas/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Plasticity 2026.2 发布",
-      "sum": "Plasticity 2026.2 新增曲率分析着色器、边对齐选项与 PolySplines 控制点编辑。",
-      "ta": "CAD 建模工具更新，曲率分析着色器对硬表面建模检查有用。",
-      "src": "80 Level · 10-20",
-      "url": "https://80.lv/articles/3d-modeling-cad-software-plasticity-2026-2-has-been-released/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Fuse Games 谈联合开发框架",
-      "sum": "Fuse Games CEO 拆解《星球大战：银河赛车》的分布式联合开发框架。",
-      "ta": "制作管理向内容，关注跨团队协作分工方式即可。",
-      "src": "Game Developer · 10-20",
-      "url": "https://www.gamedeveloper.com/production/fuse-games-ceo-breaks-down-codev-framework-for-star-wars-galactic-racer"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "开发者警告发行合同陷阱",
-      "sum": "Innersloth 联合创始人提醒开发者市面上存在大量糟糕的发行交易。",
-      "ta": "商务向提醒，与 TA 技术工作无直接关联，速览。",
-      "src": "Game Developer · 10-20",
-      "url": "https://www.gamedeveloper.com/business/outersloth-co-founder-warns-devs-there-are-some-very-bad-deals-out-there-"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "CUDA Tile 加速 Mamba-2 前向",
-      "sum": "NVIDIA 用 Python DSL cuTile 编写 Mamba-2 前向核，自动调用 GPU 高级硬件能力。",
-      "ta": "关注 cuTile 这种 Python 级并行编程模型，未来写自定义 GPU 算子可少碰底层 CUDA。",
-      "src": "NVIDIA · 10-19",
-      "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/"
     }
   ]
 };

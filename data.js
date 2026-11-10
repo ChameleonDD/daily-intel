@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月9日 · 周一",
+  "date": "2026年11月10日 · 周二",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>NanoVDB 支持动态体素网格</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>神经纹理压缩补上各向异性过滤</em> / <em>3DGS攻克SM级负载不均</em> / <em>体积光传输免路径实时推断</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -130,65 +130,157 @@ window.INTEL_DATA = {
       "cat": "gfx",
       "imp": "hi",
       "rank": 1,
-      "title": "NanoVDB 支持动态体素网格",
-      "sum": "NanoVDB 新增 GPU 原生拓扑动态更新与体素顺序访问范式，加速稀疏网格算子。",
-      "ta": "稀疏体素/体积特效的底层数据结构升级，值得评估对流体烟雾与程序化体积生成的性能收益。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08665v1"
+      "title": "神经纹理压缩补上各向异性过滤",
+      "sum": "论文为神经纹理压缩引入显式LOD条件与各向异性过滤，弥补GPU纹理单元缺失的滤波。",
+      "ta": "材质/Shader性能方向值得精读：NTC若接入AF，直接影响贴图内存与采样开销的权衡。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12650v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "3DGS攻克SM级负载不均",
+      "sum": "论文针对3D高斯泼溅在GPU上的SM级负载不均衡提出优化，无需重训练或专用加速器。",
+      "ta": "实时渲染管线相关：3DGS调度优化思路可迁移到大规模植被/场景泼溅的性能调优。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12319v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 3,
+      "title": "体积光传输免路径实时推断",
+      "sum": "提出用低成本场景特征与统计量实时重建体积介质下的像素辐射，替代蒙特卡洛降噪。",
+      "ta": "Niagara流体/体积特效方向必看：无路径的实时体积光照方案可能改变雾效与体积渲染成本结构。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12103v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "蒙皮角色自穿插实时修复",
-      "sum": "提出免训练后处理，通过姿态修正与有界蒙皮压缩减少角色自穿插伪影。",
-      "ta": "角色动画后处理思路，可参考其软接触预算约束用于布料/植被与角色交互的穿插处理。",
-      "src": "arXiv · cs.GR · 11-06",
-      "url": "https://arxiv.org/abs/2611.09693v1"
+      "title": "曲线狄拉克质量的卷积微分",
+      "sum": "论文提出Spaghetti Splatting，用卷积对点线三角等图元定义的狄拉克质量做可微体渲染。",
+      "ta": "关注图元级可微渲染的数学处理，对程序化几何重建管线有潜在参考。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12716v1"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "3D 网格几何纹理分割",
-      "sum": "针对 3D 模型中级几何纹理模式的分割方法，弥补语义部件分割的不足。",
-      "ta": "几何纹理识别可用于程序化植被/岩石表面细节的自动分类与材质分配。",
-      "src": "arXiv · cs.GR · 11-06",
-      "url": "https://arxiv.org/abs/2611.08897v1"
+      "title": "可微物理仿真梯度综述",
+      "sum": "系统梳理可微物理仿真中各引擎所微分的数学对象差异及其对梯度的影响。",
+      "ta": "做程序化/物理驱动动画时，可据此判断不同仿真器的梯度语义与优化适用性。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12162v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "建筑纹理代理模型一体化生成",
+      "sum": "提出将几何抽象与纹理生成合并的建筑纹理代理生成方法，替代串行流水线。",
+      "ta": "程序化场景生成相关：建筑代理的几何+纹理联合生成可启发大场景LOD资产管线。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.12077v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "自然语言实时调度人群仿真",
-      "sum": "CrowdDirector 用自然语言指令在仿真运行时编排人群，兼顾灵活性与低延迟。",
-      "ta": "运行时人群/群集编排思路，可借鉴到植被风场或 Niagara 群集行为的动态指令控制。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08763v1"
+      "title": "文本生成可仿真形变3D场景",
+      "sum": "SoftPAT3D将布料、玩偶、绳索等形变体生成为物理有效、可直接仿真的3D场景。",
+      "ta": "3D生成与仿真衔接：形变体生成即仿真就绪，对道具/场景资产生成流程有参考价值。",
+      "src": "arXiv · cs.GR · 11-08",
+      "url": "https://arxiv.org/abs/2611.11087v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "贝塞尔泼溅改进笔触渲染",
+      "sum": "提出带结构初始化的二次贝塞尔泼溅，缓解笔触渲染中图元碎片化与缺陷被遮盖问题。",
+      "ta": "非真实感渲染方向可速览，泼溅图元的结构化初始化思路可借鉴。",
+      "src": "arXiv · cs.GR · 11-07",
+      "url": "https://arxiv.org/abs/2611.10713v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "LiDAR骨架约束紧凑高斯泼溅",
+      "sum": "PLS-GS用概率LiDAR骨架引导3DGS，得到更紧凑、贴合表面的高斯表示。",
+      "ta": "若涉及扫描资产重建，LiDAR约束可提升几何贴合度并压缩高斯数量。",
+      "src": "arXiv · cs.GR · 11-07",
+      "url": "https://arxiv.org/abs/2611.10699v1"
     },
     {
       "cat": "ai",
       "imp": "mid",
-      "title": "3D 创作编码智能体基准",
-      "sum": "Frontier3DBench 评测编码智能体在物体、场景与交互开放世界中的 3D 创作能力。",
-      "ta": "关注其场景与开放世界生成评测维度，可作为程序化生成工具链自动化能力的参照。",
+      "title": "潜在动作世界模型跨体型迁移",
+      "sum": "实证研究无标签潜在动作世界模型中，动作能否在不同2D角色体型间迁移。",
+      "ta": "角色动画方向可关注：跨体型动作迁移若成立，可简化多角色动画复用。",
+      "src": "arXiv · cs.GR · 11-07",
+      "url": "https://arxiv.org/abs/2611.10523v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "世界模型测试时学新游戏机制",
+      "sum": "研究世界模型需要多少曝光才能在测试时学会未见过的游戏机制。",
+      "ta": "与游戏AI/世界模型相关，可了解其对游戏机制泛化的评估方式。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.09017"
+      "url": "https://huggingface.co/papers/2611.12324"
     },
     {
-      "cat": "ai",
+      "cat": "flow",
+      "imp": "mid",
+      "title": "ArtStation上线AI声明与过滤",
+      "sum": "ArtStation新增生成式AI使用声明与举报机制，用户可自选AI内容可见度。",
+      "ta": "资产参考与作品集平台规则变化，影响素材溯源与AI标注合规习惯。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/artstation-adds-ai-declarations-default-ai-filtering-for-artwork/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Substance手绘基础生成器教程",
+      "sum": "Theresa Schlag分享用Substance 3D Designer制作手绘基础生成器的流程与难点。",
+      "ta": "程序化材质工作流参考：渐变与图结构处理经验可直接用于植被/地表材质生成。",
+      "src": "80 Level · 11-09",
+      "url": "https://80.lv/articles/how-to-make-hand-painted-base-generator-in-substance-3d-designer/"
+    },
+    {
+      "cat": "flow",
       "imp": "lo",
-      "title": "生成视频的视野外世界演化",
-      "sum": "EvoWorld 研究生成视频模型在镜头外区域的世界演化一致性。",
-      "ta": "与实时渲染关联有限，仅作生成式世界建模趋势速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.06748"
+      "title": "月光奇幻角色3D制作解析",
+      "sum": "Alex Borkovskiy谈Galatea项目角色服饰鞋履的精细贴图与保持风格化的灯光设置。",
+      "ta": "角色向速览，灯光避免贴图塑料感的处理可作参考。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/making-an-ethereal-moonlight-inspired-fantasy-character-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "手绘风3D角色重制展示",
+      "sum": "以手绘3D风格重制《迷宫饭》莱欧斯，呈现战棋游戏质感。",
+      "ta": "风格化渲染速览，可看手绘质感在3D中的呈现方式。",
+      "src": "80 Level · 11-09",
+      "url": "https://80.lv/articles/dungeon-meshi-s-laios-reimagined-in-beautiful-hand-drawn-3d-style/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush与Marmoset角色工作流",
+      "sum": "Jessie Chan分享街霸6 A.K.I.同人流程：对称低模联动高模雕刻，再于Marmoset打光。",
+      "ta": "角色资产速览，低模与高模联动便于贴图制作的做法可借鉴。",
+      "src": "80 Level · 11-09",
+      "url": "https://80.lv/articles/reimagining-street-fighter-6-s-a-k-i-in-zbrush-marmoset-toolbag/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "质量效应2早期过场动画曝光",
-      "sum": "动画师公开 BioWare 蒙特利尔内部 pre-alpha 过场动画预告及其制作方式。",
-      "ta": "过场动画分镜与镜头构建的行业参考，速览即可。",
-      "src": "80 Level · 11-09",
-      "url": "https://80.lv/articles/mass-effect-2-animator-shares-pre-alpha-cinematics-trailer/"
+      "title": "星战战术新作工作室裁员",
+      "sum": "报道称《Star Wars Zero Company》开发商Bit Reactor裁减数量不明员工。",
+      "ta": "行业动态速览，反映中型工作室项目后的组织波动。",
+      "src": "Game Developer · 11-09",
+      "url": "https://www.gamedeveloper.com/business/report-star-wars-zero-company-developer-bitreactor-lays-off-an-unspecified-number-of-staff"
     }
   ],
   "flashbackTitle": "",
