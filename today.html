@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月10日 · 周二",
+  "date": "2026年11月11日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>神经纹理压缩补上各向异性过滤</em> / <em>3DGS攻克SM级负载不均</em> / <em>体积光传输免路径实时推断</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>UE5.9预览版发布</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -274,160 +274,167 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
+      "cat": "tech",
       "imp": "hi",
       "rank": 1,
-      "title": "神经纹理压缩补上各向异性过滤",
-      "sum": "论文为神经纹理压缩引入显式LOD条件与各向异性过滤，弥补GPU纹理单元缺失的滤波。",
-      "ta": "材质/Shader性能方向值得精读：NTC若接入AF，直接影响贴图内存与采样开销的权衡。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12650v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "3DGS攻克SM级负载不均",
-      "sum": "论文针对3D高斯泼溅在GPU上的SM级负载不均衡提出优化，无需重训练或专用加速器。",
-      "ta": "实时渲染管线相关：3DGS调度优化思路可迁移到大规模植被/场景泼溅的性能调优。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12319v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "体积光传输免路径实时推断",
-      "sum": "提出用低成本场景特征与统计量实时重建体积介质下的像素辐射，替代蒙特卡洛降噪。",
-      "ta": "Niagara流体/体积特效方向必看：无路径的实时体积光照方案可能改变雾效与体积渲染成本结构。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12103v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "曲线狄拉克质量的卷积微分",
-      "sum": "论文提出Spaghetti Splatting，用卷积对点线三角等图元定义的狄拉克质量做可微体渲染。",
-      "ta": "关注图元级可微渲染的数学处理，对程序化几何重建管线有潜在参考。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12716v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可微物理仿真梯度综述",
-      "sum": "系统梳理可微物理仿真中各引擎所微分的数学对象差异及其对梯度的影响。",
-      "ta": "做程序化/物理驱动动画时，可据此判断不同仿真器的梯度语义与优化适用性。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12162v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "建筑纹理代理模型一体化生成",
-      "sum": "提出将几何抽象与纹理生成合并的建筑纹理代理生成方法，替代串行流水线。",
-      "ta": "程序化场景生成相关：建筑代理的几何+纹理联合生成可启发大场景LOD资产管线。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12077v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "文本生成可仿真形变3D场景",
-      "sum": "SoftPAT3D将布料、玩偶、绳索等形变体生成为物理有效、可直接仿真的3D场景。",
-      "ta": "3D生成与仿真衔接：形变体生成即仿真就绪，对道具/场景资产生成流程有参考价值。",
-      "src": "arXiv · cs.GR · 11-08",
-      "url": "https://arxiv.org/abs/2611.11087v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "贝塞尔泼溅改进笔触渲染",
-      "sum": "提出带结构初始化的二次贝塞尔泼溅，缓解笔触渲染中图元碎片化与缺陷被遮盖问题。",
-      "ta": "非真实感渲染方向可速览，泼溅图元的结构化初始化思路可借鉴。",
-      "src": "arXiv · cs.GR · 11-07",
-      "url": "https://arxiv.org/abs/2611.10713v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "LiDAR骨架约束紧凑高斯泼溅",
-      "sum": "PLS-GS用概率LiDAR骨架引导3DGS，得到更紧凑、贴合表面的高斯表示。",
-      "ta": "若涉及扫描资产重建，LiDAR约束可提升几何贴合度并压缩高斯数量。",
-      "src": "arXiv · cs.GR · 11-07",
-      "url": "https://arxiv.org/abs/2611.10699v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "潜在动作世界模型跨体型迁移",
-      "sum": "实证研究无标签潜在动作世界模型中，动作能否在不同2D角色体型间迁移。",
-      "ta": "角色动画方向可关注：跨体型动作迁移若成立，可简化多角色动画复用。",
-      "src": "arXiv · cs.GR · 11-07",
-      "url": "https://arxiv.org/abs/2611.10523v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型测试时学新游戏机制",
-      "sum": "研究世界模型需要多少曝光才能在测试时学会未见过的游戏机制。",
-      "ta": "与游戏AI/世界模型相关，可了解其对游戏机制泛化的评估方式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.12324"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "ArtStation上线AI声明与过滤",
-      "sum": "ArtStation新增生成式AI使用声明与举报机制，用户可自选AI内容可见度。",
-      "ta": "资产参考与作品集平台规则变化，影响素材溯源与AI标注合规习惯。",
+      "title": "UE5.9预览版发布",
+      "sum": "UE 5.9预览版上线，含AI工作流增强、Web平台支持、渲染与动画更新。",
+      "ta": "引擎大版本预览，渲染与动画管线改动需第一时间评估对植被/材质/Niagara的兼容影响。",
       "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/artstation-adds-ai-declarations-default-ai-filtering-for-artwork/"
+      "url": "https://80.lv/articles/unreal-engine-5-9-preview-is-out-it-was-built-with-ai/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "实时皮肤渲染可微方法",
+      "sum": "提出轻量可微方法，直接估计适配游戏引擎近似着色器的次表面散射参数。",
+      "ta": "把离线逆向渲染参数直接映射到实时shader，对角色皮肤材质管线有参考价值。",
+      "src": "arXiv · cs.GR · 11-10",
+      "url": "https://arxiv.org/abs/2611.14451v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态微几何编译为神经纹理",
+      "sum": "Deformable Texture Maps将形变表面的细尺度几何编译进神经纹理，避免显式实例化。",
+      "ta": "布料等形变材质的微观外观压缩思路，可借鉴到植被/织物材质性能优化。",
+      "src": "arXiv · cs.GR · 11-10",
+      "url": "https://arxiv.org/abs/2611.13677v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "罗技360赛车展厅用UE5",
+      "sum": "UE服务伙伴用Lumen、Nanite、Sequencer与Pixel Streaming搭建浏览器可进的360赛车展厅。",
+      "ta": "Pixel Streaming+Lumen的商用落地案例，可看其大场景实时推流与光照取舍。",
+      "src": "Unreal Engine · 11-10",
+      "url": "https://www.unrealengine.com/spotlights/beyond-the-product-page-logitech-g-s-360-racing-studio"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Substance手绘基础生成器教程",
-      "sum": "Theresa Schlag分享用Substance 3D Designer制作手绘基础生成器的流程与难点。",
-      "ta": "程序化材质工作流参考：渐变与图结构处理经验可直接用于植被/地表材质生成。",
-      "src": "80 Level · 11-09",
-      "url": "https://80.lv/articles/how-to-make-hand-painted-base-generator-in-substance-3d-designer/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "月光奇幻角色3D制作解析",
-      "sum": "Alex Borkovskiy谈Galatea项目角色服饰鞋履的精细贴图与保持风格化的灯光设置。",
-      "ta": "角色向速览，灯光避免贴图塑料感的处理可作参考。",
+      "title": "Godot程序化低模树生成器",
+      "sum": "免费工具可在编辑器内生成各类树木，保存预设并导出带LOD与碰撞的资产。",
+      "ta": "程序化植被+LOD+碰撞一体化导出，与植被工具方向直接相关，可对比其生成策略。",
       "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/making-an-ethereal-moonlight-inspired-fantasy-character-in-3d/"
+      "url": "https://80.lv/articles/free-procedural-low-poly-tree-generator-for-godot/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "手绘风3D角色重制展示",
-      "sum": "以手绘3D风格重制《迷宫饭》莱欧斯，呈现战棋游戏质感。",
-      "ta": "风格化渲染速览，可看手绘质感在3D中的呈现方式。",
-      "src": "80 Level · 11-09",
-      "url": "https://80.lv/articles/dungeon-meshi-s-laios-reimagined-in-beautiful-hand-drawn-3d-style/"
+      "title": "Blender免费动漫发型工具",
+      "sum": "在头部绘制曲线即可生成干净四边面发型网格。",
+      "ta": "曲线转四边面网格的思路对程序化毛发/植被条带生成有借鉴。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/free-blender-tool-for-creating-stylized-anime-hair/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "ZBrush与Marmoset角色工作流",
-      "sum": "Jessie Chan分享街霸6 A.K.I.同人流程：对称低模联动高模雕刻，再于Marmoset打光。",
-      "ta": "角色资产速览，低模与高模联动便于贴图制作的做法可借鉴。",
-      "src": "80 Level · 11-09",
-      "url": "https://80.lv/articles/reimagining-street-fighter-6-s-a-k-i-in-zbrush-marmoset-toolbag/"
+      "title": "Blender赛璐璐街景流程",
+      "sum": "作者分享用Blender制作吉卜力风格地中海街景的赛璐璐着色工作流。",
+      "ta": "风格化卡通着色的材质搭建参考，可看其描边与色阶处理。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/this-blender-made-mediterranean-street-looks-straight-out-of-ghibli-movie/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "单骨骼驱动喷气引擎绑定",
+      "sum": "用单根骨骼控制整个喷气引擎所有运动的Blender绑定案例。",
+      "ta": "极简骨骼驱动的机械绑定思路，可参考到硬表面道具动画。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/real-world-jet-engine-recreated-with-intricate-blender-rig/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "程序化地牢设计经验谈",
+      "sum": "Bloody Hell Hotel开发者谈吸血鬼酒店沙盒机制与程序化地牢的设计方式。",
+      "ta": "程序化关卡生成的一线设计经验，与PCG工具思路可对照。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/bloody-hell-hotel-developer-on-making-a-vampire-management-sandbox/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "俯视恐怖氛围营造手法",
+      "sum": "前《小小梦魇》开发者谈用实拍特效恐怖、动画构图与环境光照营造不安感。",
+      "ta": "环境光照与镜头构图的具体做法，对氛围向场景打光有参考。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/end-of-abyss-devs-explain-how-they-made-top-down-horror-feel-unsettling/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "UE5动作肉鸽免费Demo",
+      "sum": "UE5砍杀游戏Sole Salvation推出免费Demo，即将迎来大更新。",
+      "ta": "UE5近战+远程战斗实现的小体量案例，可速览其特效表现。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/this-cosmic-horror-action-roguelite-combines-melee-ranged-combat/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "XR实时三维元胞自动机框架",
+      "sum": "提出统一交互框架，在XR硬件约束下协调3D元胞自动机的模拟、体数据管理与渲染。",
+      "ta": "体数据实时模拟与渲染的约束权衡，对体积特效有边缘参考。",
+      "src": "arXiv · cs.GR · 11-09",
+      "url": "https://arxiv.org/abs/2611.13296v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "GPU加速QP求解器",
+      "sum": "FAME-QP用CUDA图与融合核函数加速线性MPC的稠密二次规划求解。",
+      "ta": "GPU求解器工程优化手法，可参考到仿真类计算任务的核融合思路。",
+      "src": "arXiv · cs.GR · 11-10",
+      "url": "https://arxiv.org/abs/2611.13766v1"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "GTA6预载提前九天",
+      "sum": "GTA6成PS Store史上预购最多游戏，索尼与Rockstar开放提前九天预载。",
+      "ta": "行业级发行事件，关注其体量与上线节奏对同期项目排期的影响。",
+      "src": "PlayStation Blog · 11-10",
+      "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "星战战术新作工作室裁员",
-      "sum": "报道称《Star Wars Zero Company》开发商Bit Reactor裁减数量不明员工。",
-      "ta": "行业动态速览，反映中型工作室项目后的组织波动。",
-      "src": "Game Developer · 11-09",
-      "url": "https://www.gamedeveloper.com/business/report-star-wars-zero-company-developer-bitreactor-lays-off-an-unspecified-number-of-staff"
+      "title": "GTA6预购超预期",
+      "sum": "Take-Two CEO称GTA6预购量超出预期，财报整体平稳。",
+      "ta": "与上条同源事件，商业侧补充，速览即可。",
+      "src": "Game Developer · 11-10",
+      "url": "https://www.gamedeveloper.com/business/take-two-financials-are-steady-while-the-ceo-claims-that-grand-theft-auto-vi-pre-orders-are-exceeding-expectations"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "索尼Fairgames项目取消",
+      "sum": "索尼服务型劫案模拟游戏Fairgames被取消，不计划裁员。",
+      "ta": "服务型游戏收缩的又一信号，速览行业动向。",
+      "src": "80 Level · 11-11",
+      "url": "https://80.lv/articles/sony-s-live-service-heist-simulator-fairgames-has-been-canceled/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "瑞奇与叮当手游将停服",
+      "sum": "Ratchet & Clank: Ranger Rumble软发布一年后停运，11月下架、次年5月关服。",
+      "ta": "服务型项目生命周期案例，速览。",
+      "src": "80 Level · 11-10",
+      "url": "https://80.lv/articles/ratchet-clank-ranger-rumble-is-shutting-down-a-year-after-its-soft-launch/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PS Plus十一月阵容",
+      "sum": "十一月PS Plus游戏目录含《死亡搁浅2》《如龙8外传》等。",
+      "ta": "订阅阵容信息，速览即可。",
+      "src": "PlayStation Blog · 11-10",
+      "url": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
     }
   ],
   "flashbackTitle": "",
@@ -442,10 +449,9 @@ window.INTEL_DATA = {
       "HuggingFace",
       "80 Level",
       "Game Developer",
-      "Tech-Artists",
       "X（沿用上次本机抓取）"
     ],
-    "missed": ""
+    "missed": "未覆盖：Tech-Artists。"
   },
   "xStale": false
 };
