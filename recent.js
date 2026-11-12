@@ -2,8 +2,62 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-11 15:39",
+  "updated": "2026-11-12 16:08",
   "cards": [
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "GTAGym 提供 3A 任务评测环境",
+      "sum": "HuggingFace 新论文发布 GTAGym，用真实 3A 游戏任务做强化学习评测环境。",
+      "ta": "可关注其任务定义方式，作为游戏内 AI 行为评测或自动化测试环境的参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.13028"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 动画可像网格一样编辑",
+      "sum": "一款免费工具让 Blender 动画编辑无需切换 Graph Editor 操作 F-curve。",
+      "ta": "若团队有 Blender 预研或资产管线，这类工具能降低动画微调成本。",
+      "src": "80 Level · 11-11",
+      "url": "https://80.lv/articles/edit-your-blender-animations-just-like-editing-mesh-with-this-free-tool/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Tripo AI 办 3D 世界黑客松",
+      "sum": "Tripo AI 首届 3D World Hackathon 吸引 78 国 2000 多支队伍，产出游戏与 VR 体验。",
+      "ta": "可速览参赛作品，观察 AI 生成 3D 资产在可玩场景中的实际落地形态。",
+      "src": "80 Level · 11-11",
+      "url": "https://80.lv/articles/creators-developed-playable-worlds-vr-games-digital-pets-for-tripo-ai-s-first-3d-world-hackathon/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "风格化法式小屋场景拆解",
+      "sum": "Eloi Landes 拆解法式阿尔卑斯小屋项目，涵盖风格化雕刻、手绘贴图与氛围光照。",
+      "ta": "环境美术流程参考，可看其风格化雕刻与手绘贴图如何配合光照出氛围。",
+      "src": "80 Level · 11-11",
+      "url": "https://80.lv/articles/building-wayfinder-inspired-stylized-french-cottage-environment/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "塞尔达重制版首周破五百万",
+      "sum": "《时之笛》重制版四天销量超 500 万，成为 Switch 2 第二畅销游戏。",
+      "ta": "行业风向参考：经典 IP 重制在 Switch 2 上的强势表现。",
+      "src": "Game Developer · 11-11",
+      "url": "https://www.gamedeveloper.com/business/the-legend-of-zelda-ocarina-of-time-exceeds-5-million-copies-solid-in-first-week"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PlayStation 取消 Fairgames",
+      "sum": "报道称 2023 年公布的多人射击游戏 Fairgames 被取消，但无裁员。",
+      "ta": "项目取消的行业动态，速览即可。",
+      "src": "Game Developer · 11-11",
+      "url": "https://www.gamedeveloper.com/console/report-playstation-s-fairgame-cancelled-but-haven-studios-remains"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -49,15 +103,6 @@ window.INTEL_RECENT = {
       "ta": "程序化植被+LOD+碰撞一体化导出，与植被工具方向直接相关，可对比其生成策略。",
       "src": "80 Level · 11-10",
       "url": "https://80.lv/articles/free-procedural-low-poly-tree-generator-for-godot/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender免费动漫发型工具",
-      "sum": "在头部绘制曲线即可生成干净四边面发型网格。",
-      "ta": "曲线转四边面网格的思路对程序化毛发/植被条带生成有借鉴。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/free-blender-tool-for-creating-stylized-anime-hair/"
     },
     {
       "cat": "flow",
@@ -1773,51 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "2D转3D的角色还原流程，可看其造型与材质简化取舍。",
       "src": "80 Level · 10-22",
       "url": "https://80.lv/articles/these-2d-characters-from-popular-manga-are-made-in-3d-with-blender/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox新主机与掌机传闻",
-      "sum": "报道称Xbox Helix主机价格已有估算，掌机计划2027年，另有Game Pass调整与裁员。",
-      "ta": "平台周期与订阅策略变化，间接影响项目排期与目标硬件规格。",
-      "src": "80 Level · 10-22",
-      "url": "https://80.lv/articles/xbox-helix-console-price-reportedly-estimated-handheld-planned-for-2027/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "被取消质量效应预告泄露",
-      "sum": "BioWare已取消的质量效应项目预告片疑似泄露，曝光标题与剧情设定。",
-      "ta": "纯行业八卦，对技术工作无直接参考。",
-      "src": "80 Level · 10-22",
-      "url": "https://80.lv/articles/trailer-for-bioware-s-canceled-mass-effect-game-apparently-leaks-online/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "狼人内部重制思路披露",
-      "sum": "Telltale创意副总裁谈《我们之中的狼》重制版如何在保留原作内核前提下提升表现。",
-      "ta": "重制项目的取舍思路，可参考美术升级与保真之间的平衡。",
-      "src": "80 Level · 10-22",
-      "url": "https://80.lv/articles/telltale-aims-to-make-the-wolf-among-us-remaster-shine-without-changing-the-heart-of-the-game/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "VR工作室转向XR新作",
-      "sum": "Owlchemy Labs新作Hyper Visor将作为HTC XREAL Aura头显首发游戏。",
-      "ta": "XR平台动向，关注其对渲染性能预算的额外约束。",
-      "src": "Game Developer · 10-22",
-      "url": "https://www.gamedeveloper.com/extended-reality/vr-pioneer-owlchemy-labs-pivots-to-xr-for-its-next-release"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "核心团队话语的代价",
-      "sum": "评论文章讨论游戏开发中过度强调核心团队会如何影响流程与其他开发者。",
-      "ta": "团队协作语境，与具体技术无关，速览即可。",
-      "src": "Game Developer · 10-22",
-      "url": "https://www.gamedeveloper.com/production/opinion-why-prioritizing-success-of-core-teams-risks-devaluing-other-devs"
     }
   ]
 };

@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月11日 · 周三",
+  "date": "2026年11月12日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>UE5.9预览版发布</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>GTAGym 提供 3A 任务评测环境</em> / <em>Blender 动画可像网格一样编辑</em> / <em>Tripo AI 办 3D 世界黑客松</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,167 +127,58 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "UE5.9预览版发布",
-      "sum": "UE 5.9预览版上线，含AI工作流增强、Web平台支持、渲染与动画更新。",
-      "ta": "引擎大版本预览，渲染与动画管线改动需第一时间评估对植被/材质/Niagara的兼容影响。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/unreal-engine-5-9-preview-is-out-it-was-built-with-ai/"
-    },
-    {
-      "cat": "gfx",
+      "cat": "ai",
       "imp": "mid",
-      "title": "实时皮肤渲染可微方法",
-      "sum": "提出轻量可微方法，直接估计适配游戏引擎近似着色器的次表面散射参数。",
-      "ta": "把离线逆向渲染参数直接映射到实时shader，对角色皮肤材质管线有参考价值。",
-      "src": "arXiv · cs.GR · 11-10",
-      "url": "https://arxiv.org/abs/2611.14451v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动态微几何编译为神经纹理",
-      "sum": "Deformable Texture Maps将形变表面的细尺度几何编译进神经纹理，避免显式实例化。",
-      "ta": "布料等形变材质的微观外观压缩思路，可借鉴到植被/织物材质性能优化。",
-      "src": "arXiv · cs.GR · 11-10",
-      "url": "https://arxiv.org/abs/2611.13677v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "罗技360赛车展厅用UE5",
-      "sum": "UE服务伙伴用Lumen、Nanite、Sequencer与Pixel Streaming搭建浏览器可进的360赛车展厅。",
-      "ta": "Pixel Streaming+Lumen的商用落地案例，可看其大场景实时推流与光照取舍。",
-      "src": "Unreal Engine · 11-10",
-      "url": "https://www.unrealengine.com/spotlights/beyond-the-product-page-logitech-g-s-360-racing-studio"
+      "title": "GTAGym 提供 3A 任务评测环境",
+      "sum": "HuggingFace 新论文发布 GTAGym，用真实 3A 游戏任务做强化学习评测环境。",
+      "ta": "可关注其任务定义方式，作为游戏内 AI 行为评测或自动化测试环境的参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.13028"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Godot程序化低模树生成器",
-      "sum": "免费工具可在编辑器内生成各类树木，保存预设并导出带LOD与碰撞的资产。",
-      "ta": "程序化植被+LOD+碰撞一体化导出，与植被工具方向直接相关，可对比其生成策略。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/free-procedural-low-poly-tree-generator-for-godot/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender免费动漫发型工具",
-      "sum": "在头部绘制曲线即可生成干净四边面发型网格。",
-      "ta": "曲线转四边面网格的思路对程序化毛发/植被条带生成有借鉴。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/free-blender-tool-for-creating-stylized-anime-hair/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender赛璐璐街景流程",
-      "sum": "作者分享用Blender制作吉卜力风格地中海街景的赛璐璐着色工作流。",
-      "ta": "风格化卡通着色的材质搭建参考，可看其描边与色阶处理。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/this-blender-made-mediterranean-street-looks-straight-out-of-ghibli-movie/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "单骨骼驱动喷气引擎绑定",
-      "sum": "用单根骨骼控制整个喷气引擎所有运动的Blender绑定案例。",
-      "ta": "极简骨骼驱动的机械绑定思路，可参考到硬表面道具动画。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/real-world-jet-engine-recreated-with-intricate-blender-rig/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "程序化地牢设计经验谈",
-      "sum": "Bloody Hell Hotel开发者谈吸血鬼酒店沙盒机制与程序化地牢的设计方式。",
-      "ta": "程序化关卡生成的一线设计经验，与PCG工具思路可对照。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/bloody-hell-hotel-developer-on-making-a-vampire-management-sandbox/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "俯视恐怖氛围营造手法",
-      "sum": "前《小小梦魇》开发者谈用实拍特效恐怖、动画构图与环境光照营造不安感。",
-      "ta": "环境光照与镜头构图的具体做法，对氛围向场景打光有参考。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/end-of-abyss-devs-explain-how-they-made-top-down-horror-feel-unsettling/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "UE5动作肉鸽免费Demo",
-      "sum": "UE5砍杀游戏Sole Salvation推出免费Demo，即将迎来大更新。",
-      "ta": "UE5近战+远程战斗实现的小体量案例，可速览其特效表现。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/this-cosmic-horror-action-roguelite-combines-melee-ranged-combat/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "XR实时三维元胞自动机框架",
-      "sum": "提出统一交互框架，在XR硬件约束下协调3D元胞自动机的模拟、体数据管理与渲染。",
-      "ta": "体数据实时模拟与渲染的约束权衡，对体积特效有边缘参考。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.13296v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "GPU加速QP求解器",
-      "sum": "FAME-QP用CUDA图与融合核函数加速线性MPC的稠密二次规划求解。",
-      "ta": "GPU求解器工程优化手法，可参考到仿真类计算任务的核融合思路。",
-      "src": "arXiv · cs.GR · 11-10",
-      "url": "https://arxiv.org/abs/2611.13766v1"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "GTA6预载提前九天",
-      "sum": "GTA6成PS Store史上预购最多游戏，索尼与Rockstar开放提前九天预载。",
-      "ta": "行业级发行事件，关注其体量与上线节奏对同期项目排期的影响。",
-      "src": "PlayStation Blog · 11-10",
-      "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "GTA6预购超预期",
-      "sum": "Take-Two CEO称GTA6预购量超出预期，财报整体平稳。",
-      "ta": "与上条同源事件，商业侧补充，速览即可。",
-      "src": "Game Developer · 11-10",
-      "url": "https://www.gamedeveloper.com/business/take-two-financials-are-steady-while-the-ceo-claims-that-grand-theft-auto-vi-pre-orders-are-exceeding-expectations"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "索尼Fairgames项目取消",
-      "sum": "索尼服务型劫案模拟游戏Fairgames被取消，不计划裁员。",
-      "ta": "服务型游戏收缩的又一信号，速览行业动向。",
+      "title": "Blender 动画可像网格一样编辑",
+      "sum": "一款免费工具让 Blender 动画编辑无需切换 Graph Editor 操作 F-curve。",
+      "ta": "若团队有 Blender 预研或资产管线，这类工具能降低动画微调成本。",
       "src": "80 Level · 11-11",
-      "url": "https://80.lv/articles/sony-s-live-service-heist-simulator-fairgames-has-been-canceled/"
+      "url": "https://80.lv/articles/edit-your-blender-animations-just-like-editing-mesh-with-this-free-tool/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Tripo AI 办 3D 世界黑客松",
+      "sum": "Tripo AI 首届 3D World Hackathon 吸引 78 国 2000 多支队伍，产出游戏与 VR 体验。",
+      "ta": "可速览参赛作品，观察 AI 生成 3D 资产在可玩场景中的实际落地形态。",
+      "src": "80 Level · 11-11",
+      "url": "https://80.lv/articles/creators-developed-playable-worlds-vr-games-digital-pets-for-tripo-ai-s-first-3d-world-hackathon/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "风格化法式小屋场景拆解",
+      "sum": "Eloi Landes 拆解法式阿尔卑斯小屋项目，涵盖风格化雕刻、手绘贴图与氛围光照。",
+      "ta": "环境美术流程参考，可看其风格化雕刻与手绘贴图如何配合光照出氛围。",
+      "src": "80 Level · 11-11",
+      "url": "https://80.lv/articles/building-wayfinder-inspired-stylized-french-cottage-environment/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "塞尔达重制版首周破五百万",
+      "sum": "《时之笛》重制版四天销量超 500 万，成为 Switch 2 第二畅销游戏。",
+      "ta": "行业风向参考：经典 IP 重制在 Switch 2 上的强势表现。",
+      "src": "Game Developer · 11-11",
+      "url": "https://www.gamedeveloper.com/business/the-legend-of-zelda-ocarina-of-time-exceeds-5-million-copies-solid-in-first-week"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "瑞奇与叮当手游将停服",
-      "sum": "Ratchet & Clank: Ranger Rumble软发布一年后停运，11月下架、次年5月关服。",
-      "ta": "服务型项目生命周期案例，速览。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/ratchet-clank-ranger-rumble-is-shutting-down-a-year-after-its-soft-launch/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS Plus十一月阵容",
-      "sum": "十一月PS Plus游戏目录含《死亡搁浅2》《如龙8外传》等。",
-      "ta": "订阅阵容信息，速览即可。",
-      "src": "PlayStation Blog · 11-10",
-      "url": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
+      "title": "PlayStation 取消 Fairgames",
+      "sum": "报道称 2023 年公布的多人射击游戏 Fairgames 被取消，但无裁员。",
+      "ta": "项目取消的行业动态，速览即可。",
+      "src": "Game Developer · 11-11",
+      "url": "https://www.gamedeveloper.com/console/report-playstation-s-fairgame-cancelled-but-haven-studios-remains"
     }
   ],
   "flashbackTitle": "",
