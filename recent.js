@@ -2,8 +2,170 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-12 16:08",
+  "updated": "2026-11-13 15:45",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经渲染代理加速灯光迭代",
+      "sum": "提出神经渲染代理，用于交互式可微光照，替代慢速离线渲染做灯光预览。",
+      "ta": "灯光迭代慢是TA痛点，可关注其代理模型能否接入UE离线/预览流程。",
+      "src": "arXiv · cs.GR · 11-12",
+      "url": "https://arxiv.org/abs/2611.17185v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Sprint3D优化图生3D管线",
+      "sum": "通过管线优化把图生3D资产生成从数分钟压缩，且不重训自有生成器。",
+      "ta": "程序化资产生成提速对植被/道具批量产出有参考价值。",
+      "src": "arXiv · cs.GR · 11-12",
+      "url": "https://arxiv.org/abs/2611.16701v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "乐高积木连通性重建",
+      "sum": "给定零件与成品图，推断各零件位姿以满足离散物理约束。",
+      "ta": "离散约束重建思路可类比模块化场景拼装，但离实时管线较远。",
+      "src": "arXiv · cs.GR · 11-12",
+      "url": "https://arxiv.org/abs/2611.17321v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "显式对应实现视频转视频",
+      "sum": "用显式对应关系做实时视频转视频，缓解固定因果窗口的长程一致性缺陷。",
+      "ta": "实时视频生成的一致性问题，与Niagara/材质动态效果无直接关联，速览。",
+      "src": "arXiv · cs.GR · 11-12",
+      "url": "https://arxiv.org/abs/2611.17298v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "物理直觉模型预测交互",
+      "sum": "提出低延迟预测物体交互结果的物理直觉模型，兼顾局部形变。",
+      "ta": "低延迟物理预测或可启发破坏/交互特效，但当前偏研究阶段。",
+      "src": "arXiv · cs.GR · 11-12",
+      "url": "https://arxiv.org/abs/2611.16673v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "代码建世界视频来渲染",
+      "sum": "探讨由代码构建世界、视频模型仅负责渲染的分工范式。",
+      "ta": "世界模型分工思路值得留意，但与UE实时管线尚无可落地接口。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.16217"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "双向世界模型全双工交互",
+      "sum": "提出互惠世界模型，支持全双工交互式生成。",
+      "ta": "交互式生成方向，暂与TA日常工作无直接交集。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.15131"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "驾驶世界模型双视角生成",
+      "sum": "联合生成透视与BEV视频的驾驶世界模型。",
+      "ta": "自动驾驶场景，与游戏实时渲染关联弱，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.14815"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "神鬼寓言重启实机公开",
+      "sum": "神鬼寓言重启版放出四分钟PC实机，2027年2月发售。",
+      "ta": "可看其美术与特效风格，作为风格参考。",
+      "src": "80 Level · 11-13",
+      "url": "https://80.lv/articles/fable-reboot-shows-combat-story-in-new-four-minute-gameplay-trailer/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "ZBrush写实皮肤与毛发流程",
+      "sum": "分享手雕妖精夸张解剖、ZBrush写实皮肤绘制及XGen毛发切换经验。",
+      "ta": "写实皮肤与grooming技巧可迁移到角色/生物资产制作。",
+      "src": "80 Level · 11-13",
+      "url": "https://80.lv/articles/making-the-portrait-of-a-harry-potter-inspired-goblin-with-realistic-skin-texture/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "四人团队用CC5与UE5做角色",
+      "sum": "四人团队用Character Creator 5、iClone 8与UE5构建风格化角色与过场。",
+      "ta": "小团队角色管线参考，关注CC5到UE5的资产流转效率。",
+      "src": "80 Level · 11-12",
+      "url": "https://80.lv/articles/how-unreal-game-adur-uses-stylized-3d-character-creator-for-development/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE重建刺客信条神庙场景",
+      "sum": "展示模块化建筑、Substance Designer马赛克贴图与UE多时段布光流程。",
+      "ta": "模块化+程序化贴图+分时布光，是环境TA可直接借鉴的完整链路。",
+      "src": "80 Level · 11-12",
+      "url": "https://80.lv/articles/recreating-cleopatra-s-temple-from-assassin-s-creed-origins-in-unreal-engine/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini程序化环境工作坊",
+      "sum": "四小时课程讲解用Houdini、ZBrush与UE搭建风格化程序化环境。",
+      "ta": "程序化环境生成正是植被/场景工具方向，可关注其Houdini到UE的落地方式。",
+      "src": "80 Level · 11-12",
+      "url": "https://80.lv/articles/learn-to-build-procedural-game-environments-in-houdini/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "BioWare联创谈质量效应复活成本",
+      "sum": "BioWare创始人称复活质量效应需超2亿美元投入。",
+      "ta": "行业成本视角，与TA技术无关，速览。",
+      "src": "80 Level · 11-12",
+      "url": "https://80.lv/articles/bioware-co-founder-explains-the-usd200-million-problem-with-reviving-mass-effect/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Tripwire宣布新发行后裁员",
+      "sum": "Killing Floor工作室在公布新发行计划后裁员36人。",
+      "ta": "行业人事动态，速览。",
+      "src": "Game Developer · 11-12",
+      "url": "https://www.gamedeveloper.com/business/tripwire-interactive-layoffs-come-after-announcing-new-publishing-initiative"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "开发者用GenAI主要做调研",
+      "sum": "调查显示用生成式AI的开发者多用于调研与头脑风暴，AI写码排第三。",
+      "ta": "反映AI在开发流程中的真实落点，可对照自身工具链。",
+      "src": "Game Developer · 11-12",
+      "url": "https://www.gamedeveloper.com/production/genai-using-developers-say-they-mostly-use-it-for-research-and-brainstorming-"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "三分之一开发者两年内被裁",
+      "sum": "行业调查称34%受访开发者近两年经历过裁员。",
+      "ta": "行业景气度信号，速览。",
+      "src": "Game Developer · 11-12",
+      "url": "https://www.gamedeveloper.com/business/one-in-three-developers-have-been-laid-off-within-the-last-two-years"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "GDC年度行业报告发布",
+      "sum": "GDC汇总2600余名从业者对裁员、AI与次世代的调查快照。",
+      "ta": "宏观行业数据，可作趋势参考。",
+      "src": "Game Developer · 11-12",
+      "url": "https://www.gamedeveloper.com/business/layoffs-ai-and-next-gen-what-2-600-game-professionals-told-gdc-this-year"
+    },
     {
       "cat": "ai",
       "imp": "mid",
@@ -85,15 +247,6 @@ window.INTEL_RECENT = {
       "ta": "布料等形变材质的微观外观压缩思路，可借鉴到植被/织物材质性能优化。",
       "src": "arXiv · cs.GR · 11-10",
       "url": "https://arxiv.org/abs/2611.13677v1"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "罗技360赛车展厅用UE5",
-      "sum": "UE服务伙伴用Lumen、Nanite、Sequencer与Pixel Streaming搭建浏览器可进的360赛车展厅。",
-      "ta": "Pixel Streaming+Lumen的商用落地案例，可看其大场景实时推流与光照取舍。",
-      "src": "Unreal Engine · 11-10",
-      "url": "https://www.unrealengine.com/spotlights/beyond-the-product-page-logitech-g-s-360-racing-studio"
     },
     {
       "cat": "flow",
@@ -517,15 +670,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Houdini流体交互教程",
-      "sum": "Gnomon Workshop推出Houdini流体与交互模拟入门课程，限时八折。",
-      "ta": "流体特效学习资源，与Niagara流体方向可互补参考，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/learn-to-simulate-realistic-fluid-interactions-in-houdini/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
       "title": "Maya多视觉风格制作解析",
       "sum": "华纳动画新片团队讲解如何用Maya处理影片的多种视觉风格。",
       "ta": "离线动画流程参考，与实时管线关联有限，速览。",
@@ -702,15 +846,6 @@ window.INTEL_RECENT = {
       "ta": "风格化卡通Shader的自动应用工具，可留意其材质连接思路。",
       "src": "80 Level · 11-04",
       "url": "https://80.lv/articles/have-a-look-at-this-zzz-shader-for-blender-that-comes-with-auto-apply-add-on/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Tripwire扩展发行业务",
-      "sum": "Tripwire Interactive扩展发行业务，聚焦更小规模开发者与游戏。",
-      "ta": "发行侧动态，速览即可。",
-      "src": "Game Developer · 11-04",
-      "url": "https://www.gamedeveloper.com/business/tripwire-interactive-expands-publishing-business-to-focus-on-smaller-developers-and-games"
     },
     {
       "cat": "biz",
@@ -1142,15 +1277,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "ZBrush 半写实胸像流程",
-      "sum": "Eric Liu 分享 ZBrush 雕刻、Substance 3D 贴图与 Marmoset 打光的胸像制作。",
-      "ta": "常规角色资产流程参考，可看贴图与打光的衔接细节。",
-      "src": "80 Level · 10-30",
-      "url": "https://80.lv/articles/sculpting-texturing-a-semi-realistic-lobo-bust-with-zbrush-substance-3d/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
       "title": "索尼动画片晨间动作参考",
       "sum": "Daniel Ceballos 发布为索尼 GOAT 电影制作的晨间日常动画参考。",
       "ta": "动画参考素材，速览即可。",
@@ -1316,15 +1442,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "UE移动开发免费课程上线",
-      "sum": "Epic十月免费学习内容聚焦UE移动开发，涵盖入门、性能优化与发布流程。",
-      "ta": "移动端性能优化章节可作植被/材质在低端设备上的预算参考。",
-      "src": "Unreal Engine · 10-28",
-      "url": "https://www.unrealengine.com/learning/octobers-epic-learning-content-mobile-development-in-unreal-engine"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "UE5.8程序化角色绑定框架",
       "sum": "社区开发者发布面向UE5.8的程序化模块化角色绑定框架。",
       "ta": "程序化绑定思路可借鉴到植被/道具的批量骨骼与模块化装配流程。",
@@ -1339,15 +1456,6 @@ window.INTEL_RECENT = {
       "ta": "程序化堆叠生成贴图，适合做碎石/落叶类地表细节的可平铺材质。",
       "src": "80 Level · 10-28",
       "url": "https://80.lv/articles/simulate-physics-right-in-substance-3d-designer-with-this-tool/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "BioWare创始人谈工作室关闭",
-      "sum": "Greg Zeschuk首次受访，称EA收购与杠杆收购是致命一击，好工作室无法靠随机人员和AI重建。",
-      "ta": "行业组织与人才结构视角，与TA团队建设无直接技术关联，速览即可。",
-      "src": "80 Level · 10-28",
-      "url": "https://80.lv/articles/bioware-co-founder-greg-zeschuk-says-studio-was-killed-by-executives-who-have-never-made-a-game/"
     },
     {
       "cat": "biz",
@@ -1710,114 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "角色肌肉解算工具，偏离线建模流程，与实时管线关联较弱。",
       "src": "80 Level · 10-23",
       "url": "https://80.lv/articles/artist-shows-ziva-vfx-inspired-muscle-simulation-plug-in-for-3ds-max-maya/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RLSplat 给 3DGS 加预算控制",
-      "sum": "RLSplat 为前馈 3D Gaussian Splatting 提供资源线性预算控制。",
-      "ta": "关注 3DGS 在固定显存/算力预算下的可控性，对程序化场景与实时渲染有潜在价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.27712"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "HyperDrone 实现百万帧仿真迁移",
-      "sum": "HyperDrone 以每秒百万帧级仿真实现从仿真到现实的迁移。",
-      "ta": "大规模仿真吞吐思路可借鉴，但与游戏实时渲染管线距离较远。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.28950"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Raw Fury CEO 谈独立游戏发行",
-      "sum": "Pim Holfve 谈发行变迁、独立发行现状及选品标准。",
-      "ta": "纯行业访谈，与 TA 技术工作无关，速览即可。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/on-the-lookout-for-games-that-make-you-feel-something-raw-fury-ceo-on-game-publishing/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "半条命 3 代号 HLX 再被提及",
-      "sum": "Valve 员工在 GameSoundCon 上提到粉丝讨论两年的代号 HLX。",
-      "ta": "传闻性质，无技术信息，速览即可。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/rumored-half-life-3-title-hlx-gets-mentioned-by-valve-employee/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "赛博朋克 2 任务团队半数出身 Mod",
-      "sum": "CDPR 副总监称续作任务团队约一半成员曾是 Mod 作者。",
-      "ta": "人才来源话题，与渲染/工具技术无关。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/half-of-cyberpunk-2-s-quest-team-are-former-modders-says-associate-game-director/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Saros 打造 Carcosa 首领战",
-      "sum": "Housemarque 与 Nixxes 合作完成 Saros 的 Boss 遭遇设计与动画。",
-      "ta": "偏关卡与动画协作流程，技术细节有限。",
-      "src": "PlayStation Blog · 10-23",
-      "url": "https://blog.playstation.com/2026/10/23/saros-creating-the-epic-overlords-of-carcosa/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Epic办AI游戏Jam赛",
-      "sum": "2026 Epic AI MegaJam于11月12-15日举行，用UE或UEFN组队做可玩游戏赢奖金。",
-      "ta": "看参赛作品能了解AI agent在UE工作流里的实际落地方式。",
-      "src": "Unreal Engine · 10-22",
-      "url": "https://www.unrealengine.com/news/2026-epic-ai-megajam"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高度场高斯泼溅重建曲面",
-      "sum": "H-2DGS用高度场高斯泼溅做神经外科手术表面的锐利可变形重建。",
-      "ta": "高度场约束2DGS的思路可借鉴到地形/植被表面的高质量重建。",
-      "src": "arXiv · cs.GR · 10-22",
-      "url": "https://arxiv.org/abs/2610.30910v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "跨游戏实体一致生成渲染",
-      "sum": "AnyGameRenderer实现跨游戏的实体一致生成式渲染，并给出实体级基准。",
-      "ta": "实体一致性是生成式渲染进游戏管线的关键卡点，值得看其评测口径。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.31466"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "HD-2D像素艺术电影化管线",
-      "sum": "FF Resonance制作人谈HD-2D管线、动态镜头、精灵调整、光照与VFX。",
-      "ta": "像素风下的光照与VFX处理手法，对风格化渲染有直接参考价值。",
-      "src": "80 Level · 10-22",
-      "url": "https://80.lv/articles/interview-how-final-fantasy-resonance-turns-hd-2d-pixel-art-into-a-cinematic-experience/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "废弃场景自定义材质流程",
-      "sum": "作者分享地中海废弃房屋场景，讲多边形分配技巧与Substance Designer自定义材质。",
-      "ta": "多边形预算分配与程序化材质搭建，是环境TA的日常可复用经验。",
-      "src": "80 Level · 10-22",
-      "url": "https://80.lv/articles/building-an-abandoned-the-last-of-us-inspired-mediterranean-house-with-custom-materials/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender做2D漫画角色",
-      "sum": "Chloe Worthy用Blender将热门漫画封面角色做成3D版本。",
-      "ta": "2D转3D的角色还原流程，可看其造型与材质简化取舍。",
-      "src": "80 Level · 10-22",
-      "url": "https://80.lv/articles/these-2d-characters-from-popular-manga-are-made-in-3d-with-blender/"
     }
   ]
 };
