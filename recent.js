@@ -2,8 +2,99 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-13 15:45",
+  "updated": "2026-11-14 15:30",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 1,
+      "title": "PS5 迎来 QSSR AI 超分",
+      "sum": "PlayStation 5 上线 Quick Spectral Super Resolution，六款游戏首批接入。",
+      "ta": "主机端 AI 超分落地，值得关注其与 UE5 上采样链路的兼容与画质表现。",
+      "src": "PlayStation Blog · 11-13",
+      "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Blender 5.3 引入项目设置",
+      "sum": "Blender 5.3 新增 Project Setup，为同一项目的 .blend 文件提供共享环境。",
+      "ta": "植被/资产多文件协作或可借此统一配置，值得看共享环境如何管理路径与依赖。",
+      "src": "Blender 开发博客 · 11-13",
+      "url": "https://code.blender.org/2026/11/project-setup-whats-in-and-whats-next/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "视图合成模型测试时烘焙",
+      "sum": "论文提出 TTB，对 decoder-only 视图合成模型做测试时烘焙以加速渲染。",
+      "ta": "烘焙思路或可借鉴到实时新视图合成，关注其渲染开销与质量权衡。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.17331"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频扩散回归像素空间",
+      "sum": "论文将潜空间视频扩散提升回像素空间生成。",
+      "ta": "纯生成研究，与实时渲染无直接关联，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.17336"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "开放生成式视觉感知方案",
+      "sum": "论文给出生成式视觉感知的完全开放配方。",
+      "ta": "偏通用视觉感知，未涉及引擎或实时管线，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.15844"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 硬表面武器课程",
+      "sum": "课程覆盖从硬表面建模到最终渲染的完整资产管线。",
+      "ta": "偏美术教学，非工具或管线突破，速览即可。",
+      "src": "80 Level · 11-13",
+      "url": "https://80.lv/articles/master-hard-surface-weapon-creation-in-blender-with-this-course/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "AAA 模块化环境工作流课",
+      "sum": "8 周课程讲解模块化环境搭建的 AAA 工作流。",
+      "ta": "模块化环境思路对场景搭建有参考，但属教学内容，速览。",
+      "src": "80 Level · 11-13",
+      "url": "https://80.lv/articles/learn-aaa-workflows-to-create-your-own-modular-environments/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "欧盟拟限制免费游戏",
+      "sum": "Digital Fairness Act 若通过，将大幅改变免费游戏的开发与发行方式。",
+      "ta": "影响项目商业模式与设计约束，值得留意后续立法进展。",
+      "src": "Game Developer · 11-13",
+      "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "巫师3 用 AI 复现配音",
+      "sum": "配音演员中风后同意用 AI 在新资料片中重现杰洛特声音。",
+      "ta": "AI 语音在 3A 制作中的合规落地案例，关注授权与流程。",
+      "src": "Game Developer · 11-13",
+      "url": "https://www.gamedeveloper.com/production/polish-voice-actor-for-geralt-returns-for-the-witcher-3-with-ai"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "SOMA 重定向人体动作",
+      "sum": "NVIDIA SOMA Retargeter 将人体动作适配到人形机器人。",
+      "ta": "机器人方向，与游戏动画管线无直接关联，速览。",
+      "src": "NVIDIA · 11-13",
+      "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -174,15 +265,6 @@ window.INTEL_RECENT = {
       "ta": "可关注其任务定义方式，作为游戏内 AI 行为评测或自动化测试环境的参考。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2611.13028"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 动画可像网格一样编辑",
-      "sum": "一款免费工具让 Blender 动画编辑无需切换 Graph Editor 操作 F-curve。",
-      "ta": "若团队有 Blender 预研或资产管线，这类工具能降低动画微调成本。",
-      "src": "80 Level · 11-11",
-      "url": "https://80.lv/articles/edit-your-blender-animations-just-like-editing-mesh-with-this-free-tool/"
     },
     {
       "cat": "flow",
@@ -1737,87 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "分块生成+持久状态的长序列一致性思路，可借鉴到程序化动作/动画长片段生成流程。",
       "src": "arXiv · cs.GR · 10-23",
       "url": "https://arxiv.org/abs/2610.32373v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "VLA 智能体玩开放世界游戏",
-      "sum": "HiSTEVE 1.0 利用人机界面视觉语言动作智能体，在开放世界游戏中执行操作。",
-      "ta": "关注其如何把游戏画面接口转成动作空间，对自动化测试与游戏内 AI 行为有潜在参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.31162"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "多模态智能体与世界模型评测",
-      "sum": "Dual Exam 提出受控评测框架，用于评估多模态智能体与世界模型。",
-      "ta": "若涉及世界模型评测维度，可留意其指标设计，但原文未提引擎或渲染关联。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.31066"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "浏览器版 2D 动画编辑器",
-      "sum": "Rigby2D v0.2.6 发布，可在浏览器中直接试用完整 2D 动画编辑器。",
-      "ta": "轻量 2D 绑定/动画工具，可速览其交互设计，与植被/3D 管线关联有限。",
-      "src": "Tech-Artists · 10-25",
-      "url": "https://www.tech-artists.org/t/rigby2d-v0-2-6-is-out-you-can-now-try-the-full-2d-animation-editor-directly-in-your-browser/18591"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Bluey 2D 风格靠自定义 Shader",
-      "sum": "Gameloft 用 SDF 贴图、2D 平面、自定义 Shader 与 UE Control Rig 复刻手绘风。",
-      "ta": "看 SDF 贴图与自定义 Shader 如何在 UE 里稳定还原 2D 手绘轮廓，Control Rig 部分可参考绑定流程。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/bluey-s-simple-2d-look-required-gameloft-s-most-technically-challenging-art-pipeline/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Tripo P2.0 打通 Blender 与 Unity",
-      "sum": "Tripo 介绍 P2.0 与 Astra 在 Blender、Unity 中完成生成、绑定到动画的流程。",
-      "ta": "关注 3D 原生基础模型输出资产进引擎后的质量控制与人工美术指导环节。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/how-tripo-p2-0-astra-work-together-in-blender-and-unity/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Houdini 水体特效转 Solaris 复活",
-      "sum": "Mario Sánchez Aguado 分享由 Maya 项目转为 Houdini 水模拟、经 Solaris 完成的作品。",
-      "ta": "可看 Solaris 流程下发光水体 FX 的搭建思路，对流体特效与灯光合成衔接有参考。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/this-dreamy-wooden-cabin-scene-with-glowing-water-fx-was-made-with-houdini/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "GameMaker 新运行时将免费商用",
-      "sum": "GMRT 运行时自 2027 年起对所有开发者免费商用，各档位均开放源码。",
-      "ta": "2D 引擎运行时开源免费，对轻量工具链选型有影响，与 UE 主线工作关联有限。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/gamemaker-s-new-runtime-will-become-free-for-commercial-use/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "GMRT 运行时 2027 全面免费",
-      "sum": "GameMaker 的 GMRT 运行时将从 2027 年起对所有开发者免费使用。",
-      "ta": "同一事件另一来源，仅作速览，无需重复精读。",
-      "src": "Game Developer · 10-23",
-      "url": "https://www.gamedeveloper.com/programming/gamemaker-s-gmrt-runtime-will-soon-be-free-for-all-commercial-devs"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "3ds Max/Maya 肌肉模拟插件测试",
-      "sum": "Shirzad Bahrami 展示受 Ziva VFX 启发的肌肉模拟插件，正式发布前开放测试。",
-      "ta": "角色肌肉解算工具，偏离线建模流程，与实时管线关联较弱。",
-      "src": "80 Level · 10-23",
-      "url": "https://80.lv/articles/artist-shows-ziva-vfx-inspired-muscle-simulation-plug-in-for-3ds-max-maya/"
     }
   ]
 };
