@@ -2,8 +2,26 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-14 15:30",
+  "updated": "2026-11-15 15:43",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Godot 径向重力实现球面世界",
+      "sum": "开发者 sembask 详解其漫画风 FPS 如何用径向重力把墙面变地面。",
+      "ta": "可参考其球面重力与角色朝向处理思路，非 UE 管线内容。",
+      "src": "80 Level · 11-14",
+      "url": "https://80.lv/articles/this-manga-style-action-fps-uses-radial-gravity-to-turn-walls-into-floors/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "VRChat 马尾变螺旋桨发型",
+      "sum": "该发型将上架售卖，另有更夸张的发型可选。",
+      "ta": "属资产售卖资讯，对 TA 工作流参考价值有限。",
+      "src": "80 Level · 11-14",
+      "url": "https://80.lv/articles/vrchat-hairstyle-with-ponytails-that-turn-into-propellers/"
+    },
     {
       "cat": "gfx",
       "imp": "hi",
@@ -329,15 +347,6 @@ window.INTEL_RECENT = {
       "ta": "布料等形变材质的微观外观压缩思路，可借鉴到植被/织物材质性能优化。",
       "src": "arXiv · cs.GR · 11-10",
       "url": "https://arxiv.org/abs/2611.13677v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Godot程序化低模树生成器",
-      "sum": "免费工具可在编辑器内生成各类树木，保存预设并导出带LOD与碰撞的资产。",
-      "ta": "程序化植被+LOD+碰撞一体化导出，与植被工具方向直接相关，可对比其生成策略。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/free-procedural-low-poly-tree-generator-for-godot/"
     },
     {
       "cat": "flow",
@@ -1810,15 +1819,6 @@ window.INTEL_RECENT = {
       "ta": "关注其 token 化方式：按物体而非三角形切分，规避自注意力随网格分辨率平方增长，对实时 GI 方案有参考价值。",
       "src": "arXiv · cs.GR · 10-23",
       "url": "https://arxiv.org/abs/2610.32075v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "长时语音动作生成抗漂移",
-      "sum": "提出持久状态分块流匹配方法，用状态记忆与注意力缓解长时共语动作生成的风格漂移。",
-      "ta": "分块生成+持久状态的长序列一致性思路，可借鉴到程序化动作/动画长片段生成流程。",
-      "src": "arXiv · cs.GR · 10-23",
-      "url": "https://arxiv.org/abs/2610.32373v1"
     }
   ]
 };

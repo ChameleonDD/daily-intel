@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月14日 · 周六",
+  "date": "2026年11月15日 · 周日",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>PS5 迎来 QSSR AI 超分</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>Godot 径向重力实现球面世界</em> / <em>VRChat 马尾变螺旋桨发型</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -274,95 +274,22 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "PS5 迎来 QSSR AI 超分",
-      "sum": "PlayStation 5 上线 Quick Spectral Super Resolution，六款游戏首批接入。",
-      "ta": "主机端 AI 超分落地，值得关注其与 UE5 上采样链路的兼容与画质表现。",
-      "src": "PlayStation Blog · 11-13",
-      "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 5.3 引入项目设置",
-      "sum": "Blender 5.3 新增 Project Setup，为同一项目的 .blend 文件提供共享环境。",
-      "ta": "植被/资产多文件协作或可借此统一配置，值得看共享环境如何管理路径与依赖。",
-      "src": "Blender 开发博客 · 11-13",
-      "url": "https://code.blender.org/2026/11/project-setup-whats-in-and-whats-next/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "视图合成模型测试时烘焙",
-      "sum": "论文提出 TTB，对 decoder-only 视图合成模型做测试时烘焙以加速渲染。",
-      "ta": "烘焙思路或可借鉴到实时新视图合成，关注其渲染开销与质量权衡。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.17331"
-    },
-    {
-      "cat": "ai",
+      "cat": "tech",
       "imp": "lo",
-      "title": "视频扩散回归像素空间",
-      "sum": "论文将潜空间视频扩散提升回像素空间生成。",
-      "ta": "纯生成研究，与实时渲染无直接关联，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.17336"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "开放生成式视觉感知方案",
-      "sum": "论文给出生成式视觉感知的完全开放配方。",
-      "ta": "偏通用视觉感知，未涉及引擎或实时管线，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.15844"
+      "title": "Godot 径向重力实现球面世界",
+      "sum": "开发者 sembask 详解其漫画风 FPS 如何用径向重力把墙面变地面。",
+      "ta": "可参考其球面重力与角色朝向处理思路，非 UE 管线内容。",
+      "src": "80 Level · 11-14",
+      "url": "https://80.lv/articles/this-manga-style-action-fps-uses-radial-gravity-to-turn-walls-into-floors/"
     },
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender 硬表面武器课程",
-      "sum": "课程覆盖从硬表面建模到最终渲染的完整资产管线。",
-      "ta": "偏美术教学，非工具或管线突破，速览即可。",
-      "src": "80 Level · 11-13",
-      "url": "https://80.lv/articles/master-hard-surface-weapon-creation-in-blender-with-this-course/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "AAA 模块化环境工作流课",
-      "sum": "8 周课程讲解模块化环境搭建的 AAA 工作流。",
-      "ta": "模块化环境思路对场景搭建有参考，但属教学内容，速览。",
-      "src": "80 Level · 11-13",
-      "url": "https://80.lv/articles/learn-aaa-workflows-to-create-your-own-modular-environments/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "欧盟拟限制免费游戏",
-      "sum": "Digital Fairness Act 若通过，将大幅改变免费游戏的开发与发行方式。",
-      "ta": "影响项目商业模式与设计约束，值得留意后续立法进展。",
-      "src": "Game Developer · 11-13",
-      "url": "https://www.gamedeveloper.com/business/european-union-proposes-digital-fairness-act-which-could-have-major-effects-on-game-development"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "巫师3 用 AI 复现配音",
-      "sum": "配音演员中风后同意用 AI 在新资料片中重现杰洛特声音。",
-      "ta": "AI 语音在 3A 制作中的合规落地案例，关注授权与流程。",
-      "src": "Game Developer · 11-13",
-      "url": "https://www.gamedeveloper.com/production/polish-voice-actor-for-geralt-returns-for-the-witcher-3-with-ai"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "SOMA 重定向人体动作",
-      "sum": "NVIDIA SOMA Retargeter 将人体动作适配到人形机器人。",
-      "ta": "机器人方向，与游戏动画管线无直接关联，速览。",
-      "src": "NVIDIA · 11-13",
-      "url": "https://developer.nvidia.com/blog/adapt-human-motion-for-robots-with-nvidia-soma-retargeter/"
+      "title": "VRChat 马尾变螺旋桨发型",
+      "sum": "该发型将上架售卖，另有更夸张的发型可选。",
+      "ta": "属资产售卖资讯，对 TA 工作流参考价值有限。",
+      "src": "80 Level · 11-14",
+      "url": "https://80.lv/articles/vrchat-hairstyle-with-ponytails-that-turn-into-propellers/"
     }
   ],
   "flashbackTitle": "",
