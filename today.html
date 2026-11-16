@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月15日 · 周日",
+  "date": "2026年11月16日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>Godot 径向重力实现球面世界</em> / <em>VRChat 马尾变螺旋桨发型</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>实时新视角合成免逐场景优化</em> / <em>自适应四面体编码加速神经场</em> / <em>姿态驱动神经服装替代布料解算</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -274,22 +274,76 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Godot 径向重力实现球面世界",
-      "sum": "开发者 sembask 详解其漫画风 FPS 如何用径向重力把墙面变地面。",
-      "ta": "可参考其球面重力与角色朝向处理思路，非 UE 管线内容。",
-      "src": "80 Level · 11-14",
-      "url": "https://80.lv/articles/this-manga-style-action-fps-uses-radial-gravity-to-turn-walls-into-floors/"
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "实时新视角合成免逐场景优化",
+      "sum": "DIRT 用深度补全加双频带混合，实现采集时低延迟渲染与跨场景泛化。",
+      "ta": "关注其双频带混合如何压制深度补全伪影，可借鉴到实时渲染的合成管线。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.18340v1"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "自适应四面体编码加速神经场",
+      "sum": "TetraCoder 用自适应四面体编码，在隐式与显式几何表示间高效转换。",
+      "ta": "显隐式互转效率提升，对程序化生成资产的表示切换与烘焙有参考价值。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.18267v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "姿态驱动神经服装替代布料解算",
+      "sum": "数据驱动方法从模拟数据学习角色服装形变，绕开慢速模拟与繁琐调参。",
+      "ta": "角色布料是性能热点，可评估该方案能否替代离线解算烘焙流程。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.18253v1"
+    },
+    {
+      "cat": "gfx",
       "imp": "lo",
-      "title": "VRChat 马尾变螺旋桨发型",
-      "sum": "该发型将上架售卖，另有更夸张的发型可选。",
-      "ta": "属资产售卖资讯，对 TA 工作流参考价值有限。",
-      "src": "80 Level · 11-14",
-      "url": "https://80.lv/articles/vrchat-hairstyle-with-ponytails-that-turn-into-propellers/"
+      "title": "品牌约束下的创意产品设计",
+      "sum": "针对产品专属隐式约束，改进文生图在工业设计中的约束满足能力。",
+      "ta": "与实时渲染无直接关系，仅作生成式设计工具面了解。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.17762v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "SDF 特征导向网格化秒级出模",
+      "sum": "FOMOS 纯几何方法对 SDF 做特征导向网格化，数秒完成且网格质量更优。",
+      "ta": "SDF 转网格提速，对程序化植被/地形资产的出模管线有直接价值。",
+      "src": "arXiv · cs.GR · 11-12",
+      "url": "https://arxiv.org/abs/2611.17458v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长时程实时游戏智能体基座模型",
+      "sum": "Gamer 是面向长时程实时游戏场景的通用视觉-语言-动作基础模型。",
+      "ta": "关注其对实时游戏状态的理解与动作输出延迟，与引擎侧集成方式值得留意。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.18397"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "纯视频 Transformer 做像素扩散",
+      "sum": "JVT 用单一视频 Transformer 简化像素空间视频扩散流程。",
+      "ta": "与引擎渲染无直接关联，仅作生成模型架构动向速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.18549"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自回归视频扩散解耦语义与运动",
+      "sum": "Disen-Forcing 将语义锚定与运动分离，改进自回归视频扩散生成。",
+      "ta": "偏视频生成研究，暂无实时渲染侧可落地信息。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.02822"
     }
   ],
   "flashbackTitle": "",

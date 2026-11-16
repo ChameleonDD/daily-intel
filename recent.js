@@ -2,8 +2,80 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-15 15:43",
+  "updated": "2026-11-16 15:49",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "实时新视角合成免逐场景优化",
+      "sum": "DIRT 用深度补全加双频带混合，实现采集时低延迟渲染与跨场景泛化。",
+      "ta": "关注其双频带混合如何压制深度补全伪影，可借鉴到实时渲染的合成管线。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.18340v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "自适应四面体编码加速神经场",
+      "sum": "TetraCoder 用自适应四面体编码，在隐式与显式几何表示间高效转换。",
+      "ta": "显隐式互转效率提升，对程序化生成资产的表示切换与烘焙有参考价值。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.18267v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "姿态驱动神经服装替代布料解算",
+      "sum": "数据驱动方法从模拟数据学习角色服装形变，绕开慢速模拟与繁琐调参。",
+      "ta": "角色布料是性能热点，可评估该方案能否替代离线解算烘焙流程。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.18253v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "品牌约束下的创意产品设计",
+      "sum": "针对产品专属隐式约束，改进文生图在工业设计中的约束满足能力。",
+      "ta": "与实时渲染无直接关系，仅作生成式设计工具面了解。",
+      "src": "arXiv · cs.GR · 11-13",
+      "url": "https://arxiv.org/abs/2611.17762v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "SDF 特征导向网格化秒级出模",
+      "sum": "FOMOS 纯几何方法对 SDF 做特征导向网格化，数秒完成且网格质量更优。",
+      "ta": "SDF 转网格提速，对程序化植被/地形资产的出模管线有直接价值。",
+      "src": "arXiv · cs.GR · 11-12",
+      "url": "https://arxiv.org/abs/2611.17458v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "长时程实时游戏智能体基座模型",
+      "sum": "Gamer 是面向长时程实时游戏场景的通用视觉-语言-动作基础模型。",
+      "ta": "关注其对实时游戏状态的理解与动作输出延迟，与引擎侧集成方式值得留意。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.18397"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "纯视频 Transformer 做像素扩散",
+      "sum": "JVT 用单一视频 Transformer 简化像素空间视频扩散流程。",
+      "ta": "与引擎渲染无直接关联，仅作生成模型架构动向速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.18549"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "自回归视频扩散解耦语义与运动",
+      "sum": "Disen-Forcing 将语义锚定与运动分离，改进自回归视频扩散生成。",
+      "ta": "偏视频生成研究，暂无实时渲染侧可落地信息。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.02822"
+    },
     {
       "cat": "tech",
       "imp": "lo",
@@ -1321,15 +1393,6 @@ window.INTEL_RECENT = {
       "url": "https://huggingface.co/papers/2610.39663"
     },
     {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "像素空间生成 Transformer 分词",
-      "sum": "论文提出角色耦合的分词方案，用于像素空间生成 Transformer。",
-      "ta": "偏生成模型底层，速览即可，暂无明显引擎侧落点。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.40647"
-    },
-    {
       "cat": "ai",
       "imp": "mid",
       "title": "Claude 被限制复刻游戏",
@@ -1755,70 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "几何设计思路偏学术，暂与实时管线距离较远，速览即可。",
       "src": "arXiv · cs.GR · 10-26",
       "url": "https://arxiv.org/abs/2610.34903v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "RacerGS 压缩3D高斯泼溅",
-      "sum": "用残差自回归上下文构建紧凑3DGS压缩框架，显著降低参数存储与传输量。",
-      "ta": "3DGS资产体积是落地瓶颈，压缩方案直接影响扫描植被/场景的运行时内存预算。",
-      "src": "arXiv · cs.GR · 10-25",
-      "url": "https://arxiv.org/abs/2610.34263v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "单相机可试穿虚拟人建模",
-      "sum": "仅用单目视频或单图重建高保真、可动画、可试穿的虚拟人化身。",
-      "ta": "单相机重建降低数字人采集门槛，与植被/特效本职关联较弱。",
-      "src": "arXiv · cs.GR · 10-25",
-      "url": "https://arxiv.org/abs/2610.34223v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "神经服装仿真显式摩擦建模",
-      "sum": "为GNN服装仿真引入显式摩擦项与可设摩擦系数μ，替代隐式训练能量中的摩擦。",
-      "ta": "布料/软体仿真中摩擦参数可控化，对角色与植被交互的物理表现有借鉴意义。",
-      "src": "arXiv · cs.GR · 10-24",
-      "url": "https://arxiv.org/abs/2610.33492v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "WorldCast 大角度相机可控角色视频",
-      "sum": "提出世界一致的角色视频生成方法，支持大角度相机控制。",
-      "ta": "相机可控的角色视频生成，可关注其在镜头运动一致性上的处理方式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.33135"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "World-in-Context 交互式视频世界模型",
-      "sum": "以in-context条件实现可交互的视频世界建模。",
-      "ta": "交互式世界模型方向，与实时引擎结合尚早，关注其条件控制接口设计。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.33169"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Xbox 拒Netflix五亿改编约",
-      "sum": "报道称Netflix拟以5亿美元改编Xbox多个游戏IP，Xbox为抬价拒绝。",
-      "ta": "IP影视化商业动向，与TA日常无直接关系，速览即可。",
-      "src": "Game Developer · 10-26",
-      "url": "https://www.gamedeveloper.com/business/xbox-reportedly-turned-down-a-500-million-deal-from-netflix-for-adapting-gaming-properties"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "前馈神经渲染做全局光照",
-      "sum": "RADIANT 用物体为中心的前馈神经渲染器，无需逐场景优化或运行时光线追踪即可合成全局光照。",
-      "ta": "关注其 token 化方式：按物体而非三角形切分，规避自注意力随网格分辨率平方增长，对实时 GI 方案有参考价值。",
-      "src": "arXiv · cs.GR · 10-23",
-      "url": "https://arxiv.org/abs/2610.32075v1"
     }
   ]
 };
