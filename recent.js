@@ -2,8 +2,152 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-16 15:49",
+  "updated": "2026-11-17 16:58",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "mid",
+      "title": "AMD FSR UE插件升级4.1.2",
+      "sum": "AMD更新UE插件，加入FSR Upscaling 4.1.2，改进帧生成与Anti-Lag 2。",
+      "ta": "关注UE项目里FSR升采样版本替换后的画质与延迟表现，尤其RX6000与Ryzen平台。",
+      "src": "AMD GPUOpen · 11-16",
+      "url": "https://gpuopen.com/learn/amd-fsr-ue-plugin-412/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "真实偏振环境贴图数据集发布",
+      "sum": "新数据集提供含偏振信息的真实环境贴图，突破传统仅RGB辐照度的限制。",
+      "ta": "若未来引擎IBL支持偏振光照，这类数据是研究材质与光照真实感的前置素材。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.21334v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经表示实测BTF材质",
+      "sum": "提出每材质一码的神经表示，压缩实测BTF并支持生成，保留视差与自阴影。",
+      "ta": "对复杂布料/织物材质库压缩与程序化生成有参考价值，可关注其神经编码思路。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.20948v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS轨迹渲染数据管理框架",
+      "sum": "面向结构化3DGS的轨迹渲染，提出高斯图元数据管理框架以提升效率。",
+      "ta": "数字孪生/自动巡检类实时漫游场景可借鉴其按需解码与数据调度策略。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.20546v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "智能体重网格减面修复",
+      "sum": "RemeshingAgent迭代修复生成建筑网格，可激进减面至原面数0.5-1%。",
+      "ta": "程序化生成资产的LOD与减面管线可参考其拓扑修复式迭代代理思路。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.20533v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "无人机RGB重建田间玉米",
+      "sum": "用消费级无人机RGB视频经SfM与多视图立体重建田间玉米三维结构。",
+      "ta": "植被方向可留意其细薄遮挡结构的重建难点与流程，非实时渲染直接相关。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.20502v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "三维有限域互锁平铺",
+      "sum": "研究3D有限域的K面体平铺，要求原胞数量少且可实际拼接。",
+      "ta": "程序化生成中的模块化拼接与平铺算法可借鉴其互锁约束思路。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.20401v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "高斯泼溅推断内部温度场",
+      "sum": "结合可见光与热成像多视图，用高斯泼溅求解稳态热传导推断内部温度。",
+      "ta": "与实时渲染关联较弱，但高斯表示承载物理场的思路值得速览。",
+      "src": "arXiv · cs.GR · 11-15",
+      "url": "https://arxiv.org/abs/2611.20283v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "复杂线条集和谐可视化",
+      "sum": "针对科学可视化中复杂线条集，提出线条质量受控的和谐绘制方法。",
+      "ta": "偏可视化美学，与游戏渲染管线关系不大，速览即可。",
+      "src": "arXiv · cs.GR · 11-15",
+      "url": "https://arxiv.org/abs/2611.20190v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "轻量开放词汇3D高斯分割",
+      "sum": "提出查询式3D分割器，减少高斯泼溅开放词汇理解中的预处理与训练开销。",
+      "ta": "若做场景语义标注或工具链自动化，可关注其轻量化分割流程。",
+      "src": "arXiv · cs.GR · 11-14",
+      "url": "https://arxiv.org/abs/2611.19429v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "阻抗作为动作空间的运动模仿",
+      "sum": "以学习到的阻抗作为动作空间，实现力准确的物理运动模仿。",
+      "ta": "偏角色物理动画研究，与植被/特效管线无直接关系，速览。",
+      "src": "arXiv · cs.GR · 11-14",
+      "url": "https://arxiv.org/abs/2611.19153v1"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender蜘蛛网生成器",
+      "sum": "一款可完全自定义、轻量的Blender有机蛛网生成工具。",
+      "ta": "环境装饰类程序化小工具，可作植被/场景点缀的快速参考。",
+      "src": "80 Level · 11-16",
+      "url": "https://80.lv/articles/create-gross-organic-webs-with-this-blender-generator/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "逃离塔科夫终局地图制作揭秘",
+      "sum": "Battlestate谈新地图低光照环境搭建与角色动画制作的挑战。",
+      "ta": "低光照场景布光与动画流程的一手经验，值得看其技术取舍。",
+      "src": "80 Level · 11-16",
+      "url": "https://80.lv/articles/full-circle-building-terminal-escape-from-tarkov-s-final-location/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "纽约模块化环境资产包",
+      "sum": "Leartes Studios推出含褐石公寓与砖砌店面的纽约风模块化资产包。",
+      "ta": "模块化场景搭建的资产组织参考，速览。",
+      "src": "80 Level · 11-16",
+      "url": "https://80.lv/articles/build-atmospheric-cinematic-new-york-city-environments-with-this-modular-pack/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "Xbox预告Project Helix主机",
+      "sum": "Xbox透露新主机代号Helix，称可运行PC游戏，但细节仍模糊。",
+      "ta": "若主机兼容PC游戏，跨平台渲染与性能分级策略可能受影响，值得关注。",
+      "src": "Game Developer · 11-16",
+      "url": "https://www.gamedeveloper.com/console/new-xbox-codenamed-helix-gets-a-few-new-details"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Unity推出独立开发者资助计划",
+      "sum": "Unity新 fellowship 计划选10名开发者各获5万美元及资源支持。",
+      "ta": "行业生态信息，与TA日常工作无直接关联，速览。",
+      "src": "Game Developer · 11-16",
+      "url": "https://www.gamedeveloper.com/business/unity-to-support-indies-with-cash-and-dedicated-support-through-new-fellowship-program"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -139,15 +283,6 @@ window.INTEL_RECENT = {
       "ta": "偏通用视觉感知，未涉及引擎或实时管线，速览。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2611.15844"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 硬表面武器课程",
-      "sum": "课程覆盖从硬表面建模到最终渲染的完整资产管线。",
-      "ta": "偏美术教学，非工具或管线突破，速览即可。",
-      "src": "80 Level · 11-13",
-      "url": "https://80.lv/articles/master-hard-surface-weapon-creation-in-blender-with-this-course/"
     },
     {
       "cat": "flow",
@@ -557,15 +692,6 @@ window.INTEL_RECENT = {
       "ta": "程序化场景生成相关：建筑代理的几何+纹理联合生成可启发大场景LOD资产管线。",
       "src": "arXiv · cs.GR · 11-09",
       "url": "https://arxiv.org/abs/2611.12077v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "文本生成可仿真形变3D场景",
-      "sum": "SoftPAT3D将布料、玩偶、绳索等形变体生成为物理有效、可直接仿真的3D场景。",
-      "ta": "3D生成与仿真衔接：形变体生成即仿真就绪，对道具/场景资产生成流程有参考价值。",
-      "src": "arXiv · cs.GR · 11-08",
-      "url": "https://arxiv.org/abs/2611.11087v1"
     },
     {
       "cat": "gfx",
@@ -1692,132 +1818,6 @@ window.INTEL_RECENT = {
       "ta": "虚拟物体与扫描场景的光照/阴影一致性，是混合渲染管线的关键参考。",
       "src": "arXiv · cs.GR · 10-27",
       "url": "https://arxiv.org/abs/2610.37036v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "可复用传输骨架加速 PDE",
-      "sum": "用持久化传输骨架复用随机游走轨迹，加速交互式蒙特卡洛 PDE 求解。",
-      "ta": "路径复用思路与实时路径追踪降噪有相通之处，可速览。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.36931v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯 SLAM 解耦几何与跟踪",
-      "sum": "LingGS 将前馈几何预测与相机跟踪解耦，提升单目高斯 SLAM 重建质量。",
-      "ta": "扫描/实景重建流程的实时化参考，关注有限优化预算下的质量表现。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.36853v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "长时序任务可视化视角规划",
-      "sum": "VISTA 提出可微的视角规划方法，用于长时序任务的 3D 过程可视化。",
-      "ta": "与工具链中的自动取景/演示镜头生成有潜在关联，速览即可。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.36111v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多视图渲染合并为单张纹理",
-      "sum": "提出把稀疏多视图渲染整合为单张一致纹理的系统，可接入生成模型。",
-      "ta": "与程序化贴图/资产纹理烘焙流程相关，值得看其图集合并策略。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.36098v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender 替代 AE 做 MV",
-      "sum": "展示如何在 Blender 而非 After Effects 中完成音乐视频的动态设计。",
-      "ta": "Blender 动效工作流可作工具链替代方案参考，速览。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/see-how-this-music-video-was-made-in-blender-instead-of-after-effects/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "几何生成助力空间理解",
-      "sum": "论文探讨几何生成任务如何帮助模型进行空间理解与推理。",
-      "ta": "与 3D 生成模型能力边界相关，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.36022"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Rockstar 员工投票组建工会",
-      "sum": "Rockstar 员工将在 GTA6 发售前两周内投票决定是否承认工会。",
-      "ta": "行业劳资动向，关注对 3A 制作节奏的潜在影响。",
-      "src": "Game Developer · 10-27",
-      "url": "https://www.gamedeveloper.com/business/rockstar-workers-to-vote-on-unionization-ahead-of-grand-theft-auto-vi-release"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Warhorse 遭网络安全事件",
-      "sum": "《天国拯救》开发商披露遭遇严重网络安全攻击，正在评估影响。",
-      "ta": "提醒项目资产与源码的访问安全，速览。",
-      "src": "Game Developer · 10-27",
-      "url": "https://www.gamedeveloper.com/programming/warhorse-studios-hit-by-an-undetailed-cybersecurity-incident"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Sucker Punch 裁员 24 人",
-      "sum": "Sucker Punch 裁减 24 人，约占团队 10%，称与市场及下个项目需求对齐。",
-      "ta": "行业收缩信号，速览。",
-      "src": "Game Developer · 10-27",
-      "url": "https://www.gamedeveloper.com/business/sucker-punch-lays-off-24-to-align-with-current-market-next-project-needs"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Konami 谈寂静岭多形态布局",
-      "sum": "制作人谈寂静岭的创作自由、第一人称恐怖与苏格兰环境还原及系列未来。",
-      "ta": "环境还原与美术方向参考，速览。",
-      "src": "80 Level · 10-27",
-      "url": "https://80.lv/articles/interview-konami-envisions-silent-hill-like-a-premium-tv-series-with-various-game-formats/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "CVTSplat 用Voronoi重建多视图",
-      "sum": "以自适应质心Voronoi划分做多视图形状与外观重建，降低优化中重复重建开销。",
-      "ta": "关注其自适应空间划分思路，或可借鉴到程序化植被分布与LOD划分。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.35347v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "GaussianSpline 动态4D高斯",
-      "sum": "用自适应非均匀分段三次贝塞尔样条建模每个高斯运动，实现动态4D高斯泼溅。",
-      "ta": "动态场景重建的运动参数化方案，对植被风动等非刚体动画重建有参考价值。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.35224v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "断件模型生成Blendshape",
-      "sum": "针对含多个不连通部件的动漫风角色模型，生成ARKit/MediaPipe固定表情Blendshape。",
-      "ta": "角色面部管线中处理断件网格的实用案例，可参考其部件拆分策略。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.35076v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "仿昆虫逆折纸曲面成形",
-      "sum": "受昆虫变态发育褶皱展开启发，提出逆折纸方法设计曲面成形的褶皱结构。",
-      "ta": "几何设计思路偏学术，暂与实时管线距离较远，速览即可。",
-      "src": "arXiv · cs.GR · 10-26",
-      "url": "https://arxiv.org/abs/2610.34903v1"
     }
   ]
 };
