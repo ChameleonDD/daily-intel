@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月17日 · 周二",
+  "date": "2026年11月18日 · 周三",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>AMD FSR UE插件升级4.1.2</em> / <em>真实偏振环境贴图数据集发布</em> / <em>神经表示实测BTF材质</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>大规模高斯泼溅外存优化训练</em> / <em>免费Blender插件生成散落落叶</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,148 +127,175 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE驱动Coachella广播级AR演出",
+      "sum": "虚幻引擎结合MetaHuman、广播AR与蜘蛛摄像机，将Anyma演出扩展为线上直播视觉。",
+      "ta": "可参考其MetaHuman+广播AR的实时管线组织方式，看大型直播场景下引擎侧如何撑住画面。",
+      "src": "Unreal Engine · 11-17",
+      "url": "https://www.unrealengine.com/spotlights/expanding-anymas-coachella-performance-into-broadcast-ar-with-unreal-engine"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "3DGS超轻量免渲染调色迁移",
+      "sum": "ReTouchGS提出面向3D高斯泼溅的超轻量、免渲染美学色彩增强与迁移方法。",
+      "ta": "若做扫描资产后处理，这类免渲染调色思路可省去重训/重渲成本，值得看其轻量实现。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.23054v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "B-Rep图预训练统一CAD理解生成",
+      "sum": "BRepA用图结构对CAD边界表示做预训练，统一支撑分割与新形状生成任务。",
+      "ta": "程序化资产生成若涉及CAD来源模型，可关注其图表示如何兼顾理解与生成。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.22903v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "title": "大规模高斯泼溅外存优化训练",
+      "sum": "DOOM-GS提出动态外存优化，突破图元超出显存时3DGS无法训练的限制。",
+      "ta": "大场景植被/地形级3DGS训练受显存卡脖子，这条直接给出外存方案，值得精读。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.22805v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "抗锯齿三角泼溅精确积分",
+      "sum": "ATS用逐图元精确积分解决三角泼溅的像素中心采样走样与小三角形剔除问题。",
+      "ta": "泼溅类表示的走样是实时渲染痛点，其积分式抗锯齿思路对splat管线有借鉴价值。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.22512v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Vulkan统一3DGS训练至移动端",
+      "sum": "Cross3DGS基于Vulkan实现从工作站到移动设备的统一3DGS训练。",
+      "ta": "跨GPU/驱动差异的Vulkan实现细节，对想把3DGS训练搬到非CUDA设备的人有参考。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.22240v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动画渲染引导高效Avatar重建",
+      "sum": "ARG-Avatar用动画-渲染引导，减少对模型容量与数据的依赖，实现快速前馈Avatar重建。",
+      "ta": "原文明确面向游戏与AR，数字人资产快速生成路线可关注其效率取舍。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.22207v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "学习局部帧分割高精扫描小部件",
+      "sum": "FrameSeg3D用学习到的局部坐标系分割高分辨率3D扫描上的指甲、牙齿等微小部件。",
+      "ta": "小部件分割对扫描资产拆分有潜在用处，速览其局部帧构造即可。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.22124v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "人像布光的环境感知灯位推荐",
+      "sum": "研究提出拍摄前环境感知的灯位放置方法，回答灯该放哪才能最好地照亮人脸。",
+      "ta": "与实时渲染关联弱，仅对做虚拟拍摄/打光参考的人有边缘价值。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.22005v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "面部资产贴图4K扩散超分",
+      "sum": "针对面部UV的域调优扩散超分，把1K反照率与置换图提升到4K影视级。",
+      "ta": "面部资产贴图放大是TA常见需求，其域特定统计处理比通用照片超分更对症。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.21890v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "数据高效文本生成3D面部资产",
+      "sum": "FaceRiff用几何条件实现统一的文本到3D面部资产合成，降低对大规模专用数据依赖。",
+      "ta": "数字人面部资产（UV几何+反照率+置换）生成管线，可关注其数据效率做法。",
+      "src": "arXiv · cs.GR · 11-16",
+      "url": "https://arxiv.org/abs/2611.21867v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "π⁴：4D场景几何与运动基础模型",
+      "sum": "π⁴提出面向4D场景几何与运动的基础模型。",
+      "ta": "4D场景理解若成熟，可影响动态环境重建与程序化布局，速览其能力边界。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.23144"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "混合分辨率视频生成",
+      "sum": "MPEG-Diffusion提出混合分辨率的视频生成方法。",
+      "ta": "与实时渲染无直接关联，仅作生成侧技术动向速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.12069"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "拿破仑燧发枪游戏级资产复刻",
+      "sum": "作者讲述19世纪武器从blockout定比例、烘焙保留雕花到克制做旧的全流程。",
+      "ta": "烘焙保雕花与克制磨损的判断，是硬表面道具贴图分层的实用参考。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/recreating-napoleon-s-flintlock-pistols-as-game-ready-3d-assets/"
+    },
+    {
       "cat": "tech",
       "imp": "mid",
-      "title": "AMD FSR UE插件升级4.1.2",
-      "sum": "AMD更新UE插件，加入FSR Upscaling 4.1.2，改进帧生成与Anti-Lag 2。",
-      "ta": "关注UE项目里FSR升采样版本替换后的画质与延迟表现，尤其RX6000与Ryzen平台。",
-      "src": "AMD GPUOpen · 11-16",
-      "url": "https://gpuopen.com/learn/amd-fsr-ue-plugin-412/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "真实偏振环境贴图数据集发布",
-      "sum": "新数据集提供含偏振信息的真实环境贴图，突破传统仅RGB辐照度的限制。",
-      "ta": "若未来引擎IBL支持偏振光照，这类数据是研究材质与光照真实感的前置素材。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.21334v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "神经表示实测BTF材质",
-      "sum": "提出每材质一码的神经表示，压缩实测BTF并支持生成，保留视差与自阴影。",
-      "ta": "对复杂布料/织物材质库压缩与程序化生成有参考价值，可关注其神经编码思路。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.20948v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3DGS轨迹渲染数据管理框架",
-      "sum": "面向结构化3DGS的轨迹渲染，提出高斯图元数据管理框架以提升效率。",
-      "ta": "数字孪生/自动巡检类实时漫游场景可借鉴其按需解码与数据调度策略。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.20546v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "智能体重网格减面修复",
-      "sum": "RemeshingAgent迭代修复生成建筑网格，可激进减面至原面数0.5-1%。",
-      "ta": "程序化生成资产的LOD与减面管线可参考其拓扑修复式迭代代理思路。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.20533v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "无人机RGB重建田间玉米",
-      "sum": "用消费级无人机RGB视频经SfM与多视图立体重建田间玉米三维结构。",
-      "ta": "植被方向可留意其细薄遮挡结构的重建难点与流程，非实时渲染直接相关。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.20502v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "三维有限域互锁平铺",
-      "sum": "研究3D有限域的K面体平铺，要求原胞数量少且可实际拼接。",
-      "ta": "程序化生成中的模块化拼接与平铺算法可借鉴其互锁约束思路。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.20401v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "高斯泼溅推断内部温度场",
-      "sum": "结合可见光与热成像多视图，用高斯泼溅求解稳态热传导推断内部温度。",
-      "ta": "与实时渲染关联较弱，但高斯表示承载物理场的思路值得速览。",
-      "src": "arXiv · cs.GR · 11-15",
-      "url": "https://arxiv.org/abs/2611.20283v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "复杂线条集和谐可视化",
-      "sum": "针对科学可视化中复杂线条集，提出线条质量受控的和谐绘制方法。",
-      "ta": "偏可视化美学，与游戏渲染管线关系不大，速览即可。",
-      "src": "arXiv · cs.GR · 11-15",
-      "url": "https://arxiv.org/abs/2611.20190v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "轻量开放词汇3D高斯分割",
-      "sum": "提出查询式3D分割器，减少高斯泼溅开放词汇理解中的预处理与训练开销。",
-      "ta": "若做场景语义标注或工具链自动化，可关注其轻量化分割流程。",
-      "src": "arXiv · cs.GR · 11-14",
-      "url": "https://arxiv.org/abs/2611.19429v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "阻抗作为动作空间的运动模仿",
-      "sum": "以学习到的阻抗作为动作空间，实现力准确的物理运动模仿。",
-      "ta": "偏角色物理动画研究，与植被/特效管线无直接关系，速览。",
-      "src": "arXiv · cs.GR · 11-14",
-      "url": "https://arxiv.org/abs/2611.19153v1"
+      "title": "BeamNG软体物理移植PS5",
+      "sum": "BeamNG团队讲述在PS5上保持软体物理不变，同时优化内存性能并重做UI与手柄操作。",
+      "ta": "主机移植中保物理不变、只压内存与性能的取舍，对做主机性能预算的人有参考。",
+      "src": "80 Level · 11-17",
+      "url": "https://80.lv/articles/how-beamng-drive-brought-its-soft-body-physics-to-ps5/"
     },
     {
       "cat": "flow",
-      "imp": "lo",
-      "title": "Blender蜘蛛网生成器",
-      "sum": "一款可完全自定义、轻量的Blender有机蛛网生成工具。",
-      "ta": "环境装饰类程序化小工具，可作植被/场景点缀的快速参考。",
-      "src": "80 Level · 11-16",
-      "url": "https://80.lv/articles/create-gross-organic-webs-with-this-blender-generator/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "逃离塔科夫终局地图制作揭秘",
-      "sum": "Battlestate谈新地图低光照环境搭建与角色动画制作的挑战。",
-      "ta": "低光照场景布光与动画流程的一手经验，值得看其技术取舍。",
-      "src": "80 Level · 11-16",
-      "url": "https://80.lv/articles/full-circle-building-terminal-escape-from-tarkov-s-final-location/"
+      "imp": "hi",
+      "title": "免费Blender插件生成散落落叶",
+      "sum": "Guillaume Bissieres发布免费Blender插件，可快速生成、散布并动画化落叶场景。",
+      "ta": "与植被工具本职强相关，可直接看其散布与动画逻辑能否迁移到UE植被管线。",
+      "src": "80 Level · 11-17",
+      "url": "https://80.lv/articles/this-free-blender-add-on-lets-you-generate-scatter-animate-fallen-leaves/"
     },
     {
       "cat": "flow",
-      "imp": "lo",
-      "title": "纽约模块化环境资产包",
-      "sum": "Leartes Studios推出含褐石公寓与砖砌店面的纽约风模块化资产包。",
-      "ta": "模块化场景搭建的资产组织参考，速览。",
-      "src": "80 Level · 11-16",
-      "url": "https://80.lv/articles/build-atmospheric-cinematic-new-york-city-environments-with-this-modular-pack/"
-    },
-    {
-      "cat": "biz",
       "imp": "mid",
-      "title": "Xbox预告Project Helix主机",
-      "sum": "Xbox透露新主机代号Helix，称可运行PC游戏，但细节仍模糊。",
-      "ta": "若主机兼容PC游戏，跨平台渲染与性能分级策略可能受影响，值得关注。",
-      "src": "Game Developer · 11-16",
-      "url": "https://www.gamedeveloper.com/console/new-xbox-codenamed-helix-gets-a-few-new-details"
+      "title": "Blender从零制作写实叶片",
+      "sum": "Blender艺术家演示不用预制模型与照片贴图，从零创建写实叶片。",
+      "ta": "叶片建模与材质从零构建的思路，对植被资产自制流程有直接借鉴。",
+      "src": "80 Level · 11-17",
+      "url": "https://80.lv/articles/blender-artist-shows-how-to-create-realistic-leaf-from-scratch/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "Unity推出独立开发者资助计划",
-      "sum": "Unity新 fellowship 计划选10名开发者各获5万美元及资源支持。",
-      "ta": "行业生态信息，与TA日常工作无直接关联，速览。",
-      "src": "Game Developer · 11-16",
-      "url": "https://www.gamedeveloper.com/business/unity-to-support-indies-with-cash-and-dedicated-support-through-new-fellowship-program"
+      "title": "欧洲游戏工会发AI使用宣言",
+      "sum": "爱尔兰、西班牙、米兰工会成员联合发布宣言，警示生成式AI的无约束使用。",
+      "ta": "行业侧AI治理动向，速览即可，与具体技术管线无直接关系。",
+      "src": "Game Developer · 11-17",
+      "url": "https://www.gamedeveloper.com/production/europe-s-game-worker-unions-publish-a-manifesto-warning-against-unchecked-ai-usage"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Take-Two在GTA6前夕裁Firaxis",
+      "sum": "Take-Two在GTA6发售前夕对姊妹工作室Firaxis进行裁员。",
+      "ta": "纯行业人事动态，速览即可。",
+      "src": "Game Developer · 11-17",
+      "url": "https://www.gamedeveloper.com/business/take-two-lays-off-firaxis-employees-on-eve-of-grand-theft-auto-vi-launch"
     }
   ],
   "flashbackTitle": "",
