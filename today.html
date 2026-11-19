@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月18日 · 周三",
+  "date": "2026年11月19日 · 周四",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>大规模高斯泼溅外存优化训练</em> / <em>免费Blender插件生成散落落叶</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>GTA6 技术系统全面揭秘</em> / <em>GTA6 为 NPC 做 60 万动画</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -274,175 +274,213 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE驱动Coachella广播级AR演出",
-      "sum": "虚幻引擎结合MetaHuman、广播AR与蜘蛛摄像机，将Anyma演出扩展为线上直播视觉。",
-      "ta": "可参考其MetaHuman+广播AR的实时管线组织方式，看大型直播场景下引擎侧如何撑住画面。",
-      "src": "Unreal Engine · 11-17",
-      "url": "https://www.unrealengine.com/spotlights/expanding-anymas-coachella-performance-into-broadcast-ar-with-unreal-engine"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3DGS超轻量免渲染调色迁移",
-      "sum": "ReTouchGS提出面向3D高斯泼溅的超轻量、免渲染美学色彩增强与迁移方法。",
-      "ta": "若做扫描资产后处理，这类免渲染调色思路可省去重训/重渲成本，值得看其轻量实现。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.23054v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "B-Rep图预训练统一CAD理解生成",
-      "sum": "BRepA用图结构对CAD边界表示做预训练，统一支撑分割与新形状生成任务。",
-      "ta": "程序化资产生成若涉及CAD来源模型，可关注其图表示如何兼顾理解与生成。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.22903v1"
-    },
-    {
-      "cat": "gfx",
+      "cat": "biz",
       "imp": "hi",
-      "title": "大规模高斯泼溅外存优化训练",
-      "sum": "DOOM-GS提出动态外存优化，突破图元超出显存时3DGS无法训练的限制。",
-      "ta": "大场景植被/地形级3DGS训练受显存卡脖子，这条直接给出外存方案，值得精读。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.22805v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "抗锯齿三角泼溅精确积分",
-      "sum": "ATS用逐图元精确积分解决三角泼溅的像素中心采样走样与小三角形剔除问题。",
-      "ta": "泼溅类表示的走样是实时渲染痛点，其积分式抗锯齿思路对splat管线有借鉴价值。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.22512v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "Vulkan统一3DGS训练至移动端",
-      "sum": "Cross3DGS基于Vulkan实现从工作站到移动设备的统一3DGS训练。",
-      "ta": "跨GPU/驱动差异的Vulkan实现细节，对想把3DGS训练搬到非CUDA设备的人有参考。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.22240v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "动画渲染引导高效Avatar重建",
-      "sum": "ARG-Avatar用动画-渲染引导，减少对模型容量与数据的依赖，实现快速前馈Avatar重建。",
-      "ta": "原文明确面向游戏与AR，数字人资产快速生成路线可关注其效率取舍。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.22207v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "学习局部帧分割高精扫描小部件",
-      "sum": "FrameSeg3D用学习到的局部坐标系分割高分辨率3D扫描上的指甲、牙齿等微小部件。",
-      "ta": "小部件分割对扫描资产拆分有潜在用处，速览其局部帧构造即可。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.22124v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "人像布光的环境感知灯位推荐",
-      "sum": "研究提出拍摄前环境感知的灯位放置方法，回答灯该放哪才能最好地照亮人脸。",
-      "ta": "与实时渲染关联弱，仅对做虚拟拍摄/打光参考的人有边缘价值。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.22005v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "面部资产贴图4K扩散超分",
-      "sum": "针对面部UV的域调优扩散超分，把1K反照率与置换图提升到4K影视级。",
-      "ta": "面部资产贴图放大是TA常见需求，其域特定统计处理比通用照片超分更对症。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.21890v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "数据高效文本生成3D面部资产",
-      "sum": "FaceRiff用几何条件实现统一的文本到3D面部资产合成，降低对大规模专用数据依赖。",
-      "ta": "数字人面部资产（UV几何+反照率+置换）生成管线，可关注其数据效率做法。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.21867v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "π⁴：4D场景几何与运动基础模型",
-      "sum": "π⁴提出面向4D场景几何与运动的基础模型。",
-      "ta": "4D场景理解若成熟，可影响动态环境重建与程序化布局，速览其能力边界。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.23144"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "混合分辨率视频生成",
-      "sum": "MPEG-Diffusion提出混合分辨率的视频生成方法。",
-      "ta": "与实时渲染无直接关联，仅作生成侧技术动向速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.12069"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "拿破仑燧发枪游戏级资产复刻",
-      "sum": "作者讲述19世纪武器从blockout定比例、烘焙保留雕花到克制做旧的全流程。",
-      "ta": "烘焙保雕花与克制磨损的判断，是硬表面道具贴图分层的实用参考。",
+      "rank": 1,
+      "title": "GTA6 技术系统全面揭秘",
+      "sum": "Rockstar 为 GTA6 重做开放世界：动态床单、出汗、自适应动画、风声传播、局部天气与更聪明警察。",
+      "ta": "自适应动画与局部天气/风场系统是植被与特效方向可直接借鉴的世界响应式设计思路。",
       "src": "80 Level · 11-18",
-      "url": "https://80.lv/articles/recreating-napoleon-s-flintlock-pistols-as-game-ready-3d-assets/"
+      "url": "https://80.lv/articles/behind-the-incredible-new-tech-and-systems-rockstar-built-to-make-gta-6-feel-alive/"
     },
     {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "BeamNG软体物理移植PS5",
-      "sum": "BeamNG团队讲述在PS5上保持软体物理不变，同时优化内存性能并重做UI与手柄操作。",
-      "ta": "主机移植中保物理不变、只压内存与性能的取舍，对做主机性能预算的人有参考。",
-      "src": "80 Level · 11-17",
-      "url": "https://80.lv/articles/how-beamng-drive-brought-its-soft-body-physics-to-ps5/"
-    },
-    {
-      "cat": "flow",
+      "cat": "biz",
       "imp": "hi",
-      "title": "免费Blender插件生成散落落叶",
-      "sum": "Guillaume Bissieres发布免费Blender插件，可快速生成、散布并动画化落叶场景。",
-      "ta": "与植被工具本职强相关，可直接看其散布与动画逻辑能否迁移到UE植被管线。",
-      "src": "80 Level · 11-17",
-      "url": "https://80.lv/articles/this-free-blender-add-on-lets-you-generate-scatter-animate-fallen-leaves/"
+      "rank": 2,
+      "title": "GTA6 为 NPC 做 60 万动画",
+      "sum": "Rockstar 为 GTA6 的 NPC 制作了约 60 万段动画，团队称如同在珠峰上建金字塔。",
+      "ta": "海量动画资产的生产管线与批量管理方式，对大规模程序化资产生成有参考价值。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/rockstar-created-about-600-000-animations-for-npcs-in-gta-6/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "智能 NPC 数量致 GTA6 延期",
+      "sum": "彭博社披露，海量智能 NPC 是 GTA6 延期的原因之一。",
+      "ta": "了解大规模 AI 驱动 NPC 的性能与内容成本，可作为世界密度设计的参照。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/enormous-number-of-smart-npcs-was-one-of-reasons-for-gta-6-delay/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "GTA6 成史上评分最高游戏",
+      "sum": "GTA6 Metacritic 均分 99，评测称赞其技术细节、反应式世界与情感叙事。",
+      "ta": "反应式世界获高评价，说明环境动态反馈是当前 3A 品质的关键竞争点。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/gta-6-lives-up-to-the-hype-and-becomes-the-highest-rated-game-in-history/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PSN 在 GTA6 发售前宕机",
+      "sum": "PlayStation Network 在 GTA6 发售前数小时发生故障，部分玩家无法访问游戏与在线功能。",
+      "ta": "与制作技术无关，仅作行业动态速览。",
+      "src": "80 Level · 11-19",
+      "url": "https://80.lv/articles/psn-is-down-for-thousands-just-hours-before-gta-6-launches-on-ps5/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rockstar 总裁谈 GTA6 初衷",
+      "sum": "Sam Houser 罕见发声明，称 GTA6 旨在超越期待、展示游戏媒介的可能性。",
+      "ta": "纯表态，无技术信息。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/rockstar-boss-says-gta-6-was-made-to-show-what-games-are-capable-of/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Dan Houser 回顾经典开发",
+      "sum": "Rockstar 联合创始人回忆 GTA3 盒图临时改动、Bully 开发困境等往事。",
+      "ta": "行业历史向内容，与当前技术工作关联弱。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/rockstar-co-founder-looks-back-at-making-gta-3-bully-other-classics/"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "Blender从零制作写实叶片",
-      "sum": "Blender艺术家演示不用预制模型与照片贴图，从零创建写实叶片。",
-      "ta": "叶片建模与材质从零构建的思路，对植被资产自制流程有直接借鉴。",
-      "src": "80 Level · 11-17",
-      "url": "https://80.lv/articles/blender-artist-shows-how-to-create-realistic-leaf-from-scratch/"
+      "title": "RTX Spark 紧凑工作站发布",
+      "sum": "NVIDIA 联合华硕、戴尔、微星推出紧凑 RTX Spark 台式机，最高 128GB 统一内存，面向 3D、视频与本地 AI。",
+      "ta": "统一内存大容量机型对本地跑 3D 生成与大型场景预览的 TA 有实际选型意义。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/nvidia-expands-rtx-spark-lineup-with-compact-desktops-for-developers-creators-and-ai-enthusiasts/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Maya 接入 MCP 供 LLM 审计",
+      "sum": "社区发布 mcp-for-maya，让 LLM 代理检查与审计 Maya 场景，而非盲目编辑。",
+      "ta": "场景审计型 AI 代理是 DCC 工具链自动化的可行切入点，比直接生成更可控。",
+      "src": "Tech-Artists · 11-18",
+      "url": "https://www.tech-artists.org/t/mcp-for-maya-an-mcp-server-that-makes-llm-agents-inspect-audit-a-maya-scene-instead-of-editing-blind/18659"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "SkinLayer Studio 分层蒙皮发布",
+      "sum": "SkinLayer Studio 发布，为 Maya（及 Max/Blender）提供分层式首轮蒙皮。",
+      "ta": "分层蒙皮思路可加速角色首轮绑定，间接影响角色资产管线效率。",
+      "src": "Tech-Artists · 11-18",
+      "url": "https://www.tech-artists.org/t/released-skinlayer-studio-layered-first-pass-skinning-for-maya-also-max-blender/18656"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "开源 Maya 静态网格校验器",
+      "sum": "开源 Maya 静态网格校验工具，基于 Python/PySide，覆盖 2024–2026。",
+      "ta": "资产校验脚本是 TA 工具链常规件，可参考其检查项设计。",
+      "src": "Tech-Artists · 11-18",
+      "url": "https://www.tech-artists.org/t/open-source-maya-static-mesh-validator-python-pyside-2024-2026/18651"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 平板版推进发布",
+      "sum": "Blender 总部举办为期一周的工作坊，确定平板项目发布所需步骤。",
+      "ta": "移动端 DCC 交互演进，长期或影响现场美术与扫描工作流。",
+      "src": "Blender 开发博客 · 11-18",
+      "url": "https://code.blender.org/2026/11/tablet-path-to-release/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "MIRACO 2 扫描仪支持高斯泼溅",
+      "sum": "Revopoint MIRACO 2 便携 3D 扫描仪上线众筹，六种模式、精度 0.02mm、支持 3D 高斯泼溅与自动 Scan-to-CAD。",
+      "ta": "扫描端直接输出高斯泼溅，对植被/场景实拍重建进引擎的流程值得关注。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/revopoint-s-miraco-2-combines-portable-3d-scanning-with-automated-scan-to-cad/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯泼溅水下渲染新方法",
+      "sum": "NIRJALA 用三路径光学与可逆物理，去除高斯泼溅中的水体干扰。",
+      "ta": "水下/介质渲染的光学分解思路，对水体特效与泼溅场景重建有参考。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.23450v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经启发的纹理分析合成",
+      "sum": "GramStatTexNet 提出高效可解释、受神经科学启发的纹理分析-合成方法。",
+      "ta": "可解释纹理合成对程序化植被材质与贴图生成有潜在借鉴。",
+      "src": "arXiv · cs.GR · 11-18",
+      "url": "https://arxiv.org/abs/2611.23755v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "运动扩散模型物理性检验",
+      "sum": "研究对比运动扩散模型激活与其自身干净样本估计，重新审视其物理属性探测结论。",
+      "ta": "方法论纠偏，与实时管线距离较远。",
+      "src": "arXiv · cs.GR · 11-18",
+      "url": "https://arxiv.org/abs/2611.24423v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Game2Player 环境与玩家协同",
+      "sum": "Game2Player 通过环境与玩家协同开发，扩展视觉智能体的游戏体验规模。",
+      "ta": "游戏环境作为智能体训练场，与 NPC/玩法 AI 方向相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.24154"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "WorldRuler 可配置规则世界建模",
+      "sum": "WorldRuler 提出在可配置规则下进行交互式世界建模。",
+      "ta": "规则约束的世界模型，对程序化生成与可交互场景构建有启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.24869"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "可控视频生成世界模型 2.0",
+      "sum": "Code World Model 2.0 面向无限可控视频生成。",
+      "ta": "可控视频生成若成熟，可用于材质/特效预演与参考生成。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.22925"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散 Transformer 直接像素预测",
+      "sum": "研究提出跳过解码器，从扩散 Transformer 直接预测像素。",
+      "ta": "生成架构细节，与实时渲染关联尚不明确。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.22287"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "电影改编游戏评测基准",
+      "sum": "Movie2Game-Bench 提出超越可玩性的电影到游戏改编综合评测。",
+      "ta": "评测基准类工作，与制作技术关联弱。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.24669"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Cosmos 双提示构建训练数据集",
+      "sum": "NVIDIA Cosmos 用两个提示构建可直接训练的物理 AI 数据集，覆盖稀有缺陷与夜间场景。",
+      "ta": "合成数据生成流程，与游戏实时渲染无直接关联。",
+      "src": "NVIDIA · 11-18",
+      "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "欧洲游戏工会发AI使用宣言",
-      "sum": "爱尔兰、西班牙、米兰工会成员联合发布宣言，警示生成式AI的无约束使用。",
-      "ta": "行业侧AI治理动向，速览即可，与具体技术管线无直接关系。",
-      "src": "Game Developer · 11-17",
-      "url": "https://www.gamedeveloper.com/production/europe-s-game-worker-unions-publish-a-manifesto-warning-against-unchecked-ai-usage"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Take-Two在GTA6前夕裁Firaxis",
-      "sum": "Take-Two在GTA6发售前夕对姊妹工作室Firaxis进行裁员。",
-      "ta": "纯行业人事动态，速览即可。",
-      "src": "Game Developer · 11-17",
-      "url": "https://www.gamedeveloper.com/business/take-two-lays-off-firaxis-employees-on-eve-of-grand-theft-auto-vi-launch"
+      "title": "《光与影》叙事主管谈融资",
+      "sum": "《光与影：33号远征队》叙事主管 Jennifer Svedberg-Yen 希望改变游戏融资的优先级叙事。",
+      "ta": "行业融资话题，与 TA 工作无直接关系。",
+      "src": "Game Developer · 11-18",
+      "url": "https://www.gamedeveloper.com/design/clair-obscur-expedition-33-s-narrative-lead-wants-to-change-game-funding"
     }
   ],
   "flashbackTitle": "",

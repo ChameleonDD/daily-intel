@@ -2,8 +2,208 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-18 16:23",
+  "updated": "2026-11-19 16:35",
   "cards": [
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 1,
+      "title": "GTA6 技术系统全面揭秘",
+      "sum": "Rockstar 为 GTA6 重做开放世界：动态床单、出汗、自适应动画、风声传播、局部天气与更聪明警察。",
+      "ta": "自适应动画与局部天气/风场系统是植被与特效方向可直接借鉴的世界响应式设计思路。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/behind-the-incredible-new-tech-and-systems-rockstar-built-to-make-gta-6-feel-alive/"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 2,
+      "title": "GTA6 为 NPC 做 60 万动画",
+      "sum": "Rockstar 为 GTA6 的 NPC 制作了约 60 万段动画，团队称如同在珠峰上建金字塔。",
+      "ta": "海量动画资产的生产管线与批量管理方式，对大规模程序化资产生成有参考价值。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/rockstar-created-about-600-000-animations-for-npcs-in-gta-6/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "智能 NPC 数量致 GTA6 延期",
+      "sum": "彭博社披露，海量智能 NPC 是 GTA6 延期的原因之一。",
+      "ta": "了解大规模 AI 驱动 NPC 的性能与内容成本，可作为世界密度设计的参照。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/enormous-number-of-smart-npcs-was-one-of-reasons-for-gta-6-delay/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "PSN 在 GTA6 发售前宕机",
+      "sum": "PlayStation Network 在 GTA6 发售前数小时发生故障，部分玩家无法访问游戏与在线功能。",
+      "ta": "与制作技术无关，仅作行业动态速览。",
+      "src": "80 Level · 11-19",
+      "url": "https://80.lv/articles/psn-is-down-for-thousands-just-hours-before-gta-6-launches-on-ps5/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rockstar 总裁谈 GTA6 初衷",
+      "sum": "Sam Houser 罕见发声明，称 GTA6 旨在超越期待、展示游戏媒介的可能性。",
+      "ta": "纯表态，无技术信息。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/rockstar-boss-says-gta-6-was-made-to-show-what-games-are-capable-of/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Dan Houser 回顾经典开发",
+      "sum": "Rockstar 联合创始人回忆 GTA3 盒图临时改动、Bully 开发困境等往事。",
+      "ta": "行业历史向内容，与当前技术工作关联弱。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/rockstar-co-founder-looks-back-at-making-gta-3-bully-other-classics/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "RTX Spark 紧凑工作站发布",
+      "sum": "NVIDIA 联合华硕、戴尔、微星推出紧凑 RTX Spark 台式机，最高 128GB 统一内存，面向 3D、视频与本地 AI。",
+      "ta": "统一内存大容量机型对本地跑 3D 生成与大型场景预览的 TA 有实际选型意义。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/nvidia-expands-rtx-spark-lineup-with-compact-desktops-for-developers-creators-and-ai-enthusiasts/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Maya 接入 MCP 供 LLM 审计",
+      "sum": "社区发布 mcp-for-maya，让 LLM 代理检查与审计 Maya 场景，而非盲目编辑。",
+      "ta": "场景审计型 AI 代理是 DCC 工具链自动化的可行切入点，比直接生成更可控。",
+      "src": "Tech-Artists · 11-18",
+      "url": "https://www.tech-artists.org/t/mcp-for-maya-an-mcp-server-that-makes-llm-agents-inspect-audit-a-maya-scene-instead-of-editing-blind/18659"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "SkinLayer Studio 分层蒙皮发布",
+      "sum": "SkinLayer Studio 发布，为 Maya（及 Max/Blender）提供分层式首轮蒙皮。",
+      "ta": "分层蒙皮思路可加速角色首轮绑定，间接影响角色资产管线效率。",
+      "src": "Tech-Artists · 11-18",
+      "url": "https://www.tech-artists.org/t/released-skinlayer-studio-layered-first-pass-skinning-for-maya-also-max-blender/18656"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "开源 Maya 静态网格校验器",
+      "sum": "开源 Maya 静态网格校验工具，基于 Python/PySide，覆盖 2024–2026。",
+      "ta": "资产校验脚本是 TA 工具链常规件，可参考其检查项设计。",
+      "src": "Tech-Artists · 11-18",
+      "url": "https://www.tech-artists.org/t/open-source-maya-static-mesh-validator-python-pyside-2024-2026/18651"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 平板版推进发布",
+      "sum": "Blender 总部举办为期一周的工作坊，确定平板项目发布所需步骤。",
+      "ta": "移动端 DCC 交互演进，长期或影响现场美术与扫描工作流。",
+      "src": "Blender 开发博客 · 11-18",
+      "url": "https://code.blender.org/2026/11/tablet-path-to-release/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "MIRACO 2 扫描仪支持高斯泼溅",
+      "sum": "Revopoint MIRACO 2 便携 3D 扫描仪上线众筹，六种模式、精度 0.02mm、支持 3D 高斯泼溅与自动 Scan-to-CAD。",
+      "ta": "扫描端直接输出高斯泼溅，对植被/场景实拍重建进引擎的流程值得关注。",
+      "src": "80 Level · 11-18",
+      "url": "https://80.lv/articles/revopoint-s-miraco-2-combines-portable-3d-scanning-with-automated-scan-to-cad/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "高斯泼溅水下渲染新方法",
+      "sum": "NIRJALA 用三路径光学与可逆物理，去除高斯泼溅中的水体干扰。",
+      "ta": "水下/介质渲染的光学分解思路，对水体特效与泼溅场景重建有参考。",
+      "src": "arXiv · cs.GR · 11-17",
+      "url": "https://arxiv.org/abs/2611.23450v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "神经启发的纹理分析合成",
+      "sum": "GramStatTexNet 提出高效可解释、受神经科学启发的纹理分析-合成方法。",
+      "ta": "可解释纹理合成对程序化植被材质与贴图生成有潜在借鉴。",
+      "src": "arXiv · cs.GR · 11-18",
+      "url": "https://arxiv.org/abs/2611.23755v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "运动扩散模型物理性检验",
+      "sum": "研究对比运动扩散模型激活与其自身干净样本估计，重新审视其物理属性探测结论。",
+      "ta": "方法论纠偏，与实时管线距离较远。",
+      "src": "arXiv · cs.GR · 11-18",
+      "url": "https://arxiv.org/abs/2611.24423v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Game2Player 环境与玩家协同",
+      "sum": "Game2Player 通过环境与玩家协同开发，扩展视觉智能体的游戏体验规模。",
+      "ta": "游戏环境作为智能体训练场，与 NPC/玩法 AI 方向相关。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.24154"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "WorldRuler 可配置规则世界建模",
+      "sum": "WorldRuler 提出在可配置规则下进行交互式世界建模。",
+      "ta": "规则约束的世界模型，对程序化生成与可交互场景构建有启发。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.24869"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "可控视频生成世界模型 2.0",
+      "sum": "Code World Model 2.0 面向无限可控视频生成。",
+      "ta": "可控视频生成若成熟，可用于材质/特效预演与参考生成。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.22925"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "扩散 Transformer 直接像素预测",
+      "sum": "研究提出跳过解码器，从扩散 Transformer 直接预测像素。",
+      "ta": "生成架构细节，与实时渲染关联尚不明确。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.22287"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "电影改编游戏评测基准",
+      "sum": "Movie2Game-Bench 提出超越可玩性的电影到游戏改编综合评测。",
+      "ta": "评测基准类工作，与制作技术关联弱。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.24669"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Cosmos 双提示构建训练数据集",
+      "sum": "NVIDIA Cosmos 用两个提示构建可直接训练的物理 AI 数据集，覆盖稀有缺陷与夜间场景。",
+      "ta": "合成数据生成流程，与游戏实时渲染无直接关联。",
+      "src": "NVIDIA · 11-18",
+      "url": "https://developer.nvidia.com/blog/build-training-ready-physical-ai-datasets-with-two-prompts-in-nvidia-cosmos/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《光与影》叙事主管谈融资",
+      "sum": "《光与影：33号远征队》叙事主管 Jennifer Svedberg-Yen 希望改变游戏融资的优先级叙事。",
+      "ta": "行业融资话题，与 TA 工作无直接关系。",
+      "src": "Game Developer · 11-18",
+      "url": "https://www.gamedeveloper.com/design/clair-obscur-expedition-33-s-narrative-lead-wants-to-change-game-funding"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -138,15 +338,6 @@ window.INTEL_RECENT = {
       "ta": "主机移植中保物理不变、只压内存与性能的取舍，对做主机性能预算的人有参考。",
       "src": "80 Level · 11-17",
       "url": "https://80.lv/articles/how-beamng-drive-brought-its-soft-body-physics-to-ps5/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "title": "免费Blender插件生成散落落叶",
-      "sum": "Guillaume Bissieres发布免费Blender插件，可快速生成、散布并动画化落叶场景。",
-      "ta": "与植被工具本职强相关，可直接看其散布与动画逻辑能否迁移到UE植被管线。",
-      "src": "80 Level · 11-17",
-      "url": "https://80.lv/articles/this-free-blender-add-on-lets-you-generate-scatter-animate-fallen-leaves/"
     },
     {
       "cat": "biz",
@@ -336,15 +527,6 @@ window.INTEL_RECENT = {
       "ta": "关注其对实时游戏状态的理解与动作输出延迟，与引擎侧集成方式值得留意。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2611.18397"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "纯视频 Transformer 做像素扩散",
-      "sum": "JVT 用单一视频 Transformer 简化像素空间视频扩散流程。",
-      "ta": "与引擎渲染无直接关联，仅作生成模型架构动向速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.18549"
     },
     {
       "cat": "ai",
@@ -737,15 +919,6 @@ window.INTEL_RECENT = {
     },
     {
       "cat": "biz",
-      "imp": "mid",
-      "title": "GTA6预载提前九天",
-      "sum": "GTA6成PS Store史上预购最多游戏，索尼与Rockstar开放提前九天预载。",
-      "ta": "行业级发行事件，关注其体量与上线节奏对同期项目排期的影响。",
-      "src": "PlayStation Blog · 11-10",
-      "url": "https://blog.playstation.com/2026/11/10/pre-load-grand-theft-auto-vi-on-ps5-starting-today/"
-    },
-    {
-      "cat": "biz",
       "imp": "lo",
       "title": "索尼Fairgames项目取消",
       "sum": "索尼服务型劫案模拟游戏Fairgames被取消，不计划裁员。",
@@ -1090,15 +1263,6 @@ window.INTEL_RECENT = {
       "ta": "涉及游戏动捕数据管线，若做角色/植被交互驱动可关注其补全思路。",
       "src": "arXiv · cs.GR · 11-05",
       "url": "https://arxiv.org/abs/2611.08301v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Maya多视觉风格制作解析",
-      "sum": "华纳动画新片团队讲解如何用Maya处理影片的多种视觉风格。",
-      "ta": "离线动画流程参考，与实时管线关联有限，速览。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/how-the-cat-in-the-hat-was-made-with-autodesk-maya-flow/"
     },
     {
       "cat": "flow",
@@ -1652,169 +1816,6 @@ window.INTEL_RECENT = {
       "ta": "用 AI 辅助写玩法/工具代码时需注意其能力边界与合规限制。",
       "src": "Game Developer · 10-30",
       "url": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "EA 关停 BioWare 转投星战",
-      "sum": "报道称 EA 关闭 BioWare，将资源从质量效应转向新星战前线作品。",
-      "ta": "行业资源再分配信号，关注大厂项目取舍对人才与外包流向的影响。",
-      "src": "Game Developer · 10-30",
-      "url": "https://www.gamedeveloper.com/business/report-ea-shut-down-bioware-in-favor-of-star-wars-battlefront-sequel-after-previously-decrying-licensed-games"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Romero 取消项目找到新发行",
-      "sum": "John Romero 被 Xbox 取消的项目获新发行商接手，团队部分保留。",
-      "ta": "行业动态速览，与 TA 日常无直接关联。",
-      "src": "Game Developer · 10-30",
-      "url": "https://www.gamedeveloper.com/business/john-romero-canceled-game-finds-a-new-publisher-amidst-an-overall-scope-change"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "暗黑风 PvP 新作将抢先体验",
-      "sum": "前暴雪 CCO 的 Bonfire Studios 首作 Arkheron 十一月进入抢先体验。",
-      "ta": "新项目动态速览，可留意其美术与特效风格走向。",
-      "src": "80 Level · 10-30",
-      "url": "https://80.lv/articles/diablo-style-pvp-by-former-blizzard-cco-is-coming-to-early-access-in-november"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "索尼动画片晨间动作参考",
-      "sum": "Daniel Ceballos 发布为索尼 GOAT 电影制作的晨间日常动画参考。",
-      "ta": "动画参考素材，速览即可。",
-      "src": "80 Level · 10-30",
-      "url": "https://80.lv/articles/fun-morning-routine-animation-reference-for-sony-s-goat-movie/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "殡葬师开发商取消作免费玩",
-      "sum": "The Mortuary Assistant 团队被取消的 Paranormal Activity 游戏现可免费游玩。",
-      "ta": "恐怖品类动态速览，与 TA 工作无直接关联。",
-      "src": "80 Level · 10-30",
-      "url": "https://80.lv/articles/you-can-now-play-the-mortuary-assistant-dev-s-canceled-paranormal-activity-game-for-free/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "六款独立游戏共襄善举",
-      "sum": "六支独立团队谈各自游戏的创意与开发决策。",
-      "ta": "独立开发访谈速览，参考价值有限。",
-      "src": "80 Level · 10-30",
-      "url": "https://80.lv/articles/inside-six-very-different-indie-games-supporting-a-shared-cause/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "单图生成可动画发卡",
-      "sum": "HairDeck 从单张图像生成风格化 hair cards，可直接用 spring bone 驱动动画。",
-      "ta": "植被/卡片类几何的程序化生成思路可迁移，关注其 ribbon 布局与骨骼绑定方式。",
-      "src": "arXiv · cs.GR · 10-29",
-      "url": "https://arxiv.org/abs/2610.40599v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "鱼眼全视场高斯泼溅",
-      "sum": "GOFish 实现鱼眼镜头全视场高斯泼溅渲染并提取对齐碰撞网格。",
-      "ta": "数字孪生场景重建可参考，网格与渲染对齐对碰撞/物理资产制作有借鉴。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.37818v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "神经显式形状表示",
-      "sum": "提出兼顾连续曲面建模、高效渲染与对象压缩的神经显式形状表示。",
-      "ta": "显式曲面查询对光追友好，值得关注其结构化输出空间如何服务实时渲染。",
-      "src": "arXiv · cs.GR · 10-28",
-      "url": "https://arxiv.org/abs/2610.38441v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "频率自适应高斯网格",
-      "sum": "融合特征网格与 2D 高斯，提出频率自适应的高效图像表示。",
-      "ta": "结构化与非结构化表示的权衡思路，可类比到植被分布与 LOD 表示策略。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.38007v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "多视图一致几何注入",
-      "sum": "将几何推断与纹理合成解耦，提升单图到多视图生成的一致性。",
-      "ta": "几何与纹理解耦的思路对程序化资产与贴图生成管线有参考价值。",
-      "src": "arXiv · cs.GR · 10-28",
-      "url": "https://arxiv.org/abs/2610.38518v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "城市植被配置优化",
-      "sum": "Greenscapes 优化城市植被配置，平衡遮荫、微气候与景观风格。",
-      "ta": "植被布局优化的目标函数设计，可借鉴到开放世界植被程序化分布规则。",
-      "src": "arXiv · cs.GR · 10-29",
-      "url": "https://arxiv.org/abs/2610.40007v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "MPM 驱动灵巧操作",
-      "sum": "MG-CD-MPM 用连续损伤与粘塑性 MPM 支撑强化学习灵巧操作仿真。",
-      "ta": "大变形与拓扑变化的仿真方案，与流体/软体特效求解器思路可对照。",
-      "src": "arXiv · cs.GR · 10-29",
-      "url": "https://arxiv.org/abs/2610.39975v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "人群数据嵌入仿真",
-      "sum": "Trajeform 将人群轨迹数据嵌入，学习更自然的环境适配行为。",
-      "ta": "群体行为数据驱动思路，可类比到场景中 NPC 与植被交互的分布逻辑。",
-      "src": "arXiv · cs.GR · 10-29",
-      "url": "https://arxiv.org/abs/2610.39563v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "网页版介观程序化建模",
-      "sum": "MesoCraft 提供浏览器内交互式介观生物结构程序化建模工具。",
-      "ta": "交互式程序化建模的 Web 实现，对工具 UX 设计有轻量参考。",
-      "src": "arXiv · cs.GR · 10-27",
-      "url": "https://arxiv.org/abs/2610.37954v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "极端角度动漫脸工具",
-      "sum": "DillonGoo Studios 发布 Blender 工具，处理极端角度下的动漫脸部。",
-      "ta": "风格化角色制作辅助，关注其形变与透视处理方式。",
-      "src": "80 Level · 10-29",
-      "url": "https://80.lv/articles/create-perfect-anime-faces-at-extreme-angles-with-this-blender-tool/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "上古卷轴6副标题传闻",
-      "sum": "报道称《上古卷轴6》官方副标题与 Hammerfell 相关。",
-      "ta": "行业动态速览，与 TA 工作无直接关联。",
-      "src": "80 Level · 10-29",
-      "url": "https://80.lv/articles/the-elder-scrolls-6-may-finally-have-a-name-confirmation-and-it-makes-perfect-sense/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "第二人生转型现代平台",
-      "sum": "Linden Lab 介绍 Luau、VS Code 集成与实时迭代等平台现代化举措。",
-      "ta": "脚本语言与编辑器集成方案，对工具链设计有轻度参考。",
-      "src": "80 Level · 10-29",
-      "url": "https://80.lv/articles/second-life-wants-its-23-year-old-world-to-be-a-modern-game-platform/"
     }
   ]
 };
