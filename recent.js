@@ -2,8 +2,118 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-20 16:18",
+  "updated": "2026-11-21 16:09",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE6弃用蓝图改Verse",
+      "sum": "Epic确认UE6项目不含蓝图与Actor框架，玩法改用Verse与Scene Graph构建。",
+      "ta": "直接影响所有UE工具链与蓝图资产迁移策略，需尽早评估Verse与Scene Graph对植被/程序化工具的重写成本。",
+      "src": "Unreal Engine · 11-20",
+      "url": "https://www.unrealengine.com/news/an-update-on-blueprints-and-the-path-to-ue6"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 2,
+      "title": "GTA6创史上最大首发",
+      "sum": "GTA6首日零售额超37.9亿美元，发售前已售出3250万份。",
+      "ta": "行业量级标杆事件，可作3A项目预算与渲染/资产规模预期的参照。",
+      "src": "Game Developer · 11-20",
+      "url": "https://www.gamedeveloper.com/business/grand-theft-auto-vi-is-officially-the-biggest-video-game-launch-ever"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "原生体素域扩散Transformer",
+      "sum": "Direct3D-V3提出在原生体素域运行的免潜空间扩散Transformer。",
+      "ta": "体素域直接生成对程序化3D资产与体积内容有潜在参考价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.26511"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "流式世界模型验证转精炼",
+      "sum": "SpecWM把验证环节转为精炼，用于流式世界模型生成。",
+      "ta": "流式世界模型思路可关注其对实时生成与仿真场景的潜在影响。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.26211"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "程序化视频在线错误检测",
+      "sum": "面向指令条件程序化视频的在线错误检测方法。",
+      "ta": "程序化流程的错误检测思路可类比到程序化生成工具的自检。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.25567"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频扩散复用学潜在动作",
+      "sum": "复用视频扩散Transformer做自监督潜在动作学习。",
+      "ta": "潜在动作表征对动画/动作生成方向有潜在借鉴意义。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.26617"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "音频驱动流式虚拟形象",
+      "sum": "AURA提出音频驱动的流式虚拟形象生成方案。",
+      "ta": "实时虚拟形象方向，可关注其对角色表现管线的潜在影响。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.26540"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5加勒比城市环境材质流程",
+      "sum": "分享UE5中加勒比风格街景的材质制作与细节工作流。",
+      "ta": "可参考其丰富材质的分层与细节处理手法，用于场景材质搭建。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/building-detailed-caribbean-inspired-city-environment-in-unreal-engine-5/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "育碧裁员166人",
+      "sum": "育碧在《刺客信条：影》相关工作室裁员166人。",
+      "ta": "行业收缩信号，速览即可。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/ubisoft-lays-off-166-employees-across-studios-behind-assassin-s-creed-shadows/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Build a Rocket Boy陷债务",
+      "sum": "MindsEye开发商试图通过起诉差评摆脱8098万美元债务。",
+      "ta": "行业八卦速览。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/mindseye-developers-build-a-rocket-boy-are-trying-to-get-out-of-their-usd80-98-million-debt/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "GameStop批纯数字发行",
+      "sum": "GameStop CEO称全数字发行损害消费者利益。",
+      "ta": "发行渠道话题，速览即可。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/gamestop-ceo-calls-out-digital-only-releases-amid-gta-6-hype/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rockstar解释GTA6删飞镖",
+      "sum": "Rockstar称宁可不做也不做不够好的飞镖小游戏。",
+      "ta": "设计取舍观点，速览即可。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/rockstar-explained-why-they-didn-t-add-the-darts-mini-game-in-gta-6/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -124,30 +234,11 @@ window.INTEL_RECENT = {
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "育碧加拿大裁员166人",
-      "sum": "育碧在蒙特利尔与魁北克城工作室裁员166人。",
-      "ta": "行业动态，速览。",
-      "src": "Game Developer · 11-19",
-      "url": "https://www.gamedeveloper.com/business/ubiosft-lays-off-166-in-canada"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
       "title": "前Take-Two CEO看好游戏AI",
       "sum": "前Take-Two CEO称西方消费者对游戏AI的接受只差一个「玩具总动员时刻」。",
       "ta": "行业AI态度风向，速览。",
       "src": "80 Level · 11-19",
       "url": "https://80.lv/articles/former-take-two-ceo-believes-attitudes-toward-ai-in-video-games-will-improve/"
-    },
-    {
-      "cat": "biz",
-      "imp": "hi",
-      "rank": 1,
-      "title": "GTA6 技术系统全面揭秘",
-      "sum": "Rockstar 为 GTA6 重做开放世界：动态床单、出汗、自适应动画、风声传播、局部天气与更聪明警察。",
-      "ta": "自适应动画与局部天气/风场系统是植被与特效方向可直接借鉴的世界响应式设计思路。",
-      "src": "80 Level · 11-18",
-      "url": "https://80.lv/articles/behind-the-incredible-new-tech-and-systems-rockstar-built-to-make-gta-6-feel-alive/"
     },
     {
       "cat": "biz",
@@ -176,15 +267,6 @@ window.INTEL_RECENT = {
       "ta": "与制作技术无关，仅作行业动态速览。",
       "src": "80 Level · 11-19",
       "url": "https://80.lv/articles/psn-is-down-for-thousands-just-hours-before-gta-6-launches-on-ps5/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Rockstar 总裁谈 GTA6 初衷",
-      "sum": "Sam Houser 罕见发声明，称 GTA6 旨在超越期待、展示游戏媒介的可能性。",
-      "ta": "纯表态，无技术信息。",
-      "src": "80 Level · 11-18",
-      "url": "https://80.lv/articles/rockstar-boss-says-gta-6-was-made-to-show-what-games-are-capable-of/"
     },
     {
       "cat": "biz",
@@ -293,15 +375,6 @@ window.INTEL_RECENT = {
       "ta": "可控视频生成若成熟，可用于材质/特效预演与参考生成。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2611.22925"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散 Transformer 直接像素预测",
-      "sum": "研究提出跳过解码器，从扩散 Transformer 直接预测像素。",
-      "ta": "生成架构细节，与实时渲染关联尚不明确。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.22287"
     },
     {
       "cat": "ai",
@@ -852,15 +925,6 @@ window.INTEL_RECENT = {
       "ta": "写实皮肤与grooming技巧可迁移到角色/生物资产制作。",
       "src": "80 Level · 11-13",
       "url": "https://80.lv/articles/making-the-portrait-of-a-harry-potter-inspired-goblin-with-realistic-skin-texture/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "四人团队用CC5与UE5做角色",
-      "sum": "四人团队用Character Creator 5、iClone 8与UE5构建风格化角色与过场。",
-      "ta": "小团队角色管线参考，关注CC5到UE5的资产流转效率。",
-      "src": "80 Level · 11-12",
-      "url": "https://80.lv/articles/how-unreal-game-adur-uses-stylized-3d-character-creator-for-development/"
     },
     {
       "cat": "flow",
@@ -1750,70 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "偏工程仿真，与游戏实时渲染关联弱。",
       "src": "arXiv · cs.GR · 11-01",
       "url": "https://arxiv.org/abs/2611.01414v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "单例无限世界生成约束",
-      "sum": "研究仅凭一个样例生成无界世界时局部生成器必须共享什么，对应WFC的局部约束难题。",
-      "ta": "直接关系程序化世界/植被生成的理论边界，值得精读其对局部约束与远距一致性的分析。",
-      "src": "arXiv · cs.GR · 10-31",
-      "url": "https://arxiv.org/abs/2611.01048v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "视频扩散统一相机运动控制",
-      "sum": "UniCaMo用稀疏3D物体轨迹与相机轨迹联合控制视频扩散中的相机与物体运动。",
-      "ta": "若用视频扩散做预演/参考，可看其相机轨迹控制如何构造运动一致输入噪声。",
-      "src": "arXiv · cs.GR · 10-31",
-      "url": "https://arxiv.org/abs/2611.00810v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "智能体视频生成与世界建模",
-      "sum": "探讨视频生成结合智能体框架，涉及智能体视频生成、世界建模与递归自我改进。",
-      "ta": "世界模型方向，关注其与交互式仿真的关联，暂非直接落地工具。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.40191"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "持久个人智能体增强人类能动性",
-      "sum": "提出Avatar Intelligence概念，用持久个人智能体放大人的能动性。",
-      "ta": "偏通用AI智能体，与游戏/渲染关联弱。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.03092"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "自建扩散语言模型转换法",
-      "sum": "BYOD提出高效的自回归到扩散语言模型转换方法。",
-      "ta": "纯语言模型方向，与TA工作流无关。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.41574"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "像素拼贴营造工业恐惧",
-      "sum": "Medium Rare开发者谈如何用像素艺术与拼贴营造恐惧而非惊吓，并可视化心理创伤。",
-      "ta": "美术风格参考，速览其拼贴与像素表现手法。",
-      "src": "80 Level · 11-02",
-      "url": "https://80.lv/articles/how-medium-rare-uses-pixel-art-collages-to-evoke-dread-of-industrialized-cannibalism/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender复刻Control嘶嘶特效",
-      "sum": "教程演示在Blender中复刻《控制》里的Hiss特效。",
-      "ta": "可看其特效分层与材质做法，作为Niagara/材质思路的对照参考。",
-      "src": "80 Level · 11-02",
-      "url": "https://80.lv/articles/recreating-hiss-effect-from-remedy-s-control-in-blender/"
     }
   ]
 };

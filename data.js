@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月20日 · 周五",
+  "date": "2026年11月21日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>高斯泼溅超分新方案AGSR</em> / <em>视频模型驱动交互游戏世界</em> / <em>单视频重建可编辑网格场景</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>UE6弃用蓝图改Verse</em> / <em>GTA6创史上最大首发</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -127,139 +127,132 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "高斯泼溅超分新方案AGSR",
-      "sum": "通过收缩投影协方差缓解高斯光栅化的带宽限制，提升3DGS细节。",
-      "ta": "3DGS渲染质量优化思路，可关注其对实时新视角合成的性能影响。",
-      "src": "arXiv · cs.GR · 11-19",
-      "url": "https://arxiv.org/abs/2611.25934v1"
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE6弃用蓝图改Verse",
+      "sum": "Epic确认UE6项目不含蓝图与Actor框架，玩法改用Verse与Scene Graph构建。",
+      "ta": "直接影响所有UE工具链与蓝图资产迁移策略，需尽早评估Verse与Scene Graph对植被/程序化工具的重写成本。",
+      "src": "Unreal Engine · 11-20",
+      "url": "https://www.unrealengine.com/news/an-update-on-blueprints-and-the-path-to-ue6"
+    },
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 2,
+      "title": "GTA6创史上最大首发",
+      "sum": "GTA6首日零售额超37.9亿美元，发售前已售出3250万份。",
+      "ta": "行业量级标杆事件，可作3A项目预算与渲染/资产规模预期的参照。",
+      "src": "Game Developer · 11-20",
+      "url": "https://www.gamedeveloper.com/business/grand-theft-auto-vi-is-officially-the-biggest-video-game-launch-ever"
     },
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "视频模型驱动交互游戏世界",
-      "sum": "ContextRenderer用视频生成模型渲染引擎场景，应对持续游玩中的动态条件。",
-      "ta": "生成式渲染与引擎场景表示结合的探索，值得关注交互式世界模型的渲染路径。",
-      "src": "arXiv · cs.GR · 11-19",
-      "url": "https://arxiv.org/abs/2611.25838v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单视频重建可编辑网格场景",
-      "sum": "SceneAnything用智能体从单视频重建大规模可编辑3D网格场景。",
-      "ta": "程序化场景重建的agentic思路，对关卡/场景生成工具链有参考价值。",
-      "src": "arXiv · cs.GR · 11-19",
-      "url": "https://arxiv.org/abs/2611.25340v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "生成视频产出可重光照高斯",
-      "sum": "VideoRNG从生成视频模型得到可重光照神经高斯，突破固定烘焙外观限制。",
-      "ta": "可重光照高斯资产生成，对植被/道具资产的PBR与光照管线有潜在价值。",
-      "src": "arXiv · cs.GR · 11-19",
-      "url": "https://arxiv.org/abs/2611.25338v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "字形SVG转紧凑高斯资产",
-      "sum": "FFGaussType将字形与SVG几何前馈转换为紧凑高斯资产，用于场景内3D文字。",
-      "ta": "场景内3D文字/图标的高斯化方案，速览即可。",
-      "src": "arXiv · cs.GR · 11-19",
-      "url": "https://arxiv.org/abs/2611.26431v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "高斯分割的体积监督",
-      "sum": "提出体积监督方法改进3D高斯分割，指出掩码不等于物体本身。",
-      "ta": "3DGS分割精度相关，速览。",
+      "title": "原生体素域扩散Transformer",
+      "sum": "Direct3D-V3提出在原生体素域运行的免潜空间扩散Transformer。",
+      "ta": "体素域直接生成对程序化3D资产与体积内容有潜在参考价值。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.21383"
+      "url": "https://huggingface.co/papers/2611.26511"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "流式世界模型验证转精炼",
+      "sum": "SpecWM把验证环节转为精炼，用于流式世界模型生成。",
+      "ta": "流式世界模型思路可关注其对实时生成与仿真场景的潜在影响。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.26211"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "多模态大模型变身世界模型",
-      "sum": "WM^MLLM将多模态大模型改造为世界模型。",
-      "ta": "世界模型方向，与实时渲染关联未明，速览。",
+      "title": "扩散Transformer后训练即激活引导",
+      "sum": "论文指出扩散Transformer的RL后训练本质是激活引导。",
+      "ta": "理解生成模型微调机制，对AI资产生成管线调优有间接参考。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.24193"
+      "url": "https://huggingface.co/papers/2611.26627"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "动作效果匹配提升世界模型",
-      "sum": "通过动作效果匹配让世界模型更忠实于动态变化。",
-      "ta": "世界模型动态保真度研究，速览。",
+      "title": "程序化视频在线错误检测",
+      "sum": "面向指令条件程序化视频的在线错误检测方法。",
+      "ta": "程序化流程的错误检测思路可类比到程序化生成工具的自检。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.25980"
+      "url": "https://huggingface.co/papers/2611.25567"
     },
     {
       "cat": "ai",
       "imp": "lo",
-      "title": "智能体游玩经验驱动游戏设计",
-      "sum": "PlayCraft从智能体游玩经验出发设计有吸引力的游戏。",
-      "ta": "AI辅助游戏设计探索，速览。",
+      "title": "视频扩散复用学潜在动作",
+      "sum": "复用视频扩散Transformer做自监督潜在动作学习。",
+      "ta": "潜在动作表征对动画/动作生成方向有潜在借鉴意义。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.26624"
+      "url": "https://huggingface.co/papers/2611.26617"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "音频驱动流式虚拟形象",
+      "sum": "AURA提出音频驱动的流式虚拟形象生成方案。",
+      "ta": "实时虚拟形象方向，可关注其对角色表现管线的潜在影响。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.26540"
     },
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "巧妙的权重绘制工具",
-      "sum": "展示一款改善角色形变的权重绘制工具。",
-      "ta": "角色绑定/权重工作流工具，值得看其交互设计思路。",
-      "src": "80 Level · 11-19",
-      "url": "https://80.lv/articles/clever-weight-painting-tool-for-better-character-deformations/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender手绘蜘蛛侠风格拆解",
-      "sum": "艺术家拆解蜘蛛侠平行宇宙风格手绘效果的「爆炸图层」技法。",
-      "ta": "风格化材质/手绘效果参考，速览。",
-      "src": "80 Level · 11-19",
-      "url": "https://80.lv/articles/blender-artist-breaks-down-spider-verse-style-hand-painted-effect/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "蜘蛛侠黏墙模拟工作流",
-      "sum": "展示蜘蛛侠黏墙玩具模拟并分享作者工作流。",
-      "ta": "趣味模拟案例，速览。",
-      "src": "80 Level · 11-19",
-      "url": "https://80.lv/articles/this-spider-man-simulation-brings-back-memories-of-sticky-wall-crawler-toys/"
+      "title": "UE5加勒比城市环境材质流程",
+      "sum": "分享UE5中加勒比风格街景的材质制作与细节工作流。",
+      "ta": "可参考其丰富材质的分层与细节处理手法，用于场景材质搭建。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/building-detailed-caribbean-inspired-city-environment-in-unreal-engine-5/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "1-bit城市建造游戏美术解析",
-      "sum": "四人独立团队谈1980年代Mac风格1-bit城市建造游戏的视觉与跨平台开发。",
-      "ta": "风格化美术与独立开发经验，速览。",
-      "src": "80 Level · 11-19",
-      "url": "https://80.lv/articles/making-a-1980s-macintosh-style-1-bit-city-builder-set-on-a-stormy-northern-island/"
+      "title": "育碧裁员166人",
+      "sum": "育碧在《刺客信条：影》相关工作室裁员166人。",
+      "ta": "行业收缩信号，速览即可。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/ubisoft-lays-off-166-employees-across-studios-behind-assassin-s-creed-shadows/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "育碧加拿大裁员166人",
-      "sum": "育碧在蒙特利尔与魁北克城工作室裁员166人。",
-      "ta": "行业动态，速览。",
-      "src": "Game Developer · 11-19",
-      "url": "https://www.gamedeveloper.com/business/ubiosft-lays-off-166-in-canada"
+      "title": "GTA6开发者忧发售后裁员",
+      "sum": "GTA6开发者担心游戏发售后可能面临裁员。",
+      "ta": "行业就业环境速览。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/gta-6-developers-are-worried-about-possible-layoffs-after-the-game-ships/"
     },
     {
       "cat": "biz",
       "imp": "lo",
-      "title": "前Take-Two CEO看好游戏AI",
-      "sum": "前Take-Two CEO称西方消费者对游戏AI的接受只差一个「玩具总动员时刻」。",
-      "ta": "行业AI态度风向，速览。",
-      "src": "80 Level · 11-19",
-      "url": "https://80.lv/articles/former-take-two-ceo-believes-attitudes-toward-ai-in-video-games-will-improve/"
+      "title": "Build a Rocket Boy陷债务",
+      "sum": "MindsEye开发商试图通过起诉差评摆脱8098万美元债务。",
+      "ta": "行业八卦速览。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/mindseye-developers-build-a-rocket-boy-are-trying-to-get-out-of-their-usd80-98-million-debt/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "GameStop批纯数字发行",
+      "sum": "GameStop CEO称全数字发行损害消费者利益。",
+      "ta": "发行渠道话题，速览即可。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/gamestop-ceo-calls-out-digital-only-releases-amid-gta-6-hype/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "Rockstar解释GTA6删飞镖",
+      "sum": "Rockstar称宁可不做也不做不够好的飞镖小游戏。",
+      "ta": "设计取舍观点，速览即可。",
+      "src": "80 Level · 11-20",
+      "url": "https://80.lv/articles/rockstar-explained-why-they-didn-t-add-the-darts-mini-game-in-gta-6/"
     }
   ],
   "flashbackTitle": "",
