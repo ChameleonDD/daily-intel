@@ -2,8 +2,17 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-21 16:09",
+  "updated": "2026-11-22 15:54",
   "cards": [
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "CADQuader 测试版可转 CAD 为网格",
+      "sum": "3DCoat 开发者推出 CADQuader 测试版，将 CAD 模型转换为多边形网格。",
+      "ta": "处理工业 CAD 资产转游戏网格时可关注其拓扑与减面质量。",
+      "src": "80 Level · 11-21",
+      "url": "https://80.lv/articles/3dcoat-dev-launches-new-tool-to-convert-cad-models-into-polygon-meshes/"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -1805,15 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "直击3DGS在Web/移动端CPU排序瓶颈，对实时查看器与植被/场景泼溅渲染性能有直接借鉴。",
       "src": "arXiv · cs.GR · 11-01",
       "url": "https://arxiv.org/abs/2611.01534v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "有限元方法可扩展编程规范",
-      "sum": "提出有限元方法的可扩展程序化规范，便于试验不同单元提升求解质量与效率。",
-      "ta": "偏工程仿真，与游戏实时渲染关联弱。",
-      "src": "arXiv · cs.GR · 11-01",
-      "url": "https://arxiv.org/abs/2611.01414v1"
     }
   ]
 };
