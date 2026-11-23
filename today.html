@@ -150,9 +150,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月22日 · 周日",
+  "date": "2026年11月23日 · 周一",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>CADQuader 测试版可转 CAD 为网格</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>暗光3DGS改用非均匀光照建模</em> / <em>消费级显卡可跑4K 3DGS训练</em> / <em>非结构网格并行多重网格求解器</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -274,27 +274,79 @@ window.INTEL_DATA = {
       "url": "https://x.com/arena/status/2065112147093545333"
     },
     {
-      "cat": "flow",
+      "cat": "gfx",
       "imp": "mid",
-      "title": "CADQuader 测试版可转 CAD 为网格",
-      "sum": "3DCoat 开发者推出 CADQuader 测试版，将 CAD 模型转换为多边形网格。",
-      "ta": "处理工业 CAD 资产转游戏网格时可关注其拓扑与减面质量。",
-      "src": "80 Level · 11-21",
-      "url": "https://80.lv/articles/3dcoat-dev-launches-new-tool-to-convert-cad-models-into-polygon-meshes/"
+      "title": "暗光3DGS改用非均匀光照建模",
+      "sum": "VeilGS 用 Retinex 分解与 2D 基图表示暗部，替代单一色调曲线。",
+      "ta": "低光照扫描重建植被或场景时，可参考其按光源位置建模暗部的方式。",
+      "src": "arXiv · cs.GR · 11-20",
+      "url": "https://arxiv.org/abs/2611.27719v1"
     },
     {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "UE6弃用蓝图改Verse",
-      "sum": "Epic确认UE6项目不含蓝图与Actor框架，玩法改用Verse与Scene Graph构建。",
-      "ta": "直接影响所有UE工具链与蓝图资产迁移策略，需尽早评估Verse与Scene Graph对植被/程序化工具的重写成本。",
-      "src": "Unreal Engine · 11-20",
-      "url": "https://www.unrealengine.com/news/an-update-on-blueprints-and-the-path-to-ue6",
-      "flashback": true
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "消费级显卡可跑4K 3DGS训练",
+      "sum": "PennyGS 优化各环节效率，在消费级 GPU 上实现全分辨率 4K 3DGS 训练。",
+      "ta": "若用手机扫描做植被或道具资产，这条降低了高分辨率重建的硬件门槛。",
+      "src": "arXiv · cs.GR · 11-20",
+      "url": "https://arxiv.org/abs/2611.27525v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "非结构网格并行多重网格求解器",
+      "sum": "ParaBMG 针对 GPU 几何处理中大规模演化稀疏线性系统提出并行块多重网格框架。",
+      "ta": "属底层求解器优化，与几何处理管线性能相关，可速览。",
+      "src": "arXiv · cs.GR · 11-20",
+      "url": "https://arxiv.org/abs/2611.27396v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "全身网格恢复保手部细节",
+      "sum": "CADENCE 做时序连贯的全身 SMPL-X 恢复，避免平滑时丢失手部动作。",
+      "ta": "涉及动捕与角色动画数据，与植被/特效本职关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 11-19",
+      "url": "https://arxiv.org/abs/2611.26783v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "小样本区域化参数化头部模型",
+      "sum": "FACET 在有限身份数据下构建可 FACS 控制的区域化参数头部模型。",
+      "ta": "面向面部生产管线，与植被/特效方向关联不大。",
+      "src": "arXiv · cs.GR · 11-19",
+      "url": "https://arxiv.org/abs/2611.26773v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "非穿透世界模型",
+      "sum": "HuggingFace 收录论文 Non-penetrating World Models，摘要未提供。",
+      "ta": "仅标题信息，无法判断与实时渲染关联，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.27963"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频编辑引入运动感知奖励",
+      "sum": "面向指令引导视频编辑的运动感知奖励建模，摘要未提供。",
+      "ta": "与游戏实时管线关联不明确，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.22495"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "以交互为中心的世界模型做游戏",
+      "sum": "GameWM 探索用交互中心的世界模型构建下一代视频游戏。",
+      "ta": "关注世界模型如何服务游戏交互，与实时生成方向相关，值得一看。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.19247"
     }
   ],
-  "flashbackTitle": "今天的刷完了，来回顾下前几天的",
+  "flashbackTitle": "",
   "sources": {
     "ok": [
       "Unreal Engine",

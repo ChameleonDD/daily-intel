@@ -2,8 +2,80 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-22 15:54",
+  "updated": "2026-11-23 16:50",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "暗光3DGS改用非均匀光照建模",
+      "sum": "VeilGS 用 Retinex 分解与 2D 基图表示暗部，替代单一色调曲线。",
+      "ta": "低光照扫描重建植被或场景时，可参考其按光源位置建模暗部的方式。",
+      "src": "arXiv · cs.GR · 11-20",
+      "url": "https://arxiv.org/abs/2611.27719v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "消费级显卡可跑4K 3DGS训练",
+      "sum": "PennyGS 优化各环节效率，在消费级 GPU 上实现全分辨率 4K 3DGS 训练。",
+      "ta": "若用手机扫描做植被或道具资产，这条降低了高分辨率重建的硬件门槛。",
+      "src": "arXiv · cs.GR · 11-20",
+      "url": "https://arxiv.org/abs/2611.27525v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "非结构网格并行多重网格求解器",
+      "sum": "ParaBMG 针对 GPU 几何处理中大规模演化稀疏线性系统提出并行块多重网格框架。",
+      "ta": "属底层求解器优化，与几何处理管线性能相关，可速览。",
+      "src": "arXiv · cs.GR · 11-20",
+      "url": "https://arxiv.org/abs/2611.27396v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "全身网格恢复保手部细节",
+      "sum": "CADENCE 做时序连贯的全身 SMPL-X 恢复，避免平滑时丢失手部动作。",
+      "ta": "涉及动捕与角色动画数据，与植被/特效本职关联弱，速览即可。",
+      "src": "arXiv · cs.GR · 11-19",
+      "url": "https://arxiv.org/abs/2611.26783v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "小样本区域化参数化头部模型",
+      "sum": "FACET 在有限身份数据下构建可 FACS 控制的区域化参数头部模型。",
+      "ta": "面向面部生产管线，与植被/特效方向关联不大。",
+      "src": "arXiv · cs.GR · 11-19",
+      "url": "https://arxiv.org/abs/2611.26773v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "非穿透世界模型",
+      "sum": "HuggingFace 收录论文 Non-penetrating World Models，摘要未提供。",
+      "ta": "仅标题信息，无法判断与实时渲染关联，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.27963"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "视频编辑引入运动感知奖励",
+      "sum": "面向指令引导视频编辑的运动感知奖励建模，摘要未提供。",
+      "ta": "与游戏实时管线关联不明确，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.22495"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "以交互为中心的世界模型做游戏",
+      "sum": "GameWM 探索用交互中心的世界模型构建下一代视频游戏。",
+      "ta": "关注世界模型如何服务游戏交互，与实时生成方向相关，值得一看。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.19247"
+    },
     {
       "cat": "flow",
       "imp": "mid",
@@ -420,15 +492,6 @@ window.INTEL_RECENT = {
       "ta": "可参考其MetaHuman+广播AR的实时管线组织方式，看大型直播场景下引擎侧如何撑住画面。",
       "src": "Unreal Engine · 11-17",
       "url": "https://www.unrealengine.com/spotlights/expanding-anymas-coachella-performance-into-broadcast-ar-with-unreal-engine"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "3DGS超轻量免渲染调色迁移",
-      "sum": "ReTouchGS提出面向3D高斯泼溅的超轻量、免渲染美学色彩增强与迁移方法。",
-      "ta": "若做扫描资产后处理，这类免渲染调色思路可省去重训/重渲成本，值得看其轻量实现。",
-      "src": "arXiv · cs.GR · 11-17",
-      "url": "https://arxiv.org/abs/2611.23054v1"
     },
     {
       "cat": "gfx",
@@ -1750,70 +1813,6 @@ window.INTEL_RECENT = {
       "ta": "行业经验分享，速览。",
       "src": "Game Developer · 11-03",
       "url": "https://www.gamedeveloper.com/design/what-rami-ismail-learned-with-his-return-to-game-development"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "South of Midnight总监谈Xbox",
-      "sum": "该作前总监称若由他决定不会资助自己执导的这款游戏。",
-      "ta": "行业观点，速览。",
-      "src": "Game Developer · 11-03",
-      "url": "https://www.gamedeveloper.com/business/south-of-midnight-director-was-always-worried-about-rome-burning-at-xbox"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "GPU原生实时纹理网格重建",
-      "sum": "提出GPU原生体视频系统，从多RGB-D实时重建带纹理三角网格，含接缝感知辐射校正。",
-      "ta": "关注其把逐帧纹理化网格化从CPU搬到GPU的思路，对实时扫描/数字人管线有参考价值。",
-      "src": "arXiv · cs.GR · 11-02",
-      "url": "https://arxiv.org/abs/2611.03033v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "单图自监督个性化人体视频",
-      "sum": "用自生成监督在测试时个性化姿态驱动人体视频扩散，缓解身份与服饰失真。",
-      "ta": "若涉及角色动画/数字人，可看其测试时自监督如何避免额外训练数据。",
-      "src": "arXiv · cs.GR · 11-02",
-      "url": "https://arxiv.org/abs/2611.02964v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "参数化CAD智能体评测基准",
-      "sum": "Parametric CAD Bench v3用100个任务评测从文本与工程图生成可执行CAD脚本的智能体。",
-      "ta": "与游戏TA工作流关联弱，仅作程序化建模评测方法速览。",
-      "src": "arXiv · cs.GR · 11-02",
-      "url": "https://arxiv.org/abs/2611.02659v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "无摄像头视线物体识别",
-      "sum": "GazeTags用约2美元电子标签配合头戴设备实现无摄像头的视线物体感知。",
-      "ta": "偏XR交互硬件，与渲染/特效关联弱，速览即可。",
-      "src": "arXiv · cs.GR · 11-02",
-      "url": "https://arxiv.org/abs/2611.02599v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "语音口型动画新评测指标",
-      "sum": "提出Fréchet Oral Distance，为语音驱动口型动画提供无坐标系的客观评测基准。",
-      "ta": "若做面部动画质量评估可参考该指标，非渲染性能方向。",
-      "src": "arXiv · cs.GR · 11-01",
-      "url": "https://arxiv.org/abs/2611.01705v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "高斯泼溅免逐帧排序",
-      "sum": "AbacusGS把3DGS混合顺序预存于场景，省去每帧逐splat深度排序，加速Web/移动端查看器。",
-      "ta": "直击3DGS在Web/移动端CPU排序瓶颈，对实时查看器与植被/场景泼溅渲染性能有直接借鉴。",
-      "src": "arXiv · cs.GR · 11-01",
-      "url": "https://arxiv.org/abs/2611.01534v1"
     }
   ]
 };
