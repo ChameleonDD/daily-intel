@@ -2,8 +2,226 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-23 16:50",
+  "updated": "2026-11-24 18:47",
   "cards": [
+    {
+      "cat": "biz",
+      "imp": "hi",
+      "rank": 1,
+      "title": "UE6 弃用蓝图与 Actor 框架",
+      "sum": "Epic 不再计划在 UE6 初期保留蓝图与 Actor Gameplay Framework，转向 AI 驱动工具。",
+      "ta": "直接影响 TA 工具链与团队工作流设计，需提前评估程序化/工具脚本的迁移路径。",
+      "src": "Game Developer · 11-23",
+      "url": "https://www.gamedeveloper.com/programming/unreal-engine-6-to-remove-blueprints-and-actor-gameplay-framework-from-the-beginning"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "EVE 高端 AO 技术开放使用",
+      "sum": "CORTAO 由 Fenris Creations 开发者个人项目开发，已用于 EVE: Frontier 并对外开放。",
+      "ta": "可评估该 AO 方案在 UE 管线中的接入成本与性能收益。",
+      "src": "Game Developer · 11-23",
+      "url": "https://www.gamedeveloper.com/programming/devs-can-now-utilize-high-end-ambient-occlusion-technique-seen-in-eve-frontier"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "HoloSplat 实时人体重建流式传输",
+      "sum": "面向实时自由视角人体视频流，需逐帧重建、带宽受限并在轻量客户端 GPU 解码。",
+      "ta": "关注其带宽预算与客户端解码开销，对实时角色管线有参考价值。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.31140v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "DiffSimp 可微网格简化",
+      "sum": "将网格简化纳入上游可微优化，减少后处理简化带来的误差。",
+      "ta": "低模生成与 LOD 流程可借鉴其把简化误差纳入优化的思路。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.31018v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "LMnOP 剪枝 3D 高斯泼溅",
+      "sum": "用 leave-many-out 重要性评分剪枝高斯，降低百万级高斯的存储与渲染成本。",
+      "ta": "高斯泼溅剪枝直接影响实时渲染开销，可关注其重要性评分策略。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.30102v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "STAC++ 流式重建缓存压缩",
+      "sum": "免训练即插即用框架，压缩并复用空间记忆以支持无界场景长期重建。",
+      "ta": "流式重建的内存管理思路对大规模场景工具有参考。",
+      "src": "arXiv · cs.GR · 11-21",
+      "url": "https://arxiv.org/abs/2611.28793v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "RoomTokens 室内场景合成",
+      "sum": "在结构化 token 上做掩码扩散，兼顾物体语义、朝向与房间几何约束。",
+      "ta": "程序化场景生成的表示方法，可关注其碰撞与边界约束处理。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.30219v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Tri-DNO 三维人物交互生成",
+      "sum": "用三边扩散噪声优化生成 3D 人物物体交互，重点解决手部抓握真实性。",
+      "ta": "角色动画与交互生成方向，速览即可。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.30607v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "CrownFusion 牙冠几何图像生成",
+      "sum": "用几何图像加潜扩散生成 3D 牙冠，替代点云表示。",
+      "ta": "几何图像编码思路可参考，但应用域偏医疗。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.31128v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "视觉扩散模型学习最优落子",
+      "sum": "视觉扩散模型可在不显式搜索的情况下预测序列推理任务中的下一步。",
+      "ta": "与图形管线关联弱，速览。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.30879v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "周期 B 样条插值节点优化",
+      "sum": "针对偶数次周期 B 样条插值，提出公平优化的交错节点选择方法。",
+      "ta": "CAGD 基础算法，曲线工具开发时可参考。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.30717v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "动画角色身体动态少样本推断",
+      "sum": "仅凭首帧与动作指令，视觉世界模型可推断不同角色的身体动态差异。",
+      "ta": "角色动画方向，速览。",
+      "src": "arXiv · cs.GR · 11-21",
+      "url": "https://arxiv.org/abs/2611.28842v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "3AGameFactory 智能绑定与动作生成",
+      "sum": "面向多样 3D 资产的智能体绑定与可靠复杂动作生成。",
+      "ta": "绑定与动作生成自动化，与 TA 资产管线强相关，值得关注。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.30013"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "GameAnything 从灵感生成可玩游戏",
+      "sum": "从任意灵感出发生成可玩的游戏世界。",
+      "ta": "程序化世界生成方向，关注其可玩性与生成管线。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.29238"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "GameDojo 实时交互智能体基准",
+      "sum": "在电子游戏中评测实时交互智能体的基准。",
+      "ta": "实时交互评测框架，可关注其与游戏引擎的对接方式。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.30771"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "AutoPILOT 实时游玩视觉智能体",
+      "sum": "面向实时游玩的视觉智能体框架。",
+      "ta": "实时游戏智能体方向，速览其延迟与推理开销。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.28202"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Motion Mamba 2.0 长程人形控制",
+      "sum": "自回归扩散 Mamba 用于长程人形控制。",
+      "ta": "角色控制方向，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.29897"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Plan4D 可规划 4D 世界生成",
+      "sum": "生成可规划的 4D 世界。",
+      "ta": "世界模型方向，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.26516"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "ViDiHand2 视频扩散重建手部",
+      "sum": "融合视频扩散先验与手部几何，在野外场景重建 3D 手部动作。",
+      "ta": "动作捕捉方向，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.30597"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Fast-JEPA 潜空间世界模型",
+      "sum": "推进潜空间世界模型的成功-延迟前沿。",
+      "ta": "世界模型效率方向，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.25927"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "VRChat 星系着色器",
+      "sum": "把身体部位渲染成星系，可在其中放置行星或黑洞。",
+      "ta": "着色器创意实现，可参考其分层与遮罩思路。",
+      "src": "80 Level · 11-23",
+      "url": "https://80.lv/articles/this-vrchat-shader-turns-body-parts-into-beautiful-galaxies/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Unity 程序化触须工具",
+      "sum": "程序化生成缠绕任意物体的毒液式触须，提供五种视觉风格。",
+      "ta": "程序化缠绕生成思路对植被/藤蔓类工具直接可借鉴。",
+      "src": "80 Level · 11-23",
+      "url": "https://80.lv/articles/procedural-unity-tool-creates-venom-like-tendrils-that-wrap-around-any-object/"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "25 款 UE 游戏获 TGA 提名",
+      "sum": "超过 25 款虚幻引擎游戏获 2026 年 TGA 提名。",
+      "ta": "行业风向参考，速览提名名单。",
+      "src": "Unreal Engine · 11-23",
+      "url": "https://www.unrealengine.com/news/over-25-unreal-engine-games-nominated-at-the-game-awards-2026"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "BioWare 关闭内幕披露",
+      "sum": "前龙腾世纪主创称 EA 给出糟糕选项，工作室选了最不坏的一个。",
+      "ta": "行业动态，速览。",
+      "src": "80 Level · 11-24",
+      "url": "https://80.lv/articles/ex-dragon-age-lead-on-what-led-to-bioware-s-closure/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -84,16 +302,6 @@ window.INTEL_RECENT = {
       "ta": "处理工业 CAD 资产转游戏网格时可关注其拓扑与减面质量。",
       "src": "80 Level · 11-21",
       "url": "https://80.lv/articles/3dcoat-dev-launches-new-tool-to-convert-cad-models-into-polygon-meshes/"
-    },
-    {
-      "cat": "tech",
-      "imp": "hi",
-      "rank": 1,
-      "title": "UE6弃用蓝图改Verse",
-      "sum": "Epic确认UE6项目不含蓝图与Actor框架，玩法改用Verse与Scene Graph构建。",
-      "ta": "直接影响所有UE工具链与蓝图资产迁移策略，需尽早评估Verse与Scene Graph对植被/程序化工具的重写成本。",
-      "src": "Unreal Engine · 11-20",
-      "url": "https://www.unrealengine.com/news/an-update-on-blueprints-and-the-path-to-ue6"
     },
     {
       "cat": "biz",
@@ -737,15 +945,6 @@ window.INTEL_RECENT = {
       "url": "https://www.gamedeveloper.com/console/new-xbox-codenamed-helix-gets-a-few-new-details"
     },
     {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Unity推出独立开发者资助计划",
-      "sum": "Unity新 fellowship 计划选10名开发者各获5万美元及资源支持。",
-      "ta": "行业生态信息，与TA日常工作无直接关联，速览。",
-      "src": "Game Developer · 11-16",
-      "url": "https://www.gamedeveloper.com/business/unity-to-support-indies-with-cash-and-dedicated-support-through-new-fellowship-program"
-    },
-    {
       "cat": "gfx",
       "imp": "mid",
       "title": "实时新视角合成免逐场景优化",
@@ -816,15 +1015,6 @@ window.INTEL_RECENT = {
       "ta": "可参考其球面重力与角色朝向处理思路，非 UE 管线内容。",
       "src": "80 Level · 11-14",
       "url": "https://80.lv/articles/this-manga-style-action-fps-uses-radial-gravity-to-turn-walls-into-floors/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "VRChat 马尾变螺旋桨发型",
-      "sum": "该发型将上架售卖，另有更夸张的发型可选。",
-      "ta": "属资产售卖资讯，对 TA 工作流参考价值有限。",
-      "src": "80 Level · 11-14",
-      "url": "https://80.lv/articles/vrchat-hairstyle-with-ponytails-that-turn-into-propellers/"
     },
     {
       "cat": "gfx",
@@ -1015,15 +1205,6 @@ window.INTEL_RECENT = {
       "ta": "程序化环境生成正是植被/场景工具方向，可关注其Houdini到UE的落地方式。",
       "src": "80 Level · 11-12",
       "url": "https://80.lv/articles/learn-to-build-procedural-game-environments-in-houdini/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "BioWare联创谈质量效应复活成本",
-      "sum": "BioWare创始人称复活质量效应需超2亿美元投入。",
-      "ta": "行业成本视角，与TA技术无关，速览。",
-      "src": "80 Level · 11-12",
-      "url": "https://80.lv/articles/bioware-co-founder-explains-the-usd200-million-problem-with-reviving-mass-effect/"
     },
     {
       "cat": "biz",
@@ -1633,186 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "面向游戏的智能体框架，可留意其对游戏内AI交互的启发。",
       "src": "HuggingFace",
       "url": "https://huggingface.co/papers/2611.01120"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "少步扩散速度对抗蒸馏",
-      "sum": "VA-TDM用速度对抗蒸馏统一改进少步扩散模型。",
-      "ta": "少步扩散加速对实时生成类工具链有潜在价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.06796"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "从部分点云补全完整场景网格",
-      "sum": "AnchorComplete从部分点云恢复完整场景网格。",
-      "ta": "点云补全对扫描重建、场景资产修复工作流有直接参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.03228"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "战神新作延期至2027年5月",
-      "sum": "圣莫尼卡工作室宣布战神Laufey延期三个月至2027年5月以打磨。",
-      "ta": "行业排期动态，速览即可。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/god-of-war-laufey-delayed-to-may-2027/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "星战竞速动画的混合工作流",
-      "sum": "Fuse Games结合物理驱动动画、动捕、关键帧与快速预演呈现700km/h竞速。",
-      "ta": "物理驱动+动捕+关键帧的混合动画管线，对高速运动表现有借鉴意义。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/behind-the-animation-of-star-wars-galactic-racer-s-high-speed-chaos/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "塞尔达时之笛重制版年度最高分",
-      "sum": "Switch 2版时之笛重制获96 Metascore，为2026年评分最高游戏。",
-      "ta": "行业评分动态，速览即可。",
-      "src": "80 Level · 11-04",
-      "url": "https://80.lv/articles/the-legend-of-zelda-ocarina-of-time-switch-2-remake-is-the-highest-rated-game-of-2026/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "模块化建筑套件搭建巴塞罗那场景",
-      "sum": "作者用模块化建筑套件、可平铺材质与trim sheets在UE5中搭建风格化场景。",
-      "ta": "模块化套件+trim sheet的UE5环境搭建流程，对场景资产复用有直接参考。",
-      "src": "80 Level · 11-04",
-      "url": "https://80.lv/articles/creating-a-stylized-barcelona-environment-using-a-modular-architecture-kit/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "Blender绝区零风格Shader更新",
-      "sum": "Kythera的ZZZ风格Shader更新，附带自动连接贴图与光照的插件。",
-      "ta": "风格化卡通Shader的自动应用工具，可留意其材质连接思路。",
-      "src": "80 Level · 11-04",
-      "url": "https://80.lv/articles/have-a-look-at-this-zzz-shader-for-blender-that-comes-with-auto-apply-add-on/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "育碧竞购Arkane工作室",
-      "sum": "Xbox拟出售Arkane，育碧等为潜在竞购方，以避免工作室关闭。",
-      "ta": "工作室归属变动可能影响相关团队与技术流向，值得留意。",
-      "src": "Game Developer · 11-04",
-      "url": "https://www.gamedeveloper.com/business/ubisoft-among-the-bidders-for-arkane-as-xbox-looks-to-sell-the-studio"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "Steam审核放缓或因AI游戏激增",
-      "sum": "Valve警告Steam新游审核变慢，但未直接归因于任何开发趋势。",
-      "ta": "审核积压或与AI生成游戏涌入相关，影响独立团队上线节奏。",
-      "src": "Game Developer · 11-04",
-      "url": "https://www.gamedeveloper.com/business/valve-warns-of-slower-steam-approval-process-due-to-flood-of-new-games"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "AMD支持DX12新Agility SDK",
-      "sum": "DX12 Agility SDK 1.620带来Dump Files与扩展PIX标记，1.722预览版加新DXR特性。",
-      "ta": "新DXR特性与PIX标记对渲染调试和光追管线值得跟进。",
-      "src": "AMD GPUOpen · 11-03",
-      "url": "https://gpuopen.com/learn/amd-directx12-agility-sdk-october-2026/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "相位引导动态高斯泼溅重建",
-      "sum": "Phase-DGS用相位引导从非同步多视角视频做动态高斯泼溅重建。",
-      "ta": "放宽同步假设，对实拍素材转动态3D重建流程有参考价值。",
-      "src": "arXiv · cs.GR · 11-03",
-      "url": "https://arxiv.org/abs/2611.04666v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "FlowRig统一3D与4D骨骼生成",
-      "sum": "FlowRig用流匹配为静态3D与动态4D网格统一生成骨骼。",
-      "ta": "自动绑定统一方案，对角色/植被等资产绑定自动化有启发。",
-      "src": "arXiv · cs.GR · 11-02",
-      "url": "https://arxiv.org/abs/2611.03775v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "DreamX视频扩散学潜在动作",
-      "sum": "DreamX将视频扩散模型用作通用潜在动作学习器。",
-      "ta": "潜在动作表征或与动画/动作生成相关，速览即可。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.05377"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "PrimeSim通用世界模型模拟器",
-      "sum": "PrimeSim基于大规模跨具身演示构建通用世界模型模拟器。",
-      "ta": "世界模型方向，与实时仿真有潜在交集，速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.04870"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "LOLPlay实时视觉智能体基准",
-      "sum": "LOLPlay提出在英雄联盟中评测实时视觉智能体的基准。",
-      "ta": "实时视觉智能体评测，对游戏内AI/自动化测试有参考。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.03685"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "SeMo3D统一3D生成编辑补全",
-      "sum": "SeMo3D用选择性建模统一3D生成、编辑与补全。",
-      "ta": "3D资产生成编辑一体化，对程序化资产流程有潜在价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.02568"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "如龙创作者工作室解散",
-      "sum": "Nagoshi Studio于10月31日经股东决议解散。",
-      "ta": "行业人事变动，速览。",
-      "src": "80 Level · 11-03",
-      "url": "https://80.lv/articles/yakuza-creator-s-studio-has-been-dissolved/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "塞尔达制作人谈时之笛重制",
-      "sum": "青沼英二称Switch 2版时之笛重制与系列40周年相关。",
-      "ta": "行业动态，速览。",
-      "src": "80 Level · 11-03",
-      "url": "https://80.lv/articles/zelda-producer-explains-what-led-to-ocarina-of-time-switch-2-remake/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "前Xbox COO回应离职说法",
-      "sum": "前Xbox COO Helen Chiang否认外界对其离职原因的多种说法。",
-      "ta": "商业八卦，速览。",
-      "src": "Game Developer · 11-03",
-      "url": "https://www.gamedeveloper.com/business/former-xbox-coo-helen-chiang-takes-umbrage-with-the-characterizations-of-her-departure"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "Rami Ismail谈回归开发",
-      "sum": "独立开发者Rami Ismail时隔六年重返游戏开发并分享心得。",
-      "ta": "行业经验分享，速览。",
-      "src": "Game Developer · 11-03",
-      "url": "https://www.gamedeveloper.com/design/what-rami-ismail-learned-with-his-return-to-game-development"
     }
   ]
 };
