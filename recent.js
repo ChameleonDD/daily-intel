@@ -2,8 +2,208 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-24 18:47",
+  "updated": "2026-11-25 17:43",
   "cards": [
+    {
+      "cat": "tech",
+      "imp": "hi",
+      "rank": 1,
+      "title": "NVIDIA 游戏开发月度更新",
+      "sum": "NVIDIA 发布本月游戏开发更新，涵盖 AI 动画、RTX 工具与本地 AI 能力接入引擎。",
+      "ta": "关注 AI 动画与 RTX 工具链如何接入引擎，评估对植被/特效工作流的可用性。",
+      "src": "NVIDIA · 11-24",
+      "url": "https://developer.nvidia.com/blog/whats-new-for-game-developers-ai-animation-and-rtx-tools/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "hi",
+      "rank": 2,
+      "title": "AMD 推出 RT-MLAS 扩展",
+      "sum": "AMD 新 Vulkan 扩展 RT-MLAS 复用加速结构，降低大型动态场景光追内存与重建耗时。",
+      "ta": "动态大世界光追的加速结构复用思路，对开放世界植被/地形光追有直接参考价值。",
+      "src": "AMD GPUOpen · 11-24",
+      "url": "https://gpuopen.com/learn/amd-rt-mlas-vulkan/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "HiGS 分层高斯泼溅加速",
+      "sum": "提出分层分块架构，解决 3DGS 分块与光栅化单元冲突导致的帧时间瓶颈。",
+      "ta": "3DGS 渲染分块策略优化，关注其对实时高斯渲染性能上限的影响。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.31918v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "SplatTok 压缩高斯泼溅",
+      "sum": "用场景级 token 数据驱动压缩 3D Gaussian Splats，降低存储开销。",
+      "ta": "高斯泼溅存储压缩方案，对大规模植被/场景扫描资产落地的体积问题有参考。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.32202v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Spectrify 高光谱图像生成",
+      "sum": "用计算机图形学框架生成高光谱图像，为相机管线与重建提供训练数据。",
+      "ta": "高光谱合成可服务材质/相机管线研究，与渲染色彩管线有间接关联。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.33042v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "视频模型即优秀运动模型",
+      "sum": "论文主张视频基础模型已成为更强的运动先验生成器。",
+      "ta": "运动先验若可用于角色/植被风动动画生成，值得关注其泛化能力。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.32432v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "MESSI 多专家足球技能控制",
+      "sum": "多专家集成实现物理角色足球技能串联，解决顺序执行时的状态漂移。",
+      "ta": "物理角色技能切换的稳定性思路，对复杂角色动画状态机有借鉴。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.33011v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "RoMo Hands 手部动作数据集",
+      "sum": "发布大规模、细粒度文本标注的文本到手部动作数据集。",
+      "ta": "手部动画数据补充，可关注其对精细角色动画生成的支撑。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.31766v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Tornado4D 稀疏视频重建",
+      "sum": "物理引导从稀疏单侧视频重建实验室龙卷风 4D 高斯。",
+      "ta": "稀疏视角 4D 重建思路，对流体/烟雾类特效的参考重建有启发。",
+      "src": "arXiv · cs.GR · 11-23",
+      "url": "https://arxiv.org/abs/2611.31435v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "MYSTIQUE 少样本换脸",
+      "sum": "少样本实现面部身份迁移并保留表情、光照、姿态与场景。",
+      "ta": "VFX 身份迁移方法，关注其表演保留能力对数字人流程的意义。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.32232v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "FlowVecFont 矢量字体生成",
+      "sum": "用潜空间流匹配实现可扩展矢量字体轮廓生成。",
+      "ta": "矢量生成思路可类比程序化资产生成，速览即可。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.32327v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "PreferenceScene 个性化室内生成",
+      "sum": "基于用户反馈的个性化室内场景合成方法。",
+      "ta": "反馈驱动的场景生成，对程序化关卡/场景工具有间接参考。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.32099v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "Cosmos 3 本地运行指南",
+      "sum": "NVIDIA 介绍用 Hugging Face Diffusers 在本地设备运行 Cosmos 3 视频生成模型。",
+      "ta": "世界模型本地部署与显存优化，关注其对引擎内 AI 生成内容的可行性。",
+      "src": "NVIDIA · 11-24",
+      "url": "https://developer.nvidia.com/blog/how-to-run-nvidia-cosmos-3-on-local-ai-devices-using-hugging-face-diffusers/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "S-Mind 内化多视图几何",
+      "sum": "通过内化多视图几何提升模型空间智能。",
+      "ta": "多视图几何内化对 3D 生成与场景理解有潜在价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.28649"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "PINE 一步扩散估计",
+      "sum": "单步扩散模型同时估计点、实例与法线。",
+      "ta": "一步法点云/法线估计，关注其对 3D 资产重建流程的提速。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.29389"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "实时交互视频生成引导",
+      "sum": "提出残差引导方法用于实时交互式视频生成。",
+      "ta": "实时视频生成引导，关注其延迟表现对交互式内容的潜力。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.32820"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "PhyCoVE 物理反事实视频",
+      "sum": "跨多种材质动力学的物理反事实视频编辑基准。",
+      "ta": "物理一致性评测基准，对特效物理可信度评估有参考。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.29184"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Coding4Games 智能体测试",
+      "sum": "评测现代编码智能体能否游玩现代电子游戏。",
+      "ta": "智能体与游戏交互评测，速览即可。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.31974"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "Qwen-Image-HD 高清生成",
+      "sum": "自回归扩散实现高分辨率图像生成。",
+      "ta": "高清图像生成进展，与贴图/概念图生产有间接关联。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.32736"
+    },
+    {
+      "cat": "biz",
+      "imp": "mid",
+      "title": "CDPR 与索尼合作巫师4",
+      "sum": "CD Projekt Red 与索尼达成合作，涵盖游戏登陆 PlayStation 及 Plus 服务。",
+      "ta": "3A 发行格局变动，关注其对引擎技术选型与平台优化的影响。",
+      "src": "80 Level · 11-25",
+      "url": "https://80.lv/articles/cd-projekt-red-partners-with-sony-for-the-witcher-4/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "UE 可驾驶军车制作流程",
+      "sum": "分享原创军车概念 3D 制作流程，含可拆卸炮塔与 UE 可驾驶搭建。",
+      "ta": "载具资产与 UE 交互搭建流程，可速览参考。",
+      "src": "80 Level · 11-24",
+      "url": "https://80.lv/articles/creating-game-ready-fictional-military-vehicle-in-3d/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "PS1 风格角色建模教程",
+      "sum": "演示 Blender 中 PS1 风格角色的建模与贴图设计取舍。",
+      "ta": "低多边形风格化流程，速览即可。",
+      "src": "80 Level · 11-24",
+      "url": "https://80.lv/articles/how-to-model-texture-ps1-style-character-in-blender/"
+    },
     {
       "cat": "biz",
       "imp": "hi",
@@ -1191,15 +1391,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "mid",
-      "title": "UE重建刺客信条神庙场景",
-      "sum": "展示模块化建筑、Substance Designer马赛克贴图与UE多时段布光流程。",
-      "ta": "模块化+程序化贴图+分时布光，是环境TA可直接借鉴的完整链路。",
-      "src": "80 Level · 11-12",
-      "url": "https://80.lv/articles/recreating-cleopatra-s-temple-from-assassin-s-creed-origins-in-unreal-engine/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
       "title": "Houdini程序化环境工作坊",
       "sum": "四小时课程讲解用Houdini、ZBrush与UE搭建风格化程序化环境。",
       "ta": "程序化环境生成正是植被/场景工具方向，可关注其Houdini到UE的落地方式。",
@@ -1624,196 +1815,6 @@ window.INTEL_RECENT = {
       "ta": "可观察其植被密度、光照与材质表现，作为画面基准参考。",
       "src": "80 Level · 11-06",
       "url": "https://80.lv/articles/rockstar-shares-39-new-gta-6-screenshots-two-weeks-before-launch/"
-    },
-    {
-      "cat": "flow",
-      "imp": "hi",
-      "rank": 1,
-      "title": "Quixel Megascans 全库永久免费",
-      "sum": "整个 Quixel Megascans 素材库现已免费开放，且为永久性。",
-      "ta": "植被与地表扫描资产可直接进 UE 管线，大幅降低环境搭建的素材成本。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/entire-quixel-megascans-library-now-available-for-free/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "神经纹理实时超分采样",
-      "sum": "提出轻量MLP在纹理采样阶段实时放大低分辨率纹理，泛化而非过拟合。",
-      "ta": "纹理采样阶段做神经超分，直接关系到显存与带宽预算，值得评估能否进材质管线。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07289v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "网格泼溅解耦拓扑与外观",
-      "sum": "T²-Splat用自适应拓扑网格加纹理残差，减少为保细节而过密细分。",
-      "ta": "三角泼溅接传统管线，拓扑与外观解耦的思路可参考到程序化植被的LOD与网格化流程。",
-      "src": "arXiv · cs.GR · 11-04",
-      "url": "https://arxiv.org/abs/2611.06974v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "按感知分配高斯而非几何",
-      "sum": "重新审视基于网格的泼溅中每面固定高斯数的分配策略，主张以感知驱动。",
-      "ta": "高斯分配策略直接影响渲染开销与画质平衡，做程序化散布时可借鉴其分配逻辑。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07979v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "分层增量Beta泼溅在线重建",
-      "sum": "针对在线3DGS每关键帧仅数十次迭代、初始化差的问题提出分层增量方案。",
-      "ta": "在线重建的收敛速度问题，与扫描/实景进引擎的流程相关，速览即可。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08288v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "扩散驱动高斯头像精修",
-      "sum": "用合成失败样本引导扩散模型，修复单目视频高斯头像的模糊与拉伸伪影。",
-      "ta": "数字人与面部资产方向，与植被/特效本职关联弱，速览。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07909v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "对偶轮廓提取中轴网格",
-      "sum": "DC-SQEM用球面二次误差度量的对偶轮廓从点云提取保特征中轴网格。",
-      "ta": "几何处理与简化方向，可留意其对点云到网格的保特征能力。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.07328v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "四维点泼溅雷达渲染",
-      "sum": "面向毫米波雷达微多普勒的可微渲染，缓解雷达数据集稀缺。",
-      "ta": "传感仿真方向，与实时渲染本职距离较远，速览。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08342v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "骨骼运动信号实时补全",
-      "sum": "REACT针对游戏、XR等交互场景，实时补全质量不佳的追踪骨骼运动信号。",
-      "ta": "涉及游戏动捕数据管线，若做角色/植被交互驱动可关注其补全思路。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08301v1"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "LAIKA手工羽毛制作揭秘",
-      "sum": "LAIKA分享《Wildwood》中鸟族将领每根羽毛均为手工打造。",
-      "ta": "离线角色资产细节参考，对实时毛发/植被有启发但非直接，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/laika-shares-how-it-made-the-feathers-of-general-in-wildwood/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "K/DA新MV动画幕后",
-      "sum": "Fortiche导演与动画总监谈FIRESTARTER的动画、VFX与镜头及所用3D软件。",
-      "ta": "风格化动画与VFX流程参考，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/take-a-look-behind-animation-in-k-da-s-firestarter-music-video/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "FF7重制制作人暗示新作",
-      "sum": "北濑佳范称SE更倾向投资新IP，但不排除更多重制。",
-      "ta": "行业动向，与TA工作无直接关联，速览。",
-      "src": "80 Level · 11-05",
-      "url": "https://80.lv/articles/final-fantasy-vii-remake-producer-hints-at-more-adaptations-new-games/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "AC英灵殿升级PSSR支持",
-      "sum": "《刺客信条：英灵殿》免费更新为PS5 Pro带来升级版PSSR支持。",
-      "ta": "主机超分方案落地案例，可留意PSSR升级后的画质表现。",
-      "src": "PlayStation Blog · 11-05",
-      "url": "https://blog.playstation.com/2026/11/05/assassins-creed-valhalla-new-update-brings-new-game-upgraded-pssr-support-for-ps5-pro-today/"
-    },
-    {
-      "cat": "tech",
-      "imp": "mid",
-      "title": "UE将展示网格地形与MCP集成",
-      "sum": "虚幻引擎将在I/ITSEC 2026展示Mesh Terrain演示及Unreal MCP与LLM集成讨论。",
-      "ta": "Mesh Terrain演示与MCP/LLM集成值得关注，可能影响地形工具与引擎内AI工作流。",
-      "src": "Unreal Engine · 11-04",
-      "url": "https://www.unrealengine.com/news/unreal-engine-innovation-heads-to-i-itsec-2026"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "GPU加速的渐进式UMAP降维",
-      "sum": "GPUMAP将渐进式UMAP降维搬到GPU，降低高维数据交互分析的计算成本。",
-      "ta": "GPU并行降维思路可借鉴到大规模植被/参数空间的实时可视化分析。",
-      "src": "arXiv · cs.GR · 11-04",
-      "url": "https://arxiv.org/abs/2611.06191v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "单图去玻璃反射新方法",
-      "sum": "CLEAR用颜色-纹理潜空间对齐，从透过玻璃拍摄的单图恢复透射场景。",
-      "ta": "反射分离技术对屏幕空间反射/玻璃材质后期处理有参考价值。",
-      "src": "arXiv · cs.GR · 11-04",
-      "url": "https://arxiv.org/abs/2611.05969v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "生成房间评估新框架GREP",
-      "sum": "GREP基于原则对LLM生成的家具房间场景做整体质量评估。",
-      "ta": "程序化场景生成的自动评估思路，可迁移到植被布置质量打分。",
-      "src": "arXiv · cs.GR · 11-04",
-      "url": "https://arxiv.org/abs/2611.05802v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "扩散模型单次引导蒸馏分解",
-      "sum": "分解蒸馏实现可解释的单次前向引导，替代每步条件/无条件双评估。",
-      "ta": "单次引导降低扩散推理成本，对贴图/材质生成的实时化有潜在意义。",
-      "src": "arXiv · cs.GR · 11-03",
-      "url": "https://arxiv.org/abs/2611.05755v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "title": "Transformer直接渲染3D高斯",
-      "sum": "GaussianRenderFormer用Transformer将高斯与相机直接输出图像，无需光栅化器。",
-      "ta": "无光栅化的神经高斯渲染，值得关注其对实时渲染管线与GS工作流的潜在冲击。",
-      "src": "arXiv · cs.GR · 11-03",
-      "url": "https://arxiv.org/abs/2611.05593v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "分钟级游戏交互世界模型数据集",
-      "sum": "GameVerse提供分钟级游戏画面数据集，用于长时程交互式世界建模。",
-      "ta": "长时程世界模型数据对程序化生成与游戏内AI模拟有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2610.37257"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "未见游戏的解说与研究智能体",
-      "sum": "StreamDuo为未见过的游戏提供实时解说与研究智能体。",
-      "ta": "面向游戏的智能体框架，可留意其对游戏内AI交互的启发。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.01120"
     }
   ]
 };
