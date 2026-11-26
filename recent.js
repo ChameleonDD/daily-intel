@@ -2,8 +2,215 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-25 17:43",
+  "updated": "2026-11-26 17:19",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "动态场景逐帧重建网格新法",
+      "sum": "MEMO 用多机位视频重建完整动态场景几何，并逐帧提取网格。",
+      "ta": "动态高斯只能出外观，这里能出逐帧网格，值得关注其对植被/角色动态资产的可用性。",
+      "src": "arXiv · cs.GR · 11-25",
+      "url": "https://arxiv.org/abs/2611.34939v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "单图估 PBR 材质新思路",
+      "sum": "ReMeDi 在金属与电介质假设间重参数化，从单图估计 PBR 材质。",
+      "ta": "金属度判定是 albedo 估计的核心歧义，这套重参数化思路对材质生成工具有参考价值。",
+      "src": "arXiv · cs.GR · 11-25",
+      "url": "https://arxiv.org/abs/2611.34284v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "任意相机模型的4D高斯渲染",
+      "sum": "AnyCam4D 用光线式渲染支持鱼眼广角等非针孔相机的动态高斯。",
+      "ta": "免去先去畸变导致的视场/细节损失，对广角实拍素材重建管线有直接意义。",
+      "src": "arXiv · cs.GR · 11-25",
+      "url": "https://arxiv.org/abs/2611.34223v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "无位姿图像前馈重建表面",
+      "sum": "FoundSurface 从无相机位姿图像前馈式重建连续三维表面。",
+      "ta": "点图方法输出稀疏离散，这里直接出表面，关注其对扫描转资产的流程简化。",
+      "src": "arXiv · cs.GR · 11-25",
+      "url": "https://arxiv.org/abs/2611.34128v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "视频推断可变形物体材质",
+      "sum": "从单段落地视频前馈预测可变形物体的刚度与屈服应力。",
+      "ta": "sim-to-real 材质参数估计，对布料/软体解算参数标定有潜在借鉴。",
+      "src": "arXiv · cs.GR · 11-25",
+      "url": "https://arxiv.org/abs/2611.34894v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "手机单目手持物体扫描",
+      "sum": "重新审视单目视频手持物体扫描，给出数据集、位姿估计与表面重建。",
+      "ta": "低成本 3D 数字化路线，关注其重建质量是否够做道具资产。",
+      "src": "arXiv · cs.GR · 11-25",
+      "url": "https://arxiv.org/abs/2611.33824v1"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "钢琴铰链实体非流形表示",
+      "sum": "用非流形胞腔复形表示并动画化钢琴铰链式刚性连接结构。",
+      "ta": "铰链类机械结构的几何表示思路，偏图形学趣味，速览即可。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.33505v1"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "无状态页面的多人浏览器游戏",
+      "sum": "教程：用无状态网页与关系数据库构建持久世界多人浏览器游戏。",
+      "ta": "与渲染无关的 Web 架构教程，仅作背景速览。",
+      "src": "arXiv · cs.GR · 11-24",
+      "url": "https://arxiv.org/abs/2611.33256v1"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "部件感知3D生成偏好优化",
+      "sum": "Target-Part Preference Optimization 面向部件感知的三维生成做偏好优化。",
+      "ta": "部件级可控生成对程序化资产拆分有潜在价值，关注其可控粒度。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.30472"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "动态循环MoE扩散Transformer",
+      "sum": "DyLoMo-DiT 提出动态循环混合专家扩散 Transformer 结构。",
+      "ta": "纯生成模型架构，未见游戏/实时关联，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.30844"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "像素空间扩散做高保真抠图",
+      "sum": "用像素空间扩散 Transformer 实现高保真图像抠图。",
+      "ta": "抠图属贴图/素材处理环节，可留意其对植被卡片 alpha 制作的潜力。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.34929"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "几何引导注意力剪枝控相机",
+      "sum": "SPARC 用几何引导的注意力剪枝做长时序相机可控视频生成。",
+      "ta": "相机可控生成对预演/参考视频有用，关注其长时序稳定性。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.34064"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "生成渲染造机器人真实数据",
+      "sum": "DemoFoundry 结合编码智能体与生成渲染，规模化产出逼真机器人数据。",
+      "ta": "生成渲染管线搭数据工厂的思路，对程序化场景生成有旁证价值。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.34671"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "真实到仿真迁移统一平台",
+      "sum": "Real2SimLab 提供真实到仿真迁移的统一平台。",
+      "ta": "偏机器人仿真，与游戏引擎管线关联弱，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.34849"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "全景耦合的持久动态世界建模",
+      "sum": "OmniPersist 通过耦合全景演化实现持久动态世界建模。",
+      "ta": "世界模型方向，暂未见引擎落地路径，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.32473"
+    },
+    {
+      "cat": "ai",
+      "imp": "lo",
+      "title": "智能体游戏开发的趣味性反馈",
+      "sum": "把可玩性作为反馈信号用于智能体驱动的游戏开发。",
+      "ta": "AI 辅助玩法迭代，与 TA 工具链关系不大，速览。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.33457"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Niagara粒子做微观平台跳跃",
+      "sum": "ProtoSeed 谈如何用 Niagara 粒子、顶点着色器动画与强次表面散射做微观题材平台游戏。",
+      "ta": "Niagara + 顶点动画 + 极端 SSS 的实机组合案例，特效与材质方向可直接参考。",
+      "src": "80 Level · 11-25",
+      "url": "https://80.lv/articles/the-making-of-become-from-aaa-games-to-a-microscopic-platformer/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "UE5模块化资产搭中世纪小镇",
+      "sum": "用自定义模块化资产、Substance 材质与 UE5 灯光搭建温暖中世纪小镇场景。",
+      "ta": "模块化资产 + 材质 + 大气光照的完整 UE5 场景流程，可对照自己的植被/场景工具链。",
+      "src": "80 Level · 11-25",
+      "url": "https://80.lv/articles/building-a-cozy-sunny-medieval-town-scene-using-custom-modular-assets/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 5.3新节点做卡通着色",
+      "sum": "教程演示用 Blender 5.3 新增 Light Accumulation 节点制作彩色卡通着色器。",
+      "ta": "新光照累积节点的用法，对非 UE 管线但可借鉴卡通光照思路。",
+      "src": "80 Level · 11-25",
+      "url": "https://80.lv/articles/learn-how-to-create-this-colorful-cel-shader-in-blender-5-3/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "自研引擎复刻复古渲染",
+      "sum": "开发者谈自研 RetroEngine 及无图形背景下的复古渲染实现方式。",
+      "ta": "复古渲染的取舍思路，速览即可。",
+      "src": "80 Level · 11-25",
+      "url": "https://80.lv/articles/inside-retroengine-the-custom-engine-behind-the-king-s-surveyor/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《Exoprimal》将停服",
+      "sum": "Capcom 恐龙合作射击游戏 Exoprimal 将在不到一年内关服。",
+      "ta": "服务型游戏生命周期案例，速览。",
+      "src": "80 Level · 11-26",
+      "url": "https://80.lv/articles/capcom-s-dinosaur-co-op-shooter-exoprimal-is-shutting-down/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "《神鬼寓言》对标巫师3",
+      "sum": "Playground 称仅参考原三部曲无法满足现代玩家，以《巫师3》为 RPG 黄金标准。",
+      "ta": "3A 品质基准的行业表态，速览。",
+      "src": "80 Level · 11-26",
+      "url": "https://80.lv/articles/fable-devs-looked-to-the-witcher-3-the-gold-standard-for-rpgs/"
+    },
+    {
+      "cat": "biz",
+      "imp": "lo",
+      "title": "巫师4跨度对标GTA5到6",
+      "sum": "CDPR 称《巫师3》到《巫师4》的跃升幅度类似 GTA5 到 GTA6。",
+      "ta": "暗示画面与规模大幅升级，关注后续技术披露。",
+      "src": "80 Level · 11-26",
+      "url": "https://80.lv/articles/the-leap-between-the-witcher-3-the-witcher-4-will-be-similar-to-the-one-between-gta-5-and-gta-6/"
+    },
     {
       "cat": "tech",
       "imp": "hi",
@@ -559,15 +766,6 @@ window.INTEL_RECENT = {
       "url": "https://huggingface.co/papers/2611.26540"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "UE5加勒比城市环境材质流程",
-      "sum": "分享UE5中加勒比风格街景的材质制作与细节工作流。",
-      "ta": "可参考其丰富材质的分层与细节处理手法，用于场景材质搭建。",
-      "src": "80 Level · 11-20",
-      "url": "https://80.lv/articles/building-detailed-caribbean-inspired-city-environment-in-unreal-engine-5/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "育碧裁员166人",
@@ -974,24 +1172,6 @@ window.INTEL_RECENT = {
       "url": "https://arxiv.org/abs/2611.21890v1"
     },
     {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "数据高效文本生成3D面部资产",
-      "sum": "FaceRiff用几何条件实现统一的文本到3D面部资产合成，降低对大规模专用数据依赖。",
-      "ta": "数字人面部资产（UV几何+反照率+置换）生成管线，可关注其数据效率做法。",
-      "src": "arXiv · cs.GR · 11-16",
-      "url": "https://arxiv.org/abs/2611.21867v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "π⁴：4D场景几何与运动基础模型",
-      "sum": "π⁴提出面向4D场景几何与运动的基础模型。",
-      "ta": "4D场景理解若成熟，可影响动态环境重建与程序化布局，速览其能力边界。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.23144"
-    },
-    {
       "cat": "ai",
       "imp": "lo",
       "title": "混合分辨率视频生成",
@@ -1225,15 +1405,6 @@ window.INTEL_RECENT = {
       "ta": "主机端 AI 超分落地，值得关注其与 UE5 上采样链路的兼容与画质表现。",
       "src": "PlayStation Blog · 11-13",
       "url": "https://blog.playstation.com/2026/11/13/qssr-arrives-in-marvels-spider-man-2-control-resonant-the-finals-arc-raiders-and-hell-let-loose-vietnam/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Blender 5.3 引入项目设置",
-      "sum": "Blender 5.3 新增 Project Setup，为同一项目的 .blend 文件提供共享环境。",
-      "ta": "植被/资产多文件协作或可借此统一配置，值得看共享环境如何管理路径与依赖。",
-      "src": "Blender 开发博客 · 11-13",
-      "url": "https://code.blender.org/2026/11/project-setup-whats-in-and-whats-next/"
     },
     {
       "cat": "gfx",
@@ -1643,178 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "非真实感渲染方向可速览，泼溅图元的结构化初始化思路可借鉴。",
       "src": "arXiv · cs.GR · 11-07",
       "url": "https://arxiv.org/abs/2611.10713v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "LiDAR骨架约束紧凑高斯泼溅",
-      "sum": "PLS-GS用概率LiDAR骨架引导3DGS，得到更紧凑、贴合表面的高斯表示。",
-      "ta": "若涉及扫描资产重建，LiDAR约束可提升几何贴合度并压缩高斯数量。",
-      "src": "arXiv · cs.GR · 11-07",
-      "url": "https://arxiv.org/abs/2611.10699v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "潜在动作世界模型跨体型迁移",
-      "sum": "实证研究无标签潜在动作世界模型中，动作能否在不同2D角色体型间迁移。",
-      "ta": "角色动画方向可关注：跨体型动作迁移若成立，可简化多角色动画复用。",
-      "src": "arXiv · cs.GR · 11-07",
-      "url": "https://arxiv.org/abs/2611.10523v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型测试时学新游戏机制",
-      "sum": "研究世界模型需要多少曝光才能在测试时学会未见过的游戏机制。",
-      "ta": "与游戏AI/世界模型相关，可了解其对游戏机制泛化的评估方式。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.12324"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "ArtStation上线AI声明与过滤",
-      "sum": "ArtStation新增生成式AI使用声明与举报机制，用户可自选AI内容可见度。",
-      "ta": "资产参考与作品集平台规则变化，影响素材溯源与AI标注合规习惯。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/artstation-adds-ai-declarations-default-ai-filtering-for-artwork/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Substance手绘基础生成器教程",
-      "sum": "Theresa Schlag分享用Substance 3D Designer制作手绘基础生成器的流程与难点。",
-      "ta": "程序化材质工作流参考：渐变与图结构处理经验可直接用于植被/地表材质生成。",
-      "src": "80 Level · 11-09",
-      "url": "https://80.lv/articles/how-to-make-hand-painted-base-generator-in-substance-3d-designer/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "ZBrush与Marmoset角色工作流",
-      "sum": "Jessie Chan分享街霸6 A.K.I.同人流程：对称低模联动高模雕刻，再于Marmoset打光。",
-      "ta": "角色资产速览，低模与高模联动便于贴图制作的做法可借鉴。",
-      "src": "80 Level · 11-09",
-      "url": "https://80.lv/articles/reimagining-street-fighter-6-s-a-k-i-in-zbrush-marmoset-toolbag/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "星战战术新作工作室裁员",
-      "sum": "报道称《Star Wars Zero Company》开发商Bit Reactor裁减数量不明员工。",
-      "ta": "行业动态速览，反映中型工作室项目后的组织波动。",
-      "src": "Game Developer · 11-09",
-      "url": "https://www.gamedeveloper.com/business/report-star-wars-zero-company-developer-bitreactor-lays-off-an-unspecified-number-of-staff"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "NanoVDB 支持动态体素网格",
-      "sum": "NanoVDB 新增 GPU 原生拓扑动态更新与体素顺序访问范式，加速稀疏网格算子。",
-      "ta": "稀疏体素/体积特效的底层数据结构升级，值得评估对流体烟雾与程序化体积生成的性能收益。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08665v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "蒙皮角色自穿插实时修复",
-      "sum": "提出免训练后处理，通过姿态修正与有界蒙皮压缩减少角色自穿插伪影。",
-      "ta": "角色动画后处理思路，可参考其软接触预算约束用于布料/植被与角色交互的穿插处理。",
-      "src": "arXiv · cs.GR · 11-06",
-      "url": "https://arxiv.org/abs/2611.09693v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "自然语言实时调度人群仿真",
-      "sum": "CrowdDirector 用自然语言指令在仿真运行时编排人群，兼顾灵活性与低延迟。",
-      "ta": "运行时人群/群集编排思路，可借鉴到植被风场或 Niagara 群集行为的动态指令控制。",
-      "src": "arXiv · cs.GR · 11-05",
-      "url": "https://arxiv.org/abs/2611.08763v1"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "生成视频的视野外世界演化",
-      "sum": "EvoWorld 研究生成视频模型在镜头外区域的世界演化一致性。",
-      "ta": "与实时渲染关联有限，仅作生成式世界建模趋势速览。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.06748"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "质量效应2早期过场动画曝光",
-      "sum": "动画师公开 BioWare 蒙特利尔内部 pre-alpha 过场动画预告及其制作方式。",
-      "ta": "过场动画分镜与镜头构建的行业参考，速览即可。",
-      "src": "80 Level · 11-09",
-      "url": "https://80.lv/articles/mass-effect-2-animator-shares-pre-alpha-cinematics-trailer/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "Blackwell 加速 FLUX 图像生成",
-      "sum": "NVIDIA 介绍在 Blackwell GPU 上部署 FLUX 3 Image Klein 的推理延迟优化。",
-      "ta": "关注扩散模型推理优化思路，可迁移到材质贴图/概念图批量生成的工具链。",
-      "src": "NVIDIA · 11-06",
-      "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "RL 权重重载加速新集合通信",
-      "sum": "NVIDIA 提出 Reshard Collective 加速强化学习后训练的权重重载。",
-      "ta": "纯训练侧优化，与实时渲染无直接关系，速览即可。",
-      "src": "NVIDIA · 11-06",
-      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/"
-    },
-    {
-      "cat": "ai",
-      "imp": "lo",
-      "title": "扩散模型多教师蒸馏再思考",
-      "sum": "论文重新审视扩散模型中的多教师 on-policy 蒸馏方法。",
-      "ta": "生成模型训练侧研究，暂不涉及引擎或实时管线。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.04386"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "实时全波形 LiDAR Transformer",
-      "sum": "论文用强度引导 token 削减与物理感知增强实现实时全波形 LiDAR Transformer。",
-      "ta": "实时点云感知加速思路，对扫描资产处理与程序化植被点云有参考价值。",
-      "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.07613"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "手游渠道壁垒正在松动",
-      "sum": "80 Level 分析长期把守手游分发的两大平台格局开始变化。",
-      "ta": "发行侧信息，与 TA 日常无直接关联，速览。",
-      "src": "80 Level · 11-07",
-      "url": "https://80.lv/articles/mobile-game-gatekeepers-are-opening-the-gates/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "无源码逆向复活经典 RPG",
-      "sum": "SNEG 在无源码、无工具、无文档下逆向零售版重制 2001 年 D&D RPG。",
-      "ta": "逆向重建资产与数据管线的案例，值得看其资源还原与工具重建思路。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/this-forgotten-classic-d-d-rpg-was-revived-without-source-code-or-tools/"
-    },
-    {
-      "cat": "biz",
-      "imp": "mid",
-      "title": "GTA6 发售前放出 39 张截图",
-      "sum": "Rockstar 在发售两周前公布 39 张 GTA6 新截图，展示罪恶都市与主角。",
-      "ta": "可观察其植被密度、光照与材质表现，作为画面基准参考。",
-      "src": "80 Level · 11-06",
-      "url": "https://80.lv/articles/rockstar-shares-39-new-gta-6-screenshots-two-weeks-before-launch/"
     }
   ]
 };
