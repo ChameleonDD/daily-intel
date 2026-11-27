@@ -2,8 +2,62 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-26 17:19",
+  "updated": "2026-11-27 17:34",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "SIGGRAPH Asia 12月吉隆坡首办",
+      "sum": "第19届SIGGRAPH Asia于12月1-4日在吉隆坡会议中心举行。",
+      "ta": "图形学前沿会议，可关注程序化生成与实时渲染相关议程。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/siggraph-asia-2026-makes-its-malaysian-debut-this-december/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "Houdini复刻手工模型微缩感",
+      "sum": "Will Hoskin用Houdini程序化工具做棉花尘、铁丝树与塑料人偶的微缩模型质感。",
+      "ta": "程序化做旧与风格化材质思路，可借鉴到植被/道具的微缩视觉。",
+      "src": "80 Level · 11-26",
+      "url": "https://80.lv/articles/recreating-the-scale-model-look-of-a-rally-diorama-in-houdini/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "2D插画转3D场景全流程",
+      "sum": "Pedro Silva分享把2D奇幻小镇做成3D场景，涵盖建模、贴图、植被与渲染。",
+      "ta": "含植被环节的完整场景工作流，可看其植被与最终渲染处理。",
+      "src": "80 Level · 11-26",
+      "url": "https://80.lv/articles/turning-whimsical-2d-town-into-cozy-3d-world/"
+    },
+    {
+      "cat": "tech",
+      "imp": "lo",
+      "title": "Unity实现写实断肢血腥效果",
+      "sum": "THE IRONY团队拆解其Unity血腥系统与开发难点。",
+      "ta": "特效向的肢解/血液实现参考，非本职核心但可速览。",
+      "src": "80 Level · 11-26",
+      "url": "https://80.lv/articles/creating-realistic-dismemberment-gore-effects-in-unity/"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "免费篮球动捕数据包发布",
+      "sum": "Anderson Rohr放出4分钟动捕数据，可商用。",
+      "ta": "免费动捕资源，动画/预览可用，速览即可。",
+      "src": "80 Level · 11-26",
+      "url": "https://80.lv/articles/get-this-free-pack-of-motion-capture-data-for-creating-basketball-player-animations/"
+    },
+    {
+      "cat": "ai",
+      "imp": "mid",
+      "title": "世界模型细粒度投机流式生成",
+      "sum": "ShowNow提出面向响应式世界模型的细粒度投机流式方法。",
+      "ta": "世界模型实时生成加速，与实时渲染/程序化生成方向相关，值得关注。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.34693"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -601,15 +655,6 @@ window.INTEL_RECENT = {
       "ta": "着色器创意实现，可参考其分层与遮罩思路。",
       "src": "80 Level · 11-23",
       "url": "https://80.lv/articles/this-vrchat-shader-turns-body-parts-into-beautiful-galaxies/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Unity 程序化触须工具",
-      "sum": "程序化生成缠绕任意物体的毒液式触须，提供五种视觉风格。",
-      "ta": "程序化缠绕生成思路对植被/藤蔓类工具直接可借鉴。",
-      "src": "80 Level · 11-23",
-      "url": "https://80.lv/articles/procedural-unity-tool-creates-venom-like-tendrils-that-wrap-around-any-object/"
     },
     {
       "cat": "biz",
@@ -1560,15 +1605,6 @@ window.INTEL_RECENT = {
       "url": "https://80.lv/articles/making-the-portrait-of-a-harry-potter-inspired-goblin-with-realistic-skin-texture/"
     },
     {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini程序化环境工作坊",
-      "sum": "四小时课程讲解用Houdini、ZBrush与UE搭建风格化程序化环境。",
-      "ta": "程序化环境生成正是植被/场景工具方向，可关注其Houdini到UE的落地方式。",
-      "src": "80 Level · 11-12",
-      "url": "https://80.lv/articles/learn-to-build-procedural-game-environments-in-houdini/"
-    },
-    {
       "cat": "biz",
       "imp": "lo",
       "title": "Tripwire宣布新发行后裁员",
@@ -1778,42 +1814,6 @@ window.INTEL_RECENT = {
       "ta": "Niagara流体/体积特效方向必看：无路径的实时体积光照方案可能改变雾效与体积渲染成本结构。",
       "src": "arXiv · cs.GR · 11-09",
       "url": "https://arxiv.org/abs/2611.12103v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "曲线狄拉克质量的卷积微分",
-      "sum": "论文提出Spaghetti Splatting，用卷积对点线三角等图元定义的狄拉克质量做可微体渲染。",
-      "ta": "关注图元级可微渲染的数学处理，对程序化几何重建管线有潜在参考。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12716v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "可微物理仿真梯度综述",
-      "sum": "系统梳理可微物理仿真中各引擎所微分的数学对象差异及其对梯度的影响。",
-      "ta": "做程序化/物理驱动动画时，可据此判断不同仿真器的梯度语义与优化适用性。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12162v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "建筑纹理代理模型一体化生成",
-      "sum": "提出将几何抽象与纹理生成合并的建筑纹理代理生成方法，替代串行流水线。",
-      "ta": "程序化场景生成相关：建筑代理的几何+纹理联合生成可启发大场景LOD资产管线。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12077v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "mid",
-      "title": "贝塞尔泼溅改进笔触渲染",
-      "sum": "提出带结构初始化的二次贝塞尔泼溅，缓解笔触渲染中图元碎片化与缺陷被遮盖问题。",
-      "ta": "非真实感渲染方向可速览，泼溅图元的结构化初始化思路可借鉴。",
-      "src": "arXiv · cs.GR · 11-07",
-      "url": "https://arxiv.org/abs/2611.10713v1"
     }
   ]
 };
