@@ -2,8 +2,80 @@
 // 与 data.js（仅今日新增）分离：data.js 是“今天有什么新的”，recent.js 是“近期攒了啥”。
 
 window.INTEL_RECENT = {
-  "updated": "2026-11-27 17:34",
+  "updated": "2026-11-28 16:47",
   "cards": [
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "免初始化光束法平差新法",
+      "sum": "InitFree-SfM 将免初始化 Bundle Adjustment 与学习式 Structure-from-Motion 结合。",
+      "ta": "若涉及扫描重建资产或相机解算，可关注其免初值收敛思路。",
+      "src": "HuggingFace",
+      "url": "https://huggingface.co/papers/2611.31516"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 无绑定2D面部动画",
+      "sum": "SouthernShotty 发布免费工具，无需绑定即可在 Blender 制作2D面部动画。",
+      "ta": "快速面部表情预演的轻量方案，可作分镜参考。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/create-expressive-2d-face-animations-in-blender-with-ease/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "直升机起飞烟雾VFX拆解",
+      "sum": "Oleg Mendelson 分享电影感镜头中烟雾模拟的幕后制作流程。",
+      "ta": "烟雾模拟分层与镜头合成思路，对流体特效节奏控制有参考价值。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/check-out-this-awesome-vfx-breakdown-of-a-helicopter-taking-off/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Blender 微光帷幕教程",
+      "sum": "Marinko Tambur 发布教程，复刻《基地》片头的闪烁帷幕效果。",
+      "ta": "薄片类半透明材质的动态表现可借鉴到特效面片。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/beautiful-shimmering-veil-in-blender-inspired-by-foundation-title-sequence/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "沿曲线在曲面雕刻工具",
+      "sum": "新 Blender 工具支持沿3D表面曲线雕刻，曲线可随时编辑复用。",
+      "ta": "曲线驱动雕刻对植被/地形细节的程序化笔刷思路有启发。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/this-blender-tool-lets-you-sculpt-directly-along-curves-on-3d-surfaces/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "VR苏联建筑模块化拆解",
+      "sum": "Stanislav Petrushin 讲解 VR 游戏中苏联砖住宅的模块化系统、光照与优化。",
+      "ta": "模块化建筑与可进入室内的优化实践，对场景工具链有参考。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/breakdown-designing-large-scale-soviet-era-architectural-system-for-vr-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "007 环境叙事设计解析",
+      "sum": "Thomas Pulluelo 谈用 Glacier 引擎构建引导玩法的氛围环境与细节区域。",
+      "ta": "看环境如何服务玩法引导，以及引擎内细节密度控制。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/designing-environments-that-tell-a-story-for-007-first-light/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Houdini Vellum 服装模拟",
+      "sum": "用 Houdini Vellum 解算器模拟角色时尚服装，项目可免费下载研究。",
+      "ta": "Vellum 布料参数与褶皱表现可直接对照学习。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/cute-girl-in-stylish-outfit-simulated-with-houdini-s-vellum-solver/"
+    },
     {
       "cat": "gfx",
       "imp": "mid",
@@ -939,15 +1011,6 @@ window.INTEL_RECENT = {
     {
       "cat": "flow",
       "imp": "lo",
-      "title": "Blender手绘蜘蛛侠风格拆解",
-      "sum": "艺术家拆解蜘蛛侠平行宇宙风格手绘效果的「爆炸图层」技法。",
-      "ta": "风格化材质/手绘效果参考，速览。",
-      "src": "80 Level · 11-19",
-      "url": "https://80.lv/articles/blender-artist-breaks-down-spider-verse-style-hand-painted-effect/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
       "title": "蜘蛛侠黏墙模拟工作流",
       "sum": "展示蜘蛛侠黏墙玩具模拟并分享作者工作流。",
       "ta": "趣味模拟案例，速览。",
@@ -1748,72 +1811,6 @@ window.INTEL_RECENT = {
       "ta": "体数据实时模拟与渲染的约束权衡，对体积特效有边缘参考。",
       "src": "arXiv · cs.GR · 11-09",
       "url": "https://arxiv.org/abs/2611.13296v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "lo",
-      "title": "GPU加速QP求解器",
-      "sum": "FAME-QP用CUDA图与融合核函数加速线性MPC的稠密二次规划求解。",
-      "ta": "GPU求解器工程优化手法，可参考到仿真类计算任务的核融合思路。",
-      "src": "arXiv · cs.GR · 11-10",
-      "url": "https://arxiv.org/abs/2611.13766v1"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "索尼Fairgames项目取消",
-      "sum": "索尼服务型劫案模拟游戏Fairgames被取消，不计划裁员。",
-      "ta": "服务型游戏收缩的又一信号，速览行业动向。",
-      "src": "80 Level · 11-11",
-      "url": "https://80.lv/articles/sony-s-live-service-heist-simulator-fairgames-has-been-canceled/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "瑞奇与叮当手游将停服",
-      "sum": "Ratchet & Clank: Ranger Rumble软发布一年后停运，11月下架、次年5月关服。",
-      "ta": "服务型项目生命周期案例，速览。",
-      "src": "80 Level · 11-10",
-      "url": "https://80.lv/articles/ratchet-clank-ranger-rumble-is-shutting-down-a-year-after-its-soft-launch/"
-    },
-    {
-      "cat": "biz",
-      "imp": "lo",
-      "title": "PS Plus十一月阵容",
-      "sum": "十一月PS Plus游戏目录含《死亡搁浅2》《如龙8外传》等。",
-      "ta": "订阅阵容信息，速览即可。",
-      "src": "PlayStation Blog · 11-10",
-      "url": "https://blog.playstation.com/2026/11/10/playstation-plus-game-catalog-for-november-death-stranding-2-on-the-beach-like-a-dragon-pirate-yakuza-in-hawaii-atomfall-dragon-quest-iii-hd-2d-remake-and-more/"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 1,
-      "title": "神经纹理压缩补上各向异性过滤",
-      "sum": "论文为神经纹理压缩引入显式LOD条件与各向异性过滤，弥补GPU纹理单元缺失的滤波。",
-      "ta": "材质/Shader性能方向值得精读：NTC若接入AF，直接影响贴图内存与采样开销的权衡。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12650v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 2,
-      "title": "3DGS攻克SM级负载不均",
-      "sum": "论文针对3D高斯泼溅在GPU上的SM级负载不均衡提出优化，无需重训练或专用加速器。",
-      "ta": "实时渲染管线相关：3DGS调度优化思路可迁移到大规模植被/场景泼溅的性能调优。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12319v1"
-    },
-    {
-      "cat": "gfx",
-      "imp": "hi",
-      "rank": 3,
-      "title": "体积光传输免路径实时推断",
-      "sum": "提出用低成本场景特征与统计量实时重建体积介质下的像素辐射，替代蒙特卡洛降噪。",
-      "ta": "Niagara流体/体积特效方向必看：无路径的实时体积光照方案可能改变雾效与体积渲染成本结构。",
-      "src": "arXiv · cs.GR · 11-09",
-      "url": "https://arxiv.org/abs/2611.12103v1"
     }
   ]
 };

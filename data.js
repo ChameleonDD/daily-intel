@@ -3,9 +3,9 @@
 // 排序：渲染引擎按 imp(hi>mid>lo) + rank + 日期 自动排，cards 顺序无所谓。
 
 window.INTEL_DATA = {
-  "date": "2026年11月27日 · 周五",
+  "date": "2026年11月28日 · 周六",
   "tagline": "为留存而读，不为刷新而读",
-  "todayHtml": "今天值得停下精读的有：<em>SIGGRAPH Asia 12月吉隆坡首办</em> / <em>Houdini复刻手工模型微缩感</em> / <em>2D插画转3D场景全流程</em>。其余按重要性自动排序，红色优先。",
+  "todayHtml": "今天值得停下精读的有：<em>免初始化光束法平差新法</em> / <em>Blender 无绑定2D面部动画</em> / <em>直升机起飞烟雾VFX拆解</em>。其余按重要性自动排序，红色优先。",
   "channels": [
     {
       "key": "x",
@@ -129,56 +129,74 @@ window.INTEL_DATA = {
     {
       "cat": "gfx",
       "imp": "mid",
-      "title": "SIGGRAPH Asia 12月吉隆坡首办",
-      "sum": "第19届SIGGRAPH Asia于12月1-4日在吉隆坡会议中心举行。",
-      "ta": "图形学前沿会议，可关注程序化生成与实时渲染相关议程。",
-      "src": "80 Level · 11-27",
-      "url": "https://80.lv/articles/siggraph-asia-2026-makes-its-malaysian-debut-this-december/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "Houdini复刻手工模型微缩感",
-      "sum": "Will Hoskin用Houdini程序化工具做棉花尘、铁丝树与塑料人偶的微缩模型质感。",
-      "ta": "程序化做旧与风格化材质思路，可借鉴到植被/道具的微缩视觉。",
-      "src": "80 Level · 11-26",
-      "url": "https://80.lv/articles/recreating-the-scale-model-look-of-a-rally-diorama-in-houdini/"
-    },
-    {
-      "cat": "flow",
-      "imp": "mid",
-      "title": "2D插画转3D场景全流程",
-      "sum": "Pedro Silva分享把2D奇幻小镇做成3D场景，涵盖建模、贴图、植被与渲染。",
-      "ta": "含植被环节的完整场景工作流，可看其植被与最终渲染处理。",
-      "src": "80 Level · 11-26",
-      "url": "https://80.lv/articles/turning-whimsical-2d-town-into-cozy-3d-world/"
-    },
-    {
-      "cat": "tech",
-      "imp": "lo",
-      "title": "Unity实现写实断肢血腥效果",
-      "sum": "THE IRONY团队拆解其Unity血腥系统与开发难点。",
-      "ta": "特效向的肢解/血液实现参考，非本职核心但可速览。",
-      "src": "80 Level · 11-26",
-      "url": "https://80.lv/articles/creating-realistic-dismemberment-gore-effects-in-unity/"
-    },
-    {
-      "cat": "flow",
-      "imp": "lo",
-      "title": "免费篮球动捕数据包发布",
-      "sum": "Anderson Rohr放出4分钟动捕数据，可商用。",
-      "ta": "免费动捕资源，动画/预览可用，速览即可。",
-      "src": "80 Level · 11-26",
-      "url": "https://80.lv/articles/get-this-free-pack-of-motion-capture-data-for-creating-basketball-player-animations/"
-    },
-    {
-      "cat": "ai",
-      "imp": "mid",
-      "title": "世界模型细粒度投机流式生成",
-      "sum": "ShowNow提出面向响应式世界模型的细粒度投机流式方法。",
-      "ta": "世界模型实时生成加速，与实时渲染/程序化生成方向相关，值得关注。",
+      "title": "免初始化光束法平差新法",
+      "sum": "InitFree-SfM 将免初始化 Bundle Adjustment 与学习式 Structure-from-Motion 结合。",
+      "ta": "若涉及扫描重建资产或相机解算，可关注其免初值收敛思路。",
       "src": "HuggingFace",
-      "url": "https://huggingface.co/papers/2611.34693"
+      "url": "https://huggingface.co/papers/2611.31516"
+    },
+    {
+      "cat": "flow",
+      "imp": "lo",
+      "title": "Blender 无绑定2D面部动画",
+      "sum": "SouthernShotty 发布免费工具，无需绑定即可在 Blender 制作2D面部动画。",
+      "ta": "快速面部表情预演的轻量方案，可作分镜参考。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/create-expressive-2d-face-animations-in-blender-with-ease/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "直升机起飞烟雾VFX拆解",
+      "sum": "Oleg Mendelson 分享电影感镜头中烟雾模拟的幕后制作流程。",
+      "ta": "烟雾模拟分层与镜头合成思路，对流体特效节奏控制有参考价值。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/check-out-this-awesome-vfx-breakdown-of-a-helicopter-taking-off/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "lo",
+      "title": "Blender 微光帷幕教程",
+      "sum": "Marinko Tambur 发布教程，复刻《基地》片头的闪烁帷幕效果。",
+      "ta": "薄片类半透明材质的动态表现可借鉴到特效面片。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/beautiful-shimmering-veil-in-blender-inspired-by-foundation-title-sequence/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "沿曲线在曲面雕刻工具",
+      "sum": "新 Blender 工具支持沿3D表面曲线雕刻，曲线可随时编辑复用。",
+      "ta": "曲线驱动雕刻对植被/地形细节的程序化笔刷思路有启发。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/this-blender-tool-lets-you-sculpt-directly-along-curves-on-3d-surfaces/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "VR苏联建筑模块化拆解",
+      "sum": "Stanislav Petrushin 讲解 VR 游戏中苏联砖住宅的模块化系统、光照与优化。",
+      "ta": "模块化建筑与可进入室内的优化实践，对场景工具链有参考。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/breakdown-designing-large-scale-soviet-era-architectural-system-for-vr-game/"
+    },
+    {
+      "cat": "flow",
+      "imp": "mid",
+      "title": "007 环境叙事设计解析",
+      "sum": "Thomas Pulluelo 谈用 Glacier 引擎构建引导玩法的氛围环境与细节区域。",
+      "ta": "看环境如何服务玩法引导，以及引擎内细节密度控制。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/designing-environments-that-tell-a-story-for-007-first-light/"
+    },
+    {
+      "cat": "gfx",
+      "imp": "mid",
+      "title": "Houdini Vellum 服装模拟",
+      "sum": "用 Houdini Vellum 解算器模拟角色时尚服装，项目可免费下载研究。",
+      "ta": "Vellum 布料参数与褶皱表现可直接对照学习。",
+      "src": "80 Level · 11-27",
+      "url": "https://80.lv/articles/cute-girl-in-stylish-outfit-simulated-with-houdini-s-vellum-solver/"
     }
   ],
   "flashbackTitle": "",
